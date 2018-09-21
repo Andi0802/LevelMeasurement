@@ -27,6 +27,8 @@ Level measurement for rain water reservoir with Arduino Mega2560
   <li>Power Supply 5V</li>
 </ul>
 
+<h1>Folders</h1>
+
 <h1>Used libraries</h1>
-NTPClient  https://github.com/arduino-libraries/NTPClient.git Commit 020aaf8
+NTPClient  https://github.com/arduino-libraries/NTPClient.git Commit 020aaf8<br>
 TimeLib    https://github.com/PaulStoffregen/Time.git Version 1.5+Commit 01083f8
