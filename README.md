@@ -19,7 +19,8 @@ Level measurement for rain water reservoir with Arduino Mega2560
       A web server is provided to monitor actual values and to change settings in system. Settings are stored in EEPROM permanently.</li>        
   <li>Provides values to Smart-Home Server (HOMEMATIC)<br>
       Actual volume in Liter, relative volume in Percent, Signal Health, Error state, Filter conditions are send to SmartHome system. A system variable with a specific name and unit has to be provided in Homematic.  </li>  
-  <li>Statistic and log data storage on SDCard</li></ul>
+  <li>Statistic and log data storage on SDCard<br>
+      Two files are stored on SDCard. A log file (System log File) contains all logging info which would be displayes on Arduinos serial monitor as well. A csv-File (Data log File) contains all measured and calculated data in one table to evaluate in Excel sheet. Both files can be read via Web-Server interface. The files are deleted from SD-Card after reading automatically.</li></ul>
 
 <h1>Dedicated Hardware</h1>
 <ul><li>Arduino Mega2560</li>
@@ -34,6 +35,7 @@ Level measurement for rain water reservoir with Arduino Mega2560
 <h1>Configuration</h1>
 <h2>Ethernet Settings</h2>
 <h2>SmartHome (Homematic)</h2>
+<h2>Logging</h2>
 <h1>Folders</h1>
 
 <h1>Used libraries</h1>
