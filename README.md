@@ -31,6 +31,9 @@ Level measurement for rain water reservoir with Arduino Mega2560
   <li>Power Supply 5V</li>
 </ul>
 
+<h1>Configuration</h1>
+<h2>Ethernet Settings</h2>
+<h2>SmartHome (Homematic)</h2>
 <h1>Folders</h1>
 
 <h1>Used libraries</h1>
