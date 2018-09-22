@@ -1,0 +1,15 @@
+Date;Level [mm];Quantity [Liter];Signal health [-];Error [-];StdDev [Liter];Refill Quantity [Liter];Rain quantity 24h [Liter];Refill quantity 24h [Liter];Measured quantity change 24h [Liter];Calculated quantity change 24h [Liter];Quantity difference [%];Filter diagnosis [-];Usage in last 24h [Liter];Usage average in last 10d [Liter]
+2018-09-06 19:20:33;853;2679;100;Kein Fehler erkannt;0.00;2930;8.56;;;;;;;;;
+2018-09-06 20:20:34;851;2673;98;Kein Fehler erkannt;1.09;2930;8.56;;;;;;;;;
+2018-09-06 21:20:35;849;2667;100;Kein Fehler erkannt;0.00;2930;8.56;;;;;;;;;
+2018-09-06 22:21:04;847;2660;98;Kein Fehler erkannt;1.09;2930;8.56;;;;;;;;;
+2018-09-06 23:21:14;847;2660;100;Kein Fehler erkannt;0.00;2930;8.56;;;;;;;;;
+2018-09-07 00:21:24;846;2657;99;Kein Fehler erkannt;0.44;2930;8.56;0;-826;887;193;Verstopft;;;
+2018-09-07 01:21:35;846;2657;98;Kein Fehler erkannt;1.57;2930;8.56;;;;;;;;;
+2018-09-07 02:21:45;846;2657;100;Kein Fehler erkannt;0.00;2930;8.56;;;;;;;;;
+2018-09-07 03:21:55;846;2657;100;Kein Fehler erkannt;0.00;2930;8.56;;;;;;;;;
+2018-09-07 04:22:05;846;2657;100;Kein Fehler erkannt;0.00;2930;8.56;;;;;;;;;
+2018-09-07 05:22:15;842;2645;100;Kein Fehler erkannt;0.00;2930;8.56;;;;;;;;;
+2018-09-07 06:22:26;840;2638;100;Kein Fehler erkannt;0.00;2930;8.56;;;;;;;;;
+2018-09-07 07:22:36;839;2635;98;Kein Fehler erkannt;1.51;2930;8.85;;;;;;;;;
+2018-09-07 08:22:46;837;2629;98;Kein Fehler erkannt;1.54;2930;8.85;;;;;;;;;

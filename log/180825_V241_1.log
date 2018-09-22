@@ -1,0 +1,18 @@
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Check if fixed ethernet address is used in network
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-08-25 17:54:01] Reading settings from EEP
+[2018-08-25 17:54:01] EEP checksum ok 
+[2018-08-25 17:54:01] EEPSize 33 Byte
+[2018-08-25 17:54:01] System startup
+[2018-08-25 17:54:48] Timeout detected
+[2018-08-25 17:55:01] Time updated by NTP
+[2018-08-25 17:55:15] Timeout detected
+[2018-08-25 17:55:41] Writing measurement data to SD Card
+[2018-08-25 17:55:41] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(819.00)
+[2018-08-25 17:55:41] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-25 17:55:41] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(13.00)
+[2018-08-25 17:55:41] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-25 17:55:41] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-25 17:56:40] Writing headline for measurement data to SD Card

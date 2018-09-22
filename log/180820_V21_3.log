@@ -1,0 +1,165 @@
+[2018-08-20 06:44:28] HTTP Request receives: 
+[2018-08-20 06:44:28] GET / HTTP/1.1
+
+[2018-08-20 06:44:28] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-20 06:44:28] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-20 06:44:28] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-20 06:44:28] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-20 06:44:28] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-20 06:44:28] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-20 06:44:28] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-20 06:44:28] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-20 06:44:28] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-20 06:44:29] HTTP Request receives: favicon.ico
+[2018-08-20 06:44:29] GET /favicon.ico HTTP/1.1
+
+[2018-08-20 06:44:29] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-20 06:44:29] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-20 06:44:29] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-20 06:44:29] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-20 06:44:29] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-20 06:44:29] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-20 06:44:29] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-20 06:44:29] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-20 06:44:29] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-20 06:45:31] Time updated by NTP
+[2018-08-20 06:47:01] Measured distance: 2023.00 mm
+[2018-08-20 06:47:01] Actual Level     : 377 mm
+[2018-08-20 06:47:01] Actual volume    : 1184 Liter, StdDev: 0.00 Liter
+[2018-08-20 06:47:01] Signal health    : 100
+[2018-08-20 06:47:01] Error status     : 0
+[2018-08-20 06:47:01] Writing measurement data to SD Card
+[2018-08-20 06:47:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1184.00)
+[2018-08-20 06:47:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-20 06:47:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(18.00)
+[2018-08-20 06:47:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-20 07:15:32] HTTP Request receives: 
+[2018-08-20 07:15:32] GET / HTTP/1.1
+
+[2018-08-20 07:15:32] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-20 07:15:32] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-20 07:15:32] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-20 07:15:32] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-20 07:15:32] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-20 07:15:32] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-20 07:15:32] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-20 07:15:32] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-20 07:15:32] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-20 07:15:34] HTTP Request receives: favicon.ico
+[2018-08-20 07:15:34] GET /favicon.ico HTTP/1.1
+
+[2018-08-20 07:15:34] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-20 07:15:34] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-20 07:15:34] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-20 07:15:34] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-20 07:15:34] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-20 07:15:34] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-20 07:15:34] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-20 07:15:34] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-20 07:15:34] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-20 07:45:48] Time updated by NTP
+[2018-08-20 07:47:12] Measured distance: 2024.26 mm
+[2018-08-20 07:47:12] Actual Level     : 375 mm
+[2018-08-20 07:47:12] Actual volume    : 1178 Liter, StdDev: 1.38 Liter
+[2018-08-20 07:47:12] Signal health    : 98
+[2018-08-20 07:47:12] Error status     : 0
+[2018-08-20 07:47:12] Writing measurement data to SD Card
+[2018-08-20 07:47:12] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1178.00)
+[2018-08-20 07:47:12] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-20 07:47:12] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(18.00)
+[2018-08-20 07:47:12] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-20 08:25:32] HTTP Request receives: 
+[2018-08-20 08:25:33] GET / HTTP/1.1
+
+[2018-08-20 08:25:33] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-20 08:25:33] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-20 08:25:33] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-20 08:25:33] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-20 08:25:33] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-20 08:25:33] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-20 08:25:33] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-20 08:25:33] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-20 08:25:33] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-20 08:25:35] HTTP Request receives: favicon.ico
+[2018-08-20 08:25:35] GET /favicon.ico HTTP/1.1
+
+[2018-08-20 08:25:36] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-20 08:25:36] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-20 08:25:36] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-20 08:25:36] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-20 08:25:36] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-20 08:25:36] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-20 08:25:36] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-20 08:25:36] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-20 08:25:36] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-20 08:46:03] Time updated by NTP
+[2018-08-20 08:47:21] Measured distance: 2024.60 mm
+[2018-08-20 08:47:21] Actual Level     : 375 mm
+[2018-08-20 08:47:21] Actual volume    : 1178 Liter, StdDev: 1.54 Liter
+[2018-08-20 08:47:21] Signal health    : 98
+[2018-08-20 08:47:21] Error status     : 0
+[2018-08-20 08:47:21] Writing measurement data to SD Card
+[2018-08-20 08:47:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1178.00)
+[2018-08-20 08:47:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-20 08:47:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(18.00)
+[2018-08-20 08:47:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-20 09:46:20] Time updated by NTP
+[2018-08-20 09:47:32] Measured distance: 2024.52 mm
+[2018-08-20 09:47:32] Actual Level     : 375 mm
+[2018-08-20 09:47:32] Actual volume    : 1178 Liter, StdDev: 1.57 Liter
+[2018-08-20 09:47:32] Signal health    : 98
+[2018-08-20 09:47:32] Error status     : 0
+[2018-08-20 09:47:32] Writing measurement data to SD Card
+[2018-08-20 09:47:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1178.00)
+[2018-08-20 09:47:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-20 09:47:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(18.00)
+[2018-08-20 09:47:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-20 09:54:38] HTTP Request receives: 
+[2018-08-20 09:54:38] GET / HTTP/1.1
+
+[2018-08-20 09:54:38] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-20 09:54:38] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-20 09:54:38] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-20 09:54:38] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-20 09:54:38] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-20 09:54:38] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-20 09:54:38] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-20 09:54:38] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-20 09:54:38] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-20 09:54:38] HTTP Request receives: favicon.ico
+[2018-08-20 09:54:38] GET /favicon.ico HTTP/1.1
+
+[2018-08-20 09:54:38] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-20 09:54:38] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-20 09:54:38] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-20 09:54:38] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-20 09:54:38] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-20 09:54:38] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-20 09:54:38] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-20 09:54:38] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-20 09:54:38] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-20 09:54:42] HTTP Request receives: Res_Ctl.csv
+[2018-08-20 09:54:42] GET /Res_Ctl.csv HTTP/1.1
+
+[2018-08-20 09:54:42] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-20 09:54:42] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-20 09:54:42] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-20 09:54:42] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-20 09:54:42] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-20 09:54:42] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-20 09:54:42] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-20 09:54:42] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-20 09:54:42] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-20 09:54:43] Writing headline for measurement data to SD Card
+[2018-08-20 09:54:48] HTTP Request receives: Res_Ctl.log
+[2018-08-20 09:54:48] GET /Res_Ctl.log HTTP/1.1
+
+[2018-08-20 09:54:48] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-20 09:54:48] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-20 09:54:48] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-20 09:54:48] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-20 09:54:48] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-20 09:54:48] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-20 09:54:48] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-20 09:54:48] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-20 09:54:48] Option stResetVolume: No option found, keeping old value  0.00

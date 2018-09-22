@@ -1,0 +1,7 @@
+Date;Level [mm];Quantity [Liter];Signal health[-];StdDev [Liter];Refill Quantity [Liter]
+Measurement data [mm]
+2018-08-25 14:04:38;274;860;98;Kein Fehler erkannt1.54;0;;;;;;;;;
+2018-08-25 15:04:48;274;860;98;Kein Fehler erkannt1.56;0;2.36;0;0;212;100;Verstopft;;;
+2018-08-25 16:04:58;274;860;98;Kein Fehler erkannt1.15;0;2.36;0;0;212;100;Verstopft;;;
+2018-08-25 17:05:09;263;826;98;Kein Fehler erkannt1.57;0;2.36;0;34;212;83;Verstopft;;;
+2018-08-25 17:40:33;262;823;99;Kein Fehler erkannt0.75;0;;;;;;;;;

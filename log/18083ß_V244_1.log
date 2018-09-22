@@ -1,0 +1,2772 @@
+[2018-08-29 17:03:45] Time updated by NTP
+[2018-08-29 17:05:20] Writing measurement data to SD Card
+[2018-08-29 17:05:20] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(603.00)
+[2018-08-29 17:05:20] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-29 17:05:20] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-08-29 17:05:20] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-29 17:05:20] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-29 17:05:20] Refilling required
+[2018-08-29 17:05:20] Refilling on. Duration 60 s
+[2018-08-29 17:05:20] Off-Time: 2018-08-29 17:06:20
+[2018-08-29 17:06:21] Refilling off, Refilling volume: 20 liter
+[2018-08-29 17:06:21] Writing settings to EEP
+[2018-08-29 17:08:01] Writing measurement data to SD Card
+[2018-08-29 17:08:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(622.00)
+[2018-08-29 17:08:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-29 17:08:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-08-29 17:08:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-29 17:08:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-29 17:08:02] Refilling required
+[2018-08-29 17:08:02] Refilling on. Duration 60 s
+[2018-08-29 17:08:02] Off-Time: 2018-08-29 17:09:02
+[2018-08-29 17:09:02] Refilling off, Refilling volume: 20 liter
+[2018-08-29 17:09:03] Writing settings to EEP
+[2018-08-29 17:10:43] Writing measurement data to SD Card
+[2018-08-29 17:10:45] Connection to CCU failed
+[2018-08-29 17:10:47] Connection to CCU failed
+[2018-08-29 17:10:49] Connection to CCU failed
+[2018-08-29 17:10:50] Connection to CCU failed
+[2018-08-29 17:10:52] Connection to CCU failed
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Check if fixed ethernet address is used in network
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-08-29 17:46:51] Reading settings from EEP
+[2018-08-29 17:46:51] EEP checksum ok 
+[2018-08-29 17:46:51] EEPSize 33 Byte
+[2018-08-29 17:46:51] System startup
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Using Fixed IP
+[1970-00-00 00:00:00] IP-Address: 192.168.178.5
+[2018-08-29 17:47:18] Reading settings from EEP
+[2018-08-29 17:47:18] EEP checksum ok 
+[2018-08-29 17:47:18] EEPSize 33 Byte
+[2018-08-29 17:47:18] System startup
+[2018-08-29 17:47:46] Timeout US measurement detected
+[2018-08-29 17:48:04] Timeout US measurement detected
+[2018-08-29 17:48:18] Time updated by NTP
+[2018-08-29 17:48:32] Timeout US measurement detected
+[2018-08-29 17:48:58] Writing measurement data to SD Card
+[2018-08-29 17:48:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(631.00)
+[2018-08-29 17:48:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-29 17:48:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-29 17:48:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-29 17:48:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-29 17:49:27] Writing settings to EEP
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Using Fixed IP
+[1970-00-00 00:00:00] IP-Address: 192.168.178.5
+[2018-08-29 17:49:52] Reading settings from EEP
+[2018-08-29 17:49:52] EEP checksum ok 
+[2018-08-29 17:49:52] EEPSize 33 Byte
+[2018-08-29 17:49:52] System startup
+[2018-08-29 17:50:11] Timeout US measurement detected
+[2018-08-29 17:50:52] Time updated by NTP
+[2018-08-29 17:51:02] Timeout US measurement detected
+[2018-08-29 17:51:27] Timeout US measurement detected
+[2018-08-29 17:51:32] Writing measurement data to SD Card
+[2018-08-29 17:51:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(634.00)
+[2018-08-29 17:51:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-29 17:51:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-29 17:51:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-29 17:51:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-29 17:51:32] Refilling required
+[2018-08-29 17:51:32] Refilling on. Duration 60 s
+[2018-08-29 17:51:33] Off-Time: 2018-08-29 17:52:33
+[2018-08-29 17:52:34] Refilling off, Refilling volume: 20 liter
+[2018-08-29 17:52:34] Writing settings to EEP
+[2018-08-29 17:54:14] Writing measurement data to SD Card
+[2018-08-29 17:54:15] Connection to CCU failed
+[2018-08-29 17:54:15] Result: 0
+[2018-08-29 17:54:16] Connection to CCU failed
+[2018-08-29 17:54:16] Result: 0
+[2018-08-29 17:54:17] Connection to CCU failed
+[2018-08-29 17:54:17] Result: 0
+[2018-08-29 17:54:18] Connection to CCU failed
+[2018-08-29 17:54:18] Result: 0
+[2018-08-29 17:54:19] Connection to CCU failed
+[2018-08-29 17:54:19] Result: 0
+[2018-08-29 17:54:19] Refilling required
+[2018-08-29 17:54:19] Refilling on. Duration 60 s
+[2018-08-29 17:54:19] Off-Time: 2018-08-29 17:55:19
+[2018-08-29 17:55:20] Refilling off, Refilling volume: 20 liter
+[2018-08-29 17:55:20] Writing settings to EEP
+[2018-08-29 17:57:00] Writing measurement data to SD Card
+[2018-08-29 17:57:01] Connection to CCU failed
+[2018-08-29 17:57:01] Result: 0
+[2018-08-29 17:57:02] Connection to CCU failed
+[2018-08-29 17:57:02] Result: 0
+[2018-08-29 17:57:03] Connection to CCU failed
+[2018-08-29 17:57:03] Result: 0
+[2018-08-29 17:57:04] Connection to CCU failed
+[2018-08-29 17:57:04] Result: 0
+[2018-08-29 17:57:05] Connection to CCU failed
+[2018-08-29 17:57:05] Result: 0
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Using Fixed IP
+[1970-00-00 00:00:00] IP-Address: 192.168.178.5
+[2018-08-29 18:44:39] Reading settings from EEP
+[2018-08-29 18:44:39] EEP checksum ok 
+[2018-08-29 18:44:39] EEPSize 33 Byte
+[2018-08-29 18:44:39] System startup
+[2018-08-29 18:44:39] Timeout US measurement detected
+[2018-08-29 18:44:40] Timeout US measurement detected
+[2018-08-29 18:44:41] Timeout US measurement detected
+[2018-08-29 18:44:42] Timeout US measurement detected
+[2018-08-29 18:44:43] Timeout US measurement detected
+[2018-08-29 18:44:44] Timeout US measurement detected
+[2018-08-29 18:44:45] Timeout US measurement detected
+[2018-08-29 18:44:46] Timeout US measurement detected
+[2018-08-29 18:44:47] Timeout US measurement detected
+[2018-08-29 18:44:48] Timeout US measurement detected
+[2018-08-29 18:44:49] Timeout US measurement detected
+[2018-08-29 18:44:50] Timeout US measurement detected
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Using Fixed IP
+[1970-00-00 00:00:00] IP-Address: 192.168.178.5
+[2018-08-29 18:44:57] Reading settings from EEP
+[2018-08-29 18:44:57] EEP checksum ok 
+[2018-08-29 18:44:57] EEPSize 33 Byte
+[2018-08-29 18:44:57] System startup
+[2018-08-29 18:45:57] Time updated by NTP
+[2018-08-29 18:46:20] Timeout US measurement detected
+[2018-08-29 18:46:37] Writing measurement data to SD Card
+[2018-08-29 18:46:37] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(666.00)
+[2018-08-29 18:46:37] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-29 18:46:37] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-29 18:46:37] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-29 18:46:37] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-29 18:47:04] Writing settings to EEP
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Using Fixed IP
+[1970-00-00 00:00:00] IP-Address: 192.168.178.5
+[2018-08-29 18:47:13] Reading settings from EEP
+[2018-08-29 18:47:13] EEP checksum ok 
+[2018-08-29 18:47:13] EEPSize 33 Byte
+[2018-08-29 18:47:13] System startup
+[2018-08-29 18:48:13] Time updated by NTP
+[2018-08-29 18:48:38] Timeout US measurement detected
+[2018-08-29 18:48:53] Timeout US measurement detected
+[2018-08-29 18:48:53] Writing measurement data to SD Card
+[2018-08-29 18:48:53] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(666.00)
+[2018-08-29 18:48:53] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-29 18:48:53] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-29 18:48:53] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-29 18:48:53] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-29 18:48:53] Refilling required
+[2018-08-29 18:48:53] Refilling on. Duration 60 s
+[2018-08-29 18:48:53] Off-Time: 2018-08-29 18:49:53
+[2018-08-29 18:49:54] Refilling off, Refilling volume: 20 liter
+[2018-08-29 18:49:54] Writing settings to EEP
+[2018-08-29 18:49:59] Timeout US measurement detected
+[2018-08-29 18:50:25] Timeout US measurement detected
+[2018-08-29 18:51:34] Writing measurement data to SD Card
+[2018-08-29 18:51:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(666.00)
+[2018-08-29 18:51:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-29 18:51:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-29 18:51:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-29 18:51:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-29 18:51:34] Refilling required
+[2018-08-29 18:51:34] Refilling on. Duration 60 s
+[2018-08-29 18:51:34] Off-Time: 2018-08-29 18:52:34
+[2018-08-29 18:52:35] Refilling off, Refilling volume: 20 liter
+[2018-08-29 18:52:35] Writing settings to EEP
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Using Fixed IP
+[1970-00-00 00:00:00] IP-Address: 192.168.178.5
+[1970-01-01 00:00:06] Reading settings from EEP
+[1970-01-01 00:00:06] EEP checksum ok 
+[1970-01-01 00:00:06] EEPSize 33 Byte
+[1970-01-01 00:00:06] System startup
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Using Fixed IP
+[1970-00-00 00:00:00] IP-Address: 192.168.178.5
+[2018-08-29 18:54:36] Reading settings from EEP
+[2018-08-29 18:54:36] EEP checksum ok 
+[2018-08-29 18:54:36] EEPSize 33 Byte
+[2018-08-29 18:54:36] System startup
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-08-29 18:57:00] Reading settings from EEP
+[2018-08-29 18:57:00] EEP checksum ok 
+[2018-08-29 18:57:00] EEPSize 33 Byte
+[2018-08-29 18:57:00] System startup
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Using Fixed IP
+[1970-00-00 00:00:00] IP-Address: 192.168.178.5
+[2018-08-29 18:58:02] Reading settings from EEP
+[2018-08-29 18:58:02] EEP checksum ok 
+[2018-08-29 18:58:02] EEPSize 33 Byte
+[2018-08-29 18:58:02] System startup
+[2018-08-29 18:59:02] Time updated by NTP
+[2018-08-29 18:59:42] Writing measurement data to SD Card
+[2018-08-29 18:59:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(666.00)
+[2018-08-29 18:59:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-29 18:59:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-29 18:59:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-29 18:59:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-29 18:59:42] Refilling required
+[2018-08-29 18:59:42] Refilling on. Duration 60 s
+[2018-08-29 18:59:42] Off-Time: 2018-08-29 19:00:42
+[2018-08-29 19:00:43] Refilling off, Refilling volume: 20 liter
+[2018-08-29 19:00:43] Writing settings to EEP
+[2018-08-29 19:00:55] Timeout US measurement detected
+[2018-08-29 19:00:58] Timeout US measurement detected
+[2018-08-29 19:02:23] Writing measurement data to SD Card
+[2018-08-29 19:02:23] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(666.00)
+[2018-08-29 19:02:23] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-29 19:02:23] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-29 19:02:23] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-29 19:02:23] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-29 19:02:23] Refilling required
+[2018-08-29 19:02:23] Refilling on. Duration 60 s
+[2018-08-29 19:02:23] Off-Time: 2018-08-29 19:03:23
+[2018-08-29 19:03:24] Refilling off, Refilling volume: 20 liter
+[2018-08-29 19:03:24] Writing settings to EEP
+[2018-08-29 19:05:04] Writing measurement data to SD Card
+[2018-08-29 19:05:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(666.00)
+[2018-08-29 19:05:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-29 19:05:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-29 19:05:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-29 19:05:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-29 19:05:04] Refilling required
+[2018-08-29 19:05:04] Refilling on. Duration 60 s
+[2018-08-29 19:05:04] Off-Time: 2018-08-29 19:06:04
+[2018-08-29 19:06:05] Refilling off, Refilling volume: 20 liter
+[2018-08-29 19:06:05] Writing settings to EEP
+[2018-08-29 19:07:45] Writing measurement data to SD Card
+[2018-08-29 19:07:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(666.00)
+[2018-08-29 19:07:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-29 19:07:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-29 19:07:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-29 19:07:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-29 19:07:46] Refilling required
+[2018-08-29 19:07:46] Refilling on. Duration 60 s
+[2018-08-29 19:07:46] Off-Time: 2018-08-29 19:08:46
+[2018-08-29 19:08:46] Refilling off, Refilling volume: 20 liter
+[2018-08-29 19:08:47] Writing settings to EEP
+[2018-08-29 19:10:27] Writing measurement data to SD Card
+[2018-08-29 19:10:28] Connection to CCU failed
+[2018-08-29 19:10:28] Result: 0
+[2018-08-29 19:10:29] Connection to CCU failed
+[2018-08-29 19:10:29] Result: 0
+[2018-08-29 19:10:30] Connection to CCU failed
+[2018-08-29 19:10:30] Result: 0
+[2018-08-29 19:10:31] Connection to CCU failed
+[2018-08-29 19:10:31] Result: 0
+[2018-08-29 19:10:32] Connection to CCU failed
+[2018-08-29 19:10:32] Result: 0
+[2018-08-29 19:10:32] Refilling required
+[2018-08-29 19:10:32] Refilling on. Duration 60 s
+[2018-08-29 19:10:32] Off-Time: 2018-08-29 19:11:32
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Using Fixed IP
+[1970-00-00 00:00:00] IP-Address: 192.168.178.5
+[2018-08-29 19:11:16] Reading settings from EEP
+[2018-08-29 19:11:16] EEP checksum ok 
+[2018-08-29 19:11:16] EEPSize 33 Byte
+[2018-08-29 19:11:16] System startup
+[2018-08-29 19:12:10] Writing settings to EEP
+[2018-08-29 19:12:11] Timeout US measurement detected
+[2018-08-29 19:12:16] Time updated by NTP
+[2018-08-29 19:12:56] Writing measurement data to SD Card
+[2018-08-29 19:12:56] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(669.00)
+[2018-08-29 19:12:56] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-29 19:12:56] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-29 19:12:56] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-29 19:12:56] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-29 19:16:14] Refilling requested by manual button
+[2018-08-29 19:16:14] Refilling on. Duration 60 s
+[2018-08-29 19:16:14] Off-Time: 2018-08-29 19:17:14
+[2018-08-29 19:17:15] Refilling off, Refilling volume: 20 liter
+[2018-08-29 19:17:15] Writing settings to EEP
+[2018-08-29 19:18:34] Timeout US measurement detected
+[2018-08-29 19:18:35] Timeout US measurement detected
+[2018-08-29 19:18:36] Timeout US measurement detected
+[2018-08-29 19:18:37] Timeout US measurement detected
+[2018-08-29 19:18:38] Timeout US measurement detected
+[2018-08-29 19:18:39] Timeout US measurement detected
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-08-29 19:19:44] Reading settings from EEP
+[2018-08-29 19:19:44] EEP checksum ok 
+[2018-08-29 19:19:44] EEPSize 33 Byte
+[2018-08-29 19:19:44] System startup
+[2018-08-29 19:19:44] Timeout US measurement detected
+[2018-08-29 19:19:45] Timeout US measurement detected
+[2018-08-29 19:19:46] Timeout US measurement detected
+[2018-08-29 19:19:47] Timeout US measurement detected
+[2018-08-29 19:19:48] Timeout US measurement detected
+[2018-08-29 19:19:49] Timeout US measurement detected
+[2018-08-29 19:19:50] Timeout US measurement detected
+[2018-08-29 19:19:51] Timeout US measurement detected
+[2018-08-29 19:19:53] Timeout US measurement detected
+[2018-08-29 19:19:53] Timeout US measurement detected
+[2018-08-29 19:19:54] Timeout US measurement detected
+[2018-08-29 19:19:55] Timeout US measurement detected
+[2018-08-29 19:19:56] Timeout US measurement detected
+[2018-08-29 19:19:57] Timeout US measurement detected
+[2018-08-29 19:19:58] Timeout US measurement detected
+[2018-08-29 19:19:59] Timeout US measurement detected
+[2018-08-29 19:20:00] Timeout US measurement detected
+[2018-08-29 19:20:01] Timeout US measurement detected
+[2018-08-29 19:20:02] Timeout US measurement detected
+[2018-08-29 19:20:03] Timeout US measurement detected
+[2018-08-29 19:20:04] Timeout US measurement detected
+[2018-08-29 19:20:05] Timeout US measurement detected
+[2018-08-29 19:20:06] Timeout US measurement detected
+[2018-08-29 19:20:07] Timeout US measurement detected
+[2018-08-29 19:20:08] Timeout US measurement detected
+[2018-08-29 19:20:09] Timeout US measurement detected
+[2018-08-29 19:20:10] Timeout US measurement detected
+[2018-08-29 19:20:11] Timeout US measurement detected
+[2018-08-29 19:20:12] Timeout US measurement detected
+[2018-08-29 19:20:13] Timeout US measurement detected
+[2018-08-29 19:20:14] Timeout US measurement detected
+[2018-08-29 19:20:15] Timeout US measurement detected
+[2018-08-29 19:20:16] Timeout US measurement detected
+[2018-08-29 19:20:17] Timeout US measurement detected
+[2018-08-29 19:20:18] Timeout US measurement detected
+[2018-08-29 19:20:19] Timeout US measurement detected
+[2018-08-29 19:20:20] Timeout US measurement detected
+[2018-08-29 19:20:21] Timeout US measurement detected
+[2018-08-29 19:20:22] Timeout US measurement detected
+[2018-08-29 19:20:24] Timeout US measurement detected
+[2018-08-29 19:20:24] Timeout US measurement detected
+[2018-08-29 19:20:25] Timeout US measurement detected
+[2018-08-29 19:20:26] Timeout US measurement detected
+[2018-08-29 19:20:27] Timeout US measurement detected
+[2018-08-29 19:20:28] Timeout US measurement detected
+[2018-08-29 19:20:29] Timeout US measurement detected
+[2018-08-29 19:20:30] Timeout US measurement detected
+[2018-08-29 19:20:31] Timeout US measurement detected
+[2018-08-29 19:20:32] Timeout US measurement detected
+[2018-08-29 19:20:33] Timeout US measurement detected
+[2018-08-29 19:20:34] Timeout US measurement detected
+[2018-08-29 19:20:35] Timeout US measurement detected
+[2018-08-29 19:20:36] Timeout US measurement detected
+[2018-08-29 19:20:37] Refilling requested by manual button
+[2018-08-29 19:20:37] Refilling on. Duration 60 s
+[2018-08-29 19:20:37] Off-Time: 2018-08-29 19:21:37
+[2018-08-29 19:20:37] Timeout US measurement detected
+[2018-08-29 19:20:38] Timeout US measurement detected
+[2018-08-29 19:20:39] Timeout US measurement detected
+[2018-08-29 19:20:42] Timeout US measurement detected
+[2018-08-29 19:20:43] Timeout US measurement detected
+[2018-08-29 19:20:44] Time updated by NTP
+[2018-08-29 19:20:44] Timeout US measurement detected
+[2018-08-29 19:20:46] Timeout US measurement detected
+[2018-08-29 19:20:46] Timeout US measurement detected
+[2018-08-29 19:20:47] Timeout US measurement detected
+[2018-08-29 19:20:48] Timeout US measurement detected
+[2018-08-29 19:20:50] Timeout US measurement detected
+[2018-08-29 19:20:50] Timeout US measurement detected
+[2018-08-29 19:20:52] Timeout US measurement detected
+[2018-08-29 19:20:55] Timeout US measurement detected
+[2018-08-29 19:20:55] Timeout US measurement detected
+[2018-08-29 19:20:56] Timeout US measurement detected
+[2018-08-29 19:20:57] Timeout US measurement detected
+[2018-08-29 19:20:59] Timeout US measurement detected
+[2018-08-29 19:21:02] Timeout US measurement detected
+[2018-08-29 19:21:04] Timeout US measurement detected
+[2018-08-29 19:21:05] Timeout US measurement detected
+[2018-08-29 19:21:06] Timeout US measurement detected
+[2018-08-29 19:21:07] Timeout US measurement detected
+[2018-08-29 19:21:08] Timeout US measurement detected
+[2018-08-29 19:21:10] Timeout US measurement detected
+[2018-08-29 19:21:11] Timeout US measurement detected
+[2018-08-29 19:21:12] Timeout US measurement detected
+[2018-08-29 19:21:13] Timeout US measurement detected
+[2018-08-29 19:21:14] Timeout US measurement detected
+[2018-08-29 19:21:15] Timeout US measurement detected
+[2018-08-29 19:21:16] Timeout US measurement detected
+[2018-08-29 19:21:19] Timeout US measurement detected
+[2018-08-29 19:21:23] Timeout US measurement detected
+[2018-08-29 19:21:24] Writing measurement data to SD Card
+[2018-08-29 19:21:24] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(0.00)
+[2018-08-29 19:21:24] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(1.00)
+[2018-08-29 19:21:24] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(0.00)
+[2018-08-29 19:21:24] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-29 19:21:24] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-29 19:21:26] Timeout US measurement detected
+[2018-08-29 19:21:34] Timeout US measurement detected
+[2018-08-29 19:21:38] Refilling off, Refilling volume: 20 liter
+[2018-08-29 19:21:38] Writing settings to EEP
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-08-29 19:21:58] Reading settings from EEP
+[2018-08-29 19:21:58] EEP checksum ok 
+[2018-08-29 19:21:58] EEPSize 33 Byte
+[2018-08-29 19:21:58] System startup
+[2018-08-29 19:22:01] Timeout US measurement detected
+[2018-08-29 19:22:01] Timeout US measurement detected
+[2018-08-29 19:22:02] Timeout US measurement detected
+[2018-08-29 19:22:03] Timeout US measurement detected
+[2018-08-29 19:22:04] Timeout US measurement detected
+[2018-08-29 19:22:05] Timeout US measurement detected
+[2018-08-29 19:22:06] Timeout US measurement detected
+[2018-08-29 19:22:07] Timeout US measurement detected
+[2018-08-29 19:22:08] Timeout US measurement detected
+[2018-08-29 19:22:09] Timeout US measurement detected
+[2018-08-29 19:22:10] Timeout US measurement detected
+[2018-08-29 19:22:11] Timeout US measurement detected
+[2018-08-29 19:22:12] Timeout US measurement detected
+[2018-08-29 19:22:13] Timeout US measurement detected
+[2018-08-29 19:22:14] Timeout US measurement detected
+[2018-08-29 19:22:15] Timeout US measurement detected
+[2018-08-29 19:22:16] Timeout US measurement detected
+[2018-08-29 19:22:17] Timeout US measurement detected
+[2018-08-29 19:22:18] Timeout US measurement detected
+[2018-08-29 19:22:19] Timeout US measurement detected
+[2018-08-29 19:22:20] Timeout US measurement detected
+[2018-08-29 19:22:21] Timeout US measurement detected
+[2018-08-29 19:22:22] Timeout US measurement detected
+[2018-08-29 19:22:23] Timeout US measurement detected
+[2018-08-29 19:22:24] Timeout US measurement detected
+[2018-08-29 19:22:25] Timeout US measurement detected
+[2018-08-29 19:22:26] Timeout US measurement detected
+[2018-08-29 19:22:27] Timeout US measurement detected
+[2018-08-29 19:22:28] Timeout US measurement detected
+[2018-08-29 19:22:29] Timeout US measurement detected
+[2018-08-29 19:22:30] Timeout US measurement detected
+[2018-08-29 19:22:31] Timeout US measurement detected
+[2018-08-29 19:22:33] Timeout US measurement detected
+[2018-08-29 19:22:33] Timeout US measurement detected
+[2018-08-29 19:22:34] Timeout US measurement detected
+[2018-08-29 19:22:35] Timeout US measurement detected
+[2018-08-29 19:22:36] Timeout US measurement detected
+[2018-08-29 19:22:37] Timeout US measurement detected
+[2018-08-29 19:22:38] Timeout US measurement detected
+[2018-08-29 19:22:40] Timeout US measurement detected
+[2018-08-29 19:22:40] Timeout US measurement detected
+[2018-08-29 19:22:41] Timeout US measurement detected
+[2018-08-29 19:22:42] Timeout US measurement detected
+[2018-08-29 19:22:44] Timeout US measurement detected
+[2018-08-29 19:22:44] Timeout US measurement detected
+[2018-08-29 19:22:45] Timeout US measurement detected
+[2018-08-29 19:22:46] Timeout US measurement detected
+[2018-08-29 19:22:47] Timeout US measurement detected
+[2018-08-29 19:22:48] Timeout US measurement detected
+[2018-08-29 19:22:49] Timeout US measurement detected
+[2018-08-29 19:22:50] Timeout US measurement detected
+[2018-08-29 19:22:51] Timeout US measurement detected
+[2018-08-29 19:22:52] Timeout US measurement detected
+[2018-08-29 19:22:53] Timeout US measurement detected
+[2018-08-29 19:22:54] Timeout US measurement detected
+[2018-08-29 19:22:55] Timeout US measurement detected
+[2018-08-29 19:22:56] Timeout US measurement detected
+[2018-08-29 19:22:57] Timeout US measurement detected
+[2018-08-29 19:22:58] Time updated by NTP
+[2018-08-29 19:22:58] Timeout US measurement detected
+[2018-08-29 19:22:59] Timeout US measurement detected
+[2018-08-29 19:23:00] Timeout US measurement detected
+[2018-08-29 19:23:01] Timeout US measurement detected
+[2018-08-29 19:23:02] Timeout US measurement detected
+[2018-08-29 19:23:03] Timeout US measurement detected
+[2018-08-29 19:23:04] Timeout US measurement detected
+[2018-08-29 19:23:05] Timeout US measurement detected
+[2018-08-29 19:23:06] Timeout US measurement detected
+[2018-08-29 19:23:07] Timeout US measurement detected
+[2018-08-29 19:23:09] Timeout US measurement detected
+[2018-08-29 19:23:09] Timeout US measurement detected
+[2018-08-29 19:23:10] Timeout US measurement detected
+[2018-08-29 19:23:11] Timeout US measurement detected
+[2018-08-29 19:23:12] Timeout US measurement detected
+[2018-08-29 19:23:13] Timeout US measurement detected
+[2018-08-29 19:23:14] Timeout US measurement detected
+[2018-08-29 19:23:15] Timeout US measurement detected
+[2018-08-29 19:23:16] Timeout US measurement detected
+[2018-08-29 19:23:17] Timeout US measurement detected
+[2018-08-29 19:23:18] Timeout US measurement detected
+[2018-08-29 19:23:19] Timeout US measurement detected
+[2018-08-29 19:23:20] Timeout US measurement detected
+[2018-08-29 19:23:21] Timeout US measurement detected
+[2018-08-29 19:23:22] Timeout US measurement detected
+[2018-08-29 19:23:23] Timeout US measurement detected
+[2018-08-29 19:23:24] Timeout US measurement detected
+[2018-08-29 19:23:25] Timeout US measurement detected
+[2018-08-29 19:23:26] Timeout US measurement detected
+[2018-08-29 19:23:27] Timeout US measurement detected
+[2018-08-29 19:23:28] Timeout US measurement detected
+[2018-08-29 19:23:29] Timeout US measurement detected
+[2018-08-29 19:23:30] Timeout US measurement detected
+[2018-08-29 19:23:31] Timeout US measurement detected
+[2018-08-29 19:23:32] Timeout US measurement detected
+[2018-08-29 19:23:33] Timeout US measurement detected
+[2018-08-29 19:23:34] Timeout US measurement detected
+[2018-08-29 19:23:35] Timeout US measurement detected
+[2018-08-29 19:23:37] Timeout US measurement detected
+[2018-08-29 19:23:37] Timeout US measurement detected
+[2018-08-29 19:23:38] Writing measurement data to SD Card
+[2018-08-29 19:23:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(0.00)
+[2018-08-29 19:23:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(1.00)
+[2018-08-29 19:23:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(0.00)
+[2018-08-29 19:23:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-29 19:23:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-29 19:23:39] Timeout US measurement detected
+[2018-08-29 19:23:40] Timeout US measurement detected
+[2018-08-29 19:23:41] Timeout US measurement detected
+[2018-08-29 19:23:42] Timeout US measurement detected
+[2018-08-29 19:23:43] Timeout US measurement detected
+[2018-08-29 19:23:44] Timeout US measurement detected
+[2018-08-29 19:23:45] Timeout US measurement detected
+[2018-08-29 19:23:46] Timeout US measurement detected
+[2018-08-29 19:23:47] Timeout US measurement detected
+[2018-08-29 19:23:48] Timeout US measurement detected
+[2018-08-29 19:23:49] Timeout US measurement detected
+[2018-08-29 19:23:50] Timeout US measurement detected
+[2018-08-29 19:23:51] Timeout US measurement detected
+[2018-08-29 19:23:52] Timeout US measurement detected
+[2018-08-29 19:23:53] Timeout US measurement detected
+[2018-08-29 19:23:54] Timeout US measurement detected
+[2018-08-29 19:23:55] Timeout US measurement detected
+[2018-08-29 19:23:56] Timeout US measurement detected
+[2018-08-29 19:23:57] Timeout US measurement detected
+[2018-08-29 19:24:35] Refilling requested by manual button
+[2018-08-29 19:24:35] Refilling on. Duration 60 s
+[2018-08-29 19:24:35] Off-Time: 2018-08-29 19:25:35
+[2018-08-29 19:25:19] Writing measurement data to SD Card
+[2018-08-29 19:25:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(691.00)
+[2018-08-29 19:25:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-29 19:25:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-29 19:25:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-29 19:25:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-29 19:25:36] Refilling off, Refilling volume: 20 liter
+[2018-08-29 19:25:36] Writing settings to EEP
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-08-29 19:25:54] Reading settings from EEP
+[2018-08-29 19:25:54] EEP checksum ok 
+[2018-08-29 19:25:54] EEPSize 33 Byte
+[2018-08-29 19:25:54] System startup
+[2018-08-29 19:26:54] Time updated by NTP
+[2018-08-29 19:27:23] Timeout US measurement detected
+[2018-08-29 19:27:34] Writing measurement data to SD Card
+[2018-08-29 19:27:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(691.00)
+[2018-08-29 19:27:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-29 19:27:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-29 19:27:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-29 19:27:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-08-29 20:04:18] Reading settings from EEP
+[2018-08-29 20:04:18] EEP checksum ok 
+[2018-08-29 20:04:18] EEPSize 33 Byte
+[2018-08-29 20:04:18] System startup
+[2018-08-29 20:05:18] Time updated by NTP
+[2018-08-29 20:05:58] Writing measurement data to SD Card
+[2018-08-29 20:05:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(691.00)
+[2018-08-29 20:05:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-29 20:05:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-29 20:05:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-29 20:05:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-29 20:06:11] Refilling requested by manual button
+[2018-08-29 20:06:11] Refilling on. Duration 60 s
+[2018-08-29 20:06:11] Off-Time: 2018-08-29 20:07:11
+[2018-08-29 20:07:12] Refilling off, Refilling volume: 20 liter
+[2018-08-29 20:07:12] Writing settings to EEP
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Using Fixed IP
+[1970-00-00 00:00:00] IP-Address: 192.168.178.5
+[2018-08-29 20:08:19] Reading settings from EEP
+[2018-08-29 20:08:19] EEP checksum ok 
+[2018-08-29 20:08:19] EEPSize 33 Byte
+[2018-08-29 20:08:19] System startup
+[2018-08-29 20:08:22] Refilling requested by manual button
+[2018-08-29 20:08:22] Refilling on. Duration 60 s
+[2018-08-29 20:08:22] Off-Time: 2018-08-29 20:09:22
+[2018-08-29 20:09:05] Writing settings to EEP
+[2018-08-29 20:09:19] Time updated by NTP
+[2018-08-29 20:09:23] Refilling off, Refilling volume: 20 liter
+[2018-08-29 20:09:23] Writing settings to EEP
+[2018-08-29 20:10:00] Writing measurement data to SD Card
+[2018-08-29 20:10:01] Connection to CCU failed
+[2018-08-29 20:10:01] Result: 0
+[2018-08-29 20:10:02] Connection to CCU failed
+[2018-08-29 20:10:02] Result: 0
+[2018-08-29 20:10:03] Connection to CCU failed
+[2018-08-29 20:10:03] Result: 0
+[2018-08-29 20:10:04] Connection to CCU failed
+[2018-08-29 20:10:04] Result: 0
+[2018-08-29 20:10:05] Connection to CCU failed
+[2018-08-29 20:10:05] Result: 0
+[2018-08-29 20:10:57] Refilling requested by manual button
+[2018-08-29 20:10:57] Refilling on. Duration 30 s
+[2018-08-29 20:10:57] Off-Time: 2018-08-29 20:11:27
+[2018-08-29 20:11:28] Refilling off, Refilling volume: 10 liter
+[2018-08-29 20:11:28] Writing settings to EEP
+[2018-08-29 20:13:08] Writing measurement data to SD Card
+[2018-08-29 20:13:09] Connection to CCU failed
+[2018-08-29 20:13:09] Result: 0
+[2018-08-29 20:13:10] Connection to CCU failed
+[2018-08-29 20:13:10] Result: 0
+[2018-08-29 20:13:11] Connection to CCU failed
+[2018-08-29 20:13:11] Result: 0
+[2018-08-29 20:13:12] Connection to CCU failed
+[2018-08-29 20:13:12] Result: 0
+[2018-08-29 20:13:13] Connection to CCU failed
+[2018-08-29 20:13:13] Result: 0
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-08-29 20:32:27] Reading settings from EEP
+[2018-08-29 20:32:27] EEP checksum ok 
+[2018-08-29 20:32:27] EEPSize 33 Byte
+[2018-08-29 20:32:27] System startup
+[2018-08-29 20:32:27] Timeout US measurement detected
+[2018-08-29 20:32:28] Timeout US measurement detected
+[2018-08-29 20:32:29] Timeout US measurement detected
+[2018-08-29 20:32:30] Timeout US measurement detected
+[2018-08-29 20:32:31] Timeout US measurement detected
+[2018-08-29 20:32:32] Timeout US measurement detected
+[2018-08-29 20:32:33] Timeout US measurement detected
+[2018-08-29 20:32:34] Timeout US measurement detected
+[2018-08-29 20:32:35] Timeout US measurement detected
+[2018-08-29 20:32:36] Timeout US measurement detected
+[2018-08-29 20:32:37] Timeout US measurement detected
+[2018-08-29 20:32:38] Timeout US measurement detected
+[2018-08-29 20:32:40] Timeout US measurement detected
+[2018-08-29 20:32:40] Timeout US measurement detected
+[2018-08-29 20:32:41] Timeout US measurement detected
+[2018-08-29 20:32:42] Timeout US measurement detected
+[2018-08-29 20:32:43] Timeout US measurement detected
+[2018-08-29 20:32:44] Timeout US measurement detected
+[2018-08-29 20:32:45] Timeout US measurement detected
+[2018-08-29 20:32:46] Timeout US measurement detected
+[2018-08-29 20:32:47] Timeout US measurement detected
+[2018-08-29 20:32:48] Timeout US measurement detected
+[2018-08-29 20:32:49] Timeout US measurement detected
+[2018-08-29 20:32:50] Timeout US measurement detected
+[2018-08-29 20:32:51] Timeout US measurement detected
+[2018-08-29 20:32:52] Timeout US measurement detected
+[2018-08-29 20:32:53] Timeout US measurement detected
+[2018-08-29 20:32:54] Timeout US measurement detected
+[2018-08-29 20:32:55] Timeout US measurement detected
+[2018-08-29 20:32:56] Timeout US measurement detected
+[2018-08-29 20:32:57] Timeout US measurement detected
+[2018-08-29 20:32:58] Timeout US measurement detected
+[2018-08-29 20:32:59] Timeout US measurement detected
+[2018-08-29 20:33:00] Timeout US measurement detected
+[2018-08-29 20:33:01] Timeout US measurement detected
+[2018-08-29 20:33:02] Timeout US measurement detected
+[2018-08-29 20:33:03] Timeout US measurement detected
+[2018-08-29 20:33:04] Timeout US measurement detected
+[2018-08-29 20:33:06] Timeout US measurement detected
+[2018-08-29 20:33:06] Timeout US measurement detected
+[2018-08-29 20:33:07] Timeout US measurement detected
+[2018-08-29 20:33:08] Timeout US measurement detected
+[2018-08-29 20:33:09] Timeout US measurement detected
+[2018-08-29 20:33:10] Timeout US measurement detected
+[2018-08-29 20:33:11] Timeout US measurement detected
+[2018-08-29 20:33:12] Timeout US measurement detected
+[2018-08-29 20:33:13] Timeout US measurement detected
+[2018-08-29 20:33:14] Timeout US measurement detected
+[2018-08-29 20:33:15] Timeout US measurement detected
+[2018-08-29 20:33:16] Timeout US measurement detected
+[2018-08-29 20:33:17] Timeout US measurement detected
+[2018-08-29 20:33:18] Timeout US measurement detected
+[2018-08-29 20:33:19] Timeout US measurement detected
+[2018-08-29 20:33:20] Timeout US measurement detected
+[2018-08-29 20:33:22] Timeout US measurement detected
+[2018-08-29 20:33:22] Timeout US measurement detected
+[2018-08-29 20:33:24] Timeout US measurement detected
+[2018-08-29 20:33:25] Timeout US measurement detected
+[2018-08-29 20:33:26] Timeout US measurement detected
+[2018-08-29 20:33:27] Timeout US measurement detected
+[2018-08-29 20:33:27] Time updated by NTP
+[2018-08-29 20:33:28] Timeout US measurement detected
+[2018-08-29 20:33:29] Timeout US measurement detected
+[2018-08-29 20:33:30] Timeout US measurement detected
+[2018-08-29 20:33:31] Timeout US measurement detected
+[2018-08-29 20:33:32] Timeout US measurement detected
+[2018-08-29 20:33:33] Timeout US measurement detected
+[2018-08-29 20:33:34] Timeout US measurement detected
+[2018-08-29 20:33:35] Timeout US measurement detected
+[2018-08-29 20:33:36] Timeout US measurement detected
+[2018-08-29 20:33:37] Timeout US measurement detected
+[2018-08-29 20:33:38] Timeout US measurement detected
+[2018-08-29 20:33:39] Timeout US measurement detected
+[2018-08-29 20:33:40] Timeout US measurement detected
+[2018-08-29 20:33:41] Timeout US measurement detected
+[2018-08-29 20:33:42] Timeout US measurement detected
+[2018-08-29 20:33:43] Timeout US measurement detected
+[2018-08-29 20:33:44] Timeout US measurement detected
+[2018-08-29 20:33:45] Timeout US measurement detected
+[2018-08-29 20:33:46] Timeout US measurement detected
+[2018-08-29 20:33:47] Timeout US measurement detected
+[2018-08-29 20:33:48] Timeout US measurement detected
+[2018-08-29 20:33:49] Timeout US measurement detected
+[2018-08-29 20:33:50] Timeout US measurement detected
+[2018-08-29 20:33:51] Timeout US measurement detected
+[2018-08-29 20:33:52] Timeout US measurement detected
+[2018-08-29 20:33:53] Timeout US measurement detected
+[2018-08-29 20:33:54] Timeout US measurement detected
+[2018-08-29 20:33:55] Timeout US measurement detected
+[2018-08-29 20:33:56] Timeout US measurement detected
+[2018-08-29 20:33:57] Timeout US measurement detected
+[2018-08-29 20:33:58] Timeout US measurement detected
+[2018-08-29 20:33:59] Timeout US measurement detected
+[2018-08-29 20:34:00] Timeout US measurement detected
+[2018-08-29 20:34:01] Timeout US measurement detected
+[2018-08-29 20:34:02] Timeout US measurement detected
+[2018-08-29 20:34:03] Timeout US measurement detected
+[2018-08-29 20:34:04] Timeout US measurement detected
+[2018-08-29 20:34:05] Timeout US measurement detected
+[2018-08-29 20:34:06] Timeout US measurement detected
+[2018-08-29 20:34:07] Timeout US measurement detected
+[2018-08-29 20:34:07] Writing measurement data to SD Card
+[2018-08-29 20:34:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(0.00)
+[2018-08-29 20:34:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(1.00)
+[2018-08-29 20:34:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(0.00)
+[2018-08-29 20:34:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-29 20:34:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-29 20:34:08] Timeout US measurement detected
+[2018-08-29 20:34:09] Timeout US measurement detected
+[2018-08-29 20:34:10] Timeout US measurement detected
+[2018-08-29 20:34:11] Timeout US measurement detected
+[2018-08-29 20:34:12] Timeout US measurement detected
+[2018-08-29 20:34:13] Timeout US measurement detected
+[2018-08-29 20:34:14] Timeout US measurement detected
+[2018-08-29 20:34:15] Timeout US measurement detected
+[2018-08-29 20:34:16] Timeout US measurement detected
+[2018-08-29 20:34:17] Timeout US measurement detected
+[2018-08-29 20:34:18] Timeout US measurement detected
+[2018-08-29 20:34:19] Timeout US measurement detected
+[2018-08-29 20:34:20] Timeout US measurement detected
+[2018-08-29 20:34:21] Timeout US measurement detected
+[2018-08-29 20:34:22] Timeout US measurement detected
+[2018-08-29 20:34:23] Timeout US measurement detected
+[2018-08-29 20:34:24] Timeout US measurement detected
+[2018-08-29 20:34:25] Timeout US measurement detected
+[2018-08-29 20:34:26] Timeout US measurement detected
+[2018-08-29 20:34:27] Timeout US measurement detected
+[2018-08-29 20:34:28] Timeout US measurement detected
+[2018-08-29 20:34:29] Timeout US measurement detected
+[2018-08-29 20:34:30] Timeout US measurement detected
+[2018-08-29 20:34:31] Timeout US measurement detected
+[2018-08-29 20:34:32] Timeout US measurement detected
+[2018-08-29 20:34:33] Timeout US measurement detected
+[2018-08-29 20:34:34] Timeout US measurement detected
+[2018-08-29 20:34:35] Refilling requested by manual button
+[2018-08-29 20:34:35] Refilling on. Duration 30 s
+[2018-08-29 20:34:35] Off-Time: 2018-08-29 20:35:05
+[2018-08-29 20:34:35] Timeout US measurement detected
+[2018-08-29 20:34:36] Timeout US measurement detected
+[2018-08-29 20:34:37] Timeout US measurement detected
+[2018-08-29 20:34:38] Timeout US measurement detected
+[2018-08-29 20:34:39] Timeout US measurement detected
+[2018-08-29 20:34:40] Timeout US measurement detected
+[2018-08-29 20:34:41] Timeout US measurement detected
+[2018-08-29 20:34:42] Timeout US measurement detected
+[2018-08-29 20:34:44] Timeout US measurement detected
+[2018-08-29 20:34:44] Timeout US measurement detected
+[2018-08-29 20:34:45] Timeout US measurement detected
+[2018-08-29 20:34:46] Timeout US measurement detected
+[2018-08-29 20:34:47] Timeout US measurement detected
+[2018-08-29 20:34:48] Timeout US measurement detected
+[2018-08-29 20:34:49] Timeout US measurement detected
+[2018-08-29 20:34:50] Timeout US measurement detected
+[2018-08-29 20:34:51] Timeout US measurement detected
+[2018-08-29 20:34:52] Timeout US measurement detected
+[2018-08-29 20:34:53] Timeout US measurement detected
+[2018-08-29 20:34:54] Timeout US measurement detected
+[2018-08-29 20:34:55] Timeout US measurement detected
+[2018-08-29 20:34:56] Timeout US measurement detected
+[2018-08-29 20:34:57] Timeout US measurement detected
+[2018-08-29 20:34:58] Timeout US measurement detected
+[2018-08-29 20:34:59] Timeout US measurement detected
+[2018-08-29 20:35:00] Timeout US measurement detected
+[2018-08-29 20:35:01] Timeout US measurement detected
+[2018-08-29 20:35:02] Timeout US measurement detected
+[2018-08-29 20:35:03] Timeout US measurement detected
+[2018-08-29 20:35:04] Timeout US measurement detected
+[2018-08-29 20:35:05] Timeout US measurement detected
+[2018-08-29 20:35:06] Refilling off, Refilling volume: 10 liter
+[2018-08-29 20:35:06] Writing settings to EEP
+[2018-08-29 20:35:06] Timeout US measurement detected
+[2018-08-29 20:35:07] Timeout US measurement detected
+[2018-08-29 20:35:08] Timeout US measurement detected
+[2018-08-29 20:35:09] Timeout US measurement detected
+[2018-08-29 20:35:10] Timeout US measurement detected
+[2018-08-29 20:35:11] Timeout US measurement detected
+[2018-08-29 20:35:12] Timeout US measurement detected
+[2018-08-29 20:35:13] Timeout US measurement detected
+[2018-08-29 20:35:14] Timeout US measurement detected
+[2018-08-29 20:35:15] Timeout US measurement detected
+[2018-08-29 20:35:16] Timeout US measurement detected
+[2018-08-29 20:35:17] Timeout US measurement detected
+[2018-08-29 20:35:18] Timeout US measurement detected
+[2018-08-29 20:35:19] Timeout US measurement detected
+[2018-08-29 20:35:20] Timeout US measurement detected
+[2018-08-29 20:35:21] Timeout US measurement detected
+[2018-08-29 20:35:22] Timeout US measurement detected
+[2018-08-29 20:35:23] Timeout US measurement detected
+[2018-08-29 20:35:24] Timeout US measurement detected
+[2018-08-29 20:35:25] Timeout US measurement detected
+[2018-08-29 20:35:26] Timeout US measurement detected
+[2018-08-29 20:35:27] Timeout US measurement detected
+[2018-08-29 20:35:28] Timeout US measurement detected
+[2018-08-29 20:35:29] Timeout US measurement detected
+[2018-08-29 20:35:30] Timeout US measurement detected
+[2018-08-29 20:35:31] Timeout US measurement detected
+[2018-08-29 20:35:32] Timeout US measurement detected
+[2018-08-29 20:35:33] Timeout US measurement detected
+[2018-08-29 20:35:34] Timeout US measurement detected
+[2018-08-29 20:35:35] Timeout US measurement detected
+[2018-08-29 20:35:36] Timeout US measurement detected
+[2018-08-29 20:35:37] Timeout US measurement detected
+[2018-08-29 20:35:38] Timeout US measurement detected
+[2018-08-29 20:35:39] Timeout US measurement detected
+[2018-08-29 20:35:40] Timeout US measurement detected
+[2018-08-29 20:35:41] Timeout US measurement detected
+[2018-08-29 20:35:42] Timeout US measurement detected
+[2018-08-29 20:35:43] Timeout US measurement detected
+[2018-08-29 20:35:44] Timeout US measurement detected
+[2018-08-29 20:35:45] Timeout US measurement detected
+[2018-08-29 20:35:46] Timeout US measurement detected
+[2018-08-29 20:35:47] Timeout US measurement detected
+[2018-08-29 20:35:48] Writing measurement data to SD Card
+[2018-08-29 20:35:49] Connection to CCU failed
+[2018-08-29 20:35:49] Result: 0
+[2018-08-29 20:35:50] Connection to CCU failed
+[2018-08-29 20:35:50] Result: 0
+[2018-08-29 20:35:51] Connection to CCU failed
+[2018-08-29 20:35:51] Result: 0
+[2018-08-29 20:35:52] Connection to CCU failed
+[2018-08-29 20:35:52] Result: 0
+[2018-08-29 20:35:53] Connection to CCU failed
+[2018-08-29 20:35:53] Result: 0
+[2018-08-29 20:35:53] Timeout US measurement detected
+[2018-08-29 20:35:53] Timeout US measurement detected
+[2018-08-29 20:35:53] Timeout US measurement detected
+[2018-08-29 20:35:53] Timeout US measurement detected
+[2018-08-29 20:35:53] Timeout US measurement detected
+[2018-08-29 20:35:54] Timeout US measurement detected
+[2018-08-29 20:35:55] Timeout US measurement detected
+[2018-08-29 20:35:56] Timeout US measurement detected
+[2018-08-29 20:35:57] Timeout US measurement detected
+[2018-08-29 20:35:58] Timeout US measurement detected
+[2018-08-29 20:35:59] Timeout US measurement detected
+[2018-08-29 20:36:00] Timeout US measurement detected
+[2018-08-29 20:36:01] Timeout US measurement detected
+[2018-08-29 20:36:02] Timeout US measurement detected
+[2018-08-29 20:36:03] Timeout US measurement detected
+[2018-08-29 20:36:04] Timeout US measurement detected
+[2018-08-29 20:36:05] Timeout US measurement detected
+[2018-08-29 20:36:06] Timeout US measurement detected
+[2018-08-29 20:36:07] Timeout US measurement detected
+[2018-08-29 20:36:08] Timeout US measurement detected
+[2018-08-29 20:36:09] Timeout US measurement detected
+[2018-08-29 20:36:10] Timeout US measurement detected
+[2018-08-29 20:36:11] Timeout US measurement detected
+[2018-08-29 20:36:12] Timeout US measurement detected
+[2018-08-29 20:36:13] Timeout US measurement detected
+[2018-08-29 20:36:14] Timeout US measurement detected
+[2018-08-29 20:36:15] Timeout US measurement detected
+[2018-08-29 20:36:16] Timeout US measurement detected
+[2018-08-29 20:36:17] Timeout US measurement detected
+[2018-08-29 20:36:18] Timeout US measurement detected
+[2018-08-29 20:36:19] Timeout US measurement detected
+[2018-08-29 20:36:20] Timeout US measurement detected
+[2018-08-29 20:36:21] Timeout US measurement detected
+[2018-08-29 20:36:22] Timeout US measurement detected
+[2018-08-29 20:36:23] Timeout US measurement detected
+[2018-08-29 20:36:24] Timeout US measurement detected
+[2018-08-29 20:36:25] Timeout US measurement detected
+[2018-08-29 20:36:26] Timeout US measurement detected
+[2018-08-29 20:36:27] Timeout US measurement detected
+[2018-08-29 20:36:28] Timeout US measurement detected
+[2018-08-29 20:36:29] Timeout US measurement detected
+[2018-08-29 20:36:30] Timeout US measurement detected
+[2018-08-29 20:36:31] Timeout US measurement detected
+[2018-08-29 20:36:32] Timeout US measurement detected
+[2018-08-29 20:36:33] Timeout US measurement detected
+[2018-08-29 20:36:34] Timeout US measurement detected
+[2018-08-29 20:36:35] Timeout US measurement detected
+[2018-08-29 20:36:36] Timeout US measurement detected
+[2018-08-29 20:36:37] Timeout US measurement detected
+[2018-08-29 20:36:38] Timeout US measurement detected
+[2018-08-29 20:36:39] Timeout US measurement detected
+[2018-08-29 20:36:40] Timeout US measurement detected
+[2018-08-29 20:36:41] Timeout US measurement detected
+[2018-08-29 20:36:41] Refilling requested by manual button
+[2018-08-29 20:36:41] Refilling on. Duration 30 s
+[2018-08-29 20:36:41] Off-Time: 2018-08-29 20:37:11
+[2018-08-29 20:36:42] Timeout US measurement detected
+[2018-08-29 20:36:43] Timeout US measurement detected
+[2018-08-29 20:36:44] Timeout US measurement detected
+[2018-08-29 20:36:45] Timeout US measurement detected
+[2018-08-29 20:36:46] Timeout US measurement detected
+[2018-08-29 20:36:47] Timeout US measurement detected
+[2018-08-29 20:36:48] Timeout US measurement detected
+[2018-08-29 20:36:49] Timeout US measurement detected
+[2018-08-29 20:36:50] Timeout US measurement detected
+[2018-08-29 20:36:51] Timeout US measurement detected
+[2018-08-29 20:36:52] Timeout US measurement detected
+[2018-08-29 20:36:53] Timeout US measurement detected
+[2018-08-29 20:36:54] Timeout US measurement detected
+[2018-08-29 20:36:55] Timeout US measurement detected
+[2018-08-29 20:36:56] Timeout US measurement detected
+[2018-08-29 20:36:57] Timeout US measurement detected
+[2018-08-29 20:36:58] Timeout US measurement detected
+[2018-08-29 20:36:59] Timeout US measurement detected
+[2018-08-29 20:37:00] Timeout US measurement detected
+[2018-08-29 20:37:01] Timeout US measurement detected
+[2018-08-29 20:37:02] Timeout US measurement detected
+[2018-08-29 20:37:03] Timeout US measurement detected
+[2018-08-29 20:37:04] Timeout US measurement detected
+[2018-08-29 20:37:05] Timeout US measurement detected
+[2018-08-29 20:37:06] Timeout US measurement detected
+[2018-08-29 20:37:07] Timeout US measurement detected
+[2018-08-29 20:37:08] Timeout US measurement detected
+[2018-08-29 20:37:09] Timeout US measurement detected
+[2018-08-29 20:37:10] Timeout US measurement detected
+[2018-08-29 20:37:11] Timeout US measurement detected
+[2018-08-29 20:37:12] Refilling off, Refilling volume: 10 liter
+[2018-08-29 20:37:12] Writing settings to EEP
+[2018-08-29 20:37:12] Timeout US measurement detected
+[2018-08-29 20:37:13] Timeout US measurement detected
+[2018-08-29 20:37:14] Timeout US measurement detected
+[2018-08-29 20:37:15] Timeout US measurement detected
+[2018-08-29 20:37:16] Timeout US measurement detected
+[2018-08-29 20:37:17] Timeout US measurement detected
+[2018-08-29 20:37:18] Timeout US measurement detected
+[2018-08-29 20:37:19] Timeout US measurement detected
+[2018-08-29 20:37:20] Timeout US measurement detected
+[2018-08-29 20:37:21] Timeout US measurement detected
+[2018-08-29 20:37:22] Timeout US measurement detected
+[2018-08-29 20:37:23] Timeout US measurement detected
+[2018-08-29 20:37:24] Timeout US measurement detected
+[2018-08-29 20:37:25] Timeout US measurement detected
+[2018-08-29 20:37:26] Timeout US measurement detected
+[2018-08-29 20:37:27] Timeout US measurement detected
+[2018-08-29 20:37:28] Timeout US measurement detected
+[2018-08-29 20:37:28] Writing measurement data to SD Card
+[2018-08-29 20:37:29] Connection to CCU failed
+[2018-08-29 20:37:29] Result: 0
+[2018-08-29 20:37:30] Connection to CCU failed
+[2018-08-29 20:37:30] Result: 0
+[2018-08-29 20:37:31] Connection to CCU failed
+[2018-08-29 20:37:31] Result: 0
+[2018-08-29 20:37:32] Connection to CCU failed
+[2018-08-29 20:37:32] Result: 0
+[2018-08-29 20:37:33] Connection to CCU failed
+[2018-08-29 20:37:33] Result: 0
+[2018-08-29 20:37:33] Timeout US measurement detected
+[2018-08-29 20:37:33] Timeout US measurement detected
+[2018-08-29 20:37:34] Timeout US measurement detected
+[2018-08-29 20:37:34] Timeout US measurement detected
+[2018-08-29 20:37:34] Timeout US measurement detected
+[2018-08-29 20:37:34] Timeout US measurement detected
+[2018-08-29 20:37:35] Timeout US measurement detected
+[2018-08-29 20:37:36] Timeout US measurement detected
+[2018-08-29 20:37:37] Timeout US measurement detected
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Using Fixed IP
+[1970-00-00 00:00:00] IP-Address: 192.168.178.5
+[2018-08-29 20:37:42] Reading settings from EEP
+[2018-08-29 20:37:42] EEP checksum ok 
+[2018-08-29 20:37:42] EEPSize 33 Byte
+[2018-08-29 20:37:42] System startup
+[2018-08-29 20:37:43] Timeout US measurement detected
+[2018-08-29 20:37:43] Timeout US measurement detected
+[2018-08-29 20:37:44] Timeout US measurement detected
+[2018-08-29 20:37:45] Timeout US measurement detected
+[2018-08-29 20:37:46] Timeout US measurement detected
+[2018-08-29 20:37:47] Timeout US measurement detected
+[2018-08-29 20:37:48] Timeout US measurement detected
+[2018-08-29 20:37:49] Timeout US measurement detected
+[2018-08-29 20:37:50] Timeout US measurement detected
+[2018-08-29 20:37:51] Timeout US measurement detected
+[2018-08-29 20:37:52] Timeout US measurement detected
+[2018-08-29 20:37:53] Timeout US measurement detected
+[2018-08-29 20:37:54] Timeout US measurement detected
+[2018-08-29 20:37:55] Timeout US measurement detected
+[2018-08-29 20:37:56] Timeout US measurement detected
+[2018-08-29 20:37:57] Timeout US measurement detected
+[2018-08-29 20:37:58] Timeout US measurement detected
+[2018-08-29 20:37:59] Timeout US measurement detected
+[2018-08-29 20:38:00] Timeout US measurement detected
+[2018-08-29 20:38:01] Timeout US measurement detected
+[2018-08-29 20:38:02] Timeout US measurement detected
+[2018-08-29 20:38:03] Timeout US measurement detected
+[2018-08-29 20:38:04] Timeout US measurement detected
+[2018-08-29 20:38:05] Timeout US measurement detected
+[2018-08-29 20:38:06] Timeout US measurement detected
+[2018-08-29 20:38:07] Timeout US measurement detected
+[2018-08-29 20:38:08] Timeout US measurement detected
+[2018-08-29 20:38:09] Timeout US measurement detected
+[2018-08-29 20:38:10] Timeout US measurement detected
+[2018-08-29 20:38:11] Timeout US measurement detected
+[2018-08-29 20:38:12] Timeout US measurement detected
+[2018-08-29 20:38:13] Timeout US measurement detected
+[2018-08-29 20:38:14] Timeout US measurement detected
+[2018-08-29 20:38:15] Timeout US measurement detected
+[2018-08-29 20:38:16] Timeout US measurement detected
+[2018-08-29 20:38:17] Timeout US measurement detected
+[2018-08-29 20:38:18] Timeout US measurement detected
+[2018-08-29 20:38:20] Timeout US measurement detected
+[2018-08-29 20:38:20] Timeout US measurement detected
+[2018-08-29 20:38:21] Timeout US measurement detected
+[2018-08-29 20:38:23] Timeout US measurement detected
+[2018-08-29 20:38:24] Timeout US measurement detected
+[2018-08-29 20:38:25] Timeout US measurement detected
+[2018-08-29 20:38:25] Refilling requested by manual button
+[2018-08-29 20:38:25] Refilling on. Duration 30 s
+[2018-08-29 20:38:25] Off-Time: 2018-08-29 20:38:55
+[2018-08-29 20:38:25] Timeout US measurement detected
+[2018-08-29 20:38:27] Timeout US measurement detected
+[2018-08-29 20:38:27] Timeout US measurement detected
+[2018-08-29 20:38:29] Timeout US measurement detected
+[2018-08-29 20:38:30] Timeout US measurement detected
+[2018-08-29 20:38:31] Timeout US measurement detected
+[2018-08-29 20:38:32] Timeout US measurement detected
+[2018-08-29 20:38:33] Timeout US measurement detected
+[2018-08-29 20:38:34] Timeout US measurement detected
+[2018-08-29 20:38:35] Timeout US measurement detected
+[2018-08-29 20:38:36] Timeout US measurement detected
+[2018-08-29 20:38:37] Timeout US measurement detected
+[2018-08-29 20:38:38] Timeout US measurement detected
+[2018-08-29 20:38:39] Timeout US measurement detected
+[2018-08-29 20:38:40] Timeout US measurement detected
+[2018-08-29 20:38:41] Timeout US measurement detected
+[2018-08-29 20:38:42] Timeout US measurement detected
+[2018-08-29 20:38:42] Time updated by NTP
+[2018-08-29 20:38:43] Timeout US measurement detected
+[2018-08-29 20:38:44] Timeout US measurement detected
+[2018-08-29 20:38:45] Timeout US measurement detected
+[2018-08-29 20:38:46] Timeout US measurement detected
+[2018-08-29 20:38:47] Timeout US measurement detected
+[2018-08-29 20:38:48] Timeout US measurement detected
+[2018-08-29 20:38:49] Timeout US measurement detected
+[2018-08-29 20:38:50] Timeout US measurement detected
+[2018-08-29 20:38:51] Timeout US measurement detected
+[2018-08-29 20:38:52] Timeout US measurement detected
+[2018-08-29 20:38:53] Timeout US measurement detected
+[2018-08-29 20:38:54] Timeout US measurement detected
+[2018-08-29 20:38:55] Timeout US measurement detected
+[2018-08-29 20:38:56] Refilling off, Refilling volume: 10 liter
+[2018-08-29 20:38:56] Writing settings to EEP
+[2018-08-29 20:38:56] Timeout US measurement detected
+[2018-08-29 20:38:57] Timeout US measurement detected
+[2018-08-29 20:38:58] Timeout US measurement detected
+[2018-08-29 20:38:59] Timeout US measurement detected
+[2018-08-29 20:39:00] Timeout US measurement detected
+[2018-08-29 20:39:01] Timeout US measurement detected
+[2018-08-29 20:39:02] Timeout US measurement detected
+[2018-08-29 20:39:03] Timeout US measurement detected
+[2018-08-29 20:39:04] Timeout US measurement detected
+[2018-08-29 20:39:05] Timeout US measurement detected
+[2018-08-29 20:39:06] Timeout US measurement detected
+[2018-08-29 20:39:07] Timeout US measurement detected
+[2018-08-29 20:39:08] Timeout US measurement detected
+[2018-08-29 20:39:09] Timeout US measurement detected
+[2018-08-29 20:39:10] Timeout US measurement detected
+[2018-08-29 20:39:11] Timeout US measurement detected
+[2018-08-29 20:39:12] Timeout US measurement detected
+[2018-08-29 20:39:13] Timeout US measurement detected
+[2018-08-29 20:39:14] Timeout US measurement detected
+[2018-08-29 20:39:15] Timeout US measurement detected
+[2018-08-29 20:39:16] Timeout US measurement detected
+[2018-08-29 20:39:17] Timeout US measurement detected
+[2018-08-29 20:39:18] Timeout US measurement detected
+[2018-08-29 20:39:19] Timeout US measurement detected
+[2018-08-29 20:39:20] Timeout US measurement detected
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-08-29 20:39:58] Reading settings from EEP
+[2018-08-29 20:39:58] EEP checksum ok 
+[2018-08-29 20:39:58] EEPSize 33 Byte
+[2018-08-29 20:39:58] System startup
+[2018-08-29 20:39:59] Timeout US measurement detected
+[2018-08-29 20:39:59] Timeout US measurement detected
+[2018-08-29 20:40:00] Timeout US measurement detected
+[2018-08-29 20:40:01] Timeout US measurement detected
+[2018-08-29 20:40:02] Timeout US measurement detected
+[2018-08-29 20:40:03] Timeout US measurement detected
+[2018-08-29 20:40:04] Timeout US measurement detected
+[2018-08-29 20:40:06] Timeout US measurement detected
+[2018-08-29 20:40:06] Timeout US measurement detected
+[2018-08-29 20:40:07] Timeout US measurement detected
+[2018-08-29 20:40:08] Timeout US measurement detected
+[2018-08-29 20:40:09] Timeout US measurement detected
+[2018-08-29 20:40:10] Timeout US measurement detected
+[2018-08-29 20:40:11] Refilling requested by manual button
+[2018-08-29 20:40:11] Refilling on. Duration 30 s
+[2018-08-29 20:40:11] Off-Time: 2018-08-29 20:40:41
+[2018-08-29 20:40:11] Timeout US measurement detected
+[2018-08-29 20:40:12] Timeout US measurement detected
+[2018-08-29 20:40:13] Timeout US measurement detected
+[2018-08-29 20:40:14] Timeout US measurement detected
+[2018-08-29 20:40:15] Timeout US measurement detected
+[2018-08-29 20:40:16] Timeout US measurement detected
+[2018-08-29 20:40:17] Timeout US measurement detected
+[2018-08-29 20:40:18] Timeout US measurement detected
+[2018-08-29 20:40:19] Timeout US measurement detected
+[2018-08-29 20:40:20] Timeout US measurement detected
+[2018-08-29 20:40:21] Timeout US measurement detected
+[2018-08-29 20:40:22] Timeout US measurement detected
+[2018-08-29 20:40:23] Timeout US measurement detected
+[2018-08-29 20:40:24] Timeout US measurement detected
+[2018-08-29 20:40:26] Timeout US measurement detected
+[2018-08-29 20:40:26] Timeout US measurement detected
+[2018-08-29 20:40:28] Timeout US measurement detected
+[2018-08-29 20:40:29] Timeout US measurement detected
+[2018-08-29 20:40:30] Timeout US measurement detected
+[2018-08-29 20:40:31] Timeout US measurement detected
+[2018-08-29 20:40:32] Timeout US measurement detected
+[2018-08-29 20:40:33] Timeout US measurement detected
+[2018-08-29 20:40:34] Timeout US measurement detected
+[2018-08-29 20:40:35] Timeout US measurement detected
+[2018-08-29 20:40:36] Timeout US measurement detected
+[2018-08-29 20:40:37] Timeout US measurement detected
+[2018-08-29 20:40:38] Timeout US measurement detected
+[2018-08-29 20:40:39] Timeout US measurement detected
+[2018-08-29 20:40:40] Timeout US measurement detected
+[2018-08-29 20:40:41] Timeout US measurement detected
+[2018-08-29 20:40:42] Refilling off, Refilling volume: 10 liter
+[2018-08-29 20:40:42] Writing settings to EEP
+[2018-08-29 20:40:42] Timeout US measurement detected
+[2018-08-29 20:40:43] Timeout US measurement detected
+[2018-08-29 20:40:44] Timeout US measurement detected
+[2018-08-29 20:40:45] Timeout US measurement detected
+[2018-08-29 20:40:46] Timeout US measurement detected
+[2018-08-29 20:40:47] Timeout US measurement detected
+[2018-08-29 20:40:48] Timeout US measurement detected
+[2018-08-29 20:40:49] Timeout US measurement detected
+[2018-08-29 20:40:50] Timeout US measurement detected
+[2018-08-29 20:40:51] Timeout US measurement detected
+[2018-08-29 20:40:52] Timeout US measurement detected
+[2018-08-29 20:40:53] Timeout US measurement detected
+[2018-08-29 20:40:54] Timeout US measurement detected
+[2018-08-29 20:40:55] Timeout US measurement detected
+[2018-08-29 20:40:56] Timeout US measurement detected
+[2018-08-29 20:40:57] Timeout US measurement detected
+[2018-08-29 20:40:58] Timeout US measurement detected
+[2018-08-29 20:40:58] Time updated by NTP
+[2018-08-29 20:40:59] Timeout US measurement detected
+[2018-08-29 20:40:59] Refilling requested by manual button
+[2018-08-29 20:40:59] Refilling on. Duration 30 s
+[2018-08-29 20:40:59] Off-Time: 2018-08-29 20:41:29
+[2018-08-29 20:41:00] Timeout US measurement detected
+[2018-08-29 20:41:01] Timeout US measurement detected
+[2018-08-29 20:41:02] Timeout US measurement detected
+[2018-08-29 20:41:03] Timeout US measurement detected
+[2018-08-29 20:41:04] Timeout US measurement detected
+[2018-08-29 20:41:05] Timeout US measurement detected
+[2018-08-29 20:41:06] Timeout US measurement detected
+[2018-08-29 20:41:07] Timeout US measurement detected
+[2018-08-29 20:41:08] Timeout US measurement detected
+[2018-08-29 20:41:09] Timeout US measurement detected
+[2018-08-29 20:41:10] Timeout US measurement detected
+[2018-08-29 20:41:11] Timeout US measurement detected
+[2018-08-29 20:41:12] Timeout US measurement detected
+[2018-08-29 20:41:13] Timeout US measurement detected
+[2018-08-29 20:41:14] Timeout US measurement detected
+[2018-08-29 20:41:15] Timeout US measurement detected
+[2018-08-29 20:41:16] Timeout US measurement detected
+[2018-08-29 20:41:17] Timeout US measurement detected
+[2018-08-29 20:41:18] Timeout US measurement detected
+[2018-08-29 20:41:19] Timeout US measurement detected
+[2018-08-29 20:41:20] Timeout US measurement detected
+[2018-08-29 20:41:21] Timeout US measurement detected
+[2018-08-29 20:41:22] Timeout US measurement detected
+[2018-08-29 20:41:23] Timeout US measurement detected
+[2018-08-29 20:41:24] Timeout US measurement detected
+[2018-08-29 20:41:25] Timeout US measurement detected
+[2018-08-29 20:41:26] Timeout US measurement detected
+[2018-08-29 20:41:27] Timeout US measurement detected
+[2018-08-29 20:41:28] Timeout US measurement detected
+[2018-08-29 20:41:29] Timeout US measurement detected
+[2018-08-29 20:41:30] Refilling off, Refilling volume: 10 liter
+[2018-08-29 20:41:30] Writing settings to EEP
+[2018-08-29 20:41:30] Timeout US measurement detected
+[2018-08-29 20:41:31] Timeout US measurement detected
+[2018-08-29 20:41:32] Timeout US measurement detected
+[2018-08-29 20:41:33] Timeout US measurement detected
+[2018-08-29 20:41:34] Timeout US measurement detected
+[2018-08-29 20:41:35] Timeout US measurement detected
+[2018-08-29 20:41:36] Timeout US measurement detected
+[2018-08-29 20:41:37] Timeout US measurement detected
+[2018-08-29 20:41:38] Timeout US measurement detected
+[2018-08-29 20:41:38] Writing measurement data to SD Card
+[2018-08-29 20:41:39] Connection to CCU failed
+[2018-08-29 20:41:39] Result: 0
+[2018-08-29 20:41:40] Connection to CCU failed
+[2018-08-29 20:41:40] Result: 0
+[2018-08-29 20:41:41] Connection to CCU failed
+[2018-08-29 20:41:41] Result: 0
+[2018-08-29 20:41:42] Connection to CCU failed
+[2018-08-29 20:41:42] Result: 0
+[2018-08-29 20:41:43] Connection to CCU failed
+[2018-08-29 20:41:43] Result: 0
+[2018-08-29 20:41:43] Timeout US measurement detected
+[2018-08-29 20:41:43] Timeout US measurement detected
+[2018-08-29 20:41:43] Timeout US measurement detected
+[2018-08-29 20:41:43] Timeout US measurement detected
+[2018-08-29 20:41:43] Timeout US measurement detected
+[2018-08-29 20:41:44] Timeout US measurement detected
+[2018-08-29 20:41:45] Timeout US measurement detected
+[2018-08-29 20:41:46] Timeout US measurement detected
+[2018-08-29 20:41:47] Timeout US measurement detected
+[2018-08-29 20:41:48] Timeout US measurement detected
+[2018-08-29 20:41:49] Timeout US measurement detected
+[2018-08-29 20:41:50] Timeout US measurement detected
+[2018-08-29 20:41:51] Timeout US measurement detected
+[2018-08-29 20:41:52] Timeout US measurement detected
+[2018-08-29 20:41:53] Timeout US measurement detected
+[2018-08-29 20:41:54] Timeout US measurement detected
+[2018-08-29 20:41:55] Timeout US measurement detected
+[2018-08-29 20:41:56] Timeout US measurement detected
+[2018-08-29 20:41:57] Timeout US measurement detected
+[2018-08-29 20:41:58] Timeout US measurement detected
+[2018-08-29 20:41:59] Timeout US measurement detected
+[2018-08-29 20:42:00] Timeout US measurement detected
+[2018-08-29 20:42:01] Timeout US measurement detected
+[2018-08-29 20:42:02] Timeout US measurement detected
+[2018-08-29 20:42:03] Timeout US measurement detected
+[2018-08-29 20:42:04] Timeout US measurement detected
+[2018-08-29 20:42:05] Timeout US measurement detected
+[2018-08-29 20:42:06] Timeout US measurement detected
+[2018-08-29 20:42:07] Timeout US measurement detected
+[2018-08-29 20:42:08] Timeout US measurement detected
+[2018-08-29 20:42:09] Timeout US measurement detected
+[2018-08-29 20:42:10] Timeout US measurement detected
+[2018-08-29 20:42:11] Timeout US measurement detected
+[2018-08-29 20:42:12] Timeout US measurement detected
+[2018-08-29 20:42:13] Timeout US measurement detected
+[2018-08-29 20:42:14] Timeout US measurement detected
+[2018-08-29 20:42:15] Timeout US measurement detected
+[2018-08-29 20:42:16] Timeout US measurement detected
+[2018-08-29 20:42:17] Timeout US measurement detected
+[2018-08-29 20:42:18] Timeout US measurement detected
+[2018-08-29 20:42:19] Timeout US measurement detected
+[2018-08-29 20:42:20] Timeout US measurement detected
+[2018-08-29 20:42:21] Timeout US measurement detected
+[2018-08-29 20:42:22] Timeout US measurement detected
+[2018-08-29 20:42:23] Timeout US measurement detected
+[2018-08-29 20:42:24] Timeout US measurement detected
+[2018-08-29 20:42:25] Timeout US measurement detected
+[2018-08-29 20:42:26] Timeout US measurement detected
+[2018-08-29 20:42:27] Timeout US measurement detected
+[2018-08-29 20:42:28] Timeout US measurement detected
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-08-29 20:43:13] Reading settings from EEP
+[2018-08-29 20:43:13] EEP checksum ok 
+[2018-08-29 20:43:13] EEPSize 33 Byte
+[2018-08-29 20:43:13] System startup
+[2018-08-29 20:43:13] Timeout US measurement detected
+[2018-08-29 20:43:14] Timeout US measurement detected
+[2018-08-29 20:43:16] Timeout US measurement detected
+[2018-08-29 20:43:16] Timeout US measurement detected
+[2018-08-29 20:43:17] Refilling requested by manual button
+[2018-08-29 20:43:18] Refilling on. Duration 30 s
+[2018-08-29 20:43:18] Off-Time: 2018-08-29 20:43:48
+[2018-08-29 20:43:18] Timeout US measurement detected
+[2018-08-29 20:43:18] Timeout US measurement detected
+[2018-08-29 20:43:19] Timeout US measurement detected
+[2018-08-29 20:43:20] Timeout US measurement detected
+[2018-08-29 20:43:21] Timeout US measurement detected
+[2018-08-29 20:43:22] Timeout US measurement detected
+[2018-08-29 20:43:23] Timeout US measurement detected
+[2018-08-29 20:43:24] Timeout US measurement detected
+[2018-08-29 20:43:25] Timeout US measurement detected
+[2018-08-29 20:43:26] Timeout US measurement detected
+[2018-08-29 20:43:27] Timeout US measurement detected
+[2018-08-29 20:43:28] Timeout US measurement detected
+[2018-08-29 20:43:29] Timeout US measurement detected
+[2018-08-29 20:43:30] Timeout US measurement detected
+[2018-08-29 20:43:31] Timeout US measurement detected
+[2018-08-29 20:43:32] Timeout US measurement detected
+[2018-08-29 20:43:33] Timeout US measurement detected
+[2018-08-29 20:43:34] Timeout US measurement detected
+[2018-08-29 20:43:35] Timeout US measurement detected
+[2018-08-29 20:43:36] Timeout US measurement detected
+[2018-08-29 20:43:37] Timeout US measurement detected
+[2018-08-29 20:43:38] Timeout US measurement detected
+[2018-08-29 20:43:39] Timeout US measurement detected
+[2018-08-29 20:43:40] Timeout US measurement detected
+[2018-08-29 20:43:41] Timeout US measurement detected
+[2018-08-29 20:43:42] Timeout US measurement detected
+[2018-08-29 20:43:43] Timeout US measurement detected
+[2018-08-29 20:43:44] Timeout US measurement detected
+[2018-08-29 20:43:45] Timeout US measurement detected
+[2018-08-29 20:43:46] Timeout US measurement detected
+[2018-08-29 20:43:48] Timeout US measurement detected
+[2018-08-29 20:43:49] Refilling off, Refilling volume: 10 liter
+[2018-08-29 20:43:49] Writing settings to EEP
+[2018-08-29 20:43:49] Timeout US measurement detected
+[2018-08-29 20:43:50] Timeout US measurement detected
+[2018-08-29 20:43:51] Timeout US measurement detected
+[2018-08-29 20:43:52] Timeout US measurement detected
+[2018-08-29 20:43:53] Timeout US measurement detected
+[2018-08-29 20:43:54] Timeout US measurement detected
+[2018-08-29 20:43:55] Timeout US measurement detected
+[2018-08-29 20:43:56] Timeout US measurement detected
+[2018-08-29 20:43:57] Timeout US measurement detected
+[2018-08-29 20:43:58] Timeout US measurement detected
+[2018-08-29 20:43:59] Timeout US measurement detected
+[2018-08-29 20:44:00] Timeout US measurement detected
+[2018-08-29 20:44:01] Timeout US measurement detected
+[2018-08-29 20:44:02] Timeout US measurement detected
+[2018-08-29 20:44:03] Timeout US measurement detected
+[2018-08-29 20:44:04] Timeout US measurement detected
+[2018-08-29 20:44:05] Timeout US measurement detected
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-08-29 20:48:03] Reading settings from EEP
+[2018-08-29 20:48:03] EEP checksum ok 
+[2018-08-29 20:48:03] EEPSize 33 Byte
+[2018-08-29 20:48:03] System startup
+[2018-08-29 20:48:03] Timeout US measurement detected
+[2018-08-29 20:48:04] Timeout US measurement detected
+[2018-08-29 20:48:05] Timeout US measurement detected
+[2018-08-29 20:48:06] Timeout US measurement detected
+[2018-08-29 20:48:07] Timeout US measurement detected
+[2018-08-29 20:48:08] Timeout US measurement detected
+[2018-08-29 20:48:09] Timeout US measurement detected
+[2018-08-29 20:48:10] Timeout US measurement detected
+[2018-08-29 20:48:11] Timeout US measurement detected
+[2018-08-29 20:48:12] Timeout US measurement detected
+[2018-08-29 20:48:13] Timeout US measurement detected
+[2018-08-29 20:48:14] Timeout US measurement detected
+[2018-08-29 20:48:16] Timeout US measurement detected
+[2018-08-29 20:48:16] Timeout US measurement detected
+[2018-08-29 20:48:17] Timeout US measurement detected
+[2018-08-29 20:48:18] Timeout US measurement detected
+[2018-08-29 20:48:19] Timeout US measurement detected
+[2018-08-29 20:48:20] Timeout US measurement detected
+[2018-08-29 20:48:21] Timeout US measurement detected
+[2018-08-29 20:48:22] Timeout US measurement detected
+[2018-08-29 20:48:23] Timeout US measurement detected
+[2018-08-29 20:48:24] Timeout US measurement detected
+[2018-08-29 20:48:25] Timeout US measurement detected
+[2018-08-29 20:48:26] Timeout US measurement detected
+[2018-08-29 20:48:27] Timeout US measurement detected
+[2018-08-29 20:48:28] Timeout US measurement detected
+[2018-08-29 20:48:29] Timeout US measurement detected
+[2018-08-29 20:48:30] Timeout US measurement detected
+[2018-08-29 20:48:31] Timeout US measurement detected
+[2018-08-29 20:48:32] Timeout US measurement detected
+[2018-08-29 20:48:33] Timeout US measurement detected
+[2018-08-29 20:48:34] Timeout US measurement detected
+[2018-08-29 20:48:35] Timeout US measurement detected
+[2018-08-29 20:48:36] Timeout US measurement detected
+[2018-08-29 20:48:37] Timeout US measurement detected
+[2018-08-29 20:48:38] Timeout US measurement detected
+[2018-08-29 20:48:39] Timeout US measurement detected
+[2018-08-29 20:48:40] Timeout US measurement detected
+[2018-08-29 20:48:41] Timeout US measurement detected
+[2018-08-29 20:48:42] Timeout US measurement detected
+[2018-08-29 20:48:43] Timeout US measurement detected
+[2018-08-29 20:48:44] Timeout US measurement detected
+[2018-08-29 20:48:45] Timeout US measurement detected
+[2018-08-29 20:48:47] Timeout US measurement detected
+[2018-08-29 20:48:48] Timeout US measurement detected
+[2018-08-29 20:48:49] Timeout US measurement detected
+[2018-08-29 20:48:50] Timeout US measurement detected
+[2018-08-29 20:48:51] Timeout US measurement detected
+[2018-08-29 20:48:52] Timeout US measurement detected
+[2018-08-29 20:48:53] Timeout US measurement detected
+[2018-08-29 20:48:54] Timeout US measurement detected
+[2018-08-29 20:48:55] Timeout US measurement detected
+[2018-08-29 20:48:56] Timeout US measurement detected
+[2018-08-29 20:48:57] Timeout US measurement detected
+[2018-08-29 20:48:58] Timeout US measurement detected
+[2018-08-29 20:48:59] Timeout US measurement detected
+[2018-08-29 20:49:00] Timeout US measurement detected
+[2018-08-29 20:49:01] Timeout US measurement detected
+[2018-08-29 20:49:02] Timeout US measurement detected
+[2018-08-29 20:49:03] Timeout US measurement detected
+[2018-08-29 20:49:03] Time updated by NTP
+[2018-08-29 20:49:04] Timeout US measurement detected
+[2018-08-29 20:49:05] Timeout US measurement detected
+[2018-08-29 20:49:06] Timeout US measurement detected
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Using Fixed IP
+[1970-00-00 00:00:00] IP-Address: 192.168.178.5
+[2018-08-29 20:49:09] Reading settings from EEP
+[2018-08-29 20:49:09] EEP checksum ok 
+[2018-08-29 20:49:09] EEPSize 33 Byte
+[2018-08-29 20:49:09] System startup
+[2018-08-29 20:49:10] Timeout US measurement detected
+[2018-08-29 20:49:11] Timeout US measurement detected
+[2018-08-29 20:49:12] Timeout US measurement detected
+[2018-08-29 20:49:13] Timeout US measurement detected
+[2018-08-29 20:49:14] Timeout US measurement detected
+[2018-08-29 20:49:15] Timeout US measurement detected
+[2018-08-29 20:49:16] Timeout US measurement detected
+[2018-08-29 20:49:17] Timeout US measurement detected
+[2018-08-29 20:49:18] Timeout US measurement detected
+[2018-08-29 20:49:19] Timeout US measurement detected
+[2018-08-29 20:49:20] Timeout US measurement detected
+[2018-08-29 20:49:21] Timeout US measurement detected
+[2018-08-29 20:49:22] Timeout US measurement detected
+[2018-08-29 20:49:23] Timeout US measurement detected
+[2018-08-29 20:49:24] Timeout US measurement detected
+[2018-08-29 20:49:25] Timeout US measurement detected
+[2018-08-29 20:49:26] Timeout US measurement detected
+[2018-08-29 20:49:27] Timeout US measurement detected
+[2018-08-29 20:49:28] Timeout US measurement detected
+[2018-08-29 20:49:29] Timeout US measurement detected
+[2018-08-29 20:49:30] Timeout US measurement detected
+[2018-08-29 20:49:31] Timeout US measurement detected
+[2018-08-29 20:49:32] Timeout US measurement detected
+[2018-08-29 20:49:33] Timeout US measurement detected
+[2018-08-29 20:49:34] Timeout US measurement detected
+[2018-08-29 20:49:35] Timeout US measurement detected
+[2018-08-29 20:49:36] Timeout US measurement detected
+[2018-08-29 20:49:37] Timeout US measurement detected
+[2018-08-29 20:49:38] Timeout US measurement detected
+[2018-08-29 20:49:39] Timeout US measurement detected
+[2018-08-29 20:49:40] Timeout US measurement detected
+[2018-08-29 20:49:41] Timeout US measurement detected
+[2018-08-29 20:49:42] Timeout US measurement detected
+[2018-08-29 20:49:43] Timeout US measurement detected
+[2018-08-29 20:49:44] Timeout US measurement detected
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Using Fixed IP
+[1970-00-00 00:00:00] IP-Address: 192.168.178.5
+[2018-08-29 20:49:47] Reading settings from EEP
+[2018-08-29 20:49:47] EEP checksum ok 
+[2018-08-29 20:49:47] EEPSize 33 Byte
+[2018-08-29 20:49:47] System startup
+[2018-08-29 20:49:48] Timeout US measurement detected
+[2018-08-29 20:49:49] Timeout US measurement detected
+[2018-08-29 20:49:50] Timeout US measurement detected
+[2018-08-29 20:49:51] Timeout US measurement detected
+[2018-08-29 20:49:52] Timeout US measurement detected
+[2018-08-29 20:49:53] Timeout US measurement detected
+[2018-08-29 20:49:54] Timeout US measurement detected
+[2018-08-29 20:49:55] Timeout US measurement detected
+[2018-08-29 20:49:56] Timeout US measurement detected
+[2018-08-29 20:49:57] Timeout US measurement detected
+[2018-08-29 20:49:58] Timeout US measurement detected
+[2018-08-29 20:49:59] Timeout US measurement detected
+[2018-08-29 20:50:00] Timeout US measurement detected
+[2018-08-29 20:50:01] Timeout US measurement detected
+[2018-08-29 20:50:02] Timeout US measurement detected
+[2018-08-29 20:50:03] Timeout US measurement detected
+[2018-08-29 20:50:04] Timeout US measurement detected
+[2018-08-29 20:50:05] Timeout US measurement detected
+[2018-08-29 20:50:06] Timeout US measurement detected
+[2018-08-29 20:50:07] Timeout US measurement detected
+[2018-08-29 20:50:08] Timeout US measurement detected
+[2018-08-29 20:50:09] Timeout US measurement detected
+[2018-08-29 20:50:10] Timeout US measurement detected
+[2018-08-29 20:50:11] Timeout US measurement detected
+[2018-08-29 20:50:12] Timeout US measurement detected
+[2018-08-29 20:50:13] Timeout US measurement detected
+[2018-08-29 20:50:14] Timeout US measurement detected
+[2018-08-29 20:50:15] Timeout US measurement detected
+[2018-08-29 20:50:16] Timeout US measurement detected
+[2018-08-29 20:50:17] Timeout US measurement detected
+[2018-08-29 20:50:18] Timeout US measurement detected
+[2018-08-29 20:50:19] Timeout US measurement detected
+[2018-08-29 20:50:20] Timeout US measurement detected
+[2018-08-29 20:50:21] Timeout US measurement detected
+[2018-08-29 20:50:22] Timeout US measurement detected
+[2018-08-29 20:50:23] Timeout US measurement detected
+[2018-08-29 20:50:24] Timeout US measurement detected
+[2018-08-29 20:50:25] Timeout US measurement detected
+[2018-08-29 20:50:26] Timeout US measurement detected
+[2018-08-29 20:50:27] Timeout US measurement detected
+[2018-08-29 20:50:28] Timeout US measurement detected
+[2018-08-29 20:50:29] Timeout US measurement detected
+[2018-08-29 20:50:30] Timeout US measurement detected
+[2018-08-29 20:50:31] Timeout US measurement detected
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 255.255.255.255
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 255.255.255.255
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-08-29 20:54:43] Reading settings from EEP
+[2018-08-29 20:54:43] EEP checksum ok 
+[2018-08-29 20:54:43] EEPSize 33 Byte
+[2018-08-29 20:54:43] System startup
+[2018-08-29 20:54:43] Timeout US measurement detected
+[2018-08-29 20:54:45] Timeout US measurement detected
+[2018-08-29 20:54:45] Timeout US measurement detected
+[2018-08-29 20:54:46] Timeout US measurement detected
+[2018-08-29 20:54:47] Timeout US measurement detected
+[2018-08-29 20:54:48] Timeout US measurement detected
+[2018-08-29 20:54:49] Timeout US measurement detected
+[2018-08-29 20:54:50] Timeout US measurement detected
+[2018-08-29 20:54:51] Timeout US measurement detected
+[2018-08-29 20:54:52] Timeout US measurement detected
+[2018-08-29 20:54:53] Timeout US measurement detected
+[2018-08-29 20:54:54] Timeout US measurement detected
+[2018-08-29 20:54:55] Timeout US measurement detected
+[2018-08-29 20:54:56] Timeout US measurement detected
+[2018-08-29 20:54:57] Timeout US measurement detected
+[2018-08-29 20:54:58] Timeout US measurement detected
+[2018-08-29 20:54:59] Timeout US measurement detected
+[2018-08-29 20:55:00] Timeout US measurement detected
+[2018-08-29 20:55:01] Timeout US measurement detected
+[2018-08-29 20:55:02] Timeout US measurement detected
+[2018-08-29 20:55:03] Timeout US measurement detected
+[2018-08-29 20:55:04] Timeout US measurement detected
+[2018-08-29 20:55:05] Timeout US measurement detected
+[2018-08-29 20:55:06] Timeout US measurement detected
+[2018-08-29 20:55:07] Timeout US measurement detected
+[2018-08-29 20:55:08] Timeout US measurement detected
+[2018-08-29 20:55:09] Timeout US measurement detected
+[2018-08-29 20:55:10] Timeout US measurement detected
+[2018-08-29 20:55:11] Timeout US measurement detected
+[2018-08-29 20:55:12] Timeout US measurement detected
+[2018-08-29 20:55:13] Timeout US measurement detected
+[2018-08-29 20:55:14] Timeout US measurement detected
+[2018-08-29 20:55:15] Timeout US measurement detected
+[2018-08-29 20:55:16] Timeout US measurement detected
+[2018-08-29 20:55:17] Timeout US measurement detected
+[2018-08-29 20:55:19] Timeout US measurement detected
+[2018-08-29 20:55:19] Timeout US measurement detected
+[2018-08-29 20:55:20] Timeout US measurement detected
+[2018-08-29 20:55:22] Timeout US measurement detected
+[2018-08-29 20:55:22] Timeout US measurement detected
+[2018-08-29 20:55:24] Timeout US measurement detected
+[2018-08-29 20:55:25] Timeout US measurement detected
+[2018-08-29 20:55:26] Timeout US measurement detected
+[2018-08-29 20:55:27] Timeout US measurement detected
+[2018-08-29 20:55:28] Timeout US measurement detected
+[2018-08-29 20:55:29] Timeout US measurement detected
+[2018-08-29 20:55:30] Timeout US measurement detected
+[2018-08-29 20:55:31] Timeout US measurement detected
+[2018-08-29 20:55:32] Timeout US measurement detected
+[2018-08-29 20:55:33] Timeout US measurement detected
+[2018-08-29 20:55:34] Timeout US measurement detected
+[2018-08-29 20:55:35] Timeout US measurement detected
+[2018-08-29 20:55:36] Timeout US measurement detected
+[2018-08-29 20:55:37] Timeout US measurement detected
+[2018-08-29 20:55:38] Timeout US measurement detected
+[2018-08-29 20:55:39] Timeout US measurement detected
+[2018-08-29 20:55:40] Timeout US measurement detected
+[2018-08-29 20:55:41] Timeout US measurement detected
+[2018-08-29 20:55:42] Timeout US measurement detected
+[2018-08-29 20:55:43] Timeout US measurement detected
+[2018-08-29 20:55:43] Time updated by NTP
+[2018-08-29 20:55:44] Timeout US measurement detected
+[2018-08-29 20:55:45] Timeout US measurement detected
+[2018-08-29 20:55:46] Timeout US measurement detected
+[2018-08-29 20:55:47] Timeout US measurement detected
+[2018-08-29 20:55:48] Timeout US measurement detected
+[2018-08-29 20:55:49] Timeout US measurement detected
+[2018-08-29 20:55:50] Timeout US measurement detected
+[2018-08-29 20:55:51] Timeout US measurement detected
+[2018-08-29 20:55:52] Timeout US measurement detected
+[2018-08-29 20:55:53] Timeout US measurement detected
+[2018-08-29 20:55:54] Timeout US measurement detected
+[2018-08-29 20:55:55] Refilling requested by manual button
+[2018-08-29 20:55:55] Refilling on. Duration 30 s
+[2018-08-29 20:55:55] Off-Time: 2018-08-29 20:56:25
+[2018-08-29 20:55:55] Timeout US measurement detected
+[2018-08-29 20:55:56] Timeout US measurement detected
+[2018-08-29 20:55:57] Timeout US measurement detected
+[2018-08-29 20:55:58] Timeout US measurement detected
+[2018-08-29 20:55:59] Timeout US measurement detected
+[2018-08-29 20:56:00] Timeout US measurement detected
+[2018-08-29 20:56:01] Timeout US measurement detected
+[2018-08-29 20:56:02] Timeout US measurement detected
+[2018-08-29 20:56:03] Timeout US measurement detected
+[2018-08-29 20:56:04] Timeout US measurement detected
+[2018-08-29 20:56:05] Timeout US measurement detected
+[2018-08-29 20:56:06] Timeout US measurement detected
+[2018-08-29 20:56:07] Timeout US measurement detected
+[2018-08-29 20:56:08] Timeout US measurement detected
+[2018-08-29 20:56:09] Timeout US measurement detected
+[2018-08-29 20:56:10] Timeout US measurement detected
+[2018-08-29 20:56:11] Timeout US measurement detected
+[2018-08-29 20:56:12] Timeout US measurement detected
+[2018-08-29 20:56:13] Timeout US measurement detected
+[2018-08-29 20:56:14] Timeout US measurement detected
+[2018-08-29 20:56:15] Timeout US measurement detected
+[2018-08-29 20:56:16] Timeout US measurement detected
+[2018-08-29 20:56:17] Timeout US measurement detected
+[2018-08-29 20:56:18] Timeout US measurement detected
+[2018-08-29 20:56:19] Timeout US measurement detected
+[2018-08-29 20:56:20] Timeout US measurement detected
+[2018-08-29 20:56:21] Timeout US measurement detected
+[2018-08-29 20:56:22] Timeout US measurement detected
+[2018-08-29 20:56:23] Timeout US measurement detected
+[2018-08-29 20:56:23] Writing measurement data to SD Card
+[2018-08-29 20:56:23] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(0.00)
+[2018-08-29 20:56:23] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(1.00)
+[2018-08-29 20:56:23] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(0.00)
+[2018-08-29 20:56:23] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-29 20:56:23] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-29 20:56:25] Timeout US measurement detected
+[2018-08-29 20:56:25] Timeout US measurement detected
+[2018-08-29 20:56:26] Refilling off, Refilling volume: 10 liter
+[2018-08-29 20:56:26] Writing settings to EEP
+[2018-08-29 20:56:26] Timeout US measurement detected
+[2018-08-29 20:56:27] Timeout US measurement detected
+[2018-08-29 20:56:28] Timeout US measurement detected
+[2018-08-29 20:56:29] Timeout US measurement detected
+[2018-08-29 20:56:31] Timeout US measurement detected
+[2018-08-29 20:56:31] Timeout US measurement detected
+[2018-08-29 20:56:32] Timeout US measurement detected
+[2018-08-29 20:56:33] Timeout US measurement detected
+[2018-08-29 20:56:34] Timeout US measurement detected
+[2018-08-29 20:56:35] Timeout US measurement detected
+[2018-08-29 20:56:36] Timeout US measurement detected
+[2018-08-29 20:56:37] Timeout US measurement detected
+[2018-08-29 20:56:38] Timeout US measurement detected
+[2018-08-29 20:56:39] Timeout US measurement detected
+[2018-08-29 20:56:40] Timeout US measurement detected
+[2018-08-29 20:56:41] Timeout US measurement detected
+[2018-08-29 20:56:42] Timeout US measurement detected
+[2018-08-29 20:56:43] Timeout US measurement detected
+[2018-08-29 20:56:44] Timeout US measurement detected
+[2018-08-29 20:56:46] Timeout US measurement detected
+[2018-08-29 20:56:46] Timeout US measurement detected
+[2018-08-29 20:56:47] Timeout US measurement detected
+[2018-08-29 20:56:48] Timeout US measurement detected
+[2018-08-29 20:56:49] Timeout US measurement detected
+[2018-08-29 20:56:50] Timeout US measurement detected
+[2018-08-29 20:56:51] Timeout US measurement detected
+[2018-08-29 20:56:52] Timeout US measurement detected
+[2018-08-29 20:56:53] Timeout US measurement detected
+[2018-08-29 20:56:54] Timeout US measurement detected
+[2018-08-29 20:56:55] Timeout US measurement detected
+[2018-08-29 20:56:56] Timeout US measurement detected
+[2018-08-29 20:56:57] Timeout US measurement detected
+[2018-08-29 20:56:58] Timeout US measurement detected
+[2018-08-29 20:56:59] Timeout US measurement detected
+[2018-08-29 20:57:00] Timeout US measurement detected
+[2018-08-29 20:57:01] Timeout US measurement detected
+[2018-08-29 20:57:02] Timeout US measurement detected
+[2018-08-29 20:57:03] Timeout US measurement detected
+[2018-08-29 20:57:04] Timeout US measurement detected
+[2018-08-29 20:57:05] Timeout US measurement detected
+[2018-08-29 20:57:06] Timeout US measurement detected
+[2018-08-29 20:57:07] Timeout US measurement detected
+[2018-08-29 20:57:08] Timeout US measurement detected
+[2018-08-29 20:57:09] Timeout US measurement detected
+[2018-08-29 20:57:10] Timeout US measurement detected
+[2018-08-29 20:57:11] Timeout US measurement detected
+[2018-08-29 20:57:13] Timeout US measurement detected
+[2018-08-29 20:57:13] Timeout US measurement detected
+[2018-08-29 20:57:14] Timeout US measurement detected
+[2018-08-29 20:57:15] Timeout US measurement detected
+[2018-08-29 20:57:17] Timeout US measurement detected
+[2018-08-29 20:57:17] Timeout US measurement detected
+[2018-08-29 20:57:18] Timeout US measurement detected
+[2018-08-29 20:57:19] Timeout US measurement detected
+[2018-08-29 20:57:20] Timeout US measurement detected
+[2018-08-29 20:57:21] Timeout US measurement detected
+[2018-08-29 20:57:22] Timeout US measurement detected
+[2018-08-29 20:57:23] Timeout US measurement detected
+[2018-08-29 20:57:24] Timeout US measurement detected
+[2018-08-29 20:57:25] Timeout US measurement detected
+[2018-08-29 20:57:26] Timeout US measurement detected
+[2018-08-29 20:57:27] Timeout US measurement detected
+[2018-08-29 20:57:28] Timeout US measurement detected
+[2018-08-29 20:57:29] Timeout US measurement detected
+[2018-08-29 20:57:30] Timeout US measurement detected
+[2018-08-29 20:57:31] Timeout US measurement detected
+[2018-08-29 20:57:32] Timeout US measurement detected
+[2018-08-29 20:57:33] Timeout US measurement detected
+[2018-08-29 20:57:34] Timeout US measurement detected
+[2018-08-29 20:57:35] Timeout US measurement detected
+[2018-08-29 20:57:36] Timeout US measurement detected
+[2018-08-29 20:57:37] Timeout US measurement detected
+[2018-08-29 20:57:38] Timeout US measurement detected
+[2018-08-29 20:57:39] Timeout US measurement detected
+[2018-08-29 20:57:40] Timeout US measurement detected
+[2018-08-29 20:57:41] Timeout US measurement detected
+[2018-08-29 20:57:42] Timeout US measurement detected
+[2018-08-29 20:57:43] Timeout US measurement detected
+[2018-08-29 20:57:44] Timeout US measurement detected
+[2018-08-29 20:57:45] Timeout US measurement detected
+[2018-08-29 20:57:46] Timeout US measurement detected
+[2018-08-29 20:57:47] Timeout US measurement detected
+[2018-08-29 20:57:48] Timeout US measurement detected
+[2018-08-29 20:57:49] Timeout US measurement detected
+[2018-08-29 20:57:50] Timeout US measurement detected
+[2018-08-29 20:57:51] Timeout US measurement detected
+[2018-08-29 20:57:52] Timeout US measurement detected
+[2018-08-29 20:57:53] Timeout US measurement detected
+[2018-08-29 20:57:54] Timeout US measurement detected
+[2018-08-29 20:57:55] Timeout US measurement detected
+[2018-08-29 20:57:56] Timeout US measurement detected
+[2018-08-29 20:57:58] Timeout US measurement detected
+[2018-08-29 20:57:58] Timeout US measurement detected
+[2018-08-29 20:57:59] Timeout US measurement detected
+[2018-08-29 20:58:00] Timeout US measurement detected
+[2018-08-29 20:58:01] Timeout US measurement detected
+[2018-08-29 20:58:02] Timeout US measurement detected
+[2018-08-29 20:58:04] Timeout US measurement detected
+[2018-08-29 20:58:04] Writing measurement data to SD Card
+[2018-08-29 20:58:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(0.00)
+[2018-08-29 20:58:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(1.00)
+[2018-08-29 20:58:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(0.00)
+[2018-08-29 20:58:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-29 20:58:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-29 20:58:05] Timeout US measurement detected
+[2018-08-29 20:58:06] Timeout US measurement detected
+[2018-08-29 20:58:07] Timeout US measurement detected
+[2018-08-29 20:58:08] Timeout US measurement detected
+[2018-08-29 20:58:09] Timeout US measurement detected
+[2018-08-29 20:58:10] Timeout US measurement detected
+[2018-08-29 20:58:11] Timeout US measurement detected
+[2018-08-29 20:58:12] Timeout US measurement detected
+[2018-08-29 20:58:13] Timeout US measurement detected
+[2018-08-29 20:58:14] Timeout US measurement detected
+[2018-08-29 20:58:15] Timeout US measurement detected
+[2018-08-29 20:58:16] Timeout US measurement detected
+[2018-08-29 20:58:17] Timeout US measurement detected
+[2018-08-29 20:58:18] Timeout US measurement detected
+[2018-08-29 20:58:19] Timeout US measurement detected
+[2018-08-29 20:58:20] Timeout US measurement detected
+[2018-08-29 20:58:21] Timeout US measurement detected
+[2018-08-29 20:58:22] Timeout US measurement detected
+[2018-08-29 20:58:23] Timeout US measurement detected
+[2018-08-29 20:58:24] Timeout US measurement detected
+[2018-08-29 20:58:25] Timeout US measurement detected
+[2018-08-29 20:58:26] Timeout US measurement detected
+[2018-08-29 20:58:27] Timeout US measurement detected
+[2018-08-29 20:58:28] Timeout US measurement detected
+[2018-08-29 20:58:29] Timeout US measurement detected
+[2018-08-29 20:58:30] Timeout US measurement detected
+[2018-08-29 20:58:31] Timeout US measurement detected
+[2018-08-29 20:58:32] Timeout US measurement detected
+[2018-08-29 20:58:33] Timeout US measurement detected
+[2018-08-29 20:58:34] Timeout US measurement detected
+[2018-08-29 20:58:35] Timeout US measurement detected
+[2018-08-29 20:58:36] Timeout US measurement detected
+[2018-08-29 20:58:37] Timeout US measurement detected
+[2018-08-29 20:58:38] Timeout US measurement detected
+[2018-08-29 20:58:39] Timeout US measurement detected
+[2018-08-29 20:58:40] Timeout US measurement detected
+[2018-08-29 20:58:41] Timeout US measurement detected
+[2018-08-29 20:58:42] Timeout US measurement detected
+[2018-08-29 20:58:43] Timeout US measurement detected
+[2018-08-29 20:58:44] Timeout US measurement detected
+[2018-08-29 20:58:45] Timeout US measurement detected
+[2018-08-29 20:58:46] Timeout US measurement detected
+[2018-08-29 20:58:47] Timeout US measurement detected
+[2018-08-29 20:58:48] Timeout US measurement detected
+[2018-08-29 20:58:49] Timeout US measurement detected
+[2018-08-29 20:58:50] Timeout US measurement detected
+[2018-08-29 20:58:51] Timeout US measurement detected
+[2018-08-29 20:58:52] Timeout US measurement detected
+[2018-08-29 20:58:53] Timeout US measurement detected
+[2018-08-29 20:58:54] Timeout US measurement detected
+[2018-08-29 20:58:55] Timeout US measurement detected
+[2018-08-29 20:58:56] Timeout US measurement detected
+[2018-08-29 20:58:57] Timeout US measurement detected
+[2018-08-29 20:58:58] Timeout US measurement detected
+[2018-08-29 20:58:59] Timeout US measurement detected
+[2018-08-29 20:59:00] Timeout US measurement detected
+[2018-08-29 20:59:01] Timeout US measurement detected
+[2018-08-29 20:59:02] Timeout US measurement detected
+[2018-08-29 20:59:03] Timeout US measurement detected
+[2018-08-29 20:59:04] Timeout US measurement detected
+[2018-08-29 20:59:05] Timeout US measurement detected
+[2018-08-29 20:59:06] Timeout US measurement detected
+[2018-08-29 20:59:07] Timeout US measurement detected
+[2018-08-29 20:59:08] Timeout US measurement detected
+[2018-08-29 20:59:09] Timeout US measurement detected
+[2018-08-29 20:59:10] Timeout US measurement detected
+[2018-08-29 20:59:11] Timeout US measurement detected
+[2018-08-29 20:59:12] Timeout US measurement detected
+[2018-08-29 20:59:13] Timeout US measurement detected
+[2018-08-29 20:59:14] Timeout US measurement detected
+[2018-08-29 20:59:15] Timeout US measurement detected
+[2018-08-29 20:59:16] Timeout US measurement detected
+[2018-08-29 20:59:17] Timeout US measurement detected
+[2018-08-29 20:59:18] Timeout US measurement detected
+[2018-08-29 20:59:19] Timeout US measurement detected
+[2018-08-29 20:59:20] Timeout US measurement detected
+[2018-08-29 20:59:21] Timeout US measurement detected
+[2018-08-29 20:59:22] Timeout US measurement detected
+[2018-08-29 20:59:23] Timeout US measurement detected
+[2018-08-29 20:59:24] Timeout US measurement detected
+[2018-08-29 20:59:25] Timeout US measurement detected
+[2018-08-29 20:59:26] Timeout US measurement detected
+[2018-08-29 20:59:27] Timeout US measurement detected
+[2018-08-29 20:59:28] Timeout US measurement detected
+[2018-08-29 20:59:29] Timeout US measurement detected
+[2018-08-29 20:59:30] Timeout US measurement detected
+[2018-08-29 20:59:31] Timeout US measurement detected
+[2018-08-29 20:59:32] Timeout US measurement detected
+[2018-08-29 20:59:33] Timeout US measurement detected
+[2018-08-29 20:59:34] Timeout US measurement detected
+[2018-08-29 20:59:35] Timeout US measurement detected
+[2018-08-29 20:59:36] Timeout US measurement detected
+[2018-08-29 20:59:37] Timeout US measurement detected
+[2018-08-29 20:59:38] Timeout US measurement detected
+[2018-08-29 20:59:39] Timeout US measurement detected
+[2018-08-29 20:59:40] Timeout US measurement detected
+[2018-08-29 20:59:41] Timeout US measurement detected
+[2018-08-29 20:59:42] Timeout US measurement detected
+[2018-08-29 20:59:43] Timeout US measurement detected
+[2018-08-29 20:59:44] Timeout US measurement detected
+[2018-08-29 20:59:44] Writing measurement data to SD Card
+[2018-08-29 20:59:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(0.00)
+[2018-08-29 20:59:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(1.00)
+[2018-08-29 20:59:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(0.00)
+[2018-08-29 20:59:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-29 20:59:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-29 20:59:45] Timeout US measurement detected
+[2018-08-29 20:59:46] Timeout US measurement detected
+[2018-08-29 20:59:47] Timeout US measurement detected
+[2018-08-29 20:59:48] Timeout US measurement detected
+[2018-08-29 20:59:50] Timeout US measurement detected
+[2018-08-29 20:59:50] Timeout US measurement detected
+[2018-08-29 20:59:51] Timeout US measurement detected
+[2018-08-29 20:59:52] Timeout US measurement detected
+[2018-08-29 20:59:53] Timeout US measurement detected
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-08-29 20:59:59] Reading settings from EEP
+[2018-08-29 20:59:59] EEP checksum ok 
+[2018-08-29 20:59:59] EEPSize 33 Byte
+[2018-08-29 20:59:59] System startup
+[2018-08-29 20:59:59] Timeout US measurement detected
+[2018-08-29 21:00:00] Timeout US measurement detected
+[2018-08-29 21:00:01] Timeout US measurement detected
+[2018-08-29 21:00:02] Timeout US measurement detected
+[2018-08-29 21:00:03] Timeout US measurement detected
+[2018-08-29 21:00:04] Timeout US measurement detected
+[2018-08-29 21:00:05] Timeout US measurement detected
+[2018-08-29 21:00:06] Timeout US measurement detected
+[2018-08-29 21:00:07] Timeout US measurement detected
+[2018-08-29 21:00:08] Timeout US measurement detected
+[2018-08-29 21:00:09] Timeout US measurement detected
+[2018-08-29 21:00:10] Timeout US measurement detected
+[2018-08-29 21:00:11] Timeout US measurement detected
+[2018-08-29 21:00:12] Timeout US measurement detected
+[2018-08-29 21:00:13] Timeout US measurement detected
+[2018-08-29 21:00:14] Timeout US measurement detected
+[2018-08-29 21:00:15] Timeout US measurement detected
+[2018-08-29 21:00:16] Timeout US measurement detected
+[2018-08-29 21:00:17] Timeout US measurement detected
+[2018-08-29 21:00:18] Timeout US measurement detected
+[2018-08-29 21:00:19] Timeout US measurement detected
+[2018-08-29 21:00:20] Timeout US measurement detected
+[2018-08-29 21:00:21] Timeout US measurement detected
+[2018-08-29 21:00:22] Timeout US measurement detected
+[2018-08-29 21:00:23] Timeout US measurement detected
+[2018-08-29 21:00:24] Timeout US measurement detected
+[2018-08-29 21:00:25] Timeout US measurement detected
+[2018-08-29 21:00:26] Timeout US measurement detected
+[2018-08-29 21:00:27] Timeout US measurement detected
+[2018-08-29 21:00:28] Timeout US measurement detected
+[2018-08-29 21:00:29] Timeout US measurement detected
+[2018-08-29 21:00:30] Timeout US measurement detected
+[2018-08-29 21:00:31] Timeout US measurement detected
+[2018-08-29 21:00:32] Timeout US measurement detected
+[2018-08-29 21:00:33] Timeout US measurement detected
+[2018-08-29 21:00:34] Timeout US measurement detected
+[2018-08-29 21:00:35] Timeout US measurement detected
+[2018-08-29 21:00:36] Timeout US measurement detected
+[2018-08-29 21:00:37] Timeout US measurement detected
+[2018-08-29 21:00:38] Timeout US measurement detected
+[2018-08-29 21:00:39] Timeout US measurement detected
+[2018-08-29 21:00:40] Timeout US measurement detected
+[2018-08-29 21:00:42] Timeout US measurement detected
+[2018-08-29 21:00:42] Timeout US measurement detected
+[2018-08-29 21:00:43] Timeout US measurement detected
+[2018-08-29 21:00:45] Timeout US measurement detected
+[2018-08-29 21:00:45] Timeout US measurement detected
+[2018-08-29 21:00:47] Timeout US measurement detected
+[2018-08-29 21:00:48] Timeout US measurement detected
+[2018-08-29 21:00:49] Timeout US measurement detected
+[2018-08-29 21:00:50] Timeout US measurement detected
+[2018-08-29 21:00:51] Timeout US measurement detected
+[2018-08-29 21:00:52] Timeout US measurement detected
+[2018-08-29 21:00:53] Timeout US measurement detected
+[2018-08-29 21:00:54] Timeout US measurement detected
+[2018-08-29 21:00:55] Timeout US measurement detected
+[2018-08-29 21:00:56] Timeout US measurement detected
+[2018-08-29 21:00:57] Timeout US measurement detected
+[2018-08-29 21:00:58] Timeout US measurement detected
+[2018-08-29 21:00:59] Timeout US measurement detected
+[2018-08-29 21:00:59] Time updated by NTP
+[2018-08-29 21:01:00] Timeout US measurement detected
+[2018-08-29 21:01:01] Timeout US measurement detected
+[2018-08-29 21:01:02] Timeout US measurement detected
+[2018-08-29 21:01:03] Timeout US measurement detected
+[2018-08-29 21:01:04] Timeout US measurement detected
+[2018-08-29 21:01:05] Timeout US measurement detected
+[2018-08-29 21:01:06] Timeout US measurement detected
+[2018-08-29 21:01:07] Timeout US measurement detected
+[2018-08-29 21:01:08] Timeout US measurement detected
+[2018-08-29 21:01:09] Timeout US measurement detected
+[2018-08-29 21:01:10] Timeout US measurement detected
+[2018-08-29 21:01:11] Timeout US measurement detected
+[2018-08-29 21:01:12] Timeout US measurement detected
+[2018-08-29 21:01:13] Timeout US measurement detected
+[2018-08-29 21:01:14] Timeout US measurement detected
+[2018-08-29 21:01:15] Timeout US measurement detected
+[2018-08-29 21:01:16] Timeout US measurement detected
+[2018-08-29 21:01:17] Timeout US measurement detected
+[2018-08-29 21:01:18] Timeout US measurement detected
+[2018-08-29 21:01:19] Timeout US measurement detected
+[2018-08-29 21:01:20] Timeout US measurement detected
+[2018-08-29 21:01:21] Timeout US measurement detected
+[2018-08-29 21:01:22] Timeout US measurement detected
+[2018-08-29 21:01:23] Timeout US measurement detected
+[2018-08-29 21:01:24] Timeout US measurement detected
+[2018-08-29 21:01:25] Timeout US measurement detected
+[2018-08-29 21:01:26] Timeout US measurement detected
+[2018-08-29 21:01:27] Timeout US measurement detected
+[2018-08-29 21:01:28] Timeout US measurement detected
+[2018-08-29 21:01:29] Timeout US measurement detected
+[2018-08-29 21:01:30] Timeout US measurement detected
+[2018-08-29 21:01:31] Timeout US measurement detected
+[2018-08-29 21:01:32] Timeout US measurement detected
+[2018-08-29 21:01:33] Timeout US measurement detected
+[2018-08-29 21:01:34] Timeout US measurement detected
+[2018-08-29 21:01:35] Timeout US measurement detected
+[2018-08-29 21:01:36] Timeout US measurement detected
+[2018-08-29 21:01:37] Timeout US measurement detected
+[2018-08-29 21:01:38] Timeout US measurement detected
+[2018-08-29 21:01:39] Timeout US measurement detected
+[2018-08-29 21:01:39] Writing measurement data to SD Card
+[2018-08-29 21:01:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(0.00)
+[2018-08-29 21:01:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(1.00)
+[2018-08-29 21:01:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(0.00)
+[2018-08-29 21:01:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-29 21:01:40] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-29 21:01:40] Timeout US measurement detected
+[2018-08-29 21:01:41] Timeout US measurement detected
+[2018-08-29 21:01:43] Timeout US measurement detected
+[2018-08-29 21:01:43] Timeout US measurement detected
+[2018-08-29 21:01:44] Timeout US measurement detected
+[2018-08-29 21:01:45] Timeout US measurement detected
+[2018-08-29 21:01:46] Timeout US measurement detected
+[2018-08-29 21:01:47] Timeout US measurement detected
+[2018-08-29 21:01:48] Timeout US measurement detected
+[2018-08-29 21:01:49] Timeout US measurement detected
+[2018-08-29 21:01:50] Timeout US measurement detected
+[2018-08-29 21:01:51] Timeout US measurement detected
+[2018-08-29 21:01:52] Timeout US measurement detected
+[2018-08-29 21:01:53] Timeout US measurement detected
+[2018-08-29 21:01:54] Timeout US measurement detected
+[2018-08-29 21:01:55] Timeout US measurement detected
+[2018-08-29 21:01:56] Timeout US measurement detected
+[2018-08-29 21:01:57] Timeout US measurement detected
+[2018-08-29 21:01:58] Timeout US measurement detected
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-08-29 21:02:32] Reading settings from EEP
+[2018-08-29 21:02:32] EEP checksum ok 
+[2018-08-29 21:02:32] EEPSize 33 Byte
+[2018-08-29 21:02:32] System startup
+[2018-08-29 21:02:33] Timeout US measurement detected
+[2018-08-29 21:02:34] Timeout US measurement detected
+[2018-08-29 21:02:35] Timeout US measurement detected
+[2018-08-29 21:02:36] Timeout US measurement detected
+[2018-08-29 21:02:37] Timeout US measurement detected
+[2018-08-29 21:02:38] Timeout US measurement detected
+[2018-08-29 21:02:39] Timeout US measurement detected
+[2018-08-29 21:02:40] Timeout US measurement detected
+[2018-08-29 21:02:41] Timeout US measurement detected
+[2018-08-29 21:02:42] Timeout US measurement detected
+[2018-08-29 21:02:43] Timeout US measurement detected
+[2018-08-29 21:02:44] Timeout US measurement detected
+[2018-08-29 21:02:45] Timeout US measurement detected
+[2018-08-29 21:02:46] Timeout US measurement detected
+[2018-08-29 21:02:47] Timeout US measurement detected
+[2018-08-29 21:02:48] Timeout US measurement detected
+[2018-08-29 21:02:49] Timeout US measurement detected
+[2018-08-29 21:02:50] Timeout US measurement detected
+[2018-08-29 21:02:51] Timeout US measurement detected
+[2018-08-29 21:02:52] Timeout US measurement detected
+[2018-08-29 21:03:32] Time updated by NTP
+[2018-08-29 21:03:49] Timeout US measurement detected
+[2018-08-29 21:03:58] Timeout US measurement detected
+[2018-08-29 21:04:09] Timeout US measurement detected
+[2018-08-29 21:04:12] Writing measurement data to SD Card
+[2018-08-29 21:04:12] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(691.00)
+[2018-08-29 21:04:12] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-29 21:04:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-29 21:04:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-29 21:04:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-08-29 21:04:40] Reading settings from EEP
+[2018-08-29 21:04:40] EEP checksum ok 
+[2018-08-29 21:04:40] EEPSize 33 Byte
+[2018-08-29 21:04:40] System startup
+[2018-08-29 21:05:40] Time updated by NTP
+[2018-08-29 21:05:40] Refilling requested by manual button
+[2018-08-29 21:05:40] Refilling on. Duration 30 s
+[2018-08-29 21:05:40] Off-Time: 2018-08-29 21:06:10
+[2018-08-29 21:06:10] Refilling off, Refilling volume: 10 liter
+[2018-08-29 21:06:11] Writing settings to EEP
+[2018-08-29 21:06:20] Writing measurement data to SD Card
+[2018-08-29 21:06:21] Connection to CCU failed
+[2018-08-29 21:06:21] Result: 0
+[2018-08-29 21:06:22] Connection to CCU failed
+[2018-08-29 21:06:22] Result: 0
+[2018-08-29 21:06:23] Connection to CCU failed
+[2018-08-29 21:06:23] Result: 0
+[2018-08-29 21:06:24] Connection to CCU failed
+[2018-08-29 21:06:24] Result: 0
+[2018-08-29 21:06:25] Connection to CCU failed
+[2018-08-29 21:06:25] Result: 0
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-08-29 21:07:37] Reading settings from EEP
+[2018-08-29 21:07:37] EEP checksum ok 
+[2018-08-29 21:07:37] EEPSize 33 Byte
+[2018-08-29 21:07:37] System startup
+[2018-08-29 21:07:49] Refilling requested by manual button
+[2018-08-29 21:07:49] Refilling on. Duration 30 s
+[2018-08-29 21:07:49] Off-Time: 2018-08-29 21:08:19
+[2018-08-29 21:08:19] Refilling off, Refilling volume: 10 liter
+[2018-08-29 21:08:20] Writing settings to EEP
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-08-29 21:09:21] Reading settings from EEP
+[2018-08-29 21:09:21] EEP checksum ok 
+[2018-08-29 21:09:21] EEPSize 33 Byte
+[2018-08-29 21:09:21] System startup
+[2018-08-29 21:09:21] Timeout US measurement detected
+[2018-08-29 21:09:22] Timeout US measurement detected
+[2018-08-29 21:09:24] Timeout US measurement detected
+[2018-08-29 21:09:24] Timeout US measurement detected
+[2018-08-29 21:09:25] Timeout US measurement detected
+[2018-08-29 21:09:26] Timeout US measurement detected
+[2018-08-29 21:09:27] Timeout US measurement detected
+[2018-08-29 21:09:28] Timeout US measurement detected
+[2018-08-29 21:09:29] Timeout US measurement detected
+[2018-08-29 21:09:30] Refilling requested by manual button
+[2018-08-29 21:09:30] Refilling on. Duration 30 s
+[2018-08-29 21:09:30] Off-Time: 2018-08-29 21:10:00
+[2018-08-29 21:09:30] Timeout US measurement detected
+[2018-08-29 21:09:31] Timeout US measurement detected
+[2018-08-29 21:09:32] Timeout US measurement detected
+[2018-08-29 21:09:33] Timeout US measurement detected
+[2018-08-29 21:09:34] Timeout US measurement detected
+[2018-08-29 21:09:35] Timeout US measurement detected
+[2018-08-29 21:09:36] Timeout US measurement detected
+[2018-08-29 21:09:37] Timeout US measurement detected
+[2018-08-29 21:09:38] Timeout US measurement detected
+[2018-08-29 21:09:40] Timeout US measurement detected
+[2018-08-29 21:09:40] Timeout US measurement detected
+[2018-08-29 21:09:41] Timeout US measurement detected
+[2018-08-29 21:09:43] Timeout US measurement detected
+[2018-08-29 21:09:43] Timeout US measurement detected
+[2018-08-29 21:09:44] Timeout US measurement detected
+[2018-08-29 21:09:45] Timeout US measurement detected
+[2018-08-29 21:09:46] Timeout US measurement detected
+[2018-08-29 21:09:47] Timeout US measurement detected
+[2018-08-29 21:09:48] Timeout US measurement detected
+[2018-08-29 21:09:49] Timeout US measurement detected
+[2018-08-29 21:09:51] Timeout US measurement detected
+[2018-08-29 21:09:51] Timeout US measurement detected
+[2018-08-29 21:09:52] Timeout US measurement detected
+[2018-08-29 21:09:54] Timeout US measurement detected
+[2018-08-29 21:09:55] Timeout US measurement detected
+[2018-08-29 21:09:56] Timeout US measurement detected
+[2018-08-29 21:09:57] Timeout US measurement detected
+[2018-08-29 21:09:58] Timeout US measurement detected
+[2018-08-29 21:09:59] Timeout US measurement detected
+[2018-08-29 21:10:00] Timeout US measurement detected
+[2018-08-29 21:10:01] Refilling off, Refilling volume: 10 liter
+[2018-08-29 21:10:01] Writing settings to EEP
+[2018-08-29 21:10:01] Timeout US measurement detected
+[2018-08-29 21:10:02] Timeout US measurement detected
+[2018-08-29 21:10:03] Timeout US measurement detected
+[2018-08-29 21:10:04] Timeout US measurement detected
+[2018-08-29 21:10:05] Timeout US measurement detected
+[2018-08-29 21:10:06] Timeout US measurement detected
+[2018-08-29 21:10:07] Timeout US measurement detected
+[2018-08-29 21:10:08] Timeout US measurement detected
+[2018-08-29 21:10:09] Timeout US measurement detected
+[2018-08-29 21:10:10] Timeout US measurement detected
+[2018-08-29 21:10:11] Timeout US measurement detected
+[2018-08-29 21:10:12] Timeout US measurement detected
+[2018-08-29 21:10:13] Timeout US measurement detected
+[2018-08-29 21:10:14] Timeout US measurement detected
+[2018-08-29 21:10:15] Timeout US measurement detected
+[2018-08-29 21:10:16] Timeout US measurement detected
+[2018-08-29 21:10:17] Timeout US measurement detected
+[2018-08-29 21:10:18] Timeout US measurement detected
+[2018-08-29 21:10:19] Timeout US measurement detected
+[2018-08-29 21:10:20] Timeout US measurement detected
+[2018-08-29 21:10:21] Timeout US measurement detected
+[2018-08-29 21:10:21] Time updated by NTP
+[2018-08-29 21:10:22] Timeout US measurement detected
+[2018-08-29 21:10:23] Timeout US measurement detected
+[2018-08-29 21:10:24] Timeout US measurement detected
+[2018-08-29 21:10:25] Timeout US measurement detected
+[2018-08-29 21:10:26] Timeout US measurement detected
+[2018-08-29 21:10:27] Timeout US measurement detected
+[2018-08-29 21:10:28] Timeout US measurement detected
+[2018-08-29 21:10:29] Timeout US measurement detected
+[2018-08-29 21:10:30] Timeout US measurement detected
+[2018-08-29 21:10:31] Timeout US measurement detected
+[2018-08-29 21:10:32] Timeout US measurement detected
+[2018-08-29 21:10:33] Timeout US measurement detected
+[2018-08-29 21:10:34] Timeout US measurement detected
+[2018-08-29 21:10:35] Timeout US measurement detected
+[2018-08-29 21:10:36] Timeout US measurement detected
+[2018-08-29 21:10:37] Timeout US measurement detected
+[2018-08-29 21:10:38] Timeout US measurement detected
+[2018-08-29 21:10:39] Timeout US measurement detected
+[2018-08-29 21:10:40] Timeout US measurement detected
+[2018-08-29 21:10:41] Timeout US measurement detected
+[2018-08-29 21:10:42] Timeout US measurement detected
+[2018-08-29 21:10:43] Timeout US measurement detected
+[2018-08-29 21:10:44] Timeout US measurement detected
+[2018-08-29 21:10:45] Timeout US measurement detected
+[2018-08-29 21:10:46] Timeout US measurement detected
+[2018-08-29 21:10:47] Timeout US measurement detected
+[2018-08-29 21:10:48] Timeout US measurement detected
+[2018-08-29 21:10:49] Timeout US measurement detected
+[2018-08-29 21:10:50] Timeout US measurement detected
+[2018-08-29 21:10:51] Timeout US measurement detected
+[2018-08-29 21:10:52] Timeout US measurement detected
+[2018-08-29 21:10:53] Timeout US measurement detected
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-08-29 21:10:58] Reading settings from EEP
+[2018-08-29 21:10:58] EEP checksum ok 
+[2018-08-29 21:10:58] EEPSize 33 Byte
+[2018-08-29 21:10:58] System startup
+[2018-08-29 21:10:58] Timeout US measurement detected
+[2018-08-29 21:10:59] Timeout US measurement detected
+[2018-08-29 21:11:00] Timeout US measurement detected
+[2018-08-29 21:11:01] Timeout US measurement detected
+[2018-08-29 21:11:02] Timeout US measurement detected
+[2018-08-29 21:11:03] Timeout US measurement detected
+[2018-08-29 21:11:04] Timeout US measurement detected
+[2018-08-29 21:11:05] Timeout US measurement detected
+[2018-08-29 21:11:06] Timeout US measurement detected
+[2018-08-29 21:11:07] Timeout US measurement detected
+[2018-08-29 21:11:08] Timeout US measurement detected
+[2018-08-29 21:11:09] Timeout US measurement detected
+[2018-08-29 21:11:10] Timeout US measurement detected
+[2018-08-29 21:11:11] Timeout US measurement detected
+[2018-08-29 21:11:12] Timeout US measurement detected
+[2018-08-29 21:11:13] Timeout US measurement detected
+[2018-08-29 21:11:14] Timeout US measurement detected
+[2018-08-29 21:11:15] Timeout US measurement detected
+[2018-08-29 21:11:16] Timeout US measurement detected
+[2018-08-29 21:11:17] Timeout US measurement detected
+[2018-08-29 21:11:18] Timeout US measurement detected
+[2018-08-29 21:11:19] Timeout US measurement detected
+[2018-08-29 21:11:20] Timeout US measurement detected
+[2018-08-29 21:11:21] Timeout US measurement detected
+[2018-08-29 21:11:22] Timeout US measurement detected
+[2018-08-29 21:11:23] Timeout US measurement detected
+[2018-08-29 21:11:24] Timeout US measurement detected
+[2018-08-29 21:11:25] Timeout US measurement detected
+[2018-08-29 21:11:26] Timeout US measurement detected
+[2018-08-29 21:11:27] Timeout US measurement detected
+[2018-08-29 21:11:28] Timeout US measurement detected
+[2018-08-29 21:11:29] Timeout US measurement detected
+[2018-08-29 21:11:30] Timeout US measurement detected
+[2018-08-29 21:11:31] Timeout US measurement detected
+[2018-08-29 21:11:32] Timeout US measurement detected
+[2018-08-29 21:11:33] Timeout US measurement detected
+[2018-08-29 21:11:35] Timeout US measurement detected
+[2018-08-29 21:11:35] Timeout US measurement detected
+[2018-08-29 21:11:37] Timeout US measurement detected
+[2018-08-29 21:11:38] Timeout US measurement detected
+[2018-08-29 21:11:39] Timeout US measurement detected
+[2018-08-29 21:11:40] Timeout US measurement detected
+[2018-08-29 21:11:41] Timeout US measurement detected
+[2018-08-29 21:11:42] Timeout US measurement detected
+[2018-08-29 21:11:43] Timeout US measurement detected
+[2018-08-29 21:11:44] Timeout US measurement detected
+[2018-08-29 21:11:45] Timeout US measurement detected
+[2018-08-29 21:11:46] Timeout US measurement detected
+[2018-08-29 21:11:47] Timeout US measurement detected
+[2018-08-29 21:11:48] Timeout US measurement detected
+[2018-08-29 21:11:49] Timeout US measurement detected
+[2018-08-29 21:11:50] Timeout US measurement detected
+[2018-08-29 21:11:51] Timeout US measurement detected
+[2018-08-29 21:11:52] Timeout US measurement detected
+[2018-08-29 21:11:53] Timeout US measurement detected
+[2018-08-29 21:11:54] Timeout US measurement detected
+[2018-08-29 21:11:55] Timeout US measurement detected
+[2018-08-29 21:11:56] Timeout US measurement detected
+[2018-08-29 21:11:57] Timeout US measurement detected
+[2018-08-29 21:11:58] Timeout US measurement detected
+[2018-08-29 21:11:58] Time updated by NTP
+[2018-08-29 21:11:59] Timeout US measurement detected
+[2018-08-29 21:12:00] Timeout US measurement detected
+[2018-08-29 21:12:01] Timeout US measurement detected
+[2018-08-29 21:12:02] Timeout US measurement detected
+[2018-08-29 21:12:03] Timeout US measurement detected
+[2018-08-29 21:12:04] Timeout US measurement detected
+[2018-08-29 21:12:05] Timeout US measurement detected
+[2018-08-29 21:12:06] Timeout US measurement detected
+[2018-08-29 21:12:07] Timeout US measurement detected
+[2018-08-29 21:12:08] Timeout US measurement detected
+[2018-08-29 21:12:09] Timeout US measurement detected
+[2018-08-29 21:12:10] Timeout US measurement detected
+[2018-08-29 21:12:11] Timeout US measurement detected
+[2018-08-29 21:12:12] Timeout US measurement detected
+[2018-08-29 21:12:13] Timeout US measurement detected
+[2018-08-29 21:12:14] Timeout US measurement detected
+[2018-08-29 21:12:15] Timeout US measurement detected
+[2018-08-29 21:12:16] Timeout US measurement detected
+[2018-08-29 21:12:17] Timeout US measurement detected
+[2018-08-29 21:12:18] Timeout US measurement detected
+[2018-08-29 21:12:19] Timeout US measurement detected
+[2018-08-29 21:12:20] Timeout US measurement detected
+[2018-08-29 21:12:21] Timeout US measurement detected
+[2018-08-29 21:12:22] Timeout US measurement detected
+[2018-08-29 21:12:23] Timeout US measurement detected
+[2018-08-29 21:12:24] Timeout US measurement detected
+[2018-08-29 21:12:25] Timeout US measurement detected
+[2018-08-29 21:12:26] Timeout US measurement detected
+[2018-08-29 21:12:27] Timeout US measurement detected
+[2018-08-29 21:12:28] Timeout US measurement detected
+[2018-08-29 21:12:29] Timeout US measurement detected
+[2018-08-29 21:12:30] Timeout US measurement detected
+[2018-08-29 21:12:31] Timeout US measurement detected
+[2018-08-29 21:12:32] Timeout US measurement detected
+[2018-08-29 21:12:33] Timeout US measurement detected
+[2018-08-29 21:12:34] Timeout US measurement detected
+[2018-08-29 21:12:35] Timeout US measurement detected
+[2018-08-29 21:12:36] Timeout US measurement detected
+[2018-08-29 21:12:37] Timeout US measurement detected
+[2018-08-29 21:12:38] Timeout US measurement detected
+[2018-08-29 21:12:38] Writing measurement data to SD Card
+[2018-08-29 21:12:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(0.00)
+[2018-08-29 21:12:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(1.00)
+[2018-08-29 21:12:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(0.00)
+[2018-08-29 21:12:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-29 21:12:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-29 21:12:39] Timeout US measurement detected
+[2018-08-29 21:12:40] Timeout US measurement detected
+[2018-08-29 21:12:41] Timeout US measurement detected
+[2018-08-29 21:12:42] Timeout US measurement detected
+[2018-08-29 21:12:43] Timeout US measurement detected
+[2018-08-29 21:12:44] Timeout US measurement detected
+[2018-08-29 21:12:45] Timeout US measurement detected
+[2018-08-29 21:12:46] Timeout US measurement detected
+[2018-08-29 21:12:47] Timeout US measurement detected
+[2018-08-29 21:12:48] Timeout US measurement detected
+[2018-08-29 21:12:49] Timeout US measurement detected
+[2018-08-29 21:12:50] Timeout US measurement detected
+[2018-08-29 21:12:51] Timeout US measurement detected
+[2018-08-29 21:12:52] Timeout US measurement detected
+[2018-08-29 21:12:53] Timeout US measurement detected
+[2018-08-29 21:12:54] Timeout US measurement detected
+[2018-08-29 21:12:55] Timeout US measurement detected
+[2018-08-29 21:12:56] Timeout US measurement detected
+[2018-08-29 21:12:57] Timeout US measurement detected
+[2018-08-29 21:12:58] Timeout US measurement detected
+[2018-08-29 21:12:59] Timeout US measurement detected
+[2018-08-29 21:13:00] Timeout US measurement detected
+[2018-08-29 21:13:01] Timeout US measurement detected
+[2018-08-29 21:13:02] Timeout US measurement detected
+[2018-08-29 21:13:03] Timeout US measurement detected
+[2018-08-29 21:13:04] Timeout US measurement detected
+[2018-08-29 21:13:05] Timeout US measurement detected
+[2018-08-29 21:13:06] Timeout US measurement detected
+[2018-08-29 21:13:07] Timeout US measurement detected
+[2018-08-29 21:13:08] Timeout US measurement detected
+[2018-08-29 21:13:09] Timeout US measurement detected
+[2018-08-29 21:13:10] Timeout US measurement detected
+[2018-08-29 21:13:11] Timeout US measurement detected
+[2018-08-29 21:13:12] Timeout US measurement detected
+[2018-08-29 21:13:13] Timeout US measurement detected
+[2018-08-29 21:13:14] Timeout US measurement detected
+[2018-08-29 21:13:15] Timeout US measurement detected
+[2018-08-29 21:13:16] Timeout US measurement detected
+[2018-08-29 21:13:17] Timeout US measurement detected
+[2018-08-29 21:13:18] Timeout US measurement detected
+[2018-08-29 21:13:19] Timeout US measurement detected
+[2018-08-29 21:13:20] Timeout US measurement detected
+[2018-08-29 21:13:21] Timeout US measurement detected
+[2018-08-29 21:13:22] Timeout US measurement detected
+[2018-08-29 21:13:23] Timeout US measurement detected
+[2018-08-29 21:13:24] Timeout US measurement detected
+[2018-08-29 21:13:25] Timeout US measurement detected
+[2018-08-29 21:13:26] Timeout US measurement detected
+[2018-08-29 21:13:27] Timeout US measurement detected
+[2018-08-29 21:13:28] Timeout US measurement detected
+[2018-08-29 21:13:29] Timeout US measurement detected
+[2018-08-29 21:13:30] Timeout US measurement detected
+[2018-08-29 21:13:31] Timeout US measurement detected
+[2018-08-29 21:13:32] Timeout US measurement detected
+[2018-08-29 21:13:33] Timeout US measurement detected
+[2018-08-29 21:13:34] Timeout US measurement detected
+[2018-08-29 21:13:35] Timeout US measurement detected
+[2018-08-29 21:13:36] Timeout US measurement detected
+[2018-08-29 21:13:37] Timeout US measurement detected
+[2018-08-29 21:13:38] Timeout US measurement detected
+[2018-08-29 21:13:39] Timeout US measurement detected
+[2018-08-29 21:13:40] Timeout US measurement detected
+[2018-08-29 21:13:41] Timeout US measurement detected
+[2018-08-29 21:13:42] Timeout US measurement detected
+[2018-08-29 21:13:43] Timeout US measurement detected
+[2018-08-29 21:13:44] Timeout US measurement detected
+[2018-08-29 21:13:45] Timeout US measurement detected
+[2018-08-29 21:13:46] Timeout US measurement detected
+[2018-08-29 21:13:47] Timeout US measurement detected
+[2018-08-29 21:13:48] Timeout US measurement detected
+[2018-08-29 21:13:49] Timeout US measurement detected
+[2018-08-29 21:13:50] Timeout US measurement detected
+[2018-08-29 21:13:51] Timeout US measurement detected
+[2018-08-29 21:13:52] Timeout US measurement detected
+[2018-08-29 21:13:53] Timeout US measurement detected
+[2018-08-29 21:13:54] Timeout US measurement detected
+[2018-08-29 21:13:55] Timeout US measurement detected
+[2018-08-29 21:13:56] Timeout US measurement detected
+[2018-08-29 21:13:57] Timeout US measurement detected
+[2018-08-29 21:13:58] Timeout US measurement detected
+[2018-08-29 21:13:59] Timeout US measurement detected
+[2018-08-29 21:14:00] Timeout US measurement detected
+[2018-08-29 21:14:01] Timeout US measurement detected
+[2018-08-29 21:14:02] Timeout US measurement detected
+[2018-08-29 21:14:03] Timeout US measurement detected
+[2018-08-29 21:14:04] Timeout US measurement detected
+[2018-08-29 21:14:05] Timeout US measurement detected
+[2018-08-29 21:14:06] Timeout US measurement detected
+[2018-08-29 21:14:07] Timeout US measurement detected
+[2018-08-29 21:14:08] Timeout US measurement detected
+[2018-08-29 21:14:09] Timeout US measurement detected
+[2018-08-29 21:14:10] Timeout US measurement detected
+[2018-08-29 21:14:11] Timeout US measurement detected
+[2018-08-29 21:14:12] Timeout US measurement detected
+[2018-08-29 21:14:13] Timeout US measurement detected
+[2018-08-29 21:14:14] Timeout US measurement detected
+[2018-08-29 21:14:15] Timeout US measurement detected
+[2018-08-29 21:14:16] Timeout US measurement detected
+[2018-08-29 21:14:17] Timeout US measurement detected
+[2018-08-29 21:14:18] Timeout US measurement detected
+[2018-08-29 21:14:19] Writing measurement data to SD Card
+[2018-08-29 21:14:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(0.00)
+[2018-08-29 21:14:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(1.00)
+[2018-08-29 21:14:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(0.00)
+[2018-08-29 21:14:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-29 21:14:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-29 21:14:20] Timeout US measurement detected
+[2018-08-29 21:14:21] Timeout US measurement detected
+[2018-08-29 21:14:22] Timeout US measurement detected
+[2018-08-29 21:14:23] Timeout US measurement detected
+[2018-08-29 21:14:24] Timeout US measurement detected
+[2018-08-29 21:14:25] Timeout US measurement detected
+[2018-08-29 21:14:26] Timeout US measurement detected
+[2018-08-29 21:14:27] Timeout US measurement detected
+[2018-08-29 21:14:28] Timeout US measurement detected
+[2018-08-29 21:14:29] Timeout US measurement detected
+[2018-08-29 21:14:30] Timeout US measurement detected
+[2018-08-29 21:14:31] Timeout US measurement detected
+[2018-08-29 21:14:32] Timeout US measurement detected
+[2018-08-29 21:14:33] Timeout US measurement detected
+[2018-08-29 21:14:34] Timeout US measurement detected
+[2018-08-29 21:14:35] Timeout US measurement detected
+[2018-08-29 21:14:36] Timeout US measurement detected
+[2018-08-29 21:14:37] Timeout US measurement detected
+[2018-08-29 21:14:38] Timeout US measurement detected
+[2018-08-29 21:14:39] Timeout US measurement detected
+[2018-08-29 21:14:40] Timeout US measurement detected
+[2018-08-29 21:14:41] Timeout US measurement detected
+[2018-08-29 21:14:42] Timeout US measurement detected
+[2018-08-29 21:14:43] Timeout US measurement detected
+[2018-08-29 21:14:44] Timeout US measurement detected
+[2018-08-29 21:14:45] Timeout US measurement detected
+[2018-08-29 21:14:46] Timeout US measurement detected
+[2018-08-29 21:14:47] Timeout US measurement detected
+[2018-08-29 21:14:48] Timeout US measurement detected
+[2018-08-29 21:14:49] Timeout US measurement detected
+[2018-08-29 21:14:50] Timeout US measurement detected
+[2018-08-29 21:14:51] Timeout US measurement detected
+[2018-08-29 21:14:52] Timeout US measurement detected
+[2018-08-29 21:14:53] Timeout US measurement detected
+[2018-08-29 21:14:54] Timeout US measurement detected
+[2018-08-29 21:14:55] Timeout US measurement detected
+[2018-08-29 21:14:56] Timeout US measurement detected
+[2018-08-29 21:14:57] Timeout US measurement detected
+[2018-08-29 21:14:58] Timeout US measurement detected
+[2018-08-29 21:14:59] Timeout US measurement detected
+[2018-08-29 21:15:00] Timeout US measurement detected
+[2018-08-29 21:15:01] Timeout US measurement detected
+[2018-08-29 21:15:02] Timeout US measurement detected
+[2018-08-29 21:15:03] Timeout US measurement detected
+[2018-08-29 21:15:04] Timeout US measurement detected
+[2018-08-29 21:15:05] Timeout US measurement detected
+[2018-08-29 21:15:06] Timeout US measurement detected
+[2018-08-29 21:15:07] Timeout US measurement detected
+[2018-08-29 21:15:08] Timeout US measurement detected
+[2018-08-29 21:15:09] Timeout US measurement detected
+[2018-08-29 21:15:10] Timeout US measurement detected
+[2018-08-29 21:15:11] Timeout US measurement detected
+[2018-08-29 21:15:12] Timeout US measurement detected
+[2018-08-29 21:15:13] Timeout US measurement detected
+[2018-08-29 21:15:14] Timeout US measurement detected
+[2018-08-29 21:15:15] Timeout US measurement detected
+[2018-08-29 21:15:16] Timeout US measurement detected
+[2018-08-29 21:15:17] Timeout US measurement detected
+[2018-08-29 21:15:18] Timeout US measurement detected
+[2018-08-29 21:15:19] Timeout US measurement detected
+[2018-08-29 21:15:20] Timeout US measurement detected
+[2018-08-29 21:15:21] Timeout US measurement detected
+[2018-08-29 21:15:22] Timeout US measurement detected
+[2018-08-29 21:15:23] Timeout US measurement detected
+[2018-08-29 21:15:24] Timeout US measurement detected
+[2018-08-29 21:15:25] Timeout US measurement detected
+[2018-08-29 21:15:26] Timeout US measurement detected
+[2018-08-29 21:15:27] Timeout US measurement detected
+[2018-08-29 21:15:28] Timeout US measurement detected
+[2018-08-29 21:15:29] Timeout US measurement detected
+[2018-08-29 21:15:30] Timeout US measurement detected
+[2018-08-29 21:15:31] Timeout US measurement detected
+[2018-08-29 21:15:32] Timeout US measurement detected
+[2018-08-29 21:15:33] Timeout US measurement detected
+[2018-08-29 21:15:34] Timeout US measurement detected
+[2018-08-29 21:15:35] Timeout US measurement detected
+[2018-08-29 21:15:36] Timeout US measurement detected
+[2018-08-29 21:15:37] Timeout US measurement detected
+[2018-08-29 21:15:38] Timeout US measurement detected
+[2018-08-29 21:15:39] Timeout US measurement detected
+[2018-08-29 21:15:40] Timeout US measurement detected
+[2018-08-29 21:15:41] Timeout US measurement detected
+[2018-08-29 21:15:42] Timeout US measurement detected
+[2018-08-29 21:15:43] Timeout US measurement detected
+[2018-08-29 21:15:44] Timeout US measurement detected
+[2018-08-29 21:15:45] Timeout US measurement detected
+[2018-08-29 21:15:46] Timeout US measurement detected
+[2018-08-29 21:15:47] Timeout US measurement detected
+[2018-08-29 21:15:48] Timeout US measurement detected
+[2018-08-29 21:15:49] Timeout US measurement detected
+[2018-08-29 21:15:50] Timeout US measurement detected
+[2018-08-29 21:15:51] Timeout US measurement detected
+[2018-08-29 21:15:52] Timeout US measurement detected
+[2018-08-29 21:15:53] Timeout US measurement detected
+[2018-08-29 21:15:54] Timeout US measurement detected
+[2018-08-29 21:15:55] Timeout US measurement detected
+[2018-08-29 21:15:56] Timeout US measurement detected
+[2018-08-29 21:15:57] Timeout US measurement detected
+[2018-08-29 21:15:58] Timeout US measurement detected
+[2018-08-29 21:15:59] Timeout US measurement detected
+[2018-08-29 21:15:59] Writing measurement data to SD Card
+[2018-08-29 21:15:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(0.00)
+[2018-08-29 21:15:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(1.00)
+[2018-08-29 21:15:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(0.00)
+[2018-08-29 21:15:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-29 21:15:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-29 21:16:00] Timeout US measurement detected
+[2018-08-29 21:16:01] Timeout US measurement detected
+[2018-08-29 21:16:02] Timeout US measurement detected
+[2018-08-29 21:16:03] Timeout US measurement detected
+[2018-08-29 21:16:04] Timeout US measurement detected
+[2018-08-29 21:16:05] Timeout US measurement detected
+[2018-08-29 21:16:06] Timeout US measurement detected
+[2018-08-29 21:16:07] Timeout US measurement detected
+[2018-08-29 21:16:08] Timeout US measurement detected
+[2018-08-29 21:16:09] Timeout US measurement detected
+[2018-08-29 21:16:10] Timeout US measurement detected
+[2018-08-29 21:16:11] Timeout US measurement detected
+[2018-08-29 21:16:12] Timeout US measurement detected
+[2018-08-29 21:16:13] Timeout US measurement detected
+[2018-08-29 21:16:14] Timeout US measurement detected
+[2018-08-29 21:16:15] Timeout US measurement detected
+[2018-08-29 21:16:16] Timeout US measurement detected
+[2018-08-29 21:16:17] Timeout US measurement detected
+[2018-08-29 21:16:18] Timeout US measurement detected
+[2018-08-29 21:16:19] Timeout US measurement detected
+[2018-08-29 21:16:20] Timeout US measurement detected
+[2018-08-29 21:16:21] Timeout US measurement detected
+[2018-08-29 21:16:22] Timeout US measurement detected
+[2018-08-29 21:16:23] Timeout US measurement detected
+[2018-08-29 21:16:24] Timeout US measurement detected
+[2018-08-29 21:16:25] Timeout US measurement detected
+[2018-08-29 21:16:26] Timeout US measurement detected
+[2018-08-29 21:16:27] Timeout US measurement detected
+[2018-08-29 21:16:28] Timeout US measurement detected
+[2018-08-29 21:16:29] Timeout US measurement detected
+[2018-08-29 21:16:30] Timeout US measurement detected
+[2018-08-29 21:16:31] Timeout US measurement detected
+[2018-08-29 21:16:32] Timeout US measurement detected
+[2018-08-29 21:16:33] Timeout US measurement detected
+[2018-08-29 21:16:34] Timeout US measurement detected
+[2018-08-29 21:16:35] Timeout US measurement detected
+[2018-08-29 21:16:36] Timeout US measurement detected
+[2018-08-29 21:16:37] Timeout US measurement detected
+[2018-08-29 21:16:38] Timeout US measurement detected
+[2018-08-29 21:16:39] Timeout US measurement detected
+[2018-08-29 21:16:40] Timeout US measurement detected
+[2018-08-29 21:16:41] Timeout US measurement detected
+[2018-08-29 21:16:42] Timeout US measurement detected
+[2018-08-29 21:16:43] Timeout US measurement detected
+[2018-08-29 21:16:44] Timeout US measurement detected
+[2018-08-29 21:16:45] Timeout US measurement detected
+[2018-08-29 21:16:46] Timeout US measurement detected
+[2018-08-29 21:16:47] Timeout US measurement detected
+[2018-08-29 21:16:48] Timeout US measurement detected
+[2018-08-29 21:16:49] Timeout US measurement detected
+[2018-08-29 21:16:50] Timeout US measurement detected
+[2018-08-29 21:16:51] Timeout US measurement detected
+[2018-08-29 21:16:52] Timeout US measurement detected
+[2018-08-29 21:16:53] Timeout US measurement detected
+[2018-08-29 21:16:54] Timeout US measurement detected
+[2018-08-29 21:16:55] Timeout US measurement detected
+[2018-08-29 21:16:56] Timeout US measurement detected
+[2018-08-29 21:16:57] Timeout US measurement detected
+[2018-08-29 21:16:58] Timeout US measurement detected
+[2018-08-29 21:16:59] Timeout US measurement detected
+[2018-08-29 21:17:00] Timeout US measurement detected
+[2018-08-29 21:17:01] Timeout US measurement detected
+[2018-08-29 21:17:02] Timeout US measurement detected
+[2018-08-29 21:17:03] Timeout US measurement detected
+[2018-08-29 21:17:04] Timeout US measurement detected
+[2018-08-29 21:17:05] Timeout US measurement detected
+[2018-08-29 21:17:06] Timeout US measurement detected
+[2018-08-29 21:17:07] Timeout US measurement detected
+[2018-08-29 21:17:08] Timeout US measurement detected
+[2018-08-29 21:17:09] Timeout US measurement detected
+[2018-08-29 21:17:10] Timeout US measurement detected
+[2018-08-29 21:17:11] Timeout US measurement detected
+[2018-08-29 21:17:12] Timeout US measurement detected
+[2018-08-29 21:17:13] Timeout US measurement detected
+[2018-08-29 21:17:15] Timeout US measurement detected
+[2018-08-29 21:17:15] Timeout US measurement detected
+[2018-08-29 21:17:16] Timeout US measurement detected
+[2018-08-29 21:17:17] Timeout US measurement detected
+[2018-08-29 21:17:18] Timeout US measurement detected
+[2018-08-29 21:17:19] Timeout US measurement detected
+[2018-08-29 21:17:20] Timeout US measurement detected
+[2018-08-29 21:17:21] Timeout US measurement detected
+[2018-08-29 21:17:22] Timeout US measurement detected
+[2018-08-29 21:17:23] Timeout US measurement detected
+[2018-08-29 21:17:24] Timeout US measurement detected
+[2018-08-29 21:17:25] Timeout US measurement detected
+[2018-08-29 21:17:26] Timeout US measurement detected
+[2018-08-29 21:17:27] Timeout US measurement detected
+[2018-08-29 21:17:28] Timeout US measurement detected
+[2018-08-29 21:17:29] Timeout US measurement detected
+[2018-08-29 21:17:30] Timeout US measurement detected
+[2018-08-29 21:17:31] Timeout US measurement detected
+[2018-08-29 21:17:32] Timeout US measurement detected
+[2018-08-29 21:17:33] Timeout US measurement detected
+[2018-08-29 21:17:34] Timeout US measurement detected
+[2018-08-29 21:17:35] Timeout US measurement detected
+[2018-08-29 21:17:36] Timeout US measurement detected
+[2018-08-29 21:17:37] Timeout US measurement detected
+[2018-08-29 21:17:38] Timeout US measurement detected
+[2018-08-29 21:17:39] Timeout US measurement detected
+[2018-08-29 21:17:40] Writing measurement data to SD Card
+[2018-08-29 21:17:40] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(0.00)
+[2018-08-29 21:17:40] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(1.00)
+[2018-08-29 21:17:40] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(0.00)
+[2018-08-29 21:17:40] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-29 21:17:40] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-29 21:17:41] Timeout US measurement detected
+[2018-08-29 21:17:42] Timeout US measurement detected
+[2018-08-29 21:17:43] Timeout US measurement detected
+[2018-08-29 21:17:44] Timeout US measurement detected
+[2018-08-29 21:17:45] Timeout US measurement detected
+[2018-08-29 21:17:46] Timeout US measurement detected
+[2018-08-29 21:17:48] Timeout US measurement detected
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-08-29 21:18:29] Reading settings from EEP
+[2018-08-29 21:18:29] EEP checksum ok 
+[2018-08-29 21:18:29] EEPSize 33 Byte
+[2018-08-29 21:18:29] System startup
+[2018-08-29 21:18:31] Timeout US measurement detected
+[2018-08-29 21:18:47] Writing settings to EEP
+[2018-08-29 21:18:48] Timeout US measurement detected
+[2018-08-29 21:18:56] Timeout US measurement detected
+[2018-08-29 21:19:29] Time updated by NTP
+[2018-08-29 21:19:35] Writing settings to EEP
+[2018-08-29 21:19:55] Writing settings to EEP
+[2018-08-29 21:19:56] Timeout US measurement detected
+[2018-08-29 21:20:01] Writing settings to EEP
+[2018-08-29 21:20:02] Timeout US measurement detected
+[2018-08-29 21:20:08] Writing settings to EEP
+[2018-08-29 21:20:09] Writing measurement data to SD Card
+[2018-08-29 21:20:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(688.00)
+[2018-08-29 21:20:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-29 21:20:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-29 21:20:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-29 21:20:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-29 21:20:11] Writing settings to EEP
+[2018-08-29 22:18:43] Time updated by NTP
+[2018-08-29 22:20:18] Writing measurement data to SD Card
+[2018-08-29 22:20:18] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(684.00)
+[2018-08-29 22:20:18] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-29 22:20:18] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-29 22:20:18] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-29 22:20:18] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-29 23:18:56] Time updated by NTP
+[2018-08-29 23:20:25] Writing measurement data to SD Card
+[2018-08-29 23:20:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(681.00)
+[2018-08-29 23:20:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-29 23:20:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-29 23:20:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-29 23:20:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-30 00:19:11] Time updated by NTP
+[2018-08-30 00:20:34] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-08-30 00:20:34] Transmission error while receiving datapoint
+[2018-08-30 00:20:34] NaN
+[2018-08-30 00:20:34] Rain in last 24h from weather station [mm]:  NAN
+[2018-08-30 00:20:34] Writing measurement data to SD Card
+[2018-08-30 00:20:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(681.00)
+[2018-08-30 00:20:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-30 00:20:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-30 00:20:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-30 00:20:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-30 01:19:24] Time updated by NTP
+[2018-08-30 01:20:41] Writing measurement data to SD Card
+[2018-08-30 01:20:41] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(681.00)
+[2018-08-30 01:20:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-30 01:20:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-30 01:20:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-30 01:20:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-30 02:19:39] Time updated by NTP
+[2018-08-30 02:20:50] Writing measurement data to SD Card
+[2018-08-30 02:20:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(678.00)
+[2018-08-30 02:20:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-30 02:20:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-30 02:20:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-30 02:20:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-30 03:19:52] Time updated by NTP
+[2018-08-30 03:20:58] Writing measurement data to SD Card
+[2018-08-30 03:20:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(678.00)
+[2018-08-30 03:20:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-30 03:20:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-30 03:20:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-30 03:20:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-30 04:20:07] Time updated by NTP
+[2018-08-30 04:21:06] Writing measurement data to SD Card
+[2018-08-30 04:21:06] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(675.00)
+[2018-08-30 04:21:06] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-30 04:21:06] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-30 04:21:06] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-30 04:21:06] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-30 05:20:20] Time updated by NTP
+[2018-08-30 05:21:14] Writing measurement data to SD Card
+[2018-08-30 05:21:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(662.00)
+[2018-08-30 05:21:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-30 05:21:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-30 05:21:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-30 05:21:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-30 06:20:34] Time updated by NTP
+[2018-08-30 06:21:21] Writing measurement data to SD Card
+[2018-08-30 06:21:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(772.00)
+[2018-08-30 06:21:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-30 06:21:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(12.00)
+[2018-08-30 06:21:22] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-30 06:21:22] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-30 07:19:48] Time updated by NTP
+[2018-08-30 07:21:30] Writing measurement data to SD Card
+[2018-08-30 07:21:30] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(779.00)
+[2018-08-30 07:21:30] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-30 07:21:30] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(12.00)
+[2018-08-30 07:21:30] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-30 07:21:30] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-30 08:20:02] Time updated by NTP
+[2018-08-30 08:21:37] Writing measurement data to SD Card
+[2018-08-30 08:21:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(779.00)
+[2018-08-30 08:21:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-30 08:21:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(12.00)
+[2018-08-30 08:21:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-30 08:21:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-30 09:20:16] Time updated by NTP
+[2018-08-30 09:21:46] Writing measurement data to SD Card
+[2018-08-30 09:21:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(775.00)
+[2018-08-30 09:21:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-30 09:21:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(12.00)
+[2018-08-30 09:21:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-30 09:21:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-30 10:20:30] Time updated by NTP
+[2018-08-30 10:21:54] Writing measurement data to SD Card
+[2018-08-30 10:21:54] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(775.00)
+[2018-08-30 10:21:54] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-30 10:21:54] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(12.00)
+[2018-08-30 10:21:54] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-30 10:21:54] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-30 11:20:44] Time updated by NTP
+[2018-08-30 11:22:02] Writing measurement data to SD Card
+[2018-08-30 11:22:02] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(775.00)
+[2018-08-30 11:22:02] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-30 11:22:02] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(12.00)
+[2018-08-30 11:22:02] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-30 11:22:02] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-30 12:20:58] Time updated by NTP
+[2018-08-30 12:22:10] Writing measurement data to SD Card
+[2018-08-30 12:22:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(775.00)
+[2018-08-30 12:22:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-30 12:22:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(12.00)
+[2018-08-30 12:22:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-30 12:22:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-30 13:21:02] Timeout US measurement detected
+[2018-08-30 13:21:02] Timeout US measurement detected
+[2018-08-30 13:21:12] Time updated by NTP
+[2018-08-30 13:21:22] Timeout US measurement detected
+[2018-08-30 13:21:22] Timeout US measurement detected
+[2018-08-30 13:21:26] Timeout US measurement detected
+[2018-08-30 13:22:21] Timeout US measurement detected
+[2018-08-30 13:22:21] Writing measurement data to SD Card
+[2018-08-30 13:22:21] Connection to CCU failed
+[2018-08-30 13:22:21] Result: 0
+[2018-08-30 13:22:21] Connection to CCU failed
+[2018-08-30 13:22:21] Result: 0
+[2018-08-30 13:22:21] Connection to CCU failed
+[2018-08-30 13:22:21] Result: 0
+[2018-08-30 13:22:21] Connection to CCU failed
+[2018-08-30 13:22:21] Result: 0
+[2018-08-30 13:22:21] Connection to CCU failed
+[2018-08-30 13:22:21] Result: 0
+[2018-08-30 14:21:26] Time updated by NTP
+[2018-08-30 14:22:26] Writing measurement data to SD Card
+[2018-08-30 14:22:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(769.00)
+[2018-08-30 14:22:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-30 14:22:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(12.00)
+[2018-08-30 14:22:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-30 14:22:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-30 15:21:40] Time updated by NTP
+[2018-08-30 15:22:34] Writing measurement data to SD Card
+[2018-08-30 15:22:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(769.00)
+[2018-08-30 15:22:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-30 15:22:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(12.00)
+[2018-08-30 15:22:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-30 15:22:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-30 16:21:54] Time updated by NTP
+[2018-08-30 16:22:42] Writing measurement data to SD Card
+[2018-08-30 16:22:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(769.00)
+[2018-08-30 16:22:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-30 16:22:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(12.00)
+[2018-08-30 16:22:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-30 16:22:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-30 17:21:08] Time updated by NTP
+[2018-08-30 17:22:51] Writing measurement data to SD Card
+[2018-08-30 17:22:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(738.00)
+[2018-08-30 17:22:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-30 17:22:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(11.00)
+[2018-08-30 17:22:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-30 17:22:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-30 18:21:21] Time updated by NTP
+[2018-08-30 18:22:12] Timeout US measurement detected
+[2018-08-30 18:22:52] Timeout US measurement detected
+[2018-08-30 18:22:58] Writing measurement data to SD Card
+[2018-08-30 18:22:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(725.00)
+[2018-08-30 18:22:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-30 18:22:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(11.00)
+[2018-08-30 18:22:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-30 18:22:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-30 18:23:20] Writing headline for measurement data to SD Card

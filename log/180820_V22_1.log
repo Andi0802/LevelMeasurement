@@ -1,0 +1,255 @@
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Check if fixed ethernet address is used in network
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-08-20 10:02:47] Reading settings from EEP
+[2018-08-20 10:02:47] EEP checksum ok 
+[2018-08-20 10:02:47] System startup
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Check if fixed ethernet address is used in network
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-08-20 10:03:25] Reading settings from EEP
+[2018-08-20 10:03:25] EEP checksum ok 
+[2018-08-20 10:03:25] System startup
+[2018-08-20 10:04:12] HTTP Request receives: 
+[2018-08-20 10:04:12] GET / HTTP/1.1
+
+[2018-08-20 10:04:12] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-20 10:04:12] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-20 10:04:12] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-20 10:04:13] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-20 10:04:13] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-20 10:04:13] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:04:13] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:04:13] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:04:13] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-20 10:04:15] HTTP Request receives: favicon.ico
+[2018-08-20 10:04:15] GET /favicon.ico HTTP/1.1
+
+[2018-08-20 10:04:15] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-20 10:04:15] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-20 10:04:15] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-20 10:04:16] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-20 10:04:16] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-20 10:04:16] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:04:16] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:04:16] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:04:16] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-20 10:04:25] Time updated by NTP
+[2018-08-20 10:05:05] Measured distance: 2025.00 mm
+[2018-08-20 10:05:05] Actual Level     : 375 mm
+[2018-08-20 10:05:05] Actual volume    : 1178 Liter, StdDev: 0.00 Liter
+[2018-08-20 10:05:05] Signal health    : 100
+[2018-08-20 10:05:05] Error status     : 0
+[2018-08-20 10:05:05] Writing measurement data to SD Card
+[2018-08-20 10:05:05] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1178.00)
+[2018-08-20 10:05:05] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-20 10:05:05] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(18.00)
+[2018-08-20 10:05:05] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-20 10:05:14] HTTP Request receives: 
+[2018-08-20 10:05:14] GET / HTTP/1.1
+
+[2018-08-20 10:05:14] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-20 10:05:14] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-20 10:05:14] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-20 10:05:14] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-20 10:05:14] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-20 10:05:14] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:05:14] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:05:14] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:05:14] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-20 10:05:14] HTTP Request receives: favicon.ico
+[2018-08-20 10:05:14] GET /favicon.ico HTTP/1.1
+
+[2018-08-20 10:05:14] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-20 10:05:14] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-20 10:05:14] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-20 10:05:14] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-20 10:05:14] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-20 10:05:15] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:05:15] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:05:15] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:05:15] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-20 10:05:17] Refilling requested by manual button
+[2018-08-20 10:05:17] Refilling on. Duration 60 s
+[2018-08-20 10:05:17] Off-Time: 2018-08-20 10:06:17
+[2018-08-20 10:05:25] HTTP Request receives: 
+[2018-08-20 10:05:25] GET / HTTP/1.1
+
+[2018-08-20 10:05:25] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-20 10:05:25] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-20 10:05:25] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-20 10:05:25] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-20 10:05:25] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-20 10:05:25] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:05:25] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:05:25] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:05:25] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-20 10:05:25] HTTP Request receives: favicon.ico
+[2018-08-20 10:05:25] GET /favicon.ico HTTP/1.1
+
+[2018-08-20 10:05:25] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-20 10:05:25] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-20 10:05:25] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-20 10:05:25] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-20 10:05:25] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-20 10:05:25] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:05:25] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:05:25] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:05:25] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-20 10:05:40] HTTP Request receives: 
+[2018-08-20 10:05:40] GET / HTTP/1.1
+
+[2018-08-20 10:05:40] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-20 10:05:40] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-20 10:05:40] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-20 10:05:40] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-20 10:05:40] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-20 10:05:40] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:05:40] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:05:40] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:05:40] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-20 10:05:40] HTTP Request receives: favicon.ico
+[2018-08-20 10:05:40] GET /favicon.ico HTTP/1.1
+
+[2018-08-20 10:05:40] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-20 10:05:40] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-20 10:05:41] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-20 10:05:41] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-20 10:05:41] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-20 10:05:41] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:05:41] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:05:41] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:05:41] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-20 10:05:57] HTTP Request receives: 
+[2018-08-20 10:05:57] GET / HTTP/1.1
+
+[2018-08-20 10:05:57] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-20 10:05:57] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-20 10:05:57] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-20 10:05:57] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-20 10:05:57] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-20 10:05:57] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:05:57] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:05:57] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:05:57] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-20 10:05:57] HTTP Request receives: favicon.ico
+[2018-08-20 10:05:57] GET /favicon.ico HTTP/1.1
+
+[2018-08-20 10:05:57] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-20 10:05:57] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-20 10:05:57] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-20 10:05:57] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-20 10:05:57] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-20 10:05:57] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:05:57] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:05:57] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:05:57] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-20 10:06:06] HTTP Request receives: 
+[2018-08-20 10:06:06] GET / HTTP/1.1
+
+[2018-08-20 10:06:06] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-20 10:06:06] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-20 10:06:06] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-20 10:06:06] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-20 10:06:06] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-20 10:06:06] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:06:06] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:06:06] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:06:06] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-20 10:06:06] HTTP Request receives: favicon.ico
+[2018-08-20 10:06:06] GET /favicon.ico HTTP/1.1
+
+[2018-08-20 10:06:06] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-20 10:06:06] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-20 10:06:06] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-20 10:06:06] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-20 10:06:06] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-20 10:06:07] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:06:07] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:06:07] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:06:07] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-20 10:06:17] Refilling off, Refilling volume: 20 liter
+[2018-08-20 10:06:18] Writing settings to EEP
+[2018-08-20 10:07:58] Measured distance: 2019.00 mm
+[2018-08-20 10:07:58] Actual Level     : 381 mm
+[2018-08-20 10:07:58] Actual volume    : 1196 Liter, StdDev: 2.18 Liter
+[2018-08-20 10:07:58] Signal health    : 97
+[2018-08-20 10:07:58] Error status     : 0
+[2018-08-20 10:07:58] Writing measurement data to SD Card
+[2018-08-20 10:08:00] Connection to CCU failed
+[2018-08-20 10:08:02] Connection to CCU failed
+[2018-08-20 10:08:04] Connection to CCU failed
+[2018-08-20 10:08:06] Connection to CCU failed
+[2018-08-20 10:08:52] Refilling requested by manual button
+[2018-08-20 10:08:52] Refilling on. Duration 60 s
+[2018-08-20 10:08:52] Off-Time: 2018-08-20 10:09:52
+[2018-08-20 10:09:53] Refilling off, Refilling volume: 20 liter
+[2018-08-20 10:09:53] Writing settings to EEP
+[2018-08-20 10:11:33] Measured distance: 2013.28 mm
+[2018-08-20 10:11:33] Actual Level     : 386 mm
+[2018-08-20 10:11:33] Actual volume    : 1212 Liter, StdDev: 2.09 Liter
+[2018-08-20 10:11:33] Signal health    : 98
+[2018-08-20 10:11:33] Error status     : 0
+[2018-08-20 10:11:33] Writing measurement data to SD Card
+[2018-08-20 10:11:35] Connection to CCU failed
+[2018-08-20 10:11:37] Connection to CCU failed
+[2018-08-20 10:11:39] Connection to CCU failed
+[2018-08-20 10:11:41] Connection to CCU failed
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Check if fixed ethernet address is used in network
+[1970-01-01 00:00:02] Using Fixed IP
+[1970-01-01 00:00:02] IP-Address: 192.168.178.5
+[2018-08-20 10:12:44] Reading settings from EEP
+[2018-08-20 10:12:44] EEP checksum ok 
+[2018-08-20 10:12:44] System startup
+[2018-08-20 10:12:55] HTTP Request receives: 
+[2018-08-20 10:12:55] GET / HTTP/1.1
+
+[2018-08-20 10:12:55] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-20 10:12:55] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-20 10:12:55] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-20 10:12:55] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-20 10:12:55] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-20 10:12:55] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:12:55] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:12:55] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:12:56] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-20 10:12:58] HTTP Request receives: favicon.ico
+[2018-08-20 10:12:58] GET /favicon.ico HTTP/1.1
+
+[2018-08-20 10:12:58] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-20 10:12:58] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-20 10:12:58] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-20 10:12:58] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-20 10:12:58] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-20 10:12:58] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:12:58] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:12:58] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:12:58] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-20 10:13:01] HTTP Request receives: Res_Ctl.csv
+[2018-08-20 10:13:01] GET /Res_Ctl.csv HTTP/1.1
+
+[2018-08-20 10:13:01] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-20 10:13:01] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-20 10:13:01] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-20 10:13:01] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-20 10:13:01] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-20 10:13:01] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:13:01] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:13:01] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:13:01] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-20 10:13:01] Writing headline for measurement data to SD Card
+[2018-08-20 10:13:03] HTTP Request receives: Res_Ctl.log
+[2018-08-20 10:13:03] GET /Res_Ctl.log HTTP/1.1
+
+[2018-08-20 10:13:03] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-20 10:13:03] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-20 10:13:03] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-20 10:13:03] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-20 10:13:03] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-20 10:13:03] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:13:03] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:13:03] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-20 10:13:03] Option stResetVolume: No option found, keeping old value  0.00

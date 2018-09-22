@@ -1,0 +1,2375 @@
+[2018-08-31 04:30:13] Time updated by NTP
+[2018-08-31 04:31:00] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-08-31 04:31:01] Transmission error while receiving datapoint
+[2018-08-31 04:31:01] NaN
+[2018-08-31 04:31:01] Rain in last 24h from weather station [mm]:  NAN
+[2018-08-31 04:31:01] Writing measurement data to SD Card
+[2018-08-31 04:31:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(684.00)
+[2018-08-31 04:31:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-31 04:31:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-31 04:31:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-31 05:30:27] Time updated by NTP
+[2018-08-31 05:31:09] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-08-31 05:31:09] Transmission error while receiving datapoint
+[2018-08-31 05:31:09] NaN
+[2018-08-31 05:31:09] Rain in last 24h from weather station [mm]:  NAN
+[2018-08-31 05:31:09] Writing measurement data to SD Card
+[2018-08-31 05:31:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(684.00)
+[2018-08-31 05:31:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-31 05:31:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-31 05:31:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-31 06:30:41] Time updated by NTP
+[2018-08-31 06:31:16] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-08-31 06:31:17] Transmission error while receiving datapoint
+[2018-08-31 06:31:17] NaN
+[2018-08-31 06:31:17] Rain in last 24h from weather station [mm]:  NAN
+[2018-08-31 06:31:17] Writing measurement data to SD Card
+[2018-08-31 06:31:17] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(681.00)
+[2018-08-31 06:31:17] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-31 06:31:17] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-31 06:31:18] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-31 07:29:55] Time updated by NTP
+[2018-08-31 07:31:25] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-08-31 07:31:26] Transmission error while receiving datapoint
+[2018-08-31 07:31:26] NaN
+[2018-08-31 07:31:26] Rain in last 24h from weather station [mm]:  NAN
+[2018-08-31 07:31:26] Writing measurement data to SD Card
+[2018-08-31 07:31:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(678.00)
+[2018-08-31 07:31:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-31 07:31:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-31 07:31:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-31 08:30:09] Time updated by NTP
+[2018-08-31 08:31:33] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-08-31 08:31:33] Transmission error while receiving datapoint
+[2018-08-31 08:31:33] NaN
+[2018-08-31 08:31:33] Rain in last 24h from weather station [mm]:  NAN
+[2018-08-31 08:31:33] Writing measurement data to SD Card
+[2018-08-31 08:31:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(678.00)
+[2018-08-31 08:31:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-31 08:31:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-31 08:31:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-31 09:30:23] Time updated by NTP
+[2018-08-31 09:31:41] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-08-31 09:31:42] Transmission error while receiving datapoint
+[2018-08-31 09:31:42] NaN
+[2018-08-31 09:31:42] Rain in last 24h from weather station [mm]:  NAN
+[2018-08-31 09:31:42] Writing measurement data to SD Card
+[2018-08-31 09:31:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(678.00)
+[2018-08-31 09:31:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-31 09:31:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-31 09:31:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-31 10:30:37] Time updated by NTP
+[2018-08-31 10:31:49] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-08-31 10:31:50] Transmission error while receiving datapoint
+[2018-08-31 10:31:50] NaN
+[2018-08-31 10:31:50] Rain in last 24h from weather station [mm]:  NAN
+[2018-08-31 10:31:50] Writing measurement data to SD Card
+[2018-08-31 10:31:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(678.00)
+[2018-08-31 10:31:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-31 10:31:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-31 10:31:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-31 11:30:50] Time updated by NTP
+[2018-08-31 11:31:56] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-08-31 11:31:57] Transmission error while receiving datapoint
+[2018-08-31 11:31:57] NaN
+[2018-08-31 11:31:57] Rain in last 24h from weather station [mm]:  NAN
+[2018-08-31 11:31:57] Writing measurement data to SD Card
+[2018-08-31 11:31:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(675.00)
+[2018-08-31 11:31:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-31 11:31:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-31 11:31:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-31 12:31:05] Time updated by NTP
+[2018-08-31 12:32:05] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-08-31 12:32:06] Transmission error while receiving datapoint
+[2018-08-31 12:32:06] NaN
+[2018-08-31 12:32:06] Rain in last 24h from weather station [mm]:  NAN
+[2018-08-31 12:32:06] Writing measurement data to SD Card
+[2018-08-31 12:32:06] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(675.00)
+[2018-08-31 12:32:06] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-31 12:32:06] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-31 12:32:06] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-31 13:31:18] Time updated by NTP
+[2018-08-31 13:32:13] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-08-31 13:32:13] Transmission error while receiving datapoint
+[2018-08-31 13:32:13] NaN
+[2018-08-31 13:32:13] Rain in last 24h from weather station [mm]:  NAN
+[2018-08-31 13:32:13] Writing measurement data to SD Card
+[2018-08-31 13:32:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(694.00)
+[2018-08-31 13:32:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-31 13:32:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(11.00)
+[2018-08-31 13:32:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-31 14:31:33] Time updated by NTP
+[2018-08-31 14:32:21] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-08-31 14:32:22] Transmission error while receiving datapoint
+[2018-08-31 14:32:22] NaN
+[2018-08-31 14:32:22] Rain in last 24h from weather station [mm]:  NAN
+[2018-08-31 14:32:22] Writing measurement data to SD Card
+[2018-08-31 14:32:22] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(691.00)
+[2018-08-31 14:32:22] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-31 14:32:22] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-31 14:32:22] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-31 15:31:46] Time updated by NTP
+[2018-08-31 15:32:29] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-08-31 15:32:29] Transmission error while receiving datapoint
+[2018-08-31 15:32:29] NaN
+[2018-08-31 15:32:29] Rain in last 24h from weather station [mm]:  NAN
+[2018-08-31 15:32:29] Writing measurement data to SD Card
+[2018-08-31 15:32:29] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(691.00)
+[2018-08-31 15:32:29] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-31 15:32:29] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-31 15:32:29] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-31 16:31:01] Time updated by NTP
+[2018-08-31 16:32:37] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-08-31 16:32:38] Transmission error while receiving datapoint
+[2018-08-31 16:32:38] NaN
+[2018-08-31 16:32:38] Rain in last 24h from weather station [mm]:  NAN
+[2018-08-31 16:32:38] Writing measurement data to SD Card
+[2018-08-31 16:32:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(688.00)
+[2018-08-31 16:32:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-31 16:32:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-31 16:32:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-31 17:31:14] Time updated by NTP
+[2018-08-31 17:32:45] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-08-31 17:32:46] Transmission error while receiving datapoint
+[2018-08-31 17:32:46] NaN
+[2018-08-31 17:32:46] Rain in last 24h from weather station [mm]:  NAN
+[2018-08-31 17:32:46] Writing measurement data to SD Card
+[2018-08-31 17:32:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(656.00)
+[2018-08-31 17:32:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-31 17:32:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-31 17:32:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-31 18:31:29] Time updated by NTP
+[2018-08-31 18:32:54] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-08-31 18:32:54] Transmission error while receiving datapoint
+[2018-08-31 18:32:54] NaN
+[2018-08-31 18:32:54] Rain in last 24h from weather station [mm]:  NAN
+[2018-08-31 18:32:54] Writing measurement data to SD Card
+[2018-08-31 18:32:54] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(650.00)
+[2018-08-31 18:32:54] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-31 18:32:54] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-31 18:32:54] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-31 19:31:42] Time updated by NTP
+[2018-08-31 19:33:01] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-08-31 19:33:02] Transmission error while receiving datapoint
+[2018-08-31 19:33:02] NaN
+[2018-08-31 19:33:02] Rain in last 24h from weather station [mm]:  NAN
+[2018-08-31 19:33:02] Writing measurement data to SD Card
+[2018-08-31 19:33:02] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(640.00)
+[2018-08-31 19:33:02] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-31 19:33:02] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-31 19:33:02] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-31 20:31:56] Time updated by NTP
+[2018-08-31 20:33:09] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-08-31 20:33:09] Transmission error while receiving datapoint
+[2018-08-31 20:33:09] NaN
+[2018-08-31 20:33:10] Rain in last 24h from weather station [mm]:  NAN
+[2018-08-31 20:33:10] Writing measurement data to SD Card
+[2018-08-31 20:33:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(640.00)
+[2018-08-31 20:33:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-31 20:33:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-31 20:33:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-31 21:32:10] Time updated by NTP
+[2018-08-31 21:33:17] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-08-31 21:33:18] Transmission error while receiving datapoint
+[2018-08-31 21:33:18] NaN
+[2018-08-31 21:33:18] Rain in last 24h from weather station [mm]:  NAN
+[2018-08-31 21:33:18] Writing measurement data to SD Card
+[2018-08-31 21:33:18] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(634.00)
+[2018-08-31 21:33:18] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-31 21:33:18] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-31 21:33:18] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-31 22:32:24] Time updated by NTP
+[2018-08-31 22:33:25] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-08-31 22:33:26] Transmission error while receiving datapoint
+[2018-08-31 22:33:26] NaN
+[2018-08-31 22:33:26] Rain in last 24h from weather station [mm]:  NAN
+[2018-08-31 22:33:26] Writing measurement data to SD Card
+[2018-08-31 22:33:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(631.00)
+[2018-08-31 22:33:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-31 22:33:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-31 22:33:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-31 23:32:38] Time updated by NTP
+[2018-08-31 23:33:33] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-08-31 23:33:34] Transmission error while receiving datapoint
+[2018-08-31 23:33:34] NaN
+[2018-08-31 23:33:34] Rain in last 24h from weather station [mm]:  NAN
+[2018-08-31 23:33:34] Writing measurement data to SD Card
+[2018-08-31 23:33:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(631.00)
+[2018-08-31 23:33:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-31 23:33:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-31 23:33:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 00:32:52] Time updated by NTP
+[2018-09-01 00:33:41] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 00:33:42] Transmission error while receiving datapoint
+[2018-09-01 00:33:42] NaN
+[2018-09-01 00:33:42] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 00:33:42] Writing measurement data to SD Card
+[2018-09-01 00:33:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(628.00)
+[2018-09-01 00:33:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-09-01 00:33:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 00:33:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 01:33:06] Time updated by NTP
+[2018-09-01 01:33:50] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 01:33:50] Transmission error while receiving datapoint
+[2018-09-01 01:33:50] NaN
+[2018-09-01 01:33:50] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 01:33:50] Writing measurement data to SD Card
+[2018-09-01 01:33:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(628.00)
+[2018-09-01 01:33:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-09-01 01:33:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 01:33:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 02:32:19] Time updated by NTP
+[2018-09-01 02:33:57] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 02:33:58] Transmission error while receiving datapoint
+[2018-09-01 02:33:58] NaN
+[2018-09-01 02:33:58] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 02:33:58] Writing measurement data to SD Card
+[2018-09-01 02:33:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(628.00)
+[2018-09-01 02:33:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 02:33:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 02:33:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 03:32:34] Time updated by NTP
+[2018-09-01 03:34:06] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 03:34:07] Transmission error while receiving datapoint
+[2018-09-01 03:34:07] NaN
+[2018-09-01 03:34:07] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 03:34:07] Writing measurement data to SD Card
+[2018-09-01 03:34:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(625.00)
+[2018-09-01 03:34:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-09-01 03:34:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 03:34:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 03:34:07] Refilling required
+[2018-09-01 03:34:07] Refilling on. Duration 60 s
+[2018-09-01 03:34:07] Off-Time: 2018-09-01 03:35:07
+[2018-09-01 03:35:08] Refilling off, Refilling volume: 20 liter
+[2018-09-01 03:35:08] Writing settings to EEP
+[2018-09-01 03:36:48] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 03:36:49] Transmission error while receiving datapoint
+[2018-09-01 03:36:49] NaN
+[2018-09-01 03:36:49] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 03:36:49] Writing measurement data to SD Card
+[2018-09-01 03:36:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(625.00)
+[2018-09-01 03:36:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 03:36:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 03:36:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 03:36:49] Refilling required
+[2018-09-01 03:36:49] Refilling on. Duration 60 s
+[2018-09-01 03:36:49] Off-Time: 2018-09-01 03:37:49
+[2018-09-01 03:37:50] Refilling off, Refilling volume: 20 liter
+[2018-09-01 03:37:50] Writing settings to EEP
+[2018-09-01 03:39:30] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 03:39:31] Transmission error while receiving datapoint
+[2018-09-01 03:39:31] NaN
+[2018-09-01 03:39:31] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 03:39:31] Writing measurement data to SD Card
+[2018-09-01 03:39:31] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(622.00)
+[2018-09-01 03:39:31] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-09-01 03:39:31] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 03:39:31] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 03:39:31] Refilling required
+[2018-09-01 03:39:31] Refilling on. Duration 60 s
+[2018-09-01 03:39:31] Off-Time: 2018-09-01 03:40:31
+[2018-09-01 03:40:31] Refilling off, Refilling volume: 20 liter
+[2018-09-01 03:40:32] Writing settings to EEP
+[2018-09-01 03:42:12] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 03:42:13] Transmission error while receiving datapoint
+[2018-09-01 03:42:13] NaN
+[2018-09-01 03:42:13] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 03:42:13] Writing measurement data to SD Card
+[2018-09-01 03:42:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(625.00)
+[2018-09-01 03:42:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 03:42:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 03:42:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 03:42:13] Refilling required
+[2018-09-01 03:42:13] Refilling on. Duration 60 s
+[2018-09-01 03:42:13] Off-Time: 2018-09-01 03:43:13
+[2018-09-01 03:43:14] Refilling off, Refilling volume: 20 liter
+[2018-09-01 03:43:14] Writing settings to EEP
+[2018-09-01 03:44:54] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 03:44:55] Transmission error while receiving datapoint
+[2018-09-01 03:44:55] NaN
+[2018-09-01 03:44:55] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 03:44:55] Writing measurement data to SD Card
+[2018-09-01 03:44:55] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(625.00)
+[2018-09-01 03:44:55] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 03:44:55] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 03:44:55] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 03:44:55] Refilling required
+[2018-09-01 03:44:55] Refilling on. Duration 60 s
+[2018-09-01 03:44:55] Off-Time: 2018-09-01 03:45:55
+[2018-09-01 03:45:56] Refilling off, Refilling volume: 20 liter
+[2018-09-01 03:45:56] Writing settings to EEP
+[2018-09-01 03:47:36] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 03:47:37] Transmission error while receiving datapoint
+[2018-09-01 03:47:37] NaN
+[2018-09-01 03:47:37] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 03:47:37] Writing measurement data to SD Card
+[2018-09-01 03:47:37] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(625.00)
+[2018-09-01 03:47:37] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 03:47:37] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 03:47:37] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 03:47:37] Refilling required
+[2018-09-01 03:47:37] Refilling on. Duration 60 s
+[2018-09-01 03:47:37] Off-Time: 2018-09-01 03:48:37
+[2018-09-01 03:48:38] Refilling off, Refilling volume: 20 liter
+[2018-09-01 03:48:38] Writing settings to EEP
+[2018-09-01 03:50:18] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 03:50:19] Transmission error while receiving datapoint
+[2018-09-01 03:50:19] NaN
+[2018-09-01 03:50:19] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 03:50:19] Writing measurement data to SD Card
+[2018-09-01 03:50:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(625.00)
+[2018-09-01 03:50:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 03:50:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 03:50:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 03:50:19] Refilling required
+[2018-09-01 03:50:19] Refilling on. Duration 60 s
+[2018-09-01 03:50:19] Off-Time: 2018-09-01 03:51:19
+[2018-09-01 03:51:19] Refilling off, Refilling volume: 20 liter
+[2018-09-01 03:51:20] Writing settings to EEP
+[2018-09-01 03:53:00] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 03:53:01] Transmission error while receiving datapoint
+[2018-09-01 03:53:01] NaN
+[2018-09-01 03:53:01] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 03:53:01] Writing measurement data to SD Card
+[2018-09-01 03:53:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(622.00)
+[2018-09-01 03:53:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 03:53:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 03:53:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 03:53:01] Refilling required
+[2018-09-01 03:53:01] Refilling on. Duration 60 s
+[2018-09-01 03:53:01] Off-Time: 2018-09-01 03:54:01
+[2018-09-01 03:54:02] Refilling off, Refilling volume: 20 liter
+[2018-09-01 03:54:02] Writing settings to EEP
+[2018-09-01 03:55:42] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 03:55:43] Transmission error while receiving datapoint
+[2018-09-01 03:55:43] NaN
+[2018-09-01 03:55:43] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 03:55:43] Writing measurement data to SD Card
+[2018-09-01 03:55:43] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(625.00)
+[2018-09-01 03:55:43] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 03:55:43] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 03:55:43] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 03:55:43] Refilling required
+[2018-09-01 03:55:43] Refilling on. Duration 60 s
+[2018-09-01 03:55:43] Off-Time: 2018-09-01 03:56:43
+[2018-09-01 03:56:44] Refilling off, Refilling volume: 20 liter
+[2018-09-01 03:56:44] Writing settings to EEP
+[2018-09-01 03:58:24] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 03:58:25] Transmission error while receiving datapoint
+[2018-09-01 03:58:25] NaN
+[2018-09-01 03:58:25] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 03:58:25] Writing measurement data to SD Card
+[2018-09-01 03:58:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(625.00)
+[2018-09-01 03:58:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 03:58:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 03:58:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 03:58:25] Refilling required
+[2018-09-01 03:58:25] Refilling on. Duration 60 s
+[2018-09-01 03:58:25] Off-Time: 2018-09-01 03:59:25
+[2018-09-01 03:59:25] Refilling off, Refilling volume: 20 liter
+[2018-09-01 03:59:26] Writing settings to EEP
+[2018-09-01 04:01:06] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 04:01:07] Transmission error while receiving datapoint
+[2018-09-01 04:01:07] NaN
+[2018-09-01 04:01:07] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 04:01:07] Writing measurement data to SD Card
+[2018-09-01 04:01:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(622.00)
+[2018-09-01 04:01:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-09-01 04:01:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 04:01:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 04:01:07] Refilling required
+[2018-09-01 04:01:07] Refilling on. Duration 60 s
+[2018-09-01 04:01:07] Off-Time: 2018-09-01 04:02:07
+[2018-09-01 04:02:07] Refilling off, Refilling volume: 20 liter
+[2018-09-01 04:02:08] Writing settings to EEP
+[2018-09-01 04:03:48] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 04:03:49] Transmission error while receiving datapoint
+[2018-09-01 04:03:49] NaN
+[2018-09-01 04:03:49] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 04:03:49] Writing measurement data to SD Card
+[2018-09-01 04:03:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(622.00)
+[2018-09-01 04:03:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(96.00)
+[2018-09-01 04:03:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 04:03:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 04:03:49] Refilling required
+[2018-09-01 04:03:49] Refilling on. Duration 60 s
+[2018-09-01 04:03:49] Off-Time: 2018-09-01 04:04:49
+[2018-09-01 04:04:50] Refilling off, Refilling volume: 20 liter
+[2018-09-01 04:04:50] Writing settings to EEP
+[2018-09-01 04:06:30] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 04:06:31] Transmission error while receiving datapoint
+[2018-09-01 04:06:31] NaN
+[2018-09-01 04:06:31] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 04:06:31] Writing measurement data to SD Card
+[2018-09-01 04:06:31] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(622.00)
+[2018-09-01 04:06:31] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-09-01 04:06:31] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 04:06:31] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 04:06:31] Refilling required
+[2018-09-01 04:06:31] Refilling on. Duration 60 s
+[2018-09-01 04:06:31] Off-Time: 2018-09-01 04:07:31
+[2018-09-01 04:07:32] Refilling off, Refilling volume: 20 liter
+[2018-09-01 04:07:32] Writing settings to EEP
+[2018-09-01 04:09:12] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 04:09:13] Transmission error while receiving datapoint
+[2018-09-01 04:09:13] NaN
+[2018-09-01 04:09:13] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 04:09:13] Writing measurement data to SD Card
+[2018-09-01 04:09:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(625.00)
+[2018-09-01 04:09:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 04:09:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 04:09:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 04:09:13] Refilling required
+[2018-09-01 04:09:13] Refilling on. Duration 60 s
+[2018-09-01 04:09:13] Off-Time: 2018-09-01 04:10:13
+[2018-09-01 04:10:13] Refilling off, Refilling volume: 20 liter
+[2018-09-01 04:10:14] Writing settings to EEP
+[2018-09-01 04:11:54] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 04:11:55] Transmission error while receiving datapoint
+[2018-09-01 04:11:55] NaN
+[2018-09-01 04:11:55] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 04:11:55] Writing measurement data to SD Card
+[2018-09-01 04:11:55] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(622.00)
+[2018-09-01 04:11:55] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 04:11:55] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 04:11:55] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 04:11:55] Refilling required
+[2018-09-01 04:11:55] Refilling on. Duration 60 s
+[2018-09-01 04:11:55] Off-Time: 2018-09-01 04:12:55
+[2018-09-01 04:12:56] Refilling off, Refilling volume: 20 liter
+[2018-09-01 04:12:56] Writing settings to EEP
+[2018-09-01 04:14:36] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 04:14:37] Transmission error while receiving datapoint
+[2018-09-01 04:14:37] NaN
+[2018-09-01 04:14:37] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 04:14:37] Writing measurement data to SD Card
+[2018-09-01 04:14:37] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(622.00)
+[2018-09-01 04:14:37] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 04:14:37] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 04:14:37] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 04:14:37] Refilling required
+[2018-09-01 04:14:37] Refilling on. Duration 60 s
+[2018-09-01 04:14:37] Off-Time: 2018-09-01 04:15:37
+[2018-09-01 04:15:38] Refilling off, Refilling volume: 20 liter
+[2018-09-01 04:15:38] Writing settings to EEP
+[2018-09-01 04:17:18] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 04:17:19] Transmission error while receiving datapoint
+[2018-09-01 04:17:19] NaN
+[2018-09-01 04:17:19] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 04:17:19] Writing measurement data to SD Card
+[2018-09-01 04:17:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(625.00)
+[2018-09-01 04:17:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 04:17:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 04:17:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 04:17:19] Refilling required
+[2018-09-01 04:17:19] Refilling on. Duration 60 s
+[2018-09-01 04:17:19] Off-Time: 2018-09-01 04:18:19
+[2018-09-01 04:18:20] Refilling off, Refilling volume: 20 liter
+[2018-09-01 04:18:20] Writing settings to EEP
+[2018-09-01 04:20:00] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 04:20:01] Transmission error while receiving datapoint
+[2018-09-01 04:20:01] NaN
+[2018-09-01 04:20:01] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 04:20:01] Writing measurement data to SD Card
+[2018-09-01 04:20:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(625.00)
+[2018-09-01 04:20:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 04:20:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 04:20:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 04:20:01] Refilling required
+[2018-09-01 04:20:01] Refilling on. Duration 60 s
+[2018-09-01 04:20:01] Off-Time: 2018-09-01 04:21:01
+[2018-09-01 04:21:01] Refilling off, Refilling volume: 20 liter
+[2018-09-01 04:21:02] Writing settings to EEP
+[2018-09-01 04:22:42] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 04:22:43] Transmission error while receiving datapoint
+[2018-09-01 04:22:43] NaN
+[2018-09-01 04:22:43] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 04:22:43] Writing measurement data to SD Card
+[2018-09-01 04:22:43] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(618.00)
+[2018-09-01 04:22:43] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(95.00)
+[2018-09-01 04:22:43] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 04:22:43] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 04:22:43] Refilling required
+[2018-09-01 04:22:43] Refilling on. Duration 60 s
+[2018-09-01 04:22:43] Off-Time: 2018-09-01 04:23:43
+[2018-09-01 04:23:44] Refilling off, Refilling volume: 20 liter
+[2018-09-01 04:23:44] Writing settings to EEP
+[2018-09-01 04:24:05] Timeout US measurement detected
+[2018-09-01 04:25:24] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 04:25:25] Transmission error while receiving datapoint
+[2018-09-01 04:25:25] NaN
+[2018-09-01 04:25:25] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 04:25:25] Writing measurement data to SD Card
+[2018-09-01 04:25:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(622.00)
+[2018-09-01 04:25:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 04:25:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 04:25:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 04:25:25] Refilling required
+[2018-09-01 04:25:25] Refilling on. Duration 60 s
+[2018-09-01 04:25:25] Off-Time: 2018-09-01 04:26:25
+[2018-09-01 04:26:26] Refilling off, Refilling volume: 20 liter
+[2018-09-01 04:26:26] Writing settings to EEP
+[2018-09-01 04:28:06] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 04:28:07] Transmission error while receiving datapoint
+[2018-09-01 04:28:07] NaN
+[2018-09-01 04:28:07] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 04:28:07] Writing measurement data to SD Card
+[2018-09-01 04:28:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(618.00)
+[2018-09-01 04:28:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 04:28:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 04:28:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 04:28:07] Refilling required
+[2018-09-01 04:28:07] Refilling on. Duration 60 s
+[2018-09-01 04:28:07] Off-Time: 2018-09-01 04:29:07
+[2018-09-01 04:29:08] Refilling off, Refilling volume: 20 liter
+[2018-09-01 04:29:08] Writing settings to EEP
+[2018-09-01 04:30:48] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 04:30:49] Transmission error while receiving datapoint
+[2018-09-01 04:30:49] NaN
+[2018-09-01 04:30:49] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 04:30:49] Writing measurement data to SD Card
+[2018-09-01 04:30:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(618.00)
+[2018-09-01 04:30:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 04:30:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 04:30:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 04:30:49] Refilling required
+[2018-09-01 04:30:49] Refilling on. Duration 60 s
+[2018-09-01 04:30:49] Off-Time: 2018-09-01 04:31:49
+[2018-09-01 04:31:49] Refilling off, Refilling volume: 20 liter
+[2018-09-01 04:31:50] Writing settings to EEP
+[2018-09-01 04:32:47] Time updated by NTP
+[2018-09-01 04:33:37] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 04:33:38] Transmission error while receiving datapoint
+[2018-09-01 04:33:38] NaN
+[2018-09-01 04:33:38] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 04:33:38] Writing measurement data to SD Card
+[2018-09-01 04:33:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(618.00)
+[2018-09-01 04:33:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 04:33:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 04:33:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 04:33:38] Refilling required
+[2018-09-01 04:33:38] Refilling on. Duration 60 s
+[2018-09-01 04:33:38] Off-Time: 2018-09-01 04:34:38
+[2018-09-01 04:34:39] Refilling off, Refilling volume: 20 liter
+[2018-09-01 04:34:39] Writing settings to EEP
+[2018-09-01 04:36:19] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 04:36:20] Transmission error while receiving datapoint
+[2018-09-01 04:36:20] NaN
+[2018-09-01 04:36:20] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 04:36:20] Writing measurement data to SD Card
+[2018-09-01 04:36:20] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(618.00)
+[2018-09-01 04:36:20] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 04:36:20] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 04:36:20] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 04:36:20] Refilling required
+[2018-09-01 04:36:20] Refilling on. Duration 60 s
+[2018-09-01 04:36:20] Off-Time: 2018-09-01 04:37:20
+[2018-09-01 04:37:21] Refilling off, Refilling volume: 20 liter
+[2018-09-01 04:37:21] Writing settings to EEP
+[2018-09-01 04:39:01] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 04:39:02] Transmission error while receiving datapoint
+[2018-09-01 04:39:02] NaN
+[2018-09-01 04:39:02] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 04:39:02] Writing measurement data to SD Card
+[2018-09-01 04:39:02] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(615.00)
+[2018-09-01 04:39:02] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-09-01 04:39:02] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 04:39:02] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 04:39:02] Refilling required
+[2018-09-01 04:39:02] Refilling on. Duration 60 s
+[2018-09-01 04:39:02] Off-Time: 2018-09-01 04:40:02
+[2018-09-01 04:40:02] Refilling off, Refilling volume: 20 liter
+[2018-09-01 04:40:03] Writing settings to EEP
+[2018-09-01 04:41:43] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 04:41:44] Transmission error while receiving datapoint
+[2018-09-01 04:41:44] NaN
+[2018-09-01 04:41:44] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 04:41:44] Writing measurement data to SD Card
+[2018-09-01 04:41:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(615.00)
+[2018-09-01 04:41:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-09-01 04:41:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 04:41:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 04:41:44] Refilling required
+[2018-09-01 04:41:44] Refilling on. Duration 60 s
+[2018-09-01 04:41:44] Off-Time: 2018-09-01 04:42:44
+[2018-09-01 04:42:44] Refilling off, Refilling volume: 20 liter
+[2018-09-01 04:42:45] Writing settings to EEP
+[2018-09-01 04:44:25] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 04:44:26] Transmission error while receiving datapoint
+[2018-09-01 04:44:26] NaN
+[2018-09-01 04:44:26] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 04:44:26] Writing measurement data to SD Card
+[2018-09-01 04:44:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(618.00)
+[2018-09-01 04:44:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 04:44:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 04:44:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 04:44:26] Refilling required
+[2018-09-01 04:44:26] Refilling on. Duration 60 s
+[2018-09-01 04:44:26] Off-Time: 2018-09-01 04:45:26
+[2018-09-01 04:45:27] Refilling off, Refilling volume: 20 liter
+[2018-09-01 04:45:27] Writing settings to EEP
+[2018-09-01 04:47:07] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 04:47:08] Transmission error while receiving datapoint
+[2018-09-01 04:47:08] NaN
+[2018-09-01 04:47:08] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 04:47:08] Writing measurement data to SD Card
+[2018-09-01 04:47:08] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(615.00)
+[2018-09-01 04:47:08] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-09-01 04:47:08] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 04:47:08] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 04:47:08] Refilling required
+[2018-09-01 04:47:08] Refilling on. Duration 60 s
+[2018-09-01 04:47:08] Off-Time: 2018-09-01 04:48:08
+[2018-09-01 04:48:09] Refilling off, Refilling volume: 20 liter
+[2018-09-01 04:48:09] Writing settings to EEP
+[2018-09-01 04:49:49] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 04:49:50] Transmission error while receiving datapoint
+[2018-09-01 04:49:50] NaN
+[2018-09-01 04:49:50] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 04:49:50] Writing measurement data to SD Card
+[2018-09-01 04:49:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(618.00)
+[2018-09-01 04:49:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 04:49:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 04:49:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 04:49:50] Refilling required
+[2018-09-01 04:49:50] Refilling on. Duration 60 s
+[2018-09-01 04:49:50] Off-Time: 2018-09-01 04:50:50
+[2018-09-01 04:50:50] Refilling off, Refilling volume: 20 liter
+[2018-09-01 04:50:51] Writing settings to EEP
+[2018-09-01 04:52:31] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 04:52:31] Transmission error while receiving datapoint
+[2018-09-01 04:52:31] NaN
+[2018-09-01 04:52:32] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 04:52:32] Writing measurement data to SD Card
+[2018-09-01 04:52:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(615.00)
+[2018-09-01 04:52:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 04:52:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 04:52:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 04:52:33] Refilling required
+[2018-09-01 04:52:33] Refilling on. Duration 60 s
+[2018-09-01 04:52:33] Off-Time: 2018-09-01 04:53:33
+[2018-09-01 04:53:34] Refilling off, Refilling volume: 20 liter
+[2018-09-01 04:53:34] Writing settings to EEP
+[2018-09-01 04:55:14] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 04:55:15] Transmission error while receiving datapoint
+[2018-09-01 04:55:15] NaN
+[2018-09-01 04:55:15] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 04:55:15] Writing measurement data to SD Card
+[2018-09-01 04:55:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(615.00)
+[2018-09-01 04:55:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-09-01 04:55:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 04:55:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 04:55:15] Refilling required
+[2018-09-01 04:55:15] Refilling on. Duration 60 s
+[2018-09-01 04:55:15] Off-Time: 2018-09-01 04:56:15
+[2018-09-01 04:56:16] Refilling off, Refilling volume: 20 liter
+[2018-09-01 04:56:16] Writing settings to EEP
+[2018-09-01 04:57:56] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 04:57:57] Transmission error while receiving datapoint
+[2018-09-01 04:57:57] NaN
+[2018-09-01 04:57:57] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 04:57:57] Writing measurement data to SD Card
+[2018-09-01 04:57:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(615.00)
+[2018-09-01 04:57:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 04:57:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 04:57:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 04:57:57] Refilling required
+[2018-09-01 04:57:57] Refilling on. Duration 60 s
+[2018-09-01 04:57:57] Off-Time: 2018-09-01 04:58:57
+[2018-09-01 04:58:58] Refilling off, Refilling volume: 20 liter
+[2018-09-01 04:58:58] Writing settings to EEP
+[2018-09-01 05:00:38] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 05:00:39] Transmission error while receiving datapoint
+[2018-09-01 05:00:39] NaN
+[2018-09-01 05:00:39] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 05:00:39] Writing measurement data to SD Card
+[2018-09-01 05:00:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(615.00)
+[2018-09-01 05:00:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 05:00:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 05:00:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 05:00:39] Refilling required
+[2018-09-01 05:00:39] Refilling on. Duration 60 s
+[2018-09-01 05:00:39] Off-Time: 2018-09-01 05:01:39
+[2018-09-01 05:01:39] Refilling off, Refilling volume: 20 liter
+[2018-09-01 05:01:40] Writing settings to EEP
+[2018-09-01 05:03:20] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 05:03:21] Transmission error while receiving datapoint
+[2018-09-01 05:03:21] NaN
+[2018-09-01 05:03:21] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 05:03:21] Writing measurement data to SD Card
+[2018-09-01 05:03:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(615.00)
+[2018-09-01 05:03:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 05:03:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 05:03:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 05:03:21] Refilling required
+[2018-09-01 05:03:21] Refilling on. Duration 60 s
+[2018-09-01 05:03:21] Off-Time: 2018-09-01 05:04:21
+[2018-09-01 05:04:22] Refilling off, Refilling volume: 20 liter
+[2018-09-01 05:04:22] Writing settings to EEP
+[2018-09-01 05:06:02] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 05:06:03] Transmission error while receiving datapoint
+[2018-09-01 05:06:03] NaN
+[2018-09-01 05:06:03] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 05:06:03] Writing measurement data to SD Card
+[2018-09-01 05:06:03] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(615.00)
+[2018-09-01 05:06:03] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 05:06:03] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 05:06:03] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 05:06:03] Refilling required
+[2018-09-01 05:06:03] Refilling on. Duration 60 s
+[2018-09-01 05:06:03] Off-Time: 2018-09-01 05:07:03
+[2018-09-01 05:07:04] Refilling off, Refilling volume: 20 liter
+[2018-09-01 05:07:04] Writing settings to EEP
+[2018-09-01 05:08:44] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 05:08:45] Transmission error while receiving datapoint
+[2018-09-01 05:08:45] NaN
+[2018-09-01 05:08:45] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 05:08:45] Writing measurement data to SD Card
+[2018-09-01 05:08:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(615.00)
+[2018-09-01 05:08:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 05:08:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 05:08:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 05:08:45] Refilling required
+[2018-09-01 05:08:45] Refilling on. Duration 60 s
+[2018-09-01 05:08:45] Off-Time: 2018-09-01 05:09:45
+[2018-09-01 05:09:46] Refilling off, Refilling volume: 20 liter
+[2018-09-01 05:09:46] Writing settings to EEP
+[2018-09-01 05:11:26] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 05:11:27] Transmission error while receiving datapoint
+[2018-09-01 05:11:27] NaN
+[2018-09-01 05:11:27] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 05:11:27] Writing measurement data to SD Card
+[2018-09-01 05:11:27] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(615.00)
+[2018-09-01 05:11:27] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 05:11:27] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 05:11:27] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 05:11:27] Refilling required
+[2018-09-01 05:11:27] Refilling on. Duration 60 s
+[2018-09-01 05:11:27] Off-Time: 2018-09-01 05:12:27
+[2018-09-01 05:12:27] Refilling off, Refilling volume: 20 liter
+[2018-09-01 05:12:28] Writing settings to EEP
+[2018-09-01 05:14:08] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 05:14:09] Transmission error while receiving datapoint
+[2018-09-01 05:14:09] NaN
+[2018-09-01 05:14:09] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 05:14:09] Writing measurement data to SD Card
+[2018-09-01 05:14:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(615.00)
+[2018-09-01 05:14:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 05:14:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 05:14:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 05:14:09] Refilling required
+[2018-09-01 05:14:09] Refilling on. Duration 60 s
+[2018-09-01 05:14:09] Off-Time: 2018-09-01 05:15:09
+[2018-09-01 05:15:10] Refilling off, Refilling volume: 20 liter
+[2018-09-01 05:15:10] Writing settings to EEP
+[2018-09-01 05:16:50] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 05:16:51] Transmission error while receiving datapoint
+[2018-09-01 05:16:51] NaN
+[2018-09-01 05:16:51] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 05:16:51] Writing measurement data to SD Card
+[2018-09-01 05:16:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(615.00)
+[2018-09-01 05:16:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 05:16:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 05:16:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 05:16:51] Refilling required
+[2018-09-01 05:16:51] Refilling on. Duration 60 s
+[2018-09-01 05:16:51] Off-Time: 2018-09-01 05:17:51
+[2018-09-01 05:17:52] Refilling off, Refilling volume: 20 liter
+[2018-09-01 05:17:52] Writing settings to EEP
+[2018-09-01 05:19:32] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 05:19:33] Transmission error while receiving datapoint
+[2018-09-01 05:19:33] NaN
+[2018-09-01 05:19:33] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 05:19:33] Writing measurement data to SD Card
+[2018-09-01 05:19:33] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(609.00)
+[2018-09-01 05:19:33] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 05:19:33] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 05:19:33] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 05:19:33] Refilling required
+[2018-09-01 05:19:33] Refilling on. Duration 60 s
+[2018-09-01 05:19:33] Off-Time: 2018-09-01 05:20:33
+[2018-09-01 05:20:33] Refilling off, Refilling volume: 20 liter
+[2018-09-01 05:20:34] Writing settings to EEP
+[2018-09-01 05:22:14] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 05:22:15] Transmission error while receiving datapoint
+[2018-09-01 05:22:15] NaN
+[2018-09-01 05:22:15] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 05:22:15] Writing measurement data to SD Card
+[2018-09-01 05:22:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(609.00)
+[2018-09-01 05:22:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 05:22:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 05:22:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 05:22:15] Refilling required
+[2018-09-01 05:22:15] Refilling on. Duration 60 s
+[2018-09-01 05:22:15] Off-Time: 2018-09-01 05:23:15
+[2018-09-01 05:23:15] Refilling off, Refilling volume: 20 liter
+[2018-09-01 05:23:16] Writing settings to EEP
+[2018-09-01 05:24:56] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 05:24:57] Transmission error while receiving datapoint
+[2018-09-01 05:24:57] NaN
+[2018-09-01 05:24:57] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 05:24:57] Writing measurement data to SD Card
+[2018-09-01 05:24:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(609.00)
+[2018-09-01 05:24:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 05:24:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 05:24:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 05:24:57] Refilling required
+[2018-09-01 05:24:57] Refilling on. Duration 60 s
+[2018-09-01 05:24:57] Off-Time: 2018-09-01 05:25:57
+[2018-09-01 05:25:58] Refilling off, Refilling volume: 20 liter
+[2018-09-01 05:25:58] Writing settings to EEP
+[2018-09-01 05:27:38] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 05:27:39] Transmission error while receiving datapoint
+[2018-09-01 05:27:39] NaN
+[2018-09-01 05:27:39] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 05:27:39] Writing measurement data to SD Card
+[2018-09-01 05:27:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(609.00)
+[2018-09-01 05:27:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 05:27:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 05:27:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 05:27:39] Refilling required
+[2018-09-01 05:27:39] Refilling on. Duration 60 s
+[2018-09-01 05:27:39] Off-Time: 2018-09-01 05:28:39
+[2018-09-01 05:28:40] Refilling off, Refilling volume: 20 liter
+[2018-09-01 05:28:40] Writing settings to EEP
+[2018-09-01 05:30:20] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 05:30:21] Transmission error while receiving datapoint
+[2018-09-01 05:30:21] NaN
+[2018-09-01 05:30:21] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 05:30:21] Writing measurement data to SD Card
+[2018-09-01 05:30:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(596.00)
+[2018-09-01 05:30:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(97.00)
+[2018-09-01 05:30:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 05:30:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 05:30:21] Refilling required
+[2018-09-01 05:30:21] Refilling on. Duration 60 s
+[2018-09-01 05:30:21] Off-Time: 2018-09-01 05:31:21
+[2018-09-01 05:31:21] Refilling off, Refilling volume: 20 liter
+[2018-09-01 05:31:22] Writing settings to EEP
+[2018-09-01 05:33:01] Time updated by NTP
+[2018-09-01 05:33:09] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 05:33:10] Transmission error while receiving datapoint
+[2018-09-01 05:33:10] NaN
+[2018-09-01 05:33:10] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 05:33:10] Writing measurement data to SD Card
+[2018-09-01 05:33:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(581.00)
+[2018-09-01 05:33:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(97.00)
+[2018-09-01 05:33:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 05:33:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 05:33:10] Refilling required
+[2018-09-01 05:33:10] Refilling on. Duration 60 s
+[2018-09-01 05:33:10] Off-Time: 2018-09-01 05:34:10
+[2018-09-01 05:34:11] Refilling off, Refilling volume: 20 liter
+[2018-09-01 05:34:11] Writing settings to EEP
+[2018-09-01 05:35:51] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 05:35:52] Transmission error while receiving datapoint
+[2018-09-01 05:35:52] NaN
+[2018-09-01 05:35:52] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 05:35:52] Writing measurement data to SD Card
+[2018-09-01 05:35:52] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(568.00)
+[2018-09-01 05:35:52] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 05:35:52] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 05:35:52] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 05:35:52] Refilling required
+[2018-09-01 05:35:52] Refilling on. Duration 60 s
+[2018-09-01 05:35:52] Off-Time: 2018-09-01 05:36:52
+[2018-09-01 05:36:53] Refilling off, Refilling volume: 20 liter
+[2018-09-01 05:36:53] Writing settings to EEP
+[2018-09-01 05:38:33] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 05:38:34] Transmission error while receiving datapoint
+[2018-09-01 05:38:34] NaN
+[2018-09-01 05:38:34] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 05:38:34] Writing measurement data to SD Card
+[2018-09-01 05:38:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(568.00)
+[2018-09-01 05:38:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 05:38:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 05:38:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 05:38:34] Refilling required
+[2018-09-01 05:38:34] Refilling on. Duration 60 s
+[2018-09-01 05:38:34] Off-Time: 2018-09-01 05:39:34
+[2018-09-01 05:39:35] Refilling off, Refilling volume: 20 liter
+[2018-09-01 05:39:35] Writing settings to EEP
+[2018-09-01 05:41:15] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 05:41:16] Transmission error while receiving datapoint
+[2018-09-01 05:41:16] NaN
+[2018-09-01 05:41:16] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 05:41:16] Writing measurement data to SD Card
+[2018-09-01 05:41:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(568.00)
+[2018-09-01 05:41:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 05:41:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 05:41:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 05:41:16] Refilling required
+[2018-09-01 05:41:16] Refilling on. Duration 60 s
+[2018-09-01 05:41:16] Off-Time: 2018-09-01 05:42:16
+[2018-09-01 05:42:16] Refilling off, Refilling volume: 20 liter
+[2018-09-01 05:42:17] Writing settings to EEP
+[2018-09-01 05:43:57] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 05:43:58] Transmission error while receiving datapoint
+[2018-09-01 05:43:58] NaN
+[2018-09-01 05:43:58] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 05:43:58] Writing measurement data to SD Card
+[2018-09-01 05:43:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(568.00)
+[2018-09-01 05:43:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 05:43:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 05:43:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 05:43:58] Refilling required
+[2018-09-01 05:43:58] Refilling on. Duration 60 s
+[2018-09-01 05:43:58] Off-Time: 2018-09-01 05:44:58
+[2018-09-01 05:44:59] Refilling off, Refilling volume: 20 liter
+[2018-09-01 05:44:59] Writing settings to EEP
+[2018-09-01 05:46:39] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 05:46:40] Transmission error while receiving datapoint
+[2018-09-01 05:46:40] NaN
+[2018-09-01 05:46:40] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 05:46:40] Writing measurement data to SD Card
+[2018-09-01 05:46:40] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(568.00)
+[2018-09-01 05:46:40] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 05:46:40] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 05:46:40] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 05:46:40] Refilling required
+[2018-09-01 05:46:40] Refilling on. Duration 60 s
+[2018-09-01 05:46:40] Off-Time: 2018-09-01 05:47:40
+[2018-09-01 05:47:41] Refilling off, Refilling volume: 20 liter
+[2018-09-01 05:47:41] Writing settings to EEP
+[2018-09-01 05:49:21] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 05:49:22] Transmission error while receiving datapoint
+[2018-09-01 05:49:22] NaN
+[2018-09-01 05:49:22] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 05:49:22] Writing measurement data to SD Card
+[2018-09-01 05:49:22] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(568.00)
+[2018-09-01 05:49:22] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 05:49:22] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 05:49:22] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 05:49:22] Refilling required
+[2018-09-01 05:49:22] Refilling on. Duration 60 s
+[2018-09-01 05:49:22] Off-Time: 2018-09-01 05:50:22
+[2018-09-01 05:50:22] Refilling off, Refilling volume: 20 liter
+[2018-09-01 05:50:23] Writing settings to EEP
+[2018-09-01 05:52:03] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 05:52:04] Transmission error while receiving datapoint
+[2018-09-01 05:52:04] NaN
+[2018-09-01 05:52:04] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 05:52:04] Writing measurement data to SD Card
+[2018-09-01 05:52:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(565.00)
+[2018-09-01 05:52:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 05:52:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 05:52:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 05:52:04] Refilling required
+[2018-09-01 05:52:04] Refilling on. Duration 60 s
+[2018-09-01 05:52:04] Off-Time: 2018-09-01 05:53:04
+[2018-09-01 05:53:04] Refilling off, Refilling volume: 20 liter
+[2018-09-01 05:53:05] Writing settings to EEP
+[2018-09-01 05:54:45] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 05:54:46] Transmission error while receiving datapoint
+[2018-09-01 05:54:46] NaN
+[2018-09-01 05:54:46] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 05:54:46] Writing measurement data to SD Card
+[2018-09-01 05:54:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(565.00)
+[2018-09-01 05:54:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 05:54:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 05:54:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 05:54:46] Refilling required
+[2018-09-01 05:54:46] Refilling on. Duration 60 s
+[2018-09-01 05:54:46] Off-Time: 2018-09-01 05:55:46
+[2018-09-01 05:55:47] Refilling off, Refilling volume: 20 liter
+[2018-09-01 05:55:47] Writing settings to EEP
+[2018-09-01 05:57:27] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 05:57:28] Transmission error while receiving datapoint
+[2018-09-01 05:57:28] NaN
+[2018-09-01 05:57:28] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 05:57:28] Writing measurement data to SD Card
+[2018-09-01 05:57:28] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(565.00)
+[2018-09-01 05:57:28] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-09-01 05:57:28] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 05:57:28] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 05:57:28] Refilling required
+[2018-09-01 05:57:28] Refilling on. Duration 60 s
+[2018-09-01 05:57:28] Off-Time: 2018-09-01 05:58:28
+[2018-09-01 05:58:29] Refilling off, Refilling volume: 20 liter
+[2018-09-01 05:58:29] Writing settings to EEP
+[2018-09-01 06:00:09] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 06:00:10] Transmission error while receiving datapoint
+[2018-09-01 06:00:10] NaN
+[2018-09-01 06:00:10] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 06:00:10] Writing measurement data to SD Card
+[2018-09-01 06:00:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(568.00)
+[2018-09-01 06:00:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 06:00:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 06:00:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 06:00:10] Refilling required
+[2018-09-01 06:00:10] Refilling on. Duration 60 s
+[2018-09-01 06:00:10] Off-Time: 2018-09-01 06:01:10
+[2018-09-01 06:01:10] Refilling off, Refilling volume: 20 liter
+[2018-09-01 06:01:11] Writing settings to EEP
+[2018-09-01 06:02:51] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 06:02:52] Transmission error while receiving datapoint
+[2018-09-01 06:02:52] NaN
+[2018-09-01 06:02:52] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 06:02:52] Writing measurement data to SD Card
+[2018-09-01 06:02:52] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(565.00)
+[2018-09-01 06:02:52] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-09-01 06:02:52] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 06:02:52] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 06:02:52] Refilling required
+[2018-09-01 06:02:52] Refilling on. Duration 60 s
+[2018-09-01 06:02:52] Off-Time: 2018-09-01 06:03:52
+[2018-09-01 06:03:53] Refilling off, Refilling volume: 20 liter
+[2018-09-01 06:03:53] Writing settings to EEP
+[2018-09-01 06:05:33] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 06:05:34] Transmission error while receiving datapoint
+[2018-09-01 06:05:34] NaN
+[2018-09-01 06:05:34] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 06:05:34] Writing measurement data to SD Card
+[2018-09-01 06:05:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(568.00)
+[2018-09-01 06:05:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 06:05:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 06:05:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 06:05:34] Refilling required
+[2018-09-01 06:05:34] Refilling on. Duration 60 s
+[2018-09-01 06:05:34] Off-Time: 2018-09-01 06:06:34
+[2018-09-01 06:06:35] Refilling off, Refilling volume: 20 liter
+[2018-09-01 06:06:35] Writing settings to EEP
+[2018-09-01 06:08:15] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 06:08:16] Transmission error while receiving datapoint
+[2018-09-01 06:08:16] NaN
+[2018-09-01 06:08:16] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 06:08:16] Writing measurement data to SD Card
+[2018-09-01 06:08:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(565.00)
+[2018-09-01 06:08:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-09-01 06:08:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 06:08:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 06:08:16] Refilling required
+[2018-09-01 06:08:16] Refilling on. Duration 60 s
+[2018-09-01 06:08:16] Off-Time: 2018-09-01 06:09:16
+[2018-09-01 06:09:17] Refilling off, Refilling volume: 20 liter
+[2018-09-01 06:09:17] Writing settings to EEP
+[2018-09-01 06:10:57] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 06:10:58] Transmission error while receiving datapoint
+[2018-09-01 06:10:58] NaN
+[2018-09-01 06:10:58] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 06:10:58] Writing measurement data to SD Card
+[2018-09-01 06:10:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(568.00)
+[2018-09-01 06:10:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 06:10:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 06:10:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 06:10:58] Refilling required
+[2018-09-01 06:10:58] Refilling on. Duration 60 s
+[2018-09-01 06:10:58] Off-Time: 2018-09-01 06:11:58
+[2018-09-01 06:11:58] Refilling off, Refilling volume: 20 liter
+[2018-09-01 06:11:59] Writing settings to EEP
+[2018-09-01 06:13:39] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 06:13:40] Transmission error while receiving datapoint
+[2018-09-01 06:13:40] NaN
+[2018-09-01 06:13:40] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 06:13:40] Writing measurement data to SD Card
+[2018-09-01 06:13:40] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(568.00)
+[2018-09-01 06:13:40] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 06:13:40] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 06:13:40] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 06:13:40] Refilling required
+[2018-09-01 06:13:40] Refilling on. Duration 60 s
+[2018-09-01 06:13:40] Off-Time: 2018-09-01 06:14:40
+[2018-09-01 06:14:41] Refilling off, Refilling volume: 20 liter
+[2018-09-01 06:14:41] Writing settings to EEP
+[2018-09-01 06:16:21] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 06:16:22] Transmission error while receiving datapoint
+[2018-09-01 06:16:22] NaN
+[2018-09-01 06:16:22] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 06:16:22] Writing measurement data to SD Card
+[2018-09-01 06:16:22] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(568.00)
+[2018-09-01 06:16:22] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 06:16:22] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 06:16:22] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 06:16:22] Refilling required
+[2018-09-01 06:16:22] Refilling on. Duration 60 s
+[2018-09-01 06:16:22] Off-Time: 2018-09-01 06:17:22
+[2018-09-01 06:17:23] Refilling off, Refilling volume: 20 liter
+[2018-09-01 06:17:23] Writing settings to EEP
+[2018-09-01 06:19:03] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 06:19:04] Transmission error while receiving datapoint
+[2018-09-01 06:19:04] NaN
+[2018-09-01 06:19:04] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 06:19:04] Writing measurement data to SD Card
+[2018-09-01 06:19:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(568.00)
+[2018-09-01 06:19:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 06:19:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 06:19:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 06:19:04] Refilling required
+[2018-09-01 06:19:04] Refilling on. Duration 60 s
+[2018-09-01 06:19:04] Off-Time: 2018-09-01 06:20:04
+[2018-09-01 06:20:05] Refilling off, Refilling volume: 20 liter
+[2018-09-01 06:20:05] Writing settings to EEP
+[2018-09-01 06:21:45] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 06:21:46] Transmission error while receiving datapoint
+[2018-09-01 06:21:46] NaN
+[2018-09-01 06:21:46] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 06:21:46] Writing measurement data to SD Card
+[2018-09-01 06:21:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(565.00)
+[2018-09-01 06:21:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-09-01 06:21:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 06:21:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 06:21:47] Refilling required
+[2018-09-01 06:21:47] Refilling on. Duration 60 s
+[2018-09-01 06:21:47] Off-Time: 2018-09-01 06:22:47
+[2018-09-01 06:22:47] Refilling off, Refilling volume: 20 liter
+[2018-09-01 06:22:48] Writing settings to EEP
+[2018-09-01 06:24:28] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 06:24:29] Transmission error while receiving datapoint
+[2018-09-01 06:24:29] NaN
+[2018-09-01 06:24:29] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 06:24:29] Writing measurement data to SD Card
+[2018-09-01 06:24:29] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(568.00)
+[2018-09-01 06:24:29] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 06:24:29] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 06:24:29] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 06:24:29] Refilling required
+[2018-09-01 06:24:29] Refilling on. Duration 60 s
+[2018-09-01 06:24:29] Off-Time: 2018-09-01 06:25:29
+[2018-09-01 06:25:30] Refilling off, Refilling volume: 20 liter
+[2018-09-01 06:25:30] Writing settings to EEP
+[2018-09-01 06:27:10] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 06:27:11] Transmission error while receiving datapoint
+[2018-09-01 06:27:11] NaN
+[2018-09-01 06:27:11] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 06:27:11] Writing measurement data to SD Card
+[2018-09-01 06:27:11] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(568.00)
+[2018-09-01 06:27:11] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 06:27:11] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 06:27:11] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 06:27:11] Refilling required
+[2018-09-01 06:27:11] Refilling on. Duration 60 s
+[2018-09-01 06:27:11] Off-Time: 2018-09-01 06:28:11
+[2018-09-01 06:28:12] Refilling off, Refilling volume: 20 liter
+[2018-09-01 06:28:12] Writing settings to EEP
+[2018-09-01 06:29:52] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 06:29:53] Transmission error while receiving datapoint
+[2018-09-01 06:29:53] NaN
+[2018-09-01 06:29:53] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 06:29:53] Writing measurement data to SD Card
+[2018-09-01 06:29:53] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(568.00)
+[2018-09-01 06:29:53] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 06:29:53] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 06:29:53] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 06:29:53] Refilling required
+[2018-09-01 06:29:53] Refilling on. Duration 60 s
+[2018-09-01 06:29:53] Off-Time: 2018-09-01 06:30:53
+[2018-09-01 06:30:54] Refilling off, Refilling volume: 20 liter
+[2018-09-01 06:30:54] Writing settings to EEP
+[2018-09-01 06:32:34] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 06:32:35] Transmission error while receiving datapoint
+[2018-09-01 06:32:35] NaN
+[2018-09-01 06:32:35] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 06:32:35] Writing measurement data to SD Card
+[2018-09-01 06:32:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(565.00)
+[2018-09-01 06:32:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 06:32:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 06:32:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 06:32:35] Refilling required
+[2018-09-01 06:32:35] Refilling on. Duration 60 s
+[2018-09-01 06:32:35] Off-Time: 2018-09-01 06:33:35
+[2018-09-01 06:33:15] Time updated by NTP
+[2018-09-01 06:33:36] Refilling off, Refilling volume: 20 liter
+[2018-09-01 06:33:36] Writing settings to EEP
+[2018-09-01 06:34:30] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 06:34:30] Transmission error while receiving datapoint
+[2018-09-01 06:34:30] NaN
+[2018-09-01 06:34:30] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 06:34:30] Writing measurement data to SD Card
+[2018-09-01 06:34:30] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(565.00)
+[2018-09-01 06:34:31] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-09-01 06:34:31] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 06:34:31] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 06:34:31] Refilling required
+[2018-09-01 06:34:31] Refilling on. Duration 60 s
+[2018-09-01 06:34:31] Off-Time: 2018-09-01 06:35:31
+[2018-09-01 06:35:32] Refilling off, Refilling volume: 20 liter
+[2018-09-01 06:35:32] Writing settings to EEP
+[2018-09-01 06:37:12] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 06:37:13] Transmission error while receiving datapoint
+[2018-09-01 06:37:13] NaN
+[2018-09-01 06:37:13] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 06:37:13] Writing measurement data to SD Card
+[2018-09-01 06:37:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(565.00)
+[2018-09-01 06:37:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-09-01 06:37:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 06:37:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 06:37:13] Refilling required
+[2018-09-01 06:37:13] Refilling on. Duration 60 s
+[2018-09-01 06:37:13] Off-Time: 2018-09-01 06:38:13
+[2018-09-01 06:38:14] Refilling off, Refilling volume: 20 liter
+[2018-09-01 06:38:14] Writing settings to EEP
+[2018-09-01 06:39:54] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 06:39:55] Transmission error while receiving datapoint
+[2018-09-01 06:39:55] NaN
+[2018-09-01 06:39:55] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 06:39:55] Writing measurement data to SD Card
+[2018-09-01 06:39:55] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(565.00)
+[2018-09-01 06:39:55] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-09-01 06:39:55] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 06:39:55] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 06:39:55] Refilling required
+[2018-09-01 06:39:55] Refilling on. Duration 60 s
+[2018-09-01 06:39:55] Off-Time: 2018-09-01 06:40:55
+[2018-09-01 06:40:55] Refilling off, Refilling volume: 20 liter
+[2018-09-01 06:40:56] Writing settings to EEP
+[2018-09-01 06:42:36] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 06:42:37] Transmission error while receiving datapoint
+[2018-09-01 06:42:37] NaN
+[2018-09-01 06:42:37] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 06:42:37] Writing measurement data to SD Card
+[2018-09-01 06:42:37] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(568.00)
+[2018-09-01 06:42:37] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 06:42:37] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 06:42:37] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 06:42:37] Refilling required
+[2018-09-01 06:42:37] Refilling on. Duration 60 s
+[2018-09-01 06:42:37] Off-Time: 2018-09-01 06:43:37
+[2018-09-01 06:43:38] Refilling off, Refilling volume: 20 liter
+[2018-09-01 06:43:38] Writing settings to EEP
+[2018-09-01 06:45:18] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 06:45:19] Transmission error while receiving datapoint
+[2018-09-01 06:45:19] NaN
+[2018-09-01 06:45:19] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 06:45:19] Writing measurement data to SD Card
+[2018-09-01 06:45:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(565.00)
+[2018-09-01 06:45:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-09-01 06:45:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 06:45:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 06:45:19] Refilling required
+[2018-09-01 06:45:19] Refilling on. Duration 60 s
+[2018-09-01 06:45:19] Off-Time: 2018-09-01 06:46:19
+[2018-09-01 06:46:20] Refilling off, Refilling volume: 20 liter
+[2018-09-01 06:46:20] Writing settings to EEP
+[2018-09-01 06:48:00] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 06:48:01] Transmission error while receiving datapoint
+[2018-09-01 06:48:01] NaN
+[2018-09-01 06:48:01] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 06:48:01] Writing measurement data to SD Card
+[2018-09-01 06:48:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(565.00)
+[2018-09-01 06:48:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-09-01 06:48:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 06:48:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 06:48:01] Refilling required
+[2018-09-01 06:48:01] Refilling on. Duration 60 s
+[2018-09-01 06:48:01] Off-Time: 2018-09-01 06:49:01
+[2018-09-01 06:49:02] Refilling off, Refilling volume: 20 liter
+[2018-09-01 06:49:02] Writing settings to EEP
+[2018-09-01 06:50:42] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 06:50:43] Transmission error while receiving datapoint
+[2018-09-01 06:50:43] NaN
+[2018-09-01 06:50:43] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 06:50:43] Writing measurement data to SD Card
+[2018-09-01 06:50:43] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(568.00)
+[2018-09-01 06:50:43] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 06:50:43] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 06:50:43] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 06:50:43] Refilling required
+[2018-09-01 06:50:43] Refilling on. Duration 60 s
+[2018-09-01 06:50:43] Off-Time: 2018-09-01 06:51:43
+[2018-09-01 06:51:43] Refilling off, Refilling volume: 20 liter
+[2018-09-01 06:51:44] Writing settings to EEP
+[2018-09-01 06:53:24] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 06:53:25] Transmission error while receiving datapoint
+[2018-09-01 06:53:25] NaN
+[2018-09-01 06:53:25] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 06:53:25] Writing measurement data to SD Card
+[2018-09-01 06:53:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(565.00)
+[2018-09-01 06:53:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 06:53:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 06:53:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 06:53:26] Refilling required
+[2018-09-01 06:53:26] Refilling on. Duration 60 s
+[2018-09-01 06:53:26] Off-Time: 2018-09-01 06:54:26
+[2018-09-01 06:54:27] Refilling off, Refilling volume: 20 liter
+[2018-09-01 06:54:27] Writing settings to EEP
+[2018-09-01 06:56:07] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 06:56:08] Transmission error while receiving datapoint
+[2018-09-01 06:56:08] NaN
+[2018-09-01 06:56:08] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 06:56:08] Writing measurement data to SD Card
+[2018-09-01 06:56:08] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(565.00)
+[2018-09-01 06:56:08] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-09-01 06:56:08] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 06:56:08] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 06:56:08] Refilling required
+[2018-09-01 06:56:08] Refilling on. Duration 60 s
+[2018-09-01 06:56:08] Off-Time: 2018-09-01 06:57:08
+[2018-09-01 06:57:09] Refilling off, Refilling volume: 20 liter
+[2018-09-01 06:57:09] Writing settings to EEP
+[2018-09-01 06:58:49] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 06:58:50] Transmission error while receiving datapoint
+[2018-09-01 06:58:50] NaN
+[2018-09-01 06:58:50] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 06:58:50] Writing measurement data to SD Card
+[2018-09-01 06:58:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(565.00)
+[2018-09-01 06:58:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-09-01 06:58:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 06:58:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 06:58:50] Refilling required
+[2018-09-01 06:58:50] Refilling on. Duration 60 s
+[2018-09-01 06:58:50] Off-Time: 2018-09-01 06:59:50
+[2018-09-01 06:59:51] Refilling off, Refilling volume: 20 liter
+[2018-09-01 06:59:51] Writing settings to EEP
+[2018-09-01 07:01:31] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 07:01:32] Transmission error while receiving datapoint
+[2018-09-01 07:01:32] NaN
+[2018-09-01 07:01:32] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 07:01:32] Writing measurement data to SD Card
+[2018-09-01 07:01:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(565.00)
+[2018-09-01 07:01:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 07:01:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 07:01:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 07:01:32] Refilling required
+[2018-09-01 07:01:32] Refilling on. Duration 60 s
+[2018-09-01 07:01:32] Off-Time: 2018-09-01 07:02:32
+[2018-09-01 07:02:32] Refilling off, Refilling volume: 20 liter
+[2018-09-01 07:02:33] Writing settings to EEP
+[2018-09-01 07:04:13] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 07:04:14] Transmission error while receiving datapoint
+[2018-09-01 07:04:14] NaN
+[2018-09-01 07:04:14] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 07:04:14] Writing measurement data to SD Card
+[2018-09-01 07:04:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(568.00)
+[2018-09-01 07:04:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 07:04:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 07:04:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 07:04:14] Refilling required
+[2018-09-01 07:04:14] Refilling on. Duration 60 s
+[2018-09-01 07:04:14] Off-Time: 2018-09-01 07:05:14
+[2018-09-01 07:05:15] Refilling off, Refilling volume: 20 liter
+[2018-09-01 07:05:15] Writing settings to EEP
+[2018-09-01 07:06:55] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 07:06:56] Transmission error while receiving datapoint
+[2018-09-01 07:06:56] NaN
+[2018-09-01 07:06:56] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 07:06:56] Writing measurement data to SD Card
+[2018-09-01 07:06:56] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(565.00)
+[2018-09-01 07:06:56] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 07:06:56] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 07:06:56] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 07:06:56] Refilling required
+[2018-09-01 07:06:56] Refilling on. Duration 60 s
+[2018-09-01 07:06:56] Off-Time: 2018-09-01 07:07:56
+[2018-09-01 07:07:57] Refilling off, Refilling volume: 20 liter
+[2018-09-01 07:07:57] Writing settings to EEP
+[2018-09-01 07:09:37] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 07:09:38] Transmission error while receiving datapoint
+[2018-09-01 07:09:38] NaN
+[2018-09-01 07:09:38] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 07:09:38] Writing measurement data to SD Card
+[2018-09-01 07:09:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(565.00)
+[2018-09-01 07:09:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 07:09:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 07:09:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 07:09:38] Refilling required
+[2018-09-01 07:09:38] Refilling on. Duration 60 s
+[2018-09-01 07:09:38] Off-Time: 2018-09-01 07:10:38
+[2018-09-01 07:10:39] Refilling off, Refilling volume: 20 liter
+[2018-09-01 07:10:39] Writing settings to EEP
+[2018-09-01 07:12:19] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 07:12:20] Transmission error while receiving datapoint
+[2018-09-01 07:12:20] NaN
+[2018-09-01 07:12:20] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 07:12:20] Writing measurement data to SD Card
+[2018-09-01 07:12:20] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(565.00)
+[2018-09-01 07:12:20] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 07:12:20] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 07:12:20] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 07:12:20] Refilling required
+[2018-09-01 07:12:20] Refilling on. Duration 60 s
+[2018-09-01 07:12:20] Off-Time: 2018-09-01 07:13:20
+[2018-09-01 07:13:20] Refilling off, Refilling volume: 20 liter
+[2018-09-01 07:13:21] Writing settings to EEP
+[2018-09-01 07:15:01] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 07:15:02] Transmission error while receiving datapoint
+[2018-09-01 07:15:02] NaN
+[2018-09-01 07:15:02] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 07:15:02] Writing measurement data to SD Card
+[2018-09-01 07:15:02] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(565.00)
+[2018-09-01 07:15:02] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 07:15:02] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 07:15:02] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 07:15:02] Refilling required
+[2018-09-01 07:15:02] Refilling on. Duration 60 s
+[2018-09-01 07:15:02] Off-Time: 2018-09-01 07:16:02
+[2018-09-01 07:16:03] Refilling off, Refilling volume: 20 liter
+[2018-09-01 07:16:03] Writing settings to EEP
+[2018-09-01 07:17:43] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 07:17:44] Transmission error while receiving datapoint
+[2018-09-01 07:17:44] NaN
+[2018-09-01 07:17:44] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 07:17:44] Writing measurement data to SD Card
+[2018-09-01 07:17:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(565.00)
+[2018-09-01 07:17:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 07:17:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 07:17:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 07:17:44] Refilling required
+[2018-09-01 07:17:44] Refilling on. Duration 60 s
+[2018-09-01 07:17:44] Off-Time: 2018-09-01 07:18:44
+[2018-09-01 07:18:45] Refilling off, Refilling volume: 20 liter
+[2018-09-01 07:18:45] Writing settings to EEP
+[2018-09-01 07:20:25] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 07:20:26] Transmission error while receiving datapoint
+[2018-09-01 07:20:26] NaN
+[2018-09-01 07:20:26] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 07:20:26] Writing measurement data to SD Card
+[2018-09-01 07:20:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(565.00)
+[2018-09-01 07:20:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 07:20:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 07:20:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 07:20:26] Refilling required
+[2018-09-01 07:20:26] Refilling on. Duration 60 s
+[2018-09-01 07:20:26] Off-Time: 2018-09-01 07:21:26
+[2018-09-01 07:21:27] Refilling off, Refilling volume: 20 liter
+[2018-09-01 07:21:27] Writing settings to EEP
+[2018-09-01 07:23:07] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 07:23:08] Transmission error while receiving datapoint
+[2018-09-01 07:23:08] NaN
+[2018-09-01 07:23:08] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 07:23:08] Writing measurement data to SD Card
+[2018-09-01 07:23:08] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(565.00)
+[2018-09-01 07:23:08] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 07:23:08] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 07:23:08] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 07:23:08] Refilling required
+[2018-09-01 07:23:08] Refilling on. Duration 60 s
+[2018-09-01 07:23:08] Off-Time: 2018-09-01 07:24:08
+[2018-09-01 07:24:08] Refilling off, Refilling volume: 20 liter
+[2018-09-01 07:24:09] Writing settings to EEP
+[2018-09-01 07:25:49] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 07:25:50] Transmission error while receiving datapoint
+[2018-09-01 07:25:50] NaN
+[2018-09-01 07:25:50] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 07:25:50] Writing measurement data to SD Card
+[2018-09-01 07:25:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(565.00)
+[2018-09-01 07:25:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 07:25:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 07:25:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 07:25:50] Refilling required
+[2018-09-01 07:25:50] Refilling on. Duration 60 s
+[2018-09-01 07:25:50] Off-Time: 2018-09-01 07:26:50
+[2018-09-01 07:26:51] Refilling off, Refilling volume: 20 liter
+[2018-09-01 07:26:51] Writing settings to EEP
+[2018-09-01 07:28:31] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 07:28:32] Transmission error while receiving datapoint
+[2018-09-01 07:28:32] NaN
+[2018-09-01 07:28:32] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 07:28:32] Writing measurement data to SD Card
+[2018-09-01 07:28:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(562.00)
+[2018-09-01 07:28:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 07:28:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 07:28:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 07:28:32] Refilling required
+[2018-09-01 07:28:32] Refilling on. Duration 60 s
+[2018-09-01 07:28:32] Off-Time: 2018-09-01 07:29:32
+[2018-09-01 07:29:33] Refilling off, Refilling volume: 20 liter
+[2018-09-01 07:29:33] Writing settings to EEP
+[2018-09-01 07:31:13] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 07:31:14] Transmission error while receiving datapoint
+[2018-09-01 07:31:14] NaN
+[2018-09-01 07:31:14] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 07:31:14] Writing measurement data to SD Card
+[2018-09-01 07:31:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(552.00)
+[2018-09-01 07:31:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 07:31:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 07:31:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 07:31:14] Refilling required
+[2018-09-01 07:31:14] Refilling on. Duration 60 s
+[2018-09-01 07:31:14] Off-Time: 2018-09-01 07:32:14
+[2018-09-01 07:32:14] Refilling off, Refilling volume: 20 liter
+[2018-09-01 07:32:15] Writing settings to EEP
+[2018-09-01 07:33:29] Time updated by NTP
+[2018-09-01 07:34:02] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 07:34:03] Transmission error while receiving datapoint
+[2018-09-01 07:34:03] NaN
+[2018-09-01 07:34:03] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 07:34:03] Writing measurement data to SD Card
+[2018-09-01 07:34:03] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(546.00)
+[2018-09-01 07:34:03] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 07:34:03] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 07:34:03] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 07:34:03] Refilling required
+[2018-09-01 07:34:03] Refilling on. Duration 60 s
+[2018-09-01 07:34:03] Off-Time: 2018-09-01 07:35:03
+[2018-09-01 07:35:04] Refilling off, Refilling volume: 20 liter
+[2018-09-01 07:35:04] Writing settings to EEP
+[2018-09-01 07:36:44] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 07:36:45] Transmission error while receiving datapoint
+[2018-09-01 07:36:45] NaN
+[2018-09-01 07:36:45] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 07:36:45] Writing measurement data to SD Card
+[2018-09-01 07:36:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(546.00)
+[2018-09-01 07:36:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 07:36:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 07:36:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 07:36:45] Refilling required
+[2018-09-01 07:36:45] Refilling on. Duration 60 s
+[2018-09-01 07:36:45] Off-Time: 2018-09-01 07:37:45
+[2018-09-01 07:37:46] Refilling off, Refilling volume: 20 liter
+[2018-09-01 07:37:46] Writing settings to EEP
+[2018-09-01 07:39:26] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 07:39:27] Transmission error while receiving datapoint
+[2018-09-01 07:39:27] NaN
+[2018-09-01 07:39:27] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 07:39:27] Writing measurement data to SD Card
+[2018-09-01 07:39:27] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(546.00)
+[2018-09-01 07:39:27] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 07:39:27] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 07:39:27] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 07:39:27] Refilling required
+[2018-09-01 07:39:27] Refilling on. Duration 60 s
+[2018-09-01 07:39:27] Off-Time: 2018-09-01 07:40:27
+[2018-09-01 07:40:27] Refilling off, Refilling volume: 20 liter
+[2018-09-01 07:40:28] Writing settings to EEP
+[2018-09-01 07:42:08] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 07:42:09] Transmission error while receiving datapoint
+[2018-09-01 07:42:09] NaN
+[2018-09-01 07:42:09] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 07:42:09] Writing measurement data to SD Card
+[2018-09-01 07:42:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(546.00)
+[2018-09-01 07:42:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 07:42:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 07:42:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 07:42:09] Refilling required
+[2018-09-01 07:42:09] Refilling on. Duration 60 s
+[2018-09-01 07:42:09] Off-Time: 2018-09-01 07:43:09
+[2018-09-01 07:43:09] Refilling off, Refilling volume: 20 liter
+[2018-09-01 07:43:10] Writing settings to EEP
+[2018-09-01 07:44:50] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 07:44:51] Transmission error while receiving datapoint
+[2018-09-01 07:44:51] NaN
+[2018-09-01 07:44:51] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 07:44:51] Writing measurement data to SD Card
+[2018-09-01 07:44:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(543.00)
+[2018-09-01 07:44:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 07:44:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 07:44:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 07:44:51] Refilling required
+[2018-09-01 07:44:51] Refilling on. Duration 60 s
+[2018-09-01 07:44:51] Off-Time: 2018-09-01 07:45:51
+[2018-09-01 07:45:52] Refilling off, Refilling volume: 20 liter
+[2018-09-01 07:45:52] Writing settings to EEP
+[2018-09-01 07:47:32] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 07:47:33] Transmission error while receiving datapoint
+[2018-09-01 07:47:33] NaN
+[2018-09-01 07:47:33] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 07:47:33] Writing measurement data to SD Card
+[2018-09-01 07:47:33] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(530.00)
+[2018-09-01 07:47:33] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 07:47:33] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 07:47:33] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 07:47:33] Refilling required
+[2018-09-01 07:47:33] Refilling on. Duration 60 s
+[2018-09-01 07:47:33] Off-Time: 2018-09-01 07:48:33
+[2018-09-01 07:48:34] Refilling off, Refilling volume: 20 liter
+[2018-09-01 07:48:34] Writing settings to EEP
+[2018-09-01 07:50:14] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 07:50:15] Transmission error while receiving datapoint
+[2018-09-01 07:50:15] NaN
+[2018-09-01 07:50:15] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 07:50:15] Writing measurement data to SD Card
+[2018-09-01 07:50:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(530.00)
+[2018-09-01 07:50:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 07:50:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 07:50:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 07:50:15] Refilling required
+[2018-09-01 07:50:15] Refilling on. Duration 60 s
+[2018-09-01 07:50:15] Off-Time: 2018-09-01 07:51:15
+[2018-09-01 07:51:15] Refilling off, Refilling volume: 20 liter
+[2018-09-01 07:51:16] Writing settings to EEP
+[2018-09-01 07:52:56] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 07:52:57] Transmission error while receiving datapoint
+[2018-09-01 07:52:57] NaN
+[2018-09-01 07:52:57] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 07:52:57] Writing measurement data to SD Card
+[2018-09-01 07:52:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(530.00)
+[2018-09-01 07:52:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-09-01 07:52:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 07:52:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 07:52:57] Refilling required
+[2018-09-01 07:52:57] Refilling on. Duration 60 s
+[2018-09-01 07:52:57] Off-Time: 2018-09-01 07:53:57
+[2018-09-01 07:53:57] Refilling off, Refilling volume: 20 liter
+[2018-09-01 07:53:58] Writing settings to EEP
+[2018-09-01 07:55:38] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 07:55:39] Transmission error while receiving datapoint
+[2018-09-01 07:55:39] NaN
+[2018-09-01 07:55:39] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 07:55:39] Writing measurement data to SD Card
+[2018-09-01 07:55:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(530.00)
+[2018-09-01 07:55:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(96.00)
+[2018-09-01 07:55:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 07:55:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 07:55:39] Refilling required
+[2018-09-01 07:55:39] Refilling on. Duration 60 s
+[2018-09-01 07:55:39] Off-Time: 2018-09-01 07:56:39
+[2018-09-01 07:56:40] Refilling off, Refilling volume: 20 liter
+[2018-09-01 07:56:40] Writing settings to EEP
+[2018-09-01 07:58:20] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 07:58:21] Transmission error while receiving datapoint
+[2018-09-01 07:58:21] NaN
+[2018-09-01 07:58:21] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 07:58:21] Writing measurement data to SD Card
+[2018-09-01 07:58:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(530.00)
+[2018-09-01 07:58:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 07:58:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 07:58:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 07:58:21] Refilling required
+[2018-09-01 07:58:21] Refilling on. Duration 60 s
+[2018-09-01 07:58:21] Off-Time: 2018-09-01 07:59:21
+[2018-09-01 07:59:22] Refilling off, Refilling volume: 20 liter
+[2018-09-01 07:59:22] Writing settings to EEP
+[2018-09-01 08:01:02] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 08:01:03] Transmission error while receiving datapoint
+[2018-09-01 08:01:03] NaN
+[2018-09-01 08:01:03] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 08:01:03] Writing measurement data to SD Card
+[2018-09-01 08:01:03] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(524.00)
+[2018-09-01 08:01:03] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 08:01:03] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 08:01:03] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 08:01:03] Refilling required
+[2018-09-01 08:01:03] Refilling on. Duration 60 s
+[2018-09-01 08:01:03] Off-Time: 2018-09-01 08:02:03
+[2018-09-01 08:02:03] Refilling off, Refilling volume: 20 liter
+[2018-09-01 08:02:04] Writing settings to EEP
+[2018-09-01 08:03:44] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 08:03:45] Transmission error while receiving datapoint
+[2018-09-01 08:03:45] NaN
+[2018-09-01 08:03:45] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 08:03:45] Writing measurement data to SD Card
+[2018-09-01 08:03:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(524.00)
+[2018-09-01 08:03:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 08:03:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 08:03:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 08:03:45] Refilling required
+[2018-09-01 08:03:45] Refilling on. Duration 60 s
+[2018-09-01 08:03:45] Off-Time: 2018-09-01 08:04:45
+[2018-09-01 08:04:46] Refilling off, Refilling volume: 20 liter
+[2018-09-01 08:04:46] Writing settings to EEP
+[2018-09-01 08:06:26] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 08:06:27] Transmission error while receiving datapoint
+[2018-09-01 08:06:27] NaN
+[2018-09-01 08:06:27] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 08:06:27] Writing measurement data to SD Card
+[2018-09-01 08:06:27] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(524.00)
+[2018-09-01 08:06:27] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 08:06:27] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 08:06:27] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 08:06:27] Refilling required
+[2018-09-01 08:06:27] Refilling on. Duration 60 s
+[2018-09-01 08:06:27] Off-Time: 2018-09-01 08:07:27
+[2018-09-01 08:07:28] Refilling off, Refilling volume: 20 liter
+[2018-09-01 08:07:28] Writing settings to EEP
+[2018-09-01 08:09:08] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 08:09:09] Transmission error while receiving datapoint
+[2018-09-01 08:09:09] NaN
+[2018-09-01 08:09:09] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 08:09:09] Writing measurement data to SD Card
+[2018-09-01 08:09:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(524.00)
+[2018-09-01 08:09:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 08:09:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 08:09:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 08:09:09] Refilling required
+[2018-09-01 08:09:09] Refilling on. Duration 60 s
+[2018-09-01 08:09:09] Off-Time: 2018-09-01 08:10:09
+[2018-09-01 08:10:10] Refilling off, Refilling volume: 20 liter
+[2018-09-01 08:10:10] Writing settings to EEP
+[2018-09-01 08:11:50] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 08:11:51] Transmission error while receiving datapoint
+[2018-09-01 08:11:51] NaN
+[2018-09-01 08:11:51] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 08:11:51] Writing measurement data to SD Card
+[2018-09-01 08:11:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(524.00)
+[2018-09-01 08:11:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 08:11:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 08:11:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 08:11:51] Refilling required
+[2018-09-01 08:11:51] Refilling on. Duration 60 s
+[2018-09-01 08:11:51] Off-Time: 2018-09-01 08:12:51
+[2018-09-01 08:12:51] Refilling off, Refilling volume: 20 liter
+[2018-09-01 08:12:52] Writing settings to EEP
+[2018-09-01 08:14:32] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 08:14:33] Transmission error while receiving datapoint
+[2018-09-01 08:14:33] NaN
+[2018-09-01 08:14:33] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 08:14:33] Writing measurement data to SD Card
+[2018-09-01 08:14:33] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(524.00)
+[2018-09-01 08:14:33] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 08:14:33] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 08:14:33] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 08:14:33] Refilling required
+[2018-09-01 08:14:33] Refilling on. Duration 60 s
+[2018-09-01 08:14:33] Off-Time: 2018-09-01 08:15:33
+[2018-09-01 08:15:34] Refilling off, Refilling volume: 20 liter
+[2018-09-01 08:15:34] Writing settings to EEP
+[2018-09-01 08:17:14] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 08:17:15] Transmission error while receiving datapoint
+[2018-09-01 08:17:15] NaN
+[2018-09-01 08:17:15] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 08:17:15] Writing measurement data to SD Card
+[2018-09-01 08:17:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(524.00)
+[2018-09-01 08:17:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 08:17:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 08:17:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 08:17:15] Refilling required
+[2018-09-01 08:17:15] Refilling on. Duration 60 s
+[2018-09-01 08:17:15] Off-Time: 2018-09-01 08:18:15
+[2018-09-01 08:18:16] Refilling off, Refilling volume: 20 liter
+[2018-09-01 08:18:16] Writing settings to EEP
+[2018-09-01 08:19:56] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 08:19:57] Transmission error while receiving datapoint
+[2018-09-01 08:19:57] NaN
+[2018-09-01 08:19:57] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 08:19:57] Writing measurement data to SD Card
+[2018-09-01 08:19:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(524.00)
+[2018-09-01 08:19:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 08:19:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 08:19:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 08:19:57] Refilling required
+[2018-09-01 08:19:57] Refilling on. Duration 60 s
+[2018-09-01 08:19:57] Off-Time: 2018-09-01 08:20:57
+[2018-09-01 08:20:58] Refilling off, Refilling volume: 20 liter
+[2018-09-01 08:20:58] Writing settings to EEP
+[2018-09-01 08:21:24] Timeout US measurement detected
+[2018-09-01 08:22:38] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 08:22:39] Transmission error while receiving datapoint
+[2018-09-01 08:22:39] NaN
+[2018-09-01 08:22:39] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 08:22:39] Writing measurement data to SD Card
+[2018-09-01 08:22:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(518.00)
+[2018-09-01 08:22:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(94.00)
+[2018-09-01 08:22:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(8.00)
+[2018-09-01 08:22:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 08:22:39] Refilling required
+[2018-09-01 08:22:39] Refilling on. Duration 60 s
+[2018-09-01 08:22:39] Off-Time: 2018-09-01 08:23:39
+[2018-09-01 08:23:39] Refilling off, Refilling volume: 20 liter
+[2018-09-01 08:23:40] Writing settings to EEP
+[2018-09-01 08:25:20] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 08:25:21] Transmission error while receiving datapoint
+[2018-09-01 08:25:21] NaN
+[2018-09-01 08:25:21] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 08:25:21] Writing measurement data to SD Card
+[2018-09-01 08:25:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(568.00)
+[2018-09-01 08:25:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(87.00)
+[2018-09-01 08:25:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 08:25:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 08:25:21] Refilling required
+[2018-09-01 08:25:21] Refilling on. Duration 60 s
+[2018-09-01 08:25:21] Off-Time: 2018-09-01 08:26:21
+[2018-09-01 08:26:22] Refilling off, Refilling volume: 20 liter
+[2018-09-01 08:26:22] Writing settings to EEP
+[2018-09-01 08:28:02] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 08:28:03] Transmission error while receiving datapoint
+[2018-09-01 08:28:03] NaN
+[2018-09-01 08:28:03] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 08:28:03] Writing measurement data to SD Card
+[2018-09-01 08:28:03] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(615.00)
+[2018-09-01 08:28:03] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(90.00)
+[2018-09-01 08:28:03] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-09-01 08:28:03] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 08:28:03] Refilling required
+[2018-09-01 08:28:03] Refilling on. Duration 60 s
+[2018-09-01 08:28:03] Off-Time: 2018-09-01 08:29:03
+[2018-09-01 08:29:04] Refilling off, Refilling volume: 20 liter
+[2018-09-01 08:29:04] Writing settings to EEP
+[2018-09-01 08:30:44] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 08:30:45] Transmission error while receiving datapoint
+[2018-09-01 08:30:45] NaN
+[2018-09-01 08:30:45] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 08:30:45] Writing measurement data to SD Card
+[2018-09-01 08:30:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(675.00)
+[2018-09-01 08:30:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(90.00)
+[2018-09-01 08:30:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-09-01 08:30:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 08:33:43] Time updated by NTP
+[2018-09-01 08:34:46] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 08:34:46] Transmission error while receiving datapoint
+[2018-09-01 08:34:47] NaN
+[2018-09-01 08:34:47] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 08:34:47] Writing measurement data to SD Card
+[2018-09-01 08:34:47] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(763.00)
+[2018-09-01 08:34:47] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(89.00)
+[2018-09-01 08:34:47] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(12.00)
+[2018-09-01 08:34:47] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-09-01 10:46:05] Reading settings from EEP
+[2018-09-01 10:46:05] EEP checksum ok 
+[2018-09-01 10:46:05] EEPSize 33 Byte
+[2018-09-01 10:46:05] System startup
+[2018-09-01 10:46:05] Timeout US measurement detected
+[2018-09-01 10:46:06] Timeout US measurement detected
+[2018-09-01 10:46:07] Timeout US measurement detected
+[2018-09-01 10:46:08] Timeout US measurement detected
+[2018-09-01 10:46:09] Timeout US measurement detected
+[2018-09-01 10:46:10] Timeout US measurement detected
+[2018-09-01 10:46:11] Timeout US measurement detected
+[2018-09-01 10:46:12] Timeout US measurement detected
+[2018-09-01 10:46:13] Timeout US measurement detected
+[2018-09-01 10:46:14] Timeout US measurement detected
+[2018-09-01 10:46:15] Timeout US measurement detected
+[2018-09-01 10:46:16] Timeout US measurement detected
+[2018-09-01 10:46:17] Timeout US measurement detected
+[2018-09-01 10:46:18] Timeout US measurement detected
+[2018-09-01 10:46:19] Timeout US measurement detected
+[2018-09-01 10:46:20] Timeout US measurement detected
+[2018-09-01 10:46:21] Timeout US measurement detected
+[2018-09-01 10:46:22] Timeout US measurement detected
+[2018-09-01 10:46:23] Timeout US measurement detected
+[2018-09-01 10:46:24] Timeout US measurement detected
+[2018-09-01 10:46:25] Timeout US measurement detected
+[2018-09-01 10:46:26] Timeout US measurement detected
+[2018-09-01 10:46:27] Timeout US measurement detected
+[2018-09-01 10:46:28] Timeout US measurement detected
+[2018-09-01 10:46:29] Timeout US measurement detected
+[2018-09-01 10:46:30] Timeout US measurement detected
+[2018-09-01 10:46:31] Timeout US measurement detected
+[2018-09-01 10:46:32] Timeout US measurement detected
+[2018-09-01 10:46:33] Timeout US measurement detected
+[2018-09-01 10:46:34] Timeout US measurement detected
+[2018-09-01 10:46:35] Timeout US measurement detected
+[2018-09-01 10:46:36] Timeout US measurement detected
+[2018-09-01 10:46:37] Timeout US measurement detected
+[2018-09-01 10:46:38] Timeout US measurement detected
+[2018-09-01 10:46:39] Timeout US measurement detected
+[2018-09-01 10:46:40] Timeout US measurement detected
+[2018-09-01 10:46:41] Timeout US measurement detected
+[2018-09-01 10:46:42] Timeout US measurement detected
+[2018-09-01 10:46:43] Timeout US measurement detected
+[2018-09-01 10:46:44] Timeout US measurement detected
+[2018-09-01 10:46:45] Timeout US measurement detected
+[2018-09-01 10:46:46] Timeout US measurement detected
+[2018-09-01 10:46:47] Timeout US measurement detected
+[2018-09-01 10:46:48] Timeout US measurement detected
+[2018-09-01 10:46:49] Timeout US measurement detected
+[2018-09-01 10:46:50] Timeout US measurement detected
+[2018-09-01 10:46:51] Timeout US measurement detected
+[2018-09-01 10:46:52] Timeout US measurement detected
+[2018-09-01 10:46:53] Timeout US measurement detected
+[2018-09-01 10:46:54] Timeout US measurement detected
+[2018-09-01 10:46:55] Timeout US measurement detected
+[2018-09-01 10:46:56] Timeout US measurement detected
+[2018-09-01 10:46:58] Timeout US measurement detected
+[2018-09-01 10:46:58] Timeout US measurement detected
+[2018-09-01 10:46:59] Timeout US measurement detected
+[2018-09-01 10:47:01] Timeout US measurement detected
+[2018-09-01 10:47:01] Timeout US measurement detected
+[2018-09-01 10:47:03] Timeout US measurement detected
+[2018-09-01 10:47:04] Timeout US measurement detected
+[2018-09-01 10:47:05] Timeout US measurement detected
+[2018-09-01 10:47:05] Time updated by NTP
+[2018-09-01 10:47:06] Timeout US measurement detected
+[2018-09-01 10:47:07] Timeout US measurement detected
+[2018-09-01 10:47:08] Timeout US measurement detected
+[2018-09-01 10:47:09] Timeout US measurement detected
+[2018-09-01 10:47:10] Timeout US measurement detected
+[2018-09-01 10:47:11] Timeout US measurement detected
+[2018-09-01 10:47:12] Timeout US measurement detected
+[2018-09-01 10:47:13] Timeout US measurement detected
+[2018-09-01 10:47:14] Timeout US measurement detected
+[2018-09-01 10:47:15] Timeout US measurement detected
+[2018-09-01 10:47:16] Timeout US measurement detected
+[2018-09-01 10:47:17] Timeout US measurement detected
+[2018-09-01 10:47:18] Timeout US measurement detected
+[2018-09-01 10:47:19] Timeout US measurement detected
+[2018-09-01 10:47:20] Timeout US measurement detected
+[2018-09-01 10:47:21] Timeout US measurement detected
+[2018-09-01 10:47:22] Timeout US measurement detected
+[2018-09-01 10:47:23] Timeout US measurement detected
+[2018-09-01 10:47:24] Timeout US measurement detected
+[2018-09-01 10:47:25] Timeout US measurement detected
+[2018-09-01 10:47:26] Timeout US measurement detected
+[2018-09-01 10:47:27] Timeout US measurement detected
+[2018-09-01 10:47:28] Timeout US measurement detected
+[2018-09-01 10:47:29] Timeout US measurement detected
+[2018-09-01 10:47:30] Timeout US measurement detected
+[2018-09-01 10:47:31] Timeout US measurement detected
+[2018-09-01 10:47:32] Timeout US measurement detected
+[2018-09-01 10:47:33] Timeout US measurement detected
+[2018-09-01 10:47:34] Timeout US measurement detected
+[2018-09-01 10:47:35] Timeout US measurement detected
+[2018-09-01 10:47:36] Timeout US measurement detected
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-09-01 10:48:12] Reading settings from EEP
+[2018-09-01 10:48:12] EEP checksum ok 
+[2018-09-01 10:48:12] EEPSize 33 Byte
+[2018-09-01 10:48:12] System startup
+[2018-09-01 10:48:13] Timeout US measurement detected
+[2018-09-01 10:48:14] Timeout US measurement detected
+[2018-09-01 10:48:15] Timeout US measurement detected
+[2018-09-01 10:48:16] Timeout US measurement detected
+[2018-09-01 10:48:17] Timeout US measurement detected
+[2018-09-01 10:48:18] Timeout US measurement detected
+[2018-09-01 10:48:19] Timeout US measurement detected
+[2018-09-01 10:48:20] Timeout US measurement detected
+[2018-09-01 10:48:21] Timeout US measurement detected
+[2018-09-01 10:48:22] Timeout US measurement detected
+[2018-09-01 10:48:23] Timeout US measurement detected
+[2018-09-01 10:48:24] Timeout US measurement detected
+[2018-09-01 10:48:25] Timeout US measurement detected
+[2018-09-01 10:48:26] Timeout US measurement detected
+[2018-09-01 10:48:27] Timeout US measurement detected
+[2018-09-01 10:48:28] Timeout US measurement detected
+[2018-09-01 10:48:29] Timeout US measurement detected
+[2018-09-01 10:48:30] Timeout US measurement detected
+[2018-09-01 10:48:31] Timeout US measurement detected
+[2018-09-01 10:48:32] Timeout US measurement detected
+[2018-09-01 10:48:33] Timeout US measurement detected
+[2018-09-01 10:48:34] Timeout US measurement detected
+[2018-09-01 10:48:35] Timeout US measurement detected
+[2018-09-01 10:48:36] Timeout US measurement detected
+[2018-09-01 10:48:37] Timeout US measurement detected
+[2018-09-01 10:48:38] Timeout US measurement detected
+[2018-09-01 10:48:39] Timeout US measurement detected
+[2018-09-01 10:48:40] Timeout US measurement detected
+[2018-09-01 10:48:41] Timeout US measurement detected
+[2018-09-01 10:48:42] Timeout US measurement detected
+[2018-09-01 10:48:43] Timeout US measurement detected
+[2018-09-01 10:48:44] Timeout US measurement detected
+[2018-09-01 10:48:45] Timeout US measurement detected
+[2018-09-01 10:48:46] Timeout US measurement detected
+[2018-09-01 10:48:47] Timeout US measurement detected
+[2018-09-01 10:48:48] Timeout US measurement detected
+[2018-09-01 10:48:49] Timeout US measurement detected
+[2018-09-01 10:48:50] Timeout US measurement detected
+[2018-09-01 10:48:51] Timeout US measurement detected
+[2018-09-01 10:48:52] Timeout US measurement detected
+[2018-09-01 10:48:53] Timeout US measurement detected
+[2018-09-01 10:48:54] Timeout US measurement detected
+[2018-09-01 10:48:55] Timeout US measurement detected
+[2018-09-01 10:48:56] Timeout US measurement detected
+[2018-09-01 10:48:57] Timeout US measurement detected
+[2018-09-01 10:48:58] Timeout US measurement detected
+[2018-09-01 10:48:59] Timeout US measurement detected
+[2018-09-01 10:49:00] Timeout US measurement detected
+[2018-09-01 10:49:01] Timeout US measurement detected
+[2018-09-01 10:49:02] Timeout US measurement detected
+[2018-09-01 10:49:03] Timeout US measurement detected
+[2018-09-01 10:49:04] Timeout US measurement detected
+[2018-09-01 10:49:05] Timeout US measurement detected
+[2018-09-01 10:49:06] Timeout US measurement detected
+[2018-09-01 10:49:07] Timeout US measurement detected
+[2018-09-01 10:49:08] Timeout US measurement detected
+[2018-09-01 10:49:09] Timeout US measurement detected
+[2018-09-01 10:49:10] Timeout US measurement detected
+[2018-09-01 10:49:11] Timeout US measurement detected
+[2018-09-01 10:49:12] Timeout US measurement detected
+[2018-09-01 10:49:12] Time updated by NTP
+[2018-09-01 10:49:13] Timeout US measurement detected
+[2018-09-01 10:49:14] Timeout US measurement detected
+[2018-09-01 10:49:15] Timeout US measurement detected
+[2018-09-01 10:49:16] Timeout US measurement detected
+[2018-09-01 10:49:17] Timeout US measurement detected
+[2018-09-01 10:49:18] Timeout US measurement detected
+[2018-09-01 10:49:19] Timeout US measurement detected
+[2018-09-01 10:49:20] Timeout US measurement detected
+[2018-09-01 10:49:21] Timeout US measurement detected
+[2018-09-01 10:49:22] Timeout US measurement detected
+[2018-09-01 10:49:23] Timeout US measurement detected
+[2018-09-01 10:49:24] Timeout US measurement detected
+[2018-09-01 10:49:25] Timeout US measurement detected
+[2018-09-01 10:49:26] Timeout US measurement detected
+[2018-09-01 10:49:27] Timeout US measurement detected
+[2018-09-01 10:49:28] Timeout US measurement detected
+[2018-09-01 10:49:29] Timeout US measurement detected
+[2018-09-01 10:49:30] Timeout US measurement detected
+[2018-09-01 10:49:31] Timeout US measurement detected
+[2018-09-01 10:49:32] Timeout US measurement detected
+[2018-09-01 10:49:33] Timeout US measurement detected
+[2018-09-01 10:49:34] Timeout US measurement detected
+[2018-09-01 10:49:35] Timeout US measurement detected
+[2018-09-01 10:49:36] Timeout US measurement detected
+[2018-09-01 10:49:37] Timeout US measurement detected
+[2018-09-01 10:49:38] Timeout US measurement detected
+[2018-09-01 10:49:39] Timeout US measurement detected
+[2018-09-01 10:49:40] Timeout US measurement detected
+[2018-09-01 10:49:41] Timeout US measurement detected
+[2018-09-01 10:49:42] Timeout US measurement detected
+[2018-09-01 10:49:43] Timeout US measurement detected
+[2018-09-01 10:49:44] Timeout US measurement detected
+[2018-09-01 10:49:45] Timeout US measurement detected
+[2018-09-01 10:49:46] Timeout US measurement detected
+[2018-09-01 10:49:47] Timeout US measurement detected
+[2018-09-01 10:49:48] Timeout US measurement detected
+[2018-09-01 10:49:49] Timeout US measurement detected
+[2018-09-01 10:49:50] Timeout US measurement detected
+[2018-09-01 10:49:51] Timeout US measurement detected
+[2018-09-01 10:49:52] Timeout US measurement detected
+[2018-09-01 10:49:52] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 10:49:53] Transmission error while receiving datapoint
+[2018-09-01 10:49:53] NaN
+[2018-09-01 10:49:53] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 10:49:53] Writing measurement data to SD Card
+[2018-09-01 10:49:53] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(0.00)
+[2018-09-01 10:49:53] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(1.00)
+[2018-09-01 10:49:53] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(0.00)
+[2018-09-01 10:49:53] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 10:49:53] Timeout US measurement detected
+[2018-09-01 10:49:54] Timeout US measurement detected
+[2018-09-01 10:49:55] Timeout US measurement detected
+[2018-09-01 10:49:56] Timeout US measurement detected
+[2018-09-01 10:49:57] Timeout US measurement detected
+[2018-09-01 10:49:58] Timeout US measurement detected
+[2018-09-01 10:49:59] Timeout US measurement detected
+[2018-09-01 10:50:00] Timeout US measurement detected
+[2018-09-01 10:50:01] Timeout US measurement detected
+[2018-09-01 10:50:02] Timeout US measurement detected
+[2018-09-01 10:50:03] Timeout US measurement detected
+[2018-09-01 10:50:04] Timeout US measurement detected
+[2018-09-01 10:50:05] Timeout US measurement detected
+[2018-09-01 10:50:06] Timeout US measurement detected
+[2018-09-01 10:50:07] Timeout US measurement detected
+[2018-09-01 10:50:08] Timeout US measurement detected
+[2018-09-01 10:50:09] Timeout US measurement detected
+[2018-09-01 10:50:10] Timeout US measurement detected
+[2018-09-01 10:50:11] Timeout US measurement detected
+[2018-09-01 10:50:12] Timeout US measurement detected
+[2018-09-01 10:50:13] Timeout US measurement detected
+[2018-09-01 10:50:14] Timeout US measurement detected
+[2018-09-01 10:50:15] Timeout US measurement detected
+[2018-09-01 10:50:16] Timeout US measurement detected
+[2018-09-01 10:50:17] Timeout US measurement detected
+[2018-09-01 10:50:18] Timeout US measurement detected
+[2018-09-01 10:50:19] Timeout US measurement detected
+[2018-09-01 10:50:20] Timeout US measurement detected
+[2018-09-01 10:50:21] Timeout US measurement detected
+[2018-09-01 10:50:22] Timeout US measurement detected
+[2018-09-01 10:50:23] Timeout US measurement detected
+[2018-09-01 10:50:24] Timeout US measurement detected
+[2018-09-01 10:50:25] Timeout US measurement detected
+[2018-09-01 10:50:26] Timeout US measurement detected
+[2018-09-01 10:50:27] Timeout US measurement detected
+[2018-09-01 10:50:28] Timeout US measurement detected
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-09-01 10:50:34] Reading settings from EEP
+[2018-09-01 10:50:34] EEP checksum ok 
+[2018-09-01 10:50:34] EEPSize 33 Byte
+[2018-09-01 10:50:34] System startup
+[2018-09-01 10:50:34] Timeout US measurement detected
+[2018-09-01 10:50:35] Timeout US measurement detected
+[2018-09-01 10:50:36] Timeout US measurement detected
+[2018-09-01 10:50:37] Timeout US measurement detected
+[2018-09-01 10:50:38] Timeout US measurement detected
+[2018-09-01 10:50:39] Timeout US measurement detected
+[2018-09-01 10:50:40] Timeout US measurement detected
+[2018-09-01 10:50:41] Timeout US measurement detected
+[2018-09-01 10:50:42] Timeout US measurement detected
+[2018-09-01 10:50:43] Timeout US measurement detected
+[2018-09-01 10:50:44] Timeout US measurement detected
+[2018-09-01 10:50:45] Timeout US measurement detected
+[2018-09-01 10:50:46] Timeout US measurement detected
+[2018-09-01 10:50:47] Timeout US measurement detected
+[2018-09-01 10:50:48] Timeout US measurement detected
+[2018-09-01 10:50:49] Timeout US measurement detected
+[2018-09-01 10:50:50] Timeout US measurement detected
+[2018-09-01 10:50:52] Timeout US measurement detected
+[2018-09-01 10:50:53] Timeout US measurement detected
+[2018-09-01 10:50:53] Timeout US measurement detected
+[2018-09-01 10:50:55] Timeout US measurement detected
+[2018-09-01 10:50:55] Timeout US measurement detected
+[2018-09-01 10:50:57] Timeout US measurement detected
+[2018-09-01 10:50:58] Timeout US measurement detected
+[2018-09-01 10:50:59] Timeout US measurement detected
+[2018-09-01 10:51:00] Timeout US measurement detected
+[2018-09-01 10:51:01] Timeout US measurement detected
+[2018-09-01 10:51:02] Timeout US measurement detected
+[2018-09-01 10:51:03] Timeout US measurement detected
+[2018-09-01 10:51:04] Timeout US measurement detected
+[2018-09-01 10:51:05] Timeout US measurement detected
+[2018-09-01 10:51:06] Timeout US measurement detected
+[2018-09-01 10:51:07] Timeout US measurement detected
+[2018-09-01 10:51:08] Timeout US measurement detected
+[2018-09-01 10:51:09] Timeout US measurement detected
+[2018-09-01 10:51:10] Timeout US measurement detected
+[2018-09-01 10:51:11] Timeout US measurement detected
+[2018-09-01 10:51:12] Timeout US measurement detected
+[2018-09-01 10:51:13] Timeout US measurement detected
+[2018-09-01 10:51:14] Timeout US measurement detected
+[2018-09-01 10:51:15] Timeout US measurement detected
+[2018-09-01 10:51:16] Timeout US measurement detected
+[2018-09-01 10:51:17] Timeout US measurement detected
+[2018-09-01 10:51:18] Timeout US measurement detected
+[2018-09-01 10:51:19] Timeout US measurement detected
+[2018-09-01 10:51:20] Timeout US measurement detected
+[2018-09-01 10:51:21] Timeout US measurement detected
+[2018-09-01 10:51:22] Timeout US measurement detected
+[2018-09-01 10:51:23] Timeout US measurement detected
+[2018-09-01 10:51:24] Timeout US measurement detected
+[2018-09-01 10:51:25] Timeout US measurement detected
+[2018-09-01 10:51:26] Timeout US measurement detected
+[2018-09-01 10:51:27] Timeout US measurement detected
+[2018-09-01 10:51:28] Timeout US measurement detected
+[2018-09-01 10:51:29] Timeout US measurement detected
+[2018-09-01 10:51:30] Timeout US measurement detected
+[2018-09-01 10:51:31] Timeout US measurement detected
+[2018-09-01 10:51:32] Timeout US measurement detected
+[2018-09-01 10:51:33] Timeout US measurement detected
+[2018-09-01 10:51:34] Timeout US measurement detected
+[2018-09-01 10:51:34] Time updated by NTP
+[2018-09-01 10:51:35] Timeout US measurement detected
+[2018-09-01 10:51:36] Timeout US measurement detected
+[2018-09-01 10:51:37] Timeout US measurement detected
+[2018-09-01 10:51:38] Timeout US measurement detected
+[2018-09-01 10:51:39] Timeout US measurement detected
+[2018-09-01 10:51:40] Timeout US measurement detected
+[2018-09-01 10:51:41] Timeout US measurement detected
+[2018-09-01 10:51:42] Timeout US measurement detected
+[2018-09-01 10:51:43] Timeout US measurement detected
+[2018-09-01 10:51:44] Timeout US measurement detected
+[2018-09-01 10:51:45] Timeout US measurement detected
+[2018-09-01 10:51:46] Timeout US measurement detected
+[2018-09-01 10:51:47] Timeout US measurement detected
+[2018-09-01 10:51:48] Timeout US measurement detected
+[2018-09-01 10:51:49] Timeout US measurement detected
+[2018-09-01 10:51:50] Timeout US measurement detected
+[2018-09-01 10:51:51] Timeout US measurement detected
+[2018-09-01 10:51:52] Timeout US measurement detected
+[2018-09-01 10:51:53] Timeout US measurement detected
+[2018-09-01 10:51:54] Timeout US measurement detected
+[2018-09-01 10:51:55] Timeout US measurement detected
+[2018-09-01 10:51:56] Timeout US measurement detected
+[2018-09-01 10:51:57] Timeout US measurement detected
+[2018-09-01 10:51:58] Timeout US measurement detected
+[2018-09-01 10:51:59] Timeout US measurement detected
+[2018-09-01 10:52:00] Timeout US measurement detected
+[2018-09-01 10:52:01] Timeout US measurement detected
+[2018-09-01 10:52:02] Timeout US measurement detected
+[2018-09-01 10:52:03] Timeout US measurement detected
+[2018-09-01 10:52:04] Timeout US measurement detected
+[2018-09-01 10:52:05] Timeout US measurement detected
+[2018-09-01 10:52:06] Timeout US measurement detected
+[2018-09-01 10:52:07] Timeout US measurement detected
+[2018-09-01 10:52:08] Timeout US measurement detected
+[2018-09-01 10:52:09] Timeout US measurement detected
+[2018-09-01 10:52:10] Timeout US measurement detected
+[2018-09-01 10:52:11] Timeout US measurement detected
+[2018-09-01 10:52:12] Timeout US measurement detected
+[2018-09-01 10:52:13] Timeout US measurement detected
+[2018-09-01 10:52:14] Timeout US measurement detected
+[2018-09-01 10:52:14] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 10:52:15] Transmission error while receiving datapoint
+[2018-09-01 10:52:15] NaN
+[2018-09-01 10:52:15] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 10:52:15] Writing measurement data to SD Card
+[2018-09-01 10:52:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(0.00)
+[2018-09-01 10:52:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(1.00)
+[2018-09-01 10:52:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(0.00)
+[2018-09-01 10:52:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 10:52:15] Timeout US measurement detected
+[2018-09-01 10:52:16] Timeout US measurement detected
+[2018-09-01 10:52:17] Timeout US measurement detected
+[2018-09-01 10:52:18] Timeout US measurement detected
+[2018-09-01 10:52:19] Timeout US measurement detected
+[2018-09-01 10:52:20] Timeout US measurement detected
+[2018-09-01 10:52:21] Timeout US measurement detected
+[2018-09-01 10:52:22] Timeout US measurement detected
+[2018-09-01 10:52:23] Timeout US measurement detected
+[2018-09-01 10:52:24] Timeout US measurement detected
+[2018-09-01 10:52:25] Timeout US measurement detected
+[2018-09-01 10:52:26] Timeout US measurement detected
+[2018-09-01 10:52:27] Timeout US measurement detected
+[2018-09-01 10:52:28] Timeout US measurement detected
+[2018-09-01 10:52:29] Timeout US measurement detected
+[2018-09-01 10:52:30] Timeout US measurement detected
+[2018-09-01 10:52:31] Timeout US measurement detected
+[2018-09-01 10:52:32] Timeout US measurement detected
+[2018-09-01 10:52:33] Timeout US measurement detected
+[2018-09-01 10:52:34] Timeout US measurement detected
+[2018-09-01 10:52:35] Timeout US measurement detected
+[2018-09-01 10:52:36] Timeout US measurement detected
+[2018-09-01 10:52:37] Timeout US measurement detected
+[2018-09-01 10:52:38] Timeout US measurement detected
+[2018-09-01 10:52:39] Timeout US measurement detected
+[2018-09-01 10:52:40] Timeout US measurement detected
+[2018-09-01 10:52:41] Timeout US measurement detected
+[2018-09-01 10:52:42] Timeout US measurement detected
+[2018-09-01 10:52:43] Timeout US measurement detected
+[2018-09-01 10:52:44] Timeout US measurement detected
+[2018-09-01 10:52:45] Timeout US measurement detected
+[2018-09-01 10:52:46] Timeout US measurement detected
+[2018-09-01 10:52:47] Timeout US measurement detected
+[2018-09-01 10:52:48] Timeout US measurement detected
+[2018-09-01 10:52:49] Timeout US measurement detected
+[2018-09-01 10:52:50] Timeout US measurement detected
+[2018-09-01 10:52:51] Timeout US measurement detected
+[2018-09-01 10:52:52] Timeout US measurement detected
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-09-01 10:56:35] Reading settings from EEP
+[2018-09-01 10:56:35] EEP checksum ok 
+[2018-09-01 10:56:35] EEPSize 33 Byte
+[2018-09-01 10:56:35] System startup
+[2018-09-01 10:56:46] Timeout US measurement detected
+[2018-09-01 10:57:35] Time updated by NTP
+[2018-09-01 10:58:14] Timeout US measurement detected
+[2018-09-01 10:58:15] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 10:58:16] Transmission error while receiving datapoint
+[2018-09-01 10:58:16] NaN
+[2018-09-01 10:58:16] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 10:58:16] Writing measurement data to SD Card
+[2018-09-01 10:58:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1947.00)
+[2018-09-01 10:58:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-09-01 10:58:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(30.00)
+[2018-09-01 10:58:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 10:58:25] Refilling requested by manual button
+[2018-09-01 10:58:25] Refilling on. Duration 60 s
+[2018-09-01 10:58:25] Off-Time: 2018-09-01 10:59:25
+[2018-09-01 10:59:26] Refilling off, Refilling volume: 20 liter
+[2018-09-01 10:59:26] Writing settings to EEP
+[2018-09-01 11:00:41] Timeout US measurement detected
+[2018-09-01 11:00:43] Refilling requested by manual button
+[2018-09-01 11:00:43] Refilling on. Duration 60 s
+[2018-09-01 11:00:43] Off-Time: 2018-09-01 11:01:43
+[2018-09-01 11:01:06] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 11:01:07] Transmission error while receiving datapoint
+[2018-09-01 11:01:07] NaN
+[2018-09-01 11:01:07] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 11:01:07] Writing measurement data to SD Card
+[2018-09-01 11:01:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1935.00)
+[2018-09-01 11:01:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-09-01 11:01:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(30.00)
+[2018-09-01 11:01:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 11:01:44] Refilling off, Refilling volume: 20 liter
+[2018-09-01 11:01:44] Writing settings to EEP
+[2018-09-01 11:02:31] Refilling requested by manual button
+[2018-09-01 11:02:31] Refilling on. Duration 60 s
+[2018-09-01 11:02:31] Off-Time: 2018-09-01 11:03:31
+[2018-09-01 11:03:24] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 11:03:25] Transmission error while receiving datapoint
+[2018-09-01 11:03:25] NaN
+[2018-09-01 11:03:25] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 11:03:25] Writing measurement data to SD Card
+[2018-09-01 11:03:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1938.00)
+[2018-09-01 11:03:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-09-01 11:03:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(30.00)
+[2018-09-01 11:03:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 11:03:32] Refilling off, Refilling volume: 20 liter
+[2018-09-01 11:03:32] Writing settings to EEP
+[2018-09-01 11:04:26] Refilling requested by manual button
+[2018-09-01 11:04:26] Refilling on. Duration 60 s
+[2018-09-01 11:04:27] Off-Time: 2018-09-01 11:05:27
+[2018-09-01 11:04:27] Timeout US measurement detected
+[2018-09-01 11:04:28] Timeout US measurement detected
+[2018-09-01 11:04:29] Timeout US measurement detected
+[2018-09-01 11:04:30] Timeout US measurement detected
+[2018-09-01 11:05:12] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 11:05:13] Transmission error while receiving datapoint
+[2018-09-01 11:05:13] NaN
+[2018-09-01 11:05:13] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 11:05:13] Writing measurement data to SD Card
+[2018-09-01 11:05:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1938.00)
+[2018-09-01 11:05:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-09-01 11:05:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(30.00)
+[2018-09-01 11:05:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-09-01 11:05:49] Reading settings from EEP
+[2018-09-01 11:05:49] EEP checksum ok 
+[2018-09-01 11:05:49] EEPSize 33 Byte
+[2018-09-01 11:05:49] System startup
+[2018-09-01 11:05:50] Refilling requested by manual button
+[2018-09-01 11:05:50] Refilling on. Duration 60 s
+[2018-09-01 11:05:50] Off-Time: 2018-09-01 11:06:50
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-09-01 11:07:03] Reading settings from EEP
+[2018-09-01 11:07:03] EEP checksum ok 
+[2018-09-01 11:07:03] EEPSize 33 Byte
+[2018-09-01 11:07:03] System startup
+[2018-09-01 11:07:09] Refilling requested by manual button
+[2018-09-01 11:07:09] Refilling on. Duration 60 s
+[2018-09-01 11:07:09] Off-Time: 2018-09-01 11:08:09
+[2018-09-01 11:08:03] Time updated by NTP
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-09-01 11:10:23] Reading settings from EEP
+[2018-09-01 11:10:23] EEP checksum ok 
+[2018-09-01 11:10:23] EEPSize 33 Byte
+[2018-09-01 11:10:23] System startup
+[2018-09-01 11:10:34] Refilling requested by manual button
+[2018-09-01 11:10:34] Refilling on. Duration 60 s
+[2018-09-01 11:10:34] Off-Time: 2018-09-01 11:11:34
+[2018-09-01 11:11:23] Time updated by NTP
+[2018-09-01 11:11:35] Refilling off, Refilling volume: 20 liter
+[2018-09-01 11:11:35] Writing settings to EEP
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-09-01 11:48:57] Reading settings from EEP
+[2018-09-01 11:48:57] EEP checksum ok 
+[2018-09-01 11:48:57] EEPSize 33 Byte
+[2018-09-01 11:48:57] System startup
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-09-01 11:49:15] Reading settings from EEP
+[2018-09-01 11:49:15] EEP checksum ok 
+[2018-09-01 11:49:15] EEPSize 33 Byte
+[2018-09-01 11:49:15] System startup
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-01-01 00:00:01] Using Fixed IP
+[1970-01-01 00:00:01] IP-Address: 192.168.178.5
+[2018-09-01 11:54:38] Reading settings from EEP
+[2018-09-01 11:54:38] EEP checksum ok 
+[2018-09-01 11:54:38] EEPSize 33 Byte
+[2018-09-01 11:54:38] System startup
+[2018-09-01 11:55:22] Timeout US measurement detected
+[2018-09-01 11:55:27] Timeout US measurement detected
+[2018-09-01 11:55:38] Time updated by NTP
+[2018-09-01 11:56:18] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-09-01 11:56:19] Transmission error while receiving datapoint
+[2018-09-01 11:56:19] NaN
+[2018-09-01 11:56:19] Rain in last 24h from weather station [mm]:  NAN
+[2018-09-01 11:56:19] Writing measurement data to SD Card
+[2018-09-01 11:56:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1935.00)
+[2018-09-01 11:56:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 11:56:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(30.00)
+[2018-09-01 11:56:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Using Fixed IP
+[1970-00-00 00:00:00] IP-Address: 192.168.178.5
+[2018-09-01 11:57:53] Reading settings from EEP
+[2018-09-01 11:57:53] EEP checksum ok 
+[2018-09-01 11:57:53] EEPSize 33 Byte
+[2018-09-01 11:57:53] System startup
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Using Fixed IP
+[1970-00-00 00:00:00] IP-Address: 192.168.178.5
+[2018-09-01 11:58:05] Reading settings from EEP
+[2018-09-01 11:58:05] EEP checksum ok 
+[2018-09-01 11:58:05] EEPSize 33 Byte
+[2018-09-01 11:58:05] System startup
+[2018-09-01 11:58:38] Timeout US measurement detected
+[2018-09-01 11:59:05] Time updated by NTP
+[2018-09-01 11:59:46] Datapoint 6614 received 0.300000
+[2018-09-01 11:59:46] Rain in last 24h from weather station [mm]: 0.30
+[2018-09-01 11:59:46] Writing measurement data to SD Card
+[2018-09-01 11:59:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1935.00)
+[2018-09-01 11:59:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 11:59:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(30.00)
+[2018-09-01 11:59:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 12:17:32] Refilling requested by manual button
+[2018-09-01 12:17:32] Refilling on. Duration 60 s
+[2018-09-01 12:17:32] Off-Time: 2018-09-01 12:18:32
+[2018-09-01 12:18:32] Refilling off, Refilling volume: 20 liter
+[2018-09-01 12:18:33] Writing settings to EEP
+[2018-09-01 12:20:14] Datapoint 6614 received 0.000000
+[2018-09-01 12:20:14] Rain in last 24h from weather station [mm]: 0.00
+[2018-09-01 12:20:14] Writing measurement data to SD Card
+[2018-09-01 12:20:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1935.00)
+[2018-09-01 12:20:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-09-01 12:20:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(30.00)
+[2018-09-01 12:20:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-09-01 12:29:00] Writing headline for measurement data to SD Card

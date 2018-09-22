@@ -1,0 +1,2487 @@
+[2018-08-19 04:22:49] Timeout detected
+[2018-08-19 04:22:49] Timeout detected
+[2018-08-19 04:22:49] Timeout detected
+[2018-08-19 04:22:49] Timeout detected
+[2018-08-19 04:22:49] Timeout detected
+[2018-08-19 04:22:49] Timeout detected
+[2018-08-19 04:22:49] Timeout detected
+[2018-08-19 04:22:49] Timeout detected
+[2018-08-19 04:22:50] Timeout detected
+[2018-08-19 04:22:50] Timeout detected
+[2018-08-19 04:22:50] Timeout detected
+[2018-08-19 04:22:50] Timeout detected
+[2018-08-19 04:22:50] Timeout detected
+[2018-08-19 04:22:50] Timeout detected
+[2018-08-19 04:22:50] Timeout detected
+[2018-08-19 04:22:50] Measured distance: 1997.12 mm
+[2018-08-19 04:22:50] Actual Level     : 402 mm
+[2018-08-19 04:22:50] Actual volume    : 1262 Liter, StdDev: 1.02 Liter
+[2018-08-19 04:22:50] Signal health    : 99
+[2018-08-19 04:22:50] Error status     : 0
+[2018-08-19 04:22:50] Writing measurement data to SD Card
+[2018-08-19 04:22:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:22:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-19 04:22:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:22:50] Timeout detected
+[2018-08-19 04:22:50] Timeout detected
+[2018-08-19 04:22:50] Timeout detected
+[2018-08-19 04:22:50] Timeout detected
+[2018-08-19 04:22:50] Timeout detected
+[2018-08-19 04:22:50] Timeout detected
+[2018-08-19 04:22:50] Timeout detected
+[2018-08-19 04:22:50] Timeout detected
+[2018-08-19 04:22:50] Timeout detected
+[2018-08-19 04:22:51] Timeout detected
+[2018-08-19 04:22:51] Timeout detected
+[2018-08-19 04:22:51] Timeout detected
+[2018-08-19 04:22:51] Timeout detected
+[2018-08-19 04:22:51] Timeout detected
+[2018-08-19 04:22:51] Timeout detected
+[2018-08-19 04:22:51] Timeout detected
+[2018-08-19 04:22:51] Timeout detected
+[2018-08-19 04:22:51] Timeout detected
+[2018-08-19 04:23:32] Measured distance: 1997.00 mm
+[2018-08-19 04:23:32] Actual Level     : 403 mm
+[2018-08-19 04:23:32] Actual volume    : 1266 Liter, StdDev: 0.00 Liter
+[2018-08-19 04:23:32] Signal health    : 100
+[2018-08-19 04:23:32] Error status     : 0
+[2018-08-19 04:23:32] Writing measurement data to SD Card
+[2018-08-19 04:23:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1266.00)
+[2018-08-19 04:23:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 04:23:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:24:22] Measured distance: 1997.00 mm
+[2018-08-19 04:24:22] Actual Level     : 403 mm
+[2018-08-19 04:24:22] Actual volume    : 1266 Liter, StdDev: 0.00 Liter
+[2018-08-19 04:24:22] Signal health    : 100
+[2018-08-19 04:24:22] Error status     : 0
+[2018-08-19 04:24:22] Writing measurement data to SD Card
+[2018-08-19 04:24:22] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1266.00)
+[2018-08-19 04:24:22] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 04:24:22] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:25:12] Measured distance: 1997.24 mm
+[2018-08-19 04:25:12] Actual Level     : 402 mm
+[2018-08-19 04:25:12] Actual volume    : 1262 Liter, StdDev: 1.34 Liter
+[2018-08-19 04:25:12] Signal health    : 98
+[2018-08-19 04:25:12] Error status     : 0
+[2018-08-19 04:25:13] Writing measurement data to SD Card
+[2018-08-19 04:25:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:25:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 04:25:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:26:03] Measured distance: 1997.34 mm
+[2018-08-19 04:26:03] Actual Level     : 402 mm
+[2018-08-19 04:26:03] Actual volume    : 1262 Liter, StdDev: 2.14 Liter
+[2018-08-19 04:26:03] Signal health    : 97
+[2018-08-19 04:26:03] Error status     : 0
+[2018-08-19 04:26:03] Writing measurement data to SD Card
+[2018-08-19 04:26:03] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:26:03] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(97.00)
+[2018-08-19 04:26:03] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:26:53] Measured distance: 1997.00 mm
+[2018-08-19 04:26:53] Actual Level     : 403 mm
+[2018-08-19 04:26:53] Actual volume    : 1266 Liter, StdDev: 0.00 Liter
+[2018-08-19 04:26:53] Signal health    : 100
+[2018-08-19 04:26:53] Error status     : 0
+[2018-08-19 04:26:53] Writing measurement data to SD Card
+[2018-08-19 04:26:53] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1266.00)
+[2018-08-19 04:26:53] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 04:26:54] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:27:44] Measured distance: 1997.00 mm
+[2018-08-19 04:27:44] Actual Level     : 403 mm
+[2018-08-19 04:27:44] Actual volume    : 1266 Liter, StdDev: 0.00 Liter
+[2018-08-19 04:27:44] Signal health    : 100
+[2018-08-19 04:27:44] Error status     : 0
+[2018-08-19 04:27:44] Writing measurement data to SD Card
+[2018-08-19 04:27:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1266.00)
+[2018-08-19 04:27:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 04:27:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:28:34] Measured distance: 1997.00 mm
+[2018-08-19 04:28:34] Actual Level     : 403 mm
+[2018-08-19 04:28:34] Actual volume    : 1266 Liter, StdDev: 0.00 Liter
+[2018-08-19 04:28:34] Signal health    : 100
+[2018-08-19 04:28:34] Error status     : 0
+[2018-08-19 04:28:34] Writing measurement data to SD Card
+[2018-08-19 04:28:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1266.00)
+[2018-08-19 04:28:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 04:28:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:29:24] Measured distance: 1997.18 mm
+[2018-08-19 04:29:24] Actual Level     : 402 mm
+[2018-08-19 04:29:24] Actual volume    : 1262 Liter, StdDev: 1.21 Liter
+[2018-08-19 04:29:24] Signal health    : 98
+[2018-08-19 04:29:24] Error status     : 0
+[2018-08-19 04:29:24] Writing measurement data to SD Card
+[2018-08-19 04:29:24] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:29:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 04:29:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:30:15] Measured distance: 1997.04 mm
+[2018-08-19 04:30:15] Actual Level     : 402 mm
+[2018-08-19 04:30:15] Actual volume    : 1262 Liter, StdDev: 0.62 Liter
+[2018-08-19 04:30:15] Signal health    : 99
+[2018-08-19 04:30:15] Error status     : 0
+[2018-08-19 04:30:15] Writing measurement data to SD Card
+[2018-08-19 04:30:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:30:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-19 04:30:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:31:05] Measured distance: 1997.02 mm
+[2018-08-19 04:31:05] Actual Level     : 402 mm
+[2018-08-19 04:31:05] Actual volume    : 1262 Liter, StdDev: 0.44 Liter
+[2018-08-19 04:31:05] Signal health    : 99
+[2018-08-19 04:31:05] Error status     : 0
+[2018-08-19 04:31:05] Writing measurement data to SD Card
+[2018-08-19 04:31:05] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:31:05] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-19 04:31:05] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:31:55] Measured distance: 1997.04 mm
+[2018-08-19 04:31:55] Actual Level     : 402 mm
+[2018-08-19 04:31:55] Actual volume    : 1262 Liter, StdDev: 0.62 Liter
+[2018-08-19 04:31:55] Signal health    : 99
+[2018-08-19 04:31:55] Error status     : 0
+[2018-08-19 04:31:55] Writing measurement data to SD Card
+[2018-08-19 04:31:55] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:31:56] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-19 04:31:56] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:32:46] Measured distance: 1997.82 mm
+[2018-08-19 04:32:46] Actual Level     : 402 mm
+[2018-08-19 04:32:46] Actual volume    : 1262 Liter, StdDev: 3.31 Liter
+[2018-08-19 04:32:46] Signal health    : 96
+[2018-08-19 04:32:46] Error status     : 0
+[2018-08-19 04:32:46] Writing measurement data to SD Card
+[2018-08-19 04:32:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:32:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(96.00)
+[2018-08-19 04:32:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:33:36] Measured distance: 1997.14 mm
+[2018-08-19 04:33:36] Actual Level     : 402 mm
+[2018-08-19 04:33:36] Actual volume    : 1262 Liter, StdDev: 1.09 Liter
+[2018-08-19 04:33:36] Signal health    : 98
+[2018-08-19 04:33:36] Error status     : 0
+[2018-08-19 04:33:36] Writing measurement data to SD Card
+[2018-08-19 04:33:36] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:33:36] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 04:33:36] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:34:26] Measured distance: 1997.18 mm
+[2018-08-19 04:34:26] Actual Level     : 402 mm
+[2018-08-19 04:34:26] Actual volume    : 1262 Liter, StdDev: 1.21 Liter
+[2018-08-19 04:34:26] Signal health    : 98
+[2018-08-19 04:34:26] Error status     : 0
+[2018-08-19 04:34:26] Writing measurement data to SD Card
+[2018-08-19 04:34:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:34:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 04:34:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:35:16] Measured distance: 1997.00 mm
+[2018-08-19 04:35:17] Actual Level     : 403 mm
+[2018-08-19 04:35:17] Actual volume    : 1266 Liter, StdDev: 0.00 Liter
+[2018-08-19 04:35:17] Signal health    : 100
+[2018-08-19 04:35:17] Error status     : 0
+[2018-08-19 04:35:17] Writing measurement data to SD Card
+[2018-08-19 04:35:17] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1266.00)
+[2018-08-19 04:35:17] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 04:35:17] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:36:07] Measured distance: 1997.12 mm
+[2018-08-19 04:36:07] Actual Level     : 402 mm
+[2018-08-19 04:36:07] Actual volume    : 1262 Liter, StdDev: 1.02 Liter
+[2018-08-19 04:36:07] Signal health    : 99
+[2018-08-19 04:36:07] Error status     : 0
+[2018-08-19 04:36:07] Writing measurement data to SD Card
+[2018-08-19 04:36:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:36:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-19 04:36:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:36:57] Measured distance: 1997.04 mm
+[2018-08-19 04:36:57] Actual Level     : 402 mm
+[2018-08-19 04:36:57] Actual volume    : 1262 Liter, StdDev: 0.62 Liter
+[2018-08-19 04:36:57] Signal health    : 99
+[2018-08-19 04:36:57] Error status     : 0
+[2018-08-19 04:36:57] Writing measurement data to SD Card
+[2018-08-19 04:36:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:36:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-19 04:36:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:37:47] Measured distance: 1997.16 mm
+[2018-08-19 04:37:47] Actual Level     : 402 mm
+[2018-08-19 04:37:47] Actual volume    : 1262 Liter, StdDev: 1.15 Liter
+[2018-08-19 04:37:47] Signal health    : 98
+[2018-08-19 04:37:47] Error status     : 0
+[2018-08-19 04:37:47] Writing measurement data to SD Card
+[2018-08-19 04:37:48] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:37:48] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 04:37:48] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:38:38] Measured distance: 1997.30 mm
+[2018-08-19 04:38:38] Actual Level     : 402 mm
+[2018-08-19 04:38:38] Actual volume    : 1262 Liter, StdDev: 1.44 Liter
+[2018-08-19 04:38:38] Signal health    : 98
+[2018-08-19 04:38:38] Error status     : 0
+[2018-08-19 04:38:38] Writing measurement data to SD Card
+[2018-08-19 04:38:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:38:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 04:38:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:39:28] Measured distance: 1997.24 mm
+[2018-08-19 04:39:28] Actual Level     : 402 mm
+[2018-08-19 04:39:28] Actual volume    : 1262 Liter, StdDev: 1.34 Liter
+[2018-08-19 04:39:28] Signal health    : 98
+[2018-08-19 04:39:28] Error status     : 0
+[2018-08-19 04:39:28] Writing measurement data to SD Card
+[2018-08-19 04:39:28] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:39:28] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 04:39:28] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:40:18] Measured distance: 1997.10 mm
+[2018-08-19 04:40:18] Actual Level     : 402 mm
+[2018-08-19 04:40:18] Actual volume    : 1262 Liter, StdDev: 0.94 Liter
+[2018-08-19 04:40:18] Signal health    : 99
+[2018-08-19 04:40:18] Error status     : 0
+[2018-08-19 04:40:18] Writing measurement data to SD Card
+[2018-08-19 04:40:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:40:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-19 04:40:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:41:09] Measured distance: 1997.10 mm
+[2018-08-19 04:41:09] Actual Level     : 402 mm
+[2018-08-19 04:41:09] Actual volume    : 1262 Liter, StdDev: 0.94 Liter
+[2018-08-19 04:41:09] Signal health    : 99
+[2018-08-19 04:41:09] Error status     : 0
+[2018-08-19 04:41:09] Writing measurement data to SD Card
+[2018-08-19 04:41:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:41:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-19 04:41:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:41:59] Measured distance: 1997.14 mm
+[2018-08-19 04:41:59] Actual Level     : 402 mm
+[2018-08-19 04:41:59] Actual volume    : 1262 Liter, StdDev: 1.09 Liter
+[2018-08-19 04:41:59] Signal health    : 98
+[2018-08-19 04:41:59] Error status     : 0
+[2018-08-19 04:41:59] Writing measurement data to SD Card
+[2018-08-19 04:41:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:41:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 04:41:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:42:49] Measured distance: 1997.16 mm
+[2018-08-19 04:42:49] Actual Level     : 402 mm
+[2018-08-19 04:42:49] Actual volume    : 1262 Liter, StdDev: 1.15 Liter
+[2018-08-19 04:42:49] Signal health    : 98
+[2018-08-19 04:42:49] Error status     : 0
+[2018-08-19 04:42:49] Writing measurement data to SD Card
+[2018-08-19 04:42:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:42:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 04:42:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:43:33] HTTP Request receives: 
+[2018-08-19 04:43:33] GET / HTTP/1.1
+
+[2018-08-19 04:43:33] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-19 04:43:33] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-19 04:43:33] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-19 04:43:33] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-19 04:43:33] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-19 04:43:33] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-19 04:43:33] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-19 04:43:33] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-19 04:43:33] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-19 04:43:36] HTTP Request receives: favicon.ico
+[2018-08-19 04:43:36] GET /favicon.ico HTTP/1.1
+
+[2018-08-19 04:43:36] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-19 04:43:36] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-19 04:43:36] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-19 04:43:36] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-19 04:43:36] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-19 04:43:36] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-19 04:43:36] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-19 04:43:36] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-19 04:43:36] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-19 04:43:40] Measured distance: 1997.30 mm
+[2018-08-19 04:43:40] Actual Level     : 402 mm
+[2018-08-19 04:43:40] Actual volume    : 1262 Liter, StdDev: 1.44 Liter
+[2018-08-19 04:43:40] Signal health    : 98
+[2018-08-19 04:43:40] Error status     : 0
+[2018-08-19 04:43:40] Writing measurement data to SD Card
+[2018-08-19 04:43:40] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:43:40] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 04:43:40] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:44:30] Measured distance: 1997.24 mm
+[2018-08-19 04:44:30] Actual Level     : 402 mm
+[2018-08-19 04:44:30] Actual volume    : 1262 Liter, StdDev: 1.34 Liter
+[2018-08-19 04:44:30] Signal health    : 98
+[2018-08-19 04:44:30] Error status     : 0
+[2018-08-19 04:44:30] Writing measurement data to SD Card
+[2018-08-19 04:44:30] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:44:30] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 04:44:30] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:45:20] Measured distance: 1997.32 mm
+[2018-08-19 04:45:20] Actual Level     : 402 mm
+[2018-08-19 04:45:20] Actual volume    : 1262 Liter, StdDev: 1.47 Liter
+[2018-08-19 04:45:20] Signal health    : 98
+[2018-08-19 04:45:20] Error status     : 0
+[2018-08-19 04:45:20] Writing measurement data to SD Card
+[2018-08-19 04:45:20] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:45:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 04:45:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:46:11] Measured distance: 1998.52 mm
+[2018-08-19 04:46:11] Actual Level     : 401 mm
+[2018-08-19 04:46:11] Actual volume    : 1259 Liter, StdDev: 5.70 Liter
+[2018-08-19 04:46:11] Signal health    : 94
+[2018-08-19 04:46:11] Error status     : 0
+[2018-08-19 04:46:11] Writing measurement data to SD Card
+[2018-08-19 04:46:11] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1259.00)
+[2018-08-19 04:46:11] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(94.00)
+[2018-08-19 04:46:11] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:47:01] Measured distance: 1997.22 mm
+[2018-08-19 04:47:01] Actual Level     : 402 mm
+[2018-08-19 04:47:01] Actual volume    : 1262 Liter, StdDev: 1.30 Liter
+[2018-08-19 04:47:01] Signal health    : 98
+[2018-08-19 04:47:01] Error status     : 0
+[2018-08-19 04:47:01] Writing measurement data to SD Card
+[2018-08-19 04:47:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:47:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 04:47:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:47:51] Measured distance: 1997.20 mm
+[2018-08-19 04:47:51] Actual Level     : 402 mm
+[2018-08-19 04:47:51] Actual volume    : 1262 Liter, StdDev: 1.26 Liter
+[2018-08-19 04:47:51] Signal health    : 98
+[2018-08-19 04:47:51] Error status     : 0
+[2018-08-19 04:47:51] Writing measurement data to SD Card
+[2018-08-19 04:47:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:47:52] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 04:47:52] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:48:42] Measured distance: 1997.10 mm
+[2018-08-19 04:48:42] Actual Level     : 402 mm
+[2018-08-19 04:48:42] Actual volume    : 1262 Liter, StdDev: 0.94 Liter
+[2018-08-19 04:48:42] Signal health    : 99
+[2018-08-19 04:48:42] Error status     : 0
+[2018-08-19 04:48:42] Writing measurement data to SD Card
+[2018-08-19 04:48:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:48:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-19 04:48:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:49:32] Measured distance: 1997.08 mm
+[2018-08-19 04:49:32] Actual Level     : 402 mm
+[2018-08-19 04:49:32] Actual volume    : 1262 Liter, StdDev: 0.85 Liter
+[2018-08-19 04:49:32] Signal health    : 99
+[2018-08-19 04:49:32] Error status     : 0
+[2018-08-19 04:49:32] Writing measurement data to SD Card
+[2018-08-19 04:49:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:49:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-19 04:49:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:50:22] Measured distance: 1997.14 mm
+[2018-08-19 04:50:22] Actual Level     : 402 mm
+[2018-08-19 04:50:22] Actual volume    : 1262 Liter, StdDev: 1.09 Liter
+[2018-08-19 04:50:22] Signal health    : 98
+[2018-08-19 04:50:22] Error status     : 0
+[2018-08-19 04:50:22] Writing measurement data to SD Card
+[2018-08-19 04:50:23] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:50:23] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 04:50:23] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:51:23] Measured distance: 1997.20 mm
+[2018-08-19 04:51:23] Actual Level     : 402 mm
+[2018-08-19 04:51:23] Actual volume    : 1262 Liter, StdDev: 1.26 Liter
+[2018-08-19 04:51:23] Signal health    : 98
+[2018-08-19 04:51:23] Error status     : 0
+[2018-08-19 04:51:23] Writing measurement data to SD Card
+[2018-08-19 04:51:23] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:51:23] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 04:51:23] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:51:31] Time updated by NTP
+[2018-08-19 04:52:13] Measured distance: 1997.20 mm
+[2018-08-19 04:52:13] Actual Level     : 402 mm
+[2018-08-19 04:52:13] Actual volume    : 1262 Liter, StdDev: 1.26 Liter
+[2018-08-19 04:52:13] Signal health    : 98
+[2018-08-19 04:52:13] Error status     : 0
+[2018-08-19 04:52:13] Writing measurement data to SD Card
+[2018-08-19 04:52:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:52:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 04:52:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:53:03] Measured distance: 1998.26 mm
+[2018-08-19 04:53:03] Actual Level     : 401 mm
+[2018-08-19 04:53:03] Actual volume    : 1259 Liter, StdDev: 5.14 Liter
+[2018-08-19 04:53:03] Signal health    : 95
+[2018-08-19 04:53:04] Error status     : 0
+[2018-08-19 04:53:04] Writing measurement data to SD Card
+[2018-08-19 04:53:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1259.00)
+[2018-08-19 04:53:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(95.00)
+[2018-08-19 04:53:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:53:54] Measured distance: 1997.44 mm
+[2018-08-19 04:53:54] Actual Level     : 402 mm
+[2018-08-19 04:53:54] Actual volume    : 1262 Liter, StdDev: 2.19 Liter
+[2018-08-19 04:53:54] Signal health    : 97
+[2018-08-19 04:53:54] Error status     : 0
+[2018-08-19 04:53:54] Writing measurement data to SD Card
+[2018-08-19 04:53:54] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:53:54] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(97.00)
+[2018-08-19 04:53:54] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:54:44] Measured distance: 1997.24 mm
+[2018-08-19 04:54:44] Actual Level     : 402 mm
+[2018-08-19 04:54:44] Actual volume    : 1262 Liter, StdDev: 1.34 Liter
+[2018-08-19 04:54:44] Signal health    : 98
+[2018-08-19 04:54:44] Error status     : 0
+[2018-08-19 04:54:44] Writing measurement data to SD Card
+[2018-08-19 04:54:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:54:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 04:54:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:55:34] Measured distance: 1997.24 mm
+[2018-08-19 04:55:34] Actual Level     : 402 mm
+[2018-08-19 04:55:34] Actual volume    : 1262 Liter, StdDev: 1.34 Liter
+[2018-08-19 04:55:34] Signal health    : 98
+[2018-08-19 04:55:34] Error status     : 0
+[2018-08-19 04:55:34] Writing measurement data to SD Card
+[2018-08-19 04:55:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:55:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 04:55:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:56:25] Measured distance: 1997.48 mm
+[2018-08-19 04:56:25] Actual Level     : 402 mm
+[2018-08-19 04:56:25] Actual volume    : 1262 Liter, StdDev: 2.68 Liter
+[2018-08-19 04:56:25] Signal health    : 97
+[2018-08-19 04:56:25] Error status     : 0
+[2018-08-19 04:56:25] Writing measurement data to SD Card
+[2018-08-19 04:56:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:56:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(97.00)
+[2018-08-19 04:56:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:57:15] Measured distance: 1997.06 mm
+[2018-08-19 04:57:15] Actual Level     : 402 mm
+[2018-08-19 04:57:15] Actual volume    : 1262 Liter, StdDev: 0.75 Liter
+[2018-08-19 04:57:15] Signal health    : 99
+[2018-08-19 04:57:15] Error status     : 0
+[2018-08-19 04:57:15] Writing measurement data to SD Card
+[2018-08-19 04:57:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:57:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-19 04:57:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:58:05] Measured distance: 1997.18 mm
+[2018-08-19 04:58:05] Actual Level     : 402 mm
+[2018-08-19 04:58:05] Actual volume    : 1262 Liter, StdDev: 1.21 Liter
+[2018-08-19 04:58:06] Signal health    : 98
+[2018-08-19 04:58:06] Error status     : 0
+[2018-08-19 04:58:06] Writing measurement data to SD Card
+[2018-08-19 04:58:06] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:58:06] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 04:58:06] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:58:56] Measured distance: 1997.20 mm
+[2018-08-19 04:58:56] Actual Level     : 402 mm
+[2018-08-19 04:58:56] Actual volume    : 1262 Liter, StdDev: 1.26 Liter
+[2018-08-19 04:58:56] Signal health    : 98
+[2018-08-19 04:58:56] Error status     : 0
+[2018-08-19 04:58:56] Writing measurement data to SD Card
+[2018-08-19 04:58:56] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 04:58:56] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 04:58:56] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 04:59:46] Measured distance: 1998.90 mm
+[2018-08-19 04:59:46] Actual Level     : 401 mm
+[2018-08-19 04:59:46] Actual volume    : 1259 Liter, StdDev: 5.73 Liter
+[2018-08-19 04:59:46] Signal health    : 94
+[2018-08-19 04:59:46] Error status     : 0
+[2018-08-19 04:59:46] Writing measurement data to SD Card
+[2018-08-19 04:59:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1259.00)
+[2018-08-19 04:59:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(94.00)
+[2018-08-19 04:59:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 05:00:36] Measured distance: 1997.72 mm
+[2018-08-19 05:00:36] Actual Level     : 402 mm
+[2018-08-19 05:00:36] Actual volume    : 1262 Liter, StdDev: 3.39 Liter
+[2018-08-19 05:00:36] Signal health    : 96
+[2018-08-19 05:00:36] Error status     : 0
+[2018-08-19 05:00:36] Writing measurement data to SD Card
+[2018-08-19 05:00:37] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 05:00:37] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(96.00)
+[2018-08-19 05:00:37] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 05:01:27] Measured distance: 1997.34 mm
+[2018-08-19 05:01:27] Actual Level     : 402 mm
+[2018-08-19 05:01:27] Actual volume    : 1262 Liter, StdDev: 1.49 Liter
+[2018-08-19 05:01:27] Signal health    : 98
+[2018-08-19 05:01:27] Error status     : 0
+[2018-08-19 05:01:27] Writing measurement data to SD Card
+[2018-08-19 05:01:27] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 05:01:27] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 05:01:27] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 05:01:27] Timeout detected
+[2018-08-19 05:02:17] Measured distance: 1997.60 mm
+[2018-08-19 05:02:17] Actual Level     : 402 mm
+[2018-08-19 05:02:17] Actual volume    : 1262 Liter, StdDev: 3.77 Liter
+[2018-08-19 05:02:17] Signal health    : 96
+[2018-08-19 05:02:17] Error status     : 0
+[2018-08-19 05:02:17] Writing measurement data to SD Card
+[2018-08-19 05:02:17] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 05:02:17] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(96.00)
+[2018-08-19 05:02:17] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 05:03:07] Measured distance: 1997.34 mm
+[2018-08-19 05:03:07] Actual Level     : 402 mm
+[2018-08-19 05:03:07] Actual volume    : 1262 Liter, StdDev: 1.49 Liter
+[2018-08-19 05:03:07] Signal health    : 98
+[2018-08-19 05:03:07] Error status     : 0
+[2018-08-19 05:03:07] Writing measurement data to SD Card
+[2018-08-19 05:03:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 05:03:08] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 05:03:08] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 05:03:58] Measured distance: 1997.20 mm
+[2018-08-19 05:03:58] Actual Level     : 402 mm
+[2018-08-19 05:03:58] Actual volume    : 1262 Liter, StdDev: 1.26 Liter
+[2018-08-19 05:03:58] Signal health    : 98
+[2018-08-19 05:03:58] Error status     : 0
+[2018-08-19 05:03:58] Writing measurement data to SD Card
+[2018-08-19 05:03:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 05:03:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 05:03:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 05:04:49] Measured distance: 1997.10 mm
+[2018-08-19 05:04:49] Actual Level     : 402 mm
+[2018-08-19 05:04:49] Actual volume    : 1262 Liter, StdDev: 0.94 Liter
+[2018-08-19 05:04:49] Signal health    : 99
+[2018-08-19 05:04:49] Error status     : 0
+[2018-08-19 05:04:49] Writing measurement data to SD Card
+[2018-08-19 05:04:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 05:04:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-19 05:04:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 05:05:39] Measured distance: 1997.34 mm
+[2018-08-19 05:05:39] Actual Level     : 402 mm
+[2018-08-19 05:05:39] Actual volume    : 1262 Liter, StdDev: 1.49 Liter
+[2018-08-19 05:05:39] Signal health    : 98
+[2018-08-19 05:05:39] Error status     : 0
+[2018-08-19 05:05:39] Writing measurement data to SD Card
+[2018-08-19 05:05:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 05:05:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 05:05:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 05:06:29] Measured distance: 1997.98 mm
+[2018-08-19 05:06:29] Actual Level     : 402 mm
+[2018-08-19 05:06:29] Actual volume    : 1262 Liter, StdDev: 4.38 Liter
+[2018-08-19 05:06:30] Signal health    : 95
+[2018-08-19 05:06:30] Error status     : 0
+[2018-08-19 05:06:30] Writing measurement data to SD Card
+[2018-08-19 05:06:30] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 05:06:30] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(95.00)
+[2018-08-19 05:06:30] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 05:07:20] Measured distance: 1997.34 mm
+[2018-08-19 05:07:20] Actual Level     : 402 mm
+[2018-08-19 05:07:20] Actual volume    : 1262 Liter, StdDev: 1.49 Liter
+[2018-08-19 05:07:20] Signal health    : 98
+[2018-08-19 05:07:20] Error status     : 0
+[2018-08-19 05:07:20] Writing measurement data to SD Card
+[2018-08-19 05:07:20] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 05:07:20] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 05:07:20] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 05:08:10] Measured distance: 1997.14 mm
+[2018-08-19 05:08:10] Actual Level     : 402 mm
+[2018-08-19 05:08:10] Actual volume    : 1262 Liter, StdDev: 1.09 Liter
+[2018-08-19 05:08:10] Signal health    : 98
+[2018-08-19 05:08:10] Error status     : 0
+[2018-08-19 05:08:10] Writing measurement data to SD Card
+[2018-08-19 05:08:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 05:08:11] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 05:08:11] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 05:09:01] Measured distance: 1997.12 mm
+[2018-08-19 05:09:01] Actual Level     : 402 mm
+[2018-08-19 05:09:01] Actual volume    : 1262 Liter, StdDev: 1.02 Liter
+[2018-08-19 05:09:01] Signal health    : 99
+[2018-08-19 05:09:01] Error status     : 0
+[2018-08-19 05:09:01] Writing measurement data to SD Card
+[2018-08-19 05:09:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 05:09:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-19 05:09:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 05:09:51] Measured distance: 1997.12 mm
+[2018-08-19 05:09:51] Actual Level     : 402 mm
+[2018-08-19 05:09:51] Actual volume    : 1262 Liter, StdDev: 1.02 Liter
+[2018-08-19 05:09:51] Signal health    : 99
+[2018-08-19 05:09:51] Error status     : 0
+[2018-08-19 05:09:51] Writing measurement data to SD Card
+[2018-08-19 05:09:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 05:09:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-19 05:09:52] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 05:09:52] Timeout detected
+[2018-08-19 05:10:42] Measured distance: 1997.04 mm
+[2018-08-19 05:10:42] Actual Level     : 402 mm
+[2018-08-19 05:10:42] Actual volume    : 1262 Liter, StdDev: 0.62 Liter
+[2018-08-19 05:10:42] Signal health    : 99
+[2018-08-19 05:10:42] Error status     : 0
+[2018-08-19 05:10:42] Writing measurement data to SD Card
+[2018-08-19 05:10:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 05:10:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-19 05:10:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 05:11:33] Measured distance: 1997.10 mm
+[2018-08-19 05:11:33] Actual Level     : 402 mm
+[2018-08-19 05:11:33] Actual volume    : 1262 Liter, StdDev: 0.94 Liter
+[2018-08-19 05:11:33] Signal health    : 99
+[2018-08-19 05:11:33] Error status     : 0
+[2018-08-19 05:11:33] Writing measurement data to SD Card
+[2018-08-19 05:11:33] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 05:11:33] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-19 05:11:33] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 05:12:24] Measured distance: 1998.32 mm
+[2018-08-19 05:12:24] Actual Level     : 401 mm
+[2018-08-19 05:12:24] Actual volume    : 1259 Liter, StdDev: 4.93 Liter
+[2018-08-19 05:12:24] Signal health    : 95
+[2018-08-19 05:12:24] Error status     : 0
+[2018-08-19 05:12:24] Writing measurement data to SD Card
+[2018-08-19 05:12:24] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1259.00)
+[2018-08-19 05:12:24] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(95.00)
+[2018-08-19 05:12:24] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 05:13:14] Measured distance: 1998.50 mm
+[2018-08-19 05:13:14] Actual Level     : 401 mm
+[2018-08-19 05:13:14] Actual volume    : 1259 Liter, StdDev: 5.30 Liter
+[2018-08-19 05:13:14] Signal health    : 94
+[2018-08-19 05:13:14] Error status     : 0
+[2018-08-19 05:13:14] Writing measurement data to SD Card
+[2018-08-19 05:13:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1259.00)
+[2018-08-19 05:13:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(94.00)
+[2018-08-19 05:13:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 05:14:04] Measured distance: 1997.44 mm
+[2018-08-19 05:14:04] Actual Level     : 402 mm
+[2018-08-19 05:14:04] Actual volume    : 1262 Liter, StdDev: 2.19 Liter
+[2018-08-19 05:14:04] Signal health    : 97
+[2018-08-19 05:14:04] Error status     : 0
+[2018-08-19 05:14:04] Writing measurement data to SD Card
+[2018-08-19 05:14:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 05:14:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(97.00)
+[2018-08-19 05:14:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 05:14:54] Measured distance: 1998.00 mm
+[2018-08-19 05:14:54] Actual Level     : 402 mm
+[2018-08-19 05:14:54] Actual volume    : 1262 Liter, StdDev: 4.35 Liter
+[2018-08-19 05:14:54] Signal health    : 95
+[2018-08-19 05:14:55] Error status     : 0
+[2018-08-19 05:14:55] Writing measurement data to SD Card
+[2018-08-19 05:14:55] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 05:14:55] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(95.00)
+[2018-08-19 05:14:55] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 05:15:45] Measured distance: 1997.68 mm
+[2018-08-19 05:15:45] Actual Level     : 402 mm
+[2018-08-19 05:15:45] Actual volume    : 1262 Liter, StdDev: 3.41 Liter
+[2018-08-19 05:15:45] Signal health    : 96
+[2018-08-19 05:15:45] Error status     : 0
+[2018-08-19 05:15:45] Writing measurement data to SD Card
+[2018-08-19 05:15:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 05:15:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(96.00)
+[2018-08-19 05:15:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 05:16:35] Measured distance: 1997.72 mm
+[2018-08-19 05:16:35] Actual Level     : 402 mm
+[2018-08-19 05:16:35] Actual volume    : 1262 Liter, StdDev: 4.31 Liter
+[2018-08-19 05:16:35] Signal health    : 95
+[2018-08-19 05:16:35] Error status     : 0
+[2018-08-19 05:16:35] Writing measurement data to SD Card
+[2018-08-19 05:16:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1262.00)
+[2018-08-19 05:16:36] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(95.00)
+[2018-08-19 05:16:36] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(20.00)
+[2018-08-19 05:17:26] Measured distance: 2000.22 mm
+[2018-08-19 05:17:26] Actual Level     : 399 mm
+[2018-08-19 05:17:26] Actual volume    : 1253 Liter, StdDev: 6.20 Liter
+[2018-08-19 05:17:26] Signal health    : 94
+[2018-08-19 05:17:26] Error status     : 0
+[2018-08-19 05:17:26] Writing measurement data to SD Card
+[2018-08-19 05:17:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1253.00)
+[2018-08-19 05:17:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(94.00)
+[2018-08-19 05:17:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:18:16] Measured distance: 2002.86 mm
+[2018-08-19 05:18:16] Actual Level     : 397 mm
+[2018-08-19 05:18:16] Actual volume    : 1247 Liter, StdDev: 1.09 Liter
+[2018-08-19 05:18:16] Signal health    : 98
+[2018-08-19 05:18:16] Error status     : 0
+[2018-08-19 05:18:16] Writing measurement data to SD Card
+[2018-08-19 05:18:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1247.00)
+[2018-08-19 05:18:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 05:18:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:19:06] Measured distance: 2003.04 mm
+[2018-08-19 05:19:06] Actual Level     : 396 mm
+[2018-08-19 05:19:06] Actual volume    : 1244 Liter, StdDev: 0.62 Liter
+[2018-08-19 05:19:06] Signal health    : 99
+[2018-08-19 05:19:07] Error status     : 0
+[2018-08-19 05:19:07] Writing measurement data to SD Card
+[2018-08-19 05:19:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1244.00)
+[2018-08-19 05:19:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-19 05:19:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:19:57] Measured distance: 2003.40 mm
+[2018-08-19 05:19:57] Actual Level     : 396 mm
+[2018-08-19 05:19:57] Actual volume    : 1244 Liter, StdDev: 1.54 Liter
+[2018-08-19 05:19:57] Signal health    : 98
+[2018-08-19 05:19:57] Error status     : 0
+[2018-08-19 05:19:57] Writing measurement data to SD Card
+[2018-08-19 05:19:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1244.00)
+[2018-08-19 05:19:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 05:19:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:20:47] Measured distance: 2003.58 mm
+[2018-08-19 05:20:47] Actual Level     : 396 mm
+[2018-08-19 05:20:47] Actual volume    : 1244 Liter, StdDev: 1.55 Liter
+[2018-08-19 05:20:47] Signal health    : 98
+[2018-08-19 05:20:47] Error status     : 0
+[2018-08-19 05:20:47] Writing measurement data to SD Card
+[2018-08-19 05:20:47] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1244.00)
+[2018-08-19 05:20:48] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 05:20:48] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:21:38] Measured distance: 2003.66 mm
+[2018-08-19 05:21:38] Actual Level     : 396 mm
+[2018-08-19 05:21:38] Actual volume    : 1244 Liter, StdDev: 1.49 Liter
+[2018-08-19 05:21:38] Signal health    : 98
+[2018-08-19 05:21:38] Error status     : 0
+[2018-08-19 05:21:38] Writing measurement data to SD Card
+[2018-08-19 05:21:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1244.00)
+[2018-08-19 05:21:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 05:21:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:22:28] Measured distance: 2003.62 mm
+[2018-08-19 05:22:28] Actual Level     : 396 mm
+[2018-08-19 05:22:28] Actual volume    : 1244 Liter, StdDev: 1.52 Liter
+[2018-08-19 05:22:28] Signal health    : 98
+[2018-08-19 05:22:28] Error status     : 0
+[2018-08-19 05:22:28] Writing measurement data to SD Card
+[2018-08-19 05:22:28] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1244.00)
+[2018-08-19 05:22:28] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 05:22:29] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:23:19] Measured distance: 2003.56 mm
+[2018-08-19 05:23:19] Actual Level     : 396 mm
+[2018-08-19 05:23:19] Actual volume    : 1244 Liter, StdDev: 1.56 Liter
+[2018-08-19 05:23:19] Signal health    : 98
+[2018-08-19 05:23:19] Error status     : 0
+[2018-08-19 05:23:19] Writing measurement data to SD Card
+[2018-08-19 05:23:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1244.00)
+[2018-08-19 05:23:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 05:23:20] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:24:09] Measured distance: 2003.50 mm
+[2018-08-19 05:24:09] Actual Level     : 396 mm
+[2018-08-19 05:24:10] Actual volume    : 1244 Liter, StdDev: 1.57 Liter
+[2018-08-19 05:24:10] Signal health    : 98
+[2018-08-19 05:24:10] Error status     : 0
+[2018-08-19 05:24:10] Writing measurement data to SD Card
+[2018-08-19 05:24:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1244.00)
+[2018-08-19 05:24:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 05:24:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:25:00] Measured distance: 2003.52 mm
+[2018-08-19 05:25:00] Actual Level     : 396 mm
+[2018-08-19 05:25:00] Actual volume    : 1244 Liter, StdDev: 1.57 Liter
+[2018-08-19 05:25:00] Signal health    : 98
+[2018-08-19 05:25:00] Error status     : 0
+[2018-08-19 05:25:00] Writing measurement data to SD Card
+[2018-08-19 05:25:00] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1244.00)
+[2018-08-19 05:25:00] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 05:25:00] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:25:50] Measured distance: 2003.70 mm
+[2018-08-19 05:25:50] Actual Level     : 396 mm
+[2018-08-19 05:25:50] Actual volume    : 1244 Liter, StdDev: 1.44 Liter
+[2018-08-19 05:25:50] Signal health    : 98
+[2018-08-19 05:25:50] Error status     : 0
+[2018-08-19 05:25:50] Writing measurement data to SD Card
+[2018-08-19 05:25:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1244.00)
+[2018-08-19 05:25:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 05:25:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:26:41] Measured distance: 2003.68 mm
+[2018-08-19 05:26:41] Actual Level     : 396 mm
+[2018-08-19 05:26:41] Actual volume    : 1244 Liter, StdDev: 1.47 Liter
+[2018-08-19 05:26:41] Signal health    : 98
+[2018-08-19 05:26:41] Error status     : 0
+[2018-08-19 05:26:41] Writing measurement data to SD Card
+[2018-08-19 05:26:41] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1244.00)
+[2018-08-19 05:26:41] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 05:26:41] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:27:31] Measured distance: 2003.50 mm
+[2018-08-19 05:27:31] Actual Level     : 396 mm
+[2018-08-19 05:27:31] Actual volume    : 1244 Liter, StdDev: 1.57 Liter
+[2018-08-19 05:27:31] Signal health    : 98
+[2018-08-19 05:27:31] Error status     : 0
+[2018-08-19 05:27:31] Writing measurement data to SD Card
+[2018-08-19 05:27:31] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1244.00)
+[2018-08-19 05:27:31] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 05:27:31] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:28:21] Measured distance: 2003.50 mm
+[2018-08-19 05:28:21] Actual Level     : 396 mm
+[2018-08-19 05:28:21] Actual volume    : 1244 Liter, StdDev: 1.57 Liter
+[2018-08-19 05:28:21] Signal health    : 98
+[2018-08-19 05:28:21] Error status     : 0
+[2018-08-19 05:28:21] Writing measurement data to SD Card
+[2018-08-19 05:28:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1244.00)
+[2018-08-19 05:28:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 05:28:22] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:29:12] Measured distance: 2003.68 mm
+[2018-08-19 05:29:12] Actual Level     : 396 mm
+[2018-08-19 05:29:12] Actual volume    : 1244 Liter, StdDev: 1.47 Liter
+[2018-08-19 05:29:12] Signal health    : 98
+[2018-08-19 05:29:12] Error status     : 0
+[2018-08-19 05:29:12] Writing measurement data to SD Card
+[2018-08-19 05:29:12] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1244.00)
+[2018-08-19 05:29:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 05:29:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:29:13] Timeout detected
+[2018-08-19 05:30:03] Measured distance: 2003.66 mm
+[2018-08-19 05:30:03] Actual Level     : 396 mm
+[2018-08-19 05:30:03] Actual volume    : 1244 Liter, StdDev: 1.49 Liter
+[2018-08-19 05:30:03] Signal health    : 98
+[2018-08-19 05:30:03] Error status     : 0
+[2018-08-19 05:30:03] Writing measurement data to SD Card
+[2018-08-19 05:30:03] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1244.00)
+[2018-08-19 05:30:03] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 05:30:03] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:30:53] Measured distance: 2003.64 mm
+[2018-08-19 05:30:53] Actual Level     : 396 mm
+[2018-08-19 05:30:53] Actual volume    : 1244 Liter, StdDev: 1.51 Liter
+[2018-08-19 05:30:53] Signal health    : 98
+[2018-08-19 05:30:53] Error status     : 0
+[2018-08-19 05:30:53] Writing measurement data to SD Card
+[2018-08-19 05:30:54] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1244.00)
+[2018-08-19 05:30:54] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 05:30:54] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:31:44] Measured distance: 2003.56 mm
+[2018-08-19 05:31:44] Actual Level     : 396 mm
+[2018-08-19 05:31:44] Actual volume    : 1244 Liter, StdDev: 1.56 Liter
+[2018-08-19 05:31:44] Signal health    : 98
+[2018-08-19 05:31:44] Error status     : 0
+[2018-08-19 05:31:44] Writing measurement data to SD Card
+[2018-08-19 05:31:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1244.00)
+[2018-08-19 05:31:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 05:31:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:32:34] Measured distance: 2003.66 mm
+[2018-08-19 05:32:34] Actual Level     : 396 mm
+[2018-08-19 05:32:34] Actual volume    : 1244 Liter, StdDev: 1.49 Liter
+[2018-08-19 05:32:34] Signal health    : 98
+[2018-08-19 05:32:34] Error status     : 0
+[2018-08-19 05:32:34] Writing measurement data to SD Card
+[2018-08-19 05:32:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1244.00)
+[2018-08-19 05:32:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 05:32:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:33:24] Measured distance: 2003.42 mm
+[2018-08-19 05:33:24] Actual Level     : 396 mm
+[2018-08-19 05:33:24] Actual volume    : 1244 Liter, StdDev: 1.55 Liter
+[2018-08-19 05:33:24] Signal health    : 98
+[2018-08-19 05:33:24] Error status     : 0
+[2018-08-19 05:33:24] Writing measurement data to SD Card
+[2018-08-19 05:33:24] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1244.00)
+[2018-08-19 05:33:24] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 05:33:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:34:15] Measured distance: 2003.68 mm
+[2018-08-19 05:34:15] Actual Level     : 396 mm
+[2018-08-19 05:34:15] Actual volume    : 1244 Liter, StdDev: 1.47 Liter
+[2018-08-19 05:34:15] Signal health    : 98
+[2018-08-19 05:34:15] Error status     : 0
+[2018-08-19 05:34:15] Writing measurement data to SD Card
+[2018-08-19 05:34:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1244.00)
+[2018-08-19 05:34:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 05:34:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:35:05] Measured distance: 2003.56 mm
+[2018-08-19 05:35:05] Actual Level     : 396 mm
+[2018-08-19 05:35:05] Actual volume    : 1244 Liter, StdDev: 1.56 Liter
+[2018-08-19 05:35:05] Signal health    : 98
+[2018-08-19 05:35:05] Error status     : 0
+[2018-08-19 05:35:05] Writing measurement data to SD Card
+[2018-08-19 05:35:05] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1244.00)
+[2018-08-19 05:35:05] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 05:35:05] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:35:55] Measured distance: 2003.68 mm
+[2018-08-19 05:35:55] Actual Level     : 396 mm
+[2018-08-19 05:35:55] Actual volume    : 1244 Liter, StdDev: 1.47 Liter
+[2018-08-19 05:35:55] Signal health    : 98
+[2018-08-19 05:35:55] Error status     : 0
+[2018-08-19 05:35:56] Writing measurement data to SD Card
+[2018-08-19 05:35:56] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1244.00)
+[2018-08-19 05:35:56] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 05:35:56] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:36:46] Measured distance: 2005.16 mm
+[2018-08-19 05:36:46] Actual Level     : 394 mm
+[2018-08-19 05:36:46] Actual volume    : 1237 Liter, StdDev: 1.82 Liter
+[2018-08-19 05:36:46] Signal health    : 98
+[2018-08-19 05:36:46] Error status     : 0
+[2018-08-19 05:36:46] Writing measurement data to SD Card
+[2018-08-19 05:36:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1237.00)
+[2018-08-19 05:36:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 05:36:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:37:36] Measured distance: 2006.00 mm
+[2018-08-19 05:37:36] Actual Level     : 394 mm
+[2018-08-19 05:37:36] Actual volume    : 1237 Liter, StdDev: 0.00 Liter
+[2018-08-19 05:37:36] Signal health    : 100
+[2018-08-19 05:37:36] Error status     : 0
+[2018-08-19 05:37:36] Writing measurement data to SD Card
+[2018-08-19 05:37:36] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1237.00)
+[2018-08-19 05:37:36] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 05:37:36] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:38:26] Measured distance: 2006.00 mm
+[2018-08-19 05:38:26] Actual Level     : 394 mm
+[2018-08-19 05:38:26] Actual volume    : 1237 Liter, StdDev: 0.00 Liter
+[2018-08-19 05:38:26] Signal health    : 100
+[2018-08-19 05:38:26] Error status     : 0
+[2018-08-19 05:38:26] Writing measurement data to SD Card
+[2018-08-19 05:38:27] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1237.00)
+[2018-08-19 05:38:27] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 05:38:27] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:39:17] Measured distance: 2006.00 mm
+[2018-08-19 05:39:17] Actual Level     : 394 mm
+[2018-08-19 05:39:17] Actual volume    : 1237 Liter, StdDev: 0.00 Liter
+[2018-08-19 05:39:17] Signal health    : 100
+[2018-08-19 05:39:17] Error status     : 0
+[2018-08-19 05:39:17] Writing measurement data to SD Card
+[2018-08-19 05:39:17] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1237.00)
+[2018-08-19 05:39:17] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 05:39:17] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:40:07] Measured distance: 2006.00 mm
+[2018-08-19 05:40:07] Actual Level     : 394 mm
+[2018-08-19 05:40:07] Actual volume    : 1237 Liter, StdDev: 0.00 Liter
+[2018-08-19 05:40:07] Signal health    : 100
+[2018-08-19 05:40:07] Error status     : 0
+[2018-08-19 05:40:08] Writing measurement data to SD Card
+[2018-08-19 05:40:08] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1237.00)
+[2018-08-19 05:40:08] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 05:40:08] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:40:58] Measured distance: 2006.00 mm
+[2018-08-19 05:40:58] Actual Level     : 394 mm
+[2018-08-19 05:40:58] Actual volume    : 1237 Liter, StdDev: 0.00 Liter
+[2018-08-19 05:40:58] Signal health    : 100
+[2018-08-19 05:40:58] Error status     : 0
+[2018-08-19 05:40:58] Writing measurement data to SD Card
+[2018-08-19 05:40:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1237.00)
+[2018-08-19 05:40:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 05:40:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:41:48] Measured distance: 2006.00 mm
+[2018-08-19 05:41:48] Actual Level     : 394 mm
+[2018-08-19 05:41:49] Actual volume    : 1237 Liter, StdDev: 0.00 Liter
+[2018-08-19 05:41:49] Signal health    : 100
+[2018-08-19 05:41:49] Error status     : 0
+[2018-08-19 05:41:49] Writing measurement data to SD Card
+[2018-08-19 05:41:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1237.00)
+[2018-08-19 05:41:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 05:41:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:42:39] Measured distance: 2006.00 mm
+[2018-08-19 05:42:39] Actual Level     : 394 mm
+[2018-08-19 05:42:39] Actual volume    : 1237 Liter, StdDev: 0.00 Liter
+[2018-08-19 05:42:39] Signal health    : 100
+[2018-08-19 05:42:39] Error status     : 0
+[2018-08-19 05:42:39] Writing measurement data to SD Card
+[2018-08-19 05:42:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1237.00)
+[2018-08-19 05:42:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 05:42:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:43:29] Measured distance: 2006.00 mm
+[2018-08-19 05:43:29] Actual Level     : 394 mm
+[2018-08-19 05:43:29] Actual volume    : 1237 Liter, StdDev: 0.00 Liter
+[2018-08-19 05:43:29] Signal health    : 100
+[2018-08-19 05:43:29] Error status     : 0
+[2018-08-19 05:43:29] Writing measurement data to SD Card
+[2018-08-19 05:43:29] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1237.00)
+[2018-08-19 05:43:29] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 05:43:30] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:44:20] Measured distance: 2006.00 mm
+[2018-08-19 05:44:20] Actual Level     : 394 mm
+[2018-08-19 05:44:20] Actual volume    : 1237 Liter, StdDev: 0.00 Liter
+[2018-08-19 05:44:20] Signal health    : 100
+[2018-08-19 05:44:20] Error status     : 0
+[2018-08-19 05:44:20] Writing measurement data to SD Card
+[2018-08-19 05:44:20] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1237.00)
+[2018-08-19 05:44:20] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 05:44:20] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:45:10] Measured distance: 2006.12 mm
+[2018-08-19 05:45:10] Actual Level     : 393 mm
+[2018-08-19 05:45:10] Actual volume    : 1234 Liter, StdDev: 1.02 Liter
+[2018-08-19 05:45:10] Signal health    : 99
+[2018-08-19 05:45:10] Error status     : 0
+[2018-08-19 05:45:10] Writing measurement data to SD Card
+[2018-08-19 05:45:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 05:45:11] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-19 05:45:11] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:46:01] Measured distance: 2007.00 mm
+[2018-08-19 05:46:01] Actual Level     : 393 mm
+[2018-08-19 05:46:01] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 05:46:01] Signal health    : 100
+[2018-08-19 05:46:01] Error status     : 0
+[2018-08-19 05:46:01] Writing measurement data to SD Card
+[2018-08-19 05:46:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 05:46:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 05:46:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:46:51] Measured distance: 2007.00 mm
+[2018-08-19 05:46:51] Actual Level     : 393 mm
+[2018-08-19 05:46:51] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 05:46:51] Signal health    : 100
+[2018-08-19 05:46:51] Error status     : 0
+[2018-08-19 05:46:51] Writing measurement data to SD Card
+[2018-08-19 05:46:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 05:46:52] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 05:46:52] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:47:42] Measured distance: 2007.00 mm
+[2018-08-19 05:47:42] Actual Level     : 393 mm
+[2018-08-19 05:47:42] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 05:47:42] Signal health    : 100
+[2018-08-19 05:47:42] Error status     : 0
+[2018-08-19 05:47:42] Writing measurement data to SD Card
+[2018-08-19 05:47:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 05:47:43] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 05:47:43] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:47:43] Timeout detected
+[2018-08-19 05:48:33] Measured distance: 2007.00 mm
+[2018-08-19 05:48:33] Actual Level     : 393 mm
+[2018-08-19 05:48:33] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 05:48:33] Signal health    : 100
+[2018-08-19 05:48:33] Error status     : 0
+[2018-08-19 05:48:33] Writing measurement data to SD Card
+[2018-08-19 05:48:33] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 05:48:33] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 05:48:33] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:49:23] Measured distance: 2007.00 mm
+[2018-08-19 05:49:23] Actual Level     : 393 mm
+[2018-08-19 05:49:23] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 05:49:23] Signal health    : 100
+[2018-08-19 05:49:23] Error status     : 0
+[2018-08-19 05:49:23] Writing measurement data to SD Card
+[2018-08-19 05:49:23] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 05:49:23] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 05:49:24] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:50:13] Measured distance: 2007.00 mm
+[2018-08-19 05:50:13] Actual Level     : 393 mm
+[2018-08-19 05:50:13] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 05:50:14] Signal health    : 100
+[2018-08-19 05:50:14] Error status     : 0
+[2018-08-19 05:50:14] Writing measurement data to SD Card
+[2018-08-19 05:50:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 05:50:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 05:50:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:51:04] Measured distance: 2007.00 mm
+[2018-08-19 05:51:04] Actual Level     : 393 mm
+[2018-08-19 05:51:04] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 05:51:04] Signal health    : 100
+[2018-08-19 05:51:04] Error status     : 0
+[2018-08-19 05:51:04] Writing measurement data to SD Card
+[2018-08-19 05:51:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 05:51:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 05:51:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:51:50] Time updated by NTP
+[2018-08-19 05:52:04] Measured distance: 2007.00 mm
+[2018-08-19 05:52:04] Actual Level     : 393 mm
+[2018-08-19 05:52:04] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 05:52:04] Signal health    : 100
+[2018-08-19 05:52:04] Error status     : 0
+[2018-08-19 05:52:04] Writing measurement data to SD Card
+[2018-08-19 05:52:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 05:52:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 05:52:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:52:54] Measured distance: 2007.00 mm
+[2018-08-19 05:52:54] Actual Level     : 393 mm
+[2018-08-19 05:52:54] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 05:52:54] Signal health    : 100
+[2018-08-19 05:52:54] Error status     : 0
+[2018-08-19 05:52:54] Writing measurement data to SD Card
+[2018-08-19 05:52:55] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 05:52:55] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 05:52:55] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:53:45] Measured distance: 2007.00 mm
+[2018-08-19 05:53:45] Actual Level     : 393 mm
+[2018-08-19 05:53:45] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 05:53:45] Signal health    : 100
+[2018-08-19 05:53:45] Error status     : 0
+[2018-08-19 05:53:45] Writing measurement data to SD Card
+[2018-08-19 05:53:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 05:53:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 05:53:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:54:35] Measured distance: 2007.00 mm
+[2018-08-19 05:54:35] Actual Level     : 393 mm
+[2018-08-19 05:54:35] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 05:54:35] Signal health    : 100
+[2018-08-19 05:54:35] Error status     : 0
+[2018-08-19 05:54:35] Writing measurement data to SD Card
+[2018-08-19 05:54:36] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 05:54:36] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 05:54:36] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:55:26] Measured distance: 2007.00 mm
+[2018-08-19 05:55:26] Actual Level     : 393 mm
+[2018-08-19 05:55:26] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 05:55:26] Signal health    : 100
+[2018-08-19 05:55:26] Error status     : 0
+[2018-08-19 05:55:26] Writing measurement data to SD Card
+[2018-08-19 05:55:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 05:55:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 05:55:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:56:16] Measured distance: 2007.00 mm
+[2018-08-19 05:56:16] Actual Level     : 393 mm
+[2018-08-19 05:56:16] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 05:56:16] Signal health    : 100
+[2018-08-19 05:56:16] Error status     : 0
+[2018-08-19 05:56:16] Writing measurement data to SD Card
+[2018-08-19 05:56:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 05:56:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 05:56:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:57:06] Measured distance: 2007.00 mm
+[2018-08-19 05:57:06] Actual Level     : 393 mm
+[2018-08-19 05:57:06] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 05:57:06] Signal health    : 100
+[2018-08-19 05:57:06] Error status     : 0
+[2018-08-19 05:57:06] Writing measurement data to SD Card
+[2018-08-19 05:57:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 05:57:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 05:57:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:57:57] Measured distance: 2007.00 mm
+[2018-08-19 05:57:57] Actual Level     : 393 mm
+[2018-08-19 05:57:57] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 05:57:57] Signal health    : 100
+[2018-08-19 05:57:57] Error status     : 0
+[2018-08-19 05:57:57] Writing measurement data to SD Card
+[2018-08-19 05:57:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 05:57:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 05:57:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:58:47] Measured distance: 2007.00 mm
+[2018-08-19 05:58:47] Actual Level     : 393 mm
+[2018-08-19 05:58:47] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 05:58:47] Signal health    : 100
+[2018-08-19 05:58:47] Error status     : 0
+[2018-08-19 05:58:47] Writing measurement data to SD Card
+[2018-08-19 05:58:47] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 05:58:47] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 05:58:47] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 05:59:38] Measured distance: 2007.00 mm
+[2018-08-19 05:59:38] Actual Level     : 393 mm
+[2018-08-19 05:59:38] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 05:59:38] Signal health    : 100
+[2018-08-19 05:59:38] Error status     : 0
+[2018-08-19 05:59:38] Writing measurement data to SD Card
+[2018-08-19 05:59:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 05:59:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 05:59:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:00:28] Measured distance: 2007.00 mm
+[2018-08-19 06:00:28] Actual Level     : 393 mm
+[2018-08-19 06:00:28] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 06:00:29] Signal health    : 100
+[2018-08-19 06:00:29] Error status     : 0
+[2018-08-19 06:00:29] Writing measurement data to SD Card
+[2018-08-19 06:00:29] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 06:00:29] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 06:00:29] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:01:19] Measured distance: 2007.10 mm
+[2018-08-19 06:01:19] Actual Level     : 392 mm
+[2018-08-19 06:01:19] Actual volume    : 1231 Liter, StdDev: 0.94 Liter
+[2018-08-19 06:01:19] Signal health    : 99
+[2018-08-19 06:01:19] Error status     : 0
+[2018-08-19 06:01:19] Writing measurement data to SD Card
+[2018-08-19 06:01:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1231.00)
+[2018-08-19 06:01:20] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-19 06:01:20] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:02:10] Measured distance: 2007.94 mm
+[2018-08-19 06:02:10] Actual Level     : 392 mm
+[2018-08-19 06:02:10] Actual volume    : 1231 Liter, StdDev: 5.16 Liter
+[2018-08-19 06:02:10] Signal health    : 95
+[2018-08-19 06:02:10] Error status     : 0
+[2018-08-19 06:02:10] Writing measurement data to SD Card
+[2018-08-19 06:02:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1231.00)
+[2018-08-19 06:02:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(95.00)
+[2018-08-19 06:02:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:03:00] Measured distance: 2007.50 mm
+[2018-08-19 06:03:00] Actual Level     : 392 mm
+[2018-08-19 06:03:00] Actual volume    : 1231 Liter, StdDev: 6.03 Liter
+[2018-08-19 06:03:00] Signal health    : 94
+[2018-08-19 06:03:00] Error status     : 0
+[2018-08-19 06:03:00] Writing measurement data to SD Card
+[2018-08-19 06:03:00] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1231.00)
+[2018-08-19 06:03:00] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(94.00)
+[2018-08-19 06:03:00] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:03:50] Measured distance: 2006.24 mm
+[2018-08-19 06:03:50] Actual Level     : 393 mm
+[2018-08-19 06:03:50] Actual volume    : 1234 Liter, StdDev: 5.50 Liter
+[2018-08-19 06:03:50] Signal health    : 94
+[2018-08-19 06:03:50] Error status     : 0
+[2018-08-19 06:03:51] Writing measurement data to SD Card
+[2018-08-19 06:03:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 06:03:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(94.00)
+[2018-08-19 06:03:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:04:41] Measured distance: 2005.24 mm
+[2018-08-19 06:04:41] Actual Level     : 394 mm
+[2018-08-19 06:04:41] Actual volume    : 1237 Liter, StdDev: 2.98 Liter
+[2018-08-19 06:04:41] Signal health    : 97
+[2018-08-19 06:04:41] Error status     : 0
+[2018-08-19 06:04:41] Writing measurement data to SD Card
+[2018-08-19 06:04:41] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1237.00)
+[2018-08-19 06:04:41] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(97.00)
+[2018-08-19 06:04:41] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:05:31] Measured distance: 2006.52 mm
+[2018-08-19 06:05:31] Actual Level     : 393 mm
+[2018-08-19 06:05:31] Actual volume    : 1234 Liter, StdDev: 6.10 Liter
+[2018-08-19 06:05:31] Signal health    : 94
+[2018-08-19 06:05:31] Error status     : 0
+[2018-08-19 06:05:31] Writing measurement data to SD Card
+[2018-08-19 06:05:31] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 06:05:31] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(94.00)
+[2018-08-19 06:05:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:05:32] Timeout detected
+[2018-08-19 06:06:22] Measured distance: 2006.70 mm
+[2018-08-19 06:06:22] Actual Level     : 393 mm
+[2018-08-19 06:06:22] Actual volume    : 1234 Liter, StdDev: 6.16 Liter
+[2018-08-19 06:06:22] Signal health    : 94
+[2018-08-19 06:06:22] Error status     : 0
+[2018-08-19 06:06:22] Writing measurement data to SD Card
+[2018-08-19 06:06:22] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 06:06:22] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(94.00)
+[2018-08-19 06:06:22] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:07:13] Measured distance: 2005.32 mm
+[2018-08-19 06:07:13] Actual Level     : 394 mm
+[2018-08-19 06:07:13] Actual volume    : 1237 Liter, StdDev: 3.41 Liter
+[2018-08-19 06:07:13] Signal health    : 96
+[2018-08-19 06:07:13] Error status     : 0
+[2018-08-19 06:07:13] Writing measurement data to SD Card
+[2018-08-19 06:07:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1237.00)
+[2018-08-19 06:07:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(96.00)
+[2018-08-19 06:07:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:08:03] Measured distance: 2005.90 mm
+[2018-08-19 06:08:03] Actual Level     : 394 mm
+[2018-08-19 06:08:03] Actual volume    : 1237 Liter, StdDev: 5.19 Liter
+[2018-08-19 06:08:03] Signal health    : 95
+[2018-08-19 06:08:03] Error status     : 0
+[2018-08-19 06:08:04] Writing measurement data to SD Card
+[2018-08-19 06:08:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1237.00)
+[2018-08-19 06:08:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(95.00)
+[2018-08-19 06:08:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:08:54] Measured distance: 2006.46 mm
+[2018-08-19 06:08:54] Actual Level     : 393 mm
+[2018-08-19 06:08:54] Actual volume    : 1234 Liter, StdDev: 6.00 Liter
+[2018-08-19 06:08:54] Signal health    : 94
+[2018-08-19 06:08:54] Error status     : 0
+[2018-08-19 06:08:54] Writing measurement data to SD Card
+[2018-08-19 06:08:54] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 06:08:54] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(94.00)
+[2018-08-19 06:08:55] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:09:44] Measured distance: 2008.72 mm
+[2018-08-19 06:09:45] Actual Level     : 391 mm
+[2018-08-19 06:09:45] Actual volume    : 1228 Liter, StdDev: 2.81 Liter
+[2018-08-19 06:09:45] Signal health    : 97
+[2018-08-19 06:09:45] Error status     : 0
+[2018-08-19 06:09:45] Writing measurement data to SD Card
+[2018-08-19 06:09:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1228.00)
+[2018-08-19 06:09:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(97.00)
+[2018-08-19 06:09:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:10:35] Measured distance: 2009.06 mm
+[2018-08-19 06:10:35] Actual Level     : 390 mm
+[2018-08-19 06:10:35] Actual volume    : 1225 Liter, StdDev: 0.75 Liter
+[2018-08-19 06:10:35] Signal health    : 99
+[2018-08-19 06:10:35] Error status     : 0
+[2018-08-19 06:10:35] Writing measurement data to SD Card
+[2018-08-19 06:10:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1225.00)
+[2018-08-19 06:10:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-19 06:10:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:11:25] Measured distance: 2009.08 mm
+[2018-08-19 06:11:25] Actual Level     : 390 mm
+[2018-08-19 06:11:25] Actual volume    : 1225 Liter, StdDev: 0.85 Liter
+[2018-08-19 06:11:25] Signal health    : 99
+[2018-08-19 06:11:25] Error status     : 0
+[2018-08-19 06:11:25] Writing measurement data to SD Card
+[2018-08-19 06:11:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1225.00)
+[2018-08-19 06:11:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-19 06:11:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:12:16] Measured distance: 2009.02 mm
+[2018-08-19 06:12:16] Actual Level     : 390 mm
+[2018-08-19 06:12:16] Actual volume    : 1225 Liter, StdDev: 0.44 Liter
+[2018-08-19 06:12:16] Signal health    : 99
+[2018-08-19 06:12:16] Error status     : 0
+[2018-08-19 06:12:16] Writing measurement data to SD Card
+[2018-08-19 06:12:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1225.00)
+[2018-08-19 06:12:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-19 06:12:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:13:06] Measured distance: 2008.92 mm
+[2018-08-19 06:13:06] Actual Level     : 391 mm
+[2018-08-19 06:13:06] Actual volume    : 1228 Liter, StdDev: 1.76 Liter
+[2018-08-19 06:13:06] Signal health    : 98
+[2018-08-19 06:13:06] Error status     : 0
+[2018-08-19 06:13:06] Writing measurement data to SD Card
+[2018-08-19 06:13:06] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1228.00)
+[2018-08-19 06:13:06] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 06:13:06] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:13:56] Measured distance: 2009.00 mm
+[2018-08-19 06:13:56] Actual Level     : 391 mm
+[2018-08-19 06:13:56] Actual volume    : 1228 Liter, StdDev: 0.00 Liter
+[2018-08-19 06:13:56] Signal health    : 100
+[2018-08-19 06:13:56] Error status     : 0
+[2018-08-19 06:13:56] Writing measurement data to SD Card
+[2018-08-19 06:13:56] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1228.00)
+[2018-08-19 06:13:56] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 06:13:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:14:47] Measured distance: 2008.76 mm
+[2018-08-19 06:14:47] Actual Level     : 391 mm
+[2018-08-19 06:14:47] Actual volume    : 1228 Liter, StdDev: 2.98 Liter
+[2018-08-19 06:14:47] Signal health    : 97
+[2018-08-19 06:14:47] Error status     : 0
+[2018-08-19 06:14:47] Writing measurement data to SD Card
+[2018-08-19 06:14:47] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1228.00)
+[2018-08-19 06:14:47] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(97.00)
+[2018-08-19 06:14:47] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:15:37] Measured distance: 2008.32 mm
+[2018-08-19 06:15:37] Actual Level     : 391 mm
+[2018-08-19 06:15:37] Actual volume    : 1228 Liter, StdDev: 4.59 Liter
+[2018-08-19 06:15:37] Signal health    : 95
+[2018-08-19 06:15:37] Error status     : 0
+[2018-08-19 06:15:37] Writing measurement data to SD Card
+[2018-08-19 06:15:37] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1228.00)
+[2018-08-19 06:15:37] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(95.00)
+[2018-08-19 06:15:37] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:16:27] Measured distance: 2007.54 mm
+[2018-08-19 06:16:27] Actual Level     : 392 mm
+[2018-08-19 06:16:27] Actual volume    : 1231 Liter, StdDev: 5.38 Liter
+[2018-08-19 06:16:27] Signal health    : 94
+[2018-08-19 06:16:27] Error status     : 0
+[2018-08-19 06:16:27] Writing measurement data to SD Card
+[2018-08-19 06:16:28] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1231.00)
+[2018-08-19 06:16:28] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(94.00)
+[2018-08-19 06:16:28] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:17:18] Measured distance: 2006.68 mm
+[2018-08-19 06:17:18] Actual Level     : 393 mm
+[2018-08-19 06:17:18] Actual volume    : 1234 Liter, StdDev: 6.01 Liter
+[2018-08-19 06:17:18] Signal health    : 94
+[2018-08-19 06:17:18] Error status     : 0
+[2018-08-19 06:17:18] Writing measurement data to SD Card
+[2018-08-19 06:17:18] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 06:17:18] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(94.00)
+[2018-08-19 06:17:18] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:18:08] Measured distance: 2006.18 mm
+[2018-08-19 06:18:08] Actual Level     : 393 mm
+[2018-08-19 06:18:08] Actual volume    : 1234 Liter, StdDev: 5.57 Liter
+[2018-08-19 06:18:08] Signal health    : 94
+[2018-08-19 06:18:08] Error status     : 0
+[2018-08-19 06:18:08] Writing measurement data to SD Card
+[2018-08-19 06:18:08] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 06:18:08] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(94.00)
+[2018-08-19 06:18:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:18:59] Measured distance: 2006.06 mm
+[2018-08-19 06:18:59] Actual Level     : 393 mm
+[2018-08-19 06:18:59] Actual volume    : 1234 Liter, StdDev: 5.49 Liter
+[2018-08-19 06:18:59] Signal health    : 94
+[2018-08-19 06:18:59] Error status     : 0
+[2018-08-19 06:18:59] Writing measurement data to SD Card
+[2018-08-19 06:18:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 06:18:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(94.00)
+[2018-08-19 06:18:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:19:49] Measured distance: 2005.94 mm
+[2018-08-19 06:19:49] Actual Level     : 394 mm
+[2018-08-19 06:19:49] Actual volume    : 1237 Liter, StdDev: 5.31 Liter
+[2018-08-19 06:19:49] Signal health    : 94
+[2018-08-19 06:19:49] Error status     : 0
+[2018-08-19 06:19:49] Writing measurement data to SD Card
+[2018-08-19 06:19:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1237.00)
+[2018-08-19 06:19:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(94.00)
+[2018-08-19 06:19:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:20:39] Measured distance: 2005.96 mm
+[2018-08-19 06:20:39] Actual Level     : 394 mm
+[2018-08-19 06:20:40] Actual volume    : 1237 Liter, StdDev: 5.58 Liter
+[2018-08-19 06:20:40] Signal health    : 94
+[2018-08-19 06:20:40] Error status     : 0
+[2018-08-19 06:20:40] Writing measurement data to SD Card
+[2018-08-19 06:20:40] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1237.00)
+[2018-08-19 06:20:40] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(94.00)
+[2018-08-19 06:20:40] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:21:30] Measured distance: 2006.10 mm
+[2018-08-19 06:21:30] Actual Level     : 393 mm
+[2018-08-19 06:21:30] Actual volume    : 1234 Liter, StdDev: 5.52 Liter
+[2018-08-19 06:21:30] Signal health    : 94
+[2018-08-19 06:21:30] Error status     : 0
+[2018-08-19 06:21:30] Writing measurement data to SD Card
+[2018-08-19 06:21:30] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 06:21:30] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(94.00)
+[2018-08-19 06:21:30] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:22:20] Measured distance: 2011.62 mm
+[2018-08-19 06:22:20] Actual Level     : 388 mm
+[2018-08-19 06:22:20] Actual volume    : 1218 Liter, StdDev: 1.52 Liter
+[2018-08-19 06:22:20] Signal health    : 98
+[2018-08-19 06:22:20] Error status     : 0
+[2018-08-19 06:22:20] Writing measurement data to SD Card
+[2018-08-19 06:22:20] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1218.00)
+[2018-08-19 06:22:20] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 06:22:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:23:10] Measured distance: 2012.00 mm
+[2018-08-19 06:23:11] Actual Level     : 388 mm
+[2018-08-19 06:23:11] Actual volume    : 1218 Liter, StdDev: 0.00 Liter
+[2018-08-19 06:23:11] Signal health    : 100
+[2018-08-19 06:23:11] Error status     : 0
+[2018-08-19 06:23:11] Writing measurement data to SD Card
+[2018-08-19 06:23:11] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1218.00)
+[2018-08-19 06:23:11] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 06:23:11] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:24:01] Measured distance: 2012.00 mm
+[2018-08-19 06:24:01] Actual Level     : 388 mm
+[2018-08-19 06:24:01] Actual volume    : 1218 Liter, StdDev: 0.00 Liter
+[2018-08-19 06:24:01] Signal health    : 100
+[2018-08-19 06:24:01] Error status     : 0
+[2018-08-19 06:24:01] Writing measurement data to SD Card
+[2018-08-19 06:24:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1218.00)
+[2018-08-19 06:24:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 06:24:01] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:24:52] Measured distance: 2012.00 mm
+[2018-08-19 06:24:52] Actual Level     : 388 mm
+[2018-08-19 06:24:52] Actual volume    : 1218 Liter, StdDev: 0.00 Liter
+[2018-08-19 06:24:52] Signal health    : 100
+[2018-08-19 06:24:52] Error status     : 0
+[2018-08-19 06:24:52] Writing measurement data to SD Card
+[2018-08-19 06:24:52] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1218.00)
+[2018-08-19 06:24:53] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 06:24:53] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:25:43] Measured distance: 2012.00 mm
+[2018-08-19 06:25:43] Actual Level     : 388 mm
+[2018-08-19 06:25:43] Actual volume    : 1218 Liter, StdDev: 0.00 Liter
+[2018-08-19 06:25:43] Signal health    : 100
+[2018-08-19 06:25:43] Error status     : 0
+[2018-08-19 06:25:43] Writing measurement data to SD Card
+[2018-08-19 06:25:43] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1218.00)
+[2018-08-19 06:25:43] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 06:25:43] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:26:33] Measured distance: 2012.00 mm
+[2018-08-19 06:26:33] Actual Level     : 388 mm
+[2018-08-19 06:26:33] Actual volume    : 1218 Liter, StdDev: 0.00 Liter
+[2018-08-19 06:26:34] Signal health    : 100
+[2018-08-19 06:26:34] Error status     : 0
+[2018-08-19 06:26:34] Writing measurement data to SD Card
+[2018-08-19 06:26:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1218.00)
+[2018-08-19 06:26:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 06:26:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:27:24] Measured distance: 2012.00 mm
+[2018-08-19 06:27:24] Actual Level     : 388 mm
+[2018-08-19 06:27:24] Actual volume    : 1218 Liter, StdDev: 0.00 Liter
+[2018-08-19 06:27:24] Signal health    : 100
+[2018-08-19 06:27:24] Error status     : 0
+[2018-08-19 06:27:24] Writing measurement data to SD Card
+[2018-08-19 06:27:24] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1218.00)
+[2018-08-19 06:27:24] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 06:27:24] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:28:14] Measured distance: 2012.00 mm
+[2018-08-19 06:28:14] Actual Level     : 388 mm
+[2018-08-19 06:28:14] Actual volume    : 1218 Liter, StdDev: 0.00 Liter
+[2018-08-19 06:28:14] Signal health    : 100
+[2018-08-19 06:28:14] Error status     : 0
+[2018-08-19 06:28:14] Writing measurement data to SD Card
+[2018-08-19 06:28:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1218.00)
+[2018-08-19 06:28:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 06:28:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:29:04] Measured distance: 2012.00 mm
+[2018-08-19 06:29:04] Actual Level     : 388 mm
+[2018-08-19 06:29:04] Actual volume    : 1218 Liter, StdDev: 0.00 Liter
+[2018-08-19 06:29:04] Signal health    : 100
+[2018-08-19 06:29:04] Error status     : 0
+[2018-08-19 06:29:04] Writing measurement data to SD Card
+[2018-08-19 06:29:05] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1218.00)
+[2018-08-19 06:29:05] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 06:29:05] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:29:55] Measured distance: 2012.00 mm
+[2018-08-19 06:29:55] Actual Level     : 388 mm
+[2018-08-19 06:29:55] Actual volume    : 1218 Liter, StdDev: 0.00 Liter
+[2018-08-19 06:29:55] Signal health    : 100
+[2018-08-19 06:29:55] Error status     : 0
+[2018-08-19 06:29:55] Writing measurement data to SD Card
+[2018-08-19 06:29:55] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1218.00)
+[2018-08-19 06:29:55] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 06:29:55] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:30:45] Measured distance: 2012.00 mm
+[2018-08-19 06:30:45] Actual Level     : 388 mm
+[2018-08-19 06:30:45] Actual volume    : 1218 Liter, StdDev: 0.00 Liter
+[2018-08-19 06:30:45] Signal health    : 100
+[2018-08-19 06:30:45] Error status     : 0
+[2018-08-19 06:30:45] Writing measurement data to SD Card
+[2018-08-19 06:30:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1218.00)
+[2018-08-19 06:30:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 06:30:46] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:31:36] Measured distance: 2012.00 mm
+[2018-08-19 06:31:36] Actual Level     : 388 mm
+[2018-08-19 06:31:36] Actual volume    : 1218 Liter, StdDev: 0.00 Liter
+[2018-08-19 06:31:36] Signal health    : 100
+[2018-08-19 06:31:36] Error status     : 0
+[2018-08-19 06:31:36] Writing measurement data to SD Card
+[2018-08-19 06:31:36] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1218.00)
+[2018-08-19 06:31:37] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 06:31:37] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:32:27] Measured distance: 2012.00 mm
+[2018-08-19 06:32:27] Actual Level     : 388 mm
+[2018-08-19 06:32:27] Actual volume    : 1218 Liter, StdDev: 0.00 Liter
+[2018-08-19 06:32:27] Signal health    : 100
+[2018-08-19 06:32:27] Error status     : 0
+[2018-08-19 06:32:27] Writing measurement data to SD Card
+[2018-08-19 06:32:27] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1218.00)
+[2018-08-19 06:32:28] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 06:32:28] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:33:18] Measured distance: 2012.00 mm
+[2018-08-19 06:33:18] Actual Level     : 388 mm
+[2018-08-19 06:33:18] Actual volume    : 1218 Liter, StdDev: 0.00 Liter
+[2018-08-19 06:33:18] Signal health    : 100
+[2018-08-19 06:33:18] Error status     : 0
+[2018-08-19 06:33:18] Writing measurement data to SD Card
+[2018-08-19 06:33:18] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1218.00)
+[2018-08-19 06:33:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 06:33:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:34:09] Measured distance: 2012.00 mm
+[2018-08-19 06:34:09] Actual Level     : 388 mm
+[2018-08-19 06:34:09] Actual volume    : 1218 Liter, StdDev: 0.00 Liter
+[2018-08-19 06:34:09] Signal health    : 100
+[2018-08-19 06:34:09] Error status     : 0
+[2018-08-19 06:34:09] Writing measurement data to SD Card
+[2018-08-19 06:34:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1218.00)
+[2018-08-19 06:34:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 06:34:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:34:59] Measured distance: 2012.00 mm
+[2018-08-19 06:34:59] Actual Level     : 388 mm
+[2018-08-19 06:34:59] Actual volume    : 1218 Liter, StdDev: 0.00 Liter
+[2018-08-19 06:34:59] Signal health    : 100
+[2018-08-19 06:35:00] Error status     : 0
+[2018-08-19 06:35:00] Writing measurement data to SD Card
+[2018-08-19 06:35:00] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1218.00)
+[2018-08-19 06:35:00] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 06:35:00] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:35:50] Measured distance: 2012.00 mm
+[2018-08-19 06:35:50] Actual Level     : 388 mm
+[2018-08-19 06:35:50] Actual volume    : 1218 Liter, StdDev: 0.00 Liter
+[2018-08-19 06:35:50] Signal health    : 100
+[2018-08-19 06:35:50] Error status     : 0
+[2018-08-19 06:35:50] Writing measurement data to SD Card
+[2018-08-19 06:35:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1218.00)
+[2018-08-19 06:35:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 06:35:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:36:41] Measured distance: 2012.00 mm
+[2018-08-19 06:36:41] Actual Level     : 388 mm
+[2018-08-19 06:36:41] Actual volume    : 1218 Liter, StdDev: 0.00 Liter
+[2018-08-19 06:36:41] Signal health    : 100
+[2018-08-19 06:36:41] Error status     : 0
+[2018-08-19 06:36:41] Writing measurement data to SD Card
+[2018-08-19 06:36:41] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1218.00)
+[2018-08-19 06:36:41] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 06:36:41] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:37:31] Measured distance: 2012.00 mm
+[2018-08-19 06:37:31] Actual Level     : 388 mm
+[2018-08-19 06:37:31] Actual volume    : 1218 Liter, StdDev: 0.00 Liter
+[2018-08-19 06:37:31] Signal health    : 100
+[2018-08-19 06:37:31] Error status     : 0
+[2018-08-19 06:37:31] Writing measurement data to SD Card
+[2018-08-19 06:37:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1218.00)
+[2018-08-19 06:37:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 06:37:32] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:38:22] Measured distance: 2012.00 mm
+[2018-08-19 06:38:22] Actual Level     : 388 mm
+[2018-08-19 06:38:22] Actual volume    : 1218 Liter, StdDev: 0.00 Liter
+[2018-08-19 06:38:22] Signal health    : 100
+[2018-08-19 06:38:22] Error status     : 0
+[2018-08-19 06:38:22] Writing measurement data to SD Card
+[2018-08-19 06:38:22] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1218.00)
+[2018-08-19 06:38:22] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 06:38:22] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:39:12] Measured distance: 2012.00 mm
+[2018-08-19 06:39:12] Actual Level     : 388 mm
+[2018-08-19 06:39:12] Actual volume    : 1218 Liter, StdDev: 0.00 Liter
+[2018-08-19 06:39:12] Signal health    : 100
+[2018-08-19 06:39:12] Error status     : 0
+[2018-08-19 06:39:12] Writing measurement data to SD Card
+[2018-08-19 06:39:12] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1218.00)
+[2018-08-19 06:39:12] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 06:39:12] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:40:02] Measured distance: 2012.00 mm
+[2018-08-19 06:40:02] Actual Level     : 388 mm
+[2018-08-19 06:40:03] Actual volume    : 1218 Liter, StdDev: 0.00 Liter
+[2018-08-19 06:40:03] Signal health    : 100
+[2018-08-19 06:40:03] Error status     : 0
+[2018-08-19 06:40:03] Writing measurement data to SD Card
+[2018-08-19 06:40:03] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1218.00)
+[2018-08-19 06:40:03] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 06:40:03] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:40:53] Measured distance: 2012.00 mm
+[2018-08-19 06:40:53] Actual Level     : 388 mm
+[2018-08-19 06:40:53] Actual volume    : 1218 Liter, StdDev: 0.00 Liter
+[2018-08-19 06:40:53] Signal health    : 100
+[2018-08-19 06:40:53] Error status     : 0
+[2018-08-19 06:40:53] Writing measurement data to SD Card
+[2018-08-19 06:40:53] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1218.00)
+[2018-08-19 06:40:53] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 06:40:53] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:41:43] Measured distance: 2012.00 mm
+[2018-08-19 06:41:43] Actual Level     : 388 mm
+[2018-08-19 06:41:43] Actual volume    : 1218 Liter, StdDev: 0.00 Liter
+[2018-08-19 06:41:43] Signal health    : 100
+[2018-08-19 06:41:43] Error status     : 0
+[2018-08-19 06:41:43] Writing measurement data to SD Card
+[2018-08-19 06:41:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1218.00)
+[2018-08-19 06:41:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 06:41:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:42:34] Measured distance: 2012.48 mm
+[2018-08-19 06:42:34] Actual Level     : 387 mm
+[2018-08-19 06:42:34] Actual volume    : 1215 Liter, StdDev: 1.57 Liter
+[2018-08-19 06:42:34] Signal health    : 98
+[2018-08-19 06:42:34] Error status     : 0
+[2018-08-19 06:42:34] Writing measurement data to SD Card
+[2018-08-19 06:42:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1215.00)
+[2018-08-19 06:42:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 06:42:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:43:25] Measured distance: 2012.66 mm
+[2018-08-19 06:43:25] Actual Level     : 387 mm
+[2018-08-19 06:43:25] Actual volume    : 1215 Liter, StdDev: 1.49 Liter
+[2018-08-19 06:43:25] Signal health    : 98
+[2018-08-19 06:43:25] Error status     : 0
+[2018-08-19 06:43:25] Writing measurement data to SD Card
+[2018-08-19 06:43:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1215.00)
+[2018-08-19 06:43:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 06:43:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:44:16] Measured distance: 2012.52 mm
+[2018-08-19 06:44:16] Actual Level     : 387 mm
+[2018-08-19 06:44:16] Actual volume    : 1215 Liter, StdDev: 1.57 Liter
+[2018-08-19 06:44:16] Signal health    : 98
+[2018-08-19 06:44:16] Error status     : 0
+[2018-08-19 06:44:16] Writing measurement data to SD Card
+[2018-08-19 06:44:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1215.00)
+[2018-08-19 06:44:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 06:44:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:45:06] Measured distance: 2012.62 mm
+[2018-08-19 06:45:06] Actual Level     : 387 mm
+[2018-08-19 06:45:06] Actual volume    : 1215 Liter, StdDev: 1.52 Liter
+[2018-08-19 06:45:06] Signal health    : 98
+[2018-08-19 06:45:06] Error status     : 0
+[2018-08-19 06:45:06] Writing measurement data to SD Card
+[2018-08-19 06:45:06] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1215.00)
+[2018-08-19 06:45:06] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 06:45:06] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:45:56] Measured distance: 2012.84 mm
+[2018-08-19 06:45:56] Actual Level     : 387 mm
+[2018-08-19 06:45:56] Actual volume    : 1215 Liter, StdDev: 1.15 Liter
+[2018-08-19 06:45:56] Signal health    : 98
+[2018-08-19 06:45:56] Error status     : 0
+[2018-08-19 06:45:56] Writing measurement data to SD Card
+[2018-08-19 06:45:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1215.00)
+[2018-08-19 06:45:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 06:45:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:46:47] Measured distance: 2012.76 mm
+[2018-08-19 06:46:47] Actual Level     : 387 mm
+[2018-08-19 06:46:47] Actual volume    : 1215 Liter, StdDev: 1.34 Liter
+[2018-08-19 06:46:47] Signal health    : 98
+[2018-08-19 06:46:47] Error status     : 0
+[2018-08-19 06:46:47] Writing measurement data to SD Card
+[2018-08-19 06:46:47] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1215.00)
+[2018-08-19 06:46:47] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 06:46:47] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:47:37] Measured distance: 2012.64 mm
+[2018-08-19 06:47:37] Actual Level     : 387 mm
+[2018-08-19 06:47:37] Actual volume    : 1215 Liter, StdDev: 1.51 Liter
+[2018-08-19 06:47:37] Signal health    : 98
+[2018-08-19 06:47:37] Error status     : 0
+[2018-08-19 06:47:37] Writing measurement data to SD Card
+[2018-08-19 06:47:37] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1215.00)
+[2018-08-19 06:47:37] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 06:47:37] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:48:27] Measured distance: 2012.66 mm
+[2018-08-19 06:48:27] Actual Level     : 387 mm
+[2018-08-19 06:48:27] Actual volume    : 1215 Liter, StdDev: 1.49 Liter
+[2018-08-19 06:48:27] Signal health    : 98
+[2018-08-19 06:48:27] Error status     : 0
+[2018-08-19 06:48:27] Writing measurement data to SD Card
+[2018-08-19 06:48:28] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1215.00)
+[2018-08-19 06:48:28] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 06:48:28] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:49:18] Measured distance: 2012.68 mm
+[2018-08-19 06:49:18] Actual Level     : 387 mm
+[2018-08-19 06:49:18] Actual volume    : 1215 Liter, StdDev: 1.47 Liter
+[2018-08-19 06:49:18] Signal health    : 98
+[2018-08-19 06:49:18] Error status     : 0
+[2018-08-19 06:49:18] Writing measurement data to SD Card
+[2018-08-19 06:49:18] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1215.00)
+[2018-08-19 06:49:18] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 06:49:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:50:09] Measured distance: 2012.66 mm
+[2018-08-19 06:50:09] Actual Level     : 387 mm
+[2018-08-19 06:50:09] Actual volume    : 1215 Liter, StdDev: 1.49 Liter
+[2018-08-19 06:50:09] Signal health    : 98
+[2018-08-19 06:50:09] Error status     : 0
+[2018-08-19 06:50:09] Writing measurement data to SD Card
+[2018-08-19 06:50:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1215.00)
+[2018-08-19 06:50:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 06:50:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:51:00] Measured distance: 2012.68 mm
+[2018-08-19 06:51:00] Actual Level     : 387 mm
+[2018-08-19 06:51:00] Actual volume    : 1215 Liter, StdDev: 1.47 Liter
+[2018-08-19 06:51:00] Signal health    : 98
+[2018-08-19 06:51:00] Error status     : 0
+[2018-08-19 06:51:00] Writing measurement data to SD Card
+[2018-08-19 06:51:00] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1215.00)
+[2018-08-19 06:51:00] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 06:51:00] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:51:40] Time updated by NTP
+[2018-08-19 06:52:00] Measured distance: 2012.66 mm
+[2018-08-19 06:52:00] Actual Level     : 387 mm
+[2018-08-19 06:52:00] Actual volume    : 1215 Liter, StdDev: 1.49 Liter
+[2018-08-19 06:52:00] Signal health    : 98
+[2018-08-19 06:52:00] Error status     : 0
+[2018-08-19 06:52:00] Writing measurement data to SD Card
+[2018-08-19 06:52:00] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1215.00)
+[2018-08-19 06:52:00] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 06:52:00] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:52:50] Measured distance: 2013.16 mm
+[2018-08-19 06:52:50] Actual Level     : 386 mm
+[2018-08-19 06:52:50] Actual volume    : 1212 Liter, StdDev: 4.04 Liter
+[2018-08-19 06:52:50] Signal health    : 96
+[2018-08-19 06:52:50] Error status     : 0
+[2018-08-19 06:52:50] Writing measurement data to SD Card
+[2018-08-19 06:52:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1212.00)
+[2018-08-19 06:52:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(96.00)
+[2018-08-19 06:52:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:53:41] Measured distance: 2013.62 mm
+[2018-08-19 06:53:41] Actual Level     : 386 mm
+[2018-08-19 06:53:41] Actual volume    : 1212 Liter, StdDev: 1.52 Liter
+[2018-08-19 06:53:41] Signal health    : 98
+[2018-08-19 06:53:41] Error status     : 0
+[2018-08-19 06:53:41] Writing measurement data to SD Card
+[2018-08-19 06:53:41] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1212.00)
+[2018-08-19 06:53:41] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 06:53:41] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:54:31] Measured distance: 2013.40 mm
+[2018-08-19 06:54:31] Actual Level     : 386 mm
+[2018-08-19 06:54:31] Actual volume    : 1212 Liter, StdDev: 2.95 Liter
+[2018-08-19 06:54:31] Signal health    : 97
+[2018-08-19 06:54:31] Error status     : 0
+[2018-08-19 06:54:31] Writing measurement data to SD Card
+[2018-08-19 06:54:31] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1212.00)
+[2018-08-19 06:54:31] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(97.00)
+[2018-08-19 06:54:31] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:55:21] Measured distance: 2013.56 mm
+[2018-08-19 06:55:21] Actual Level     : 386 mm
+[2018-08-19 06:55:21] Actual volume    : 1212 Liter, StdDev: 1.56 Liter
+[2018-08-19 06:55:21] Signal health    : 98
+[2018-08-19 06:55:21] Error status     : 0
+[2018-08-19 06:55:21] Writing measurement data to SD Card
+[2018-08-19 06:55:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1212.00)
+[2018-08-19 06:55:22] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 06:55:22] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:56:12] Measured distance: 2013.36 mm
+[2018-08-19 06:56:12] Actual Level     : 386 mm
+[2018-08-19 06:56:12] Actual volume    : 1212 Liter, StdDev: 3.76 Liter
+[2018-08-19 06:56:12] Signal health    : 96
+[2018-08-19 06:56:12] Error status     : 0
+[2018-08-19 06:56:12] Writing measurement data to SD Card
+[2018-08-19 06:56:12] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1212.00)
+[2018-08-19 06:56:12] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(96.00)
+[2018-08-19 06:56:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:57:03] Measured distance: 2013.78 mm
+[2018-08-19 06:57:03] Actual Level     : 386 mm
+[2018-08-19 06:57:03] Actual volume    : 1212 Liter, StdDev: 1.30 Liter
+[2018-08-19 06:57:03] Signal health    : 98
+[2018-08-19 06:57:03] Error status     : 0
+[2018-08-19 06:57:03] Writing measurement data to SD Card
+[2018-08-19 06:57:03] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1212.00)
+[2018-08-19 06:57:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 06:57:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:57:54] Measured distance: 2013.84 mm
+[2018-08-19 06:57:54] Actual Level     : 386 mm
+[2018-08-19 06:57:54] Actual volume    : 1212 Liter, StdDev: 1.15 Liter
+[2018-08-19 06:57:54] Signal health    : 98
+[2018-08-19 06:57:54] Error status     : 0
+[2018-08-19 06:57:54] Writing measurement data to SD Card
+[2018-08-19 06:57:54] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1212.00)
+[2018-08-19 06:57:54] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 06:57:54] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:58:44] Measured distance: 2013.62 mm
+[2018-08-19 06:58:44] Actual Level     : 386 mm
+[2018-08-19 06:58:44] Actual volume    : 1212 Liter, StdDev: 1.52 Liter
+[2018-08-19 06:58:45] Signal health    : 98
+[2018-08-19 06:58:45] Error status     : 0
+[2018-08-19 06:58:45] Writing measurement data to SD Card
+[2018-08-19 06:58:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1212.00)
+[2018-08-19 06:58:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 06:58:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 06:59:35] Measured distance: 2013.44 mm
+[2018-08-19 06:59:35] Actual Level     : 386 mm
+[2018-08-19 06:59:35] Actual volume    : 1212 Liter, StdDev: 2.75 Liter
+[2018-08-19 06:59:35] Signal health    : 97
+[2018-08-19 06:59:35] Error status     : 0
+[2018-08-19 06:59:35] Writing measurement data to SD Card
+[2018-08-19 06:59:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1212.00)
+[2018-08-19 06:59:36] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(97.00)
+[2018-08-19 06:59:36] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 07:00:26] Measured distance: 2013.86 mm
+[2018-08-19 07:00:26] Actual Level     : 386 mm
+[2018-08-19 07:00:26] Actual volume    : 1212 Liter, StdDev: 1.09 Liter
+[2018-08-19 07:00:26] Signal health    : 98
+[2018-08-19 07:00:26] Error status     : 0
+[2018-08-19 07:00:26] Writing measurement data to SD Card
+[2018-08-19 07:00:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1212.00)
+[2018-08-19 07:00:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 07:00:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 07:01:16] Measured distance: 2014.00 mm
+[2018-08-19 07:01:16] Actual Level     : 386 mm
+[2018-08-19 07:01:16] Actual volume    : 1212 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:01:16] Signal health    : 100
+[2018-08-19 07:01:16] Error status     : 0
+[2018-08-19 07:01:16] Writing measurement data to SD Card
+[2018-08-19 07:01:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1212.00)
+[2018-08-19 07:01:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 07:01:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 07:02:06] Measured distance: 2013.94 mm
+[2018-08-19 07:02:06] Actual Level     : 386 mm
+[2018-08-19 07:02:06] Actual volume    : 1212 Liter, StdDev: 0.75 Liter
+[2018-08-19 07:02:06] Signal health    : 99
+[2018-08-19 07:02:06] Error status     : 0
+[2018-08-19 07:02:06] Writing measurement data to SD Card
+[2018-08-19 07:02:06] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1212.00)
+[2018-08-19 07:02:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-19 07:02:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 07:02:57] Measured distance: 2014.00 mm
+[2018-08-19 07:02:57] Actual Level     : 386 mm
+[2018-08-19 07:02:57] Actual volume    : 1212 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:02:57] Signal health    : 100
+[2018-08-19 07:02:57] Error status     : 0
+[2018-08-19 07:02:57] Writing measurement data to SD Card
+[2018-08-19 07:02:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1212.00)
+[2018-08-19 07:02:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 07:02:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 07:03:47] Measured distance: 2014.00 mm
+[2018-08-19 07:03:47] Actual Level     : 386 mm
+[2018-08-19 07:03:47] Actual volume    : 1212 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:03:47] Signal health    : 100
+[2018-08-19 07:03:47] Error status     : 0
+[2018-08-19 07:03:47] Writing measurement data to SD Card
+[2018-08-19 07:03:47] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1212.00)
+[2018-08-19 07:03:47] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 07:03:48] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 07:04:38] Measured distance: 2014.00 mm
+[2018-08-19 07:04:38] Actual Level     : 386 mm
+[2018-08-19 07:04:38] Actual volume    : 1212 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:04:38] Signal health    : 100
+[2018-08-19 07:04:38] Error status     : 0
+[2018-08-19 07:04:38] Writing measurement data to SD Card
+[2018-08-19 07:04:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1212.00)
+[2018-08-19 07:04:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 07:04:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 07:05:28] Measured distance: 2013.94 mm
+[2018-08-19 07:05:28] Actual Level     : 386 mm
+[2018-08-19 07:05:28] Actual volume    : 1212 Liter, StdDev: 0.75 Liter
+[2018-08-19 07:05:28] Signal health    : 99
+[2018-08-19 07:05:28] Error status     : 0
+[2018-08-19 07:05:28] Writing measurement data to SD Card
+[2018-08-19 07:05:28] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1212.00)
+[2018-08-19 07:05:28] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-19 07:05:28] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 07:05:29] Refilling on. Duration 60 s
+[2018-08-19 07:05:29] Off-Time: 2018-08-19 07:06:29
+[2018-08-19 07:06:18] Measured distance: 2014.68 mm
+[2018-08-19 07:06:18] Actual Level     : 385 mm
+[2018-08-19 07:06:18] Actual volume    : 1209 Liter, StdDev: 6.72 Liter
+[2018-08-19 07:06:18] Signal health    : 93
+[2018-08-19 07:06:18] Error status     : 0
+[2018-08-19 07:06:18] Writing measurement data to SD Card
+[2018-08-19 07:06:18] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1209.00)
+[2018-08-19 07:06:18] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(93.00)
+[2018-08-19 07:06:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 07:06:29] Refilling off, Refilling volume: 20 liter
+[2018-08-19 07:06:30] Writing settings to EEP
+[2018-08-19 07:07:09] Measured distance: 2009.34 mm
+[2018-08-19 07:07:09] Actual Level     : 390 mm
+[2018-08-19 07:07:09] Actual volume    : 1225 Liter, StdDev: 6.18 Liter
+[2018-08-19 07:07:09] Signal health    : 94
+[2018-08-19 07:07:09] Error status     : 0
+[2018-08-19 07:07:09] Writing measurement data to SD Card
+[2018-08-19 07:07:11] Connection to CCU failed
+[2018-08-19 07:07:13] Connection to CCU failed
+[2018-08-19 07:07:14] Connection to CCU failed
+[2018-08-19 07:07:14] Timeout detected
+[2018-08-19 07:07:14] Timeout detected
+[2018-08-19 07:07:15] Timeout detected
+[2018-08-19 07:08:03] Measured distance: 2007.00 mm
+[2018-08-19 07:08:03] Actual Level     : 393 mm
+[2018-08-19 07:08:03] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:08:03] Signal health    : 100
+[2018-08-19 07:08:03] Error status     : 0
+[2018-08-19 07:08:03] Writing measurement data to SD Card
+[2018-08-19 07:08:05] Connection to CCU failed
+[2018-08-19 07:08:07] Connection to CCU failed
+[2018-08-19 07:08:09] Connection to CCU failed
+[2018-08-19 07:08:09] Timeout detected
+[2018-08-19 07:08:09] Timeout detected
+[2018-08-19 07:08:09] Timeout detected
+[2018-08-19 07:08:57] Measured distance: 2007.00 mm
+[2018-08-19 07:08:57] Actual Level     : 393 mm
+[2018-08-19 07:08:57] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:08:57] Signal health    : 100
+[2018-08-19 07:08:57] Error status     : 0
+[2018-08-19 07:08:57] Writing measurement data to SD Card
+[2018-08-19 07:08:59] Connection to CCU failed
+[2018-08-19 07:09:01] Connection to CCU failed
+[2018-08-19 07:09:03] Connection to CCU failed
+[2018-08-19 07:09:03] Timeout detected
+[2018-08-19 07:09:03] Timeout detected
+[2018-08-19 07:09:03] Timeout detected
+[2018-08-19 07:09:52] Measured distance: 2007.00 mm
+[2018-08-19 07:09:52] Actual Level     : 393 mm
+[2018-08-19 07:09:52] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:09:52] Signal health    : 100
+[2018-08-19 07:09:52] Error status     : 0
+[2018-08-19 07:09:52] Writing measurement data to SD Card
+[2018-08-19 07:09:54] Connection to CCU failed
+[2018-08-19 07:09:55] Connection to CCU failed
+[2018-08-19 07:09:57] Connection to CCU failed
+[2018-08-19 07:09:57] Timeout detected
+[2018-08-19 07:09:57] Timeout detected
+[2018-08-19 07:09:57] Timeout detected
+[2018-08-19 07:10:46] Measured distance: 2007.00 mm
+[2018-08-19 07:10:46] Actual Level     : 393 mm
+[2018-08-19 07:10:46] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:10:46] Signal health    : 100
+[2018-08-19 07:10:46] Error status     : 0
+[2018-08-19 07:10:46] Writing measurement data to SD Card
+[2018-08-19 07:10:48] Connection to CCU failed
+[2018-08-19 07:10:50] Connection to CCU failed
+[2018-08-19 07:10:52] Connection to CCU failed
+[2018-08-19 07:10:52] Timeout detected
+[2018-08-19 07:10:52] Timeout detected
+[2018-08-19 07:10:52] Timeout detected
+[2018-08-19 07:11:40] Measured distance: 2007.00 mm
+[2018-08-19 07:11:40] Actual Level     : 393 mm
+[2018-08-19 07:11:40] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:11:40] Signal health    : 100
+[2018-08-19 07:11:40] Error status     : 0
+[2018-08-19 07:11:40] Writing measurement data to SD Card
+[2018-08-19 07:11:42] Connection to CCU failed
+[2018-08-19 07:11:44] Connection to CCU failed
+[2018-08-19 07:11:46] Connection to CCU failed
+[2018-08-19 07:11:46] Timeout detected
+[2018-08-19 07:11:46] Timeout detected
+[2018-08-19 07:11:46] Timeout detected
+[2018-08-19 07:12:34] Measured distance: 2007.00 mm
+[2018-08-19 07:12:35] Actual Level     : 393 mm
+[2018-08-19 07:12:35] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:12:35] Signal health    : 100
+[2018-08-19 07:12:35] Error status     : 0
+[2018-08-19 07:12:35] Writing measurement data to SD Card
+[2018-08-19 07:12:37] Connection to CCU failed
+[2018-08-19 07:12:38] Connection to CCU failed
+[2018-08-19 07:12:40] Connection to CCU failed
+[2018-08-19 07:12:40] Timeout detected
+[2018-08-19 07:12:40] Timeout detected
+[2018-08-19 07:12:40] Timeout detected
+[2018-08-19 07:13:29] Measured distance: 2007.00 mm
+[2018-08-19 07:13:29] Actual Level     : 393 mm
+[2018-08-19 07:13:29] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:13:29] Signal health    : 100
+[2018-08-19 07:13:29] Error status     : 0
+[2018-08-19 07:13:29] Writing measurement data to SD Card
+[2018-08-19 07:13:31] Connection to CCU failed
+[2018-08-19 07:13:33] Connection to CCU failed
+[2018-08-19 07:13:35] Connection to CCU failed
+[2018-08-19 07:13:35] Timeout detected
+[2018-08-19 07:13:35] Timeout detected
+[2018-08-19 07:13:35] Timeout detected
+[2018-08-19 07:14:23] Measured distance: 2007.00 mm
+[2018-08-19 07:14:23] Actual Level     : 393 mm
+[2018-08-19 07:14:23] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:14:23] Signal health    : 100
+[2018-08-19 07:14:23] Error status     : 0
+[2018-08-19 07:14:23] Writing measurement data to SD Card
+[2018-08-19 07:14:25] Connection to CCU failed
+[2018-08-19 07:14:27] Connection to CCU failed
+[2018-08-19 07:14:29] Connection to CCU failed
+[2018-08-19 07:14:29] Timeout detected
+[2018-08-19 07:14:29] Timeout detected
+[2018-08-19 07:14:29] Timeout detected
+[2018-08-19 07:15:17] Measured distance: 2007.00 mm
+[2018-08-19 07:15:17] Actual Level     : 393 mm
+[2018-08-19 07:15:17] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:15:17] Signal health    : 100
+[2018-08-19 07:15:17] Error status     : 0
+[2018-08-19 07:15:18] Writing measurement data to SD Card
+[2018-08-19 07:15:19] Connection to CCU failed
+[2018-08-19 07:15:21] Connection to CCU failed
+[2018-08-19 07:15:23] Connection to CCU failed
+[2018-08-19 07:15:23] Timeout detected
+[2018-08-19 07:15:23] Timeout detected
+[2018-08-19 07:15:23] Timeout detected
+[2018-08-19 07:16:12] Measured distance: 2007.00 mm
+[2018-08-19 07:16:12] Actual Level     : 393 mm
+[2018-08-19 07:16:12] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:16:12] Signal health    : 100
+[2018-08-19 07:16:12] Error status     : 0
+[2018-08-19 07:16:12] Writing measurement data to SD Card
+[2018-08-19 07:16:14] Connection to CCU failed
+[2018-08-19 07:16:16] Connection to CCU failed
+[2018-08-19 07:16:17] Connection to CCU failed
+[2018-08-19 07:16:17] Timeout detected
+[2018-08-19 07:16:17] Timeout detected
+[2018-08-19 07:16:18] Timeout detected
+[2018-08-19 07:17:06] Measured distance: 2007.00 mm
+[2018-08-19 07:17:06] Actual Level     : 393 mm
+[2018-08-19 07:17:06] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:17:06] Signal health    : 100
+[2018-08-19 07:17:06] Error status     : 0
+[2018-08-19 07:17:06] Writing measurement data to SD Card
+[2018-08-19 07:17:08] Connection to CCU failed
+[2018-08-19 07:17:10] Connection to CCU failed
+[2018-08-19 07:17:12] Connection to CCU failed
+[2018-08-19 07:17:12] Timeout detected
+[2018-08-19 07:17:12] Timeout detected
+[2018-08-19 07:17:12] Timeout detected
+[2018-08-19 07:18:00] Measured distance: 2007.00 mm
+[2018-08-19 07:18:00] Actual Level     : 393 mm
+[2018-08-19 07:18:00] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:18:00] Signal health    : 100
+[2018-08-19 07:18:00] Error status     : 0
+[2018-08-19 07:18:00] Writing measurement data to SD Card
+[2018-08-19 07:18:02] Connection to CCU failed
+[2018-08-19 07:18:04] Connection to CCU failed
+[2018-08-19 07:18:06] Connection to CCU failed
+[2018-08-19 07:18:06] Timeout detected
+[2018-08-19 07:18:06] Timeout detected
+[2018-08-19 07:18:06] Timeout detected
+[2018-08-19 07:18:55] Measured distance: 2007.00 mm
+[2018-08-19 07:18:55] Actual Level     : 393 mm
+[2018-08-19 07:18:55] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:18:55] Signal health    : 100
+[2018-08-19 07:18:55] Error status     : 0
+[2018-08-19 07:18:55] Writing measurement data to SD Card
+[2018-08-19 07:18:57] Connection to CCU failed
+[2018-08-19 07:18:58] Connection to CCU failed
+[2018-08-19 07:19:00] Connection to CCU failed
+[2018-08-19 07:19:00] Timeout detected
+[2018-08-19 07:19:00] Timeout detected
+[2018-08-19 07:19:00] Timeout detected
+[2018-08-19 07:19:49] Measured distance: 2007.00 mm
+[2018-08-19 07:19:49] Actual Level     : 393 mm
+[2018-08-19 07:19:49] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:19:49] Signal health    : 100
+[2018-08-19 07:19:49] Error status     : 0
+[2018-08-19 07:19:49] Writing measurement data to SD Card
+[2018-08-19 07:19:51] Connection to CCU failed
+[2018-08-19 07:19:53] Connection to CCU failed
+[2018-08-19 07:19:55] Connection to CCU failed
+[2018-08-19 07:19:55] Timeout detected
+[2018-08-19 07:19:55] Timeout detected
+[2018-08-19 07:19:55] Timeout detected
+[2018-08-19 07:20:43] Measured distance: 2007.00 mm
+[2018-08-19 07:20:43] Actual Level     : 393 mm
+[2018-08-19 07:20:43] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:20:43] Signal health    : 100
+[2018-08-19 07:20:43] Error status     : 0
+[2018-08-19 07:20:43] Writing measurement data to SD Card
+[2018-08-19 07:20:45] Connection to CCU failed
+[2018-08-19 07:20:47] Connection to CCU failed
+[2018-08-19 07:20:49] Connection to CCU failed
+[2018-08-19 07:20:49] Timeout detected
+[2018-08-19 07:20:49] Timeout detected
+[2018-08-19 07:20:49] Timeout detected
+[2018-08-19 07:21:38] Measured distance: 2007.00 mm
+[2018-08-19 07:21:38] Actual Level     : 393 mm
+[2018-08-19 07:21:38] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:21:38] Signal health    : 100
+[2018-08-19 07:21:38] Error status     : 0
+[2018-08-19 07:21:38] Writing measurement data to SD Card
+[2018-08-19 07:21:40] Connection to CCU failed
+[2018-08-19 07:21:41] Connection to CCU failed
+[2018-08-19 07:21:43] Connection to CCU failed
+[2018-08-19 07:21:43] Timeout detected
+[2018-08-19 07:21:43] Timeout detected
+[2018-08-19 07:21:43] Timeout detected
+[2018-08-19 07:22:32] Measured distance: 2007.00 mm
+[2018-08-19 07:22:32] Actual Level     : 393 mm
+[2018-08-19 07:22:32] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:22:32] Signal health    : 100
+[2018-08-19 07:22:32] Error status     : 0
+[2018-08-19 07:22:32] Writing measurement data to SD Card
+[2018-08-19 07:22:34] Connection to CCU failed
+[2018-08-19 07:22:36] Connection to CCU failed
+[2018-08-19 07:22:38] Connection to CCU failed
+[2018-08-19 07:22:38] Timeout detected
+[2018-08-19 07:22:38] Timeout detected
+[2018-08-19 07:22:38] Timeout detected
+[2018-08-19 07:22:38] Timeout detected
+[2018-08-19 07:23:26] Measured distance: 2007.00 mm
+[2018-08-19 07:23:26] Actual Level     : 393 mm
+[2018-08-19 07:23:26] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:23:26] Signal health    : 100
+[2018-08-19 07:23:26] Error status     : 0
+[2018-08-19 07:23:26] Writing measurement data to SD Card
+[2018-08-19 07:23:28] Connection to CCU failed
+[2018-08-19 07:23:30] Connection to CCU failed
+[2018-08-19 07:23:32] Connection to CCU failed
+[2018-08-19 07:23:32] Timeout detected
+[2018-08-19 07:23:32] Timeout detected
+[2018-08-19 07:23:32] Timeout detected
+[2018-08-19 07:24:20] Measured distance: 2007.00 mm
+[2018-08-19 07:24:20] Actual Level     : 393 mm
+[2018-08-19 07:24:20] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:24:20] Signal health    : 100
+[2018-08-19 07:24:21] Error status     : 0
+[2018-08-19 07:24:21] Writing measurement data to SD Card
+[2018-08-19 07:24:22] Connection to CCU failed
+[2018-08-19 07:24:24] Connection to CCU failed
+[2018-08-19 07:24:26] Connection to CCU failed
+[2018-08-19 07:24:26] Timeout detected
+[2018-08-19 07:24:26] Timeout detected
+[2018-08-19 07:24:26] Timeout detected
+[2018-08-19 07:25:15] Measured distance: 2007.00 mm
+[2018-08-19 07:25:15] Actual Level     : 393 mm
+[2018-08-19 07:25:15] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:25:15] Signal health    : 100
+[2018-08-19 07:25:15] Error status     : 0
+[2018-08-19 07:25:15] Writing measurement data to SD Card
+[2018-08-19 07:25:17] Connection to CCU failed
+[2018-08-19 07:25:19] Connection to CCU failed
+[2018-08-19 07:25:20] Connection to CCU failed
+[2018-08-19 07:25:20] Timeout detected
+[2018-08-19 07:25:20] Timeout detected
+[2018-08-19 07:25:21] Timeout detected
+[2018-08-19 07:26:09] Measured distance: 2007.00 mm
+[2018-08-19 07:26:09] Actual Level     : 393 mm
+[2018-08-19 07:26:09] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:26:09] Signal health    : 100
+[2018-08-19 07:26:09] Error status     : 0
+[2018-08-19 07:26:09] Writing measurement data to SD Card
+[2018-08-19 07:26:11] Connection to CCU failed
+[2018-08-19 07:26:13] Connection to CCU failed
+[2018-08-19 07:26:15] Connection to CCU failed
+[2018-08-19 07:26:15] Timeout detected
+[2018-08-19 07:26:15] Timeout detected
+[2018-08-19 07:26:15] Timeout detected
+[2018-08-19 07:27:03] Measured distance: 2007.00 mm
+[2018-08-19 07:27:03] Actual Level     : 393 mm
+[2018-08-19 07:27:03] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:27:03] Signal health    : 100
+[2018-08-19 07:27:03] Error status     : 0
+[2018-08-19 07:27:03] Writing measurement data to SD Card
+[2018-08-19 07:27:05] Connection to CCU failed
+[2018-08-19 07:27:07] Connection to CCU failed
+[2018-08-19 07:27:09] Connection to CCU failed
+[2018-08-19 07:27:09] Timeout detected
+[2018-08-19 07:27:09] Timeout detected
+[2018-08-19 07:27:09] Timeout detected
+[2018-08-19 07:27:58] Measured distance: 2007.00 mm
+[2018-08-19 07:27:58] Actual Level     : 393 mm
+[2018-08-19 07:27:58] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:27:58] Signal health    : 100
+[2018-08-19 07:27:58] Error status     : 0
+[2018-08-19 07:27:58] Writing measurement data to SD Card
+[2018-08-19 07:28:00] Connection to CCU failed
+[2018-08-19 07:28:01] Connection to CCU failed
+[2018-08-19 07:28:03] Connection to CCU failed
+[2018-08-19 07:28:03] Timeout detected
+[2018-08-19 07:28:03] Timeout detected
+[2018-08-19 07:28:03] Timeout detected
+[2018-08-19 07:28:52] Measured distance: 2007.00 mm
+[2018-08-19 07:28:52] Actual Level     : 393 mm
+[2018-08-19 07:28:52] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:28:52] Signal health    : 100
+[2018-08-19 07:28:52] Error status     : 0
+[2018-08-19 07:28:52] Writing measurement data to SD Card
+[2018-08-19 07:28:54] Connection to CCU failed
+[2018-08-19 07:28:56] Connection to CCU failed
+[2018-08-19 07:28:58] Connection to CCU failed
+[2018-08-19 07:28:58] Timeout detected
+[2018-08-19 07:28:58] Timeout detected
+[2018-08-19 07:28:58] Timeout detected
+[2018-08-19 07:29:46] Measured distance: 2007.00 mm
+[2018-08-19 07:29:46] Actual Level     : 393 mm
+[2018-08-19 07:29:46] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:29:46] Signal health    : 100
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Check if fixed ethernet address is used in network
+[1970-01-01 00:00:02] Using Fixed IP
+[1970-01-01 00:00:02] IP-Address: 192.168.178.5
+[2018-08-19 07:29:58] Reading settings from EEP
+[2018-08-19 07:29:58] EEP checksum ok 
+[2018-08-19 07:29:58] Push Message failed. Error code 1
+[2018-08-19 07:29:58] System startup
+[2018-08-19 07:29:58] HTTP Request receives: 
+[2018-08-19 07:29:58] GET / HTTP/1.1
+
+[2018-08-19 07:29:58] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-19 07:29:58] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-19 07:29:58] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-19 07:29:58] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-19 07:29:58] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-19 07:29:58] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:29:58] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:29:58] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:29:58] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-19 07:30:01] HTTP Request receives: favicon.ico
+[2018-08-19 07:30:01] GET /favicon.ico HTTP/1.1
+
+[2018-08-19 07:30:01] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-19 07:30:01] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-19 07:30:01] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-19 07:30:01] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-19 07:30:01] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-19 07:30:01] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:30:01] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:30:01] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:30:01] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-19 07:30:28] Time updated by NTP
+[2018-08-19 07:30:49] Measured distance: 2007.00 mm
+[2018-08-19 07:30:49] Actual Level     : 393 mm
+[2018-08-19 07:30:49] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:30:49] Signal health    : 100
+[2018-08-19 07:30:49] Error status     : 0
+[2018-08-19 07:30:49] Writing measurement data to SD Card
+[2018-08-19 07:30:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 07:30:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 07:30:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 07:30:50] Timeout detected
+[2018-08-19 07:31:25] HTTP Request receives: 
+[2018-08-19 07:31:25] GET / HTTP/1.1
+
+[2018-08-19 07:31:26] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-19 07:31:26] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-19 07:31:26] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-19 07:31:26] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-19 07:31:26] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-19 07:31:26] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:31:26] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:31:26] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:31:26] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-19 07:31:27] HTTP Request receives: favicon.ico
+[2018-08-19 07:31:27] GET /favicon.ico HTTP/1.1
+
+[2018-08-19 07:31:27] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-19 07:31:27] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-19 07:31:27] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-19 07:31:27] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-19 07:31:27] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-19 07:31:27] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:31:27] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:31:28] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:31:28] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-19 07:31:34] HTTP Request receives: 
+[2018-08-19 07:31:34] GET / HTTP/1.1
+
+[2018-08-19 07:31:34] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-19 07:31:34] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-19 07:31:34] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-19 07:31:34] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-19 07:31:34] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-19 07:31:34] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:31:34] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:31:34] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:31:34] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-19 07:31:42] Measured distance: 2007.00 mm
+[2018-08-19 07:31:42] Actual Level     : 393 mm
+[2018-08-19 07:31:42] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:31:42] Signal health    : 100
+[2018-08-19 07:31:42] Error status     : 0
+[2018-08-19 07:31:42] Writing measurement data to SD Card
+[2018-08-19 07:31:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 07:31:42] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 07:31:43] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 07:31:44] Timeout detected
+[2018-08-19 07:32:33] Measured distance: 2007.00 mm
+[2018-08-19 07:32:33] Actual Level     : 393 mm
+[2018-08-19 07:32:33] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:32:33] Signal health    : 100
+[2018-08-19 07:32:33] Error status     : 0
+[2018-08-19 07:32:33] Writing measurement data to SD Card
+[2018-08-19 07:32:33] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 07:32:34] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 07:32:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 07:32:35] Timeout detected
+[2018-08-19 07:33:25] Measured distance: 2007.00 mm
+[2018-08-19 07:33:25] Actual Level     : 393 mm
+[2018-08-19 07:33:25] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:33:25] Signal health    : 100
+[2018-08-19 07:33:25] Error status     : 0
+[2018-08-19 07:33:25] Writing measurement data to SD Card
+[2018-08-19 07:33:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 07:33:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 07:33:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 07:33:26] Timeout detected
+[2018-08-19 07:34:16] Measured distance: 2007.00 mm
+[2018-08-19 07:34:16] Actual Level     : 393 mm
+[2018-08-19 07:34:16] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:34:16] Signal health    : 100
+[2018-08-19 07:34:16] Error status     : 0
+[2018-08-19 07:34:16] Writing measurement data to SD Card
+[2018-08-19 07:34:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 07:34:17] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 07:34:17] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 07:34:17] Timeout detected
+[2018-08-19 07:34:27] HTTP Request receives: 
+[2018-08-19 07:34:27] GET / HTTP/1.1
+
+[2018-08-19 07:34:27] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-19 07:34:27] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-19 07:34:27] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-19 07:34:27] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-19 07:34:27] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-19 07:34:27] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:34:27] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:34:27] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:34:27] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-19 07:34:30] HTTP Request receives: favicon.ico
+[2018-08-19 07:34:30] GET /favicon.ico HTTP/1.1
+
+[2018-08-19 07:34:30] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-19 07:34:30] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-19 07:34:30] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-19 07:34:30] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-19 07:34:30] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-19 07:34:30] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:34:30] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:34:30] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:34:30] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-19 07:35:07] Measured distance: 2007.00 mm
+[2018-08-19 07:35:07] Actual Level     : 393 mm
+[2018-08-19 07:35:07] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:35:07] Signal health    : 100
+[2018-08-19 07:35:07] Error status     : 0
+[2018-08-19 07:35:07] Writing measurement data to SD Card
+[2018-08-19 07:35:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 07:35:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 07:35:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 07:35:57] Measured distance: 2007.00 mm
+[2018-08-19 07:35:57] Actual Level     : 393 mm
+[2018-08-19 07:35:57] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:35:58] Signal health    : 100
+[2018-08-19 07:35:58] Error status     : 0
+[2018-08-19 07:35:58] Writing measurement data to SD Card
+[2018-08-19 07:35:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 07:35:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 07:35:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 07:36:48] Measured distance: 2007.00 mm
+[2018-08-19 07:36:48] Actual Level     : 393 mm
+[2018-08-19 07:36:48] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:36:48] Signal health    : 100
+[2018-08-19 07:36:48] Error status     : 0
+[2018-08-19 07:36:48] Writing measurement data to SD Card
+[2018-08-19 07:36:48] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 07:36:48] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 07:36:48] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 07:37:38] Measured distance: 2007.00 mm
+[2018-08-19 07:37:38] Actual Level     : 393 mm
+[2018-08-19 07:37:38] Actual volume    : 1234 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:37:38] Signal health    : 100
+[2018-08-19 07:37:38] Error status     : 0
+[2018-08-19 07:37:38] Writing measurement data to SD Card
+[2018-08-19 07:37:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1234.00)
+[2018-08-19 07:37:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 07:37:40] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 07:37:40] Timeout detected
+[2018-08-19 07:38:29] Measured distance: 2008.54 mm
+[2018-08-19 07:38:29] Actual Level     : 391 mm
+[2018-08-19 07:38:29] Actual volume    : 1228 Liter, StdDev: 1.57 Liter
+[2018-08-19 07:38:29] Signal health    : 98
+[2018-08-19 07:38:29] Error status     : 0
+[2018-08-19 07:38:29] Writing measurement data to SD Card
+[2018-08-19 07:38:30] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1228.00)
+[2018-08-19 07:38:31] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 07:38:31] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 07:38:31] Timeout detected
+[2018-08-19 07:39:20] Measured distance: 2008.80 mm
+[2018-08-19 07:39:20] Actual Level     : 391 mm
+[2018-08-19 07:39:20] Actual volume    : 1228 Liter, StdDev: 1.26 Liter
+[2018-08-19 07:39:20] Signal health    : 98
+[2018-08-19 07:39:20] Error status     : 0
+[2018-08-19 07:39:21] Writing measurement data to SD Card
+[2018-08-19 07:39:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1228.00)
+[2018-08-19 07:39:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 07:39:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 07:40:11] Measured distance: 2008.80 mm
+[2018-08-19 07:40:11] Actual Level     : 391 mm
+[2018-08-19 07:40:11] Actual volume    : 1228 Liter, StdDev: 1.26 Liter
+[2018-08-19 07:40:11] Signal health    : 98
+[2018-08-19 07:40:11] Error status     : 0
+[2018-08-19 07:40:11] Writing measurement data to SD Card
+[2018-08-19 07:40:11] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1228.00)
+[2018-08-19 07:40:12] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 07:40:12] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 07:40:12] Timeout detected
+[2018-08-19 07:41:02] Measured distance: 2008.82 mm
+[2018-08-19 07:41:02] Actual Level     : 391 mm
+[2018-08-19 07:41:02] Actual volume    : 1228 Liter, StdDev: 1.21 Liter
+[2018-08-19 07:41:02] Signal health    : 98
+[2018-08-19 07:41:02] Error status     : 0
+[2018-08-19 07:41:02] Writing measurement data to SD Card
+[2018-08-19 07:41:02] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1228.00)
+[2018-08-19 07:41:02] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 07:41:03] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 07:41:04] Timeout detected
+[2018-08-19 07:41:53] Measured distance: 2008.86 mm
+[2018-08-19 07:41:53] Actual Level     : 391 mm
+[2018-08-19 07:41:53] Actual volume    : 1228 Liter, StdDev: 1.09 Liter
+[2018-08-19 07:41:53] Signal health    : 98
+[2018-08-19 07:41:53] Error status     : 0
+[2018-08-19 07:41:53] Writing measurement data to SD Card
+[2018-08-19 07:41:53] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1228.00)
+[2018-08-19 07:41:54] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 07:41:54] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 07:42:44] Measured distance: 2008.86 mm
+[2018-08-19 07:42:44] Actual Level     : 391 mm
+[2018-08-19 07:42:44] Actual volume    : 1228 Liter, StdDev: 1.09 Liter
+[2018-08-19 07:42:44] Signal health    : 98
+[2018-08-19 07:42:44] Error status     : 0
+[2018-08-19 07:42:44] Writing measurement data to SD Card
+[2018-08-19 07:42:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1228.00)
+[2018-08-19 07:42:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 07:42:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 07:42:45] Timeout detected
+[2018-08-19 07:43:35] Measured distance: 2008.86 mm
+[2018-08-19 07:43:35] Actual Level     : 391 mm
+[2018-08-19 07:43:35] Actual volume    : 1228 Liter, StdDev: 1.09 Liter
+[2018-08-19 07:43:35] Signal health    : 98
+[2018-08-19 07:43:35] Error status     : 0
+[2018-08-19 07:43:35] Writing measurement data to SD Card
+[2018-08-19 07:43:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1228.00)
+[2018-08-19 07:43:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 07:43:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 07:44:26] Measured distance: 2008.90 mm
+[2018-08-19 07:44:26] Actual Level     : 391 mm
+[2018-08-19 07:44:26] Actual volume    : 1228 Liter, StdDev: 0.94 Liter
+[2018-08-19 07:44:26] Signal health    : 99
+[2018-08-19 07:44:26] Error status     : 0
+[2018-08-19 07:44:26] Writing measurement data to SD Card
+[2018-08-19 07:44:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1228.00)
+[2018-08-19 07:44:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-19 07:44:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 07:45:17] Measured distance: 2008.86 mm
+[2018-08-19 07:45:17] Actual Level     : 391 mm
+[2018-08-19 07:45:17] Actual volume    : 1228 Liter, StdDev: 1.09 Liter
+[2018-08-19 07:45:17] Signal health    : 98
+[2018-08-19 07:45:17] Error status     : 0
+[2018-08-19 07:45:17] Writing measurement data to SD Card
+[2018-08-19 07:45:17] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1228.00)
+[2018-08-19 07:45:18] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 07:45:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 07:45:19] Timeout detected
+[2018-08-19 07:46:09] Measured distance: 2008.50 mm
+[2018-08-19 07:46:09] Actual Level     : 391 mm
+[2018-08-19 07:46:09] Actual volume    : 1228 Liter, StdDev: 1.57 Liter
+[2018-08-19 07:46:09] Signal health    : 98
+[2018-08-19 07:46:09] Error status     : 0
+[2018-08-19 07:46:09] Writing measurement data to SD Card
+[2018-08-19 07:46:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1228.00)
+[2018-08-19 07:46:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-19 07:46:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 07:46:59] Measured distance: 2009.00 mm
+[2018-08-19 07:46:59] Actual Level     : 391 mm
+[2018-08-19 07:46:59] Actual volume    : 1228 Liter, StdDev: 0.00 Liter
+[2018-08-19 07:46:59] Signal health    : 100
+[2018-08-19 07:46:59] Error status     : 0
+[2018-08-19 07:46:59] Writing measurement data to SD Card
+[2018-08-19 07:46:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1228.00)
+[2018-08-19 07:46:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-19 07:46:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 07:47:49] Measured distance: 2008.94 mm
+[2018-08-19 07:47:49] Actual Level     : 391 mm
+[2018-08-19 07:47:49] Actual volume    : 1228 Liter, StdDev: 0.75 Liter
+[2018-08-19 07:47:49] Signal health    : 99
+[2018-08-19 07:47:49] Error status     : 0
+[2018-08-19 07:47:49] Writing measurement data to SD Card
+[2018-08-19 07:47:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(1228.00)
+[2018-08-19 07:47:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-19 07:47:50] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(19.00)
+[2018-08-19 07:47:50] Timeout detected
+[2018-08-19 07:48:40] HTTP Request receives: 
+[2018-08-19 07:48:40] GET / HTTP/1.1
+
+[2018-08-19 07:48:40] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-19 07:48:40] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-19 07:48:40] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-19 07:48:40] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-19 07:48:40] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-19 07:48:40] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:48:40] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:48:40] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:48:40] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-19 07:48:40] Measured distance: 2008.90 mm
+[2018-08-19 07:48:40] Actual Level     : 391 mm
+[2018-08-19 07:48:40] Actual volume    : 1228 Liter, StdDev: 0.94 Liter
+[2018-08-19 07:48:40] Signal health    : 99
+[2018-08-19 07:48:40] Error status     : 0
+[2018-08-19 07:48:40] Writing measurement data to SD Card
+[2018-08-19 07:48:40] Connection to CCU failed
+[2018-08-19 07:48:40] Connection to CCU failed
+[2018-08-19 07:48:40] Connection to CCU failed
+[2018-08-19 07:48:40] HTTP Request receives: favicon.ico
+[2018-08-19 07:48:41] GET /favicon.ico HTTP/1.1
+
+[2018-08-19 07:48:41] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-19 07:48:41] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-19 07:48:41] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-19 07:48:41] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-19 07:48:41] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-19 07:48:41] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:48:41] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:48:41] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:48:41] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-19 07:48:42] HTTP Request receives: Res_Ctl.csv
+[2018-08-19 07:48:42] GET /Res_Ctl.csv HTTP/1.1
+
+[2018-08-19 07:48:42] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-19 07:48:42] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-19 07:48:42] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-19 07:48:42] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-19 07:48:42] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-19 07:48:42] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:48:42] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:48:42] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:48:42] Option stResetVolume: No option found, keeping old value  0.00
+[2018-08-19 07:48:50] Writing headline for measurement data to SD Card
+[2018-08-19 07:48:50] Timeout detected
+[2018-08-19 07:48:51] Timeout detected
+[2018-08-19 07:48:51] Timeout detected
+[2018-08-19 07:48:51] Timeout detected
+[2018-08-19 07:48:51] Timeout detected
+[2018-08-19 07:48:51] Timeout detected
+[2018-08-19 07:49:16] HTTP Request receives: Res_Ctl.log
+[2018-08-19 07:49:16] GET /Res_Ctl.log HTTP/1.1
+
+[2018-08-19 07:49:16] Option vSoundSet: No option found, keeping old value  3433.00
+[2018-08-19 07:49:16] Option hOffsetSet: No option found, keeping old value  -25.00
+[2018-08-19 07:49:16] Option aBaseAreaSet: No option found, keeping old value  31416.00
+[2018-08-19 07:49:16] Option hSensorPosSet: No option found, keeping old value  240.00
+[2018-08-19 07:49:16] Option hOverflowSet: No option found, keeping old value  200.00
+[2018-08-19 07:49:16] Option hRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:49:16] Option volRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:49:16] Option dvolRefillSet: No option found, keeping old value  20.00
+[2018-08-19 07:49:16] Option stResetVolume: No option found, keeping old value  0.00

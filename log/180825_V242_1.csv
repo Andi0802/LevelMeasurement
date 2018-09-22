@@ -1,0 +1,2 @@
+Date;Level [mm];Quantity [Liter];Signal health [-];Error [-];StdDev [Liter];Refill Quantity [Liter]Rain quantity 24h [Liter]Refill quantity 24h [Liter]Measured quantity change 24h [Liter]Calculated quantity change 24h [Liter]Quantity difference [%]Filter diagnosis [-]Usage in last 24h [Liter]Usage average in last 10d [Liter]
+2018-08-25 18:06:42;261;819;100;Kein Fehler erkannt;0.00;0;;;;;;;;;

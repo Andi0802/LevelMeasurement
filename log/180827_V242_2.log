@@ -1,0 +1,304 @@
+[2018-08-25 18:09:19] Writing headline for measurement data to SD Card
+[2018-08-25 19:05:18] Timeout US measurement detected
+[2018-08-25 19:05:18] Timeout US measurement detected
+[2018-08-25 19:05:18] Timeout US measurement detected
+[2018-08-25 19:05:18] Timeout US measurement detected
+[2018-08-25 19:05:18] Timeout US measurement detected
+[2018-08-25 19:05:18] Timeout US measurement detected
+[2018-08-25 19:05:18] Timeout US measurement detected
+[2018-08-25 19:05:18] Timeout US measurement detected
+[2018-08-25 19:05:18] Timeout US measurement detected
+[2018-08-25 19:05:18] Timeout US measurement detected
+[2018-08-25 19:05:18] Timeout US measurement detected
+[2018-08-25 19:05:18] Timeout US measurement detected
+[2018-08-25 19:05:18] Timeout US measurement detected
+[2018-08-25 19:05:18] Timeout US measurement detected
+[2018-08-25 19:05:18] Timeout US measurement detected
+[2018-08-25 19:05:18] Timeout US measurement detected
+[2018-08-25 19:06:43] Writing measurement data to SD Card
+[2018-08-25 19:06:43] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(819.00)
+[2018-08-25 19:06:43] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-25 19:06:43] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(13.00)
+[2018-08-25 19:06:43] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-25 19:06:43] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-25 20:06:34] Time updated by NTP
+[2018-08-25 20:07:02] Writing measurement data to SD Card
+[2018-08-25 20:07:02] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(813.00)
+[2018-08-25 20:07:02] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-25 20:07:02] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(12.00)
+[2018-08-25 20:07:02] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-25 20:07:02] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-25 21:05:50] Time updated by NTP
+[2018-08-25 21:07:13] Writing measurement data to SD Card
+[2018-08-25 21:07:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(807.00)
+[2018-08-25 21:07:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-25 21:07:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(12.00)
+[2018-08-25 21:07:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-25 21:07:13] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-25 22:06:05] Time updated by NTP
+[2018-08-25 22:07:22] Writing measurement data to SD Card
+[2018-08-25 22:07:22] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(804.00)
+[2018-08-25 22:07:22] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-25 22:07:22] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(12.00)
+[2018-08-25 22:07:23] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-25 22:07:23] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-25 23:06:22] Time updated by NTP
+[2018-08-25 23:07:33] Writing measurement data to SD Card
+[2018-08-25 23:07:33] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(801.00)
+[2018-08-25 23:07:33] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-25 23:07:33] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(12.00)
+[2018-08-25 23:07:33] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-25 23:07:33] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-26 00:06:38] Time updated by NTP
+[2018-08-26 00:07:43] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-08-26 00:07:44] Datapoint 6614 received 2.360000
+[2018-08-26 00:07:44] Rain in last 24h from weather station [mm]: 2.36
+[2018-08-26 00:07:44] Writing measurement data to SD Card
+[2018-08-26 00:07:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(801.00)
+[2018-08-26 00:07:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-26 00:07:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(12.00)
+[2018-08-26 00:07:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-26 00:07:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-26 01:06:54] Time updated by NTP
+[2018-08-26 01:07:53] Writing measurement data to SD Card
+[2018-08-26 01:07:53] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(801.00)
+[2018-08-26 01:07:53] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-26 01:07:53] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(12.00)
+[2018-08-26 01:07:53] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-26 01:07:53] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-26 02:07:10] Time updated by NTP
+[2018-08-26 02:08:04] Writing measurement data to SD Card
+[2018-08-26 02:08:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(797.00)
+[2018-08-26 02:08:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-26 02:08:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(12.00)
+[2018-08-26 02:08:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-26 02:08:04] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-26 03:07:27] Time updated by NTP
+[2018-08-26 03:08:14] Writing measurement data to SD Card
+[2018-08-26 03:08:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(794.00)
+[2018-08-26 03:08:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-26 03:08:14] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(12.00)
+[2018-08-26 03:08:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-26 03:08:15] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-26 04:07:42] Time updated by NTP
+[2018-08-26 04:08:24] Writing measurement data to SD Card
+[2018-08-26 04:08:24] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(794.00)
+[2018-08-26 04:08:24] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-26 04:08:24] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(12.00)
+[2018-08-26 04:08:24] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-26 04:08:24] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-26 05:07:10] Timeout US measurement detected
+[2018-08-26 05:07:10] Timeout US measurement detected
+[2018-08-26 05:07:10] Timeout US measurement detected
+[2018-08-26 05:07:10] Timeout US measurement detected
+[2018-08-26 05:07:10] Timeout US measurement detected
+[2018-08-26 05:07:10] Timeout US measurement detected
+[2018-08-26 05:07:10] Timeout US measurement detected
+[2018-08-26 05:07:10] Timeout US measurement detected
+[2018-08-26 05:07:10] Timeout US measurement detected
+[2018-08-26 05:07:10] Timeout US measurement detected
+[2018-08-26 05:07:10] Timeout US measurement detected
+[2018-08-26 05:07:10] Timeout US measurement detected
+[2018-08-26 05:07:10] Timeout US measurement detected
+[2018-08-26 05:07:10] Timeout US measurement detected
+[2018-08-26 05:07:10] Timeout US measurement detected
+[2018-08-26 05:07:10] Timeout US measurement detected
+[2018-08-26 05:08:24] Writing measurement data to SD Card
+[2018-08-26 05:08:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(785.00)
+[2018-08-26 05:08:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-26 05:08:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(12.00)
+[2018-08-26 05:08:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-26 05:08:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-26 06:08:15] Time updated by NTP
+[2018-08-26 06:08:45] Writing measurement data to SD Card
+[2018-08-26 06:08:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(769.00)
+[2018-08-26 06:08:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-26 06:08:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(12.00)
+[2018-08-26 06:08:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-26 06:08:45] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-26 07:08:31] Time updated by NTP
+[2018-08-26 07:08:55] Writing measurement data to SD Card
+[2018-08-26 07:08:55] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(766.00)
+[2018-08-26 07:08:55] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-26 07:08:55] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(12.00)
+[2018-08-26 07:08:55] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-26 07:08:55] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-26 08:08:47] Time updated by NTP
+[2018-08-26 08:09:05] Writing measurement data to SD Card
+[2018-08-26 08:09:05] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(766.00)
+[2018-08-26 08:09:05] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-26 08:09:05] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(12.00)
+[2018-08-26 08:09:05] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-26 08:09:06] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-26 09:08:04] Time updated by NTP
+[2018-08-26 09:09:16] Writing measurement data to SD Card
+[2018-08-26 09:09:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(766.00)
+[2018-08-26 09:09:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-26 09:09:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(12.00)
+[2018-08-26 09:09:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-26 09:09:16] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-26 10:08:19] Time updated by NTP
+[2018-08-26 10:09:25] Writing measurement data to SD Card
+[2018-08-26 10:09:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(766.00)
+[2018-08-26 10:09:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-26 10:09:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(12.00)
+[2018-08-26 10:09:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-26 10:09:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-26 11:08:36] Time updated by NTP
+[2018-08-26 11:09:36] Writing measurement data to SD Card
+[2018-08-26 11:09:36] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(766.00)
+[2018-08-26 11:09:36] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-26 11:09:36] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(12.00)
+[2018-08-26 11:09:36] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-26 11:09:36] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-26 12:08:52] Time updated by NTP
+[2018-08-26 12:09:47] Writing measurement data to SD Card
+[2018-08-26 12:09:47] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(750.00)
+[2018-08-26 12:09:47] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-26 12:09:47] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(11.00)
+[2018-08-26 12:09:47] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-26 12:09:47] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-26 13:09:08] Time updated by NTP
+[2018-08-26 13:09:56] Writing measurement data to SD Card
+[2018-08-26 13:09:56] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(738.00)
+[2018-08-26 13:09:56] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-26 13:09:56] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(11.00)
+[2018-08-26 13:09:56] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-26 13:09:56] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-26 14:09:24] Time updated by NTP
+[2018-08-26 14:10:07] Writing measurement data to SD Card
+[2018-08-26 14:10:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(706.00)
+[2018-08-26 14:10:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-26 14:10:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(11.00)
+[2018-08-26 14:10:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-26 14:10:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-26 15:09:41] Time updated by NTP
+[2018-08-26 15:10:17] Writing measurement data to SD Card
+[2018-08-26 15:10:17] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(703.00)
+[2018-08-26 15:10:17] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-26 15:10:18] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(11.00)
+[2018-08-26 15:10:18] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-26 15:10:18] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-26 16:09:56] Time updated by NTP
+[2018-08-26 16:10:27] Writing measurement data to SD Card
+[2018-08-26 16:10:27] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(703.00)
+[2018-08-26 16:10:27] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-26 16:10:27] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(11.00)
+[2018-08-26 16:10:27] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-26 16:10:27] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-26 17:10:13] Time updated by NTP
+[2018-08-26 17:10:38] Writing measurement data to SD Card
+[2018-08-26 17:10:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(662.00)
+[2018-08-26 17:10:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-26 17:10:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-26 17:10:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-26 17:10:38] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-26 18:09:29] Time updated by NTP
+[2018-08-26 18:10:48] Writing measurement data to SD Card
+[2018-08-26 18:10:48] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(656.00)
+[2018-08-26 18:10:48] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-26 18:10:48] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-26 18:10:48] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-26 18:10:48] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-26 19:09:45] Time updated by NTP
+[2018-08-26 19:10:51] Timeout US measurement detected
+[2018-08-26 19:10:58] Writing measurement data to SD Card
+[2018-08-26 19:10:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(650.00)
+[2018-08-26 19:10:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-26 19:10:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-26 19:10:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-26 19:10:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-26 20:10:01] Time updated by NTP
+[2018-08-26 20:11:08] Writing measurement data to SD Card
+[2018-08-26 20:11:08] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(650.00)
+[2018-08-26 20:11:08] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-08-26 20:11:08] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-26 20:11:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-26 20:11:09] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-26 21:10:18] Time updated by NTP
+[2018-08-26 21:11:19] Writing measurement data to SD Card
+[2018-08-26 21:11:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(640.00)
+[2018-08-26 21:11:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-26 21:11:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-26 21:11:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-26 21:11:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-26 22:10:33] Time updated by NTP
+[2018-08-26 22:11:28] Writing measurement data to SD Card
+[2018-08-26 22:11:29] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(640.00)
+[2018-08-26 22:11:29] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-26 22:11:29] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-26 22:11:29] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-26 22:11:29] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-26 23:10:50] Time updated by NTP
+[2018-08-26 23:11:39] Writing measurement data to SD Card
+[2018-08-26 23:11:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(640.00)
+[2018-08-26 23:11:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-08-26 23:11:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-26 23:11:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-26 23:11:39] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-27 00:11:06] Time updated by NTP
+[2018-08-27 00:11:50] GET /config/xmlapi/state.cgi?datapoint_id=6614 HTTP/1.1
+[2018-08-27 00:11:50] Datapoint 6614 received 0.000000
+[2018-08-27 00:11:50] Rain in last 24h from weather station [mm]: 0.00
+[2018-08-27 00:11:51] Writing measurement data to SD Card
+[2018-08-27 00:11:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(637.00)
+[2018-08-27 00:11:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-27 00:11:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-27 00:11:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-27 00:11:51] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-27 01:11:22] Time updated by NTP
+[2018-08-27 01:11:59] Writing measurement data to SD Card
+[2018-08-27 01:11:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(640.00)
+[2018-08-27 01:11:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(94.00)
+[2018-08-27 01:11:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-27 01:11:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-27 01:12:00] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-27 02:11:38] Time updated by NTP
+[2018-08-27 02:12:10] Writing measurement data to SD Card
+[2018-08-27 02:12:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(637.00)
+[2018-08-27 02:12:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(94.00)
+[2018-08-27 02:12:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-27 02:12:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-27 02:12:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-27 03:10:54] Time updated by NTP
+[2018-08-27 03:12:20] Writing measurement data to SD Card
+[2018-08-27 03:12:20] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(631.00)
+[2018-08-27 03:12:20] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(95.00)
+[2018-08-27 03:12:20] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-27 03:12:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-27 03:12:21] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-27 04:11:11] Time updated by NTP
+[2018-08-27 04:12:15] Timeout US measurement detected
+[2018-08-27 04:12:31] Writing measurement data to SD Card
+[2018-08-27 04:12:31] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(625.00)
+[2018-08-27 04:12:31] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-27 04:12:31] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-08-27 04:12:31] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-27 04:12:31] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(1.00)
+[2018-08-27 04:12:31] Refilling required
+[2018-08-27 04:12:31] Refilling on. Duration 60 s
+[2018-08-27 04:12:31] Off-Time: 2018-08-27 04:13:31
+[2018-08-27 04:13:31] Refilling off, Refilling volume: 20 liter
+[2018-08-27 04:13:32] Writing settings to EEP
+[2018-08-27 04:15:12] Writing measurement data to SD Card
+[2018-08-27 04:15:14] Connection to CCU failed
+[2018-08-27 04:15:16] Connection to CCU failed
+[2018-08-27 04:15:18] Connection to CCU failed
+[2018-08-27 04:15:19] Connection to CCU failed
+[2018-08-27 04:15:21] Connection to CCU failed
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Check if fixed ethernet address is used in network
+[1970-01-01 00:00:02] Using Fixed IP
+[1970-01-01 00:00:02] IP-Address: 192.168.178.5
+[2018-08-27 04:43:01] Reading settings from EEP
+[2018-08-27 04:43:01] EEP checksum ok 
+[2018-08-27 04:43:01] EEPSize 33 Byte
+[2018-08-27 04:43:01] System startup
+[2018-08-27 04:44:01] Time updated by NTP
+[2018-08-27 04:44:41] Writing measurement data to SD Card
+[2018-08-27 04:44:41] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(637.00)
+[2018-08-27 04:44:41] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-08-27 04:44:41] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-08-27 04:44:41] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-08-27 04:44:41] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stFiltChkErr').State(0.00)
+[2018-08-27 04:45:07] Writing headline for measurement data to SD Card

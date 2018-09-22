@@ -1,0 +1,15 @@
+Date;Level [mm];Quantity [Liter];Signal health [-];Error [-];StdDev [Liter];Refill Quantity [Liter];Rain quantity 24h [Liter];Refill quantity 24h [Liter];Measured quantity change 24h [Liter];Calculated quantity change 24h [Liter];Quantity difference [%];Filter diagnosis [-];Usage in last 24h [Liter];Usage average in last 10d [Liter]
+2018-08-28 20:18:19;195;612;98;Kein Fehler erkannt;1.34;140;;;;;;;;;
+2018-08-28 20:21:00;201;631;98;Kein Fehler erkannt;1.54;160;;;;;;;;;
+2018-08-28 21:18:38;200;628;98;Kein Fehler erkannt;1.34;160;;;;;;;;;
+2018-08-28 22:18:39;203;637;94;Kein Fehler erkannt;5.83;160;;;;;;;;;
+2018-08-28 23:18:58;199;625;98;Kein Fehler erkannt;1.57;160;;;;;;;;;
+2018-08-28 23:21:40;205;644;98;Kein Fehler erkannt;1.64;180;;;;;;;;;
+2018-08-29 04:04:09;204;640;100;Kein Fehler erkannt;0.00;180;;;;;;;;;
+2018-08-29 05:04:20;201;631;98;Kein Fehler erkannt;1.91;180;;;;;;;;;
+2018-08-29 06:04:29;199;625;98;Kein Fehler erkannt;1.57;180;;;;;;;;;
+2018-08-29 06:07:11;204;640;98;Kein Fehler erkannt;1.47;200;;;;;;;;;
+2018-08-29 15:08:08;198;622;100;Kein Fehler erkannt;0.00;200;;;;;;;;;
+2018-08-29 15:10:49;204;640;99;Kein Fehler erkannt;0.44;220;;;;;;;;;
+2018-08-29 15:56:41;203;637;98;Kein Fehler erkannt;1.30;220;;;;;;;;;
+2018-08-29 16:05:14;203;637;98;Kein Fehler erkannt;1.32;220;;;;;;;;;
