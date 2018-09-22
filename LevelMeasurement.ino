@@ -121,7 +121,6 @@ const String prgChng = PRG_CHANGE_DESC;
 
 //Rain detection
 #define MAX_VOL_NORAIN  0.300 // Maximum rain in 24h in mm to detect "no rain"
-#define MIN_VOL_RAIN    2     // Minimum rain in 24h in mm to start filter diagnosis
 
 //LED colors
 #define GREEN 0
@@ -131,7 +130,6 @@ const String prgChng = PRG_CHANGE_DESC;
 #define HM_DATAPOINT_RAIN24 6614  // Datapoint for 24h rain
 
 //Device name of HM Client
-const String hm_device = "HM_ZISTERNE";
 //IP of CCU
 byte hm_ccu[] = { 192, 168, 178, 11 };
 EthernetClient hm_client;
@@ -152,7 +150,8 @@ struct settings_t {
   unsigned long tiRefillReset; //Timestamp of last reset volRefillTot
   int aRoof;                   //Surface of roof
   int prcFiltEff;              //filter efficiency in % (1-overflow) 
-  int prcVolDvtThres;          //Threshold for filter clubbing error
+  int prcVolDvtThres;          //Threshold for filter clogging error
+  int volRainMin;              //Minimum Rain Volume in 24h to activate filter diagnosis
 };
 
 union setting_stream_t {
@@ -726,7 +725,7 @@ byte _id;  //Day counter for average
       }
       else {
         //Start diagnosis
-        volRain24h = 2*MIN_VOL_RAIN;
+        volRain24h = 2*SettingsEEP.settings.volRainMin;
       }
     #endif
     #if TEST_FILT==2
@@ -785,7 +784,7 @@ byte _id;  //Day counter for average
         
       }
       //If enough rain and no overflow within last 24h
-      else if ((volRain24h>MIN_VOL_RAIN) && (volActualMax24h<volMax)){
+      else if ((volRain24h>SettingsEEP.settings.volRainMin) && (volActualMax24h<volMax)){
         //Remember type of evaluation
         stFilterCheck = FILT_DIAG;
         
@@ -1176,8 +1175,8 @@ void LogData(void)
 
   //Log data to SD Card
   if (SD_State == SD_OK) {
-    logFile = SD.open(DATAFILE, FILE_WRITE);
     WriteSystemLog(F("Writing measurement data to SD Card"));
+    logFile = SD.open(DATAFILE, FILE_WRITE);    
     //Log Measurement data
     logFile.print(MeasTimeStr);      logFile.print(F(";"));
     logFile.print(hWaterActual);     logFile.print(F(";"));
@@ -1320,7 +1319,7 @@ void MonitorWebServer(void)
           stOption |= getOption(inString, "prcVolDvtThres", 0, 500, &SettingsEEP.settings.prcVolDvtThres) << 10;          
           stOption |= getOption(inString, "aRoof", 0, 500, &SettingsEEP.settings.aRoof) << 11;
           stOption |= getOption(inString, "prcFiltEff", 0, 65535, &SettingsEEP.settings.prcFiltEff) << 12;
-
+          stOption |= getOption(inString, "volRainMin", 0, 10, &SettingsEEP.settings.volRainMin) << 13;
           
    
           //New option received
@@ -1520,6 +1519,10 @@ void MonitorWebServer(void)
             client2.print(F("<tr><td>Nachspeisung Volumenstrom [l/min]: </td><td>"));
             client2.print(SettingsEEP.settings.dvolRefill);            
             client2.println(F("</td><td> <input type='text' name='dvolRefillSet'></td></tr>"));                
+
+            client2.print(F("<tr><td>Minimal erforderliche Regenmenge in 24h für Filterdiagnose [mm]: </td><td>"));
+            client2.print(SettingsEEP.settings.volRainMin);            
+            client2.println(F("</td><td> <input type='text' name='volRainMin'></td></tr>"));                
             
             // Submit button
             client2.println(F("</table><br><input type='submit' value='Submit'>"));
@@ -1630,6 +1633,7 @@ void ReadEEPData(void)
    SettingsEEP.settings.aRoof=100;                  //Area of roof [m^2]
    SettingsEEP.settings.prcFiltEff=90;              //Filter efficiency [%]
    SettingsEEP.settings.prcVolDvtThres=20;          //Threshold for diagnosis
+   SettingsEEP.settings.volRainMin=2;               //Minimum 2Liter/24h to activate filter diagnosis
    SettingsEEP.settings.tiRefillReset=timeClient.getEpochTime();
 
     WriteEEPData();
@@ -1645,7 +1649,7 @@ void WriteEEPData(void)
   chk = checksum(&SettingsEEP.SettingStream[1], EEPSize - 1);
   SettingsEEP.settings.stat = chk;
   for (i = 0; i < EEPSize; i++) {
-    EEPROM.write(i, SettingsEEP.SettingStream[i]);
+    EEPROM.put(i, SettingsEEP.SettingStream[i]);
   }
   WriteSystemLog(F("Writing settings to EEP"));
 }
@@ -1724,13 +1728,23 @@ void WriteSystemLog(String LogText)
   LogStr.concat(LogText);
 
   if (SD_State == SD_OK) {
-    //Switch off CS from Eth, and switch on CS from SD
+    //Test code to catch web-access stalling issue: 
+    if (digitalRead(ETH__SS_PIN)==LOW) {
+      LogStr.concat("\nETH__SS_PIN==LOW");
+    }
+    //Workaround: Switch off CS from Eth, and switch on CS from SD
     digitalWrite(ETH__SS_PIN,HIGH);
     digitalWrite(SD_CARD_PIN,LOW);
     logFile = SD.open(LOGFILE, FILE_WRITE);
     logFile.println(LogStr);
     logFile.close();    
-    //Switch on CS from Eth, and switch off CS from SD
+    //Test code to catch web-access stalling issue: 
+    if (digitalRead(SD_CARD_PIN)==LOW) {
+      logFile = SD.open(LOGFILE, FILE_WRITE);
+      logFile.println("SD_CARD_PIN==LOW");
+      logFile.close();          
+    }
+    //Workaround: Switch on CS from Eth, and switch off CS from SD
     digitalWrite(SD_CARD_PIN,HIGH);
     digitalWrite(ETH__SS_PIN,LOW);
   }
