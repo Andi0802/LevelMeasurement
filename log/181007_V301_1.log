@@ -1,0 +1,47 @@
+[2018-10-07 16:28:30] Writing headline for measurement data to SD Card
+[2018-10-07 16:31:53] Writing headline for measurement data to SD Card
+[2018-10-07 16:32:48] Writing headline for measurement data to SD Card
+[2018-10-07 16:33:01] Writing headline for measurement data to SD Card
+[2018-10-07 16:51:42] Writing settings to EEP
+[2018-10-07 17:00:42] Time updated by NTP
+[2018-10-07 17:05:16] Datapoint 6614 received 0.000000
+[2018-10-07 17:05:16] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-07 17:05:16] Writing measurement data to SD Card
+[2018-10-07 17:05:24] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-10-07 17:05:24] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(22.00)
+[2018-10-07 17:05:24] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-10-07 17:27:14] Writing headline for measurement data to SD Card
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Using Fixed IP
+[1970-00-00 00:00:00] IP-Address: 192.168.178.5
+[2018-10-07 17:35:44] Reading settings from EEP
+[2018-10-07 17:35:44] Writing settings to EEP
+ETH__SS_PIN==LOW
+[2018-10-07 17:35:44] System startup
+ETH__SS_PIN==LOW
+[2018-10-07 17:36:44] Time updated by NTP
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Using Fixed IP
+[1970-00-00 00:00:00] IP-Address: 192.168.178.5
+[2018-10-07 17:37:18] Reading settings from EEP
+[2018-10-07 17:37:18] EEP checksum ok 
+ETH__SS_PIN==LOW
+[2018-10-07 17:37:18] EEPSize 35 Byte
+ETH__SS_PIN==LOW
+[2018-10-07 17:37:18] System startup
+ETH__SS_PIN==LOW
+[2018-10-07 17:37:43] Timeout US measurement detected
+[2018-10-07 17:38:18] Time updated by NTP
+[2018-10-07 17:38:25] Writing settings to EEP
+[2018-10-07 17:38:29] Timeout US measurement detected
+[2018-10-07 17:38:29] Timeout US measurement detected
+[2018-10-07 17:38:29] Timeout US measurement detected
+[2018-10-07 17:38:30] Writing settings to EEP
+[2018-10-07 17:38:33] Writing settings to EEP
+[2018-10-07 17:38:58] Datapoint 6614 received 0.000000
+[2018-10-07 17:38:58] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-07 17:38:58] Writing measurement data to SD Card
+ETH__SS_PIN==LOW
+[2018-10-07 17:39:06] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-10-07 17:39:06] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(22.00)
+[2018-10-07 17:39:06] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)

@@ -34,9 +34,6 @@ const String prgChng = PRG_CHANGE_DESC;
 // Switch between operational system and test system
 //#define USE_TEST_SYSTEM
 
-//Test for Filter diagnois
-#define TEST_FILT 0     //0=off, 1=Filterdiag, 2=Usage Cntr, 3=no diag
-
 //Logging level
 //0: Normales Logging
 //1: Mit Webserveranfragen
@@ -229,9 +226,10 @@ unsigned char stFilterCheck=FILT_OFF; //Filter diagnosis
 unsigned char stFiltChkErr;        //Result filter check
 unsigned char st24hPast=0;         //Values 24h ago available
 float volRainDiag24h;              //Rain in 24h for Diagnosis
+float volRainDiag24h_old;          //Rain in 24h for Diagnosis 1 h ago
+float volRain1h;                   //Rain in last 1h for Diagnosis
 unsigned long volRefillFilt0;      //Stored value of Refilling volume 24h past
 unsigned int  volActualFilt0;      //Stored actual reservoir volume 24h past
-unsigned int  volActualMax24h=0;   //Maximum level within 24h
 unsigned int  volUsageDiag24h;     //Water usage in 24h for Diagnosis
 unsigned int  volRefill24h;        //Refilled volume in 24h
 unsigned int  volRefillDiag24h;    //Refilled volume in 24h for Diagnosis
@@ -498,7 +496,7 @@ void loop()
   } // 100ms Task
 
   //--- Measurement pulse Task -------------------------------------------------------
-  //Start measurement pulse
+  //Start measurement puls
   if (PulseCntr>0) {  
     //Send pulse and measure delay time  
     PulseCntr--;
@@ -627,21 +625,27 @@ void loop()
           stMeasAct=0;
         }
       }    
-
-      //Maximum volume in 24h
-      if (volActual>volActualMax24h) {
-        volActualMax24h = volActual;
-      }
-
+      
       //Get rain volume for last 24h
+      volRainDiag24h_old = volRain24h;
       volRain24h = hm_get_datapoint(HM_DATAPOINT_RAIN24);
       //Offen: Updatezeit lesen, Datenpunktnummer ermitteln
       //falls Wert nicht aktuell: Fehler: keine Aktuelle Regenmenge
       WriteSystemLog("Rain in last 24h from weather station [mm]: "+String(volRain24h));
 
-      //Check filter
-      CheckFilter();
+      //Calculate rain within last 1h
+      volRain1h = max(volRain24h-volRainDiag24h_old,0);
 
+      //Check filter if rain within last hour is above threshold and volume is below maximum volume
+      if ((volRain1h>SettingsEEP.settings.volRainMin) && (volActual<volMax)) {
+        CheckFilter();
+      }
+
+      //Calcluate usage per day if hour=0 and rain within last 24h is zero
+      if (volRain24h<MAX_VOL_NORAIN) {
+        CalculateDailyUsage();
+      }
+      
       //Write Log File
       #if LOGLEVEL>0
         WriteSystemLog("Measured distance: " + String(hMean) +" mm");
@@ -703,131 +707,84 @@ void loop()
 
 
 // --- Functions -----------------------------------------------------------------------------------------------------
+void CalculateDailyUsage() {
+    byte _id;  //Day counter for average
+    
+    //Remember type of evaluation
+    stFilterCheck = FILT_USAGE;
+    
+    //Calculate water usage      
+    //Take timestamp
+    UsageTimeStr = getDateTimeStr(); 
+
+    //Calculate dayly refilling volume
+    volRefill24h = PositiveDistanceUL(SettingsEEP.settings.volRefillTot,volRefillFilt0);
+
+    //Difference Volume
+    volDiff24h =  volActual - volActualFilt0;
+    
+    //Calculate dayly water usage amd store in array
+    iDay=(iDay+1)%10;
+    volUsage24h[iDay] =  volRefill24h - volDiff24h;  
+    
+
+    //Average over 10 days
+    volUsageAvrg10d=0;
+    for (_id=0;_id<10;_id++) {
+      //Check if init value 32767 Liter is there and replace by currently measured value
+      if (volUsage24h[_id]==32767) {
+        volUsage24h[_id] = volUsage24h[iDay];
+      }
+      volUsageAvrg10d = volUsageAvrg10d + volUsage24h[_id];
+    }
+    volUsageAvrg10d = volUsageAvrg10d/10;       
+
+    //Send result to Homematic
+    hm_set_sysvar(F("HM_ZISTERNE_volUsage"), volUsage24h[iDay]);           
+    delay(1); //nicht optimal, aber sonst stürzt HM ab
+    //Send result to Homematic
+    hm_set_sysvar(F("HM_ZISTERNE_volUsage10d"), volUsageAvrg10d);                   
+}
+
 void CheckFilter() {
-long _volDvt24h;      //Deviation between theoretical change and real change
-byte _id;  //Day counter for average
-
-   #if (TEST_FILT==0) 
-     cntTestFilt=255;
-   #endif
-   
-  //Check if evaluation is required only once per day
-  if ((hour()==0) || (cntTestFilt<2)) {      
-    //Stimulate function
-    #if TEST_FILT==1
-      if (cntTestFilt<2) {
-        cntTestFilt++;
-      } 
-      //Filter diag            
-      if (cntTestFilt==1) {
-        //Save lower actual value
-        volActual = volActual + 350;
-      }
-      else {
-        //Start diagnosis
-        volRain24h = 2*SettingsEEP.settings.volRainMin;
-      }
-    #endif
-    #if TEST_FILT==2
-      if (cntTestFilt<20) {
-        cntTestFilt++;
-      } 
-      //usage diag            
-      if (cntTestFilt==1) {
-        //Save lower actual value
-        volActual = volActual - random(80,210);
-      }
-      else {
-        //Start diagnosis
-        volRain24h=0;
-      }
-    #endif
+    long _volDvt24h;      //Deviation between theoretical change and real change    
       
-    //Stored values 24h ago available?
-    if (st24hPast) {          
-      //Has it rained this night?
-      if (volRain24h<MAX_VOL_NORAIN) {
-        //Remember type of evaluation
-        stFilterCheck = FILT_USAGE;
-        
-        //Calculate water usage      
-        //Take timestamp
-        UsageTimeStr = getDateTimeStr(); 
-  
-        //Calculate dayly refilling volume
-        volRefill24h = PositiveDistanceUL(SettingsEEP.settings.volRefillTot,volRefillFilt0);
-  
-        //Difference Volume
-        volDiff24h =  volActual - volActualFilt0;
-        
-        //Calculate dayly water usage amd store in array
-        iDay=(iDay+1)%10;
-        volUsage24h[iDay] =  -volDiff24h + volRefill24h;  
-        
-  
-        //Average over 10 days
-        volUsageAvrg10d=0;
-        for (_id=0;_id<10;_id++) {
-          //Check if init value 32767 Liter is there and replace by currently measured value
-          if (volUsage24h[_id]==32767) {
-            volUsage24h[_id] = volUsage24h[iDay];
-          }
-          volUsageAvrg10d = volUsageAvrg10d + volUsage24h[_id];
-        }
-        volUsageAvrg10d = volUsageAvrg10d/10;       
-
-        //Send result to Homematic
-        hm_set_sysvar(F("HM_ZISTERNE_volUsage"), volUsage24h[iDay]);           
-        delay(1); //nicht optimal, aber sonst stürzt HM ab
-        //Send result to Homematic
-        hm_set_sysvar(F("HM_ZISTERNE_volUsage10d"), volUsageAvrg10d);           
-        
-      }
-      //If enough rain and no overflow within last 24h
-      else if ((volRain24h>SettingsEEP.settings.volRainMin) && (volActualMax24h<volMax)){
-        //Remember type of evaluation
-        stFilterCheck = FILT_DIAG;
-        
-        //Calculate filter diagnosis
-        //Take timestamp
-        DiagTimeStr = getDateTimeStr(); 
-        
-        //Calculate dayly refilling volume
-        volRefillDiag24h = SettingsEEP.settings.volRefillTot - volRefillFilt0;
-        
-        //Difference Volume
-        volDiffDiag24h =  volActual - volActualFilt0;
-        
-        //Take over Rain measurement
-        volRainDiag24h = volRain24h;
-        
-        //Theoretical volume change
-        volDiffCalc24h = volRainDiag24h*SettingsEEP.settings.aRoof*SettingsEEP.settings.prcFiltEff/100 + volRefillDiag24h - volUsageAvrg10d;
-        
-        //Difference between calculated and real value
-        _volDvt24h = volDiffCalc24h - volDiffDiag24h;
-        
-        //Relative deviation to theoretical quantity
-        prcVolDvt24h = (100*_volDvt24h)/volDiffCalc24h;
-        
-        //Diagnois result
-        if (prcVolDvt24h>SettingsEEP.settings.prcVolDvtThres) {
-          stFiltChkErr = FILT_ERR_CLOGGED;
-        }
-        else {
-          stFiltChkErr = FILT_ERR_OK;
-        }
-
-        //Send result to Homematic
-        hm_set_sysvar(F("HM_ZISTERNE_stFiltChkErr"), stFiltChkErr);           
-        //delay(1); //nicht optimal, aber sonst stürzt HM ab
-
-      }           
+    //Remember type of evaluation
+    stFilterCheck = FILT_DIAG;
+    
+    //Calculate filter diagnosis
+    //Take timestamp
+    DiagTimeStr = getDateTimeStr(); 
+    
+    //Calculate dayly refilling volume
+    volRefillDiag24h = SettingsEEP.settings.volRefillTot - volRefillFilt0;
+    
+    //Difference Volume
+    volDiffDiag24h =  volActual - volActualFilt0;
+    
+    //Take over Rain measurement
+    volRainDiag24h = volRain24h;
+    
+    //Theoretical volume change
+    volDiffCalc24h = volRainDiag24h*SettingsEEP.settings.aRoof*SettingsEEP.settings.prcFiltEff/100 + volRefillDiag24h - volUsageAvrg10d;
+    
+    //Difference between calculated and real value
+    _volDvt24h = volDiffCalc24h - volDiffDiag24h;
+    
+    //Relative deviation to theoretical quantity
+    prcVolDvt24h = (100*_volDvt24h)/volDiffCalc24h;
+    
+    //Diagnois result
+    if (prcVolDvt24h>SettingsEEP.settings.prcVolDvtThres) {
+      stFiltChkErr = FILT_ERR_CLOGGED;
     }
     else {
-      //Error, no measurements 24h ago available
-      stFiltChkErr = FILT_ERR_NOMEAS;        
+      stFiltChkErr = FILT_ERR_OK;
     }
+
+    //Send result to Homematic
+    hm_set_sysvar(F("HM_ZISTERNE_stFiltChkErr"), stFiltChkErr);           
+    //delay(1); //nicht optimal, aber sonst stürzt HM ab         
     
     //Reset Counters and store actual values
     volRefillFilt0 = SettingsEEP.settings.volRefillTot;      
@@ -836,15 +793,6 @@ byte _id;  //Day counter for average
       volActualFilt0 = volActual;
       st24hPast = 1;                
     }
-    else {
-      // Filter check error: No correct measurement available
-      st24hPast = 0;      
-    }
-
-    //Reset maximum volume tracker
-    volActualMax24h=0;
-    
-  } //once per day   
 } 
 
 void SetError(int numErr,int stErr)
@@ -1041,11 +989,11 @@ void hm_set_sysvar(String parameter, double value)
 
   //Connect and send
   _stConnection=hm_client.connect(hm_ccu, 8181);
-  if (_stConnection) {
-    WriteSystemLog(_cmd);
+  if (_stConnection) {    
     hm_client.println(_cmd);
     hm_client.println();
     hm_client.stop();
+    WriteSystemLog(_cmd);
   } else {
     WriteSystemLog(F("Connection to CCU failed"));    
     WriteSystemLog("Result: " + String(_stConnection));
@@ -1065,11 +1013,11 @@ void hm_set_state(int ise_id, double value)
   _cmd = _cmd + value;
 
   //Connect and send
-  if (hm_client.connect(hm_ccu, 80)) {
-    WriteSystemLog(_cmd);
+  if (hm_client.connect(hm_ccu, 80)) {    
     hm_client.println(_cmd);
     hm_client.println();
     hm_client.stop();
+    WriteSystemLog(_cmd);
   } else {
     WriteSystemLog(F("Connection to CCU failed"));
   }
@@ -1086,11 +1034,11 @@ void hm_run_program(int ise_id)
   _cmd = _cmd + ise_id;
 
   //Connect and send
-  if (hm_client.connect(hm_ccu, 80)) {
-    WriteSystemLog(_cmd);
+  if (hm_client.connect(hm_ccu, 80)) {    
     hm_client.println(_cmd);
     hm_client.println();
     hm_client.stop();
+    WriteSystemLog(_cmd);
   } else {
     WriteSystemLog(F("Connection to CCU failed"));
   }
@@ -1135,6 +1083,7 @@ double hm_get_datapoint(int dp_number)
           }
        }
     }
+    hm_client.stop();
     unsigned long _timeStop=micros();
     //WriteSystemLog("<ANTWORT>"+_ret+"</ANTWORT>");
     //WriteSystemLog("Time: "+String(_timeStop-_timeStart)+" us");
@@ -1157,9 +1106,7 @@ double hm_get_datapoint(int dp_number)
       _ret = F("NaN");
       WriteSystemLog(F("Transmission error while receiving datapoint"));
       WriteSystemLog(_ret);
-    }
-
-    hm_client.stop();
+    }   
   } else {
     WriteSystemLog(F("Connection to CCU failed"));
     _ret = F("NaN");
