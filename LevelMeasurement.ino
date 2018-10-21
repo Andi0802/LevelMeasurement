@@ -34,11 +34,12 @@ const String prgChng = PRG_CHANGE_DESC;
 // Switch between operational system and test system
 //#define USE_TEST_SYSTEM
 
-//Logging level
-//0: Normales Logging
-//1: Mit Webserveranfragen
-//2: Einzelwerte
-#define LOGLEVEL 0  
+//Logging level Bitwise
+//Bit 0: Normal logging
+//Bit 1: Web server access
+//Bit 2: Single measurement values
+//Bit 3: CCU access
+#define LOGLEVEL 1  
 
 // SDCard
 #define SD_CARD_PIN       4  // CS for SD-Card on ethernet shield
@@ -103,7 +104,7 @@ const String prgChng = PRG_CHANGE_DESC;
 #define PLS_TIMEOUT       4   // Timout waiting for echo
 
 //Timeout in us
-#define PLS_TI_TIMEOUT 5000
+#define PLS_TI_TIMEOUT 40000
 
 //States for Filter diagnosis
 #define FILT_OFF          0   // No Diagnosis done
@@ -395,7 +396,7 @@ void ReceivePulse(void)
       stPulse = PLS_RECEIVED_POS;
     }
   }
-  if (stPulse==PLS_RECEIVED_POS) {
+  else if (stPulse==PLS_RECEIVED_POS) {
     if (!digitalRead(US_ECHO_PIN)) {
       //Receive time
       tiReceived=micros();
@@ -512,10 +513,10 @@ void loop()
         //Calculated distance only if pulse has been received
         dauer = PositiveDistanceUL(tiReceived,tiSend);        
   
-        //Calculate distance
+        //Calculate distance in mm
         entfernung = ((unsigned long)(dauer/2) * SettingsEEP.settings.vSound)/10000 - SettingsEEP.settings.hOffset;
 
-        #if LOGLEVEL>1
+        #if LOGLEVEL & 2
           WriteSystemLog("Duration measured: " + String(dauer) + "us Send: " + String(tiSend) + " Received: " + String(tiReceived)+ " Entfernung: " + String(entfernung) + " mm");
         #endif
         
@@ -533,7 +534,7 @@ void loop()
         pos++;
         stPulse = PLS_IDLE;
       }
-      else if ((stPulse==PLS_SEND) || (stPulse==PLS_RECEIVED_POS)) {
+      else if (stPulse==PLS_RECEIVED_POS) {
         //Check for timeout
         if (PositiveDistanceUL(micros(),tiSend)>PLS_TI_TIMEOUT) {
           //Timeout detected
@@ -647,7 +648,7 @@ void loop()
       }
       
       //Write Log File
-      #if LOGLEVEL>0
+      #if LOGLEVEL & 1
         WriteSystemLog("Measured distance: " + String(hMean) +" mm");
         WriteSystemLog("Actual Level     : " + String(hWaterActual) + " mm");
         WriteSystemLog("Actual volume    : " + String(volActual) + " Liter, StdDev: " +String(volStdDev) + " Liter");
@@ -965,7 +966,7 @@ unsigned char getOption(String str, String Option, double minVal, double maxVal,
   *curVal = numberIn;
 
   //Log entry
-  #if LOGLEVEL>0
+  #if LOGLEVEL & 2
     WriteSystemLog(strLog);
   #endif
 
@@ -1123,6 +1124,11 @@ void LogData(void)
   //Log data to SD Card
   if (SD_State == SD_OK) {
     WriteSystemLog(F("Writing measurement data to SD Card"));
+        
+    //Workaround: Switch off CS from Eth, and switch on CS from SD
+    digitalWrite(ETH__SS_PIN,HIGH);
+    digitalWrite(SD_CARD_PIN,LOW);
+    
     logFile = SD.open(DATAFILE, FILE_WRITE);    
     //Log Measurement data
     logFile.print(MeasTimeStr);      logFile.print(F(";"));
@@ -1180,6 +1186,11 @@ void LogData(void)
     //Newline and Close
     logFile.println();
     logFile.close();
+  
+    //Workaround: Switch on CS from Eth, and switch off CS from SD
+    digitalWrite(SD_CARD_PIN,HIGH);
+    digitalWrite(ETH__SS_PIN,LOW);
+  
   }
   else {
     WriteSystemLog(F("Writing to SD Card failed"));
@@ -1193,8 +1204,13 @@ void LogDataHeader(void)
 
   //Log data to SD Card
   if (SD_State == SD_OK) {
-    logFile = SD.open(DATAFILE, FILE_WRITE);
     WriteSystemLog(F("Writing headline for measurement data to SD Card"));
+
+    //Workaround: Switch off CS from Eth, and switch on CS from SD
+    digitalWrite(ETH__SS_PIN,HIGH);
+    digitalWrite(SD_CARD_PIN,LOW);
+          
+    logFile = SD.open(DATAFILE, FILE_WRITE);  
     logFile.print(F("Date;"));
     logFile.print(F("Level [mm];"));
     logFile.print(F("Quantity [Liter];"));
@@ -1212,6 +1228,11 @@ void LogDataHeader(void)
     logFile.print(F("Usage average in last 10d [Liter]"));   
     logFile.println();      
     logFile.close();
+
+    //Workaround: Switch on CS from Eth, and switch off CS from SD
+    digitalWrite(SD_CARD_PIN,HIGH);
+    digitalWrite(ETH__SS_PIN,LOW);
+  
   }
   else {
     WriteSystemLog(F("Writing to SD Card failed"));
@@ -1248,8 +1269,8 @@ void MonitorWebServer(void)
             //Serial.println(inString);
             pageStr = inString.substring(5, inString.indexOf(" HTTP"));
           }
-          #if LOGLEVEL>0
-            WriteSystemLog(F("HTTP Request receives: ") + pageStr);
+          #if LOGLEVEL & 2
+            WriteSystemLog("HTTP Request receives: " + pageStr);
             WriteSystemLog(inString);
           #endif 
           
@@ -1423,7 +1444,7 @@ void MonitorWebServer(void)
             client2.println(F("<form method='get'>"));
             client2.print(F("<table><tr><th>Parameter</th><th>Aktueller Wert</th><th>Neuer Wert</th></tr>"));            
             
-            client2.print(F("<tr><td>Schallgeschwindigkeit [cm/s]: </td><td>"));
+            client2.print(F("<tr><td>Schallgeschwindigkeit [mm/s]: </td><td>"));
             client2.print(SettingsEEP.settings.vSound);            
             client2.println(F("</td><td> <input type='text' name='vSoundSet'></td></tr>"));
 
@@ -1467,7 +1488,7 @@ void MonitorWebServer(void)
             client2.print(SettingsEEP.settings.dvolRefill);            
             client2.println(F("</td><td> <input type='text' name='dvolRefillSet'></td></tr>"));                
 
-            client2.print(F("<tr><td>Minimal erforderliche Regenmenge in 24h für Filterdiagnose [mm]: </td><td>"));
+            client2.print(F("<tr><td>Minimal erforderliche Regenmenge in 24h fuer Filterdiagnose [mm]: </td><td>"));
             client2.print(SettingsEEP.settings.volRainMin);            
             client2.println(F("</td><td> <input type='text' name='volRainMin'></td></tr>"));                
             
