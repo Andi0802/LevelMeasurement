@@ -35,11 +35,12 @@ const String prgChng = PRG_CHANGE_DESC;
 //#define USE_TEST_SYSTEM
 
 //Logging level Bitwise
-//Bit 0: Normal logging
-//Bit 1: Web server access
-//Bit 2: Single measurement values
-//Bit 3: CCU access
-#define LOGLEVEL 1  
+#define LOGLVL_NORMAL  1  //Bit 0: Normal logging
+#define LOGLVL_WEB     2  //Bit 1: Web server access
+#define LOGLVL_ALL     4  //Bit 2: Single measurement values
+#define LOGLVL_CCU     8  //Bit 3: CCU access
+#define LOGLVL_SYSTEM 16  //Bit 4: System logging (NTP etc)
+#define LOGLEVEL 1+16  
 
 // SDCard
 #define SD_CARD_PIN       4  // CS for SD-Card on ethernet shield
@@ -274,7 +275,8 @@ void setup() {
 
   //SD Card initialize
   pinMode(ETH__SS_PIN, OUTPUT);      //Workaround to deselect Wiznet chip
-  digitalWrite(ETH__SS_PIN, HIGH);
+  Workaround_CS_ETH2SD();
+  
   if (!SD.begin(SD_CARD_PIN)) {
     SD_State = SD_FAIL;
     WriteSystemLog(F("Initializing SD Card failed"));
@@ -455,7 +457,9 @@ void loop()
       
       //Hint for Refill reason
       if (stButton>0) {
-        WriteSystemLog(F("Refilling requested by manual button"));
+        #if LOGLEVEL & LOGLVL_NORMAL
+          WriteSystemLog(F("Refilling requested by manual button"));
+        #endif  
       } 
     }
       
@@ -516,7 +520,7 @@ void loop()
         //Calculate distance in mm
         entfernung = ((unsigned long)(dauer/2) * SettingsEEP.settings.vSound)/10000 - SettingsEEP.settings.hOffset;
 
-        #if LOGLEVEL & 2
+        #if LOGLEVEL & LOGLVL_ALL
           WriteSystemLog("Duration measured: " + String(dauer) + "us Send: " + String(tiSend) + " Received: " + String(tiReceived)+ " Entfernung: " + String(entfernung) + " mm");
         #endif
         
@@ -538,7 +542,9 @@ void loop()
         //Check for timeout
         if (PositiveDistanceUL(micros(),tiSend)>PLS_TI_TIMEOUT) {
           //Timeout detected
-          WriteSystemLog(F("Timeout US measurement detected"));
+          #if LOGLEVEL & LOGLVL_NORMAL
+            WriteSystemLog(F("Timeout US measurement detected"));
+          #endif  
           dauer = PLS_TI_TIMEOUT;
           entfernung = 0;
           arr[pos]=0;
@@ -578,6 +584,9 @@ void loop()
         }
       }
       else {
+        #if LOGLEVEL & LOGLVL_NORMAL
+          WriteSystemLog("Only " + String(cntValidValues) + " valid measurement values detected (Threshold=40), no new volume calculated");
+        #endif
         rSignalHealth = 1;
       }
       
@@ -599,7 +608,10 @@ void loop()
       if (rSignalHealth<SIGNAL_HEALTH_MIN) {
         if (cntDiagDeb<=DEBOUNCE_EVT_MAX) {
           cntDiagDeb++;
-
+          #if LOGLEVEL & LOGLVL_NORMAL
+            WriteSystemLog("Error detected, debouncing "+String(cntDiagDeb));
+          #endif 
+          
           //Trigger next measurement immediately
           stMeasAct = 1;
         }      
@@ -614,6 +626,10 @@ void loop()
       else {
         if (cntDiagDeb>0) {      
           cntDiagDeb--;
+          
+          #if LOGLEVEL & LOGLVL_NORMAL
+            WriteSystemLog("Good signal detected, debouncing "+String(cntDiagDeb));
+          #endif 
 
           //Trigger next measurement immediately
           stMeasAct = 1;
@@ -625,17 +641,29 @@ void loop()
           //Stop measuerement
           stMeasAct=0;
         }
-      }    
+      }
+
+      //Write Log File
+      #if LOGLEVEL & LOGLVL_NORMAL
+        WriteSystemLog("Measured distance: " + String(hMean) +" mm");
+        WriteSystemLog("Actual Level     : " + String(hWaterActual) + " mm");
+        WriteSystemLog("Actual volume    : " + String(volActual) + " Liter, StdDev: " +String(volStdDev) + " Liter");
+        WriteSystemLog("Error status     : " + String(stError));
+      #endif          
       
       //Get rain volume for last 24h
       volRainDiag24h_old = volRain24h;
       volRain24h = hm_get_datapoint(HM_DATAPOINT_RAIN24);
       //Offen: Updatezeit lesen, Datenpunktnummer ermitteln
-      //falls Wert nicht aktuell: Fehler: keine Aktuelle Regenmenge
-      WriteSystemLog("Rain in last 24h from weather station [mm]: "+String(volRain24h));
+      //falls Wert nicht aktuell: Fehler: keine Aktuelle Regenmenge     
 
       //Calculate rain within last 1h
       volRain1h = max(volRain24h-volRainDiag24h_old,0);
+
+       #if LOGLEVEL & LOGLVL_NORMAL
+        WriteSystemLog("Rain in last 24h from weather station [mm]: "+String(volRain24h));
+        WriteSystemLog("Rain in last  1h from weather station [mm]: "+String(volRain1h));
+      #endif
 
       //Check filter if rain within last hour is above threshold and volume is below maximum volume
       if ((volRain1h>SettingsEEP.settings.volRainMin) && (volActual<volMax)) {
@@ -643,17 +671,9 @@ void loop()
       }
 
       //Calcluate usage per day if hour=0 and rain within last 24h is zero
-      if (volRain24h<MAX_VOL_NORAIN) {
+      if ((volRain24h<MAX_VOL_NORAIN) & hour()==0) {
         CalculateDailyUsage();
-      }
-      
-      //Write Log File
-      #if LOGLEVEL & 1
-        WriteSystemLog("Measured distance: " + String(hMean) +" mm");
-        WriteSystemLog("Actual Level     : " + String(hWaterActual) + " mm");
-        WriteSystemLog("Actual volume    : " + String(volActual) + " Liter, StdDev: " +String(volStdDev) + " Liter");
-        WriteSystemLog("Error status     : " + String(stError));
-      #endif
+      }           
       
       //Log data 
       LogData();
@@ -676,7 +696,9 @@ void loop()
       // Check if refilling is required
       stRefillReq = ((hWaterActual<SettingsEEP.settings.hRefill*10) && (rSignalHealth>SIGNAL_HEALTH_MIN));
       if (stRefillReq) {
-        WriteSystemLog(F("Refilling required"));
+        #if LOGLEVEL & LOGLVL_NORMAL
+          WriteSystemLog(F("Refilling required"));
+        #endif
       }
       #if TEST_FILT>0
         // Directly start next measurement
@@ -692,7 +714,9 @@ void loop()
     //Monitor NTP
     if (NTP_State == NTP_RECEIVED) {
       //Write log entry and set State to WaitNextUpdate
-      WriteSystemLog(F("Time updated by NTP"));
+      #if LOGLEVEL & LOGLVL_SYSTEM
+        WriteSystemLog(F("Time updated by NTP"));
+      #endif
       NTP_State = NTP_WAITUPD;
     }   
   } //60s Task
@@ -834,8 +858,10 @@ void SetError(int numErr,int stErr)
     }
     
     //Report to LogFile
-    WriteSystemLog(_txtError);
-    WriteSystemLog(_envInfo);
+    #if LOGLEVEL & LOGLVL_NORMAL
+      WriteSystemLog(_txtError);
+      WriteSystemLog(_envInfo);
+    #endif
         
     //Set global Error information
     stError = stErr;
@@ -893,8 +919,7 @@ String IPAddressStr()
 
 unsigned char getOption(String str, String Option, double minVal, double maxVal, int *curVal )
 {
-  // Read options from HTTP GET request
-  #define DEBUG_getOption 0
+  // Read options from HTTP GET request  
   int idxOption, lenOption, idxOptionEnd;
   double numberIn;
   String strRem;
@@ -916,10 +941,10 @@ unsigned char getOption(String str, String Option, double minVal, double maxVal,
       //Last argument
       idxOptionEnd = strRem.indexOf(" HTTP");
     }
-    #if DEBUG_getOption
-    Serial.println(F("Remaining string     : ") + strRem);
-    Serial.println(F("Start index of option: ") + String(idxOption));
-    Serial.println(F("End index of option  : ") + String(idxOption+idxOptionEnd));
+    #if LOGLEVEL & LOGLVL_WEB
+      Serial.println(F("Remaining string     : ") + strRem);
+      Serial.println(F("Start index of option: ") + String(idxOption));
+      Serial.println(F("End index of option  : ") + String(idxOption+idxOptionEnd));
     #endif
 
     if (idxOptionEnd == 1) {
@@ -966,7 +991,7 @@ unsigned char getOption(String str, String Option, double minVal, double maxVal,
   *curVal = numberIn;
 
   //Log entry
-  #if LOGLEVEL & 2
+  #if LOGLEVEL & LOGLVL_WEB
     WriteSystemLog(strLog);
   #endif
 
@@ -994,7 +1019,9 @@ void hm_set_sysvar(String parameter, double value)
     hm_client.println(_cmd);
     hm_client.println();
     hm_client.stop();
-    WriteSystemLog(_cmd);
+    #if LOGLEVEL & LOGLVL_CCU
+      WriteSystemLog(_cmd);
+    #endif
   } else {
     WriteSystemLog(F("Connection to CCU failed"));    
     WriteSystemLog("Result: " + String(_stConnection));
@@ -1018,8 +1045,10 @@ void hm_set_state(int ise_id, double value)
     hm_client.println(_cmd);
     hm_client.println();
     hm_client.stop();
-    WriteSystemLog(_cmd);
-  } else {
+    #if LOGLEVEL & LOGLVL_CCU
+      WriteSystemLog(_cmd);
+    #endif  
+  } else {    
     WriteSystemLog(F("Connection to CCU failed"));
   }
 }
@@ -1039,9 +1068,11 @@ void hm_run_program(int ise_id)
     hm_client.println(_cmd);
     hm_client.println();
     hm_client.stop();
-    WriteSystemLog(_cmd);
-  } else {
-    WriteSystemLog(F("Connection to CCU failed"));
+    #if LOGVEVEL & LOGLVL_CCU
+      WriteSystemLog(_cmd);
+    #endif
+  } else {    
+      WriteSystemLog(F("Connection to CCU failed"));
   }
 }
 
@@ -1101,7 +1132,9 @@ double hm_get_datapoint(int dp_number)
       _repStr = F("Datapoint ");
       _repStr = _repStr + dp_number;
       _repStr = _repStr + F(" received ") + _ret;
-      WriteSystemLog(_repStr);
+      #if LOGLEVEL & LOGLVL_CCU
+        WriteSystemLog(_repStr);
+      #endif
     }
     else {
       _ret = F("NaN");
@@ -1123,11 +1156,11 @@ void LogData(void)
 
   //Log data to SD Card
   if (SD_State == SD_OK) {
-    WriteSystemLog(F("Writing measurement data to SD Card"));
+    #if LOGLEVEL & LOGLVL_NORMAL
+      WriteSystemLog(F("Writing measurement data to SD Card"));
+    #endif
         
-    //Workaround: Switch off CS from Eth, and switch on CS from SD
-    digitalWrite(ETH__SS_PIN,HIGH);
-    digitalWrite(SD_CARD_PIN,LOW);
+    Workaround_CS_ETH2SD();    
     
     logFile = SD.open(DATAFILE, FILE_WRITE);    
     //Log Measurement data
@@ -1186,10 +1219,8 @@ void LogData(void)
     //Newline and Close
     logFile.println();
     logFile.close();
-  
-    //Workaround: Switch on CS from Eth, and switch off CS from SD
-    digitalWrite(SD_CARD_PIN,HIGH);
-    digitalWrite(ETH__SS_PIN,LOW);
+
+    Workaround_CS_SD2ETH();   
   
   }
   else {
@@ -1204,11 +1235,11 @@ void LogDataHeader(void)
 
   //Log data to SD Card
   if (SD_State == SD_OK) {
-    WriteSystemLog(F("Writing headline for measurement data to SD Card"));
+    #if LOGLEVEL & LOGLVL_NORMAL
+      WriteSystemLog(F("Writing headline for measurement data to SD Card"));
+    #endif  
 
-    //Workaround: Switch off CS from Eth, and switch on CS from SD
-    digitalWrite(ETH__SS_PIN,HIGH);
-    digitalWrite(SD_CARD_PIN,LOW);
+    Workaround_CS_ETH2SD();    
           
     logFile = SD.open(DATAFILE, FILE_WRITE);  
     logFile.print(F("Date;"));
@@ -1228,11 +1259,8 @@ void LogDataHeader(void)
     logFile.print(F("Usage average in last 10d [Liter]"));   
     logFile.println();      
     logFile.close();
-
-    //Workaround: Switch on CS from Eth, and switch off CS from SD
-    digitalWrite(SD_CARD_PIN,HIGH);
-    digitalWrite(ETH__SS_PIN,LOW);
-  
+    
+    Workaround_CS_SD2ETH();
   }
   else {
     WriteSystemLog(F("Writing to SD Card failed"));
@@ -1269,7 +1297,7 @@ void MonitorWebServer(void)
             //Serial.println(inString);
             pageStr = inString.substring(5, inString.indexOf(" HTTP"));
           }
-          #if LOGLEVEL & 2
+          #if LOGLEVEL & LOGLVL_WEB
             WriteSystemLog("HTTP Request receives: " + pageStr);
             WriteSystemLog(inString);
           #endif 
@@ -1575,7 +1603,9 @@ void ReadEEPData(void)
   unsigned char chk;
  
   //Read data stream
-  WriteSystemLog(F("Reading settings from EEP"));
+  #if LOGLEVEL & LOGLVL_SYSTEM
+    WriteSystemLog(F("Reading settings from EEP"));
+  #endif
   for (i = 0; i < EEPSize; i++) {
     SettingsEEP.SettingStream[i] = EEPROM.read(i);
   }
@@ -1583,8 +1613,10 @@ void ReadEEPData(void)
   // Check plausibility
   chk = checksum(&SettingsEEP.SettingStream[1], EEPSize - 1);
   if (SettingsEEP.settings.stat == chk) {
-    WriteSystemLog(F("EEP checksum ok "));
-    WriteSystemLog("EEPSize " + String(EEPSize) + " Byte");
+    #if LOGLEVEL & LOGLVL_SYSTEM
+      WriteSystemLog(F("EEP checksum ok "));
+      WriteSystemLog("EEPSize " + String(EEPSize) + " Byte");
+    #endif  
   }
   else {
     //Initialise new: Automatically takes the init data    
@@ -1619,7 +1651,9 @@ void WriteEEPData(void)
   for (i = 0; i < EEPSize; i++) {
     EEPROM.put(i, SettingsEEP.SettingStream[i]);
   }
-  WriteSystemLog(F("Writing settings to EEP"));
+  #if LOGLEVEL & LOGLVL_SYSTEM
+    WriteSystemLog(F("Writing settings to EEP"));
+  #endif
 }
 
 unsigned char Refill(int volRefillDes)
@@ -1650,8 +1684,10 @@ unsigned char Refill(int volRefillDes)
       _tiRefillDes = (volRefillDes*60)/(long (SettingsEEP.settings.dvolRefill));
       tiRefillerOn = _tiNow;
       tiRefillerOff = _tiNow + _tiRefillDes; 
-      WriteSystemLog("Refilling on. Duration "+String(_tiRefillDes) + " s");
-      WriteSystemLog("Off-Time: " + String(time2DateTimeStr(tiRefillerOff)));
+      #if LOGLEVEL & LOGLVL_NORMAL
+        WriteSystemLog("Refilling on. Duration "+String(_tiRefillDes) + " s");
+        WriteSystemLog("Off-Time: " + String(time2DateTimeStr(tiRefillerOff)));
+      #endif 
       _res=1;  
     }
  
@@ -1663,7 +1699,9 @@ unsigned char Refill(int volRefillDes)
         _tiRefill = _tiNow - tiRefillerOn;
         _volRefill = (unsigned long) (_tiRefill*(long (SettingsEEP.settings.dvolRefill))/60);
         SettingsEEP.settings.volRefillTot = SettingsEEP.settings.volRefillTot + _volRefill;
-        WriteSystemLog("Refilling off, Refilling volume: " + String(_volRefill) + " liter");
+        #if LOGLEVEL & LOGLVL_NORMAL
+          WriteSystemLog("Refilling off, Refilling volume: " + String(_volRefill) + " liter");
+        #endif  
 
         // Start measurement to determine new level
         stMeasAct=1;
@@ -1695,14 +1733,9 @@ void WriteSystemLog(String LogText)
   LogStr.concat("] ");
   LogStr.concat(LogText);
 
-  if (SD_State == SD_OK) {
-    //Test code to catch web-access stalling issue: 
-    if (digitalRead(ETH__SS_PIN)==LOW) {
-      LogStr.concat("\nETH__SS_PIN==LOW");
-    }
-    //Workaround: Switch off CS from Eth, and switch on CS from SD
-    digitalWrite(ETH__SS_PIN,HIGH);
-    digitalWrite(SD_CARD_PIN,LOW);
+  if (SD_State == SD_OK) {    
+    Workaround_CS_ETH2SD();
+    
     logFile = SD.open(LOGFILE, FILE_WRITE);
     logFile.println(LogStr);
     logFile.close();    
@@ -1712,9 +1745,7 @@ void WriteSystemLog(String LogText)
       logFile.println("SD_CARD_PIN==LOW");
       logFile.close();          
     }
-    //Workaround: Switch on CS from Eth, and switch off CS from SD
-    digitalWrite(SD_CARD_PIN,HIGH);
-    digitalWrite(ETH__SS_PIN,LOW);
+    Workaround_CS_SD2ETH();    
   }
 
   //Write to serial
@@ -1729,23 +1760,31 @@ void EthConnect(void)
     // If DHCP is not available try backup IP
     Ethernet.begin(mac, ip);
     ETH_StateConnectionType = ETH_BACKUPIP;
-    WriteSystemLog(F("Failed to configure Ethernet using DHCP, using backup IP"));
+    #if LOGLEVEL & LOGLVL_SYSTEM
+      WriteSystemLog(F("Failed to configure Ethernet using DHCP, using backup IP"));
+    #endif
   }
   else {
     ETH_StateConnectionType = ETH_DHCP;
-    WriteSystemLog(F("DHCP Address received"));
+    #if LOGLEVEL & LOGLVL_SYSTEM
+      WriteSystemLog(F("DHCP Address received"));
+    #endif  
   }
 
   #else 
   //Use fixed IP Adress
     Ethernet.begin(mac, ip);
     ETH_StateConnectionType = ETH_FIXEDIP;
-    WriteSystemLog(F("Using Fixed IP"));
+    #if LOGLEVEL & LOGLVL_SYSTEM
+      WriteSystemLog(F("Using Fixed IP"));
+    #endif  
   #endif
 
   // print your local IP address:
   IPString = "IP-Address: " + IPAddressStr();
-  WriteSystemLog(IPString);
+  #if LOGLEVEL & LOGLVL_SYSTEM
+    WriteSystemLog(IPString);
+  #endif  
   delay(1000);
 }
 
@@ -1899,3 +1938,66 @@ void SetSystemLED(bool state)
   }
 }
 
+void Workaround_CS_ETH2SD()
+//Workaround when ETH CS is not reset before SD CS is activated
+{ 
+  File logFile; 
+  String date_time;
+  String LogStr;
+  
+  //Test code to catch web-access stalling issue: 
+  if (digitalRead(ETH__SS_PIN)==LOW) {    
+     //Get Time
+     date_time = getDateTimeStr();
+
+     //Log data to SD Card
+     LogStr = "[";
+     LogStr.concat(date_time);
+     LogStr.concat("] ");
+     LogStr.concat("Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access");
+     
+     //Workaround: Switch off CS from Eth, and switch on CS from SD
+     digitalWrite(ETH__SS_PIN,HIGH);
+     digitalWrite(SD_CARD_PIN,LOW);
+     
+     //Write to systemlog
+     logFile = SD.open(LOGFILE, FILE_WRITE);
+     logFile.println(LogStr);
+     logFile.close();    
+  }  
+  else {
+     digitalWrite(SD_CARD_PIN,LOW);
+  }
+}
+
+void Workaround_CS_SD2ETH()
+//Workaround when SD CS is not reset before ETH CS is activated
+{
+  File logFile; 
+  String date_time;
+  String LogStr;
+  
+  //Test code to catch web-access stalling issue: 
+  if (digitalRead(SD_CARD_PIN)==LOW) {    
+     //Get Time
+     date_time = getDateTimeStr();
+
+     //Log data to SD Card
+     LogStr = "[";
+     LogStr.concat(date_time);
+     LogStr.concat("] ");
+     LogStr.concat("Trap: SD_CARD_PIN==LOW (ACTIVE) after SD-Card access is finished");
+     
+     //Workaround: Switch off CS from Eth, and switch on CS from SD
+     digitalWrite(ETH__SS_PIN,LOW);
+     digitalWrite(SD_CARD_PIN,HIGH);
+     
+     //Write to systemlog
+     logFile = SD.open(LOGFILE, FILE_WRITE);
+     logFile.println(LogStr);
+     logFile.close();    
+  }  
+  else {
+     digitalWrite(ETH__SS_PIN,LOW);
+  }    
+}    
