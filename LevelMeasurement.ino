@@ -215,6 +215,7 @@ unsigned long tiRefillerOff;       //Timestamp refilling off
 unsigned long tiRefillerOn;        //Timestamp refilling on
 unsigned char stRefill=0;          //Status Refilling in progress
 unsigned char stRefillReq=0;       //Request for refilling step based on measurement
+unsigned char stVentEx=0;          //Set to 1 if vent-excersice has been started, to provide multiple refillers in 1 hour
 double volStdDev;                  //Standard deviation of measurements in volume
 unsigned char rSignalHealth=0;     //Signal health (0 worst - 100 best)
 char cntValidValues;               //Number of valid values
@@ -694,11 +695,24 @@ void loop()
       stFilterCheck = FILT_OFF;
 
       // Check if refilling is required
-      stRefillReq = ((hWaterActual<SettingsEEP.settings.hRefill*10) && (rSignalHealth>SIGNAL_HEALTH_MIN));
-      if (stRefillReq) {
+      if((hWaterActual<SettingsEEP.settings.hRefill*10) && (rSignalHealth>SIGNAL_HEALTH_MIN)) {
+        stRefillReq = 1;
         #if LOGLEVEL & LOGLVL_NORMAL
-          WriteSystemLog(F("Refilling required"));
+          WriteSystemLog(F("Refilling required due to level threshold"));
         #endif
+      }
+
+      // Start refilling every 1th of month at 12am
+      if ((day()==1) && (hour()==12) && (stVentEx==0)) {
+        stRefillReq = 1;
+        stVentEx=1;
+        #if LOGLEVEL & LOGLVL_NORMAL
+          WriteSystemLog(F("Monthly refilling for vent exercise"));
+        #endif
+      }
+      if ((day()==1) && (hour()==13)) {
+        //Reset excersice bit for next month
+        stVentEx=0;
       }
       #if TEST_FILT>0
         // Directly start next measurement
