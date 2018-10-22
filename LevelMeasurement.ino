@@ -1203,7 +1203,7 @@ void LogData(void)
     }
     else {
       //Empty cells
-      logFile.print(F(";;;;;;"));            
+      logFile.print(F(";;;;;"));            
     }
 
     //Check if Usage log is required

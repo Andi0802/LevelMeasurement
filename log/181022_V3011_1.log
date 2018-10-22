@@ -1,0 +1,409 @@
+[2018-10-21 14:54:12] Refilling requested by manual button
+[2018-10-21 14:54:12] Refilling on. Duration 60 s
+ETH__SS_PIN==LOW
+[2018-10-21 14:54:12] Off-Time: 2018-10-21 14:55:12
+ETH__SS_PIN==LOW
+[2018-10-21 14:55:13] Refilling off, Refilling volume: 20 liter
+[2018-10-21 14:55:13] Writing settings to EEP
+ETH__SS_PIN==LOW
+[2018-10-21 14:56:58] Datapoint 6614 received 0.000000
+[2018-10-21 14:56:58] Rain in last 24h from weather station [mm]: 0.00
+ETH__SS_PIN==LOW
+[2018-10-21 14:56:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage').State(-37.00)
+[2018-10-21 14:56:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage10d').State(-55.00)
+[2018-10-21 14:56:58] Measured distance: 2196.22 mm
+ETH__SS_PIN==LOW
+[2018-10-21 14:56:58] Actual Level     : 203 mm
+ETH__SS_PIN==LOW
+[2018-10-21 14:56:58] Actual volume    : 637 Liter, StdDev: 6.75 Liter
+ETH__SS_PIN==LOW
+[2018-10-21 14:56:58] Error status     : 0
+ETH__SS_PIN==LOW
+[2018-10-21 14:56:59] Writing measurement data to SD Card
+ETH__SS_PIN==LOW
+[2018-10-21 14:56:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(637.00)
+[2018-10-21 14:56:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(93.00)
+[2018-10-21 14:56:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-10-21 14:56:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-10-21 15:08:35] Time updated by NTP
+[2018-10-21 15:10:10] Datapoint 6614 received 0.000000
+[2018-10-21 15:10:10] Rain in last 24h from weather station [mm]: 0.00
+ETH__SS_PIN==LOW
+[2018-10-21 15:10:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage').State(-40.00)
+[2018-10-21 15:10:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage10d').State(-53.00)
+[2018-10-21 15:10:10] Measured distance: 2195.92 mm
+ETH__SS_PIN==LOW
+[2018-10-21 15:10:10] Actual Level     : 204 mm
+ETH__SS_PIN==LOW
+[2018-10-21 15:10:10] Actual volume    : 640 Liter, StdDev: 7.19 Liter
+ETH__SS_PIN==LOW
+[2018-10-21 15:10:10] Error status     : 0
+ETH__SS_PIN==LOW
+[2018-10-21 15:10:10] Writing measurement data to SD Card
+ETH__SS_PIN==LOW
+[2018-10-21 15:10:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(640.00)
+[2018-10-21 15:10:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(93.00)
+[2018-10-21 15:10:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-10-21 15:10:10] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-10-21 16:08:49] Time updated by NTP
+[2018-10-21 16:10:18] Datapoint 6614 received 0.000000
+[2018-10-21 16:10:18] Rain in last 24h from weather station [mm]: 0.00
+ETH__SS_PIN==LOW
+[2018-10-21 16:10:18] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage').State(-40.00)
+[2018-10-21 16:10:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage10d').State(-51.00)
+[2018-10-21 16:10:19] Measured distance: 2196.00 mm
+ETH__SS_PIN==LOW
+[2018-10-21 16:10:19] Actual Level     : 204 mm
+ETH__SS_PIN==LOW
+[2018-10-21 16:10:19] Actual volume    : 640 Liter, StdDev: 0.00 Liter
+ETH__SS_PIN==LOW
+[2018-10-21 16:10:19] Error status     : 0
+ETH__SS_PIN==LOW
+[2018-10-21 16:10:19] Writing measurement data to SD Card
+ETH__SS_PIN==LOW
+[2018-10-21 16:10:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(640.00)
+[2018-10-21 16:10:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-10-21 16:10:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-10-21 16:10:19] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-10-21 17:09:04] Time updated by NTP
+[2018-10-21 17:10:27] Datapoint 6614 received 0.000000
+[2018-10-21 17:10:27] Rain in last 24h from weather station [mm]: 0.00
+ETH__SS_PIN==LOW
+[2018-10-21 17:10:27] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage').State(-34.00)
+[2018-10-21 17:10:27] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage10d').State(-49.00)
+[2018-10-21 17:10:27] Measured distance: 2198.00 mm
+ETH__SS_PIN==LOW
+[2018-10-21 17:10:27] Actual Level     : 202 mm
+ETH__SS_PIN==LOW
+[2018-10-21 17:10:27] Actual volume    : 634 Liter, StdDev: 0.00 Liter
+ETH__SS_PIN==LOW
+[2018-10-21 17:10:27] Error status     : 0
+ETH__SS_PIN==LOW
+[2018-10-21 17:10:27] Writing measurement data to SD Card
+ETH__SS_PIN==LOW
+[2018-10-21 17:10:27] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(634.00)
+[2018-10-21 17:10:28] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-10-21 17:10:28] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-10-21 17:10:28] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-10-21 18:09:17] Time updated by NTP
+[2018-10-21 18:10:35] Datapoint 6614 received 0.000000
+[2018-10-21 18:10:35] Rain in last 24h from weather station [mm]: 0.00
+ETH__SS_PIN==LOW
+[2018-10-21 18:10:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage').State(-28.00)
+[2018-10-21 18:10:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage10d').State(-46.00)
+[2018-10-21 18:10:35] Measured distance: 2199.56 mm
+ETH__SS_PIN==LOW
+[2018-10-21 18:10:35] Actual Level     : 200 mm
+ETH__SS_PIN==LOW
+[2018-10-21 18:10:35] Actual volume    : 628 Liter, StdDev: 5.90 Liter
+ETH__SS_PIN==LOW
+[2018-10-21 18:10:35] Error status     : 0
+ETH__SS_PIN==LOW
+[2018-10-21 18:10:35] Writing measurement data to SD Card
+ETH__SS_PIN==LOW
+[2018-10-21 18:10:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(628.00)
+[2018-10-21 18:10:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(94.00)
+[2018-10-21 18:10:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-10-21 18:10:35] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-10-21 19:09:32] Time updated by NTP
+[2018-10-21 19:10:43] Datapoint 6614 received 0.000000
+[2018-10-21 19:10:43] Rain in last 24h from weather station [mm]: 0.00
+ETH__SS_PIN==LOW
+[2018-10-21 19:10:43] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage').State(-22.00)
+[2018-10-21 19:10:43] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage10d').State(-42.00)
+[2018-10-21 19:10:43] Measured distance: 2201.18 mm
+ETH__SS_PIN==LOW
+[2018-10-21 19:10:43] Actual Level     : 198 mm
+ETH__SS_PIN==LOW
+[2018-10-21 19:10:43] Actual volume    : 622 Liter, StdDev: 1.21 Liter
+ETH__SS_PIN==LOW
+[2018-10-21 19:10:43] Error status     : 0
+ETH__SS_PIN==LOW
+[2018-10-21 19:10:43] Writing measurement data to SD Card
+ETH__SS_PIN==LOW
+[2018-10-21 19:10:43] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(622.00)
+[2018-10-21 19:10:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-10-21 19:10:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-10-21 19:10:44] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-10-21 19:10:44] Refilling required
+ETH__SS_PIN==LOW
+[2018-10-21 19:10:44] Refilling on. Duration 60 s
+[2018-10-21 19:10:44] Off-Time: 2018-10-21 19:11:44
+ETH__SS_PIN==LOW
+[2018-10-21 19:11:45] Refilling off, Refilling volume: 20 liter
+[2018-10-21 19:11:45] Writing settings to EEP
+ETH__SS_PIN==LOW
+[2018-10-21 19:13:25] Datapoint 6614 received 0.000000
+[2018-10-21 19:13:25] Rain in last 24h from weather station [mm]: 0.00
+ETH__SS_PIN==LOW
+[2018-10-21 19:13:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage').State(-11.00)
+[2018-10-21 19:13:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage10d').State(-38.00)
+[2018-10-21 19:13:26] Measured distance: 2198.10 mm
+ETH__SS_PIN==LOW
+[2018-10-21 19:13:26] Actual Level     : 201 mm
+ETH__SS_PIN==LOW
+[2018-10-21 19:13:26] Actual volume    : 631 Liter, StdDev: 1.13 Liter
+ETH__SS_PIN==LOW
+[2018-10-21 19:13:26] Error status     : 0
+ETH__SS_PIN==LOW
+[2018-10-21 19:13:26] Writing measurement data to SD Card
+ETH__SS_PIN==LOW
+[2018-10-21 19:13:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(631.00)
+[2018-10-21 19:13:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-10-21 19:13:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-10-21 19:13:26] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-10-21 20:09:46] Time updated by NTP
+[2018-10-21 20:10:52] Datapoint 6614 received 0.000000
+[2018-10-21 20:10:52] Rain in last 24h from weather station [mm]: 0.00
+ETH__SS_PIN==LOW
+[2018-10-21 20:10:52] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage').State(-17.00)
+[2018-10-21 20:10:52] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage10d').State(-34.00)
+[2018-10-21 20:10:52] Measured distance: 2196.62 mm
+ETH__SS_PIN==LOW
+[2018-10-21 20:10:52] Actual Level     : 203 mm
+ETH__SS_PIN==LOW
+[2018-10-21 20:10:52] Actual volume    : 637 Liter, StdDev: 4.57 Liter
+ETH__SS_PIN==LOW
+[2018-10-21 20:10:52] Error status     : 0
+ETH__SS_PIN==LOW
+[2018-10-21 20:10:52] Writing measurement data to SD Card
+ETH__SS_PIN==LOW
+[2018-10-21 20:10:52] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(637.00)
+[2018-10-21 20:10:52] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(95.00)
+[2018-10-21 20:10:52] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-10-21 20:10:52] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-10-21 21:10:00] Time updated by NTP
+[2018-10-21 21:10:59] Datapoint 6614 received 0.000000
+[2018-10-21 21:10:59] Rain in last 24h from weather station [mm]: 0.00
+ETH__SS_PIN==LOW
+[2018-10-21 21:11:00] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage').State(-14.00)
+[2018-10-21 21:11:00] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage10d').State(-30.00)
+[2018-10-21 21:11:00] Measured distance: 2198.00 mm
+ETH__SS_PIN==LOW
+[2018-10-21 21:11:00] Actual Level     : 202 mm
+ETH__SS_PIN==LOW
+[2018-10-21 21:11:00] Actual volume    : 634 Liter, StdDev: 0.00 Liter
+ETH__SS_PIN==LOW
+[2018-10-21 21:11:00] Error status     : 0
+ETH__SS_PIN==LOW
+[2018-10-21 21:11:00] Writing measurement data to SD Card
+ETH__SS_PIN==LOW
+[2018-10-21 21:11:00] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(634.00)
+[2018-10-21 21:11:00] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-10-21 21:11:00] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-10-21 21:11:00] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-10-21 22:10:14] Time updated by NTP
+[2018-10-21 22:11:08] Datapoint 6614 received 0.000000
+[2018-10-21 22:11:08] Rain in last 24h from weather station [mm]: 0.00
+ETH__SS_PIN==LOW
+[2018-10-21 22:11:08] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage').State(-14.00)
+[2018-10-21 22:11:08] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage10d').State(-25.00)
+[2018-10-21 22:11:08] Measured distance: 2198.00 mm
+ETH__SS_PIN==LOW
+[2018-10-21 22:11:08] Actual Level     : 202 mm
+ETH__SS_PIN==LOW
+[2018-10-21 22:11:08] Actual volume    : 634 Liter, StdDev: 0.00 Liter
+ETH__SS_PIN==LOW
+[2018-10-21 22:11:08] Error status     : 0
+ETH__SS_PIN==LOW
+[2018-10-21 22:11:08] Writing measurement data to SD Card
+ETH__SS_PIN==LOW
+[2018-10-21 22:11:08] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(634.00)
+[2018-10-21 22:11:08] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-10-21 22:11:08] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-10-21 22:11:08] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-10-21 23:10:29] Time updated by NTP
+[2018-10-21 23:11:17] Datapoint 6614 received 0.000000
+[2018-10-21 23:11:17] Rain in last 24h from weather station [mm]: 0.00
+ETH__SS_PIN==LOW
+[2018-10-21 23:11:17] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage').State(-5.00)
+[2018-10-21 23:11:17] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage10d').State(-22.00)
+[2018-10-21 23:11:17] Measured distance: 2201.00 mm
+ETH__SS_PIN==LOW
+[2018-10-21 23:11:17] Actual Level     : 199 mm
+ETH__SS_PIN==LOW
+[2018-10-21 23:11:17] Actual volume    : 625 Liter, StdDev: 0.00 Liter
+ETH__SS_PIN==LOW
+[2018-10-21 23:11:17] Error status     : 0
+ETH__SS_PIN==LOW
+[2018-10-21 23:11:17] Writing measurement data to SD Card
+ETH__SS_PIN==LOW
+[2018-10-21 23:11:17] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(625.00)
+[2018-10-21 23:11:17] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(100.00)
+[2018-10-21 23:11:17] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-10-21 23:11:17] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-10-21 23:11:17] Refilling required
+ETH__SS_PIN==LOW
+[2018-10-21 23:11:17] Refilling on. Duration 60 s
+[2018-10-21 23:11:17] Off-Time: 2018-10-21 23:12:17
+ETH__SS_PIN==LOW
+[2018-10-21 23:12:18] Refilling off, Refilling volume: 20 liter
+[2018-10-21 23:12:18] Writing settings to EEP
+ETH__SS_PIN==LOW
+[2018-10-21 23:13:58] Datapoint 6614 received 0.000000
+[2018-10-21 23:13:58] Rain in last 24h from weather station [mm]: 0.00
+ETH__SS_PIN==LOW
+[2018-10-21 23:13:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage').State(-4.00)
+[2018-10-21 23:13:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage10d').State(-18.00)
+[2018-10-21 23:13:59] Measured distance: 2194.64 mm
+ETH__SS_PIN==LOW
+[2018-10-21 23:13:59] Actual Level     : 205 mm
+ETH__SS_PIN==LOW
+[2018-10-21 23:13:59] Actual volume    : 644 Liter, StdDev: 6.49 Liter
+ETH__SS_PIN==LOW
+[2018-10-21 23:13:59] Error status     : 0
+ETH__SS_PIN==LOW
+[2018-10-21 23:13:59] Writing measurement data to SD Card
+ETH__SS_PIN==LOW
+[2018-10-21 23:13:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(644.00)
+[2018-10-21 23:13:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(93.00)
+[2018-10-21 23:13:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-10-21 23:13:59] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-10-22 00:09:42] Time updated by NTP
+[2018-10-22 00:11:24] Datapoint 6614 received 0.000000
+[2018-10-22 00:11:24] Rain in last 24h from weather station [mm]: 0.00
+ETH__SS_PIN==LOW
+[2018-10-22 00:11:24] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage').State(-4.00)
+[2018-10-22 00:11:24] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage10d').State(-15.00)
+[2018-10-22 00:11:24] Measured distance: 2194.04 mm
+ETH__SS_PIN==LOW
+[2018-10-22 00:11:24] Actual Level     : 205 mm
+ETH__SS_PIN==LOW
+[2018-10-22 00:11:24] Actual volume    : 644 Liter, StdDev: 0.62 Liter
+ETH__SS_PIN==LOW
+[2018-10-22 00:11:24] Error status     : 0
+ETH__SS_PIN==LOW
+[2018-10-22 00:11:24] Writing measurement data to SD Card
+ETH__SS_PIN==LOW
+[2018-10-22 00:11:24] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(644.00)
+[2018-10-22 00:11:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(99.00)
+[2018-10-22 00:11:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-10-22 00:11:25] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-10-22 01:09:57] Time updated by NTP
+[2018-10-22 01:11:33] Datapoint 6614 received 0.000000
+[2018-10-22 01:11:33] Rain in last 24h from weather station [mm]: 0.00
+ETH__SS_PIN==LOW
+[2018-10-22 01:11:33] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage').State(-4.00)
+[2018-10-22 01:11:33] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage10d').State(-12.00)
+[2018-10-22 01:11:33] Measured distance: 2194.20 mm
+ETH__SS_PIN==LOW
+[2018-10-22 01:11:33] Actual Level     : 205 mm
+ETH__SS_PIN==LOW
+[2018-10-22 01:11:33] Actual volume    : 644 Liter, StdDev: 1.26 Liter
+ETH__SS_PIN==LOW
+[2018-10-22 01:11:33] Error status     : 0
+ETH__SS_PIN==LOW
+[2018-10-22 01:11:33] Writing measurement data to SD Card
+ETH__SS_PIN==LOW
+[2018-10-22 01:11:33] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(644.00)
+[2018-10-22 01:11:33] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-10-22 01:11:33] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-10-22 01:11:33] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-10-22 02:10:10] Time updated by NTP
+[2018-10-22 02:11:40] Datapoint 6614 received 0.000000
+[2018-10-22 02:11:40] Rain in last 24h from weather station [mm]: 0.00
+ETH__SS_PIN==LOW
+[2018-10-22 02:11:40] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage').State(0.00)
+[2018-10-22 02:11:40] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage10d').State(-9.00)
+[2018-10-22 02:11:40] Measured distance: 2195.30 mm
+ETH__SS_PIN==LOW
+[2018-10-22 02:11:40] Actual Level     : 204 mm
+ETH__SS_PIN==LOW
+[2018-10-22 02:11:41] Actual volume    : 640 Liter, StdDev: 1.44 Liter
+ETH__SS_PIN==LOW
+[2018-10-22 02:11:41] Error status     : 0
+ETH__SS_PIN==LOW
+[2018-10-22 02:11:41] Writing measurement data to SD Card
+ETH__SS_PIN==LOW
+[2018-10-22 02:11:41] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(640.00)
+[2018-10-22 02:11:41] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-10-22 02:11:41] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-10-22 02:11:41] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-10-22 03:10:25] Time updated by NTP
+[2018-10-22 03:11:49] Datapoint 6614 received 0.000000
+[2018-10-22 03:11:49] Rain in last 24h from weather station [mm]: 0.00
+ETH__SS_PIN==LOW
+[2018-10-22 03:11:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage').State(0.00)
+[2018-10-22 03:11:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage10d').State(-7.00)
+[2018-10-22 03:11:49] Measured distance: 2195.26 mm
+ETH__SS_PIN==LOW
+[2018-10-22 03:11:49] Actual Level     : 204 mm
+ETH__SS_PIN==LOW
+[2018-10-22 03:11:49] Actual volume    : 640 Liter, StdDev: 1.38 Liter
+ETH__SS_PIN==LOW
+[2018-10-22 03:11:49] Error status     : 0
+ETH__SS_PIN==LOW
+[2018-10-22 03:11:49] Writing measurement data to SD Card
+ETH__SS_PIN==LOW
+[2018-10-22 03:11:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(640.00)
+[2018-10-22 03:11:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-10-22 03:11:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-10-22 03:11:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-10-22 04:10:39] Time updated by NTP
+[2018-10-22 04:11:57] Datapoint 6614 received 0.000000
+[2018-10-22 04:11:57] Rain in last 24h from weather station [mm]: 0.00
+ETH__SS_PIN==LOW
+[2018-10-22 04:11:57] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage').State(6.00)
+[2018-10-22 04:11:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage10d').State(-5.00)
+[2018-10-22 04:11:58] Measured distance: 2197.42 mm
+ETH__SS_PIN==LOW
+[2018-10-22 04:11:58] Actual Level     : 202 mm
+ETH__SS_PIN==LOW
+[2018-10-22 04:11:58] Actual volume    : 634 Liter, StdDev: 1.55 Liter
+ETH__SS_PIN==LOW
+[2018-10-22 04:11:58] Error status     : 0
+ETH__SS_PIN==LOW
+[2018-10-22 04:11:58] Writing measurement data to SD Card
+ETH__SS_PIN==LOW
+[2018-10-22 04:11:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(634.00)
+[2018-10-22 04:11:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(98.00)
+[2018-10-22 04:11:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-10-22 04:11:58] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-10-22 05:10:54] Time updated by NTP
+[2018-10-22 05:12:06] Datapoint 6614 received 0.000000
+[2018-10-22 05:12:06] Rain in last 24h from weather station [mm]: 0.00
+ETH__SS_PIN==LOW
+[2018-10-22 05:12:06] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage').State(15.00)
+[2018-10-22 05:12:06] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage10d').State(-2.00)
+[2018-10-22 05:12:06] Measured distance: 2200.24 mm
+ETH__SS_PIN==LOW
+[2018-10-22 05:12:06] Actual Level     : 199 mm
+ETH__SS_PIN==LOW
+[2018-10-22 05:12:06] Actual volume    : 625 Liter, StdDev: 2.98 Liter
+ETH__SS_PIN==LOW
+[2018-10-22 05:12:06] Error status     : 0
+ETH__SS_PIN==LOW
+[2018-10-22 05:12:06] Writing measurement data to SD Card
+ETH__SS_PIN==LOW
+[2018-10-22 05:12:06] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(625.00)
+[2018-10-22 05:12:06] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(97.00)
+[2018-10-22 05:12:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(9.00)
+[2018-10-22 05:12:07] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-10-22 05:12:07] Refilling required
+ETH__SS_PIN==LOW
+[2018-10-22 05:12:07] Refilling on. Duration 60 s
+[2018-10-22 05:12:07] Off-Time: 2018-10-22 05:13:07
+ETH__SS_PIN==LOW
+[2018-10-22 05:13:08] Refilling off, Refilling volume: 20 liter
+[2018-10-22 05:13:08] Writing settings to EEP
+ETH__SS_PIN==LOW
+[2018-10-22 05:14:48] Datapoint 6614 received 0.000000
+[2018-10-22 05:14:48] Rain in last 24h from weather station [mm]: 0.00
+ETH__SS_PIN==LOW
+[2018-10-22 05:14:48] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage').State(16.00)
+[2018-10-22 05:14:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volUsage10d').State(0.00)
+[2018-10-22 05:14:49] Measured distance: 2194.50 mm
+ETH__SS_PIN==LOW
+[2018-10-22 05:14:49] Actual Level     : 205 mm
+ETH__SS_PIN==LOW
+[2018-10-22 05:14:49] Actual volume    : 644 Liter, StdDev: 5.70 Liter
+ETH__SS_PIN==LOW
+[2018-10-22 05:14:49] Error status     : 0
+ETH__SS_PIN==LOW
+[2018-10-22 05:14:49] Writing measurement data to SD Card
+ETH__SS_PIN==LOW
+[2018-10-22 05:14:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_volActual').State(644.00)
+[2018-10-22 05:14:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_rSignalHealth').State(94.00)
+[2018-10-22 05:14:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_prcActual').State(10.00)
+[2018-10-22 05:14:49] GET /xy.exe?antwort=dom.GetObject('HM_ZISTERNE_stError').State(0.00)
+[2018-10-22 05:53:33] Writing headline for measurement data to SD Card
