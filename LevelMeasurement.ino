@@ -252,6 +252,7 @@ int volDiffCalc24h;                //Theoretical change of volume
 unsigned char cntLED=0;            //Counter for LED 
 String inString, IPString;         //Webserver Receive string, IP-Adress string
 unsigned char cntTestFilt=0;       //Testing for filter diagnosis
+byte PulseCntr;                    //Conter for US pulses
 
 //EEP Data
 setting_stream_t SettingsEEP; //EEPData
@@ -412,8 +413,7 @@ void ReceivePulse(void)
 // --- Loop -----------------------------------------------------------------------------------------------------
 void loop()
 {
-  String strLog;
-  byte PulseCntr;
+  String strLog;  
   double _hStdDev;   
 
   //--- 100ms Task -------------------------------------------------------------------
@@ -553,7 +553,7 @@ void loop()
           stPulse = PLS_IDLE;
         }
       }
-    }      
+    } //if pos<100      
     else {
       // Evaluate measured delay times      
       //Capture measurement time
@@ -620,7 +620,7 @@ void loop()
           //Error detected
           SetError(ERRNUM_SIGNAL_HEALTH,true);
           
-          //Stop measuerement
+          //Stop measurement
           stMeasAct=0;
         }
       }        
@@ -646,6 +646,8 @@ void loop()
 
       //Write Log File
       #if LOGLEVEL & LOGLVL_NORMAL
+        WriteSystemLog("Pulse counter: "+String(PulseCntr));
+        WriteSystemLog("Array position: "+String(pos));
         WriteSystemLog("Measured distance: " + String(hMean) +" mm");
         WriteSystemLog("Actual Level     : " + String(hWaterActual) + " mm");
         WriteSystemLog("Actual volume    : " + String(volActual) + " Liter, StdDev: " +String(volStdDev) + " Liter");
@@ -661,7 +663,7 @@ void loop()
       //Calculate rain within last 1h
       volRain1h = max(volRain24h-volRainDiag24h_old,0);
 
-       #if LOGLEVEL & LOGLVL_NORMAL
+      #if LOGLEVEL & LOGLVL_NORMAL
         WriteSystemLog("Rain in last 24h from weather station [mm]: "+String(volRain24h));
         WriteSystemLog("Rain in last  1h from weather station [mm]: "+String(volRain1h));
       #endif
@@ -713,13 +715,9 @@ void loop()
       if ((day()==1) && (hour()==13)) {
         //Reset excersice bit for next month
         stVentEx=0;
-      }
-      #if TEST_FILT>0
-        // Directly start next measurement
-        stMeasAct=1;
-      #endif
-    }        
-  }   
+      }      
+    } // if pos==100        
+  }    
   
   //--- 60s Task ---------------------------------------------------------------------
   if (Time_60s > 0) {
@@ -1530,7 +1528,7 @@ void MonitorWebServer(void)
             client2.print(SettingsEEP.settings.dvolRefill);            
             client2.println(F("</td><td> <input type='text' name='dvolRefillSet'></td></tr>"));                
 
-            client2.print(F("<tr><td>Minimal erforderliche Regenmenge in 24h fuer Filterdiagnose [mm]: </td><td>"));
+            client2.print(F("<tr><td>Minimal erforderliche Regenmenge in 1h fuer Filterdiagnose [mm]: </td><td>"));
             client2.print(SettingsEEP.settings.volRainMin);            
             client2.println(F("</td><td> <input type='text' name='volRainMin'></td></tr>"));                
             
@@ -1647,7 +1645,7 @@ void ReadEEPData(void)
    SettingsEEP.settings.aRoof=100;                  //Area of roof [m^2]
    SettingsEEP.settings.prcFiltEff=90;              //Filter efficiency [%]
    SettingsEEP.settings.prcVolDvtThres=20;          //Threshold for diagnosis
-   SettingsEEP.settings.volRainMin=2;               //Minimum 2Liter/24h to activate filter diagnosis
+   SettingsEEP.settings.volRainMin=2;               //Minimum 2Liter/1h to activate filter diagnosis
    SettingsEEP.settings.tiRefillReset=timeClient.getEpochTime();
 
     WriteEEPData();
