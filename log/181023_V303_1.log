@@ -1,0 +1,533 @@
+[2018-10-22 15:30:48] Time updated by NTP
+[2018-10-22 15:32:23] Pulse counter: 0
+[2018-10-22 15:32:23] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 15:32:23] Array position: 100
+[2018-10-22 15:32:23] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 15:32:23] Measured distance: 2193.00 mm
+[2018-10-22 15:32:23] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 15:32:23] Actual Level     : 207 mm
+[2018-10-22 15:32:23] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 15:32:23] Actual volume    : 650 Liter, StdDev: 0.00 Liter
+[2018-10-22 15:32:23] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 15:32:23] Error status     : 0
+[2018-10-22 15:32:23] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-22 15:32:23] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 15:32:23] Rain in last  1h from weather station [mm]: 0.00
+[2018-10-22 15:32:23] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 15:32:23] Writing measurement data to SD Card
+[2018-10-22 15:32:23] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 16:31:03] Time updated by NTP
+[2018-10-22 16:32:31] Pulse counter: 0
+[2018-10-22 16:32:31] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 16:32:31] Array position: 100
+[2018-10-22 16:32:31] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 16:32:31] Measured distance: 2193.00 mm
+[2018-10-22 16:32:31] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 16:32:31] Actual Level     : 207 mm
+[2018-10-22 16:32:31] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 16:32:31] Actual volume    : 650 Liter, StdDev: 0.00 Liter
+[2018-10-22 16:32:31] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 16:32:31] Error status     : 0
+[2018-10-22 16:32:32] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-22 16:32:32] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 16:32:32] Rain in last  1h from weather station [mm]: 0.00
+[2018-10-22 16:32:32] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 16:32:32] Writing measurement data to SD Card
+[2018-10-22 16:32:32] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 17:31:16] Time updated by NTP
+[2018-10-22 17:32:39] Pulse counter: 0
+[2018-10-22 17:32:39] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 17:32:39] Array position: 100
+[2018-10-22 17:32:39] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 17:32:39] Measured distance: 2194.00 mm
+[2018-10-22 17:32:39] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 17:32:39] Actual Level     : 206 mm
+[2018-10-22 17:32:39] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 17:32:39] Actual volume    : 647 Liter, StdDev: 0.00 Liter
+[2018-10-22 17:32:39] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 17:32:39] Error status     : 0
+[2018-10-22 17:32:40] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-22 17:32:40] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 17:32:40] Rain in last  1h from weather station [mm]: 0.00
+[2018-10-22 17:32:40] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 17:32:40] Writing measurement data to SD Card
+[2018-10-22 17:32:40] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 18:32:46] Pulse counter: 0
+[2018-10-22 18:32:46] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 18:32:46] Array position: 100
+[2018-10-22 18:32:46] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 18:32:46] Measured distance: 2195.90 mm
+[2018-10-22 18:32:46] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 18:32:46] Actual Level     : 204 mm
+[2018-10-22 18:32:47] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 18:32:47] Actual volume    : 640 Liter, StdDev: 0.94 Liter
+[2018-10-22 18:32:47] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 18:32:47] Error status     : 0
+[2018-10-22 18:32:47] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-22 18:32:47] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 18:32:47] Rain in last  1h from weather station [mm]: 0.00
+[2018-10-22 18:32:47] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 18:32:47] Writing measurement data to SD Card
+[2018-10-22 18:32:47] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 19:31:45] Time updated by NTP
+[2018-10-22 19:32:56] Pulse counter: 0
+[2018-10-22 19:32:56] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 19:32:56] Array position: 100
+[2018-10-22 19:32:56] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 19:32:56] Measured distance: 2195.92 mm
+[2018-10-22 19:32:56] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 19:32:56] Actual Level     : 204 mm
+[2018-10-22 19:32:56] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 19:32:56] Actual volume    : 640 Liter, StdDev: 0.85 Liter
+[2018-10-22 19:32:56] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 19:32:56] Error status     : 0
+[2018-10-22 19:32:57] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-22 19:32:57] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 19:32:57] Rain in last  1h from weather station [mm]: 0.00
+[2018-10-22 19:32:57] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 19:32:57] Writing measurement data to SD Card
+[2018-10-22 19:32:57] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 20:31:59] Time updated by NTP
+[2018-10-22 20:33:04] Pulse counter: 0
+[2018-10-22 20:33:04] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 20:33:04] Array position: 100
+[2018-10-22 20:33:04] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 20:33:04] Measured distance: 2197.00 mm
+[2018-10-22 20:33:04] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 20:33:04] Actual Level     : 203 mm
+[2018-10-22 20:33:04] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 20:33:04] Actual volume    : 637 Liter, StdDev: 0.00 Liter
+[2018-10-22 20:33:04] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 20:33:04] Error status     : 0
+[2018-10-22 20:33:04] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-22 20:33:04] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 20:33:04] Rain in last  1h from weather station [mm]: 0.00
+[2018-10-22 20:33:04] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 20:33:04] Writing measurement data to SD Card
+[2018-10-22 20:33:04] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 21:32:13] Time updated by NTP
+[2018-10-22 21:33:12] Pulse counter: 0
+[2018-10-22 21:33:12] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 21:33:12] Array position: 100
+[2018-10-22 21:33:12] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 21:33:12] Measured distance: 2198.00 mm
+[2018-10-22 21:33:12] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 21:33:12] Actual Level     : 202 mm
+[2018-10-22 21:33:12] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 21:33:12] Actual volume    : 634 Liter, StdDev: 0.00 Liter
+[2018-10-22 21:33:12] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 21:33:12] Error status     : 0
+[2018-10-22 21:33:13] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-22 21:33:13] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 21:33:13] Rain in last  1h from weather station [mm]: 0.00
+[2018-10-22 21:33:13] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 21:33:13] Writing measurement data to SD Card
+[2018-10-22 21:33:13] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 22:32:28] Time updated by NTP
+[2018-10-22 22:33:21] Pulse counter: 0
+[2018-10-22 22:33:21] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 22:33:21] Array position: 100
+[2018-10-22 22:33:21] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 22:33:21] Measured distance: 2200.00 mm
+[2018-10-22 22:33:21] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 22:33:21] Actual Level     : 200 mm
+[2018-10-22 22:33:21] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 22:33:21] Actual volume    : 628 Liter, StdDev: 0.00 Liter
+[2018-10-22 22:33:21] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 22:33:21] Error status     : 0
+[2018-10-22 22:33:21] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-22 22:33:21] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 22:33:21] Rain in last  1h from weather station [mm]: 0.00
+[2018-10-22 22:33:21] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 22:33:21] Writing measurement data to SD Card
+[2018-10-22 22:33:21] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 23:32:41] Time updated by NTP
+[2018-10-22 23:33:28] Pulse counter: 0
+[2018-10-22 23:33:28] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 23:33:28] Array position: 100
+[2018-10-22 23:33:28] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 23:33:28] Measured distance: 2200.00 mm
+[2018-10-22 23:33:28] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 23:33:28] Actual Level     : 200 mm
+[2018-10-22 23:33:29] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 23:33:29] Actual volume    : 628 Liter, StdDev: 0.00 Liter
+[2018-10-22 23:33:29] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 23:33:29] Error status     : 0
+[2018-10-22 23:33:29] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-22 23:33:29] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 23:33:29] Rain in last  1h from weather station [mm]: 0.00
+[2018-10-22 23:33:29] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-22 23:33:29] Writing measurement data to SD Card
+[2018-10-22 23:33:29] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 00:32:56] Time updated by NTP
+[2018-10-23 00:33:37] Pulse counter: 0
+[2018-10-23 00:33:37] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 00:33:37] Array position: 100
+[2018-10-23 00:33:37] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 00:33:37] Measured distance: 2200.00 mm
+[2018-10-23 00:33:37] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 00:33:37] Actual Level     : 200 mm
+[2018-10-23 00:33:37] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 00:33:37] Actual volume    : 628 Liter, StdDev: 0.00 Liter
+[2018-10-23 00:33:37] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 00:33:37] Error status     : 0
+[2018-10-23 00:33:37] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-23 00:33:38] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 00:33:38] Rain in last  1h from weather station [mm]: 0.00
+[2018-10-23 00:33:38] Writing measurement data to SD Card
+[2018-10-23 00:33:38] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 01:33:10] Time updated by NTP
+[2018-10-23 01:33:46] Pulse counter: 0
+[2018-10-23 01:33:46] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 01:33:46] Array position: 100
+[2018-10-23 01:33:46] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 01:33:46] Measured distance: 2200.00 mm
+[2018-10-23 01:33:46] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 01:33:46] Actual Level     : 200 mm
+[2018-10-23 01:33:46] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 01:33:46] Actual volume    : 628 Liter, StdDev: 0.00 Liter
+[2018-10-23 01:33:46] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 01:33:46] Error status     : 0
+[2018-10-23 01:33:46] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-23 01:33:46] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 01:33:46] Rain in last  1h from weather station [mm]: 0.00
+[2018-10-23 01:33:46] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 01:33:46] Writing measurement data to SD Card
+[2018-10-23 01:33:46] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 02:32:23] Time updated by NTP
+[2018-10-23 02:33:53] Pulse counter: 0
+[2018-10-23 02:33:53] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 02:33:53] Array position: 100
+[2018-10-23 02:33:53] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 02:33:53] Measured distance: 2200.00 mm
+[2018-10-23 02:33:53] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 02:33:53] Actual Level     : 200 mm
+[2018-10-23 02:33:53] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 02:33:53] Actual volume    : 628 Liter, StdDev: 0.00 Liter
+[2018-10-23 02:33:53] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 02:33:53] Error status     : 0
+[2018-10-23 02:33:54] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-23 02:33:54] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 02:33:54] Rain in last  1h from weather station [mm]: 0.00
+[2018-10-23 02:33:54] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 02:33:54] Writing measurement data to SD Card
+[2018-10-23 02:33:54] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 03:32:38] Time updated by NTP
+[2018-10-23 03:34:02] Pulse counter: 0
+[2018-10-23 03:34:02] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 03:34:02] Array position: 100
+[2018-10-23 03:34:02] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 03:34:02] Measured distance: 2200.00 mm
+[2018-10-23 03:34:02] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 03:34:02] Actual Level     : 200 mm
+[2018-10-23 03:34:02] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 03:34:02] Actual volume    : 628 Liter, StdDev: 0.00 Liter
+[2018-10-23 03:34:02] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 03:34:02] Error status     : 0
+[2018-10-23 03:34:02] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-23 03:34:02] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 03:34:02] Rain in last  1h from weather station [mm]: 0.00
+[2018-10-23 03:34:02] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 03:34:02] Writing measurement data to SD Card
+[2018-10-23 03:34:02] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 04:32:51] Time updated by NTP
+[2018-10-23 04:34:09] Pulse counter: 0
+[2018-10-23 04:34:09] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 04:34:09] Array position: 100
+[2018-10-23 04:34:09] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 04:34:09] Measured distance: 2201.00 mm
+[2018-10-23 04:34:09] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 04:34:09] Actual Level     : 199 mm
+[2018-10-23 04:34:09] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 04:34:09] Actual volume    : 625 Liter, StdDev: 0.00 Liter
+[2018-10-23 04:34:10] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 04:34:10] Error status     : 0
+[2018-10-23 04:34:10] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-23 04:34:10] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 04:34:10] Rain in last  1h from weather station [mm]: 0.00
+[2018-10-23 04:34:10] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 04:34:10] Writing measurement data to SD Card
+[2018-10-23 04:34:10] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 04:34:10] Refilling required due to level threshold
+[2018-10-23 04:34:10] Refilling on. Duration 60 s
+[2018-10-23 04:34:10] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 04:34:10] Off-Time: 2018-10-23 04:35:10
+[2018-10-23 04:35:11] Refilling off, Refilling volume: 20 liter
+[2018-10-23 04:35:11] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 04:35:11] Writing settings to EEP
+[2018-10-23 04:36:51] Pulse counter: 0
+[2018-10-23 04:36:51] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 04:36:51] Array position: 100
+[2018-10-23 04:36:51] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 04:36:51] Measured distance: 2194.72 mm
+[2018-10-23 04:36:51] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 04:36:51] Actual Level     : 205 mm
+[2018-10-23 04:36:51] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 04:36:51] Actual volume    : 644 Liter, StdDev: 1.89 Liter
+[2018-10-23 04:36:51] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 04:36:51] Error status     : 0
+[2018-10-23 04:36:52] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-23 04:36:52] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 04:36:52] Rain in last  1h from weather station [mm]: 0.00
+[2018-10-23 04:36:52] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 04:36:52] Writing measurement data to SD Card
+[2018-10-23 04:36:52] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 05:33:06] Time updated by NTP
+[2018-10-23 05:34:18] Pulse counter: 0
+[2018-10-23 05:34:18] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 05:34:18] Array position: 100
+[2018-10-23 05:34:18] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 05:34:18] Measured distance: 2197.00 mm
+[2018-10-23 05:34:18] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 05:34:18] Actual Level     : 203 mm
+[2018-10-23 05:34:18] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 05:34:18] Actual volume    : 637 Liter, StdDev: 0.00 Liter
+[2018-10-23 05:34:18] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 05:34:18] Error status     : 0
+[2018-10-23 05:34:18] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-23 05:34:19] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 05:34:19] Rain in last  1h from weather station [mm]: 0.00
+[2018-10-23 05:34:19] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 05:34:19] Writing measurement data to SD Card
+[2018-10-23 05:34:19] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 06:33:20] Time updated by NTP
+[2018-10-23 06:34:27] Pulse counter: 0
+[2018-10-23 06:34:27] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 06:34:27] Array position: 100
+[2018-10-23 06:34:27] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 06:34:27] Measured distance: 2197.68 mm
+[2018-10-23 06:34:27] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 06:34:27] Actual Level     : 202 mm
+[2018-10-23 06:34:27] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 06:34:27] Actual volume    : 634 Liter, StdDev: 1.47 Liter
+[2018-10-23 06:34:27] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 06:34:27] Error status     : 0
+[2018-10-23 06:34:27] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-23 06:34:27] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 06:34:27] Rain in last  1h from weather station [mm]: 0.00
+[2018-10-23 06:34:27] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 06:34:27] Writing measurement data to SD Card
+[2018-10-23 06:34:27] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 07:34:27] Pulse counter: 0
+[2018-10-23 07:34:27] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 07:34:27] Array position: 100
+[2018-10-23 07:34:27] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 07:34:27] Measured distance: 2197.66 mm
+[2018-10-23 07:34:27] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 07:34:27] Actual Level     : 202 mm
+[2018-10-23 07:34:27] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 07:34:27] Actual volume    : 634 Liter, StdDev: 1.49 Liter
+[2018-10-23 07:34:27] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 07:34:27] Error status     : 0
+[2018-10-23 07:34:28] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-23 07:34:28] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 07:34:28] Rain in last  1h from weather station [mm]: 0.00
+[2018-10-23 07:34:28] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 07:34:28] Writing measurement data to SD Card
+[2018-10-23 07:34:28] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 08:33:48] Time updated by NTP
+[2018-10-23 08:34:43] Pulse counter: 0
+[2018-10-23 08:34:43] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 08:34:43] Array position: 100
+[2018-10-23 08:34:43] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 08:34:43] Measured distance: 2197.22 mm
+[2018-10-23 08:34:43] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 08:34:43] Actual Level     : 202 mm
+[2018-10-23 08:34:43] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 08:34:43] Actual volume    : 634 Liter, StdDev: 1.30 Liter
+[2018-10-23 08:34:43] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 08:34:43] Error status     : 0
+[2018-10-23 08:34:43] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-23 08:34:43] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 08:34:43] Rain in last  1h from weather station [mm]: 0.00
+[2018-10-23 08:34:43] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 08:34:43] Writing measurement data to SD Card
+[2018-10-23 08:34:43] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 09:34:03] Time updated by NTP
+[2018-10-23 09:34:51] Pulse counter: 0
+[2018-10-23 09:34:51] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 09:34:51] Array position: 100
+[2018-10-23 09:34:51] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 09:34:51] Measured distance: 2197.50 mm
+[2018-10-23 09:34:51] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 09:34:51] Actual Level     : 202 mm
+[2018-10-23 09:34:51] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 09:34:51] Actual volume    : 634 Liter, StdDev: 1.57 Liter
+[2018-10-23 09:34:51] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 09:34:51] Error status     : 0
+[2018-10-23 09:34:52] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-23 09:34:52] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 09:34:52] Rain in last  1h from weather station [mm]: 0.00
+[2018-10-23 09:34:52] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 09:34:52] Writing measurement data to SD Card
+[2018-10-23 09:34:52] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 10:34:16] Time updated by NTP
+[2018-10-23 10:34:59] Pulse counter: 0
+[2018-10-23 10:34:59] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 10:34:59] Array position: 100
+[2018-10-23 10:34:59] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 10:34:59] Measured distance: 2197.00 mm
+[2018-10-23 10:34:59] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 10:34:59] Actual Level     : 203 mm
+[2018-10-23 10:34:59] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 10:34:59] Actual volume    : 637 Liter, StdDev: 0.00 Liter
+[2018-10-23 10:34:59] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 10:34:59] Error status     : 0
+[2018-10-23 10:35:00] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-23 10:35:00] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 10:35:00] Rain in last  1h from weather station [mm]: 0.00
+[2018-10-23 10:35:00] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 10:35:00] Writing measurement data to SD Card
+[2018-10-23 10:35:00] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 11:34:31] Time updated by NTP
+[2018-10-23 11:35:08] Pulse counter: 0
+[2018-10-23 11:35:08] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 11:35:08] Array position: 100
+[2018-10-23 11:35:08] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 11:35:08] Measured distance: 2197.00 mm
+[2018-10-23 11:35:08] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 11:35:08] Actual Level     : 203 mm
+[2018-10-23 11:35:08] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 11:35:08] Actual volume    : 637 Liter, StdDev: 0.00 Liter
+[2018-10-23 11:35:08] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 11:35:08] Error status     : 0
+[2018-10-23 11:35:08] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-23 11:35:08] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 11:35:08] Rain in last  1h from weather station [mm]: 0.00
+[2018-10-23 11:35:08] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 11:35:08] Writing measurement data to SD Card
+[2018-10-23 11:35:08] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 12:33:45] Time updated by NTP
+[2018-10-23 12:35:16] Pulse counter: 0
+[2018-10-23 12:35:16] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 12:35:16] Array position: 100
+[2018-10-23 12:35:16] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 12:35:16] Measured distance: 2197.00 mm
+[2018-10-23 12:35:16] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 12:35:16] Actual Level     : 203 mm
+[2018-10-23 12:35:16] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 12:35:16] Actual volume    : 637 Liter, StdDev: 0.00 Liter
+[2018-10-23 12:35:16] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 12:35:16] Error status     : 0
+[2018-10-23 12:35:17] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-23 12:35:17] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 12:35:17] Rain in last  1h from weather station [mm]: 0.00
+[2018-10-23 12:35:17] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 12:35:17] Writing measurement data to SD Card
+[2018-10-23 12:35:17] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 13:33:59] Time updated by NTP
+[2018-10-23 13:35:24] Pulse counter: 0
+[2018-10-23 13:35:24] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 13:35:24] Array position: 100
+[2018-10-23 13:35:24] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 13:35:24] Measured distance: 2196.86 mm
+[2018-10-23 13:35:24] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 13:35:24] Actual Level     : 203 mm
+[2018-10-23 13:35:24] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 13:35:24] Actual volume    : 637 Liter, StdDev: 1.09 Liter
+[2018-10-23 13:35:24] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 13:35:24] Error status     : 0
+[2018-10-23 13:35:24] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-23 13:35:24] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 13:35:24] Rain in last  1h from weather station [mm]: 0.00
+[2018-10-23 13:35:24] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 13:35:24] Writing measurement data to SD Card
+[2018-10-23 13:35:24] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 14:34:13] Time updated by NTP
+[2018-10-23 14:35:32] Pulse counter: 0
+[2018-10-23 14:35:32] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 14:35:32] Array position: 100
+[2018-10-23 14:35:32] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 14:35:32] Measured distance: 2196.92 mm
+[2018-10-23 14:35:32] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 14:35:32] Actual Level     : 203 mm
+[2018-10-23 14:35:32] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 14:35:32] Actual volume    : 637 Liter, StdDev: 0.85 Liter
+[2018-10-23 14:35:32] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 14:35:32] Error status     : 0
+[2018-10-23 14:35:33] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-23 14:35:33] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 14:35:33] Rain in last  1h from weather station [mm]: 0.00
+[2018-10-23 14:35:33] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 14:35:33] Writing measurement data to SD Card
+[2018-10-23 14:35:33] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 15:34:28] Time updated by NTP
+[2018-10-23 15:35:41] Pulse counter: 0
+[2018-10-23 15:35:41] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 15:35:41] Array position: 100
+[2018-10-23 15:35:41] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 15:35:41] Measured distance: 2197.00 mm
+[2018-10-23 15:35:41] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 15:35:41] Actual Level     : 203 mm
+[2018-10-23 15:35:41] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 15:35:41] Actual volume    : 637 Liter, StdDev: 0.00 Liter
+[2018-10-23 15:35:41] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 15:35:41] Error status     : 0
+[2018-10-23 15:35:41] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-23 15:35:41] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 15:35:41] Rain in last  1h from weather station [mm]: 0.00
+[2018-10-23 15:35:41] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 15:35:41] Writing measurement data to SD Card
+[2018-10-23 15:35:42] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 16:34:41] Time updated by NTP
+[2018-10-23 16:35:48] Pulse counter: 0
+[2018-10-23 16:35:49] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 16:35:48] Array position: 100
+[2018-10-23 16:35:49] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 16:35:49] Measured distance: 2197.00 mm
+[2018-10-23 16:35:49] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 16:35:49] Actual Level     : 203 mm
+[2018-10-23 16:35:49] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 16:35:49] Actual volume    : 637 Liter, StdDev: 0.00 Liter
+[2018-10-23 16:35:49] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 16:35:49] Error status     : 0
+[2018-10-23 16:35:49] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-23 16:35:49] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 16:35:49] Rain in last  1h from weather station [mm]: 0.00
+[2018-10-23 16:35:49] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 16:35:49] Writing measurement data to SD Card
+[2018-10-23 16:35:49] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 17:34:56] Time updated by NTP
+[2018-10-23 17:35:57] Pulse counter: 0
+[2018-10-23 17:35:57] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 17:35:57] Array position: 100
+[2018-10-23 17:35:57] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 17:35:57] Measured distance: 2202.00 mm
+[2018-10-23 17:35:57] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 17:35:57] Actual Level     : 198 mm
+[2018-10-23 17:35:57] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 17:35:57] Actual volume    : 622 Liter, StdDev: 0.00 Liter
+[2018-10-23 17:35:57] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 17:35:57] Error status     : 0
+[2018-10-23 17:35:58] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-23 17:35:58] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 17:35:58] Rain in last  1h from weather station [mm]: 0.00
+[2018-10-23 17:35:58] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 17:35:58] Writing measurement data to SD Card
+[2018-10-23 17:35:58] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 17:35:58] Refilling required due to level threshold
+[2018-10-23 17:35:58] Refilling on. Duration 60 s
+[2018-10-23 17:35:58] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 17:35:58] Off-Time: 2018-10-23 17:36:58
+[2018-10-23 17:36:58] Refilling off, Refilling volume: 20 liter
+[2018-10-23 17:36:59] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 17:36:59] Writing settings to EEP
+[2018-10-23 17:38:39] Pulse counter: 0
+[2018-10-23 17:38:39] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 17:38:39] Array position: 100
+[2018-10-23 17:38:39] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 17:38:39] Measured distance: 2195.30 mm
+[2018-10-23 17:38:39] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 17:38:39] Actual Level     : 204 mm
+[2018-10-23 17:38:39] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 17:38:39] Actual volume    : 640 Liter, StdDev: 2.96 Liter
+[2018-10-23 17:38:39] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 17:38:39] Error status     : 0
+[2018-10-23 17:38:40] Rain in last 24h from weather station [mm]: 0.00
+[2018-10-23 17:38:40] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 17:38:40] Rain in last  1h from weather station [mm]: 0.00
+[2018-10-23 17:38:40] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 17:38:40] Writing measurement data to SD Card
+[2018-10-23 17:38:40] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access
+[2018-10-23 18:03:29] Writing headline for measurement data to SD Card
+[2018-10-23 18:03:29] Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access

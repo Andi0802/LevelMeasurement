@@ -1425,9 +1425,12 @@ void MonitorWebServer(void)
             client2.print(F("<table><tr><td>Diagnosezeit (UTC)</td><td>"));
             client2.print(DiagTimeStr);
             client2.print(F("</td></tr>"));            
+            client2.print(F("<tr><td>Regenmenge 1h [mm]</td><td>"));
+            client2.print(String(volRain1h));
+            client2.print(F("</td></tr>"));  
             client2.print(F("<tr><td>Regenmenge 24h [mm]</td><td>"));
             client2.print(String(volRainDiag24h));
-            client2.print(F("</td></tr>"));  
+            client2.print(F("</td></tr>"));              
             client2.print(F("<tr><td>Nachspeisung 24h [Liter] </td><td>"));
             client2.print(String(volRefillDiag24h));
             client2.print(F("</td></tr>"));          
