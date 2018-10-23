@@ -153,7 +153,8 @@ struct settings_t {
   unsigned long volRefillTot;  //Refilling volume total [l]
   unsigned long tiRefillReset; //Timestamp of last reset volRefillTot
   int aRoof;                   //Surface of roof
-  int prcFiltEff;              //filter efficiency in % (1-overflow) 
+  int prcFiltEff_x[5];         //filter efficiency in x-values: rain in 1h [mm]
+  int prcFiltEff_y[5];         //filter efficiency in y-values: efficiency=(1-overflow) [%]
   int prcVolDvtThres;          //Threshold for filter clogging error
   int volRainMin;              //Minimum Rain Volume in 24h to activate filter diagnosis
   int volUsage24h[NUM_USAGE_AVRG]; //Last values of usage calculation
@@ -260,6 +261,7 @@ unsigned char cntLED=0;            //Counter for LED
 String inString, IPString;         //Webserver Receive string, IP-Adress string
 unsigned char cntTestFilt=0;       //Testing for filter diagnosis
 byte PulseCntr;                    //Counter for US pulses
+int idxCur;                        //Index for Curve
 
 //EEP Data
 setting_stream_t SettingsEEP;      //EEPData
@@ -836,6 +838,7 @@ void CheckFilter() {
     //Filter diagnosis
   
     long _volDvt24h;      //Deviation between theoretical change and real change    
+    int _prcFiltEff;      //filter efficency based on 1h rain value
       
     //Remember type of evaluation
     stFilterCheck = FILT_DIAG;
@@ -854,7 +857,8 @@ void CheckFilter() {
     volRainDiag24h = volRain24h;
     
     //Theoretical volume change
-    volDiffCalc24h = volRainDiag24h*SettingsEEP.settings.aRoof*SettingsEEP.settings.prcFiltEff/100 + volRefillDiag24h - volUsageAvrg10d;
+    _prcFiltEff = Curve(SettingsEEP.settings.prcFiltEff_x,SettingsEEP.settings.prcFiltEff_y,5,volRain1h);
+    volDiffCalc24h = volRainDiag24h*SettingsEEP.settings.aRoof*_prcFiltEff/100 + volRefillDiag24h - volUsageAvrg10d;
     
     //Difference between calculated and real value
     _volDvt24h = volDiffCalc24h - volDiffDiag24h;
@@ -1327,6 +1331,7 @@ void MonitorWebServer(void)
   unsigned int stOption;
   byte clientBuf[SD_BLOCK_SIZE];
   int clientCount = 0;
+  unsigned char _id;
 
   //Web server code to change settings
   // Create a client connection
@@ -1368,9 +1373,12 @@ void MonitorWebServer(void)
           stOption |= getOption(inString, "volRefillSet", 10, 50, &SettingsEEP.settings.volRefill) << 8;
           stOption |= getOption(inString, "dvolRefillSet", 2, 20, &SettingsEEP.settings.dvolRefill) << 9;          
           stOption |= getOption(inString, "prcVolDvtThres", 0, 500, &SettingsEEP.settings.prcVolDvtThres) << 10;          
-          stOption |= getOption(inString, "aRoof", 0, 500, &SettingsEEP.settings.aRoof) << 11;
-          stOption |= getOption(inString, "prcFiltEff", 0, 65535, &SettingsEEP.settings.prcFiltEff) << 12;
+          stOption |= getOption(inString, "aRoof", 0, 500, &SettingsEEP.settings.aRoof) << 11;          
+          stOption |= getOption(inString, "idxCur", 0, 100, &idxCur) << 15;
+          stOption |= getOption(inString, "prcFiltEff", 0, 4, &SettingsEEP.settings.prcFiltEff_y[idxCur]) << 12;
           stOption |= getOption(inString, "volRainMin", 0, 10, &SettingsEEP.settings.volRainMin) << 13;
+          stOption |= getOption(inString, "volRainFilt1h", 0, 100, &SettingsEEP.settings.prcFiltEff_x[idxCur]) << 14;
+          
           
    
           //New option received
@@ -1564,8 +1572,26 @@ void MonitorWebServer(void)
             client2.print(SettingsEEP.settings.aRoof);            
             client2.println(F("</td><td> <input type='text' name='aRoof'></td></tr>"));
 
+            client2.print(F("<tr><td>Index Kurve [-]: </td><td>"));
+            client2.print(idxCur);            
+            client2.println(F("</td><td> <input type='text' name='idxCur'></td></tr>"));
+
+            client2.print(F("<tr><td>Regenmenge Filter [Liter/h]: </td><td>"));
+            for (_id=0;_id<5;_id++) {
+              client2.print(SettingsEEP.settings.prcFiltEff_x[_id]);            
+              if (_id<4) {
+                client2.print(F(", "));
+              }
+            }
+            client2.println(F("</td><td> <input type='text' name='volRainFilt1h'></td></tr>"));
+            
             client2.print(F("<tr><td>Filtereffizienz [%]: </td><td>"));
-            client2.print(SettingsEEP.settings.prcFiltEff);            
+            for (_id=0;_id<5;_id++) {
+              client2.print(SettingsEEP.settings.prcFiltEff_y[_id]);            
+              if (_id<4) {
+                client2.print(F(", "));
+              }
+            }          
             client2.println(F("</td><td> <input type='text' name='prcFiltEff'></td></tr>"));
             
             client2.print(F("<tr><td>Schwellwert Diagnose Filter [%]: </td><td>"));
@@ -1696,7 +1722,17 @@ void ReadEEPData(void)
    SettingsEEP.settings.dvolRefill = 20;            //Mass flow of refiller [l/sec]  
    SettingsEEP.settings.volRefillTot=0;             //Refilling volume total [l]
    SettingsEEP.settings.aRoof=100;                  //Area of roof [m^2]
-   SettingsEEP.settings.prcFiltEff=90;              //Filter efficiency [%]
+   //Filter efficiency [%]
+   SettingsEEP.settings.prcFiltEff_x[0]=5;
+   SettingsEEP.settings.prcFiltEff_x[1]=6;
+   SettingsEEP.settings.prcFiltEff_x[2]=7;
+   SettingsEEP.settings.prcFiltEff_x[3]=10;
+   SettingsEEP.settings.prcFiltEff_x[4]=20;
+   SettingsEEP.settings.prcFiltEff_y[0]=100;
+   SettingsEEP.settings.prcFiltEff_y[1]=95;
+   SettingsEEP.settings.prcFiltEff_y[2]=90;
+   SettingsEEP.settings.prcFiltEff_y[3]=40;
+   SettingsEEP.settings.prcFiltEff_y[4]=20;
    SettingsEEP.settings.prcVolDvtThres=20;          //Threshold for diagnosis
    SettingsEEP.settings.volRainMin=2;               //Minimum 2Liter/1h to activate filter diagnosis
    SettingsEEP.settings.tiRefillReset=timeClient.getEpochTime();
@@ -2004,6 +2040,33 @@ void SetSystemLED(bool state)
     //Switch off
     digitalWrite(MEASLED_PIN,_colorPinState);
   }
+}
+
+int Curve(int x[],int y[], int siz, int xi)
+//Curve to interpolate
+{
+  unsigned char _i;
+  float _fac;
+  
+  //Find x-position _i which x[x_i]
+  for (_i=0;_i<siz;_i++) {
+    if (xi<x[_i])
+    break;
+  }
+
+  //extrapolate lower limit constant
+  if (_i==0) {
+    return y[0];
+  }
+
+  //extrapolate upper limit constant
+  if (_i==siz-1) {
+    return y[siz-1];
+  }
+
+  //interpolate
+  _fac = (xi-x[_i-1])/(x[_i]-x[_i-1]);
+  return round(y[_i-1] + _fac*(y[_i]-y[_i-1]));  
 }
 
 void Workaround_CS_ETH2SD()
