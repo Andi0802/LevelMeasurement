@@ -1375,7 +1375,7 @@ void MonitorWebServer(void)
           stOption |= getOption(inString, "prcVolDvtThres", 0, 500, &SettingsEEP.settings.prcVolDvtThres) << 10;          
           stOption |= getOption(inString, "aRoof", 0, 500, &SettingsEEP.settings.aRoof) << 11;          
           stOption |= getOption(inString, "idxCur", 0, 100, &idxCur) << 15;
-          stOption |= getOption(inString, "prcFiltEff", 0, 4, &SettingsEEP.settings.prcFiltEff_y[idxCur]) << 12;
+          stOption |= getOption(inString, "prcFiltEff", 0, 100, &SettingsEEP.settings.prcFiltEff_y[idxCur]) << 12;
           stOption |= getOption(inString, "volRainMin", 0, 10, &SettingsEEP.settings.volRainMin) << 13;
           stOption |= getOption(inString, "volRainFilt1h", 0, 100, &SettingsEEP.settings.prcFiltEff_x[idxCur]) << 14;
           
