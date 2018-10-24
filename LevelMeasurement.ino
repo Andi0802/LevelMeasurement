@@ -238,25 +238,26 @@ unsigned char stFiltChkErr;        //Result filter check
 float volRainDiag24h;              //Rain in 24h for Diagnosis
 float volRainDiag24h_old;          //Rain in 24h for Diagnosis 1 h ago
 float volRain1h;                   //Rain in last 1h for Diagnosis
-unsigned long volRefillFilt1h;      //Stored value of Refilling volume 24h past
+unsigned long volRefillFilt24h;    //Stored value of Refilling volume 24h past
+unsigned long volRefillFilt1h;     //Stored value of Refilling volume 1h past
 unsigned int  volActualFilt24h=0;  //Stored actual reservoir volume 24h past
 unsigned int  volActualFilt1h=0;   //Stored actual reservoir volume 1h past
 unsigned int  volUsageDiag24h;     //Water usage in 24h for Diagnosis
 unsigned int  volRefill24h;        //Refilled volume in 24h
-unsigned int  volRefillDiag24h;    //Refilled volume in 24h for Diagnosis
+unsigned int  volRefillDiag1h;     //Refilled volume in 1h for Diagnosis
 unsigned int  volOld;              //Old volume for tendency 
 int volDiff1h;                     //Volume change in 1h (tendency)
 float volRain24h;                  //Rain in last 24h
 int volDiff24h;                    //Difference volume measurement in 24h
-int volDiffDiag24h;                //Difference volume measurement in 24h for Diagnosis
+int volDiffDiag1h;                 //Difference volume measurement in 1h for Diagnosis
 int volUsageAvrg10d;               //10 days average of daily water usage
 int volUsageMax10d=-32768;         //Maximum out of 10days
 int volUsageMin10d=32767;          //Minimum out of 10 days
 unsigned char iDay;                //Day counter for moving average
 String UsageTimeStr;               //String of last calculation water usage
 String DiagTimeStr;                //String of last calculation water usage
-int prcVolDvt24h;                  //Deviation between thoretical and real value in %
-int volDiffCalc24h;                //Theoretical change of volume
+int prcVolDvt1h;                   //Deviation between theoretical and real value in %
+int volDiffCalc1h;                 //Theoretical change of volume
 unsigned char cntLED=0;            //Counter for LED 
 String inString, IPString;         //Webserver Receive string, IP-Adress string
 unsigned char cntTestFilt=0;       //Testing for filter diagnosis
@@ -683,7 +684,8 @@ void loop()
         CheckFilter();
       }
       //Reset Counters and store actual values
-      volRefillFilt1h = SettingsEEP.settings.volRefillTot;      
+      volRefillFilt1h = SettingsEEP.settings.volRefillTot;  
+          
       if (rSignalHealth>50) {
         //Take actual volume only if actual measurement is valid
         volActualFilt1h = volActual;
@@ -706,7 +708,9 @@ void loop()
         else {
           //Invalid old value
           volActualFilt24h = 0;        
-        }       
+        }        
+        //Store refilling quantity
+        volRefillFilt24h = SettingsEEP.settings.volRefillTot;      
       }           
       //Calculate statistic of usage
       StatisticDailyUsage();
@@ -788,7 +792,7 @@ void CalculateDailyUsage() {
     UsageTimeStr = getDateTimeStr(); 
 
     //Calculate daily refilling volume
-    volRefill24h = PositiveDistanceUL(SettingsEEP.settings.volRefillTot,volRefillFilt1h);
+    volRefill24h = PositiveDistanceUL(SettingsEEP.settings.volRefillTot,volRefillFilt24h);
 
     //Difference Volume
     volDiff24h =  volActual - volActualFilt24h;
@@ -835,10 +839,10 @@ void StatisticDailyUsage() {
 }
 
 void CheckFilter() {
-    //Filter diagnosis
+    //Filter diagnosis based on 1h-rain and volume change
   
-    long _volDvt24h;      //Deviation between theoretical change and real change    
-    int _prcFiltEff;      //filter efficency based on 1h rain value
+    long _volDvt1h;      //Deviation between theoretical change and real change    
+    int _prcFiltEff;     //filter efficency based on 1h rain value
       
     //Remember type of evaluation
     stFilterCheck = FILT_DIAG;
@@ -847,27 +851,26 @@ void CheckFilter() {
     //Take timestamp
     DiagTimeStr = getDateTimeStr(); 
     
-    //Calculate daily refilling volume
-    volRefillDiag24h = SettingsEEP.settings.volRefillTot - volRefillFilt1h;
+    //Calculate 1h refilling volume
+    volRefillDiag1h = SettingsEEP.settings.volRefillTot - volRefillFilt1h;
     
     //Difference Volume
-    volDiffDiag24h =  volActual - volActualFilt1h;
-    
-    //Take over Rain measurement
-    volRainDiag24h = volRain24h;
-    
-    //Theoretical volume change
+    volDiffDiag1h =  volActual - volActualFilt1h;
+        
+    //Filter efficiency as function of rain volume in last hour
     _prcFiltEff = Curve(SettingsEEP.settings.prcFiltEff_x,SettingsEEP.settings.prcFiltEff_y,5,volRain1h);
-    volDiffCalc24h = volRainDiag24h*SettingsEEP.settings.aRoof*_prcFiltEff/100 + volRefillDiag24h - volUsageAvrg10d;
+    
+    //Theoretical volume change within 1h
+    volDiffCalc1h = volRain1h*SettingsEEP.settings.aRoof*_prcFiltEff/100 + volRefillDiag1h - volUsageAvrg10d;
     
     //Difference between calculated and real value
-    _volDvt24h = volDiffCalc24h - volDiffDiag24h;
+    _volDvt1h = volDiffCalc1h - volDiffDiag1h;
     
     //Relative deviation to theoretical quantity
-    prcVolDvt24h = (100*_volDvt24h)/volDiffCalc24h;
+    prcVolDvt1h = (100*_volDvt1h)/volDiffCalc1h;
     
     //Diagnois result
-    if (prcVolDvt24h>SettingsEEP.settings.prcVolDvtThres) {
+    if (prcVolDvt1h>SettingsEEP.settings.prcVolDvtThres) {
       stFiltChkErr = FILT_ERR_CLOGGED;
     }
     else {
@@ -1241,9 +1244,9 @@ void LogData(void)
     //Check if Diagnosis log is required
     if (stFilterCheck==FILT_DIAG) {      
       logFile.print(volRefill24h);      logFile.print(F(";"));      
-      logFile.print(volDiffDiag24h);    logFile.print(F(";"));
-      logFile.print(volDiffCalc24h);    logFile.print(F(";"));
-      logFile.print(prcVolDvt24h);      logFile.print(F(";"));
+      logFile.print(volDiffDiag1h);    logFile.print(F(";"));
+      logFile.print(volDiffCalc1h);    logFile.print(F(";"));
+      logFile.print(prcVolDvt1h);      logFile.print(F(";"));
       switch (stFiltChkErr) {
         case FILT_ERR_UNKNOWN:
           logFile.print(F("Unbekannt"));            
@@ -1482,20 +1485,20 @@ void MonitorWebServer(void)
             client2.print(F("<tr><td>Regenmenge 24h [mm]</td><td>"));
             client2.print(String(volRainDiag24h));
             client2.print(F("</td></tr>"));              
-            client2.print(F("<tr><td>Nachspeisung 24h [Liter] </td><td>"));
-            client2.print(String(volRefillDiag24h));
+            client2.print(F("<tr><td>Nachspeisung 1h [Liter] </td><td>"));
+            client2.print(String(volRefillDiag1h));
             client2.print(F("</td></tr>"));          
             client2.print(F("<tr><td>Verbrauch 24h [Liter]</td><td>"));
             client2.print(String(volUsageDiag24h));
             client2.print(F("</td></tr>"));                
-            client2.print(F("<tr><td>Fuellstandsaenderung 24h [Liter] </td><td>"));
-            client2.print(String(volDiffDiag24h));            
+            client2.print(F("<tr><td>Fuellstandsaenderung 1h [Liter] </td><td>"));
+            client2.print(String(volDiffDiag1h));            
             client2.print(F("</td></tr>"));            
             client2.print(F("<tr><td>Berechnete Fuellstandsaenderung 24h [Liter]</td><td>"));
-            client2.print(String(volDiffCalc24h));
+            client2.print(String(volDiffCalc1h));
             client2.print(F("</td></tr>"));              
             client2.print(F("<tr><td>Abweichung [%]</td><td>"));
-            client2.print(String(prcVolDvt24h));
+            client2.print(String(prcVolDvt1h));
             client2.print(F("</td></tr>"));                          
             client2.print(F("<tr><td>Filterzustand [-]</td><td>"));
             switch (stFiltChkErr) {
