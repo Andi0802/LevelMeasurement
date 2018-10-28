@@ -161,6 +161,7 @@ struct settings_t {
   int prcVolDvtThres;          //Threshold for filter clogging error
   int volRainMin;              //Minimum Rain Volume in 24h to activate filter diagnosis
   int volUsage24h[NUM_USAGE_AVRG]; //Last values of usage calculation
+  unsigned char iDay;          //Last index of entry in volUsage24h
 };
 
 //EEPROM Settings as union
@@ -239,7 +240,7 @@ unsigned char stMeasAct=1;         //Request for measurement, start measurement 
 unsigned char stFilterCheck=FILT_OFF; //Filter diagnosis
 unsigned char stFiltChkErr;        //Result filter check
 float volRainDiag1h;               //Rain in 1h for Diagnosis
-float volRain24h_old;              //Rain in 24h, 1 h ago
+float volRain24h_old=-1;           //Rain in 24h, 1 h ago (-1: invalid)
 float volRain1h;                   //Rain in last 1h for Diagnosis
 unsigned long volRefillFilt24h;    //Stored value of Refilling volume 24h past
 unsigned long volRefillFilt1h;     //Stored value of Refilling volume 1h past
@@ -250,13 +251,12 @@ unsigned int  volRefill24h;        //Refilled volume in 24h
 unsigned int  volRefillDiag1h;     //Refilled volume in 1h for Diagnosis
 unsigned int  volOld;              //Old volume for tendency 
 int volDiff1h;                     //Volume change in 1h (tendency)
-float volRain24h;                  //Rain in last 24h
+float volRain24h=-1;               //Rain in last 24h (-1: invalid)
 int volDiff24h;                    //Difference volume measurement in 24h
 int volDiffDiag1h;                 //Difference volume measurement in 1h for Diagnosis
 int volUsageAvrg10d;               //10 days average of daily water usage
 int volUsageMax10d=-32768;         //Maximum out of 10days
 int volUsageMin10d=32767;          //Minimum out of 10 days
-unsigned char iDay;                //Day counter for moving average
 String UsageTimeStr;               //String of last calculation water usage
 String DiagTimeStr;                //String of last calculation water usage
 int prcVolDvt1h;                   //Deviation between theoretical and real value in %
@@ -674,7 +674,13 @@ void loop()
       //falls Wert nicht aktuell: Fehler: keine Aktuelle Regenmenge     
 
       //Calculate rain within last 1h
-      volRain1h = max(volRain24h-volRain24h_old,0);
+      if (volRain24h_old>-1) {
+        volRain1h = max(volRain24h-volRain24h_old,0);
+      }
+      else {
+        //after new start: Initialize with 0 until old value is available
+        volRain1h = 0;
+      }
 
       #if LOGLEVEL & LOGLVL_NORMAL
         WriteSystemLog("Rain in last 24h from weather station [mm]: "+String(volRain24h));
@@ -801,8 +807,8 @@ void CalculateDailyUsage() {
     volDiff24h =  volActual - volActualFilt24h;
     
     //Calculate daily water usage amd store in array
-    iDay=(iDay+1)%NUM_USAGE_AVRG;
-    SettingsEEP.settings.volUsage24h[iDay] =  volRefill24h - volDiff24h;  
+    SettingsEEP.settings.iDay = (SettingsEEP.settings.iDay+1)%NUM_USAGE_AVRG;;
+    SettingsEEP.settings.volUsage24h[SettingsEEP.settings.iDay] =  volRefill24h - volDiff24h;  
 }
 
 void StatisticDailyUsage() {
@@ -835,7 +841,7 @@ void StatisticDailyUsage() {
     volUsageAvrg10d = volUsageAvrg10d/max(1,_cntAvrg);       
 
     //Send result to Homematic
-    hm_set_sysvar(F("HM_ZISTERNE_volUsage"), SettingsEEP.settings.volUsage24h[iDay]);           
+    hm_set_sysvar(F("HM_ZISTERNE_volUsage"), SettingsEEP.settings.volUsage24h[SettingsEEP.settings.iDay]);           
     delay(1); //nicht optimal, aber sonst stürzt HM ab
     //Send result to Homematic
     hm_set_sysvar(F("HM_ZISTERNE_volUsage10d"), volUsageAvrg10d);                   
@@ -1276,7 +1282,7 @@ void LogData(void)
 
     //Check if Usage log is required
     if (stFilterCheck==FILT_USAGE) {
-      logFile.print(SettingsEEP.settings.volUsage24h[iDay]); logFile.print(F(";"));
+      logFile.print(SettingsEEP.settings.volUsage24h[SettingsEEP.settings.iDay]); logFile.print(F(";"));
       logFile.print(volUsageAvrg10d);   logFile.print(F(";"));      
     }
     else {
@@ -1535,7 +1541,7 @@ void MonitorWebServer(void)
             client2.print(String(volDiff24h));
             client2.print(F("</td></tr>"));            
             client2.print(F("<tr><td>Verbrauch 24h [Liter]</td><td>"));
-            client2.print(String(SettingsEEP.settings.volUsage24h[iDay]));
+            client2.print(String(SettingsEEP.settings.volUsage24h[SettingsEEP.settings.iDay]));
             client2.print(F("</td></tr>"));              
             client2.print(F("<tr><td>Gleitender Mittelwert 10 Tage [Liter]</td><td>"));
             client2.print(String(volUsageAvrg10d));            
@@ -1732,23 +1738,24 @@ void ReadEEPData(void)
    SettingsEEP.settings.volRefillTot=0;             //Refilling volume total [l]
    SettingsEEP.settings.aRoof=100;                  //Area of roof [m^2]
    //Filter efficiency [%]
-   SettingsEEP.settings.prcFiltEff_x[0]=5;
-   SettingsEEP.settings.prcFiltEff_x[1]=6;
+   SettingsEEP.settings.prcFiltEff_x[0]=1;
+   SettingsEEP.settings.prcFiltEff_x[1]=5;
    SettingsEEP.settings.prcFiltEff_x[2]=7;
    SettingsEEP.settings.prcFiltEff_x[3]=10;
    SettingsEEP.settings.prcFiltEff_x[4]=20;
    SettingsEEP.settings.prcFiltEff_y[0]=100;
-   SettingsEEP.settings.prcFiltEff_y[1]=95;
+   SettingsEEP.settings.prcFiltEff_y[1]=100;
    SettingsEEP.settings.prcFiltEff_y[2]=90;
    SettingsEEP.settings.prcFiltEff_y[3]=40;
    SettingsEEP.settings.prcFiltEff_y[4]=20;
    SettingsEEP.settings.prcVolDvtThres=20;          //Threshold for diagnosis
-   SettingsEEP.settings.volRainMin=2;               //Minimum 2Liter/1h to activate filter diagnosis
+   SettingsEEP.settings.volRainMin=1;               //Minimum 2Liter/1h to activate filter diagnosis
    SettingsEEP.settings.tiRefillReset=timeClient.getEpochTime();
    for (_id=0;_id<NUM_USAGE_AVRG;_id++) {           //History of usage 
       SettingsEEP.settings.volUsage24h[_id] = 32767;
    }
-
+   SettingsEEP.settings.iDay=0;                     //Start with day 0
+   
     WriteEEPData();
   }
 }
