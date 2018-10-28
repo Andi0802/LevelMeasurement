@@ -122,6 +122,9 @@ const String prgChng = PRG_CHANGE_DESC;
 //Rain detection
 #define MAX_VOL_NORAIN  0.300 // Maximum rain in 24h in mm to detect "no rain"
 
+//Diagnosis: Usage in 1h (20 Liter)
+#define VOL_USAGE_MAX_1H 20
+
 //Average in usage info: Number of values
 #define NUM_USAGE_AVRG  10
 
@@ -235,8 +238,8 @@ unsigned char stButton=0;          //Refill button pressed
 unsigned char stMeasAct=1;         //Request for measurement, start measurement immediately
 unsigned char stFilterCheck=FILT_OFF; //Filter diagnosis
 unsigned char stFiltChkErr;        //Result filter check
-float volRainDiag24h;              //Rain in 24h for Diagnosis
-float volRainDiag24h_old;          //Rain in 24h for Diagnosis 1 h ago
+float volRainDiag1h;               //Rain in 1h for Diagnosis
+float volRain24h_old;              //Rain in 24h, 1 h ago
 float volRain1h;                   //Rain in last 1h for Diagnosis
 unsigned long volRefillFilt24h;    //Stored value of Refilling volume 24h past
 unsigned long volRefillFilt1h;     //Stored value of Refilling volume 1h past
@@ -665,13 +668,13 @@ void loop()
       #endif          
       
       //Get rain volume for last 24h
-      volRainDiag24h_old = volRain24h;
+      volRain24h_old = volRain24h;
       volRain24h = hm_get_datapoint(HM_DATAPOINT_RAIN24);
       //Offen: Updatezeit lesen, Datenpunktnummer ermitteln
       //falls Wert nicht aktuell: Fehler: keine Aktuelle Regenmenge     
 
       //Calculate rain within last 1h
-      volRain1h = max(volRain24h-volRainDiag24h_old,0);
+      volRain1h = max(volRain24h-volRain24h_old,0);
 
       #if LOGLEVEL & LOGLVL_NORMAL
         WriteSystemLog("Rain in last 24h from weather station [mm]: "+String(volRain24h));
@@ -850,6 +853,9 @@ void CheckFilter() {
     //Calculate filter diagnosis
     //Take timestamp
     DiagTimeStr = getDateTimeStr(); 
+
+    //Store 1h rain value for diagnosis
+    volRainDiag1h = volRain1h;
     
     //Calculate 1h refilling volume
     volRefillDiag1h = SettingsEEP.settings.volRefillTot - volRefillFilt1h;
@@ -861,13 +867,13 @@ void CheckFilter() {
     _prcFiltEff = Curve(SettingsEEP.settings.prcFiltEff_x,SettingsEEP.settings.prcFiltEff_y,5,volRain1h);
     
     //Theoretical volume change within 1h
-    volDiffCalc1h = volRain1h*SettingsEEP.settings.aRoof*_prcFiltEff/100 + volRefillDiag1h - volUsageAvrg10d;
+    volDiffCalc1h = volRainDiag1h*SettingsEEP.settings.aRoof*_prcFiltEff/100 + volRefillDiag1h - VOL_USAGE_MAX_1H;
     
     //Difference between calculated and real value
     _volDvt1h = volDiffCalc1h - volDiffDiag1h;
     
-    //Relative deviation to theoretical quantity
-    prcVolDvt1h = (100*_volDvt1h)/volDiffCalc1h;
+    //Relative deviation to theoretical quantity, lower limit 0%    
+    prcVolDvt1h = max(0,(100*_volDvt1h)/volDiffCalc1h);
     
     //Diagnois result
     if (prcVolDvt1h>SettingsEEP.settings.prcVolDvtThres) {
@@ -1198,10 +1204,10 @@ double hm_get_datapoint(int dp_number)
         WriteSystemLog(_repStr);
       #endif
     }
-    else {
-      _ret = F("NaN");
+    else {      
       WriteSystemLog(F("Transmission error while receiving datapoint"));
       WriteSystemLog(_ret);
+      _ret = F("NaN");
     }   
   } else {
     WriteSystemLog(F("Connection to CCU failed"));
@@ -1449,6 +1455,9 @@ void MonitorWebServer(void)
               client2.print(F("Kein Fehler erkannt"));
             }
             client2.print(F("</td></tr>"));  
+            client2.print(F("<tr><td>Regenmenge 1h [Liter]</td><td>"));
+            client2.print(String(volRain1h));
+            client2.print(F("</td></tr>"));  
             client2.print(F("<tr><td>Regenmenge 24h [Liter]</td><td>"));
             client2.print(String(volRain24h));            
             client2.print(F("</td></tr></table>"));  
@@ -1480,16 +1489,13 @@ void MonitorWebServer(void)
             client2.print(DiagTimeStr);
             client2.print(F("</td></tr>"));            
             client2.print(F("<tr><td>Regenmenge 1h [mm]</td><td>"));
-            client2.print(String(volRain1h));
-            client2.print(F("</td></tr>"));  
-            client2.print(F("<tr><td>Regenmenge 24h [mm]</td><td>"));
-            client2.print(String(volRainDiag24h));
+            client2.print(String(volRainDiag1h));
             client2.print(F("</td></tr>"));              
             client2.print(F("<tr><td>Nachspeisung 1h [Liter] </td><td>"));
             client2.print(String(volRefillDiag1h));
             client2.print(F("</td></tr>"));          
-            client2.print(F("<tr><td>Verbrauch 24h [Liter]</td><td>"));
-            client2.print(String(volUsageDiag24h));
+            client2.print(F("<tr><td>Verbrauch 1h [Liter]</td><td>"));
+            client2.print(String(VOL_USAGE_MAX_1H));
             client2.print(F("</td></tr>"));                
             client2.print(F("<tr><td>Fuellstandsaenderung 1h [Liter] </td><td>"));
             client2.print(String(volDiffDiag1h));            
