@@ -1177,9 +1177,12 @@ double hm_get_datapoint(int dp_number)
     hm_client.println();
 
     unsigned long _timeStart=micros();
+    unsigned char _trace=0;
     while (hm_client.connected()) {
+        _trace=1;
         if (hm_client.available()) {
           char c = hm_client.read();
+          _trace++;
   
           //read char by char HTTP request
           if (_ret.length() < 1024) {
@@ -1191,8 +1194,6 @@ double hm_get_datapoint(int dp_number)
     }
     hm_client.stop();
     unsigned long _timeStop=micros();
-    //WriteSystemLog("<ANTWORT>"+_ret+"</ANTWORT>");
-    //WriteSystemLog("Time: "+String(_timeStop-_timeStart)+" us");
     
     //Analyse return string
     _cmpStr = F("<datapoint ise_id='");
@@ -1212,7 +1213,9 @@ double hm_get_datapoint(int dp_number)
     }
     else {      
       WriteSystemLog(F("Transmission error while receiving datapoint"));
-      WriteSystemLog(_ret);
+      WriteSystemLog("Time  : "+String(_timeStop-_timeStart)+" us");
+      WriteSystemLog("Return: "+_ret);
+      WriteSystemLog("Trace : "+String(_trace));
       _ret = F("NaN");
     }   
   } else {
