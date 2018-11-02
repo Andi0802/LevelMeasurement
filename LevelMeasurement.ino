@@ -1,4 +1,3 @@
-
 /*
   Level sensor for rain water reservoir
 
@@ -17,15 +16,18 @@ const String prgChng = PRG_CHANGE_DESC;
 //Libraries
 //AVR System libraries Arduino 1.6.7
 #include <SPI.h>
-#include <EEPROM.h>
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <limits.h>
 
 //Arduino Libraries Arduino 1.6.7
-#include <Ethernet.h>  //Update auf Version 2.0.0
+#include <Ethernet.h>       //Update auf Version 2.0.0
+#include <NewEEPROM.h>      //Ariadne Bootloader https://github.com/codebndr/Ariadne-Bootloader commit 19388fa
+#include <NetEEPROM.h>      //Ariadne Bootloader https://github.com/codebndr/Ariadne-Bootloader commit 19388fa
+#include <NetEEPROM_defs.h> //EEPROM Layout
 #include <Dns.h>
 #include <SD.h>
+#include <avr/wdt.h>
 
 //Local libraries
 #include <NTPClient.h>  // https://github.com/arduino-libraries/NTPClient.git Commit 020aaf8
@@ -41,7 +43,7 @@ const String prgChng = PRG_CHANGE_DESC;
 #define LOGLVL_CCU     8  //Bit 3: CCU access
 #define LOGLVL_SYSTEM 16  //Bit 4: System logging (NTP etc)
 #define LOGLVL_TRAP   32  //Bit 5: Trap for ETH+SD CS signal setting
-#define LOGLEVEL 1+16
+#define LOGLEVEL LOGLVL_NORMAL + LOGLVL_SYSTEM
 
 // SDCard
 #define SD_CARD_PIN       4  // CS for SD-Card on ethernet shield
@@ -178,12 +180,18 @@ byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xEA };
 
 // Set the static IP address if DHCP fails or fixed address is used
 IPAddress ip(192, 168, 178, 4);
+IPAddress dns(192, 168, 178, 1);
+IPAddress gateway(192, 168, 178, 1);
+IPAddress subnet(255,255,255,0);
 #else
 //MAC for operational system
 byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xEB };
 
 // Set the static IP address if DHCP fails or fixed address is used
 IPAddress ip(192, 168, 178, 5);
+IPAddress dns(192, 168, 178, 1);
+IPAddress gateway(192, 168, 178, 1);
+IPAddress subnet(255,255,255,0);
 #endif
 
 // Initialize the Ethernet client library
@@ -197,10 +205,6 @@ NTPClient timeClient(ntpUDP);
 
 //Web Server
 EthernetServer server(80);
-
-//Variables for DNS
-DNSClient dnsClient;
-byte RouterIP[] = {192, 168, 178, 1};
 
 // --- Globals ---------------------------------------------------------------------------------------------------
 
@@ -262,7 +266,7 @@ String DiagTimeStr;                //String of last calculation water usage
 int prcVolDvt1h;                   //Deviation between theoretical and real value in %
 int volDiffCalc1h;                 //Theoretical change of volume
 unsigned char cntLED=0;            //Counter for LED 
-String inString, IPString;         //Webserver Receive string, IP-Adress string
+String inString;                   //Webserver Receive string, IP-Adress string
 unsigned char cntTestFilt=0;       //Testing for filter diagnosis
 byte PulseCntr;                    //Counter for US pulses
 int idxCur;                        //Index for Curve
@@ -277,11 +281,6 @@ int SD_State  = SD_UNDEFINED;
 int ETH_State = ETH_UNDEFINED;
 int ETH_StateConnectionType = ETH_UNDEFINED;
 int NTP_State = NTP_UNDEFINED;
-
-//Watchdog: last time the WDT was ACKd by the application
-unsigned long lastUpdate = 0;
-//Watchdog: time, in ms, after which a reset should be triggered
-unsigned long timeout = 30000;
 
 // --- Setup -----------------------------------------------------------------------------------------------------
 void setup() {
@@ -332,22 +331,8 @@ void setup() {
   //Send Message New Start  
   WriteSystemLog(F("System startup"));
   
-  //Initialize timer 1 as watchdog
-  cli();          // disable global interrupts
-  TCCR1A = 0;     // set entire TCCR1A register to 0
-  TCCR1B = 0;     // same for TCCR1B
-
-  // set compare match register to desired timer count:
-  //1000ms*16MHz/1024=15625
-  OCR1A = 15624;
-  // turn on CTC mode:
-  TCCR1B |= (1 << WGM12);
-  // Set CS10 and CS12 bits for 1024 prescaler:
-  TCCR1B |= (1 << CS10);
-  TCCR1B |= (1 << CS12);
-  // enable timer compare interrupt:
-  TIMSK1 |= (1 << OCIE1A);
-  sei();          // enable global interrupts:
+  //Enable watchdog
+  wdt_enable(WDTO_4S);
 
   //Initialize timer 4 as global time system
   cli();          // disable global interrupts
@@ -367,7 +352,7 @@ void setup() {
 
   //Reset 100 msec Timer
   Time_100ms = 0;
-
+    
 } // End Setup
 
 // --- ISR -----------------------------------------------------------------------------------------------------
@@ -379,26 +364,6 @@ ISR(TIMER4_COMPA_vect)
   }
   else {
     Time_100ms = 0;
-  }
-}
-
-ISR(TIMER1_COMPA_vect)
-// Watchdog timer
-{
-  if (PositiveDistanceUL(millis(),lastUpdate)> timeout)
-  {
-    //enable interrupts so serial can work
-    sei();
-
-    //detach Timer1 interrupt so that if processing goes long, WDT isn't re-triggered
-    TIMSK1 = TIMSK1 & (0xFF & ~(1 << OCIE1A));
-
-    //flush, as Serial is buffered; and on hitting reset that buffer is cleared
-    WriteSystemLog(F("WDT triggered"));
-    Serial.flush();
-
-    //call to bootloader / code at address 0
-    resetFunc();
   }
 }
 
@@ -978,13 +943,13 @@ String time2DateTimeStr(time_t t) {
   return String(_datetime);
 }
 
-String IPAddressStr()
+String IPAddressStr(IPAddress ipadr)
 {
   String _str;
   //Prints IP Address
   for (byte thisByte = 0; thisByte < 4; thisByte++) {
     // print the value of each byte of the IP address:
-    _str = _str + String(Ethernet.localIP()[thisByte]);
+    _str = _str + String(ipadr[thisByte]);
     if (thisByte < 3)
       _str = _str + ".";
   }
@@ -1016,9 +981,9 @@ unsigned char getOption(String str, String Option, double minVal, double maxVal,
       idxOptionEnd = strRem.indexOf(" HTTP");
     }
     #if LOGLEVEL & LOGLVL_WEB
-      Serial.println(F("Remaining string     : ") + strRem);
-      Serial.println(F("Start index of option: ") + String(idxOption));
-      Serial.println(F("End index of option  : ") + String(idxOption+idxOptionEnd));
+      Serial.println("Remaining string     : " + strRem);
+      Serial.println("Start index of option: " + String(idxOption));
+      Serial.println("End index of option  : " + String(idxOption+idxOptionEnd));
     #endif
 
     if (idxOptionEnd == 1) {
@@ -1351,7 +1316,9 @@ void MonitorWebServer(void)
   int clientCount = 0;
   unsigned char _id;
 
-  //Web server code to change settings
+  stOption = 0;
+  
+  //Web server code to change settings  
   // Create a client connection
   EthernetClient client2 = server.available();
   if (client2) {
@@ -1379,25 +1346,89 @@ void MonitorWebServer(void)
             WriteSystemLog("HTTP Request receives: " + pageStr);
             WriteSystemLog(inString);
           #endif 
-          
-          //Query options
-          stOption = 0;
-          stOption |= getOption(inString, "vSoundSet", 3000, 3500, &SettingsEEP.settings.vSound) << 2;
-          stOption |= getOption(inString, "hOffsetSet", -500, 500, &SettingsEEP.settings.hOffset) << 3;
-          stOption |= getOption(inString, "aBaseAreaSet", 25000, 35000, &SettingsEEP.settings.aBaseArea) << 4;
-          stOption |= getOption(inString, "hSensorPosSet", 205, 300, &SettingsEEP.settings.hSensorPos) << 5;
-          stOption |= getOption(inString, "hOverflowSet", 180, 220, &SettingsEEP.settings.hOverflow) << 6;
-          stOption |= getOption(inString, "hRefillSet", 10, 60, &SettingsEEP.settings.hRefill) << 7;
-          stOption |= getOption(inString, "volRefillSet", 10, 50, &SettingsEEP.settings.volRefill) << 8;
-          stOption |= getOption(inString, "dvolRefillSet", 2, 20, &SettingsEEP.settings.dvolRefill) << 9;          
-          stOption |= getOption(inString, "prcVolDvtThres", 0, 500, &SettingsEEP.settings.prcVolDvtThres) << 10;          
-          stOption |= getOption(inString, "aRoof", 0, 500, &SettingsEEP.settings.aRoof) << 11;          
-          stOption |= getOption(inString, "idxCur", 0, 100, &idxCur) << 15;
-          stOption |= getOption(inString, "prcFiltEff", 0, 100, &SettingsEEP.settings.prcFiltEff_y[idxCur]) << 12;
-          stOption |= getOption(inString, "volRainMin", 0, 10, &SettingsEEP.settings.volRainMin) << 13;
-          stOption |= getOption(inString, "volRainFilt1h", 0, 100, &SettingsEEP.settings.prcFiltEff_x[idxCur]) << 14;
-          
-          
+
+          //Check if reset or reprogramm is requested
+          if (pageStr.equals("reset")>0) {
+            //Do a normal reset
+            WriteSystemLog("Reset requested by user");
+            NetEEPROM.writeImgOk();
+            WriteSystemLog("EEP Status: " + String(eeprom_read_byte(NETEEPROM_IMG_STAT)));
+            delay(1000);
+            resetFunc();
+          }
+          else if (pageStr.equals("reprogram")>0) {
+            //Start reprogramming
+            WriteSystemLog("Reprogramming requested by user");
+            NetEEPROM.writeImgBad();
+            WriteSystemLog("EEP Status: " + String(eeprom_read_byte(NETEEPROM_IMG_STAT)));
+            delay(1000);
+            resetFunc();
+          }
+          else if ((pageStr.equals(LOGFILE)>0) || ((pageStr.equals(DATAFILE)>0))) {           
+            //Read log-file or data-file
+            Workaround_CS_ETH2SD();
+            File webFile = SD.open(pageStr);        // open file
+            Workaround_CS_SD2ETH();
+            client2.println(F("HTTP/1.1 200 OK"));
+            client2.println(F("Content-Type: text/comma-separated-values"));
+            client2.println(F("Content-Disposition: attachment;"));
+            client2.println(F("Connection: close"));
+            client2.println();
+
+            if (webFile)
+            {
+              Workaround_CS_ETH2SD();
+              while (webFile.available())
+              {
+                //client2.write(webFile.read()); // send file to client byte by byte (slow)                
+                clientBuf[clientCount] = webFile.read();                
+                clientCount++;
+
+                if (clientCount > SD_BLOCK_SIZE - 1)
+                {
+                  Workaround_CS_SD2ETH();
+                  // Serial.println("Packet");
+                  client2.write(clientBuf, SD_BLOCK_SIZE);
+                  clientCount = 0;
+                  Workaround_CS_ETH2SD();
+                }
+                TriggerWDT();  // Trigger Watchdog
+              }
+              //final <SD_BLOCK_SIZE byte cleanup packet
+              if (clientCount > 0) client2.write(clientBuf, clientCount);
+              Workaround_CS_ETH2SD();
+              webFile.close();
+
+              //Remove downloaded file
+              SD.remove(pageStr);
+              if (pageStr.equals(DATAFILE)) {
+                // Create new headline
+                LogDataHeader();
+              }
+              Workaround_CS_SD2ETH();
+            }
+            else {
+              WriteSystemLog("File not found: "+pageStr);
+            }
+            delay(1);                    // give the web browser time to receive the data
+          }          
+          else {
+            //Query options            
+            stOption |= getOption(inString, "vSoundSet", 3000, 3500, &SettingsEEP.settings.vSound) << 2;
+            stOption |= getOption(inString, "hOffsetSet", -500, 500, &SettingsEEP.settings.hOffset) << 3;
+            stOption |= getOption(inString, "aBaseAreaSet", 25000, 35000, &SettingsEEP.settings.aBaseArea) << 4;
+            stOption |= getOption(inString, "hSensorPosSet", 205, 300, &SettingsEEP.settings.hSensorPos) << 5;
+            stOption |= getOption(inString, "hOverflowSet", 180, 220, &SettingsEEP.settings.hOverflow) << 6;
+            stOption |= getOption(inString, "hRefillSet", 10, 60, &SettingsEEP.settings.hRefill) << 7;
+            stOption |= getOption(inString, "volRefillSet", 10, 50, &SettingsEEP.settings.volRefill) << 8;
+            stOption |= getOption(inString, "dvolRefillSet", 2, 20, &SettingsEEP.settings.dvolRefill) << 9;          
+            stOption |= getOption(inString, "prcVolDvtThres", 0, 500, &SettingsEEP.settings.prcVolDvtThres) << 10;          
+            stOption |= getOption(inString, "aRoof", 0, 500, &SettingsEEP.settings.aRoof) << 11;          
+            stOption |= getOption(inString, "idxCur", 0, 100, &idxCur) << 15;
+            stOption |= getOption(inString, "prcFiltEff", 0, 100, &SettingsEEP.settings.prcFiltEff_y[idxCur]) << 12;
+            stOption |= getOption(inString, "volRainMin", 0, 10, &SettingsEEP.settings.volRainMin) << 13;
+            stOption |= getOption(inString, "volRainFilt1h", 0, 100, &SettingsEEP.settings.prcFiltEff_x[idxCur]) << 14;
+          }                    
    
           //New option received
           if (stOption > 0) {
@@ -1645,6 +1676,11 @@ void MonitorWebServer(void)
             client2.print(LOGFILE);
             client2.print(F("'>Get System Log File</a>"));
 
+            //Reset and Reprogram
+            client2.println(F("<H2>Reset</h2>"));
+            client2.println(F("<a href=""reset"">Reset</a><br>"));
+            client2.println(F("<a href=""reprogram"">Flash new program</a>"));
+
             //Version Info
             client2.println(F("<H2>Programminfo</h2>"));
             client2.println("<p>" + prgVers + "</p>");
@@ -1652,49 +1688,7 @@ void MonitorWebServer(void)
             
             client2.println(F("</BODY></HTML>\n"));            
             client2.println();
-          }
-
-          else {
-            File webFile = SD.open(pageStr);        // open file
-            client2.println(F("HTTP/1.1 200 OK"));
-            client2.println(F("Content-Type: text/comma-separated-values"));
-            client2.println(F("Content-Disposition: attachment;"));
-            client2.println(F("Connection: close"));
-            client2.println();
-
-            if (webFile)
-            {
-              while (webFile.available())
-              {
-                //client2.write(webFile.read()); // send file to client byte by byte (slow)
-                clientBuf[clientCount] = webFile.read();
-                clientCount++;
-
-                if (clientCount > SD_BLOCK_SIZE - 1)
-                {
-                  // Serial.println("Packet");
-                  client2.write(clientBuf, SD_BLOCK_SIZE);
-                  clientCount = 0;
-                }
-                TriggerWDT();  // Trigger Watchdog
-              }
-              //final <SD_BLOCK_SIZE byte cleanup packet
-              if (clientCount > 0) client2.write(clientBuf, clientCount);
-              webFile.close();
-
-              //Remove downloaded file
-              SD.remove(pageStr);
-              if (pageStr.equals(DATAFILE)) {
-                // Create new headline
-                LogDataHeader();
-              }
-            }
-
-            delay(1);                    // give the web browser time to receive the data
-
-          }
-
-
+          }         
           delay(1);
           //stopping client
           client2.stop();
@@ -1766,13 +1760,13 @@ void ReadEEPData(void)
 void WriteEEPData(void)
 {
   //Reads EEPData from EEP
-  int i;
+  unsigned int i;
   unsigned char chk;
 
   chk = checksum(&SettingsEEP.SettingStream[1], EEPSize - 1);
   SettingsEEP.settings.stat = chk;
   for (i = 0; i < EEPSize; i++) {
-    EEPROM.put(i, SettingsEEP.SettingStream[i]);
+    EEPROM.write(i, SettingsEEP.SettingStream[i]);
   }
   #if LOGLEVEL & LOGLVL_SYSTEM
     WriteSystemLog(F("Writing settings to EEP"));
@@ -1866,6 +1860,7 @@ void WriteSystemLog(String LogText)
     if (digitalRead(SD_CARD_PIN)==LOW) {
       logFile = SD.open(LOGFILE, FILE_WRITE);
       logFile.println("SD_CARD_PIN==LOW");
+      logFile.flush();
       logFile.close();          
     }
     Workaround_CS_SD2ETH();    
@@ -1896,18 +1891,26 @@ void EthConnect(void)
 
   #else 
   //Use fixed IP Adress
-    Ethernet.begin(mac, ip);
+    Ethernet.begin(mac, ip,dns,gateway,subnet);
     ETH_StateConnectionType = ETH_FIXEDIP;
     #if LOGLEVEL & LOGLVL_SYSTEM
       WriteSystemLog(F("Using Fixed IP"));
     #endif  
   #endif
+  
+  // Write Network data to EEPROM
+  ip = Ethernet.localIP();
+  gateway = Ethernet.gatewayIP();
+  subnet = Ethernet.subnetMask();  
+  NetEEPROM.writeNet(mac, ip, gateway, subnet);
 
-  // print your local IP address:
-  IPString = "IP-Address: " + IPAddressStr();
+  // print your local IP config
   #if LOGLEVEL & LOGLVL_SYSTEM
-    WriteSystemLog(IPString);
+    WriteSystemLog("IP-Address : " + IPAddressStr(ip));
+    WriteSystemLog("Gateway    : " + IPAddressStr(gateway));
+    WriteSystemLog("Subnet Mask: " + IPAddressStr(subnet));
   #endif  
+  
   delay(1000);
 }
 
@@ -1929,7 +1932,7 @@ void resetFunc (void)
 void TriggerWDT(void)
 // Trigger watchdog timer
 {
-  lastUpdate = millis();
+  wdt_reset();
 }
 
 void sort()
