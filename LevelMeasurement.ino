@@ -4,8 +4,6 @@
   Features:
     - Level sensing by US Sensor
     - Refill based on level
-    - Web server for settings and monitoring
-
 */
 
 //Software Version Info
@@ -43,7 +41,8 @@ const String prgChng = PRG_CHANGE_DESC;
 #define LOGLVL_CCU     8  //Bit 3: CCU access
 #define LOGLVL_SYSTEM 16  //Bit 4: System logging (NTP etc)
 #define LOGLVL_TRAP   32  //Bit 5: Trap for ETH+SD CS signal setting
-#define LOGLEVEL LOGLVL_NORMAL + LOGLVL_SYSTEM
+#define LOGLVLEEP     64  //Bit 6: EEPROM Dump
+#define LOGLEVEL   LOGLVL_NORMAL + LOGLVL_SYSTEM
 
 // SDCard
 #define SD_CARD_PIN       4  // CS for SD-Card on ethernet shield
@@ -135,12 +134,15 @@ const String prgChng = PRG_CHANGE_DESC;
 #define RED   1
 
 //Definitions for Homematic CCU
+#define HM_ACCESS_ACTIVE    1     // Switch on coupling to Homematic
 #define HM_DATAPOINT_RAIN24 6614  // Datapoint for 24h rain
 
 //Device name of HM Client
 //IP of CCU
-byte hm_ccu[] = { 192, 168, 178, 11 };
-EthernetClient hm_client;
+#if HM_ACCESS_ACTIVE==1
+  byte hm_ccu[] = { 192, 168, 178, 11 };
+  EthernetClient hm_client;
+#endif
 
 //Typedefs
 // Settings in EEPROM
@@ -218,7 +220,8 @@ unsigned int cntPulse = 0;
 //US Sensor measurement
 unsigned char stPulse = PLS_IDLE;  //state of measurement pulse
 unsigned long tiSend;              //Timestamp pulse sent
-unsigned long tiReceived;          //Timestamp pulse received
+unsigned long tiReceivedPos;       //Timestamp pulse received rising edge
+unsigned long tiReceived;          //Timestamp pulse received falling edge
 unsigned int dauer=0;              //Duration of pulse single measurement
 unsigned int entfernung=0;         //Distance measured single measurement
 float hMean=0;                     //Mean value of level
@@ -234,8 +237,8 @@ unsigned char stRefillReq=0;       //Request for refilling step based on measure
 unsigned char stVentEx=0;          //Set to 1 if vent-excersice has been started, to provide multiple refillers in 1 hour
 double volStdDev;                  //Standard deviation of measurements in volume
 unsigned char rSignalHealth=0;     //Signal health (0 worst - 100 best)
-char cntValidValues;               //Number of valid values
-char cntDiagDeb;                   //Debounce counter diagnosis
+int cntValidValues;                //Number of valid values
+int cntDiagDeb;                    //Debounce counter diagnosis
 unsigned char stError;             //Error status
 unsigned char pos = 0;             //Array position to write measurement
 int arr[] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
@@ -289,7 +292,7 @@ void setup() {
 
   //SD Card initialize
   pinMode(ETH__SS_PIN, OUTPUT);      //Workaround to deselect Wiznet chip
-  Workaround_CS_ETH2SD();
+  Workaround_CS_ETH2SD(1);
   
   if (!SD.begin(SD_CARD_PIN)) {
     SD_State = SD_FAIL;
@@ -374,7 +377,7 @@ void ReceivePulse(void)
     //Wait for pulse only if a pulse has been send previously
     if (digitalRead(US_ECHO_PIN)) {
       //Send time
-      tiSend=micros();
+      tiReceivedPos=micros();
       stPulse = PLS_RECEIVED_POS;
     }
   }
@@ -484,53 +487,72 @@ void loop()
   if (PulseCntr>0) {  
     //Send pulse and measure delay time  
     PulseCntr--;
-    if (pos<100) {      
-      if (stPulse==PLS_IDLE) {
-        //Send a pulse only if previous pulse has beed received                
-        digitalWrite(US_TRIGGER_PIN, HIGH);        
-        delay(2);
-        digitalWrite(US_TRIGGER_PIN, LOW);                  
+    if (pos<100) {    
+      //State maschine for return pulse handling 
+      switch (stPulse) {
+        case PLS_IDLE: 
+          //Send a pulse only if previous pulse has beed received                
+          digitalWrite(US_TRIGGER_PIN, HIGH);        
+          delay(2);
+          digitalWrite(US_TRIGGER_PIN, LOW);                  
         stPulse = PLS_SEND;
-      }
-      else if (stPulse==PLS_RECEIVED_NEG) {
-        //Calculated distance only if pulse has been received
-        dauer = PositiveDistanceUL(tiReceived,tiSend);        
-  
-        //Calculate distance in mm
-        entfernung = ((unsigned long)(dauer/2) * SettingsEEP.settings.vSound)/10000 - SettingsEEP.settings.hOffset;
-
-        #if LOGLEVEL & LOGLVL_ALL
-          WriteSystemLog("Duration measured: " + String(dauer) + "us Send: " + String(tiSend) + " Received: " + String(tiReceived)+ " Entfernung: " + String(entfernung) + " mm");
-        #endif
+        break;
         
-        //Plausibility check: Signal cannot be higher than sensor position and not lower than distance btw sensor and overflow  
-        if (entfernung >= SettingsEEP.settings.hSensorPos*10 || entfernung <= (SettingsEEP.settings.hSensorPos-SettingsEEP.settings.hOverflow)*10)
-        {
-          //Measurement not plausible, set dummy value 0
-          arr[pos] = 0;
-        }
-        else
-        {
-          //Measurement plausible, collect measurement
-          arr[pos] = entfernung;
-        }
-        pos++;
-        stPulse = PLS_IDLE;
-      }
-      else if (stPulse==PLS_RECEIVED_POS) {
-        //Check for timeout
-        if (PositiveDistanceUL(micros(),tiSend)>PLS_TI_TIMEOUT) {
-          //Timeout detected
-          #if LOGLEVEL & LOGLVL_NORMAL
-            WriteSystemLog(F("Timeout US measurement detected"));
-          #endif  
-          dauer = PLS_TI_TIMEOUT;
-          entfernung = 0;
-          arr[pos]=0;
+        case PLS_RECEIVED_NEG:
+          //Calculated distance only if pulse has been received
+          dauer = PositiveDistanceUL(tiReceived,tiReceivedPos);        
+    
+          //Calculate distance in mm
+          entfernung = ((unsigned long)(dauer/2) * SettingsEEP.settings.vSound)/10000 - SettingsEEP.settings.hOffset;
+  
+          #if LOGLEVEL & LOGLVL_ALL
+            WriteSystemLog("Duration measured: " + String(dauer) + "us Send: " + String(tiReceivedPos) + " Received: " + String(tiReceived)+ " Entfernung: " + String(entfernung) + " mm");
+          #endif
+          
+          //Plausibility check: Signal cannot be higher than sensor position and not lower than distance btw sensor and overflow  
+          if (entfernung >= SettingsEEP.settings.hSensorPos*10 || entfernung <= (SettingsEEP.settings.hSensorPos-SettingsEEP.settings.hOverflow)*10)
+          {
+            //Measurement not plausible, set dummy value 0
+            arr[pos] = 0;
+          }
+          else
+          {
+            //Measurement plausible, collect measurement
+            arr[pos] = entfernung;
+          }
           pos++;
           stPulse = PLS_IDLE;
-        }
-      }
+          break;
+      
+        case PLS_RECEIVED_POS:
+          //Check for timeout if pulse is send and rising edge of answer has been detected, but falling edge is missing
+          if (PositiveDistanceUL(micros(),tiReceivedPos)>PLS_TI_TIMEOUT) {
+            //Timeout detected
+            #if LOGLEVEL & LOGLVL_NORMAL
+              WriteSystemLog(F("Timeout US measurement detected: Falling edge of return missing"));
+            #endif  
+            dauer = PLS_TI_TIMEOUT;
+            entfernung = 0;
+            arr[pos]=0;
+            pos++;
+            stPulse = PLS_IDLE;
+          }  
+          break;
+        case PLS_SEND:
+          //Check for timeout if pulse is send but rising edge of answer is missing
+          if (PositiveDistanceUL(micros(),tiSend)>PLS_TI_TIMEOUT) {
+            //Timeout detected
+            #if LOGLEVEL & LOGLVL_NORMAL
+              WriteSystemLog(F("Timeout US measurement detected: No return pulse received"));
+            #endif  
+            dauer = PLS_TI_TIMEOUT;
+            entfernung = 0;
+            arr[pos]=0;
+            pos++;
+            stPulse = PLS_IDLE;
+          }
+          break;  
+      }      
     } //if pos<100      
     else {
       // Evaluate measured delay times      
@@ -634,9 +656,14 @@ void loop()
       
       //Get rain volume for last 24h
       volRain24h_old = volRain24h;
-      volRain24h = hm_get_datapoint(HM_DATAPOINT_RAIN24);
-      //Offen: Updatezeit lesen, Datenpunktnummer ermitteln
-      //falls Wert nicht aktuell: Fehler: keine Aktuelle Regenmenge     
+      #if HM_ACCESS_ACTIVE==1
+        volRain24h = hm_get_datapoint(HM_DATAPOINT_RAIN24);
+        //Offen: Updatezeit lesen, Datenpunktnummer ermitteln
+        //falls Wert nicht aktuell: Fehler: keine Aktuelle Regenmenge     
+      #else
+        //No Homematic access: deactivate
+        volRain24h = -1; 
+      #endif
 
       //Calculate rain within last 1h
       if (volRain24h_old>-1) {
@@ -693,13 +720,15 @@ void loop()
       LogData();
       
       //Send data to Homematic CCU
-      hm_set_sysvar(F("HM_ZISTERNE_volActual"), volActual);
-      delay(1); //nicht optimal, aber sonst stürzt HM ab
-      hm_set_sysvar(F("HM_ZISTERNE_rSignalHealth"), rSignalHealth);
-      delay(1); //nicht optimal, aber sonst stürzt HM ab
-      hm_set_sysvar(F("HM_ZISTERNE_prcActual"), prcActual);           
-      delay(1); //nicht optimal, aber sonst stürzt HM ab
-      hm_set_sysvar(F("HM_ZISTERNE_stError"), stError);          
+      #if HM_ACCESS_ACTIVE==1
+        hm_set_sysvar(F("HM_ZISTERNE_volActual"), volActual);
+        delay(1); //nicht optimal, aber sonst stürzt HM ab
+        hm_set_sysvar(F("HM_ZISTERNE_rSignalHealth"), rSignalHealth);
+        delay(1); //nicht optimal, aber sonst stürzt HM ab
+        hm_set_sysvar(F("HM_ZISTERNE_prcActual"), prcActual);           
+        delay(1); //nicht optimal, aber sonst stürzt HM ab
+        hm_set_sysvar(F("HM_ZISTERNE_stError"), stError);          
+      #endif
       
       //Reset pointer for next data collection
       pos = 0;
@@ -772,15 +801,18 @@ void CalculateDailyUsage() {
     volDiff24h =  volActual - volActualFilt24h;
     
     //Calculate daily water usage amd store in array
-    SettingsEEP.settings.iDay = (SettingsEEP.settings.iDay+1)%NUM_USAGE_AVRG;;
+    SettingsEEP.settings.iDay = (SettingsEEP.settings.iDay+1)%NUM_USAGE_AVRG;
     SettingsEEP.settings.volUsage24h[SettingsEEP.settings.iDay] =  volRefill24h - volDiff24h;  
+
+    //Write to EEPROM
+    WriteEEPData();
 }
 
 void StatisticDailyUsage() {
     //Calculates mean, min and max of daily usage    
 
     byte _id;  //Day counter for average
-    unsigned char _cntAvrg;
+    unsigned char _cntAvrg=0;
 
     //Average over NUM_USAGE_AVRG days
     volUsageAvrg10d=0;
@@ -805,11 +837,13 @@ void StatisticDailyUsage() {
     
     volUsageAvrg10d = volUsageAvrg10d/max(1,_cntAvrg);       
 
-    //Send result to Homematic
-    hm_set_sysvar(F("HM_ZISTERNE_volUsage"), SettingsEEP.settings.volUsage24h[SettingsEEP.settings.iDay]);           
-    delay(1); //nicht optimal, aber sonst stürzt HM ab
-    //Send result to Homematic
-    hm_set_sysvar(F("HM_ZISTERNE_volUsage10d"), volUsageAvrg10d);                   
+    #if HM_ACCESS_ACTIVE==1
+      //Send result to Homematic
+      hm_set_sysvar(F("HM_ZISTERNE_volUsage"), SettingsEEP.settings.volUsage24h[SettingsEEP.settings.iDay]);           
+      delay(1); //nicht optimal, aber sonst stürzt HM ab
+      //Send result to Homematic
+      hm_set_sysvar(F("HM_ZISTERNE_volUsage10d"), volUsageAvrg10d);                   
+    #endif
 }
 
 void CheckFilter() {
@@ -854,9 +888,11 @@ void CheckFilter() {
       stFiltChkErr = FILT_ERR_OK;
     }
 
-    //Send result to Homematic
-    hm_set_sysvar(F("HM_ZISTERNE_stFiltChkErr"), stFiltChkErr);           
-    //delay(1); //nicht optimal, aber sonst stürzt HM ab                 
+    #if HM_ACCESS_ACTIVE==1
+      //Send result to Homematic
+      hm_set_sysvar(F("HM_ZISTERNE_stFiltChkErr"), stFiltChkErr);           
+      //delay(1); //nicht optimal, aber sonst stürzt HM ab                 
+    #endif
 } 
 
 void SetError(int numErr,int stErr)
@@ -1037,158 +1073,163 @@ unsigned char getOption(String str, String Option, double minVal, double maxVal,
   return stResult;
 }
 
-
-void hm_set_sysvar(String parameter, double value)
-// Send information to Homematic CCU
-// Using XML-RPC
-{
-  String _cmd;
-  int _stConnection;
-
-  //Generate command
-  _cmd = F("GET /xy.exe?antwort=dom.GetObject('");
-  _cmd = _cmd + parameter;
-  _cmd = _cmd + F("').State(");
-  _cmd = _cmd + value;
-  _cmd = _cmd + F(")");
-
-  //Connect and send
-  _stConnection=hm_client.connect(hm_ccu, 8181);
-  if (_stConnection) {    
-    hm_client.println(_cmd);
-    hm_client.println();
-    hm_client.stop();
-    #if LOGLEVEL & LOGLVL_CCU
-      WriteSystemLog(_cmd);
-    #endif
-  } else {
-    WriteSystemLog(F("Connection to CCU failed"));    
-    WriteSystemLog("Result: " + String(_stConnection));
-  }
-}
-
-void hm_set_state(int ise_id, double value)
-// Change state of channel in Homematic CCU
-// Use XML-API; use ise_id of channel
-{
-  String _cmd;
-
-  //Generate command
-  _cmd = "GET /config/xmlapi/statechange.cgi?ise_id=";
-  _cmd = _cmd + ise_id;
-  _cmd = _cmd + "&new_value=";
-  _cmd = _cmd + value;
-
-  //Connect and send
-  if (hm_client.connect(hm_ccu, 80)) {    
-    hm_client.println(_cmd);
-    hm_client.println();
-    hm_client.stop();
-    #if LOGLEVEL & LOGLVL_CCU
-      WriteSystemLog(_cmd);
-    #endif  
-  } else {    
-    WriteSystemLog(F("Connection to CCU failed"));
-  }
-}
-
-void hm_run_program(int ise_id)
-// Runs program in Homematic CCU
-// Use XML-API; use ise_id of program
-{
-  String _cmd;
-
-  //Generate command
-  _cmd = F("GET /config/xmlapi/runprogram.cgi?ise_id=");
-  _cmd = _cmd + ise_id;
-
-  //Connect and send
-  if (hm_client.connect(hm_ccu, 80)) {    
-    hm_client.println(_cmd);
-    hm_client.println();
-    hm_client.stop();
-    #if LOGVEVEL & LOGLVL_CCU
-      WriteSystemLog(_cmd);
-    #endif
-  } else {    
-      WriteSystemLog(F("Connection to CCU failed"));
-  }
-}
-
-double hm_get_datapoint(int dp_number)
-// Gets information to Homematic CCU
-// Using XML-API
-{
-  String _cmd, _ret, _cmpStr, _repStr;
-  int idxStart, idxEnd;
-  char c;
-  int tOutCtr;
-
-  //Generate command
-  _cmd = F("GET /config/xmlapi/state.cgi?datapoint_id=");
-  _cmd = _cmd + dp_number;
-  _cmd = _cmd + F(" HTTP/1.1");
-
-  //Connect and send
-  if (hm_client.connect(hm_ccu, 80)) {
-    //WriteSystemLog(_cmd);
-    hm_client.println(_cmd);
-    hm_client.print(F("Host: "));
-    hm_client.print(hm_ccu[0]); hm_client.print(F("."));
-    hm_client.print(hm_ccu[1]); hm_client.print(F("."));
-    hm_client.print(hm_ccu[2]); hm_client.print(F("."));
-    hm_client.println(hm_ccu[3]);
-    hm_client.println(F("Connection: close"));
-    hm_client.println();
-
-    unsigned long _timeStart=micros();
-    unsigned char _trace=0;
-    while (hm_client.connected()) {
-        _trace=1;
-        if (hm_client.available()) {
-          char c = hm_client.read();
-          _trace++;
+#if HM_ACCESS_ACTIVE==1
+  void hm_set_sysvar(String parameter, double value)
+  // Send information to Homematic CCU
+  // Using XML-RPC
+  {
+    String _cmd;
+    int _stConnection;
   
-          //read char by char HTTP request
-          if (_ret.length() < 1024) {
+    //Generate command
+    _cmd = F("GET /xy.exe?antwort=dom.GetObject('");
+    _cmd = _cmd + parameter;
+    _cmd = _cmd + F("').State(");
+    _cmd = _cmd + value;
+    _cmd = _cmd + F(")");
   
-            //store characters to string
-            _ret += c;           
-          }
-       }
-    }
-    hm_client.stop();
-    unsigned long _timeStop=micros();
-    
-    //Analyse return string
-    _cmpStr = F("<datapoint ise_id='");
-    _cmpStr = _cmpStr + dp_number;
-    _cmpStr = _cmpStr + F("' value='");
-    idxStart = _ret.indexOf(_cmpStr) + _cmpStr.length();
-    _cmpStr = F("'/></state>");
-    idxEnd = _ret.indexOf(_cmpStr);
-    if ((idxStart > -1) && (idxEnd > -1)) {
-      _ret = _ret.substring(idxStart, idxEnd);
-      _repStr = F("Datapoint ");
-      _repStr = _repStr + dp_number;
-      _repStr = _repStr + F(" received ") + _ret;
+    //Connect and send
+    _stConnection=hm_client.connect(hm_ccu, 8181);
+    if (_stConnection) {    
+      hm_client.println(_cmd);
+      hm_client.println();
+      hm_client.flush();
+      hm_client.stop();
       #if LOGLEVEL & LOGLVL_CCU
-        WriteSystemLog(_repStr);
+        WriteSystemLog(_cmd);
       #endif
+    } else {
+      WriteSystemLog(F("Connection to CCU failed"));    
+      WriteSystemLog("Result: " + String(_stConnection));
     }
-    else {      
-      WriteSystemLog(F("Transmission error while receiving datapoint"));
-      WriteSystemLog("Time  : "+String(_timeStop-_timeStart)+" us");
-      WriteSystemLog("Return: "+_ret);
-      WriteSystemLog("Trace : "+String(_trace));
-      _ret = F("NaN");
-    }   
-  } else {
-    WriteSystemLog(F("Connection to CCU failed"));
-    _ret = F("NaN");
   }
-  return _ret.toFloat();
-}
+  
+  void hm_set_state(int ise_id, double value)
+  // Change state of channel in Homematic CCU
+  // Use XML-API; use ise_id of channel
+  {
+    String _cmd;
+  
+    //Generate command
+    _cmd = "GET /config/xmlapi/statechange.cgi?ise_id=";
+    _cmd = _cmd + ise_id;
+    _cmd = _cmd + "&new_value=";
+    _cmd = _cmd + value;
+  
+    //Connect and send
+    if (hm_client.connect(hm_ccu, 80)) {    
+      hm_client.println(_cmd);
+      hm_client.println();
+      hm_client.flush();
+      hm_client.stop();
+      #if LOGLEVEL & LOGLVL_CCU
+        WriteSystemLog(_cmd);
+      #endif  
+    } else {    
+      WriteSystemLog(F("Connection to CCU failed"));
+    }
+  }
+  
+  void hm_run_program(int ise_id)
+  // Runs program in Homematic CCU
+  // Use XML-API; use ise_id of program
+  {
+    String _cmd;
+  
+    //Generate command
+    _cmd = F("GET /config/xmlapi/runprogram.cgi?ise_id=");
+    _cmd = _cmd + ise_id;
+  
+    //Connect and send
+    if (hm_client.connect(hm_ccu, 80)) {    
+      hm_client.println(_cmd);
+      hm_client.println();
+      hm_client.flush();
+      hm_client.stop();
+      #if LOGVEVEL & LOGLVL_CCU
+        WriteSystemLog(_cmd);
+      #endif
+    } else {    
+        WriteSystemLog(F("Connection to CCU failed"));
+    }
+  }
+  
+  double hm_get_datapoint(int dp_number)
+  // Gets information to Homematic CCU
+  // Using XML-API
+  {
+    String _cmd, _ret, _cmpStr, _repStr;
+    int idxStart, idxEnd;
+    char c;
+    int tOutCtr;
+  
+    //Generate command
+    _cmd = F("GET /config/xmlapi/state.cgi?datapoint_id=");
+    _cmd = _cmd + dp_number;
+    _cmd = _cmd + F(" HTTP/1.1");
+  
+    //Connect and send
+    if (hm_client.connect(hm_ccu, 80)) {
+      //WriteSystemLog(_cmd);
+      hm_client.println(_cmd);
+      hm_client.print(F("Host: "));
+      hm_client.print(hm_ccu[0]); hm_client.print(F("."));
+      hm_client.print(hm_ccu[1]); hm_client.print(F("."));
+      hm_client.print(hm_ccu[2]); hm_client.print(F("."));
+      hm_client.println(hm_ccu[3]);
+      hm_client.println(F("Connection: close"));
+      hm_client.println();
+      hm_client.flush();
+  
+      unsigned long _timeStart=micros();
+      unsigned char _trace=0;
+      while (hm_client.connected()) {
+          _trace=1;
+          if (hm_client.available()) {
+            char c = hm_client.read();
+            _trace++;
+    
+            //read char by char HTTP request
+            if (_ret.length() < 1024) {
+    
+              //store characters to string
+              _ret += c;           
+            }
+         }
+      }
+      hm_client.stop();
+      unsigned long _timeStop=micros();
+      
+      //Analyse return string
+      _cmpStr = F("<datapoint ise_id='");
+      _cmpStr = _cmpStr + dp_number;
+      _cmpStr = _cmpStr + F("' value='");
+      idxStart = _ret.indexOf(_cmpStr) + _cmpStr.length();
+      _cmpStr = F("'/></state>");
+      idxEnd = _ret.indexOf(_cmpStr);
+      if ((idxStart > -1) && (idxEnd > -1)) {
+        _ret = _ret.substring(idxStart, idxEnd);
+        _repStr = F("Datapoint ");
+        _repStr = _repStr + dp_number;
+        _repStr = _repStr + F(" received ") + _ret;
+        #if LOGLEVEL & LOGLVL_CCU
+          WriteSystemLog(_repStr);
+        #endif
+      }
+      else {      
+        WriteSystemLog(F("Transmission error while receiving datapoint"));
+        WriteSystemLog("Time  : "+String(_timeStop-_timeStart)+" us");
+        WriteSystemLog("Return: "+_ret);
+        WriteSystemLog("Trace : "+String(_trace));
+        _ret = F("NaN");
+      }   
+    } else {
+      WriteSystemLog(F("Connection to CCU failed"));
+      _ret = F("NaN");
+    }
+    return _ret.toFloat();
+  }
+#endif
 
 void LogData(void)
 //Logs data to SD
@@ -1202,7 +1243,7 @@ void LogData(void)
       WriteSystemLog(F("Writing measurement data to SD Card"));
     #endif
         
-    Workaround_CS_ETH2SD();    
+    Workaround_CS_ETH2SD(20);    
     
     logFile = SD.open(DATAFILE, FILE_WRITE);    
     //Log Measurement data
@@ -1260,9 +1301,10 @@ void LogData(void)
     
     //Newline and Close
     logFile.println();
+    logFile.flush();
     logFile.close();
 
-    Workaround_CS_SD2ETH();   
+    Workaround_CS_SD2ETH(20);   
   
   }
   else {
@@ -1281,7 +1323,7 @@ void LogDataHeader(void)
       WriteSystemLog(F("Writing headline for measurement data to SD Card"));
     #endif  
 
-    Workaround_CS_ETH2SD();    
+    Workaround_CS_ETH2SD(30);    
           
     logFile = SD.open(DATAFILE, FILE_WRITE);  
     logFile.print(F("Date;"));
@@ -1299,10 +1341,11 @@ void LogDataHeader(void)
     logFile.print(F("Filter diagnosis [-];"));   
     logFile.print(F("Usage in last 24h [Liter];"));   
     logFile.print(F("Usage average in last 10d [Liter]"));   
-    logFile.println();      
+    logFile.println();  
+    logFile.flush();    
     logFile.close();
     
-    Workaround_CS_SD2ETH();
+    Workaround_CS_SD2ETH(30);
   }
   else {
     WriteSystemLog(F("Writing to SD Card failed"));
@@ -1358,54 +1401,59 @@ void MonitorWebServer(void)
           }
           else if (pageStr.equals("reprogram")>0) {
             //Start reprogramming
-            WriteSystemLog("Reprogramming requested by user");
-            NetEEPROM.writeImgBad();
-            WriteSystemLog("EEP Status: " + String(eeprom_read_byte(NETEEPROM_IMG_STAT)));
-            delay(1000);
-            resetFunc();
+            //WriteSystemLog("Reprogramming requested by user");
+            //NetEEPROM.writeImgBad();
+            //WriteSystemLog("EEP Status: " + String(eeprom_read_byte(NETEEPROM_IMG_STAT)));
+            //delay(1000);
+            //resetFunc();
           }
           else if ((pageStr.equals(LOGFILE)>0) || ((pageStr.equals(DATAFILE)>0))) {           
             //Read log-file or data-file
-            Workaround_CS_ETH2SD();
+            Workaround_CS_ETH2SD(40);
             File webFile = SD.open(pageStr);        // open file
-            Workaround_CS_SD2ETH();
+            Workaround_CS_SD2ETH(40);
             client2.println(F("HTTP/1.1 200 OK"));
             client2.println(F("Content-Type: text/comma-separated-values"));
             client2.println(F("Content-Disposition: attachment;"));
             client2.println(F("Connection: close"));
             client2.println();
-
-            if (webFile)
-            {
-              Workaround_CS_ETH2SD();
-              while (webFile.available())
-              {
-                //client2.write(webFile.read()); // send file to client byte by byte (slow)                
+            Workaround_CS_ETH2SD(41);
+            
+            if (webFile) {             
+              //If file is available: start transfer
+              while (webFile.available()) { 
+                //Read file content                
                 clientBuf[clientCount] = webFile.read();                
-                clientCount++;
-
-                if (clientCount > SD_BLOCK_SIZE - 1)
-                {
-                  Workaround_CS_SD2ETH();
-                  // Serial.println("Packet");
-                  client2.write(clientBuf, SD_BLOCK_SIZE);
-                  clientCount = 0;
-                  Workaround_CS_ETH2SD();
+                clientCount++;                
+                if (clientCount > SD_BLOCK_SIZE - 1) {             
+                  //If a full block is read: transfer 
+                  //Don't activate folowing line if LOGLEVEL TRAP is active
+                  Workaround_CS_SD2ETH(42);     
+                  //Serial.println("Packet");
+                  client2.write(clientBuf, SD_BLOCK_SIZE);                  
+                  //do not call .flush() here otherwise tranfer wil be slow
+                  clientCount = 0;                  
                 }
-                TriggerWDT();  // Trigger Watchdog
-              }
-              //final <SD_BLOCK_SIZE byte cleanup packet
-              if (clientCount > 0) client2.write(clientBuf, clientCount);
-              Workaround_CS_ETH2SD();
-              webFile.close();
-
+                // Trigger Watchdog
+                TriggerWDT();  
+                Workaround_CS_ETH2SD(43);                                                                              
+              }                                            
+              webFile.close(); 
+              //final <SD_BLOCK_SIZE byte cleanup packet              
+              if (clientCount > 0) {
+                Workaround_CS_SD2ETH(43);
+                client2.write(clientBuf, clientCount);                            
+                client2.flush();
+              }                           
+              
               //Remove downloaded file
+              Workaround_CS_ETH2SD(44);
               SD.remove(pageStr);
+              Workaround_CS_SD2ETH(44);
               if (pageStr.equals(DATAFILE)) {
                 // Create new headline
                 LogDataHeader();
-              }
-              Workaround_CS_SD2ETH();
+              }              
             }
             else {
               WriteSystemLog("File not found: "+pageStr);
@@ -1679,7 +1727,7 @@ void MonitorWebServer(void)
             //Reset and Reprogram
             client2.println(F("<H2>Reset</h2>"));
             client2.println(F("<a href=""reset"">Reset</a><br>"));
-            client2.println(F("<a href=""reprogram"">Flash new program</a>"));
+            //client2.println(F("<a href=""reprogram"">Flash new program</a>"));
 
             //Version Info
             client2.println(F("<H2>Programminfo</h2>"));
@@ -1690,6 +1738,9 @@ void MonitorWebServer(void)
             client2.println();
           }         
           delay(1);
+          // Wait to send all data
+          client2.flush();
+          
           //stopping client
           client2.stop();
         }
@@ -1708,10 +1759,13 @@ void ReadEEPData(void)
   //Read data stream
   #if LOGLEVEL & LOGLVL_SYSTEM
     WriteSystemLog(F("Reading settings from EEP"));
-  #endif
+  #endif  
   for (i = 0; i < EEPSize; i++) {
-    SettingsEEP.SettingStream[i] = EEPROM.read(i);
+    SettingsEEP.SettingStream[i] = EEPROM.read(i);    
   }
+  #if LOGLEVEL & LOGLVLEEP      
+    DumpEEPData();
+  #endif
 
   // Check plausibility
   chk = checksum(&SettingsEEP.SettingStream[1], EEPSize - 1);
@@ -1721,8 +1775,15 @@ void ReadEEPData(void)
       WriteSystemLog("EEPSize " + String(EEPSize) + " Byte");
     #endif  
   }
-  else {
-    //Initialise new: Automatically takes the init data    
+  else {    
+   //Initialise new: Automatically takes the init data    
+   #if LOGLEVEL & LOGLVL_SYSTEM
+      WriteSystemLog(F("EEP checksum wrong "));
+      WriteSystemLog("EEPSize " + String(EEPSize) + " Byte");
+      WriteSystemLog("Checksum in EEPROM : " + String(SettingsEEP.settings.stat,HEX));
+      WriteSystemLog("Checksum calculated: " + String(chk,HEX));
+      WriteSystemLog(F("Initializing EEPROM"));
+   #endif  
    SettingsEEP.settings.cycle_time = 60;            //Calculating base cycle time [s]
    SettingsEEP.settings.vSound = 3433;              //Velocity of sound [mm/sec]
    SettingsEEP.settings.hOffset = -25;              //Runtime offset [mm]
@@ -1753,7 +1814,7 @@ void ReadEEPData(void)
    }
    SettingsEEP.settings.iDay=0;                     //Start with day 0
    
-    WriteEEPData();
+   WriteEEPData();
   }
 }
 
@@ -1770,7 +1831,46 @@ void WriteEEPData(void)
   }
   #if LOGLEVEL & LOGLVL_SYSTEM
     WriteSystemLog(F("Writing settings to EEP"));
+    WriteSystemLog("EEP Checksum "+String(chk,HEX));
   #endif
+}
+
+void DumpEEPData(void)
+{
+  //Writes EEP Bytes to Logfile and Serial
+  File logFile;
+  String LogStr;
+  unsigned int i;
+  
+  WriteSystemLog("EEP Data Dump");
+
+  //Log data to SD Card
+  LogStr = "  0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F";    
+    for (i = 0; i < EEPSize; i++) {
+      if (i%16==0) {
+        LogStr.concat("\n");
+        LogStr.concat(String(i/16,HEX)+" ");
+      }
+      if (SettingsEEP.SettingStream[i]<16) {
+        LogStr.concat("0");
+      }        
+      LogStr.concat(String(SettingsEEP.SettingStream[i],HEX));  
+      LogStr.concat(" ");
+    }
+    
+  if (SD_State == SD_OK) {    
+    Workaround_CS_ETH2SD(60);
+    
+    logFile = SD.open(LOGFILE, FILE_WRITE);
+    
+    logFile.flush();
+    logFile.close();    
+        
+    Workaround_CS_SD2ETH(60);    
+  }
+
+  //Write to serial
+  Serial.println(LogStr);
 }
 
 unsigned char Refill(int volRefillDes)
@@ -1851,19 +1951,14 @@ void WriteSystemLog(String LogText)
   LogStr.concat(LogText);
 
   if (SD_State == SD_OK) {    
-    Workaround_CS_ETH2SD();
+    Workaround_CS_ETH2SD(50);
     
     logFile = SD.open(LOGFILE, FILE_WRITE);
     logFile.println(LogStr);
+    logFile.flush();
     logFile.close();    
-    //Test code to catch web-access stalling issue: 
-    if (digitalRead(SD_CARD_PIN)==LOW) {
-      logFile = SD.open(LOGFILE, FILE_WRITE);
-      logFile.println("SD_CARD_PIN==LOW");
-      logFile.flush();
-      logFile.close();          
-    }
-    Workaround_CS_SD2ETH();    
+        
+    Workaround_CS_SD2ETH(50);    
   }
 
   //Write to serial
@@ -1926,12 +2021,15 @@ unsigned char checksum (unsigned char *ptr, size_t sz)
 void resetFunc (void) 
 //Reset function
 {
-  asm volatile ("  jmp 0");  
+  WriteSystemLog("Reset program");
+  cli(); //irq's off
+  wdt_enable(WDTO_1S); //wd on,15ms
+  while(1); //loop
 }
 
 void TriggerWDT(void)
 // Trigger watchdog timer
-{
+{  
   wdt_reset();
 }
 
@@ -2091,7 +2189,7 @@ int Curve(int x[],int y[], int siz, int xi)
   return round(y[_i-1] + _fac*(y[_i]-y[_i-1]));  
 }
 
-void Workaround_CS_ETH2SD()
+void Workaround_CS_ETH2SD(int pos)
 //Workaround when ETH CS is not reset before SD CS is activated
 { 
   File logFile; 
@@ -2107,7 +2205,8 @@ void Workaround_CS_ETH2SD()
      LogStr = "[";
      LogStr.concat(date_time);
      LogStr.concat("] ");
-     LogStr.concat("Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access");
+     LogStr.concat("Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access. Position ");
+     LogStr.concat(String(pos));
      
      //Workaround: Switch off CS from Eth, and switch on CS from SD
      digitalWrite(ETH__SS_PIN,HIGH);
@@ -2125,7 +2224,7 @@ void Workaround_CS_ETH2SD()
   }
 }
 
-void Workaround_CS_SD2ETH()
+void Workaround_CS_SD2ETH(int pos)
 //Workaround when SD CS is not reset before ETH CS is activated
 {
   File logFile; 
@@ -2141,7 +2240,8 @@ void Workaround_CS_SD2ETH()
      LogStr = "[";
      LogStr.concat(date_time);
      LogStr.concat("] ");
-     LogStr.concat("Trap: SD_CARD_PIN==LOW (ACTIVE) after SD-Card access is finished");
+     LogStr.concat("Trap: SD_CARD_PIN==LOW (ACTIVE) after SD-Card access is finished. Position");
+     LogStr.concat(String(pos));
      
      //Workaround: Switch off CS from Eth, and switch on CS from SD
      digitalWrite(ETH__SS_PIN,LOW);
