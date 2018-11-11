@@ -1,0 +1,938 @@
+[2018-11-07 19:39:55] Time updated by NTP
+[2018-11-07 19:41:02] Pulse counter: 0
+[2018-11-07 19:41:02] Array position: 100
+[2018-11-07 19:41:02] Measured distance: 1959.00 mm
+[2018-11-07 19:41:02] Actual Level     : 441 mm
+[2018-11-07 19:41:02] Actual volume    : 1385 Liter, StdDev: 0.00 Liter
+[2018-11-07 19:41:02] Error status     : 0
+[2018-11-07 19:41:03] Rain in last 24h from weather station [mm]: 0.00
+[2018-11-07 19:41:03] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-07 19:41:03] Writing measurement data to SD Card
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Using Fixed IP
+[1970-00-00 00:00:00] IP-Address: 192.168.178.5
+[2018-11-07 19:43:50] Reading settings from EEP
+[2018-11-07 19:43:50] EEP checksum ok 
+[2018-11-07 19:43:50] EEPSize 74 Byte
+[2018-11-07 19:43:50] System startup
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Using Fixed IP
+[1970-00-00 00:00:00] IP-Address : 192.168.178.5
+[1970-00-00 00:00:00] Gateway    : 192.168.178.1
+[1970-00-00 00:00:00] Subnet Mask: 255.255.255.0
+[2018-11-07 19:44:20] Reading settings from EEP
+[2018-11-07 19:44:20] EEP checksum wrong 
+[2018-11-07 19:44:20] EEPSize 74 Byte
+[2018-11-07 19:44:20] Checksum in EEPROM : b9
+[2018-11-07 19:44:20] Checksum calculated: f8
+[2018-11-07 19:44:20] Initializing EEPROM
+[2018-11-07 19:44:20] Writing settings to EEP
+[2018-11-07 19:44:20] EEP Checksum 42
+[2018-11-07 19:44:20] System startup
+[2018-11-07 19:45:20] Time updated by NTP
+[2018-11-07 19:46:02] Pulse counter: 0
+[2018-11-07 19:46:02] Array position: 100
+[2018-11-07 19:46:02] Measured distance: 1959.00 mm
+[2018-11-07 19:46:02] Actual Level     : 441 mm
+[2018-11-07 19:46:02] Actual volume    : 1385 Liter, StdDev: 0.00 Liter
+[2018-11-07 19:46:02] Error status     : 0
+[2018-11-07 19:46:02] Rain in last 24h from weather station [mm]: 0.00
+[2018-11-07 19:46:02] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-07 19:46:03] Writing measurement data to SD Card
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Using Fixed IP
+[1970-00-00 00:00:00] IP-Address : 192.168.178.5
+[1970-00-00 00:00:00] Gateway    : 192.168.178.1
+[1970-00-00 00:00:00] Subnet Mask: 255.255.255.0
+[2018-11-07 19:46:39] Reading settings from EEP
+[2018-11-07 19:46:39] EEP checksum wrong 
+[2018-11-07 19:46:39] EEPSize 74 Byte
+[2018-11-07 19:46:39] Checksum in EEPROM : 42
+[2018-11-07 19:46:39] Checksum calculated: 6d
+[2018-11-07 19:46:39] Initializing EEPROM
+[2018-11-07 19:46:39] Writing settings to EEP
+[2018-11-07 19:46:39] EEP Checksum b6
+[2018-11-07 19:46:39] System startup
+[2018-11-07 19:46:53] Reset requested by user
+[2018-11-07 19:46:53] EEP Status: 238
+[2018-11-07 19:46:54] Reset program
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Using Fixed IP
+[1970-00-00 00:00:00] IP-Address : 192.168.178.5
+[1970-00-00 00:00:00] Gateway    : 192.168.178.1
+[1970-00-00 00:00:00] Subnet Mask: 255.255.255.0
+[2018-11-07 19:46:58] Reading settings from EEP
+[2018-11-07 19:46:58] EEP checksum wrong 
+[2018-11-07 19:46:58] EEPSize 74 Byte
+[2018-11-07 19:46:58] Checksum in EEPROM : 7f
+[2018-11-07 19:46:58] Checksum calculated: 39
+[2018-11-07 19:46:58] Initializing EEPROM
+[2018-11-07 19:46:58] Writing settings to EEP
+[2018-11-07 19:46:58] EEP Checksum a3
+[2018-11-07 19:46:58] System startup
+[2018-11-07 19:47:36] Writing settings to EEP
+[2018-11-07 19:47:36] EEP Checksum a2
+[2018-11-07 19:47:55] Writing settings to EEP
+[2018-11-07 19:47:55] EEP Checksum a3
+[2018-11-07 19:47:58] Time updated by NTP
+[2018-11-07 19:48:07] Reset requested by user
+[2018-11-07 19:48:07] EEP Status: 238
+[2018-11-07 19:48:08] Reset program
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Using Fixed IP
+[1970-00-00 00:00:00] IP-Address : 192.168.178.5
+[1970-00-00 00:00:00] Gateway    : 192.168.178.1
+[1970-00-00 00:00:00] Subnet Mask: 255.255.255.0
+[2018-11-07 19:48:13] Reading settings from EEP
+[2018-11-07 19:48:13] EEP checksum ok 
+[2018-11-07 19:48:13] EEPSize 74 Byte
+[2018-11-07 19:48:13] System startup
+[2018-11-07 19:49:13] Time updated by NTP
+[2018-11-07 19:49:58] Pulse counter: 0
+[2018-11-07 19:49:58] Array position: 100
+[2018-11-07 19:49:58] Measured distance: 1959.00 mm
+[2018-11-07 19:49:58] Actual Level     : 441 mm
+[2018-11-07 19:49:58] Actual volume    : 1385 Liter, StdDev: 0.00 Liter
+[2018-11-07 19:49:58] Error status     : 0
+[2018-11-07 19:49:58] Rain in last 24h from weather station [mm]: 0.00
+[2018-11-07 19:49:58] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-07 19:49:58] Writing measurement data to SD Card
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Using Fixed IP
+[1970-00-00 00:00:00] IP-Address : 192.168.178.5
+[1970-00-00 00:00:00] Gateway    : 192.168.178.1
+[1970-00-00 00:00:00] Subnet Mask: 255.255.255.0
+[2018-11-07 20:48:27] Reading settings from EEP
+[2018-11-07 20:48:27] EEP checksum ok 
+[2018-11-07 20:48:27] EEPSize 74 Byte
+[2018-11-07 20:48:27] System startup
+[2018-11-07 20:49:27] Time updated by NTP
+[2018-11-07 20:50:07] Pulse counter: 0
+[2018-11-07 20:50:07] Array position: 100
+[2018-11-07 20:50:07] Measured distance: 1959.00 mm
+[2018-11-07 20:50:07] Actual Level     : 441 mm
+[2018-11-07 20:50:07] Actual volume    : 1385 Liter, StdDev: 0.00 Liter
+[2018-11-07 20:50:07] Error status     : 0
+[2018-11-07 20:50:08] Rain in last 24h from weather station [mm]: 0.00
+[2018-11-07 20:50:08] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-07 20:50:08] Writing measurement data to SD Card
+[2018-11-07 21:48:41] Time updated by NTP
+[2018-11-07 21:50:16] Pulse counter: 0
+[2018-11-07 21:50:16] Array position: 100
+[2018-11-07 21:50:16] Measured distance: 1961.00 mm
+[2018-11-07 21:50:16] Actual Level     : 439 mm
+[2018-11-07 21:50:16] Actual volume    : 1379 Liter, StdDev: 0.00 Liter
+[2018-11-07 21:50:16] Error status     : 0
+[2018-11-07 21:50:16] Rain in last 24h from weather station [mm]: 0.00
+[2018-11-07 21:50:16] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-07 21:50:16] Writing measurement data to SD Card
+[2018-11-07 22:48:56] Time updated by NTP
+[2018-11-07 22:50:24] Pulse counter: 0
+[2018-11-07 22:50:24] Array position: 100
+[2018-11-07 22:50:24] Measured distance: 1958.00 mm
+[2018-11-07 22:50:24] Actual Level     : 442 mm
+[2018-11-07 22:50:24] Actual volume    : 1388 Liter, StdDev: 0.00 Liter
+[2018-11-07 22:50:24] Error status     : 0
+[2018-11-07 22:50:25] Rain in last 24h from weather station [mm]: 0.00
+[2018-11-07 22:50:25] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-07 22:50:25] Writing measurement data to SD Card
+[2018-11-07 23:49:09] Time updated by NTP
+[2018-11-07 23:50:32] Pulse counter: 0
+[2018-11-07 23:50:32] Array position: 100
+[2018-11-07 23:50:32] Measured distance: 1958.30 mm
+[2018-11-07 23:50:32] Actual Level     : 441 mm
+[2018-11-07 23:50:32] Actual volume    : 1385 Liter, StdDev: 1.44 Liter
+[2018-11-07 23:50:32] Error status     : 0
+[2018-11-07 23:50:32] Rain in last 24h from weather station [mm]: 0.00
+[2018-11-07 23:50:32] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-07 23:50:32] Writing measurement data to SD Card
+[2018-11-08 00:49:24] Time updated by NTP
+[2018-11-08 00:50:41] Pulse counter: 0
+[2018-11-08 00:50:41] Array position: 100
+[2018-11-08 00:50:41] Measured distance: 1958.16 mm
+[2018-11-08 00:50:41] Actual Level     : 441 mm
+[2018-11-08 00:50:41] Actual volume    : 1385 Liter, StdDev: 1.15 Liter
+[2018-11-08 00:50:41] Error status     : 0
+[2018-11-08 00:50:41] Rain in last 24h from weather station [mm]: 0.00
+[2018-11-08 00:50:41] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-08 00:50:41] Writing measurement data to SD Card
+[2018-11-08 01:49:38] Time updated by NTP
+[2018-11-08 01:50:49] Pulse counter: 0
+[2018-11-08 01:50:49] Array position: 100
+[2018-11-08 01:50:49] Measured distance: 1963.00 mm
+[2018-11-08 01:50:49] Actual Level     : 437 mm
+[2018-11-08 01:50:49] Actual volume    : 1372 Liter, StdDev: 0.00 Liter
+[2018-11-08 01:50:49] Error status     : 0
+[2018-11-08 01:50:50] Rain in last 24h from weather station [mm]: 0.00
+[2018-11-08 01:50:50] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-08 01:50:50] Writing measurement data to SD Card
+[2018-11-08 02:49:52] Time updated by NTP
+[2018-11-08 02:50:57] Pulse counter: 0
+[2018-11-08 02:50:57] Array position: 100
+[2018-11-08 02:50:57] Measured distance: 1948.00 mm
+[2018-11-08 02:50:57] Actual Level     : 452 mm
+[2018-11-08 02:50:57] Actual volume    : 1420 Liter, StdDev: 0.00 Liter
+[2018-11-08 02:50:57] Error status     : 0
+[2018-11-08 02:50:57] Rain in last 24h from weather station [mm]: 0.30
+[2018-11-08 02:50:57] Rain in last  1h from weather station [mm]: 0.30
+[2018-11-08 02:50:57] Writing measurement data to SD Card
+[2018-11-08 03:50:06] Time updated by NTP
+[2018-11-08 03:51:05] Pulse counter: 0
+[2018-11-08 03:51:05] Array position: 100
+[2018-11-08 03:51:05] Measured distance: 1949.50 mm
+[2018-11-08 03:51:05] Actual Level     : 450 mm
+[2018-11-08 03:51:05] Actual volume    : 1413 Liter, StdDev: 6.03 Liter
+[2018-11-08 03:51:05] Error status     : 0
+[2018-11-08 03:51:06] Rain in last 24h from weather station [mm]: 0.30
+[2018-11-08 03:51:06] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-08 03:51:06] Writing measurement data to SD Card
+[2018-11-08 04:50:21] Time updated by NTP
+[2018-11-08 04:51:14] Pulse counter: 0
+[2018-11-08 04:51:14] Array position: 100
+[2018-11-08 04:51:14] Measured distance: 1940.14 mm
+[2018-11-08 04:51:14] Actual Level     : 459 mm
+[2018-11-08 04:51:14] Actual volume    : 1441 Liter, StdDev: 6.35 Liter
+[2018-11-08 04:51:14] Error status     : 0
+[2018-11-08 04:51:14] Rain in last 24h from weather station [mm]: 0.89
+[2018-11-08 04:51:14] Rain in last  1h from weather station [mm]: 0.59
+[2018-11-08 04:51:14] Writing measurement data to SD Card
+[2018-11-08 05:50:34] Time updated by NTP
+[2018-11-08 05:51:21] Pulse counter: 0
+[2018-11-08 05:51:22] Array position: 100
+[2018-11-08 05:51:22] Measured distance: 1940.34 mm
+[2018-11-08 05:51:22] Actual Level     : 459 mm
+[2018-11-08 05:51:22] Actual volume    : 1441 Liter, StdDev: 1.49 Liter
+[2018-11-08 05:51:22] Error status     : 0
+[2018-11-08 05:51:22] Rain in last 24h from weather station [mm]: 0.89
+[2018-11-08 05:51:22] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-08 05:51:22] Writing measurement data to SD Card
+[2018-11-08 06:49:49] Time updated by NTP
+[2018-11-08 06:51:30] Pulse counter: 0
+[2018-11-08 06:51:30] Array position: 100
+[2018-11-08 06:51:30] Measured distance: 1943.08 mm
+[2018-11-08 06:51:30] Actual Level     : 456 mm
+[2018-11-08 06:51:30] Actual volume    : 1432 Liter, StdDev: 0.85 Liter
+[2018-11-08 06:51:30] Error status     : 0
+[2018-11-08 06:51:31] Rain in last 24h from weather station [mm]: 0.89
+[2018-11-08 06:51:31] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-08 06:51:31] Writing measurement data to SD Card
+[2018-11-08 07:50:02] Time updated by NTP
+[2018-11-08 07:51:38] Pulse counter: 0
+[2018-11-08 07:51:38] Array position: 100
+[2018-11-08 07:51:38] Measured distance: 1943.00 mm
+[2018-11-08 07:51:38] Actual Level     : 457 mm
+[2018-11-08 07:51:38] Actual volume    : 1435 Liter, StdDev: 0.00 Liter
+[2018-11-08 07:51:38] Error status     : 0
+[2018-11-08 07:51:38] Rain in last 24h from weather station [mm]: 0.89
+[2018-11-08 07:51:38] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-08 07:51:38] Writing measurement data to SD Card
+[2018-11-08 08:50:17] Time updated by NTP
+[2018-11-08 08:51:46] Pulse counter: 0
+[2018-11-08 08:51:46] Array position: 100
+[2018-11-08 08:51:46] Measured distance: 1940.54 mm
+[2018-11-08 08:51:46] Actual Level     : 459 mm
+[2018-11-08 08:51:46] Actual volume    : 1441 Liter, StdDev: 3.78 Liter
+[2018-11-08 08:51:46] Error status     : 0
+[2018-11-08 08:51:47] Rain in last 24h from weather station [mm]: 0.89
+[2018-11-08 08:51:47] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-08 08:51:47] Writing measurement data to SD Card
+[2018-11-08 09:50:31] Time updated by NTP
+[2018-11-08 09:51:56] Pulse counter: 0
+[2018-11-08 09:51:56] Array position: 100
+[2018-11-08 09:51:56] Measured distance: 1940.00 mm
+[2018-11-08 09:51:56] Actual Level     : 460 mm
+[2018-11-08 09:51:56] Actual volume    : 1445 Liter, StdDev: 0.00 Liter
+[2018-11-08 09:51:56] Error status     : 0
+[2018-11-08 09:51:56] Rain in last 24h from weather station [mm]: 0.89
+[2018-11-08 09:51:56] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-08 09:51:56] Writing measurement data to SD Card
+[2018-11-08 10:50:45] Time updated by NTP
+[2018-11-08 10:52:02] Pulse counter: 0
+[2018-11-08 10:52:03] Array position: 100
+[2018-11-08 10:52:03] Measured distance: 1946.00 mm
+[2018-11-08 10:52:03] Actual Level     : 454 mm
+[2018-11-08 10:52:03] Actual volume    : 1426 Liter, StdDev: 0.00 Liter
+[2018-11-08 10:52:03] Error status     : 0
+[2018-11-08 10:52:03] Rain in last 24h from weather station [mm]: 0.89
+[2018-11-08 10:52:03] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-08 10:52:03] Writing measurement data to SD Card
+[2018-11-08 11:50:59] Time updated by NTP
+[2018-11-08 11:52:11] Pulse counter: 0
+[2018-11-08 11:52:11] Array position: 100
+[2018-11-08 11:52:11] Measured distance: 1950.00 mm
+[2018-11-08 11:52:11] Actual Level     : 450 mm
+[2018-11-08 11:52:11] Actual volume    : 1413 Liter, StdDev: 0.00 Liter
+[2018-11-08 11:52:11] Error status     : 0
+[2018-11-08 11:52:12] Rain in last 24h from weather station [mm]: 0.89
+[2018-11-08 11:52:12] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-08 11:52:12] Writing measurement data to SD Card
+[2018-11-08 12:51:14] Time updated by NTP
+[2018-11-08 12:52:20] Pulse counter: 0
+[2018-11-08 12:52:20] Array position: 100
+[2018-11-08 12:52:20] Measured distance: 1951.00 mm
+[2018-11-08 12:52:20] Actual Level     : 449 mm
+[2018-11-08 12:52:20] Actual volume    : 1410 Liter, StdDev: 0.00 Liter
+[2018-11-08 12:52:20] Error status     : 0
+[2018-11-08 12:52:20] Rain in last 24h from weather station [mm]: 0.89
+[2018-11-08 12:52:21] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-08 12:52:21] Writing measurement data to SD Card
+[2018-11-08 13:51:27] Time updated by NTP
+[2018-11-08 13:52:27] Pulse counter: 0
+[2018-11-08 13:52:27] Array position: 100
+[2018-11-08 13:52:27] Measured distance: 1950.70 mm
+[2018-11-08 13:52:27] Actual Level     : 449 mm
+[2018-11-08 13:52:27] Actual volume    : 1410 Liter, StdDev: 5.84 Liter
+[2018-11-08 13:52:27] Error status     : 0
+[2018-11-08 13:52:28] Rain in last 24h from weather station [mm]: 0.89
+[2018-11-08 13:52:28] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-08 13:52:28] Writing measurement data to SD Card
+[2018-11-08 14:51:42] Time updated by NTP
+[2018-11-08 14:52:36] Pulse counter: 0
+[2018-11-08 14:52:36] Array position: 100
+[2018-11-08 14:52:36] Measured distance: 1950.78 mm
+[2018-11-08 14:52:36] Actual Level     : 449 mm
+[2018-11-08 14:52:36] Actual volume    : 1410 Liter, StdDev: 5.73 Liter
+[2018-11-08 14:52:36] Error status     : 0
+[2018-11-08 14:52:36] Rain in last 24h from weather station [mm]: 0.89
+[2018-11-08 14:52:36] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-08 14:52:36] Writing measurement data to SD Card
+[2018-11-08 15:50:56] Time updated by NTP
+[2018-11-08 15:52:45] Pulse counter: 0
+[2018-11-08 15:52:45] Array position: 100
+[2018-11-08 15:52:45] Measured distance: 1948.00 mm
+[2018-11-08 15:52:45] Actual Level     : 452 mm
+[2018-11-08 15:52:45] Actual volume    : 1420 Liter, StdDev: 0.00 Liter
+[2018-11-08 15:52:45] Error status     : 0
+[2018-11-08 15:52:45] Rain in last 24h from weather station [mm]: 0.89
+[2018-11-08 15:52:45] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-08 15:52:46] Writing measurement data to SD Card
+[2018-11-08 16:51:09] Time updated by NTP
+[2018-11-08 16:52:52] Pulse counter: 0
+[2018-11-08 16:52:52] Array position: 100
+[2018-11-08 16:52:52] Measured distance: 1948.00 mm
+[2018-11-08 16:52:52] Actual Level     : 452 mm
+[2018-11-08 16:52:52] Actual volume    : 1420 Liter, StdDev: 0.00 Liter
+[2018-11-08 16:52:52] Error status     : 0
+[2018-11-08 16:52:53] Rain in last 24h from weather station [mm]: 0.89
+[2018-11-08 16:52:53] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-08 16:52:53] Writing measurement data to SD Card
+[2018-11-08 17:51:24] Time updated by NTP
+[2018-11-08 17:53:01] Pulse counter: 0
+[2018-11-08 17:53:01] Array position: 100
+[2018-11-08 17:53:01] Measured distance: 1960.92 mm
+[2018-11-08 17:53:01] Actual Level     : 439 mm
+[2018-11-08 17:53:01] Actual volume    : 1379 Liter, StdDev: 0.85 Liter
+[2018-11-08 17:53:01] Error status     : 0
+[2018-11-08 17:53:01] Rain in last 24h from weather station [mm]: 0.89
+[2018-11-08 17:53:01] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-08 17:53:01] Writing measurement data to SD Card
+[2018-11-08 18:51:37] Time updated by NTP
+[2018-11-08 18:53:08] Pulse counter: 0
+[2018-11-08 18:53:08] Array position: 100
+[2018-11-08 18:53:08] Measured distance: 1961.00 mm
+[2018-11-08 18:53:08] Actual Level     : 439 mm
+[2018-11-08 18:53:08] Actual volume    : 1379 Liter, StdDev: 0.00 Liter
+[2018-11-08 18:53:08] Error status     : 0
+[2018-11-08 18:53:09] Rain in last 24h from weather station [mm]: 0.89
+[2018-11-08 18:53:09] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-08 18:53:09] Writing measurement data to SD Card
+[2018-11-08 19:51:52] Time updated by NTP
+[2018-11-08 19:53:17] Pulse counter: 0
+[2018-11-08 19:53:17] Array position: 100
+[2018-11-08 19:53:17] Measured distance: 1957.56 mm
+[2018-11-08 19:53:17] Actual Level     : 442 mm
+[2018-11-08 19:53:17] Actual volume    : 1388 Liter, StdDev: 1.56 Liter
+[2018-11-08 19:53:17] Error status     : 0
+[2018-11-08 19:53:17] Rain in last 24h from weather station [mm]: 0.89
+[2018-11-08 19:53:17] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-08 19:53:17] Writing measurement data to SD Card
+[2018-11-08 20:52:06] Time updated by NTP
+[2018-11-08 20:53:25] Pulse counter: 0
+[2018-11-08 20:53:25] Array position: 100
+[2018-11-08 20:53:25] Measured distance: 1963.00 mm
+[2018-11-08 20:53:26] Actual Level     : 437 mm
+[2018-11-08 20:53:26] Actual volume    : 1372 Liter, StdDev: 0.00 Liter
+[2018-11-08 20:53:26] Error status     : 0
+[2018-11-08 20:53:26] Rain in last 24h from weather station [mm]: 0.89
+[2018-11-08 20:53:26] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-08 20:53:26] Writing measurement data to SD Card
+[2018-11-08 21:52:20] Time updated by NTP
+[2018-11-08 21:53:33] Pulse counter: 0
+[2018-11-08 21:53:33] Array position: 100
+[2018-11-08 21:53:33] Measured distance: 1968.00 mm
+[2018-11-08 21:53:33] Actual Level     : 432 mm
+[2018-11-08 21:53:33] Actual volume    : 1357 Liter, StdDev: 0.00 Liter
+[2018-11-08 21:53:33] Error status     : 0
+[2018-11-08 21:53:34] Rain in last 24h from weather station [mm]: 0.89
+[2018-11-08 21:53:34] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-08 21:53:34] Writing measurement data to SD Card
+[2018-11-08 22:52:34] Time updated by NTP
+[2018-11-08 22:53:42] Pulse counter: 0
+[2018-11-08 22:53:42] Array position: 100
+[2018-11-08 22:53:42] Measured distance: 1969.22 mm
+[2018-11-08 22:53:42] Actual Level     : 430 mm
+[2018-11-08 22:53:42] Actual volume    : 1350 Liter, StdDev: 1.30 Liter
+[2018-11-08 22:53:42] Error status     : 0
+[2018-11-08 22:53:42] Rain in last 24h from weather station [mm]: 0.89
+[2018-11-08 22:53:42] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-08 22:53:42] Writing measurement data to SD Card
+[2018-11-08 23:52:49] Time updated by NTP
+[2018-11-08 23:53:50] Pulse counter: 0
+[2018-11-08 23:53:50] Array position: 100
+[2018-11-08 23:53:50] Measured distance: 1969.76 mm
+[2018-11-08 23:53:50] Actual Level     : 430 mm
+[2018-11-08 23:53:50] Actual volume    : 1350 Liter, StdDev: 1.34 Liter
+[2018-11-08 23:53:50] Error status     : 0
+[2018-11-08 23:53:51] Rain in last 24h from weather station [mm]: 0.89
+[2018-11-08 23:53:51] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-08 23:53:51] Writing measurement data to SD Card
+[2018-11-09 00:52:02] Time updated by NTP
+[2018-11-09 00:53:58] Pulse counter: 0
+[2018-11-09 00:53:58] Array position: 100
+[2018-11-09 00:53:58] Measured distance: 1969.56 mm
+[2018-11-09 00:53:58] Actual Level     : 430 mm
+[2018-11-09 00:53:58] Actual volume    : 1350 Liter, StdDev: 1.56 Liter
+[2018-11-09 00:53:58] Error status     : 0
+[2018-11-09 00:53:58] Rain in last 24h from weather station [mm]: 0.89
+[2018-11-09 00:53:58] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-09 00:53:58] Writing measurement data to SD Card
+[2018-11-09 01:52:17] Time updated by NTP
+[2018-11-09 01:54:06] Pulse counter: 0
+[2018-11-09 01:54:06] Array position: 100
+[2018-11-09 01:54:06] Measured distance: 1966.00 mm
+[2018-11-09 01:54:06] Actual Level     : 434 mm
+[2018-11-09 01:54:06] Actual volume    : 1363 Liter, StdDev: 0.00 Liter
+[2018-11-09 01:54:06] Error status     : 0
+[2018-11-09 01:54:07] Rain in last 24h from weather station [mm]: 0.59
+[2018-11-09 01:54:07] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-09 01:54:07] Writing measurement data to SD Card
+[2018-11-09 02:52:31] Time updated by NTP
+[2018-11-09 02:54:15] Pulse counter: 0
+[2018-11-09 02:54:15] Array position: 100
+[2018-11-09 02:54:15] Measured distance: 1966.00 mm
+[2018-11-09 02:54:15] Actual Level     : 434 mm
+[2018-11-09 02:54:15] Actual volume    : 1363 Liter, StdDev: 0.00 Liter
+[2018-11-09 02:54:15] Error status     : 0
+[2018-11-09 02:54:15] Rain in last 24h from weather station [mm]: 0.59
+[2018-11-09 02:54:15] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-09 02:54:15] Writing measurement data to SD Card
+[2018-11-09 03:52:45] Time updated by NTP
+[2018-11-09 03:54:23] Pulse counter: 0
+[2018-11-09 03:54:23] Array position: 100
+[2018-11-09 03:54:23] Measured distance: 1966.00 mm
+[2018-11-09 03:54:23] Actual Level     : 434 mm
+[2018-11-09 03:54:23] Actual volume    : 1363 Liter, StdDev: 0.00 Liter
+[2018-11-09 03:54:23] Error status     : 0
+[2018-11-09 03:54:23] Rain in last 24h from weather station [mm]: 0.59
+[2018-11-09 03:54:23] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-09 03:54:23] Writing measurement data to SD Card
+[2018-11-09 04:52:59] Time updated by NTP
+[2018-11-09 04:54:31] Pulse counter: 0
+[2018-11-09 04:54:31] Array position: 100
+[2018-11-09 04:54:31] Measured distance: 1966.00 mm
+[2018-11-09 04:54:31] Actual Level     : 434 mm
+[2018-11-09 04:54:31] Actual volume    : 1363 Liter, StdDev: 0.00 Liter
+[2018-11-09 04:54:31] Error status     : 0
+[2018-11-09 04:54:32] Rain in last 24h from weather station [mm]: 0.00
+[2018-11-09 04:54:32] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-09 04:54:32] Writing measurement data to SD Card
+[2018-11-09 05:53:14] Time updated by NTP
+[2018-11-09 05:54:40] Pulse counter: 0
+[2018-11-09 05:54:40] Array position: 100
+[2018-11-09 05:54:40] Measured distance: 1972.54 mm
+[2018-11-09 05:54:40] Actual Level     : 427 mm
+[2018-11-09 05:54:40] Actual volume    : 1341 Liter, StdDev: 1.57 Liter
+[2018-11-09 05:54:40] Error status     : 0
+[2018-11-09 05:54:40] Rain in last 24h from weather station [mm]: 0.00
+[2018-11-09 05:54:40] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-09 05:54:40] Writing measurement data to SD Card
+[2018-11-09 06:53:27] Time updated by NTP
+[2018-11-09 06:54:47] Pulse counter: 0
+[2018-11-09 06:54:47] Array position: 100
+[2018-11-09 06:54:47] Measured distance: 1977.00 mm
+[2018-11-09 06:54:47] Actual Level     : 423 mm
+[2018-11-09 06:54:47] Actual volume    : 1328 Liter, StdDev: 0.00 Liter
+[2018-11-09 06:54:47] Error status     : 0
+[2018-11-09 06:54:48] Rain in last 24h from weather station [mm]: 0.00
+[2018-11-09 06:54:48] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-09 06:54:48] Writing measurement data to SD Card
+[2018-11-09 07:53:42] Time updated by NTP
+[2018-11-09 07:54:56] Pulse counter: 0
+[2018-11-09 07:54:56] Array position: 100
+[2018-11-09 07:54:56] Measured distance: 1974.24 mm
+[2018-11-09 07:54:56] Actual Level     : 425 mm
+[2018-11-09 07:54:56] Actual volume    : 1335 Liter, StdDev: 1.34 Liter
+[2018-11-09 07:54:56] Error status     : 0
+[2018-11-09 07:54:56] Rain in last 24h from weather station [mm]: 0.00
+[2018-11-09 07:54:56] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-09 07:54:56] Writing measurement data to SD Card
+[2018-11-09 08:53:56] Time updated by NTP
+[2018-11-09 08:55:04] Pulse counter: 0
+[2018-11-09 08:55:05] Array position: 100
+[2018-11-09 08:55:05] Measured distance: 1975.14 mm
+[2018-11-09 08:55:05] Actual Level     : 424 mm
+[2018-11-09 08:55:05] Actual volume    : 1332 Liter, StdDev: 1.09 Liter
+[2018-11-09 08:55:05] Error status     : 0
+[2018-11-09 08:55:05] Rain in last 24h from weather station [mm]: 0.00
+[2018-11-09 08:55:05] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-09 08:55:05] Writing measurement data to SD Card
+[2018-11-09 09:53:10] Time updated by NTP
+[2018-11-09 09:55:12] Pulse counter: 0
+[2018-11-09 09:55:12] Array position: 100
+[2018-11-09 09:55:12] Measured distance: 1981.00 mm
+[2018-11-09 09:55:12] Actual Level     : 419 mm
+[2018-11-09 09:55:12] Actual volume    : 1316 Liter, StdDev: 0.00 Liter
+[2018-11-09 09:55:12] Error status     : 0
+[2018-11-09 09:55:13] Rain in last 24h from weather station [mm]: 0.00
+[2018-11-09 09:55:13] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-09 09:55:13] Writing measurement data to SD Card
+[2018-11-09 10:53:24] Time updated by NTP
+[2018-11-09 10:55:21] Pulse counter: 0
+[2018-11-09 10:55:21] Array position: 100
+[2018-11-09 10:55:21] Measured distance: 1982.46 mm
+[2018-11-09 10:55:21] Actual Level     : 417 mm
+[2018-11-09 10:55:21] Actual volume    : 1310 Liter, StdDev: 1.57 Liter
+[2018-11-09 10:55:21] Error status     : 0
+[2018-11-09 10:55:21] Rain in last 24h from weather station [mm]: 0.00
+[2018-11-09 10:55:21] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-09 10:55:21] Writing measurement data to SD Card
+[2018-11-09 11:53:38] Time updated by NTP
+[2018-11-09 11:55:28] Pulse counter: 0
+[2018-11-09 11:55:28] Array position: 100
+[2018-11-09 11:55:28] Measured distance: 1982.52 mm
+[2018-11-09 11:55:28] Actual Level     : 417 mm
+[2018-11-09 11:55:28] Actual volume    : 1310 Liter, StdDev: 1.57 Liter
+[2018-11-09 11:55:28] Error status     : 0
+[2018-11-09 11:55:29] Rain in last 24h from weather station [mm]: 0.30
+[2018-11-09 11:55:29] Rain in last  1h from weather station [mm]: 0.30
+[2018-11-09 11:55:29] Writing measurement data to SD Card
+[2018-11-09 12:53:52] Time updated by NTP
+[2018-11-09 12:55:37] Pulse counter: 0
+[2018-11-09 12:55:37] Array position: 100
+[2018-11-09 12:55:37] Measured distance: 1982.48 mm
+[2018-11-09 12:55:37] Actual Level     : 417 mm
+[2018-11-09 12:55:37] Actual volume    : 1310 Liter, StdDev: 1.57 Liter
+[2018-11-09 12:55:37] Error status     : 0
+[2018-11-09 12:55:37] Rain in last 24h from weather station [mm]: 0.30
+[2018-11-09 12:55:37] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-09 12:55:37] Writing measurement data to SD Card
+[2018-11-09 13:54:07] Time updated by NTP
+[2018-11-09 13:55:45] Pulse counter: 0
+[2018-11-09 13:55:45] Array position: 100
+[2018-11-09 13:55:46] Measured distance: 1985.00 mm
+[2018-11-09 13:55:46] Actual Level     : 415 mm
+[2018-11-09 13:55:46] Actual volume    : 1303 Liter, StdDev: 0.00 Liter
+[2018-11-09 13:55:46] Error status     : 0
+[2018-11-09 13:55:46] Rain in last 24h from weather station [mm]: 0.30
+[2018-11-09 13:55:46] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-09 13:55:46] Writing measurement data to SD Card
+[2018-11-09 14:54:20] Time updated by NTP
+[2018-11-09 14:55:53] Pulse counter: 0
+[2018-11-09 14:55:53] Array position: 100
+[2018-11-09 14:55:53] Measured distance: 1985.00 mm
+[2018-11-09 14:55:53] Actual Level     : 415 mm
+[2018-11-09 14:55:53] Actual volume    : 1303 Liter, StdDev: 0.00 Liter
+[2018-11-09 14:55:53] Error status     : 0
+[2018-11-09 14:55:54] Rain in last 24h from weather station [mm]: 0.30
+[2018-11-09 14:55:54] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-09 14:55:54] Writing measurement data to SD Card
+[2018-11-09 15:54:35] Time updated by NTP
+[2018-11-09 15:56:02] Pulse counter: 0
+[2018-11-09 15:56:02] Array position: 100
+[2018-11-09 15:56:02] Measured distance: 1988.14 mm
+[2018-11-09 15:56:02] Actual Level     : 411 mm
+[2018-11-09 15:56:02] Actual volume    : 1291 Liter, StdDev: 5.58 Liter
+[2018-11-09 15:56:02] Error status     : 0
+[2018-11-09 15:56:02] Rain in last 24h from weather station [mm]: 0.30
+[2018-11-09 15:56:02] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-09 15:56:02] Writing measurement data to SD Card
+[2018-11-09 16:54:49] Time updated by NTP
+[2018-11-09 16:56:10] Pulse counter: 0
+[2018-11-09 16:56:10] Array position: 100
+[2018-11-09 16:56:10] Measured distance: 1990.00 mm
+[2018-11-09 16:56:10] Actual Level     : 410 mm
+[2018-11-09 16:56:10] Actual volume    : 1288 Liter, StdDev: 0.00 Liter
+[2018-11-09 16:56:10] Error status     : 0
+[2018-11-09 16:56:11] Rain in last 24h from weather station [mm]: 0.30
+[2018-11-09 16:56:11] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-09 16:56:11] Writing measurement data to SD Card
+[2018-11-09 17:55:03] Time updated by NTP
+[2018-11-09 17:56:18] Pulse counter: 0
+[2018-11-09 17:56:18] Array position: 100
+[2018-11-09 17:56:18] Measured distance: 1990.00 mm
+[2018-11-09 17:56:18] Actual Level     : 410 mm
+[2018-11-09 17:56:18] Actual volume    : 1288 Liter, StdDev: 0.00 Liter
+[2018-11-09 17:56:18] Error status     : 0
+[2018-11-09 17:56:18] Rain in last 24h from weather station [mm]: 0.30
+[2018-11-09 17:56:18] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-09 17:56:18] Writing measurement data to SD Card
+[2018-11-09 18:55:17] Time updated by NTP
+[2018-11-09 18:56:26] Pulse counter: 0
+[2018-11-09 18:56:26] Array position: 100
+[2018-11-09 18:56:27] Measured distance: 1990.00 mm
+[2018-11-09 18:56:27] Actual Level     : 410 mm
+[2018-11-09 18:56:27] Actual volume    : 1288 Liter, StdDev: 0.00 Liter
+[2018-11-09 18:56:27] Error status     : 0
+[2018-11-09 18:56:27] Rain in last 24h from weather station [mm]: 0.30
+[2018-11-09 18:56:27] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-09 18:56:27] Writing measurement data to SD Card
+[2018-11-09 19:54:31] Time updated by NTP
+[2018-11-09 19:56:35] Pulse counter: 0
+[2018-11-09 19:56:35] Array position: 100
+[2018-11-09 19:56:35] Measured distance: 1988.12 mm
+[2018-11-09 19:56:35] Actual Level     : 411 mm
+[2018-11-09 19:56:35] Actual volume    : 1291 Liter, StdDev: 5.64 Liter
+[2018-11-09 19:56:35] Error status     : 0
+[2018-11-09 19:56:36] Rain in last 24h from weather station [mm]: 0.30
+[2018-11-09 19:56:36] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-09 19:56:36] Writing measurement data to SD Card
+[2018-11-09 20:54:45] Time updated by NTP
+[2018-11-09 20:56:43] Pulse counter: 0
+[2018-11-09 20:56:43] Array position: 100
+[2018-11-09 20:56:43] Measured distance: 1994.00 mm
+[2018-11-09 20:56:43] Actual Level     : 406 mm
+[2018-11-09 20:56:43] Actual volume    : 1275 Liter, StdDev: 0.00 Liter
+[2018-11-09 20:56:43] Error status     : 0
+[2018-11-09 20:56:43] Rain in last 24h from weather station [mm]: 0.30
+[2018-11-09 20:56:43] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-09 20:56:43] Writing measurement data to SD Card
+[2018-11-09 21:54:59] Time updated by NTP
+[2018-11-09 21:56:51] Pulse counter: 0
+[2018-11-09 21:56:51] Array position: 100
+[2018-11-09 21:56:51] Measured distance: 1997.42 mm
+[2018-11-09 21:56:51] Actual Level     : 402 mm
+[2018-11-09 21:56:51] Actual volume    : 1262 Liter, StdDev: 1.55 Liter
+[2018-11-09 21:56:51] Error status     : 0
+[2018-11-09 21:56:52] Rain in last 24h from weather station [mm]: 0.30
+[2018-11-09 21:56:52] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-09 21:56:52] Writing measurement data to SD Card
+[2018-11-09 22:55:14] Time updated by NTP
+[2018-11-09 22:57:00] Pulse counter: 0
+[2018-11-09 22:57:00] Array position: 100
+[2018-11-09 22:57:00] Measured distance: 1997.82 mm
+[2018-11-09 22:57:00] Actual Level     : 402 mm
+[2018-11-09 22:57:00] Actual volume    : 1262 Liter, StdDev: 1.21 Liter
+[2018-11-09 22:57:00] Error status     : 0
+[2018-11-09 22:57:00] Rain in last 24h from weather station [mm]: 0.30
+[2018-11-09 22:57:00] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-09 22:57:00] Writing measurement data to SD Card
+[2018-11-09 23:55:27] Time updated by NTP
+[2018-11-09 23:57:07] Pulse counter: 0
+[2018-11-09 23:57:07] Array position: 100
+[2018-11-09 23:57:07] Measured distance: 1997.92 mm
+[2018-11-09 23:57:08] Actual Level     : 402 mm
+[2018-11-09 23:57:08] Actual volume    : 1262 Liter, StdDev: 0.85 Liter
+[2018-11-09 23:57:08] Error status     : 0
+[2018-11-09 23:57:08] Rain in last 24h from weather station [mm]: 0.30
+[2018-11-09 23:57:08] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-09 23:57:08] Writing measurement data to SD Card
+[2018-11-10 00:55:42] Time updated by NTP
+[2018-11-10 00:57:16] Pulse counter: 0
+[2018-11-10 00:57:16] Array position: 100
+[2018-11-10 00:57:16] Measured distance: 1997.86 mm
+[2018-11-10 00:57:16] Actual Level     : 402 mm
+[2018-11-10 00:57:16] Actual volume    : 1262 Liter, StdDev: 1.09 Liter
+[2018-11-10 00:57:16] Error status     : 0
+[2018-11-10 00:57:17] Rain in last 24h from weather station [mm]: 0.30
+[2018-11-10 00:57:17] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-10 00:57:17] Writing settings to EEP
+[2018-11-10 00:57:17] EEP Checksum c8
+[2018-11-10 00:57:17] Writing measurement data to SD Card
+[2018-11-10 01:55:55] Time updated by NTP
+[2018-11-10 01:57:24] Pulse counter: 0
+[2018-11-10 01:57:24] Array position: 100
+[2018-11-10 01:57:24] Measured distance: 1999.00 mm
+[2018-11-10 01:57:24] Actual Level     : 401 mm
+[2018-11-10 01:57:24] Actual volume    : 1259 Liter, StdDev: 3.32 Liter
+[2018-11-10 01:57:24] Error status     : 0
+[2018-11-10 01:57:24] Rain in last 24h from weather station [mm]: 0.30
+[2018-11-10 01:57:24] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-10 01:57:24] Writing measurement data to SD Card
+[2018-11-10 02:56:10] Time updated by NTP
+[2018-11-10 02:57:32] Pulse counter: 0
+[2018-11-10 02:57:32] Array position: 100
+[2018-11-10 02:57:32] Measured distance: 1996.24 mm
+[2018-11-10 02:57:32] Actual Level     : 403 mm
+[2018-11-10 02:57:32] Actual volume    : 1266 Liter, StdDev: 1.34 Liter
+[2018-11-10 02:57:32] Error status     : 0
+[2018-11-10 02:57:33] Rain in last 24h from weather station [mm]: 0.30
+[2018-11-10 02:57:33] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-10 02:57:33] Writing measurement data to SD Card
+[2018-11-10 03:56:24] Time updated by NTP
+[2018-11-10 03:57:41] Pulse counter: 0
+[2018-11-10 03:57:41] Array position: 100
+[2018-11-10 03:57:41] Measured distance: 1997.02 mm
+[2018-11-10 03:57:41] Actual Level     : 402 mm
+[2018-11-10 03:57:41] Actual volume    : 1262 Liter, StdDev: 4.89 Liter
+[2018-11-10 03:57:41] Error status     : 0
+[2018-11-10 03:57:41] Rain in last 24h from weather station [mm]: 0.30
+[2018-11-10 03:57:41] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-10 03:57:41] Writing measurement data to SD Card
+[2018-11-10 04:55:38] Time updated by NTP
+[2018-11-10 04:57:48] Pulse counter: 0
+[2018-11-10 04:57:48] Array position: 100
+[2018-11-10 04:57:48] Measured distance: 2002.00 mm
+[2018-11-10 04:57:48] Actual Level     : 398 mm
+[2018-11-10 04:57:49] Actual volume    : 1250 Liter, StdDev: 0.00 Liter
+[2018-11-10 04:57:49] Error status     : 0
+[2018-11-10 04:57:49] Rain in last 24h from weather station [mm]: 0.30
+[2018-11-10 04:57:49] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-10 04:57:49] Writing measurement data to SD Card
+[2018-11-10 05:55:52] Time updated by NTP
+[2018-11-10 05:57:57] Pulse counter: 0
+[2018-11-10 05:57:57] Array position: 100
+[2018-11-10 05:57:57] Measured distance: 2003.28 mm
+[2018-11-10 05:57:57] Actual Level     : 396 mm
+[2018-11-10 05:57:57] Actual volume    : 1244 Liter, StdDev: 1.41 Liter
+[2018-11-10 05:57:57] Error status     : 0
+[2018-11-10 05:57:57] Rain in last 24h from weather station [mm]: 0.30
+[2018-11-10 05:57:58] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-10 05:57:58] Writing measurement data to SD Card
+[2018-11-10 06:56:07] Time updated by NTP
+[2018-11-10 06:58:06] Pulse counter: 0
+[2018-11-10 06:58:06] Array position: 100
+[2018-11-10 06:58:06] Measured distance: 2005.00 mm
+[2018-11-10 06:58:06] Actual Level     : 395 mm
+[2018-11-10 06:58:06] Actual volume    : 1240 Liter, StdDev: 0.00 Liter
+[2018-11-10 06:58:06] Error status     : 0
+[2018-11-10 06:58:06] Rain in last 24h from weather station [mm]: 0.30
+[2018-11-10 06:58:06] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-10 06:58:06] Writing measurement data to SD Card
+[2018-11-10 07:56:20] Time updated by NTP
+[2018-11-10 07:58:13] Pulse counter: 0
+[2018-11-10 07:58:13] Array position: 100
+[2018-11-10 07:58:13] Measured distance: 2006.36 mm
+[2018-11-10 07:58:13] Actual Level     : 393 mm
+[2018-11-10 07:58:13] Actual volume    : 1234 Liter, StdDev: 5.89 Liter
+[2018-11-10 07:58:13] Error status     : 0
+[2018-11-10 07:58:14] Rain in last 24h from weather station [mm]: 0.30
+[2018-11-10 07:58:14] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-10 07:58:14] Writing measurement data to SD Card
+[2018-11-10 08:56:35] Time updated by NTP
+[2018-11-10 08:58:22] Pulse counter: 0
+[2018-11-10 08:58:22] Array position: 100
+[2018-11-10 08:58:22] Measured distance: 2006.58 mm
+[2018-11-10 08:58:22] Actual Level     : 393 mm
+[2018-11-10 08:58:22] Actual volume    : 1234 Liter, StdDev: 5.80 Liter
+[2018-11-10 08:58:22] Error status     : 0
+[2018-11-10 08:58:22] Rain in last 24h from weather station [mm]: 0.30
+[2018-11-10 08:58:22] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-10 08:58:22] Writing measurement data to SD Card
+[2018-11-10 09:56:49] Time updated by NTP
+[2018-11-10 09:58:30] Pulse counter: 0
+[2018-11-10 09:58:30] Array position: 100
+[2018-11-10 09:58:30] Measured distance: 2012.00 mm
+[2018-11-10 09:58:30] Actual Level     : 388 mm
+[2018-11-10 09:58:30] Actual volume    : 1218 Liter, StdDev: 0.00 Liter
+[2018-11-10 09:58:30] Error status     : 0
+[2018-11-10 09:58:31] Rain in last 24h from weather station [mm]: 0.30
+[2018-11-10 09:58:31] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-10 09:58:31] Writing measurement data to SD Card
+[2018-11-10 10:57:03] Time updated by NTP
+[2018-11-10 10:58:38] Pulse counter: 0
+[2018-11-10 10:58:38] Array position: 100
+[2018-11-10 10:58:38] Measured distance: 2012.00 mm
+[2018-11-10 10:58:38] Actual Level     : 388 mm
+[2018-11-10 10:58:38] Actual volume    : 1218 Liter, StdDev: 0.00 Liter
+[2018-11-10 10:58:38] Error status     : 0
+[2018-11-10 10:58:38] Rain in last 24h from weather station [mm]: 0.30
+[2018-11-10 10:58:38] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-10 10:58:39] Writing measurement data to SD Card
+[2018-11-10 11:57:17] Time updated by NTP
+[2018-11-10 11:58:47] Pulse counter: 0
+[2018-11-10 11:58:47] Array position: 100
+[2018-11-10 11:58:47] Measured distance: 2014.14 mm
+[2018-11-10 11:58:47] Actual Level     : 385 mm
+[2018-11-10 11:58:47] Actual volume    : 1209 Liter, StdDev: 1.09 Liter
+[2018-11-10 11:58:47] Error status     : 0
+[2018-11-10 11:58:47] Rain in last 24h from weather station [mm]: 0.00
+[2018-11-10 11:58:47] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-10 11:58:47] Writing measurement data to SD Card
+[2018-11-10 12:57:32] Time updated by NTP
+[2018-11-10 12:58:55] Pulse counter: 0
+[2018-11-10 12:58:55] Array position: 100
+[2018-11-10 12:58:55] Measured distance: 2015.82 mm
+[2018-11-10 12:58:55] Actual Level     : 384 mm
+[2018-11-10 12:58:55] Actual volume    : 1206 Liter, StdDev: 1.21 Liter
+[2018-11-10 12:58:55] Error status     : 0
+[2018-11-10 12:58:56] Rain in last 24h from weather station [mm]: 0.00
+[2018-11-10 12:58:56] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-10 12:58:56] Writing measurement data to SD Card
+[2018-11-10 13:56:45] Time updated by NTP
+[2018-11-10 13:59:03] Pulse counter: 0
+[2018-11-10 13:59:03] Array position: 100
+[2018-11-10 13:59:03] Measured distance: 2015.26 mm
+[2018-11-10 13:59:03] Actual Level     : 384 mm
+[2018-11-10 13:59:03] Actual volume    : 1206 Liter, StdDev: 4.25 Liter
+[2018-11-10 13:59:03] Error status     : 0
+[2018-11-10 13:59:03] Rain in last 24h from weather station [mm]: 0.00
+[2018-11-10 13:59:03] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-10 13:59:03] Writing measurement data to SD Card
+[2018-11-10 14:57:00] Time updated by NTP
+[2018-11-10 14:59:11] Pulse counter: 0
+[2018-11-10 14:59:11] Array position: 100
+[2018-11-10 14:59:11] Measured distance: 2014.38 mm
+[2018-11-10 14:59:11] Actual Level     : 385 mm
+[2018-11-10 14:59:11] Actual volume    : 1209 Liter, StdDev: 6.09 Liter
+[2018-11-10 14:59:11] Error status     : 0
+[2018-11-10 14:59:12] Rain in last 24h from weather station [mm]: 0.00
+[2018-11-10 14:59:12] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-10 14:59:12] Writing measurement data to SD Card
+[2018-11-10 15:57:14] Time updated by NTP
+[2018-11-10 15:59:20] Pulse counter: 0
+[2018-11-10 15:59:20] Array position: 100
+[2018-11-10 15:59:20] Measured distance: 2019.40 mm
+[2018-11-10 15:59:20] Actual Level     : 380 mm
+[2018-11-10 15:59:20] Actual volume    : 1193 Liter, StdDev: 1.54 Liter
+[2018-11-10 15:59:20] Error status     : 0
+[2018-11-10 15:59:20] Rain in last 24h from weather station [mm]: 0.00
+[2018-11-10 15:59:20] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-10 15:59:21] Writing measurement data to SD Card
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Using Fixed IP
+[1970-00-00 00:00:00] IP-Address : 192.168.178.5
+[1970-00-00 00:00:00] Gateway    : 192.168.178.1
+[1970-00-00 00:00:00] Subnet Mask: 255.255.255.0
+[2018-11-10 16:22:36] Reading settings from EEP
+[2018-11-10 16:22:36] EEP checksum ok 
+[2018-11-10 16:22:36] EEPSize 74 Byte
+[2018-11-10 16:22:36] System startup
+[2018-11-10 16:23:36] Time updated by NTP
+[2018-11-10 16:24:16] Pulse counter: 0
+[2018-11-10 16:24:16] Array position: 100
+[2018-11-10 16:24:16] Measured distance: 2019.30 mm
+[2018-11-10 16:24:16] Actual Level     : 380 mm
+[2018-11-10 16:24:16] Actual volume    : 1193 Liter, StdDev: 1.44 Liter
+[2018-11-10 16:24:16] Error status     : 0
+[2018-11-10 16:24:17] Rain in last 24h from weather station [mm]: 0.00
+[2018-11-10 16:24:17] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-10 16:24:17] Writing measurement data to SD Card
+[1970-00-00 00:00:00] Initializing SD Card ok
+[1970-00-00 00:00:00] Using Fixed IP
+[1970-00-00 00:00:00] IP-Address : 192.168.178.5
+[1970-00-00 00:00:00] Gateway    : 192.168.178.1
+[1970-00-00 00:00:00] Subnet Mask: 255.255.255.0
+[2018-11-10 17:09:40] Reading settings from EEP
+[2018-11-10 17:09:40] EEP checksum ok 
+[2018-11-10 17:09:40] EEPSize 74 Byte
+[2018-11-10 17:09:40] System startup
+[2018-11-10 17:10:40] Time updated by NTP
+[2018-11-10 17:11:20] Pulse counter: 0
+[2018-11-10 17:11:20] Array position: 100
+[2018-11-10 17:11:20] Measured distance: 2019.58 mm
+[2018-11-10 17:11:20] Actual Level     : 380 mm
+[2018-11-10 17:11:20] Actual volume    : 1193 Liter, StdDev: 1.55 Liter
+[2018-11-10 17:11:20] Error status     : 0
+[2018-11-10 17:11:21] Rain in last 24h from weather station [mm]: 0.00
+[2018-11-10 17:11:21] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-10 17:11:21] Writing measurement data to SD Card
+[2018-11-10 18:09:54] Time updated by NTP
+[2018-11-10 18:11:29] Pulse counter: 0
+[2018-11-10 18:11:29] Array position: 100
+[2018-11-10 18:11:29] Measured distance: 2019.52 mm
+[2018-11-10 18:11:29] Actual Level     : 380 mm
+[2018-11-10 18:11:29] Actual volume    : 1193 Liter, StdDev: 1.57 Liter
+[2018-11-10 18:11:29] Error status     : 0
+[2018-11-10 18:11:29] Rain in last 24h from weather station [mm]: 0.00
+[2018-11-10 18:11:29] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-10 18:11:29] Writing measurement data to SD Card
+[2018-11-10 19:10:07] Time updated by NTP
+[2018-11-10 19:11:36] Pulse counter: 0
+[2018-11-10 19:11:36] Array position: 100
+[2018-11-10 19:11:36] Measured distance: 2021.58 mm
+[2018-11-10 19:11:36] Actual Level     : 378 mm
+[2018-11-10 19:11:36] Actual volume    : 1187 Liter, StdDev: 6.91 Liter
+[2018-11-10 19:11:36] Error status     : 0
+[2018-11-10 19:11:37] Rain in last 24h from weather station [mm]: 0.00
+[2018-11-10 19:11:37] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-10 19:11:37] Writing measurement data to SD Card
+[2018-11-10 20:10:22] Time updated by NTP
+[2018-11-10 20:11:45] Pulse counter: 0
+[2018-11-10 20:11:45] Array position: 100
+[2018-11-10 20:11:45] Measured distance: 2023.00 mm
+[2018-11-10 20:11:45] Actual Level     : 377 mm
+[2018-11-10 20:11:45] Actual volume    : 1184 Liter, StdDev: 0.00 Liter
+[2018-11-10 20:11:45] Error status     : 0
+[2018-11-10 20:11:45] Rain in last 24h from weather station [mm]: 0.00
+[2018-11-10 20:11:45] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-10 20:11:45] Writing measurement data to SD Card
+[2018-11-10 21:10:36] Time updated by NTP
+[2018-11-10 21:11:53] Pulse counter: 0
+[2018-11-10 21:11:53] Array position: 100
+[2018-11-10 21:11:53] Measured distance: 2025.00 mm
+[2018-11-10 21:11:53] Actual Level     : 375 mm
+[2018-11-10 21:11:53] Actual volume    : 1178 Liter, StdDev: 0.00 Liter
+[2018-11-10 21:11:53] Error status     : 0
+[2018-11-10 21:11:54] Rain in last 24h from weather station [mm]: 0.00
+[2018-11-10 21:11:54] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-10 21:11:54] Writing measurement data to SD Card
+[2018-11-10 22:10:51] Time updated by NTP
+[2018-11-10 22:12:02] Pulse counter: 0
+[2018-11-10 22:12:02] Array position: 100
+[2018-11-10 22:12:02] Measured distance: 2025.16 mm
+[2018-11-10 22:12:02] Actual Level     : 374 mm
+[2018-11-10 22:12:02] Actual volume    : 1174 Liter, StdDev: 6.26 Liter
+[2018-11-10 22:12:02] Error status     : 0
+[2018-11-10 22:12:02] Rain in last 24h from weather station [mm]: 0.00
+[2018-11-10 22:12:02] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-10 22:12:02] Writing measurement data to SD Card
+[2018-11-10 23:11:04] Time updated by NTP
+[2018-11-10 23:12:09] Pulse counter: 0
+[2018-11-10 23:12:10] Array position: 100
+[2018-11-10 23:12:10] Measured distance: 2025.16 mm
+[2018-11-10 23:12:10] Actual Level     : 374 mm
+[2018-11-10 23:12:10] Actual volume    : 1174 Liter, StdDev: 6.26 Liter
+[2018-11-10 23:12:10] Error status     : 0
+[2018-11-10 23:12:10] Rain in last 24h from weather station [mm]: 0.00
+[2018-11-10 23:12:10] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-10 23:12:10] Writing measurement data to SD Card
+[2018-11-11 00:11:19] Time updated by NTP
+[2018-11-11 00:12:18] Pulse counter: 0
+[2018-11-11 00:12:18] Array position: 100
+[2018-11-11 00:12:18] Measured distance: 2023.32 mm
+[2018-11-11 00:12:18] Actual Level     : 376 mm
+[2018-11-11 00:12:18] Actual volume    : 1181 Liter, StdDev: 3.41 Liter
+[2018-11-11 00:12:18] Error status     : 0
+[2018-11-11 00:12:19] Rain in last 24h from weather station [mm]: 0.00
+[2018-11-11 00:12:19] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-11 00:12:19] Writing measurement data to SD Card
+[2018-11-11 01:11:32] Time updated by NTP
+[2018-11-11 01:12:26] Pulse counter: 0
+[2018-11-11 01:12:26] Array position: 100
+[2018-11-11 01:12:26] Measured distance: 2009.00 mm
+[2018-11-11 01:12:26] Actual Level     : 391 mm
+[2018-11-11 01:12:26] Actual volume    : 1228 Liter, StdDev: 0.00 Liter
+[2018-11-11 01:12:26] Error status     : 0
+[2018-11-11 01:12:26] Rain in last 24h from weather station [mm]: 0.59
+[2018-11-11 01:12:26] Rain in last  1h from weather station [mm]: 0.59
+[2018-11-11 01:12:26] Writing measurement data to SD Card
+[2018-11-11 02:11:47] Time updated by NTP
+[2018-11-11 02:12:34] Pulse counter: 0
+[2018-11-11 02:12:34] Array position: 100
+[2018-11-11 02:12:34] Measured distance: 2005.00 mm
+[2018-11-11 02:12:34] Actual Level     : 395 mm
+[2018-11-11 02:12:34] Actual volume    : 1240 Liter, StdDev: 0.00 Liter
+[2018-11-11 02:12:34] Error status     : 0
+[2018-11-11 02:12:35] Rain in last 24h from weather station [mm]: 0.59
+[2018-11-11 02:12:35] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-11 02:12:35] Writing measurement data to SD Card
+[2018-11-11 03:11:01] Time updated by NTP
+[2018-11-11 03:12:43] Pulse counter: 0
+[2018-11-11 03:12:43] Array position: 100
+[2018-11-11 03:12:43] Measured distance: 2004.10 mm
+[2018-11-11 03:12:43] Actual Level     : 395 mm
+[2018-11-11 03:12:43] Actual volume    : 1240 Liter, StdDev: 0.94 Liter
+[2018-11-11 03:12:43] Error status     : 0
+[2018-11-11 03:12:43] Rain in last 24h from weather station [mm]: 0.89
+[2018-11-11 03:12:43] Rain in last  1h from weather station [mm]: 0.30
+[2018-11-11 03:12:43] Writing measurement data to SD Card
+[2018-11-11 04:11:15] Time updated by NTP
+[2018-11-11 04:12:50] Pulse counter: 0
+[2018-11-11 04:12:50] Array position: 100
+[2018-11-11 04:12:51] Measured distance: 2007.88 mm
+[2018-11-11 04:12:51] Actual Level     : 392 mm
+[2018-11-11 04:12:51] Actual volume    : 1231 Liter, StdDev: 1.85 Liter
+[2018-11-11 04:12:51] Error status     : 0
+[2018-11-11 04:12:51] Rain in last 24h from weather station [mm]: 0.89
+[2018-11-11 04:12:51] Rain in last  1h from weather station [mm]: 0.00
+[2018-11-11 04:12:51] Writing measurement data to SD Card
