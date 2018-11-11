@@ -241,7 +241,10 @@ unsigned int volActual=0;          //Actual volume
 unsigned int volMax=0;             //Maximum volume
 unsigned char  prcActual=0;        //Percentage of maximum volume
 unsigned int hWaterActual=0;       //Actual level (average after diagnosis)
+time_t MeasTime;                   //Measurement time 
+time_t MeasTimeOld;                //Measurement time of last measurement
 String MeasTimeStr ;               //Measurement time as string
+unsigned long tiDiffMeasTime;      //Difference between last two measurements
 unsigned long tiRefillerOff;       //Timestamp refilling off
 unsigned long tiRefillerOn;        //Timestamp refilling on
 unsigned char stRefill=0;          //Status Refilling in progress
@@ -568,8 +571,16 @@ void loop()
     } //if pos<100      
     else {
       // Evaluate measured delay times      
-      //Capture measurement time
-      MeasTimeStr = getDateTimeStr(); 
+      //Capture measurement time and calculate difference time between last two measurements
+      MeasTimeOld = MeasTime; 
+      MeasTime = getNtpTime();
+      MeasTimeStr = time2DateTimeStr(MeasTime); 
+      if (MeasTimeOld>0) {
+        tiDiffMeasTime = PositiveDistanceUL(MeasTime,MeasTimeOld);
+      }
+      else {
+        tiDiffMeasTime = 0;  
+      }
 
       //If 100 measurements are done calculate new result
       // Handle array arr with 100 measurements
@@ -666,46 +677,48 @@ void loop()
         WriteSystemLog("Error status     : " + String(stError));
       #endif          
       
-      //Get rain volume for last 24h
-      volRain24h_old = volRain24h;
-      #if HM_ACCESS_ACTIVE==1
-        volRain24h = hm_get_datapoint(HM_DATAPOINT_RAIN24);
-        //Offen: Updatezeit lesen, Datenpunktnummer ermitteln
-        //falls Wert nicht aktuell: Fehler: keine Aktuelle Regenmenge     
-      #else
-        //No Homematic access: deactivate
-        volRain24h = -1; 
-      #endif
-
-      //Calculate rain within last 1h
-      if (volRain24h_old>-1) {
-        volRain1h = max(volRain24h-volRain24h_old,0);
-      }
-      else {
-        //after new start: Initialize with 0 until old value is available
-        volRain1h = 0;
-      }
-
-      #if LOGLEVEL & LOGLVL_NORMAL
-        WriteSystemLog("Rain in last 24h from weather station [mm]: "+String(volRain24h));
-        WriteSystemLog("Rain in last  1h from weather station [mm]: "+String(volRain1h));
-      #endif
-
-      //Check filter if rain within last hour is above threshold and volume is below maximum volume
-      if ((volRain1h>SettingsEEP.settings.volRainMin) && (volActual<volMax) && (volActualFilt1h>0)) {
-        //Filter check
-        CheckFilter();
-      }
-      //Reset Counters and store actual values
-      volRefillFilt1h = SettingsEEP.settings.volRefillTot;  
-          
-      if (rSignalHealth>50) {
-        //Take actual volume only if actual measurement is valid
-        volActualFilt1h = volActual;
-      }
-      else {
-        //Invalid old value
-        volActualFilt1h = 0;
+      //Get rain volume for last 24h, only if difference between last two measurements is more than 50min
+      if (tiDiffMeasTime>50*60) {
+        volRain24h_old = volRain24h;
+        #if HM_ACCESS_ACTIVE==1
+          volRain24h = hm_get_datapoint(HM_DATAPOINT_RAIN24);
+          //Offen: Updatezeit lesen, Datenpunktnummer ermitteln
+          //falls Wert nicht aktuell: Fehler: keine Aktuelle Regenmenge     
+        #else
+          //No Homematic access: deactivate
+          volRain24h = -1; 
+        #endif
+  
+        //Calculate rain within last 1h
+        if (volRain24h_old>-1) {
+          volRain1h = max(volRain24h-volRain24h_old,0);
+        }
+        else {
+          //after new start: Initialize with 0 until old value is available
+          volRain1h = 0;
+        }
+  
+        #if LOGLEVEL & LOGLVL_NORMAL
+          WriteSystemLog("Rain in last 24h from weather station [mm]: "+String(volRain24h));
+          WriteSystemLog("Rain in last  1h from weather station [mm]: "+String(volRain1h));
+        #endif
+  
+        //Check filter if rain within last hour is above threshold and volume is below maximum volume
+        if ((volRain1h>SettingsEEP.settings.volRainMin) && (volActual<volMax) && (volActualFilt1h>0)) {
+          //Filter check
+          CheckFilter();
+        }
+        //Reset Counters and store actual values
+        volRefillFilt1h = SettingsEEP.settings.volRefillTot;  
+            
+        if (rSignalHealth>50) {
+          //Take actual volume only if actual measurement is valid
+          volActualFilt1h = volActual;
+        }
+        else {
+          //Invalid old value
+          volActualFilt1h = 0;
+        }
       }
 
       //Calcluate usage per day if hour=0 and rain within last 24h is zero
@@ -907,54 +920,6 @@ void CheckFilter() {
     #endif
 } 
 
-void SetError(int numErr,int stErr)
-//Sets or resets error in system
-{
-  String _txtError;  
-  String _envInfo;
-
-  if (stError!=stErr) {
-    //Only if there is a change in error status   
-    //Define Type
-    if (stErr) {
-      _txtError = "ERROR: ";
-    }
-    else {
-      _txtError = "HEALED: ";
-    }
-  
-    // Insert error number
-    _txtError = _txtError + String(numErr) + " - ";
-  
-    //Define Error text
-    switch(numErr)  {
-      case 1: _txtError = _txtError  + F("Bad signal health");
-      break;
-    }  
-  
-    //Define environment info
-      _envInfo = ""; //F("Measured distance: ") + String(hMean) +F(" mm\n") + F("Actual Level: ") + String(hWaterActual) + F(" mm\n") + F("Actual volume: ") + String(volActual) + F(" Liter, StdDev: ") +String(volStdDev) + F(" Liter\nSignal health: ") + String(rSignalHealth) + F("\nError status: ") + String(stError); 
-  
-  
-    //LED to red
-    if (stErr) {
-      SetSystemLEDColor(RED);
-    }
-    else {
-      SetSystemLEDColor(GREEN);
-    }
-    
-    //Report to LogFile
-    #if LOGLEVEL & LOGLVL_NORMAL
-      WriteSystemLog(_txtError);
-      WriteSystemLog(_envInfo);
-    #endif
-        
-    //Set global Error information
-    stError = stErr;
-  }  
-}
-
 unsigned char Refill(int volRefillDes)
 //Refill desired quantity, returns:
 //0: Refilling off
@@ -1020,6 +985,54 @@ float Height2Volume(float hIn)
 //Converts height in mm to Volume in liter
 {
  return hIn*float(SettingsEEP.settings.aBaseArea)/10000;      
+}
+
+void SetError(int numErr,int stErr)
+//Sets or resets error in system
+{
+  String _txtError;  
+  String _envInfo;
+
+  if (stError!=stErr) {
+    //Only if there is a change in error status   
+    //Define Type
+    if (stErr) {
+      _txtError = "ERROR: ";
+    }
+    else {
+      _txtError = "HEALED: ";
+    }
+  
+    // Insert error number
+    _txtError = _txtError + String(numErr) + " - ";
+  
+    //Define Error text
+    switch(numErr)  {
+      case 1: _txtError = _txtError  + F("Bad signal health");
+      break;
+    }  
+  
+    //Define environment info
+      _envInfo = ""; //F("Measured distance: ") + String(hMean) +F(" mm\n") + F("Actual Level: ") + String(hWaterActual) + F(" mm\n") + F("Actual volume: ") + String(volActual) + F(" Liter, StdDev: ") +String(volStdDev) + F(" Liter\nSignal health: ") + String(rSignalHealth) + F("\nError status: ") + String(stError); 
+  
+  
+    //LED to red
+    if (stErr) {
+      SetSystemLEDColor(RED);
+    }
+    else {
+      SetSystemLEDColor(GREEN);
+    }
+    
+    //Report to LogFile
+    #if LOGLEVEL & LOGLVL_NORMAL
+      WriteSystemLog(_txtError);
+      WriteSystemLog(_envInfo);
+    #endif
+        
+    //Set global Error information
+    stError = stErr;
+  }  
 }
 
 void SetSystemLEDColor(int color)
