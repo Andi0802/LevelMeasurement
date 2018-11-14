@@ -11,6 +11,9 @@
 const String prgVers = PRG_VERS;
 const String prgChng = PRG_CHANGE_DESC;
 
+//Sample data
+#include "sample_data.h"
+
 //Libraries
 //AVR System libraries Arduino 1.6.7
 #include <SPI.h>
@@ -100,8 +103,10 @@ const String prgChng = PRG_CHANGE_DESC;
 #define NTP_FAIL      -1     // Error in NTP query
 
 //Files (Max 8+3 Filenames)
-#define LOGFILE  F("Res_Ctl.log")     // Name of system logfile
-#define DATAFILE F("Res_Ctl.csv")     // Name of data logfile
+#define LOGFILE   F("Res_Ctl.log")     // Name of system logfile
+#define DATAFILE  F("Res_Ctl.csv")     // Name of data logfile
+#define SVGFILE   F("histdata.svg")    // SVG File with graphic
+#define SVGHEADER F("histhead.svg");   // Header of SVG File
 
 //Diagnosis
 #define SIGNAL_HEALTH_MIN 50          // Minimum signal health required
@@ -138,6 +143,14 @@ const String prgChng = PRG_CHANGE_DESC;
 //Average in usage info: Number of values
 #define NUM_USAGE_AVRG  10
 
+//History values in EEP
+#define EEP_NUM_HIST 240
+const PROGMEM unsigned char SAMPLES_PRCVOL[EEP_NUM_HIST]   = SAMPLES_PRCVOL_DATA;
+const PROGMEM unsigned char SAMPLES_VOLRAIN[EEP_NUM_HIST]  = SAMPLES_VOLRAIN_DATA;
+const PROGMEM unsigned char SAMPLES_STSIGNAL[EEP_NUM_HIST] = SAMPLES_STSIGNAL_DATA;
+#define CONV_RAIN   0.3  //Conversion factor for rain
+#define CONV_REFILL  20  //Conversion factor for refill quantity in 1h
+
 //LED colors
 #define GREEN 0
 #define RED   1
@@ -152,36 +165,6 @@ const String prgChng = PRG_CHANGE_DESC;
   byte hm_ccu[] = { 192, 168, 178, 11 };
   EthernetClient hm_client;
 #endif
-
-//Typedefs
-// Settings in EEPROM
-struct settings_t {
-  unsigned char stat;         //Status of EEPROM
-  int cycle_time;             //Calculating base cycle time [s]
-  int vSound;                 //Velocity of sound [cm/sec]
-  int hOffset;                //Runtime offset [mm]
-  int aBaseArea;              //Base area of reservoir [cm*cm]
-  int hSensorPos;             //Height of sensor above base area [cm]
-  int hOverflow;              //Height of overflow device [cm]
-  int hRefill;                //Height for refilling start [cm]
-  int volRefill;              //Volume to refill [l]
-  int dvolRefill;             //Mass flow of refiller [l/sec]  
-  unsigned long volRefillTot;  //Refilling volume total [l]
-  unsigned long tiRefillReset; //Timestamp of last reset volRefillTot
-  int aRoof;                   //Surface of roof
-  int prcFiltEff_x[5];         //filter efficiency in x-values: rain in 1h [mm]
-  int prcFiltEff_y[5];         //filter efficiency in y-values: efficiency=(1-overflow) [%]
-  int prcVolDvtThres;          //Threshold for filter clogging error
-  int volRainMin;              //Minimum Rain Volume in 24h to activate filter diagnosis
-  int volUsage24h[NUM_USAGE_AVRG]; //Last values of usage calculation
-  unsigned char iDay;          //Last index of entry in volUsage24h
-};
-
-//EEPROM Settings as union
-union setting_stream_t {
-  settings_t settings;
-  unsigned char SettingStream[sizeof(settings_t)];
-};
 
 // Enter a MAC address for your controller below.
 // Newer Ethernet shields have a MAC address printed on a sticker on the shield
@@ -264,12 +247,14 @@ unsigned char stFiltChkErr;        //Result filter check
 float volRainDiag1h;               //Rain in 1h for Diagnosis
 float volRain24h_old=-1;           //Rain in 24h, 1 h ago (-1: invalid)
 float volRain1h;                   //Rain in last 1h for Diagnosis
+bool stRain1h;                     //Status of 1h rain measurements
 unsigned long volRefillFilt24h;    //Stored value of Refilling volume 24h past
 unsigned long volRefillFilt1h;     //Stored value of Refilling volume 1h past
 unsigned int  volActualFilt24h=0;  //Stored actual reservoir volume 24h past
 unsigned int  volActualFilt1h=0;   //Stored actual reservoir volume 1h past
 unsigned int  volUsageDiag24h;     //Water usage in 24h for Diagnosis
 unsigned int  volRefill24h;        //Refilled volume in 24h
+unsigned int  volRefill1h;         //Refilled volume in 1h
 unsigned int  volRefillDiag1h;     //Refilled volume in 1h for Diagnosis
 unsigned int  volOld;              //Old volume for tendency 
 int volDiff1h;                     //Volume change in 1h (tendency)
@@ -288,6 +273,40 @@ String inString;                   //Webserver Receive string, IP-Adress string
 unsigned char cntTestFilt=0;       //Testing for filter diagnosis
 byte PulseCntr;                    //Counter for US pulses
 int idxCur;                        //Index for Curve
+
+//Typedefs
+// Settings in EEPROM
+struct settings_t {
+  unsigned char stat;         //Status of EEPROM
+  int cycle_time;             //Calculating base cycle time [s]
+  int vSound;                 //Velocity of sound [cm/sec]
+  int hOffset;                //Runtime offset [mm]
+  int aBaseArea;              //Base area of reservoir [cm*cm]
+  int hSensorPos;             //Height of sensor above base area [cm]
+  int hOverflow;              //Height of overflow device [cm]
+  int hRefill;                //Height for refilling start [cm]
+  int volRefill;              //Volume to refill [l]
+  int dvolRefill;             //Mass flow of refiller [l/sec]  
+  unsigned long volRefillTot;  //Refilling volume total [l]
+  unsigned long tiRefillReset; //Timestamp of last reset volRefillTot
+  int aRoof;                   //Surface of roof
+  int prcFiltEff_x[5];         //filter efficiency in x-values: rain in 1h [mm]
+  int prcFiltEff_y[5];         //filter efficiency in y-values: efficiency=(1-overflow) [%]
+  int prcVolDvtThres;          //Threshold for filter clogging error
+  int volRainMin;              //Minimum Rain Volume in 24h to activate filter diagnosis
+  int volUsage24h[NUM_USAGE_AVRG]; //Last values of usage calculation
+  unsigned char iDay;          //Last index of entry in volUsage24h
+  unsigned char volRain1h[EEP_NUM_HIST]; //1h Rain quantity history points 1 = 0.3 Liter > 255 = 85l
+  unsigned char prcActual[EEP_NUM_HIST]; //Volume history points
+  unsigned char stSignal[EEP_NUM_HIST];  //Status of signal
+  unsigned char iWrPtrHist;              //History write pointer
+};
+
+//EEPROM Settings as union
+union setting_stream_t {
+  settings_t settings;
+  unsigned char SettingStream[sizeof(settings_t)];
+};
 
 //EEP Data
 setting_stream_t SettingsEEP;      //EEPData
@@ -692,17 +711,22 @@ void loop()
         //Calculate rain within last 1h
         if (volRain24h_old>-1) {
           volRain1h = max(volRain24h-volRain24h_old,0);
+          stRain1h=true;
         }
         else {
           //after new start: Initialize with 0 until old value is available
           volRain1h = 0;
+          stRain1h=false;
         }
   
         #if LOGLEVEL & LOGLVL_NORMAL
           WriteSystemLog("Rain in last 24h from weather station [mm]: "+String(volRain24h));
           WriteSystemLog("Rain in last  1h from weather station [mm]: "+String(volRain1h));
         #endif
-  
+
+        //Calculate 1h refilling volume
+        volRefill1h = SettingsEEP.settings.volRefillTot - volRefillFilt1h;
+    
         //Check filter if rain within last hour is above threshold and volume is below maximum volume
         if ((volRain1h>SettingsEEP.settings.volRainMin) && (volActual<volMax) && (volActualFilt1h>0)) {
           //Filter check
@@ -719,6 +743,10 @@ void loop()
           //Invalid old value
           volActualFilt1h = 0;
         }
+
+        //Write data to EEP History
+        WriteEEPCurrData(prcActual, volRain1h, (rSignalHealth<SIGNAL_HEALTH_MIN), stRain1h, volRefill1h);
+        WriteHistSVG();
       }
 
       //Calcluate usage per day if hour=0 and rain within last 24h is zero
@@ -742,7 +770,7 @@ void loop()
       StatisticDailyUsage();
       
       //Log data 
-      LogData();
+      LogData();     
       
       //Send data to Homematic CCU
       #if HM_ACCESS_ACTIVE==1
@@ -887,8 +915,8 @@ void CheckFilter() {
     //Store 1h rain value for diagnosis
     volRainDiag1h = volRain1h;
     
-    //Calculate 1h refilling volume
-    volRefillDiag1h = SettingsEEP.settings.volRefillTot - volRefillFilt1h;
+    //Capture 1h refilling volume
+    volRefillDiag1h = volRefill1h;
     
     //Difference Volume
     volDiffDiag1h =  volActual - volActualFilt1h;

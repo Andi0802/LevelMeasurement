@@ -24,6 +24,33 @@ time_t getNtpTime()
   return _epochTime;
 }
 
+//--- SD Card support ---------------------------------------------------------------------------------------------------
+void CopyFile(String srcFile,String dstFile)
+{
+  //Copy file on SD Card  
+  File src,dst;
+
+  //Open source
+  src = SD.open(srcFile,FILE_READ);
+  
+  //Remove target if it exists already
+  if (SD.exists(dstFile)) {
+    SD.remove(dstFile);
+  }
+
+  //Open destination
+  dst = SD.open(dstFile,FILE_WRITE);
+
+  //Copy
+  while (src.available()) {
+    dst.write(src.read());
+  }
+
+  dst.flush();
+  dst.close();
+  src.close();
+}
+
 //--- String functions to create formateted strings ---------------------------------------------------------------------
 String getDateTimeStr(void) {
   //Get date and time in Format YYY-MM-DD hh:mm:ss

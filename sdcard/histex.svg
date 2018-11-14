@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<svg width="32cm" height="24cm" viewBox="0 0 320 240"
+     xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny">
+  <desc>Example line01 - lines expressed in user coordinates</desc>
+  <!-- Show outline of canvas using 'rect' element -->
+  <rect x="1" y="1" width="319" height="239"
+        fill="none" stroke="black" stroke-width="1" />
+  <!-- Day scale -->				  
+  <g fill="lightgrey" stroke="black" stroke-width="0">
+  <rect x="1" y="1" width="24" height="180"/>				
+  <rect x="48" y="1" width="24" height="180"/>        
+  <rect x="96" y="1" width="24" height="180"/>        
+  <rect x="144" y="1" width="24" height="180"/>        
+  <rect x="192" y="1" width="24" height="180"/>								
+  </g>
+  
+  <!-- Level Scale -->
+  <g stroke="grey" stroke-width="0.1">
+    <line x1="0" y1="10" x2="240" y2="10"/>
+	<line x1="0" y1="20" x2="240" y2="20"/>
+	<line x1="0" y1="30" x2="240" y2="30"/>
+	<line x1="0" y1="40" x2="240" y2="40"/>
+	<line x1="0" y1="50" x2="240" y2="50"/>
+	<line x1="0" y1="60" x2="240" y2="60"/>
+	<line x1="0" y1="70" x2="240" y2="70"/>
+	<line x1="0" y1="80" x2="240" y2="80"/>
+	<line x1="0" y1="90" x2="240" y2="90"/>
+  </g>  
+  <g font-family="Verdana" font-size="6" fill="black" text-anchor="left">
+    <text fill="blue" x="2"   y="8">Füllstand</text>
+    <text x="242" y="12">90%</text>  
+	<text x="242" y="22">80%</text>  
+	<text x="242" y="32">70%</text>  
+	<text x="242" y="42">60%</text>  
+	<text x="242" y="52">50%</text>  
+	<text x="242" y="62">40%</text>  
+	<text x="242" y="72">30%</text>  
+	<text x="242" y="82">20%</text>  
+	<text x="242" y="92">10%</text>  
+	<text x="242" y="102">0%</text>  
+  </g>
+  
+  <!-- Rain Scale -->
+  <g stroke="grey" stroke-width="0.1">  
+    <line x1="0" y1="107" x2="240" y2="107"/>
+	<line x1="0" y1="114" x2="240" y2="114"/>
+	<line x1="0" y1="121" x2="240" y2="121"/>
+	<line x1="0" y1="128" x2="240" y2="128"/>
+	<line x1="0" y1="135" x2="240" y2="135"/>
+	<line x1="0" y1="142" x2="240" y2="142"/>
+	<line x1="0" y1="149" x2="240" y2="149"/>
+	<line x1="0" y1="156" x2="240" y2="156"/>
+	<line x1="0" y1="163" x2="240" y2="163"/>
+  </g>  
+   <g font-family="Verdana" font-size="6" fill="black" text-anchor="left">    	
+    <text fill="blue" x="2"   y="107">Niederschlag</text>
+	<text x="242" y="116">8 l/h</text>  
+	<text x="242" y="130">6</text>  
+	<text x="242" y="144">4</text>  
+	<text x="242" y="158">2</text>  
+	<text x="242" y="172">0</text>  
+  </g>
+    
+  <!-- Level diagram -->		
+  <rect x="1" y="1" width="239" height="99"
+        fill="none" stroke="black" stroke-width="1" />		
+  <!-- Rain diagram -->		
+  <rect x="1" y="100" width="239" height="70"
+        fill="none" stroke="black" stroke-width="1" />				
+
+  <!-- Day scale: Fill dynamically --> 
+  <g font-family="Verdana" font-size="6" fill="black" text-anchor="middle">
+    <text x="228" y="180">14.11.</text>  
+    <text x="204" y="180">13.11.</text>
+	<text x="180" y="180">12.11.</text>
+	<text x="156" y="180">11.11.</text>
+	<text x="132" y="180">10.11.</text>
+	<text x="108" y="180">09.11.</text>
+	<text x="84" y="180">08.11.</text>
+	<text x="60" y="180">07.11.</text>
+	<text x="36" y="180">06.11.</text>
+	<text x="12" y="180">05.11.</text>
+  </g> 
+  
+  <!-- Level Line: Fill dynamically -->		
+  <!-- Formula: y=216+hour()-nPoint, y=100-prcActual(nPoint) -->
+  <polyline fill="none" stroke="blue" stroke-width="1" 
+            points="1,90	2,90	3,90	4,90	5,90	6,90	7,90	8,90	9,90	10,90	11,90	12,90	13,90	14,90	15,90	16,90	17,90	18,90	19,90	20,90
+ 			21,90	22,90	23,90	24,90	25,90	26,90	27,90	28,90	29,90	30,90	
+			31,90	32,90	33,90	34,90	35,90	36,90	51,91	52,90	70,89	
+			71,89	72,88	73,86	74,84	75,83	76,82	77,82	78,82	79,82	
+			80,82	81,81	82,81	83,77	84,73	85,71	86,71	87,71	88,72	100,75"
+
+ />
+ 
+ <!-- Rain bar series: fill dynamically -->
+ <!-- Formula: y=216+hour()-nPoint, y=170-Rain(nPoint) -->
+ <g fill="none" stroke="blue" stroke-width="1">
+   <polyline points="1,170 1,170"/>
+   <polyline points="2,170 2,163"/>
+   <polyline points="3,170 3,158"/>
+ </g>
+  
+</svg>

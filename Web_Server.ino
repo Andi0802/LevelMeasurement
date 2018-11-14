@@ -478,3 +478,72 @@ void MonitorWebServer(void)
   }
 }
 
+void WriteHistSVG()
+//Write SVG File with history data
+{
+  File svgFile;
+  unsigned char _iDay,_iHour,_idxRd;
+  char _idxPic;
+  
+  if (SD_State == SD_OK) {
+    #if LOGLEVEL & LOGLVL_NORMAL
+      WriteSystemLog(F("Writing svg File to SD Card"));
+    #endif
+        
+    Workaround_CS_ETH2SD(70);    
+    //Open File    
+    svgFile = SD.open(SVGFILE, FILE_WRITE);  
+
+    //Header
+    //CopyFile(SVGHEADER,SVGFILE);
+
+    //Date 
+    svgFile.println(F("<!-- Day scale: Fill dynamically -->"));
+    svgFile.println(F("<g font-family=""Verdana"" font-size=""6"" fill=""black"" text-anchor=""middle"">"));
+    for (_iDay=0; _iDay<10; _iDay++) {
+      svgFile.print(F("<text x="""));
+      svgFile.print(String(228-24*_iDay)); 
+      svgFile.print(F(""" y=""180"">"));
+      svgFile.print(String((-1)*_iDay)); //Hier noch durch das Datum ersetzen
+      svgFile.println(F(".</text>"));
+    }
+    svgFile.println(F("</g>"));
+   
+    //Level
+     svgFile.println(F("<!-- Level Line: Fill dynamically -->"));
+     svgFile.println(F("<!-- Formula: y=216+hour()-nPoint, y=100-prcActual(nPoint) -->"));
+     svgFile.println(F("<polyline fill=""none"" stroke=""blue"" stroke-width=""1""points="""));
+     for(_iHour=0;_iHour<240;_iHour++) {
+      _idxPic = 216+hour()-_iHour;
+      if (_idxPic>0) {
+        _idxRd = (SettingsEEP.settings.iWrPtrHist-_iHour)%EEP_NUM_HIST;
+        svgFile.print(String(_idxPic)+","+String(100-SettingsEEP.settings.prcActual[_idxRd])+" ");
+      }
+     }
+     svgFile.println(F("""/>")); 
+ 
+    //Rain
+    svgFile.println(F("<!-- Rain bar series: fill dynamically -->"));
+    svgFile.println(F("<!-- Formula: y=216+hour()-nPoint, y=170-Rain(nPoint) -->"));
+    svgFile.println(F("<g fill=""none"" stroke=""blue"" stroke-width=""1"">"));
+    for(_iHour=0;_iHour<240;_iHour++) {
+      _idxPic = 216+hour()-_iHour;
+      if (_idxPic>0) {
+        _idxRd = (SettingsEEP.settings.iWrPtrHist-_iHour)%EEP_NUM_HIST;
+        svgFile.println("<polyline points="""+String(_idxPic)+",170 "+String(_idxPic)+","+String(170-SettingsEEP.settings.volRain1h[_idxRd])+"/>");
+      } 
+    }
+    svgFile.println(F("</g>"));
+
+    //Trailer
+    svgFile.print("</svg>");
+
+    //Newline and Close
+    svgFile.println();
+    svgFile.flush();
+    svgFile.close();
+
+    Workaround_CS_SD2ETH(70);   
+  }
+}
+

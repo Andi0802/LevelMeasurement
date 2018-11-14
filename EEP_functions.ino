@@ -64,7 +64,16 @@ void ReadEEPData(void)
       SettingsEEP.settings.volUsage24h[_id] = 32767;
    }
    SettingsEEP.settings.iDay=0;                     //Start with day 0
-   
+
+   //History sample data
+   for (_id=0;_id<EEP_NUM_HIST;_id++) {
+     SettingsEEP.settings.volRain1h[_id] = SAMPLES_VOLRAIN[_id];
+     SettingsEEP.settings.prcActual[_id] = SAMPLES_PRCVOL[_id];
+     SettingsEEP.settings.stSignal[_id]  = SAMPLES_STSIGNAL[_id];
+   }
+   SettingsEEP.settings.iWrPtrHist = 0;
+
+   //Write data
    WriteEEPData();
   }
 }
@@ -124,6 +133,33 @@ void DumpEEPData(void)
   Serial.println(LogStr);
 }
 
+void WriteEEPCurrData(unsigned char prcActual, float volRain1h, bool stLevel, bool stRain, unsigned int volRefill1h)
+//Writes current values into history buffer
+{ 
+  unsigned char stSignal=0;
+
+  //Calculate stSignal
+  if (stLevel) {
+    stSignal = 1;
+  }
+  if (stRain) {
+    stSignal = stSignal | 2;
+  }
+  stSignal = stSignal | (round(volRefill1h/CONV_REFILL)<<2);
+
+  //Write data into EEP
+  SettingsEEP.settings.volRain1h[SettingsEEP.settings.iWrPtrHist] = prcActual;
+  SettingsEEP.settings.prcActual[SettingsEEP.settings.iWrPtrHist] = float2uint8(volRain1h,CONV_RAIN);
+  SettingsEEP.settings.stSignal[SettingsEEP.settings.iWrPtrHist]  = stSignal;
+   
+   
+  // Increment history counter
+  SettingsEEP.settings.iWrPtrHist = (SettingsEEP.settings.iWrPtrHist+1)%EEP_NUM_HIST;
+
+  //Write into EEP
+  WriteEEPData();
+}
+
 unsigned char checksum (unsigned char *ptr, size_t sz) 
 //Calculate Checksum
 {
@@ -132,3 +168,11 @@ unsigned char checksum (unsigned char *ptr, size_t sz)
     chk -= *ptr++;
   return chk;
 }
+
+unsigned char float2uint8(float value, float cnv)
+// Normalises and limits float variable to be stored in uint8
+// cnv=0.3 means: value = (float) 0.3 => return (unsigned char) 1 
+{  
+  return (unsigned char) (min(value/cnv,255));  
+}
+

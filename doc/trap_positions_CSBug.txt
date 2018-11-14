@@ -6,3 +6,4 @@ Trap Positions in Workaround_CS_SD2ETH and Workaround_CS_ETH2SD
 40-49 MonitorWebServer
 50-59 WriteSystemLog
 60-69 DumEEPData
+70-79 WriteHistSVG
