@@ -37,7 +37,7 @@ const String prgChng = PRG_CHANGE_DESC;
 #include <NetEEPROM_defs.h> //EEPROM Layout
 
 // Switch between operational system and test system
-//#define USE_TEST_SYSTEM
+#define USE_TEST_SYSTEM
 
 //Logging level Bitwise
 #define LOGLVL_NORMAL  1  //Bit 0: Normal logging
@@ -106,7 +106,7 @@ const String prgChng = PRG_CHANGE_DESC;
 #define LOGFILE   F("Res_Ctl.log")     // Name of system logfile
 #define DATAFILE  F("Res_Ctl.csv")     // Name of data logfile
 #define SVGFILE   F("histdata.svg")    // SVG File with graphic
-#define SVGHEADER F("histhead.svg");   // Header of SVG File
+#define SVGHEADER F("histhead.svg")   // Header of SVG File
 
 //Diagnosis
 #define SIGNAL_HEALTH_MIN 50          // Minimum signal health required
@@ -297,7 +297,7 @@ struct settings_t {
   int volUsage24h[NUM_USAGE_AVRG]; //Last values of usage calculation
   unsigned char iDay;          //Last index of entry in volUsage24h
   unsigned char volRain1h[EEP_NUM_HIST]; //1h Rain quantity history points 1 = 0.3 Liter > 255 = 85l
-  unsigned char prcActual[EEP_NUM_HIST]; //Volume history points
+  byte prcActual[EEP_NUM_HIST]; //Volume history points
   unsigned char stSignal[EEP_NUM_HIST];  //Status of signal
   unsigned char iWrPtrHist;              //History write pointer
 };
@@ -350,6 +350,9 @@ void setup() {
 
   //Read settings from EEPROM
   ReadEEPData();
+
+  //TESTCODE
+  WriteHistSVG();
 
   //Outputs
   pinMode(SOLONOID_PIN, OUTPUT);
@@ -745,8 +748,7 @@ void loop()
         }
 
         //Write data to EEP History
-        WriteEEPCurrData(prcActual, volRain1h, (rSignalHealth<SIGNAL_HEALTH_MIN), stRain1h, volRefill1h);
-        WriteHistSVG();
+        WriteEEPCurrData(prcActual, volRain1h, (rSignalHealth<SIGNAL_HEALTH_MIN), stRain1h, volRefill1h);       
       }
 
       //Calcluate usage per day if hour=0 and rain within last 24h is zero
@@ -771,6 +773,9 @@ void loop()
       
       //Log data 
       LogData();     
+
+      //Write svg File
+      WriteHistSVG();
       
       //Send data to Homematic CCU
       #if HM_ACCESS_ACTIVE==1

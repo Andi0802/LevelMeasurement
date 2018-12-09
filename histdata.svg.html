@@ -1,0 +1,326 @@
+
+<!-- saved from url=(0033)http://192.168.178.4/histdata.svg -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body><svg width="32cm" height="24cm" viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny">
+  <desc>Example line01 - lines expressed in user coordinates</desc>
+  <!-- Show outline of canvas using 'rect' element -->
+  <rect x="1" y="1" width="319" height="239" fill="none" stroke="black" stroke-width="1"></rect>
+  <!-- Day scale -->				  
+  <g fill="lightgrey" stroke="black" stroke-width="0">
+  <rect x="1" y="1" width="24" height="180"></rect>				
+  <rect x="48" y="1" width="24" height="180"></rect>        
+  <rect x="96" y="1" width="24" height="180"></rect>        
+  <rect x="144" y="1" width="24" height="180"></rect>        
+  <rect x="192" y="1" width="24" height="180"></rect>								
+  </g>
+  
+  <!-- Level Scale -->
+  <g stroke="grey" stroke-width="0.1">
+    <line x1="0" y1="10" x2="240" y2="10"></line>
+	<line x1="0" y1="20" x2="240" y2="20"></line>
+	<line x1="0" y1="30" x2="240" y2="30"></line>
+	<line x1="0" y1="40" x2="240" y2="40"></line>
+	<line x1="0" y1="50" x2="240" y2="50"></line>
+	<line x1="0" y1="60" x2="240" y2="60"></line>
+	<line x1="0" y1="70" x2="240" y2="70"></line>
+	<line x1="0" y1="80" x2="240" y2="80"></line>
+	<line x1="0" y1="90" x2="240" y2="90"></line>
+  </g>  
+  <g font-family="Verdana" font-size="6" fill="black" text-anchor="left">
+    <text fill="blue" x="2" y="8">Füllstand</text>
+    <text x="242" y="12">90%</text>  
+	<text x="242" y="22">80%</text>  
+	<text x="242" y="32">70%</text>  
+	<text x="242" y="42">60%</text>  
+	<text x="242" y="52">50%</text>  
+	<text x="242" y="62">40%</text>  
+	<text x="242" y="72">30%</text>  
+	<text x="242" y="82">20%</text>  
+	<text x="242" y="92">10%</text>  
+	<text x="242" y="102">0%</text>  
+  </g>
+  
+  <!-- Rain Scale -->
+  <g stroke="grey" stroke-width="0.1">  
+    <line x1="0" y1="107" x2="240" y2="107"></line>
+	<line x1="0" y1="114" x2="240" y2="114"></line>
+	<line x1="0" y1="121" x2="240" y2="121"></line>
+	<line x1="0" y1="128" x2="240" y2="128"></line>
+	<line x1="0" y1="135" x2="240" y2="135"></line>
+	<line x1="0" y1="142" x2="240" y2="142"></line>
+	<line x1="0" y1="149" x2="240" y2="149"></line>
+	<line x1="0" y1="156" x2="240" y2="156"></line>
+	<line x1="0" y1="163" x2="240" y2="163"></line>
+  </g>  
+   <g font-family="Verdana" font-size="6" fill="black" text-anchor="left">    	
+    <text fill="blue" x="2" y="107">Niederschlag</text>
+	<text x="242" y="116">8 l/h</text>  
+	<text x="242" y="130">6</text>  
+	<text x="242" y="144">4</text>  
+	<text x="242" y="158">2</text>  
+	<text x="242" y="172">0</text>  
+  </g>
+    
+  <!-- Level diagram -->		
+  <rect x="1" y="1" width="239" height="99" fill="none" stroke="black" stroke-width="1"></rect>		
+  <!-- Rain diagram -->		
+  <rect x="1" y="100" width="239" height="70" fill="none" stroke="black" stroke-width="1"></rect>				
+
+<!-- Day scale: Fill dynamically -->
+<g font-family="Verdana" font-size="6" fill="black" text-anchor="middle">
+<text x="228" y="180">0.</text>
+<text x="204" y="180">-1.</text>
+<text x="180" y="180">-2.</text>
+<text x="156" y="180">-3.</text>
+<text x="132" y="180">-4.</text>
+<text x="108" y="180">-5.</text>
+<text x="84" y="180">-6.</text>
+<text x="60" y="180">-7.</text>
+<text x="36" y="180">-8.</text>
+<text x="12" y="180">-9.</text>
+</g>
+<!-- Level Line: Fill dynamically -->
+<!-- Formula: y=216+hour()-nPoint, y=100-prcActual(nPoint) -->
+<polyline fill="none" stroke="blue" stroke-width="1" points="
+236,-139 235,-71 234,-134 233,-25 232,-91 231,-3 230,-149 229,49 228,-91 227,-59 226,-89 225,-123 224,-110 223,-122 222,-147 221,-25 220,-149 219,39 218,-33 217,-25 216,12 215,-147 214,-155 213,-85 212,-90 211,-121 210,-109 209,-151 208,-107 207,-123 206,21 205,-123 204,-146 203,-139 202,-103 201,-135 200,-50 199,48 198,-153 197,69 196,-86 195,-59 194,-91 193,-91 192,95 191,-103 190,-119 189,-115 188,-97 187,-117 186,-139 185,-24 184,-11 183,25 182,-123 181,-27 180,42 179,-147 178,-10 177,-153 176,-155 175,54 174,-147 173,-151 172,-65 171,-124 170,-115 169,-24 168,-155 167,-94 166,-89 165,-147 164,-44 163,-151 162,50 161,-139 160,-147 159,-120 158,-3 157,-15 156,-126 155,-19 154,-154 153,37 152,-146 151,-87 150,-131 149,-155 148,-151 147,-155 146,-145 145,-24 144,-41 143,-147 142,-79 141,-155 140,21 139,-102 138,-129 137,-11 136,-91 135,-11 134,-27 133,-106 132,-89 131,-138 130,-65 129,-151 128,37 127,-52 126,-139 125,-46 124,-73 123,24 122,-30 121,-118 120,-129 119,-94 118,-154 117,-80 116,-89 115,13 114,44 113,-149 112,-143 111,29 110,-91 109,-69 108,-119 107,-142 106,86 105,-27 104,29 103,-73 102,-11 101,-151 100,-142 99,-121 98,9 97,-139 96,-134 95,-123 94,-11 93,-149 92,-155 91,-115 90,-51 89,-121 88,-129 87,87 86,-24 85,41 84,43 83,-75 82,-10 81,-83 80,-139 79,-139 78,-95 77,-71 76,41 75,-148 74,-83 73,-149 72,-91 71,-151 70,-86 69,-19 68,-131 67,38 66,-119 65,-150 64,-115 63,-114 62,-155 61,39 60,-123 59,-151 58,-150 57,-135 56,-51 55,-155 54,-105 53,-18 52,-67 51,-154 50,5 49,-136 48,61 47,-91 46,-3 45,-87 44,-122 43,-103 42,-58 41,-71 40,-107 39,-155 38,-85 37,-26 36,49 35,-1 34,-145 33,-87 32,-27 31,33 30,-91 29,39 28,-59 27,-82 26,-9 25,-75 24,-123 23,-81 22,-155 21,-76 20,42 19,-27 18,-153 17,23 16,-99 15,-106 14,-19 13,-118 12,5 11,-149 10,-154 9,-121 8,-31 7,-83 6,38 5,-83 4,-140 3,-90 2,-31 1,0 65535,-118 65534,-90 65533,-137 "></polyline>
+<!-- Rain bar series: fill dynamically -->
+<!-- Formula: y=216+hour()-nPoint, y=170-Rain(nPoint) -->
+<g fill="none" stroke="blue" stroke-width="1">
+<polyline points="236,170 236,12/&gt;
+&lt;polyline points=" 235,170="" 235,-83=""></polyline>
+<polyline points="234,170 234,-1/&gt;
+&lt;polyline points=" 233,170="" 233,-77=""></polyline>
+<polyline points="232,170 232,-41/&gt;
+&lt;polyline points=" 231,170="" 231,27=""></polyline>
+<polyline points="230,170 230,-13/&gt;
+&lt;polyline points=" 229,170="" 229,-77=""></polyline>
+<polyline points="228,170 228,-29/&gt;
+&lt;polyline points=" 227,170="" 227,-9=""></polyline>
+<polyline points="226,170 226,46/&gt;
+&lt;polyline points=" 225,170="" 225,3=""></polyline>
+<polyline points="224,170 224,-77/&gt;
+&lt;polyline points=" 223,170="" 223,110=""></polyline>
+<polyline points="222,170 222,5/&gt;
+&lt;polyline points=" 221,170="" 221,-85=""></polyline>
+<polyline points="220,170 220,-69/&gt;
+&lt;polyline points=" 219,170="" 219,-44=""></polyline>
+<polyline points="218,170 218,-85/&gt;
+&lt;polyline points=" 217,170="" 217,52=""></polyline>
+<polyline points="216,170 216,141/&gt;
+&lt;polyline points=" 215,170="" 215,-21=""></polyline>
+<polyline points="214,170 214,-74/&gt;
+&lt;polyline points=" 213,170="" 213,119=""></polyline>
+<polyline points="212,170 212,-80/&gt;
+&lt;polyline points=" 211,170="" 211,11=""></polyline>
+<polyline points="210,170 210,-80/&gt;
+&lt;polyline points=" 209,170="" 209,-73=""></polyline>
+<polyline points="208,170 208,43/&gt;
+&lt;polyline points=" 207,170="" 207,24=""></polyline>
+<polyline points="206,170 206,51/&gt;
+&lt;polyline points=" 205,170="" 205,-12=""></polyline>
+<polyline points="204,170 204,-57/&gt;
+&lt;polyline points=" 203,170="" 203,-61=""></polyline>
+<polyline points="202,170 202,45/&gt;
+&lt;polyline points=" 201,170="" 201,-15=""></polyline>
+<polyline points="200,170 200,59/&gt;
+&lt;polyline points=" 199,170="" 199,-85=""></polyline>
+<polyline points="198,170 198,77/&gt;
+&lt;polyline points=" 197,170="" 197,107=""></polyline>
+<polyline points="196,170 196,83/&gt;
+&lt;polyline points=" 195,170="" 195,-65=""></polyline>
+<polyline points="194,170 194,-43/&gt;
+&lt;polyline points=" 193,170="" 193,-65=""></polyline>
+<polyline points="192,170 192,-82/&gt;
+&lt;polyline points=" 191,170="" 191,97=""></polyline>
+<polyline points="190,170 190,-53/&gt;
+&lt;polyline points=" 189,170="" 189,-77=""></polyline>
+<polyline points="188,170 188,59/&gt;
+&lt;polyline points=" 187,170="" 187,-25=""></polyline>
+<polyline points="186,170 186,59/&gt;
+&lt;polyline points=" 185,170="" 185,-85=""></polyline>
+<polyline points="184,170 184,-38/&gt;
+&lt;polyline points=" 183,170="" 183,-63=""></polyline>
+<polyline points="182,170 182,11/&gt;
+&lt;polyline points=" 181,170="" 181,29=""></polyline>
+<polyline points="180,170 180,-23/&gt;
+&lt;polyline points=" 179,170="" 179,103=""></polyline>
+<polyline points="178,170 178,-28/&gt;
+&lt;polyline points=" 177,170="" 177,-61=""></polyline>
+<polyline points="176,170 176,-37/&gt;
+&lt;polyline points=" 175,170="" 175,99=""></polyline>
+<polyline points="174,170 174,-73/&gt;
+&lt;polyline points=" 173,170="" 173,-61=""></polyline>
+<polyline points="172,170 172,59/&gt;
+&lt;polyline points=" 171,170="" 171,52=""></polyline>
+<polyline points="170,170 170,-81/&gt;
+&lt;polyline points=" 169,170="" 169,-75=""></polyline>
+<polyline points="168,170 168,-63/&gt;
+&lt;polyline points=" 167,170="" 167,-53=""></polyline>
+<polyline points="166,170 166,-85/&gt;
+&lt;polyline points=" 165,170="" 165,-46=""></polyline>
+<polyline points="164,170 164,53/&gt;
+&lt;polyline points=" 163,170="" 163,-83=""></polyline>
+<polyline points="162,170 162,-49/&gt;
+&lt;polyline points=" 161,170="" 161,-85=""></polyline>
+<polyline points="160,170 160,75/&gt;
+&lt;polyline points=" 159,170="" 159,-53=""></polyline>
+<polyline points="158,170 158,30/&gt;
+&lt;polyline points=" 157,170="" 157,-43=""></polyline>
+<polyline points="156,170 156,-79/&gt;
+&lt;polyline points=" 155,170="" 155,-78=""></polyline>
+<polyline points="154,170 154,-31/&gt;
+&lt;polyline points=" 153,170="" 153,-77=""></polyline>
+<polyline points="152,170 152,-73/&gt;
+&lt;polyline points=" 151,170="" 151,-67=""></polyline>
+<polyline points="150,170 150,-83/&gt;
+&lt;polyline points=" 149,170="" 149,-45=""></polyline>
+<polyline points="148,170 148,-68/&gt;
+&lt;polyline points=" 147,170="" 147,-21=""></polyline>
+<polyline points="146,170 146,97/&gt;
+&lt;polyline points=" 145,170="" 145,-69=""></polyline>
+<polyline points="144,170 144,60/&gt;
+&lt;polyline points=" 143,170="" 143,-20=""></polyline>
+<polyline points="142,170 142,77/&gt;
+&lt;polyline points=" 141,170="" 141,108=""></polyline>
+<polyline points="140,170 140,-81/&gt;
+&lt;polyline points=" 139,170="" 139,-67=""></polyline>
+<polyline points="138,170 138,101/&gt;
+&lt;polyline points=" 137,170="" 137,156=""></polyline>
+<polyline points="136,170 136,-64/&gt;
+&lt;polyline points=" 135,170="" 135,-49=""></polyline>
+<polyline points="134,170 134,44/&gt;
+&lt;polyline points=" 133,170="" 133,-68=""></polyline>
+<polyline points="132,170 132,-79/&gt;
+&lt;polyline points=" 131,170="" 131,43=""></polyline>
+<polyline points="130,170 130,-51/&gt;
+&lt;polyline points=" 129,170="" 129,-85=""></polyline>
+<polyline points="128,170 128,75/&gt;
+&lt;polyline points=" 127,170="" 127,91=""></polyline>
+<polyline points="126,170 126,-70/&gt;
+&lt;polyline points=" 125,170="" 125,43=""></polyline>
+<polyline points="124,170 124,79/&gt;
+&lt;polyline points=" 123,170="" 123,-53=""></polyline>
+<polyline points="122,170 122,43/&gt;
+&lt;polyline points=" 121,170="" 121,-84=""></polyline>
+<polyline points="120,170 120,-3/&gt;
+&lt;polyline points=" 119,170="" 119,-84=""></polyline>
+<polyline points="118,170 118,92/&gt;
+&lt;polyline points=" 117,170="" 117,-75=""></polyline>
+<polyline points="116,170 116,-7/&gt;
+&lt;polyline points=" 115,170="" 115,84=""></polyline>
+<polyline points="114,170 114,-18/&gt;
+&lt;polyline points=" 113,170="" 113,-21=""></polyline>
+<polyline points="112,170 112,43/&gt;
+&lt;polyline points=" 111,170="" 111,85=""></polyline>
+<polyline points="110,170 110,-19/&gt;
+&lt;polyline points=" 109,170="" 109,-85=""></polyline>
+<polyline points="108,170 108,-45/&gt;
+&lt;polyline points=" 107,170="" 107,-85=""></polyline>
+<polyline points="106,170 106,127/&gt;
+&lt;polyline points=" 105,170="" 105,-53=""></polyline>
+<polyline points="104,170 104,112/&gt;
+&lt;polyline points=" 103,170="" 103,-84=""></polyline>
+<polyline points="102,170 102,-85/&gt;
+&lt;polyline points=" 101,170="" 101,125=""></polyline>
+<polyline points="100,170 100,-12/&gt;
+&lt;polyline points=" 99,170="" 99,-81=""></polyline>
+<polyline points="98,170 98,107/&gt;
+&lt;polyline points=" 97,170="" 97,-2=""></polyline>
+<polyline points="96,170 96,-69/&gt;
+&lt;polyline points=" 95,170="" 95,-68=""></polyline>
+<polyline points="94,170 94,-81/&gt;
+&lt;polyline points=" 93,170="" 93,-68=""></polyline>
+<polyline points="92,170 92,-83/&gt;
+&lt;polyline points=" 91,170="" 91,95=""></polyline>
+<polyline points="90,170 90,137/&gt;
+&lt;polyline points=" 89,170="" 89,-3=""></polyline>
+<polyline points="88,170 88,61/&gt;
+&lt;polyline points=" 87,170="" 87,-84=""></polyline>
+<polyline points="86,170 86,-68/&gt;
+&lt;polyline points=" 85,170="" 85,-83=""></polyline>
+<polyline points="84,170 84,1/&gt;
+&lt;polyline points=" 83,170="" 83,-77=""></polyline>
+<polyline points="82,170 82,43/&gt;
+&lt;polyline points=" 81,170="" 81,-53=""></polyline>
+<polyline points="80,170 80,-20/&gt;
+&lt;polyline points=" 79,170="" 79,-81=""></polyline>
+<polyline points="78,170 78,76/&gt;
+&lt;polyline points=" 77,170="" 77,67=""></polyline>
+<polyline points="76,170 76,70/&gt;
+&lt;polyline points=" 75,170="" 75,-83=""></polyline>
+<polyline points="74,170 74,-65/&gt;
+&lt;polyline points=" 73,170="" 73,-53=""></polyline>
+<polyline points="72,170 72,-77/&gt;
+&lt;polyline points=" 71,170="" 71,-75=""></polyline>
+<polyline points="70,170 70,59/&gt;
+&lt;polyline points=" 69,170="" 69,-85=""></polyline>
+<polyline points="68,170 68,-21/&gt;
+&lt;polyline points=" 67,170="" 67,-60=""></polyline>
+<polyline points="66,170 66,-85/&gt;
+&lt;polyline points=" 65,170="" 65,-85=""></polyline>
+<polyline points="64,170 64,-77/&gt;
+&lt;polyline points=" 63,170="" 63,-53=""></polyline>
+<polyline points="62,170 62,75/&gt;
+&lt;polyline points=" 61,170="" 61,44=""></polyline>
+<polyline points="60,170 60,-78/&gt;
+&lt;polyline points=" 59,170="" 59,-50=""></polyline>
+<polyline points="58,170 58,55/&gt;
+&lt;polyline points=" 57,170="" 57,68=""></polyline>
+<polyline points="56,170 56,-51/&gt;
+&lt;polyline points=" 55,170="" 55,163=""></polyline>
+<polyline points="54,170 54,45/&gt;
+&lt;polyline points=" 53,170="" 53,-79=""></polyline>
+<polyline points="52,170 52,-69/&gt;
+&lt;polyline points=" 51,170="" 51,-21=""></polyline>
+<polyline points="50,170 50,-53/&gt;
+&lt;polyline points=" 49,170="" 49,-46=""></polyline>
+<polyline points="48,170 48,-37/&gt;
+&lt;polyline points=" 47,170="" 47,114=""></polyline>
+<polyline points="46,170 46,-21/&gt;
+&lt;polyline points=" 45,170="" 45,-85=""></polyline>
+<polyline points="44,170 44,-36/&gt;
+&lt;polyline points=" 43,170="" 43,-68=""></polyline>
+<polyline points="42,170 42,-51/&gt;
+&lt;polyline points=" 41,170="" 41,140=""></polyline>
+<polyline points="40,170 40,75/&gt;
+&lt;polyline points=" 39,170="" 39,13=""></polyline>
+<polyline points="38,170 38,-63/&gt;
+&lt;polyline points=" 37,170="" 37,-85=""></polyline>
+<polyline points="36,170 36,-49/&gt;
+&lt;polyline points=" 35,170="" 35,55=""></polyline>
+<polyline points="34,170 34,12/&gt;
+&lt;polyline points=" 33,170="" 33,-43=""></polyline>
+<polyline points="32,170 32,-76/&gt;
+&lt;polyline points=" 31,170="" 31,-60=""></polyline>
+<polyline points="30,170 30,-85/&gt;
+&lt;polyline points=" 29,170="" 29,49=""></polyline>
+<polyline points="28,170 28,44/&gt;
+&lt;polyline points=" 27,170="" 27,-81=""></polyline>
+<polyline points="26,170 26,-33/&gt;
+&lt;polyline points=" 25,170="" 25,-4=""></polyline>
+<polyline points="24,170 24,-61/&gt;
+&lt;polyline points=" 23,170="" 23,-67=""></polyline>
+<polyline points="22,170 22,-77/&gt;
+&lt;polyline points=" 21,170="" 21,124=""></polyline>
+<polyline points="20,170 20,-77/&gt;
+&lt;polyline points=" 19,170="" 19,156=""></polyline>
+<polyline points="18,170 18,47/&gt;
+&lt;polyline points=" 17,170="" 17,-51=""></polyline>
+<polyline points="16,170 16,91/&gt;
+&lt;polyline points=" 15,170="" 15,13=""></polyline>
+<polyline points="14,170 14,-77/&gt;
+&lt;polyline points=" 13,170="" 13,-7=""></polyline>
+<polyline points="12,170 12,-16/&gt;
+&lt;polyline points=" 11,170="" 11,-82=""></polyline>
+<polyline points="10,170 10,49/&gt;
+&lt;polyline points=" 9,170="" 9,-84=""></polyline>
+<polyline points="8,170 8,-21/&gt;
+&lt;polyline points=" 7,170="" 7,-84=""></polyline>
+<polyline points="6,170 6,92/&gt;
+&lt;polyline points=" 5,170="" 5,18=""></polyline>
+<polyline points="4,170 4,47/&gt;
+&lt;polyline points=" 3,170="" 3,-68=""></polyline>
+<polyline points="2,170 2,143/&gt;
+&lt;polyline points=" 1,170="" 1,-51=""></polyline>
+<polyline points="65535,170 65535,-12/&gt;
+&lt;polyline points=" 65534,170="" 65534,-77=""></polyline>
+</g></svg></body></html>

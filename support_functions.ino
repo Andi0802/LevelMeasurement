@@ -44,6 +44,8 @@ void CopyFile(String srcFile,String dstFile)
   //Copy
   while (src.available()) {
     dst.write(src.read());
+    // Trigger Watchdog
+    TriggerWDT();
   }
 
   dst.flush();

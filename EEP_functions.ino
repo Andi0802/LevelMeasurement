@@ -4,8 +4,8 @@ void ReadEEPData(void)
 {
   //Reads EEPData from EEP
   int i;
-  unsigned char _id;
-  unsigned char chk;
+  byte _id;
+  byte chk;
  
   //Read data stream
   #if LOGLEVEL & LOGLVL_SYSTEM
@@ -19,7 +19,7 @@ void ReadEEPData(void)
   #endif
 
   // Check plausibility
-  chk = checksum(&SettingsEEP.SettingStream[1], EEPSize - 1);
+  chk = 1+checksum(&SettingsEEP.SettingStream[1], EEPSize - 1);
   if (SettingsEEP.settings.stat == chk) {
     #if LOGLEVEL & LOGLVL_SYSTEM
       WriteSystemLog(F("EEP checksum ok "));
@@ -68,7 +68,8 @@ void ReadEEPData(void)
    //History sample data
    for (_id=0;_id<EEP_NUM_HIST;_id++) {
      SettingsEEP.settings.volRain1h[_id] = SAMPLES_VOLRAIN[_id];
-     SettingsEEP.settings.prcActual[_id] = SAMPLES_PRCVOL[_id];
+     SettingsEEP.settings.prcActual[_id] = 10; //byte(SAMPLES_PRCVOL[_id]);
+     Serial.println(String(_id)+" ->"+ String(SettingsEEP.settings.prcActual[_id]));
      SettingsEEP.settings.stSignal[_id]  = SAMPLES_STSIGNAL[_id];
    }
    SettingsEEP.settings.iWrPtrHist = 0;
@@ -82,7 +83,7 @@ void WriteEEPData(void)
 {
   //Reads EEPData from EEP
   unsigned int i;
-  unsigned char chk;
+  byte chk;
 
   chk = checksum(&SettingsEEP.SettingStream[1], EEPSize - 1);
   SettingsEEP.settings.stat = chk;
@@ -136,7 +137,7 @@ void DumpEEPData(void)
 void WriteEEPCurrData(unsigned char prcActual, float volRain1h, bool stLevel, bool stRain, unsigned int volRefill1h)
 //Writes current values into history buffer
 { 
-  unsigned char stSignal=0;
+  byte stSignal=0;
 
   //Calculate stSignal
   if (stLevel) {
