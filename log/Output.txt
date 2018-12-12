@@ -1,0 +1,36 @@
+<HTML><HEAD>
+<TITLE>Zisterne</TITLE>
+<style>table, td, th { border: 1px solid black; }</style>
+</HEAD>
+<BODY>
+<H1>Zisterne</h1>
+<H2>Status</h2>
+<H3>Messwerte</h3>
+<table><tr><td>Messzeit (UTC)</td><td>2018-12-12 16:45:13</td></tr><tr><td>Messung aktiv [%]</td><td>-</td></tr><tr><td>Pegel [mm]</td><td>1795</td></tr><tr><td>Inhalt [Liter] </td><td>5639</td></tr><tr><td>Tendenz [Liter] </td><td>5639</td></tr><tr><td>Standardabweichung [Liter] </td><td>0.00</td></tr><tr><td>Fuellstand [%]</td><td>89</td></tr><tr><td>Signalqualitaet [-]</td><td>100</td></tr><tr><td>Fehlerzustand [-]</td><td>Kein Fehler erkannt</td></tr><tr><td>Regenmenge 1h [Liter]</td><td>0.00</td></tr><tr><td>Regenmenge 24h [Liter]</td><td>0.30</td></tr></table><H3>Nachspeisung</h3>
+<table><tr><td>Nachspeisung aktiv</td><td>-</td></tr><tr><td>Nachspeisung [Liter]</td><td>180</td></tr><tr><td>Reset Nachspeisung am</td><td>2018-11-07 19:46:58</td></tr></table><H3>Filterdiagnose</h3>
+<table><tr><td>Diagnosezeit (UTC)</td><td></td></tr><tr><td>Regenmenge 1h [mm]</td><td>0.00</td></tr><tr><td>Nachspeisung 1h [Liter] </td><td>0</td></tr><tr><td>Verbrauch 1h [Liter]</td><td>20</td></tr><tr><td>Fuellstandsaenderung 1h [Liter] </td><td>0</td></tr><tr><td>Berechnete Fuellstandsaenderung 24h [Liter]</td><td>0</td></tr><tr><td>Abweichung [%]</td><td>0</td></tr><tr><td>Filterzustand [-]</td><td>Unbekannt</td></tr></td></tr></table><H3>Verbrauchsberechnung</h3>
+<table><tr><td>Berechungszeit (UTC)</td><td></td></tr><tr><td>Nachspeisung 24h [Liter] </td><td>0</td></tr><tr><td>Fuellstandsaenderung 24h [Liter] </td><td>0</td></tr><tr><td>Verbrauch 24h [Liter]</td><td>25</td></tr><tr><td>Gleitender Mittelwert 10 Tage [Liter]</td><td>70</td></tr><tr><td>Minimum 10 Tage [Liter]</td><td>25</td></tr><tr><td>Maximum 10 Tage [Liter]</td><td>101</td></tr></table><H2>Einstellungen</H2>
+<form method='get'>
+<table><tr><th>Parameter</th><th>Aktueller Wert</th><th>Neuer Wert</th></tr><tr><td>Schallgeschwindigkeit [mm/s]: </td><td>3433</td><td> <input type='text' name='vSoundSet'></td></tr>
+<tr><td>Messoffset [mm]: </td><td>-25</td><td> <input type='text' name='hOffsetSet'></td></tr>
+<tr><td>Grundflaeche [cm^2]: </td><td>31416</td><td> <input type='text' name='aBaseAreaSet'></td></tr>
+<tr><td>Sensor Hoehe [cm]: </td><td>240</td><td> <input type='text' name='hSensorPosSet'></td></tr>
+<tr><td>Ueberlauf Hoehe [cm]: </td><td>200</td><td> <input type='text' name='hOverflowSet'></td></tr>
+<tr><td>Pegel fuer Nachspeisung [cm]: </td><td>20</td><td> <input type='text' name='hRefillSet'></td></tr>
+<tr><td>Dachflaeche [m^2]: </td><td>100</td><td> <input type='text' name='aRoof'></td></tr>
+<tr><td>Index Kurve [-]: </td><td>0</td><td> <input type='text' name='idxCur'></td></tr>
+<tr><td>Regenmenge Filter [Liter/h]: </td><td>1, 5, 7, 10, 20</td><td> <input type='text' name='volRainFilt1h'></td></tr>
+<tr><td>Filtereffizienz [%]: </td><td>100, 100, 90, 40, 20</td><td> <input type='text' name='prcFiltEff'></td></tr>
+<tr><td>Schwellwert Diagnose Filter [%]: </td><td>20</td><td> <input type='text' name='prcVolDvtThres'></td></tr>
+<tr><td>Nachspeisevolumen [l]: </td><td>20</td><td> <input type='text' name='volRefillSet'></td></tr>
+<tr><td>Nachspeisung Volumenstrom [l/min]: </td><td>20</td><td> <input type='text' name='dvolRefillSet'></td></tr>
+<tr><td>Minimal erforderliche Regenmenge in 1h fuer Filterdiagnose [mm]: </td><td>1</td><td> <input type='text' name='volRainMin'></td></tr>
+</table><br><input type='submit' value='Submit'>
+<h2>Logfiles</h2><a href='Res_Ctl.csv' type='text/text' download='Res_Ctl.csv'>Get Data Log File</a><br><a href='Res_Ctl.log' type='text/text' download='Res_Ctl.log'>Get System Log File</a><H2>Reset</h2>
+<a href=reset>Reset</a><br>
+<H2>Programminfo</h2>
+<p>V3.1.0</p>
+<p>commit d84c9d132ef6c6350548926424a19aa52e8d5dff<br>Author: Andreas Rupp <andreas.rupp@zeru.de><br>Commit: Andreas Rupp <andreas.rupp@zeru.de><br><br>    NaN received as actual rain (#15)<br>    Moving average calculation wrong (#16)<br>    Timeout handling missing if no answer at all (#18)<br>    Homematic access switchable (#19)<br>    Reset possibility over web; use real AVR WDT; Use NetEEPROM<br></p>
+</BODY></HTML>
+
+
