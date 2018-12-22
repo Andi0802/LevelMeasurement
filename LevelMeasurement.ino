@@ -547,7 +547,8 @@ void loop()
           #endif
           
           //Plausibility check: Signal cannot be higher than sensor position and not lower than distance btw sensor and overflow  
-          if (entfernung >= SettingsEEP.settings.hSensorPos*10 || entfernung <= (SettingsEEP.settings.hSensorPos-SettingsEEP.settings.hOverflow)*10)
+          //With 100mm safety distance
+          if (entfernung >= (SettingsEEP.settings.hSensorPos*10+100) || entfernung <= ((SettingsEEP.settings.hSensorPos-SettingsEEP.settings.hOverflow)*10)-100)
           {
             //Measurement not plausible, set dummy value 0
             arr[pos] = 0;
