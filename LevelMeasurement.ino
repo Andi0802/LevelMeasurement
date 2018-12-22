@@ -351,9 +351,6 @@ void setup() {
   //Read settings from EEPROM
   ReadEEPData();
 
-  //TESTCODE
-  WriteHistSVG();
-
   //Outputs
   pinMode(SOLONOID_PIN, OUTPUT);
   pinMode(US_TRIGGER_PIN, OUTPUT);

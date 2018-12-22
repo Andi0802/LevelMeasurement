@@ -19,7 +19,7 @@ void ReadEEPData(void)
   #endif
 
   // Check plausibility
-  chk = 1+checksum(&SettingsEEP.SettingStream[1], EEPSize - 1);
+  chk = checksum(&SettingsEEP.SettingStream[1], EEPSize - 1);
   if (SettingsEEP.settings.stat == chk) {
     #if LOGLEVEL & LOGLVL_SYSTEM
       WriteSystemLog(F("EEP checksum ok "));
