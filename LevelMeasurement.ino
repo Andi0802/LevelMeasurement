@@ -37,7 +37,7 @@ const String prgChng = PRG_CHANGE_DESC;
 #include <NetEEPROM_defs.h> //EEPROM Layout
 
 // Switch between operational system and test system
-#define USE_TEST_SYSTEM
+//#define USE_TEST_SYSTEM
 
 //Logging level Bitwise
 #define LOGLVL_NORMAL  1  //Bit 0: Normal logging
