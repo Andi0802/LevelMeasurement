@@ -95,6 +95,8 @@ void MonitorWebServer(void)
   EthernetClient client2 = server.available();
   if (client2) {
     while (client2.connected()) {
+      // Trigger Watchdog
+      TriggerWDT();  
       if (client2.available()) {
         char c = client2.read();
 
@@ -559,8 +561,8 @@ void WriteHistSVG()
       if (_idxPic>0) {
         _idxRd = (EEP_NUM_HIST+SettingsEEP.settings.iWrPtrHist-_iHour)%EEP_NUM_HIST;
         _yValPic = max(min(100-SettingsEEP.settings.prcActual[_idxRd],100),0);
-        Serial.println(String(_idxRd)+" ->"+ SettingsEEP.settings.prcActual[_idxRd]);
-        svgFile.print(String(_idxPic)+","+String(_yValPic)+" ");
+        //Serial.println(String(_idxRd)+" ->"+ SettingsEEP.settings.prcActual[_idxRd]);
+        svgFile.print(String(_idxPic)+"\",\""+String(_yValPic)+"\" ");
       }
      }
      svgFile.println(F("\"/>")); 
@@ -574,7 +576,7 @@ void WriteHistSVG()
       if (_idxPic>0) {
         _idxRd = (SettingsEEP.settings.iWrPtrHist-_iHour)%EEP_NUM_HIST;
         _yValPic = max(min(170-SettingsEEP.settings.volRain1h[_idxRd],170),100);
-        svgFile.println("<polyline points=\""+String(_idxPic)+",170 "+String(_idxPic)+","+String(_yValPic)+"/>");
+        svgFile.println("<polyline points=\""+String(_idxPic)+"\",170\" \""+String(_idxPic)+"\","+String(_yValPic)+"\"/>");
       } 
     }
     svgFile.println(F("</g>"));

@@ -1,6 +1,5 @@
 /*
   Level sensor for rain water reservoir
-
   Features:
     - Level sensing by US Sensor
     - Refill based on level
@@ -728,8 +727,8 @@ void loop()
         //Calculate 1h refilling volume
         volRefill1h = SettingsEEP.settings.volRefillTot - volRefillFilt1h;
     
-        //Check filter if rain within last hour is above threshold and volume is below maximum volume
-        if ((volRain1h>SettingsEEP.settings.volRainMin) && (volActual<volMax) && (volActualFilt1h>0)) {
+        //Check filter if rain within last hour is above threshold and volume is below 90% of maximum volume
+        if ((volRain1h>SettingsEEP.settings.volRainMin) && (volActual<0.9*volMax) && (volActualFilt1h>0)) {
           //Filter check
           CheckFilter();
         }
