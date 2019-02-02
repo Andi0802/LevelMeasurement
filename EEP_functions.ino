@@ -9,7 +9,7 @@ void ReadEEPData(void)
  
   //Read data stream
   #if LOGLEVEL & LOGLVL_SYSTEM
-    WriteSystemLog(F("Reading settings from EEP"));
+    WriteSystemLog(MSG_INFO,F("Reading settings from EEP"));
   #endif  
   for (i = 0; i < EEPSize; i++) {
     SettingsEEP.SettingStream[i] = EEPROM.read(i);    
@@ -22,18 +22,18 @@ void ReadEEPData(void)
   chk = checksum(&SettingsEEP.SettingStream[1], EEPSize - 1);
   if (SettingsEEP.settings.stat == chk) {
     #if LOGLEVEL & LOGLVL_SYSTEM
-      WriteSystemLog(F("EEP checksum ok "));
-      WriteSystemLog("EEPSize " + String(EEPSize) + " Byte");
+      WriteSystemLog(MSG_INFO,F("EEP checksum ok "));
+      WriteSystemLog(MSG_DEBUG,"EEPSize " + String(EEPSize) + " Byte");
     #endif  
   }
   else {    
    //Initialise new: Automatically takes the init data    
    #if LOGLEVEL & LOGLVL_SYSTEM
-      WriteSystemLog(F("EEP checksum wrong "));
-      WriteSystemLog("EEPSize " + String(EEPSize) + " Byte");
-      WriteSystemLog("Checksum in EEPROM : " + String(SettingsEEP.settings.stat,HEX));
-      WriteSystemLog("Checksum calculated: " + String(chk,HEX));
-      WriteSystemLog(F("Initializing EEPROM"));
+      WriteSystemLog(MSG_WARNING,F("EEP checksum wrong "));
+      WriteSystemLog(MSG_INFO,"EEPSize " + String(EEPSize) + " Byte");
+      WriteSystemLog(MSG_DEBUG,"Checksum in EEPROM : " + String(SettingsEEP.settings.stat,HEX));
+      WriteSystemLog(MSG_DEBUG,"Checksum calculated: " + String(chk,HEX));
+      WriteSystemLog(MSG_INFO,F("Initializing EEPROM"));
    #endif  
    SettingsEEP.settings.cycle_time = 60;            //Calculating base cycle time [s]
    SettingsEEP.settings.vSound = 3433;              //Velocity of sound [mm/sec]
@@ -91,8 +91,8 @@ void WriteEEPData(void)
     EEPROM.write(i, SettingsEEP.SettingStream[i]);
   }
   #if LOGLEVEL & LOGLVL_SYSTEM
-    WriteSystemLog(F("Writing settings to EEP"));
-    WriteSystemLog("EEP Checksum "+String(chk,HEX));
+    WriteSystemLog(MSG_INFO,F("Writing settings to EEP"));
+    WriteSystemLog(MSG_DEBUG,"EEP Checksum "+String(chk,HEX));
   #endif
 }
 
@@ -103,7 +103,7 @@ void DumpEEPData(void)
   String LogStr;
   unsigned int i;
   
-  WriteSystemLog("EEP Data Dump");
+  WriteSystemLog(MSG_DEBUG,"EEP Data Dump");
 
   //Log data to SD Card
   LogStr = "  0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F";    

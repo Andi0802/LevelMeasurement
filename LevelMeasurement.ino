@@ -73,6 +73,13 @@ const String prgChng = PRG_CHANGE_DESC;
 #define LOGLVLEEP     64  //Bit 6: EEPROM Dump
 #define LOGLEVEL   LOGLVL_NORMAL + LOGLVL_SYSTEM + LOGLVLEEP
 
+//Message types
+#define MSG_SEV_ERROR 31
+#define MSG_MED_ERROR 30
+#define MSG_WARNING   20
+#define MSG_INFO      10
+#define MSG_DEBUG      0
+
 // SDCard
 #define SD_CARD_PIN       4  // CS for SD-Card on ethernet shield
 #define SD_BLOCK_SIZE   128  // Size of block to transfer over Network
@@ -376,11 +383,11 @@ void setup() {
   
   if (!SD.begin(SD_CARD_PIN)) {
     SD_State = SD_FAIL;
-    WriteSystemLog(F("Initializing SD Card failed"));
+    WriteSystemLog(MSG_MED_ERROR,F("Initializing SD Card failed"));
   }
   else {
     SD_State = SD_OK;
-    WriteSystemLog(F("Initializing SD Card ok"));
+    WriteSystemLog(MSG_INFO,F("Initializing SD Card ok"));
   }
  
   // Try Ethernet connection
@@ -412,7 +419,7 @@ void setup() {
   pinMode(BUTTON_PIN,INPUT_PULLUP);
 
   //Send Message New Start  
-  WriteSystemLog(F("System startup"));
+  WriteSystemLog(MSG_INFO,F("System startup"));
   
   //Enable watchdog
   wdt_enable(WDTO_8S);
@@ -521,7 +528,7 @@ void loop()
       //Hint for Refill reason
       if (stButton>0) {
         #if LOGLEVEL & LOGLVL_NORMAL
-          WriteSystemLog(F("Refilling requested by manual button"));
+          WriteSystemLog(MSG_INFO,F("Refilling requested by manual button"));
         #endif  
       } 
     }
@@ -587,7 +594,7 @@ void loop()
           entfernung = ((unsigned long)(dauer/2) * SettingsEEP.settings.vSound)/10000 - SettingsEEP.settings.hOffset;
   
           #if LOGLEVEL & LOGLVL_ALL
-            WriteSystemLog("Duration measured: " + String(dauer) + "us Send: " + String(tiReceivedPos) + " Received: " + String(tiReceived)+ " Entfernung: " + String(entfernung) + " mm");
+            WriteSystemLog(MSG_DEBUG,"Duration measured: " + String(dauer) + "us Send: " + String(tiReceivedPos) + " Received: " + String(tiReceived)+ " Entfernung: " + String(entfernung) + " mm");
           #endif
           
           //Plausibility check: Signal cannot be higher than sensor position and not lower than distance btw sensor and overflow  
@@ -611,7 +618,7 @@ void loop()
           if (PositiveDistanceUL(micros(),tiReceivedPos)>PLS_TI_TIMEOUT) {
             //Timeout detected
             #if LOGLEVEL & LOGLVL_NORMAL
-              WriteSystemLog(F("Timeout US measurement detected: Falling edge of return missing"));
+              WriteSystemLog(MSG_SEV_ERROR,F("Timeout US measurement detected: Falling edge of return missing"));
             #endif  
             dauer = PLS_TI_TIMEOUT;
             entfernung = 0;
@@ -625,7 +632,7 @@ void loop()
           if (PositiveDistanceUL(micros(),tiSend)>PLS_TI_TIMEOUT) {
             //Timeout detected
             #if LOGLEVEL & LOGLVL_NORMAL
-              WriteSystemLog(F("Timeout US measurement detected: No return pulse received"));
+              WriteSystemLog(MSG_SEV_ERROR,F("Timeout US measurement detected: No return pulse received"));
             #endif  
             dauer = PLS_TI_TIMEOUT;
             entfernung = 0;
@@ -684,7 +691,7 @@ void loop()
       }
       else {
         #if LOGLEVEL & LOGLVL_NORMAL
-          WriteSystemLog("Only " + String(cntValidValues) + " valid measurement values detected (Threshold=40), no new volume calculated");
+          WriteSystemLog(MSG_MED_ERROR,"Only " + String(cntValidValues) + " valid measurement values detected (Threshold=40), no new volume calculated");
         #endif
         rSignalHealth = 1;
       }
@@ -708,7 +715,7 @@ void loop()
         if (cntDiagDeb<=DEBOUNCE_EVT_MAX) {
           cntDiagDeb++;
           #if LOGLEVEL & LOGLVL_NORMAL
-            WriteSystemLog("Error detected, debouncing "+String(cntDiagDeb));
+            WriteSystemLog(MSG_MED_ERROR,"Error detected, debouncing "+String(cntDiagDeb));
           #endif 
           
           //Trigger next measurement immediately
@@ -727,7 +734,7 @@ void loop()
           cntDiagDeb--;
           
           #if LOGLEVEL & LOGLVL_NORMAL
-            WriteSystemLog("Good signal detected, debouncing "+String(cntDiagDeb));
+            WriteSystemLog(MSG_INFO,"Good signal detected, debouncing "+String(cntDiagDeb));
           #endif 
 
           //Trigger next measurement immediately
@@ -746,12 +753,12 @@ void loop()
       
       //Write Log File
       #if LOGLEVEL & LOGLVL_NORMAL
-        WriteSystemLog("Pulse counter: "+String(PulseCntr));
-        WriteSystemLog("Array position: "+String(pos));
-        WriteSystemLog("Measured distance: " + String(hMean) +" mm");
-        WriteSystemLog("Actual Level     : " + String(hWaterActual) + " mm");
-        WriteSystemLog("Actual volume    : " + String(volActual) + " Liter, StdDev: " +String(volStdDev) + " Liter");
-        WriteSystemLog("Error status     : " + String(stError));
+        WriteSystemLog(MSG_DEBUG,"Pulse counter "+String(PulseCntr));
+        WriteSystemLog(MSG_DEBUG,"Array position "+String(pos));
+        WriteSystemLog(MSG_INFO,"Measured distance " + String(hMean) +" mm");
+        WriteSystemLog(MSG_DEBUG,"Actual Level " + String(hWaterActual) + " mm");
+        WriteSystemLog(MSG_DEBUG,"Actual volume " + String(volActual) + " Liter, StdDev: " +String(volStdDev) + " Liter");
+        WriteSystemLog(MSG_DEBUG,"Error status " + String(stError));
       #endif          
       
       //Get rain volume for last 24h, only if difference between last two measurements is more than 50min
@@ -778,8 +785,8 @@ void loop()
         }
   
         #if LOGLEVEL & LOGLVL_NORMAL
-          WriteSystemLog("Rain in last 24h from weather station [mm]: "+String(volRain24h));
-          WriteSystemLog("Rain in last  1h from weather station [mm]: "+String(volRain1h));
+          WriteSystemLog(MSG_INFO,"Rain in last 24h from weather station [mm]: "+String(volRain24h));
+          WriteSystemLog(MSG_INFO,"Rain in last  1h from weather station [mm]: "+String(volRain1h));
         #endif
 
         //Calculate 1h refilling volume
@@ -808,8 +815,8 @@ void loop()
 
       //Calcluate usage per day if hour=0 and rain within last 24h is zero
       //Difference Volume in 24h
-      idx24h = (SettingsEEP.settings.iWrPtrHist-1-24+EEP_NUM_HIST)%EEP_NUM_HIST;
-      volDiff24h =  volActual - volMax*SettingsEEP.settings.prcActual[idx24h];
+      idx24h = (SettingsEEP.settings.iWrPtrHist-1-24+EEP_NUM_HIST)%EEP_NUM_HIST;      
+      volDiff24h =  volActual - (volMax* (long) SettingsEEP.settings.prcActual[idx24h])/100;      
       if (hour()==0) {
         if ((volRain24h<MAX_VOL_NORAIN) && (volActualFilt24h>0)) {
            //Usage calulation
@@ -861,7 +868,7 @@ void loop()
       if((hWaterActual<SettingsEEP.settings.hRefill*10) && (rSignalHealth>SIGNAL_HEALTH_MIN)) {
         stRefillReq = 1;
         #if LOGLEVEL & LOGLVL_NORMAL
-          WriteSystemLog(F("Refilling required due to level threshold"));
+          WriteSystemLog(MSG_INFO,F("Refilling required due to level threshold"));
         #endif
       }
 
@@ -870,7 +877,7 @@ void loop()
         stRefillReq = 1;
         stVentEx=1;
         #if LOGLEVEL & LOGLVL_NORMAL
-          WriteSystemLog(F("Monthly refilling for vent exercise"));
+          WriteSystemLog(MSG_INFO,F("Monthly refilling for vent exercise"));
         #endif
       }
       if ((day()==1) && (hour()==13)) {
@@ -888,7 +895,7 @@ void loop()
     if (NTP_State == NTP_RECEIVED) {
       //Write log entry and set State to WaitNextUpdate
       #if LOGLEVEL & LOGLVL_SYSTEM
-        WriteSystemLog(F("Time updated by NTP"));
+        WriteSystemLog(MSG_DEBUG,F("Time updated by NTP"));
       #endif
       NTP_State = NTP_WAITUPD;
     }   
@@ -1067,8 +1074,8 @@ unsigned char Refill(int volRefillDes)
       tiRefillerOn = _tiNow;
       tiRefillerOff = _tiNow + _tiRefillDes; 
       #if LOGLEVEL & LOGLVL_NORMAL
-        WriteSystemLog("Refilling on. Duration "+String(_tiRefillDes) + " s");
-        WriteSystemLog("Off-Time: " + String(time2DateTimeStr(tiRefillerOff)));
+        WriteSystemLog(MSG_INFO,"Refilling on. Duration "+String(_tiRefillDes) + " s");
+        WriteSystemLog(MSG_INFO,"Off-Time: " + String(time2DateTimeStr(tiRefillerOff)));
       #endif 
       _res=1;  
     }
@@ -1082,7 +1089,7 @@ unsigned char Refill(int volRefillDes)
         _volRefill = (unsigned long) (_tiRefill*(long (SettingsEEP.settings.dvolRefill))/60);
         SettingsEEP.settings.volRefillTot = SettingsEEP.settings.volRefillTot + _volRefill;
         #if LOGLEVEL & LOGLVL_NORMAL
-          WriteSystemLog("Refilling off, Refilling volume: " + String(_volRefill) + " liter");
+          WriteSystemLog(MSG_INFO,"Refilling off, Refilling volume: " + String(_volRefill) + " liter");
         #endif  
 
         // Start measurement to determine new level
@@ -1144,8 +1151,8 @@ void SetError(int numErr,int stErr)
     
     //Report to LogFile
     #if LOGLEVEL & LOGLVL_NORMAL
-      WriteSystemLog(_txtError);
-      WriteSystemLog(_envInfo);
+      WriteSystemLog(MSG_MED_ERROR,_txtError);
+      WriteSystemLog(MSG_MED_ERROR,_envInfo);
     #endif
         
     //Set global Error information

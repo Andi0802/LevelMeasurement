@@ -75,7 +75,7 @@ unsigned char getOption(String str, String Option, double minVal, double maxVal,
 
   //Log entry
   #if LOGLEVEL & LOGLVL_WEB
-    WriteSystemLog(strLog);
+    WriteSystemLog(MSG_DEBUG,strLog);
   #endif
 
   return stResult;
@@ -117,16 +117,16 @@ void MonitorWebServer(void)
             pageStr = inString.substring(5, inString.indexOf(" HTTP"));
           }
           #if LOGLEVEL & LOGLVL_WEB
-            WriteSystemLog("HTTP Request receives: " + pageStr);
-            WriteSystemLog(inString);
+            WriteSystemLog(MSG_DEBUG,"HTTP Request receives: " + pageStr);
+            WriteSystemLog(MSG_DEBUG,inString);
           #endif 
 
           //Check if reset or reprogramm is requested
           if (pageStr.equals("reset")>0) {
             //Do a normal reset
-            WriteSystemLog("Reset requested by user");
+            WriteSystemLog(MSG_DEBUG,"Reset requested by user");
             NetEEPROM.writeImgOk();
-            WriteSystemLog("EEP Status: " + String(eeprom_read_byte(NETEEPROM_IMG_STAT)));
+            WriteSystemLog(MSG_DEBUG,"EEP Status: " + String(eeprom_read_byte(NETEEPROM_IMG_STAT)));
             delay(1000);
             resetFunc();
           }
@@ -171,9 +171,9 @@ void MonitorWebServer(void)
           }
           else if (pageStr.equals("reprogram")>0) {
             //Start reprogramming
-            //WriteSystemLog("Reprogramming requested by user");
+            //WriteSystemLog(MSG_DEBUG,"Reprogramming requested by user");
             //NetEEPROM.writeImgBad();
-            //WriteSystemLog("EEP Status: " + String(eeprom_read_byte(NETEEPROM_IMG_STAT)));
+            //WriteSystemLog(MSG_DEBUG,"EEP Status: " + String(eeprom_read_byte(NETEEPROM_IMG_STAT)));
             //delay(1000);
             //resetFunc();
           }
@@ -226,7 +226,7 @@ void MonitorWebServer(void)
               }              
             }
             else {
-              WriteSystemLog("File not found: "+pageStr);
+              WriteSystemLog(MSG_WARNING,"File not found: "+pageStr);
             }
             delay(1);                    // give the web browser time to receive the data
           }          
@@ -529,7 +529,7 @@ void WriteHistSVG()
   
   if (SD_State == SD_OK) {
     #if LOGLEVEL & LOGLVL_NORMAL
-      WriteSystemLog(F("Writing svg File to SD Card"));
+      WriteSystemLog(MSG_DEBUG,F("Writing svg File to SD Card"));
     #endif
         
     Workaround_CS_ETH2SD(70);        

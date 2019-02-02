@@ -23,11 +23,11 @@
       hm_client.flush();
       hm_client.stop();
       #if LOGLEVEL & LOGLVL_CCU
-        WriteSystemLog(_cmd);
+        WriteSystemLog(MSG_DEBUG,_cmd);
       #endif
     } else {
-      WriteSystemLog(F("Connection to CCU failed"));    
-      WriteSystemLog("Result: " + String(_stConnection));
+      WriteSystemLog(MSG_WARNING,F("Connection to CCU failed"));    
+      WriteSystemLog(MSG_WARNING,"Result: " + String(_stConnection));
     }
   }
   
@@ -50,10 +50,10 @@
       hm_client.flush();
       hm_client.stop();
       #if LOGLEVEL & LOGLVL_CCU
-        WriteSystemLog(_cmd);
+        WriteSystemLog(MSG_DEBUG,_cmd);
       #endif  
     } else {    
-      WriteSystemLog(F("Connection to CCU failed"));
+      WriteSystemLog(MSG_WARNING,F("Connection to CCU failed"));
     }
   }
   
@@ -74,10 +74,10 @@
       hm_client.flush();
       hm_client.stop();
       #if LOGVEVEL & LOGLVL_CCU
-        WriteSystemLog(_cmd);
+        WriteSystemLog(MSG_DEBUG,_cmd);
       #endif
     } else {    
-        WriteSystemLog(F("Connection to CCU failed"));
+        WriteSystemLog(MSG_WARNING,F("Connection to CCU failed"));
     }
   }
   
@@ -97,7 +97,7 @@
   
     //Connect and send
     if (hm_client.connect(hm_ccu, 80)) {
-      //WriteSystemLog(_cmd);
+      //WriteSystemLog(MSG_DEBUG,_cmd);
       hm_client.println(_cmd);
       hm_client.print(F("Host: "));
       hm_client.print(hm_ccu[0]); hm_client.print(F("."));
@@ -141,18 +141,18 @@
         _repStr = _repStr + dp_number;
         _repStr = _repStr + F(" received ") + _ret;
         #if LOGLEVEL & LOGLVL_CCU
-          WriteSystemLog(_repStr);
+          WriteSystemLog(MSG_DEBUG,_repStr);
         #endif
       }
       else {      
-        WriteSystemLog(F("Transmission error while receiving datapoint"));
-        WriteSystemLog("Time  : "+String(_timeStop-_timeStart)+" us");
-        WriteSystemLog("Return: "+_ret);
-        WriteSystemLog("Trace : "+String(_trace));
+        WriteSystemLog(MSG_WARNING,F("Transmission error while receiving datapoint"));
+        WriteSystemLog(MSG_DEBUG,"Time  : "+String(_timeStop-_timeStart)+" us");
+        WriteSystemLog(MSG_DEBUG,"Return: "+_ret);
+        WriteSystemLog(MSG_DEBUG,"Trace : "+String(_trace));
         _ret = F("NaN");
       }   
     } else {
-      WriteSystemLog(F("Connection to CCU failed"));
+      WriteSystemLog(MSG_WARNING,F("Connection to CCU failed"));
       _ret = F("NaN");
     }
     return _ret.toFloat();

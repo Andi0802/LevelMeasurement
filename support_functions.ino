@@ -91,13 +91,13 @@ void EthConnect(void)
     Ethernet.begin(mac, ip);
     ETH_StateConnectionType = ETH_BACKUPIP;
     #if LOGLEVEL & LOGLVL_SYSTEM
-      WriteSystemLog(F("Failed to configure Ethernet using DHCP, using backup IP"));
+      WriteSystemLog(MSG_WARNING,F("Failed to configure Ethernet using DHCP, using backup IP"));
     #endif
   }
   else {
     ETH_StateConnectionType = ETH_DHCP;
     #if LOGLEVEL & LOGLVL_SYSTEM
-      WriteSystemLog(F("DHCP Address received"));
+      WriteSystemLog(MSG_INFO,F("DHCP Address received"));
     #endif  
   }
 
@@ -106,7 +106,7 @@ void EthConnect(void)
     Ethernet.begin(mac, ip,dns,gateway,subnet);
     ETH_StateConnectionType = ETH_FIXEDIP;
     #if LOGLEVEL & LOGLVL_SYSTEM
-      WriteSystemLog(F("Using Fixed IP"));
+      WriteSystemLog(MSG_INFO,F("Using Fixed IP"));
     #endif  
   #endif
   
@@ -118,9 +118,9 @@ void EthConnect(void)
 
   // print your local IP config
   #if LOGLEVEL & LOGLVL_SYSTEM
-    WriteSystemLog("IP-Address : " + IPAddressStr(ip));
-    WriteSystemLog("Gateway    : " + IPAddressStr(gateway));
-    WriteSystemLog("Subnet Mask: " + IPAddressStr(subnet));
+    WriteSystemLog(MSG_INFO,"IP-Address : " + IPAddressStr(ip));
+    WriteSystemLog(MSG_DEBUG,"Gateway    : " + IPAddressStr(gateway));
+    WriteSystemLog(MSG_DEBUG,"Subnet Mask: " + IPAddressStr(subnet));
   #endif  
   
   delay(1000);
@@ -200,7 +200,7 @@ void Workaround_CS_SD2ETH(int pos)
 void resetFunc (void) 
 //Reset function
 {
-  WriteSystemLog("Reset program");  
+  WriteSystemLog(MSG_INFO,"Reset program");  
   cli(); //irq's off
   wdt_enable(WDTO_1S); //wd on,15ms
   while(1); //loop

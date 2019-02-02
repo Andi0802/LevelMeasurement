@@ -9,7 +9,7 @@ void LogData(void)
   //Log data to SD Card
   if (SD_State == SD_OK) {
     #if LOGLEVEL & LOGLVL_NORMAL
-      WriteSystemLog(F("Writing measurement data to SD Card"));
+      WriteSystemLog(MSG_INFO,F("Writing measurement data to SD Card"));
     #endif
         
     Workaround_CS_ETH2SD(20);    
@@ -77,7 +77,7 @@ void LogData(void)
   
   }
   else {
-    WriteSystemLog(F("Writing to SD Card failed"));
+    WriteSystemLog(MSG_MED_ERROR,F("Writing to SD Card failed"));
   }
 }
 
@@ -89,7 +89,7 @@ void LogDataHeader(void)
   //Log data to SD Card
   if (SD_State == SD_OK) {
     #if LOGLEVEL & LOGLVL_NORMAL
-      WriteSystemLog(F("Writing headline for measurement data to SD Card"));
+      WriteSystemLog(MSG_INFO,F("Writing headline for measurement data to SD Card"));
     #endif  
 
     Workaround_CS_ETH2SD(30);    
@@ -117,12 +117,17 @@ void LogDataHeader(void)
     Workaround_CS_SD2ETH(30);
   }
   else {
-    WriteSystemLog(F("Writing to SD Card failed"));
+    WriteSystemLog(MSG_MED_ERROR,F("Writing to SD Card failed"));
   }
 }
 
-void WriteSystemLog(String LogText)
+void WriteSystemLog(byte Type, String LogText)
 // Write System log entry
+//#define MSG_SEV_ERROR 31
+//#define MSG_MED_ERROR 30
+//#define MSG_WARNING   20
+//#define MSG_INFO      10
+//#define MSG_DEBUG      0
 {  
   File logFile;
   String date_time;
@@ -134,7 +139,26 @@ void WriteSystemLog(String LogText)
   //Log data to SD Card
   LogStr = "[";
   LogStr.concat(date_time);
+  
+  switch (Type) {
+    case MSG_DEBUG:
+      LogStr.concat(" DEBUG");
+      break;
+    case MSG_INFO:
+      LogStr.concat(" INFO");
+      break;      
+    case MSG_WARNING:
+      LogStr.concat(" WARNING");
+      break;      
+    case MSG_MED_ERROR:
+      LogStr.concat(" ERROR");
+      break;      
+    case MSG_SEV_ERROR:
+      LogStr.concat(" SEVERE");
+      break;         
+  }
   LogStr.concat("] ");
+  
   LogStr.concat(LogText);
 
   if (SD_State == SD_OK) {    
@@ -151,11 +175,12 @@ void WriteSystemLog(String LogText)
   //Write to serial
   Serial.println(LogStr);
 
+  //Trigger watchdog
   TriggerWDT();  
 
   //To Display
   #if DISP_ACTIVE==1
-    DispMessage(LogStr);
+    DispMessage(Type, LogStr);
   #endif
 
 }

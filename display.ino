@@ -24,8 +24,9 @@
   
   #define DISP_MESSAGE_X     0
   #define DISP_MESSAGE_W     DISP_WIDTH
-  #define DISP_MESSAGE_Y     DISP_HEIGHT-40
-  #define DISP_MESSAGE_H     40
+  #define DISP_MESSAGE_H     40  
+  #define DISP_MESSAGE_Y     DISP_HEIGHT-DISP_MESSAGE_H
+
 
   #define DISP_PROG_X        0
   #define DISP_PROG_W        DISP_WIDTH
@@ -153,7 +154,7 @@
   
     //get Text length
     sprintf(_strHelp, "%d l/d", abs(volDiff1d));
-    _actLen = min(ucg.getStrWidth(_strHelp),120);
+    _actLen = min(ucg.getStrWidth(_strHelp),80);
     _actHei = ucg.getFontAscent() + 2;
   
     ucg.setColor(0, 0, 0, 0);
@@ -218,10 +219,11 @@
   }
   
   
-  void DispMessage(String Message)
+  void DispMessage(byte Type, String Message)
   {
-    //Display message in message area
-  
+    //Display message in message area 
+    char _line[80];
+    String _Line1,_Line2;
     int _sep;
   
     //delete old text
@@ -233,15 +235,47 @@
   
     //Set font an position
     ucg.setFont(ucg_font_fur17_hr);
-    ucg.setFontPosBottom();
-    ucg.setColor(0, 255, 255, 255);
+    ucg.setFontPosBottom();    
+    switch (Type) {
+    case MSG_DEBUG:
+   
+      break;
+    case MSG_INFO:     
+      ucg.setColor(0, 255, 255, 255);
+      break;      
+    case MSG_WARNING:     
+      ucg.setColor(0, 255, 255, 0);
+      break;      
+    case MSG_MED_ERROR:     
+      ucg.setColor(0, 255, 0, 0);
+      break;      
+    case MSG_SEV_ERROR:
+      ucg.setColor(0, 255, 0, 0);
+      break;         
+    }
   
-    //Align right
-    ucg.setPrintPos(DISP_MESSAGE_X, DISP_MESSAGE_Y + 20);
-    _sep = Message.indexOf("] ");
-    ucg.print(Message.substring(1, _sep));
-    ucg.setPrintPos(DISP_MESSAGE_X, DISP_MESSAGE_Y + DISP_MESSAGE_H);
-    ucg.print(Message.substring(_sep + 2));
+    //Print text
+    if ((Type==MSG_INFO) || (Type==MSG_WARNING) || (Type==MSG_SEV_ERROR) || (Type==MSG_MED_ERROR)) {      
+      _sep = Message.indexOf("] ");
+      _Line1 = Message.substring(_sep + 1);
+      _Line2 = "";
+      //Line Break
+      _sep=0;      
+      while (_sep<_Line1.length()) {        
+        _Line1.toCharArray(_line, _sep);
+        if (ucg.getStrWidth(_line)>DISP_MESSAGE_W) {
+         //Line is longer, set breake at _sep
+         _Line2 = _Line1.substring(_sep);
+         _Line1 = _Line1.substring(1,_sep); 
+         break;
+        }        
+        _sep++;
+      }
+      ucg.setPrintPos(DISP_MESSAGE_X, DISP_MESSAGE_Y + 20);
+      ucg.print(_Line1);
+      ucg.setPrintPos(DISP_MESSAGE_X, DISP_MESSAGE_Y + DISP_MESSAGE_H);
+      ucg.print(_Line2);
+    }    
   }
 
   void DispMeasProg(int rMeas)
