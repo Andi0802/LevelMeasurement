@@ -149,8 +149,8 @@ void WriteEEPCurrData(unsigned char prcActual, float volRain1h, bool stLevel, bo
   stSignal = stSignal | (round(volRefill1h/CONV_REFILL)<<2);
 
   //Write data into EEP
-  SettingsEEP.settings.volRain1h[SettingsEEP.settings.iWrPtrHist] = prcActual;
-  SettingsEEP.settings.prcActual[SettingsEEP.settings.iWrPtrHist] = float2uint8(volRain1h,CONV_RAIN);
+  SettingsEEP.settings.volRain1h[SettingsEEP.settings.iWrPtrHist] = float2uint8(volRain1h,CONV_RAIN);
+  SettingsEEP.settings.prcActual[SettingsEEP.settings.iWrPtrHist] = prcActual;
   SettingsEEP.settings.stSignal[SettingsEEP.settings.iWrPtrHist]  = stSignal;
    
    

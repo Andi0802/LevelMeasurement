@@ -28,7 +28,7 @@ const String prgChng = PRG_CHANGE_DESC;
 
 //Local libraries
 #include <NTPClient.h>           // https://github.com/arduino-libraries/NTPClient.git Commit 020aaf8
-#include <TimeLib.h>             // https://github.com/PaulStoffregen/Time.git Version 1.5+Commit 01083f8
+#include <TimeLib.h>             // https://github.com/PaulStoffregen/Time.git Commit 6d0Fc5E
 #include <NewEEPROM.h>           //Ariadne Bootloader https://github.com/codebndr/Ariadne-Bootloader commit 19388fa
 #include <NetEEPROM.h>           //Ariadne Bootloader https://github.com/codebndr/Ariadne-Bootloader commit 19388fa
 #include <NetEEPROM_defs.h>      //EEPROM Layout
@@ -71,7 +71,7 @@ const String prgChng = PRG_CHANGE_DESC;
 #define LOGLVL_SYSTEM 16  //Bit 4: System logging (NTP etc)
 #define LOGLVL_TRAP   32  //Bit 5: Trap for ETH+SD CS signal setting
 #define LOGLVLEEP     64  //Bit 6: EEPROM Dump
-#define LOGLEVEL   LOGLVL_NORMAL + LOGLVL_SYSTEM
+#define LOGLEVEL   LOGLVL_NORMAL + LOGLVL_SYSTEM + LOGLVLEEP
 
 // SDCard
 #define SD_CARD_PIN       4  // CS for SD-Card on ethernet shield
@@ -476,6 +476,7 @@ void loop()
 {
   String strLog;  
   double _hStdDev;   
+  int idx24h;
 
   //--- 100ms Task -------------------------------------------------------------------
   if (Time_100ms > 0) {
@@ -754,7 +755,7 @@ void loop()
       #endif          
       
       //Get rain volume for last 24h, only if difference between last two measurements is more than 50min
-      if (tiDiffMeasTime>50*60) {
+      if (tiDiffMeasTime>max((MIN60-10),1)*60) {
         volRain24h_old = volRain24h;
         #if HM_ACCESS_ACTIVE==1
           volRain24h = hm_get_datapoint(HM_DATAPOINT_RAIN24);
@@ -807,7 +808,8 @@ void loop()
 
       //Calcluate usage per day if hour=0 and rain within last 24h is zero
       //Difference Volume in 24h
-      volDiff24h =  volActual - volActualFilt24h;
+      idx24h = (SettingsEEP.settings.iWrPtrHist-1-24+EEP_NUM_HIST)%EEP_NUM_HIST;
+      volDiff24h =  volActual - volMax*SettingsEEP.settings.prcActual[idx24h];
       if (hour()==0) {
         if ((volRain24h<MAX_VOL_NORAIN) && (volActualFilt24h>0)) {
            //Usage calulation
