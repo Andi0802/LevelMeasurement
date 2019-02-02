@@ -129,78 +129,78 @@ void EthConnect(void)
 void Workaround_CS_ETH2SD(int pos)
 //Workaround when ETH CS is not reset before SD CS is activated
 { 
-  File logFile; 
-  String date_time;
-  String LogStr;
-  
-  //Test code to catch web-access stalling issue: 
-  if (digitalRead(ETH__SS_PIN)==LOW) {    
-     //Get Time
-     date_time = getDateTimeStr();
-
-     //Log data to SD Card
-     LogStr = "[";
-     LogStr.concat(date_time);
-     LogStr.concat("] ");
-     LogStr.concat("Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access. Position ");
-     LogStr.concat(String(pos));
-     
-     //Workaround: Switch off CS from Eth, and switch on CS from SD
-     digitalWrite(ETH__SS_PIN,HIGH);
-     digitalWrite(SD_CARD_PIN,LOW);
-     
-     //Write to systemlog
-     #if LOGLEVEL & LOGLVL_TRAP
-       logFile = SD.open(LOGFILE, FILE_WRITE);
-       logFile.println(LogStr);
-       logFile.close();    
-     #endif
-  }  
-  else {
-     digitalWrite(SD_CARD_PIN,LOW);
-  }
+//  File logFile; 
+//  String date_time;
+//  String LogStr;
+//  
+//  //Test code to catch web-access stalling issue: 
+//  if (digitalRead(ETH__SS_PIN)==LOW) {    
+//     //Get Time
+//     date_time = getDateTimeStr();
+//
+//     //Log data to SD Card
+//     LogStr = "[";
+//     LogStr.concat(date_time);
+//     LogStr.concat("] ");
+//     LogStr.concat("Trap: ETH__SS_PIN==LOW (ACTIVE) detected before SD-Card access. Position ");
+//     LogStr.concat(String(pos));
+//     
+//     //Workaround: Switch off CS from Eth, and switch on CS from SD
+//     digitalWrite(ETH__SS_PIN,HIGH);
+//     digitalWrite(SD_CARD_PIN,LOW);
+//     
+//     //Write to systemlog
+//     #if LOGLEVEL & LOGLVL_TRAP
+//       logFile = SD.open(LOGFILE, FILE_WRITE);
+//       logFile.println(LogStr);
+//       logFile.close();    
+//     #endif
+//  }  
+//  else {
+//     digitalWrite(SD_CARD_PIN,LOW);
+//  }
 }
 
 void Workaround_CS_SD2ETH(int pos)
 //Workaround when SD CS is not reset before ETH CS is activated
 {
-  File logFile; 
-  String date_time;
-  String LogStr;
-  
-  //Test code to catch web-access stalling issue: 
-  if (digitalRead(SD_CARD_PIN)==LOW) {    
-     //Get Time
-     date_time = getDateTimeStr();
-
-     //Log data to SD Card
-     LogStr = "[";
-     LogStr.concat(date_time);
-     LogStr.concat("] ");
-     LogStr.concat("Trap: SD_CARD_PIN==LOW (ACTIVE) after SD-Card access is finished. Position");
-     LogStr.concat(String(pos));
-     
-     //Workaround: Switch off CS from Eth, and switch on CS from SD
-     digitalWrite(ETH__SS_PIN,LOW);
-     digitalWrite(SD_CARD_PIN,HIGH);
-     
-     //Write to systemlog
-     #if LOGLEVEL & LOGLVL_TRAP
-       logFile = SD.open(LOGFILE, FILE_WRITE);
-       logFile.println(LogStr);
-       logFile.close();    
-     #endif
-  }  
-  else {
-     digitalWrite(ETH__SS_PIN,LOW);
-  }    
+//  File logFile; 
+//  String date_time;
+//  String LogStr;
+//  
+//  //Test code to catch web-access stalling issue: 
+//  if (digitalRead(SD_CARD_PIN)==LOW) {    
+//     //Get Time
+//     date_time = getDateTimeStr();
+//
+//     //Log data to SD Card
+//     LogStr = "[";
+//     LogStr.concat(date_time);
+//     LogStr.concat("] ");
+//     LogStr.concat("Trap: SD_CARD_PIN==LOW (ACTIVE) after SD-Card access is finished. Position");
+//     LogStr.concat(String(pos));
+//     
+//     //Workaround: Switch off CS from Eth, and switch on CS from SD
+//     digitalWrite(ETH__SS_PIN,LOW);
+//     digitalWrite(SD_CARD_PIN,HIGH);
+//     
+//     //Write to systemlog
+//     #if LOGLEVEL & LOGLVL_TRAP
+//       logFile = SD.open(LOGFILE, FILE_WRITE);
+//       logFile.println(LogStr);
+//       logFile.close();    
+//     #endif
+//  }  
+//  else {
+//     digitalWrite(ETH__SS_PIN,LOW);
+//  }    
 }    
 
 //--- Reset and watchdog --------------------------------------------------------------------------------------
 void resetFunc (void) 
 //Reset function
 {
-  WriteSystemLog("Reset program");
+  WriteSystemLog("Reset program");  
   cli(); //irq's off
   wdt_enable(WDTO_1S); //wd on,15ms
   while(1); //loop

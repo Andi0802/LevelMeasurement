@@ -26,17 +26,42 @@ const String prgChng = PRG_CHANGE_DESC;
 #include <Dns.h>
 #include <SD.h>
 
-#include "Ucglib.h"
-
 //Local libraries
-#include <NTPClient.h>  // https://github.com/arduino-libraries/NTPClient.git Commit 020aaf8
-#include <TimeLib.h>    // https://github.com/PaulStoffregen/Time.git Version 1.5+Commit 01083f8
-#include <NewEEPROM.h>      //Ariadne Bootloader https://github.com/codebndr/Ariadne-Bootloader commit 19388fa
-#include <NetEEPROM.h>      //Ariadne Bootloader https://github.com/codebndr/Ariadne-Bootloader commit 19388fa
-#include <NetEEPROM_defs.h> //EEPROM Layout
+#include <NTPClient.h>           // https://github.com/arduino-libraries/NTPClient.git Commit 020aaf8
+#include <TimeLib.h>             // https://github.com/PaulStoffregen/Time.git Version 1.5+Commit 01083f8
+#include <NewEEPROM.h>           //Ariadne Bootloader https://github.com/codebndr/Ariadne-Bootloader commit 19388fa
+#include <NetEEPROM.h>           //Ariadne Bootloader https://github.com/codebndr/Ariadne-Bootloader commit 19388fa
+#include <NetEEPROM_defs.h>      //EEPROM Layout
+#include <Ucglib.h>              //UCG Lib https://github.com/olikraus/ucglib V1.5.2 
+#include <XPT2046_Touchscreen.h> // https://github.com/PaulStoffregen/XPT2046_Touchscreen Commit 1a27318
 
-// Switch between operational system and test system
-//#define USE_TEST_SYSTEM
+//--- Configuration switches ---------------------------------------------------------------------------------
+// Test-System if USE_TEST_SYSTEM is defined
+// In Test system: IP Address is fixed, diferent MAC address, 60min Task reduced to 2min
+#define USE_TEST_SYSTEM
+
+//DHCP cient active
+//  0: Fixed IPV4 Adress
+//  1: DHCP
+#define DHCP_USAGE   0
+//ADD IP-ADDRESS
+
+//Definitions for Homematic CCU
+//Switch on coupling to Homematic
+//  0: inactive
+//  1: active
+#define HM_ACCESS_ACTIVE    1     
+
+// Datapoint number for 24h rain
+#define HM_DATAPOINT_RAIN24 6614  
+//ADD IP-ADR
+
+// Display
+//   0: No display
+//   1: ILI9341 with SPI touchscreen
+#define DISP_ACTIVE  1
+
+//------------------------------------------------------------------------------------------------------------
 
 //Logging level Bitwise
 #define LOGLVL_NORMAL  1  //Bit 0: Normal logging
@@ -74,18 +99,21 @@ const String prgChng = PRG_CHANGE_DESC;
 #define SD_FAIL      -1      // No SD Card available
 
 // Ethernet Shield
-#define DHCP_USAGE 0
 #define ETH_SCK_PIN   13     // Pin D13 SCK
 #define ETH_MISO_PIN  12     // Pin D12 MISO
 #define ETH__MOSI_PIN 11     // Pin D11 /MOSI
 #define ETH__SS_PIN   10     // Pin D10 /SS
 
 //Display
-#define DISP_SCK_PIN    52   // Pin D52 SCK
-#define DISP_CD_PIN     50   // Pin D50 CD Command/Data
-#define DISP_MOSI_PIN   51   // Pin D51 MOSI
-#define DISP__SS_PIN    37   // Pin D37 /SS        
-#define DISP__RESET_PIN 36   // Pin D36 /RESET
+#define DISP_LED_PIN      37   // Pin LED
+#define DISP_SCK_PIN      52   // Pin D52 SCK bei HW SPI
+#define DISP_CD_PIN       40   // Pin CD Command/Data
+#define DISP_MOSI_PIN     51   // Pin D51 MOSI bei HW SPI
+#define DISP_MISO_PIN     50   // Pin D50 bei HW SPI
+#define DISP__SS_PIN      39   // Pin /SS        
+#define DISP__RESET_PIN   36   // Pin /RESET
+#define DISP_TIRQ_PIN     20   // Touchscreen IRQ
+#define DISP_T_CS_PIN     34   // Touchscreen /CS
 
 //Ethernet States
 #define ETH_UNDEFINED 0      // Status unknown
@@ -154,10 +182,6 @@ const PROGMEM unsigned char SAMPLES_STSIGNAL[EEP_NUM_HIST] = SAMPLES_STSIGNAL_DA
 #define GREEN 0
 #define RED   1
 
-//Definitions for Homematic CCU
-#define HM_ACCESS_ACTIVE    1     // Switch on coupling to Homematic
-#define HM_DATAPOINT_RAIN24 6614  // Datapoint for 24h rain
-
 //Device name of HM Client
 //IP of CCU
 #if HM_ACCESS_ACTIVE==1
@@ -176,6 +200,9 @@ IPAddress ip(192, 168, 178, 4);
 IPAddress dns(192, 168, 178, 1);
 IPAddress gateway(192, 168, 178, 1);
 IPAddress subnet(255,255,255,0);
+
+// Reduce 60min Task to 2min
+#define MIN60 2
 #else
 //MAC for operational system
 byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xEB };
@@ -185,6 +212,10 @@ IPAddress ip(192, 168, 178, 5);
 IPAddress dns(192, 168, 178, 1);
 IPAddress gateway(192, 168, 178, 1);
 IPAddress subnet(255,255,255,0);
+
+
+// Reduce 60min Task to 60min
+#define MIN60 60
 #endif
 
 // Initialize the Ethernet client library
@@ -199,8 +230,11 @@ NTPClient timeClient(ntpUDP);
 //Web Server
 EthernetServer server(80);
 
-//Display ILI9341
-Ucglib_ILI9341_18x240x320_SWSPI ucg(/*sclk=*/ DISP_SCK_PIN, /*data(MOSI)=*/ DISP_MOSI_PIN, /*cd=*/ DISP_CD_PIN, /*cs=*/ DISP__SS_PIN, /*reset=*/ DISP__RESET_PIN);
+//Display ILI9341 on HWSPI
+#if DISP_ACTIVE==1
+  Ucglib_ILI9341_18x240x320_HWSPI ucg(/*cd=*/ DISP_CD_PIN, /*cs=*/ DISP__SS_PIN, /*reset=*/ DISP__RESET_PIN);
+  XPT2046_Touchscreen ts(DISP_T_CS_PIN, DISP_TIRQ_PIN);
+#endif
 
 // --- Globals ---------------------------------------------------------------------------------------------------
 
@@ -210,6 +244,9 @@ unsigned int cnt60 = 0;
 unsigned int Time_60s = 0;
 unsigned int cnt60min = 0;
 unsigned int cntPulse = 0;
+#if DISP_ACTIVE==1
+  unsigned int tiDispLED = 2;
+#endif
 
 //US Sensor measurement
 unsigned char stPulse = PLS_IDLE;  //state of measurement pulse
@@ -320,11 +357,21 @@ int NTP_State = NTP_UNDEFINED;
 
 // --- Setup -----------------------------------------------------------------------------------------------------
 void setup() {
+  // Initialize all CS signals of SPI Bus
+  pinMode(ETH__SS_PIN, OUTPUT);    digitalWrite(ETH__SS_PIN,1);
+  pinMode(SD_CARD_PIN, OUTPUT);    digitalWrite(SD_CARD_PIN,1);
+  pinMode(DISP_T_CS_PIN, OUTPUT);  digitalWrite(DISP_T_CS_PIN,1);
+  pinMode(DISP__SS_PIN, OUTPUT);   digitalWrite(DISP__SS_PIN,1);
+  
   // Open serial communications and wait for port to open:
   Serial.begin(115200);
 
-  //SD Card initialize
-  pinMode(ETH__SS_PIN, OUTPUT);      //Workaround to deselect Wiznet chip
+ //Initialize Display
+  #if DISP_ACTIVE==1
+    DispInit();
+  #endif
+  
+  //SD Card initialize  
   Workaround_CS_ETH2SD(1);
   
   if (!SD.begin(SD_CARD_PIN)) {
@@ -368,7 +415,7 @@ void setup() {
   WriteSystemLog(F("System startup"));
   
   //Enable watchdog
-  wdt_enable(WDTO_4S);
+  wdt_enable(WDTO_8S);
 
   //Initialize timer 4 as global time system
   cli();          // disable global interrupts
@@ -440,11 +487,11 @@ void loop()
     }
     else {
       Time_60s++;
-      cnt60 = 0;
+      cnt60 = 0;          
     }  
     
     //60min Task 
-    if (cnt60min < 60*600) {
+    if (cnt60min < MIN60*600) {
       cnt60min++;
     }
     else {
@@ -587,8 +634,16 @@ void loop()
           }
           break;  
       }      
+      #if DISP_ACTIVE==1
+        // Show progress bar
+        DispMeasProg(pos);
+      #endif
     } //if pos<100      
     else {
+      #if DISP_ACTIVE==1
+        // Del progress bar
+        DelMeasProg();
+      #endif
       // Evaluate measured delay times      
       //Capture measurement time and calculate difference time between last two measurements
       MeasTimeOld = MeasTime; 
@@ -621,7 +676,7 @@ void loop()
       // Minimum 40 of 50 values are valid
       // minimum 50liter stdDev is reached
       if (cntValidValues>40) {
-        rSignalHealth = 100 - 6*volStdDev/volMax*1000;      
+        rSignalHealth = 100 - min(6*volStdDev/volMax*1000,100);      
         if (rSignalHealth<0) {
           rSignalHealth=0;
         }
@@ -686,6 +741,8 @@ void loop()
         }
       }
 
+      TriggerWDT();  
+      
       //Write Log File
       #if LOGLEVEL & LOGLVL_NORMAL
         WriteSystemLog("Pulse counter: "+String(PulseCntr));
@@ -749,6 +806,8 @@ void loop()
       }
 
       //Calcluate usage per day if hour=0 and rain within last 24h is zero
+      //Difference Volume in 24h
+      volDiff24h =  volActual - volActualFilt24h;
       if (hour()==0) {
         if ((volRain24h<MAX_VOL_NORAIN) && (volActualFilt24h>0)) {
            //Usage calulation
@@ -771,8 +830,13 @@ void loop()
       //Log data 
       LogData();     
 
+      //Write to display
+      #if DISP_ACTIVE==1
+        DispStatus(now(), prcActual, rSignalHealth, volActual, volDiff24h);
+      #endif
+
       //Write svg File
-      WriteHistSVG();
+      //WriteHistSVG();
       
       //Send data to Homematic CCU
       #if HM_ACCESS_ACTIVE==1
@@ -826,11 +890,36 @@ void loop()
       #endif
       NTP_State = NTP_WAITUPD;
     }   
+
+    //Backlight timer
+    #if DISP_ACTIVE==1
+      //Display time
+      DispTime();
+
+      //Check backlight timer
+      if (tiDispLED>0) {
+        tiDispLED--;        
+      }
+      else {
+        //Display backlight off
+        DispLED(false);
+      }
+    #endif    
   } //60s Task
 
   //=== Idle Task ===
   //Activate web server for parameter settings and monitoring
   MonitorWebServer(); 
+
+  #if DISP_ACTIVE==1
+    if (ts.touched()) {
+      // Turn the backlight on
+      DispLED(true);      
+
+      // Reset timer in min
+      tiDispLED = 2; 
+    }
+  #endif
 
   //Update time
   now();
@@ -850,10 +939,7 @@ void CalculateDailyUsage() {
     UsageTimeStr = getDateTimeStr(); 
 
     //Calculate daily refilling volume
-    volRefill24h = PositiveDistanceUL(SettingsEEP.settings.volRefillTot,volRefillFilt24h);
-
-    //Difference Volume
-    volDiff24h =  volActual - volActualFilt24h;
+    volRefill24h = PositiveDistanceUL(SettingsEEP.settings.volRefillTot,volRefillFilt24h);   
     
     //Calculate daily water usage amd store in array
     SettingsEEP.settings.iDay = (SettingsEEP.settings.iDay+1)%NUM_USAGE_AVRG;

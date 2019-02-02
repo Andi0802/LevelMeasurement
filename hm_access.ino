@@ -111,6 +111,7 @@
       unsigned long _timeStart=micros();
       unsigned char _trace=0;
       while (hm_client.connected()) {
+          TriggerWDT();  
           _trace=1;
           if (hm_client.available()) {
             char c = hm_client.read();

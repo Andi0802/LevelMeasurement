@@ -555,14 +555,14 @@ void WriteHistSVG()
     //Level
      svgFile.println(F("<!-- Level Line: Fill dynamically -->"));
      svgFile.println(F("<!-- Formula: y=216+hour()-nPoint, y=100-prcActual(nPoint) -->"));
-     svgFile.println(F("<polyline fill=\"none\" stroke=\"blue\" stroke-width=\"1\"points=\""));
+     svgFile.println(F("<polyline fill=\"none\" stroke=\"blue\" stroke-width=\"1\"points="));
      for(_iHour=0;_iHour<240;_iHour++) {
       _idxPic = 216+hour()-_iHour;
       if (_idxPic>0) {
         _idxRd = (EEP_NUM_HIST+SettingsEEP.settings.iWrPtrHist-_iHour)%EEP_NUM_HIST;
         _yValPic = max(min(100-SettingsEEP.settings.prcActual[_idxRd],100),0);
         //Serial.println(String(_idxRd)+" ->"+ SettingsEEP.settings.prcActual[_idxRd]);
-        svgFile.print(String(_idxPic)+"\",\""+String(_yValPic)+"\" ");
+        svgFile.print("\""+String(_idxPic)+"\",\""+String(_yValPic)+"\" ");
       }
      }
      svgFile.println(F("\"/>")); 
@@ -576,7 +576,7 @@ void WriteHistSVG()
       if (_idxPic>0) {
         _idxRd = (SettingsEEP.settings.iWrPtrHist-_iHour)%EEP_NUM_HIST;
         _yValPic = max(min(170-SettingsEEP.settings.volRain1h[_idxRd],170),100);
-        svgFile.println("<polyline points=\""+String(_idxPic)+"\",170\" \""+String(_idxPic)+"\","+String(_yValPic)+"\"/>");
+        svgFile.println("<polyline points=\""+String(_idxPic)+"\",\"170\" \""+String(_idxPic)+"\",\""+String(_yValPic)+"\"/>");
       } 
     }
     svgFile.println(F("</g>"));

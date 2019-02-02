@@ -139,7 +139,7 @@ void WriteSystemLog(String LogText)
 
   if (SD_State == SD_OK) {    
     Workaround_CS_ETH2SD(50);
-    
+      
     logFile = SD.open(LOGFILE, FILE_WRITE);
     logFile.println(LogStr);
     logFile.flush();
@@ -150,4 +150,12 @@ void WriteSystemLog(String LogText)
 
   //Write to serial
   Serial.println(LogStr);
+
+  TriggerWDT();  
+
+  //To Display
+  #if DISP_ACTIVE==1
+    DispMessage(LogStr);
+  #endif
+
 }
