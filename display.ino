@@ -201,9 +201,11 @@
   void DispTime(void)
   {
     char _datetime[20];
+    time_t _t;
   
     //Get Time
-    sprintf(_datetime, "%02d.%02d.%4d %02d:%02d", day(), month(), year(), hour(), minute());
+    _t = getLocTime();
+    sprintf(_datetime, "%02d.%02d.%4d %02d:%02d", day(_t), month(_t), year(_t), hour(_t), minute(_t));
   
     //Background color
     ucg.setColor(1, 0, 0, 0);
