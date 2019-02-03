@@ -29,6 +29,7 @@ const String prgChng = PRG_CHANGE_DESC;
 //Local libraries
 #include <NTPClient.h>           // https://github.com/arduino-libraries/NTPClient.git Commit 020aaf8
 #include <TimeLib.h>             // https://github.com/PaulStoffregen/Time.git Commit 6d0Fc5E
+#include <Timezone.h>            // https://github.com/JChristensen/Timezone
 #include <NewEEPROM.h>           //Ariadne Bootloader https://github.com/codebndr/Ariadne-Bootloader commit 19388fa
 #include <NetEEPROM.h>           //Ariadne Bootloader https://github.com/codebndr/Ariadne-Bootloader commit 19388fa
 #include <NetEEPROM_defs.h>      //EEPROM Layout
@@ -43,14 +44,14 @@ const String prgChng = PRG_CHANGE_DESC;
 //DHCP cient active
 //  0: Fixed IPV4 Adress
 //  1: DHCP
-#define DHCP_USAGE   0
+#define DHCP_USAGE   1
 //ADD IP-ADDRESS
 
 //Definitions for Homematic CCU
 //Switch on coupling to Homematic
 //  0: inactive
 //  1: active
-#define HM_ACCESS_ACTIVE    1     
+#define HM_ACCESS_ACTIVE    0     
 
 // Datapoint number for 24h rain
 #define HM_DATAPOINT_RAIN24 6614  
@@ -139,8 +140,6 @@ const String prgChng = PRG_CHANGE_DESC;
 //Files (Max 8+3 Filenames)
 #define LOGFILE   F("Res_Ctl.log")     // Name of system logfile
 #define DATAFILE  F("Res_Ctl.csv")     // Name of data logfile
-#define SVGFILE   F("histdata.svg")    // SVG File with graphic
-#define SVGHEADER F("histhead.svg")   // Header of SVG File
 
 //Diagnosis
 #define SIGNAL_HEALTH_MIN 50          // Minimum signal health required
@@ -233,6 +232,11 @@ EthernetClient client;
 //UDP Client for NTP
 EthernetUDP ntpUDP;
 NTPClient timeClient(ntpUDP);
+
+// Central European Time (Frankfurt, Paris)
+TimeChangeRule CEST = {"CEST", Last, Sun, Mar, 2, 120};     // Central European Summer Time
+TimeChangeRule CET = {"CET ", Last, Sun, Oct, 3, 60};       // Central European Standard Time
+Timezone CE(CEST, CET);
 
 //Web Server
 EthernetServer server(80);
@@ -745,10 +749,11 @@ void loop()
           SetError(ERRNUM_SIGNAL_HEALTH,false);
 
           //Stop measuerement
-          stMeasAct=0;
+          stMeasAct =0;
         }
       }
 
+      //Retrigger Watchdog
       TriggerWDT();  
       
       //Write Log File
@@ -843,9 +848,6 @@ void loop()
       #if DISP_ACTIVE==1
         DispStatus(now(), prcActual, rSignalHealth, volActual, volDiff24h);
       #endif
-
-      //Write svg File
-      //WriteHistSVG();
       
       //Send data to Homematic CCU
       #if HM_ACCESS_ACTIVE==1

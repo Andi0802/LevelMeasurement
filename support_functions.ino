@@ -24,40 +24,28 @@ time_t getNtpTime()
   return _epochTime;
 }
 
-//--- SD Card support ---------------------------------------------------------------------------------------------------
-void CopyFile(String srcFile,String dstFile)
+time_t getLocTime()
+//Receive local time
 {
-  //Copy file on SD Card  
-  File src,dst;
+  time_t _t;
 
-  //Open source
-  src = SD.open(srcFile,FILE_READ);
-  
-  //Remove target if it exists already
-  if (SD.exists(dstFile)) {
-    SD.remove(dstFile);
-  }
+  //Get time
+  _t=now();
 
-  //Open destination
-  dst = SD.open(dstFile,FILE_WRITE);
+  //Convert to local time
+  _t = CE.toLocal(_t);
 
-  //Copy
-  while (src.available()) {
-    dst.write(src.read());
-    // Trigger Watchdog
-    TriggerWDT();
-  }
-
-  dst.flush();
-  dst.close();
-  src.close();
+  return _t;
 }
 
 //--- String functions to create formateted strings ---------------------------------------------------------------------
 String getDateTimeStr(void) {
   //Get date and time in Format YYY-MM-DD hh:mm:ss
   char _datetime[20];
-  sprintf(_datetime, "%4d-%02d-%02d %02d:%02d:%02d", year(), month(), day(), hour(), minute(), second());
+  time_t _t;
+
+  _t = getLocTime();
+  sprintf(_datetime, "%4d-%02d-%02d %02d:%02d:%02d", year(_t), month(_t), day(_t), hour(_t), minute(_t), second(_t));
   return String(_datetime);
 }
 
