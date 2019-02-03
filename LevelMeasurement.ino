@@ -39,19 +39,19 @@ const String prgChng = PRG_CHANGE_DESC;
 //--- Configuration switches ---------------------------------------------------------------------------------
 // Test-System if USE_TEST_SYSTEM is defined
 // In Test system: IP Address is fixed, diferent MAC address, 60min Task reduced to 2min
-#define USE_TEST_SYSTEM
+//#define USE_TEST_SYSTEM
 
 //DHCP cient active
 //  0: Fixed IPV4 Adress
 //  1: DHCP
-#define DHCP_USAGE   1
+#define DHCP_USAGE   0
 //ADD IP-ADDRESS
 
 //Definitions for Homematic CCU
 //Switch on coupling to Homematic
 //  0: inactive
 //  1: active
-#define HM_ACCESS_ACTIVE    0     
+#define HM_ACCESS_ACTIVE    1     
 
 // Datapoint number for 24h rain
 #define HM_DATAPOINT_RAIN24 6614  
