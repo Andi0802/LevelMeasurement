@@ -464,6 +464,7 @@ void MonitorWebServer(void)
             client2.println(F("<H2>Programminfo</h2>"));
             client2.println("<p>" + prgVers + "</p>");
             client2.println("<p>" + prgChng + "</p>");
+            client2.println("<p>" + cfgInfo + "</p>");
             
             client2.println(F("</BODY></HTML>\n"));            
             client2.println();

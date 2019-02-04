@@ -1,3 +1,4 @@
 version_info.h
+config.h
 /log/csv/*
 /log/.ipynb_checkpoints/*

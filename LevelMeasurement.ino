@@ -9,7 +9,7 @@
 #include "version_info.h"
 const String prgVers = PRG_VERS;
 const String prgChng = PRG_CHANGE_DESC;
-
+const String cfgInfo = PRG_CFG;
 //Sample data
 #include "sample_data.h"
 
@@ -36,33 +36,8 @@ const String prgChng = PRG_CHANGE_DESC;
 #include <Ucglib.h>              //UCG Lib https://github.com/olikraus/ucglib V1.5.2 
 #include <XPT2046_Touchscreen.h> // https://github.com/PaulStoffregen/XPT2046_Touchscreen Commit 1a27318
 
-//--- Configuration switches ---------------------------------------------------------------------------------
-// Test-System if USE_TEST_SYSTEM is defined
-// In Test system: IP Address is fixed, diferent MAC address, 60min Task reduced to 2min
-//#define USE_TEST_SYSTEM
-
-//DHCP cient active
-//  0: Fixed IPV4 Adress
-//  1: DHCP
-#define DHCP_USAGE   0
-//ADD IP-ADDRESS
-
-//Definitions for Homematic CCU
-//Switch on coupling to Homematic
-//  0: inactive
-//  1: active
-#define HM_ACCESS_ACTIVE    1     
-
-// Datapoint number for 24h rain
-#define HM_DATAPOINT_RAIN24 6614  
-//ADD IP-ADR
-
-// Display
-//   0: No display
-//   1: ILI9341 with SPI touchscreen
-#define DISP_ACTIVE  1
-
-//------------------------------------------------------------------------------------------------------------
+//Configuration
+#include "config.h"
 
 //Logging level Bitwise
 #define LOGLVL_NORMAL  1  //Bit 0: Normal logging
@@ -191,37 +166,36 @@ const PROGMEM unsigned char SAMPLES_STSIGNAL[EEP_NUM_HIST] = SAMPLES_STSIGNAL_DA
 //Device name of HM Client
 //IP of CCU
 #if HM_ACCESS_ACTIVE==1
-  byte hm_ccu[] = { 192, 168, 178, 11 };
+  byte hm_ccu[] = { IP_ADR_HM };
   EthernetClient hm_client;
 #endif
 
 // Enter a MAC address for your controller below.
 // Newer Ethernet shields have a MAC address printed on a sticker on the shield
 #ifdef USE_TEST_SYSTEM
-//MAC for testing system
-byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xEA };
-
-// Set the static IP address if DHCP fails or fixed address is used
-IPAddress ip(192, 168, 178, 4);
-IPAddress dns(192, 168, 178, 1);
-IPAddress gateway(192, 168, 178, 1);
-IPAddress subnet(255,255,255,0);
-
-// Reduce 60min Task to 2min
-#define MIN60 2
+  //MAC for testing system
+  byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xEA };
+  
+  // Set the static IP address if DHCP fails or fixed address is used
+  IPAddress ip(IP_ADR_TEST);
+  IPAddress dns(IP_DNS_TEST);
+  IPAddress gateway(IP_GWY_TEST);
+  IPAddress subnet(IP_SUB_TEST);
+  
+  // Reduce 60min Task to 2min
+  #define MIN60 2
 #else
-//MAC for operational system
-byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xEB };
-
-// Set the static IP address if DHCP fails or fixed address is used
-IPAddress ip(192, 168, 178, 5);
-IPAddress dns(192, 168, 178, 1);
-IPAddress gateway(192, 168, 178, 1);
-IPAddress subnet(255,255,255,0);
-
-
-// Reduce 60min Task to 60min
-#define MIN60 60
+  //MAC for operational system
+  byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xEB };
+  
+  // Set the static IP address if DHCP fails or fixed address is used
+  IPAddress ip(IP_ADR_FIXED);
+  IPAddress dns(IP_DNS_FIXED);
+  IPAddress gateway(IP_GWY_FIXED);
+  IPAddress subnet(IP_SUB_FIXED);
+  
+  // Reduce 60min Task to 60min
+  #define MIN60 60
 #endif
 
 // Initialize the Ethernet client library
@@ -659,7 +633,7 @@ void loop()
       // Evaluate measured delay times      
       //Capture measurement time and calculate difference time between last two measurements
       MeasTimeOld = MeasTime; 
-      MeasTime = getNtpTime();
+      MeasTime = getLocTime();
       MeasTimeStr = time2DateTimeStr(MeasTime); 
       if (MeasTimeOld>0) {
         tiDiffMeasTime = PositiveDistanceUL(MeasTime,MeasTimeOld);
