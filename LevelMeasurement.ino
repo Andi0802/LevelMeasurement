@@ -274,13 +274,14 @@ unsigned long volRefillFilt1h;     //Stored value of Refilling volume 1h past
 unsigned int  volActualFilt24h=0;  //Stored actual reservoir volume 24h past
 unsigned int  volActualFilt1h=0;   //Stored actual reservoir volume 1h past
 unsigned int  volUsageDiag24h;     //Water usage in 24h for Diagnosis
-unsigned int  volRefill24h;        //Refilled volume in 24h
+int  volRefill24h;                 //Refilled volume in 24h
 unsigned int  volRefill1h;         //Refilled volume in 1h
 unsigned int  volRefillDiag1h;     //Refilled volume in 1h for Diagnosis
 unsigned int  volOld;              //Old volume for tendency 
 int volDiff1h;                     //Volume change in 1h (tendency)
 float volRain24h=-1;               //Rain in last 24h (-1: invalid)
-int volDiff24h;                    //Difference volume measurement in 24h
+int volDiff24h;                    //Difference volume measurement in 24h calculated each hour
+int volDiff24h1d;                  //Difference volume measurement in 24h calculated once a day
 int volDiffDiag1h;                 //Difference volume measurement in 1h for Diagnosis
 int volUsageAvrg10d;               //10 days average of daily water usage
 int volUsageMax10d=-32768;         //Maximum out of 10days
@@ -789,7 +790,7 @@ void loop()
         }
 
         //Write data to EEP History
-        WriteEEPCurrData(prcActual, volRain1h, (rSignalHealth<SIGNAL_HEALTH_MIN), stRain1h, volRefill1h);       
+        WriteEEPCurrData(prcActual, volRain1h, (rSignalHealth>SIGNAL_HEALTH_MIN), stRain1h, volRefill1h);              
       }
 
       //Calcluate usage per day if hour=0 and rain within last 24h is zero
@@ -798,7 +799,8 @@ void loop()
       volDiff24h =  volActual - (volMax* (long) SettingsEEP.settings.prcActual[idx24h])/100;      
       if (hour()==0) {
         if ((volRain24h<MAX_VOL_NORAIN) && (volActualFilt24h>0)) {
-           //Usage calulation
+           //Usage calulation: Take over 24h Difference to store it
+           volDiff24h1d = volDiff24h;
            CalculateDailyUsage();
         }
         if (rSignalHealth>50) {
@@ -928,7 +930,7 @@ void CalculateDailyUsage() {
     
     //Calculate daily water usage amd store in array
     SettingsEEP.settings.iDay = (SettingsEEP.settings.iDay+1)%NUM_USAGE_AVRG;
-    SettingsEEP.settings.volUsage24h[SettingsEEP.settings.iDay] =  volRefill24h - volDiff24h;  
+    SettingsEEP.settings.volUsage24h[SettingsEEP.settings.iDay] =  volRefill24h - volDiff24h1d;  
 
     //Write to EEPROM
     WriteEEPData();

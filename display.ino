@@ -161,8 +161,8 @@
     ucg.drawBox(_tend_x, DISP_STATUS_Y, DISP_STATUS_X + DISP_STATUS_W, DISP_STATUS_Y + DISP_STATUS_H);
   
     if (volDiff1d > 0) {
-      //Arrow  upwards
-      ucg.setColor(0, 0, 0, 255);
+      //Arrow  upwards green
+      ucg.setColor(0, 0, 255, 0);
       ucg.drawTriangle(_tend_x, DISP_STATUS_Y + DISP_STATUS_H - _actHei - 4 , _tend_x + _actLen, DISP_STATUS_Y + DISP_STATUS_H - _actHei - 4, _tend_x + _actLen / 2, DISP_STATUS_Y);
   
       //Text
@@ -171,8 +171,8 @@
       ucg.print(_strHelp);
     }
     else {
-      //Arrow downwards
-      ucg.setColor(0, 0, 0, 255);
+      //Arrow downwards red
+      ucg.setColor(0, 255, 0, 0);
       ucg.drawTriangle(_tend_x, DISP_STATUS_Y + _actHei + 4 , _tend_x + _actLen, DISP_STATUS_Y + _actHei + 4, _tend_x + _actLen / 2, DISP_STATUS_Y + DISP_STATUS_H);
   
       //Text

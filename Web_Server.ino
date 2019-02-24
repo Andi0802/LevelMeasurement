@@ -86,7 +86,7 @@ void MonitorWebServer(void)
   unsigned int stOption;
   byte clientBuf[SD_BLOCK_SIZE];
   int clientCount = 0;
-  unsigned char _id;
+  unsigned char _id,idxRd;
 
   stOption = 0;
   
@@ -319,7 +319,7 @@ void MonitorWebServer(void)
             client2.print(F("<tr><td>Fuellstandsaenderung 1h [Liter] </td><td>"));
             client2.print(String(volDiffDiag1h));            
             client2.print(F("</td></tr>"));            
-            client2.print(F("<tr><td>Berechnete Fuellstandsaenderung 24h [Liter]</td><td>"));
+            client2.print(F("<tr><td>Berechnete Fuellstandsaenderung 1h [Liter]</td><td>"));
             client2.print(String(volDiffCalc1h));
             client2.print(F("</td></tr>"));              
             client2.print(F("<tr><td>Abweichung [%]</td><td>"));
@@ -351,7 +351,7 @@ void MonitorWebServer(void)
             client2.print(String(volRefill24h));
             client2.print(F("</td></tr>"));            
             client2.print(F("<tr><td>Fuellstandsaenderung 24h [Liter] </td><td>"));
-            client2.print(String(volDiff24h));
+            client2.print(String(volDiff24h1d));
             client2.print(F("</td></tr>"));            
             client2.print(F("<tr><td>Verbrauch 24h [Liter]</td><td>"));
             client2.print(String(SettingsEEP.settings.volUsage24h[SettingsEEP.settings.iDay]));
@@ -365,6 +365,33 @@ void MonitorWebServer(void)
             client2.print(F("<tr><td>Maximum 10 Tage [Liter]</td><td>"));
             client2.print(String(volUsageMax10d));            
             client2.print(F("</td></tr>"));              
+            client2.print(F("<tr><td>Einzelwerte 10 Tage [Liter]</td><td>"));
+            for (_id=0; _id<NUM_USAGE_AVRG; _id++) {
+              idxRd = (SettingsEEP.settings.iDay-_id)%NUM_USAGE_AVRG;
+              client2.print(String(SettingsEEP.settings.volUsage24h[idxRd])+" ");            
+            }
+            
+            client2.print(F("</td></tr>"));              
+            client2.print(F("</table>"));  
+
+            //History
+            client2.println(F("<H3>History</h3>"));
+            client2.print(F("<table><tr><td>Index</td>"));
+            client2.print(F("<td>Fuellstand [%]</td>"));
+            client2.print(F("<td>Regen 1h [Liter]</td>"));
+            client2.print(F("<td>Signal [-]</td></tr>"));
+            for (_id=0;_id<EEP_NUM_HIST;_id++) {
+                idxRd=(SettingsEEP.settings.iWrPtrHist-_id-1)%EEP_NUM_HIST;
+                client2.print(F("<tr><td>"));                        
+                client2.print(idxRd);   
+                client2.print(F("</td><td>"));                        
+                client2.print(String(SettingsEEP.settings.prcActual[idxRd]));   
+                client2.print(F("</td><td>"));   
+                client2.print(String(SettingsEEP.settings.volRain1h[idxRd]));                       
+                client2.print(F("</td><td>"));                   
+                client2.print(String(SettingsEEP.settings.stSignal[idxRd]));    
+                client2.print(F("</td></tr>"));                        
+            }                               
             client2.print(F("</table>"));  
             
             //Settings          
