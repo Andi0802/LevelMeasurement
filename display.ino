@@ -24,7 +24,7 @@
   
   #define DISP_MESSAGE_X     0
   #define DISP_MESSAGE_W     DISP_WIDTH
-  #define DISP_MESSAGE_H     40  
+  #define DISP_MESSAGE_H     48  
   #define DISP_MESSAGE_Y     DISP_HEIGHT-DISP_MESSAGE_H
 
 
@@ -158,7 +158,7 @@
     _actHei = ucg.getFontAscent() + 2;
   
     ucg.setColor(0, 0, 0, 0);
-    ucg.drawBox(_tend_x, DISP_STATUS_Y, DISP_STATUS_X + DISP_STATUS_W, DISP_STATUS_Y + DISP_STATUS_H);
+    ucg.drawBox(_tend_x, DISP_STATUS_Y, DISP_STATUS_W,  DISP_STATUS_H);
   
     if (volDiff1d > 0) {
       //Arrow  upwards green
@@ -230,7 +230,7 @@
   
     //delete old text
     ucg.setColor(0, 0, 0, 0);
-    ucg.drawBox(DISP_MESSAGE_X, DISP_MESSAGE_Y - 2, DISP_MESSAGE_W, DISP_MESSAGE_H);
+    ucg.drawBox(DISP_MESSAGE_X, DISP_MESSAGE_Y, DISP_MESSAGE_W, DISP_MESSAGE_H);
   
     //Background color
     ucg.setColor(1, 0, 0, 0);
@@ -273,7 +273,7 @@
         }        
         _sep++;
       }
-      ucg.setPrintPos(DISP_MESSAGE_X, DISP_MESSAGE_Y + 20);
+      ucg.setPrintPos(DISP_MESSAGE_X, DISP_MESSAGE_Y + 22);
       ucg.print(_Line1);
       ucg.setPrintPos(DISP_MESSAGE_X, DISP_MESSAGE_Y + DISP_MESSAGE_H);
       ucg.print(_Line2);

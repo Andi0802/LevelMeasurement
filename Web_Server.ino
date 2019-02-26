@@ -379,7 +379,9 @@ void MonitorWebServer(void)
             client2.print(F("<table><tr><td>Index</td>"));
             client2.print(F("<td>Fuellstand [%]</td>"));
             client2.print(F("<td>Regen 1h [Liter]</td>"));
-            client2.print(F("<td>Signal [-]</td></tr>"));
+            client2.print(F("<td>Refill [Liter]</td>"));
+            client2.print(F("<td>Signal US [-]</td>"));
+            client2.print(F("<td>Signal RAIN [-]</td></tr>"));
             for (_id=0;_id<EEP_NUM_HIST;_id++) {
                 idxRd=(SettingsEEP.settings.iWrPtrHist-_id-1)%EEP_NUM_HIST;
                 client2.print(F("<tr><td>"));                        
@@ -389,7 +391,11 @@ void MonitorWebServer(void)
                 client2.print(F("</td><td>"));   
                 client2.print(String(SettingsEEP.settings.volRain1h[idxRd]));                       
                 client2.print(F("</td><td>"));                   
-                client2.print(String(SettingsEEP.settings.stSignal[idxRd]));    
+                client2.print(String(((SettingsEEP.settings.stSignal[idxRd]) >> 2)*CONV_REFILL));    
+                client2.print(F("</td><td>"));                   
+                client2.print(String(SettingsEEP.settings.stSignal[idxRd] & 1));    
+                client2.print(F("</td><td>"));                   
+                client2.print(String((SettingsEEP.settings.stSignal[idxRd] & 2)>>1));    
                 client2.print(F("</td></tr>"));                        
             }                               
             client2.print(F("</table>"));  
