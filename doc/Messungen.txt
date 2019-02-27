@@ -1,0 +1,4 @@
+Leistungsaufnahme 26.02.2019
+ohne Display LED: 1,0W
+mit Display LED : 1,2W
+gemessen am USB Port 4,7V
