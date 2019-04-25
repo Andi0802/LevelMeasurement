@@ -198,7 +198,7 @@ void MonitorWebServer(void)
             stOption |= getOption(inString, "aBaseAreaSet", 25000, 35000, &SettingsEEP.settings.aBaseArea) << 4;
             stOption |= getOption(inString, "hSensorPosSet", 205, 300, &SettingsEEP.settings.hSensorPos) << 5;
             stOption |= getOption(inString, "hOverflowSet", 180, 220, &SettingsEEP.settings.hOverflow) << 6;
-            stOption |= getOption(inString, "hRefillSet", 10, 60, &SettingsEEP.settings.hRefill) << 7;
+            stOption |= getOption(inString, "hRefillSet", 0, 60, &SettingsEEP.settings.hRefill) << 7;
             stOption |= getOption(inString, "volRefillSet", 10, 50, &SettingsEEP.settings.volRefill) << 8;
             stOption |= getOption(inString, "dvolRefillSet", 2, 20, &SettingsEEP.settings.dvolRefill) << 9;          
             stOption |= getOption(inString, "prcVolDvtThres", 0, 500, &SettingsEEP.settings.prcVolDvtThres) << 10;          

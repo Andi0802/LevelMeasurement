@@ -30,10 +30,10 @@ const String cfgInfo = PRG_CFG;
 #include <NTPClient.h>           // https://github.com/arduino-libraries/NTPClient.git Commit 020aaf8
 #include <TimeLib.h>             // https://github.com/PaulStoffregen/Time.git Commit 6d0Fc5E
 #include <Timezone.h>            // https://github.com/JChristensen/Timezone
-#include <NewEEPROM.h>           //Ariadne Bootloader https://github.com/codebndr/Ariadne-Bootloader commit 19388fa
-#include <NetEEPROM.h>           //Ariadne Bootloader https://github.com/codebndr/Ariadne-Bootloader commit 19388fa
-#include <NetEEPROM_defs.h>      //EEPROM Layout
-#include <Ucglib.h>              //UCG Lib https://github.com/olikraus/ucglib V1.5.2 
+#include <NewEEPROM.h>           // Ariadne Bootloader https://github.com/codebndr/Ariadne-Bootloader commit 19388fa
+#include <NetEEPROM.h>           // Ariadne Bootloader https://github.com/codebndr/Ariadne-Bootloader commit 19388fa
+#include <NetEEPROM_defs.h>      // EEPROM Layout
+#include <Ucglib.h>              // UCG Lib https://github.com/olikraus/ucglib V1.5.2 
 #include <XPT2046_Touchscreen.h> // https://github.com/PaulStoffregen/XPT2046_Touchscreen Commit 1a27318
 
 //Configuration
@@ -129,7 +129,7 @@ const String cfgInfo = PRG_CFG;
 #define PLS_TIMEOUT       4   // Timout waiting for echo
 
 //Timeout in us
-#define PLS_TI_TIMEOUT 40000
+#define PLS_TI_TIMEOUT 80000
 
 //States for Filter diagnosis
 #define FILT_OFF          0   // No Diagnosis done
@@ -677,7 +677,7 @@ void loop()
       
       //Convert to volume
       if (rSignalHealth>50) {
-        hWaterActual = SettingsEEP.settings.hSensorPos*10-hMean;      
+        hWaterActual = max(SettingsEEP.settings.hSensorPos*10-hMean,0);      
         //Remember old volume
         volOld = volActual;
         //new volume

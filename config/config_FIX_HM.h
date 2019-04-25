@@ -30,10 +30,10 @@
 #define HM_ACCESS_ACTIVE    1 
 
 //IP Adress of Homematic 
-#define IP_ADR_HM 192, 168, 178, 11  
+#define IP_ADR_HM 192, 168, 178, 60  
 
-// Datapoint number for 24h rain
-#define HM_DATAPOINT_RAIN24 6614  
+// Datapoint number for rain counter
+#define HM_DATAPOINT_RAIN24 14245  
 
 // --- Display settings ---------------------------------------------------------------------
 //   0: No display
