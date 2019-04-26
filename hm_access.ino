@@ -38,7 +38,7 @@
     String _cmd;
   
     //Generate command
-    _cmd = "GET /config/xmlapi/statechange.cgi?ise_id=";
+    _cmd = "GET /addons/xmlapi/statechange.cgi?ise_id=";
     _cmd = _cmd + ise_id;
     _cmd = _cmd + "&new_value=";
     _cmd = _cmd + value;
@@ -64,7 +64,7 @@
     String _cmd;
   
     //Generate command
-    _cmd = F("GET /config/xmlapi/runprogram.cgi?ise_id=");
+    _cmd = F("GET /addons/xmlapi/runprogram.cgi?ise_id=");
     _cmd = _cmd + ise_id;
   
     //Connect and send
@@ -91,7 +91,7 @@
     int tOutCtr;
   
     //Generate command
-    _cmd = F("GET /config/xmlapi/state.cgi?datapoint_id=");
+    _cmd = F("GET /addons/xmlapi/state.cgi?datapoint_id=");
     _cmd = _cmd + dp_number;
     _cmd = _cmd + F(" HTTP/1.1");
   
