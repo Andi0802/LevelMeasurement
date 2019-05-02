@@ -47,7 +47,7 @@ const String cfgInfo = PRG_CFG;
 #define LOGLVL_SYSTEM 16  //Bit 4: System logging (NTP etc)
 #define LOGLVL_TRAP   32  //Bit 5: Trap for ETH+SD CS signal setting
 #define LOGLVLEEP     64  //Bit 6: EEPROM Dump
-#define LOGLEVEL   LOGLVL_NORMAL + LOGLVL_SYSTEM + LOGLVLEEP
+#define LOGLEVEL   LOGLVL_NORMAL + LOGLVL_SYSTEM + LOGLVLEEP + LOGLVL_CCU
 
 //Message types
 #define MSG_SEV_ERROR 31
@@ -827,13 +827,13 @@ void loop()
       
       //Send data to Homematic CCU
       #if HM_ACCESS_ACTIVE==1
-        hm_set_sysvar(F("HM_ZISTERNE_volActual"), volActual);
+        hm_set_state(HM_ZISTERNE_volActual, volActual);
         delay(1); //nicht optimal, aber sonst stürzt HM ab
-        hm_set_sysvar(F("HM_ZISTERNE_rSignalHealth"), rSignalHealth);
+        hm_set_state(HM_ZISTERNE_rSignalHealth, rSignalHealth);
         delay(1); //nicht optimal, aber sonst stürzt HM ab
-        hm_set_sysvar(F("HM_ZISTERNE_prcActual"), prcActual);           
+        hm_set_state(HM_ZISTERNE_prcActual, prcActual);           
         delay(1); //nicht optimal, aber sonst stürzt HM ab
-        hm_set_sysvar(F("HM_ZISTERNE_stError"), stError);          
+        hm_set_state(HM_ZISTERNE_stError, stError);          
       #endif
       
       //Reset pointer for next data collection
@@ -967,10 +967,10 @@ void StatisticDailyUsage() {
 
     #if HM_ACCESS_ACTIVE==1
       //Send result to Homematic
-      hm_set_sysvar(F("HM_ZISTERNE_volUsage"), SettingsEEP.settings.volUsage24h[SettingsEEP.settings.iDay]);           
+      hm_set_state(HM_ZISTERNE_volUsage, SettingsEEP.settings.volUsage24h[SettingsEEP.settings.iDay]);           
       delay(1); //nicht optimal, aber sonst stürzt HM ab
       //Send result to Homematic
-      hm_set_sysvar(F("HM_ZISTERNE_volUsage10d"), volUsageAvrg10d);                   
+      hm_set_state(HM_ZISTERNE_volUsage10d, volUsageAvrg10d);                   
     #endif
 }
 
@@ -1018,7 +1018,7 @@ void CheckFilter() {
 
     #if HM_ACCESS_ACTIVE==1
       //Send result to Homematic
-      hm_set_sysvar(F("HM_ZISTERNE_stFiltChkErr"), stFiltChkErr);           
+      hm_set_state(HM_ZISTERNE_stFiltChkErr, stFiltChkErr);           
       //delay(1); //nicht optimal, aber sonst stürzt HM ab                 
     #endif
 } 

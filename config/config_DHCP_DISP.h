@@ -32,8 +32,15 @@
 //IP Adress of Homematic 
 #define IP_ADR_HM 192, 168, 178, 11  
 
-// Datapoint number for 24h rain
-#define HM_DATAPOINT_RAIN24 6614  
+// Datapoint numbers for HM
+#define HM_DATAPOINT_RAIN24       14245  
+#define HM_ZISTERNE_volActual     13596
+#define HM_ZISTERNE_rSignalHealth 13598
+#define HM_ZISTERNE_prcActual     13599
+#define HM_ZISTERNE_stError       13601
+#define HM_ZISTERNE_volUsage      13712
+#define HM_ZISTERNE_volUsage10d   13713
+#define HM_ZISTERNE_stFiltChkErr  13602
 
 // --- Display settings ---------------------------------------------------------------------
 //   0: No display
