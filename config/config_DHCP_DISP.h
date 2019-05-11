@@ -1,4 +1,4 @@
-// Konfiguration 
+// Konfiguration Ralf
 // Nutzer: Ralf 
 // Eigenschaften: mit Display, ohne Homematic, DHCP, minimales Logging
 //

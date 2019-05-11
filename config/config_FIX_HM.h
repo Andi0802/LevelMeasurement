@@ -1,4 +1,4 @@
-// Konfiguration
+// Konfiguration Testsystem Andreas
 // Nutzer:  Andreas 
 // Eigenschaften: ohne Display, mit Homematic, 192.168.178.5, Logging mit CCU
 //
