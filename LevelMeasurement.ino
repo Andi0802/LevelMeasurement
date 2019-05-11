@@ -165,7 +165,7 @@ const PROGMEM unsigned char SAMPLES_STSIGNAL[EEP_NUM_HIST] = SAMPLES_STSIGNAL_DA
 //Device name of HM Client
 //IP of CCU
 #if HM_ACCESS_ACTIVE==1
-  byte hm_ ccu[] = { IP_ADR_HM };
+  byte hm_ccu[] = { IP_ADR_HM };
   EthernetClient hm_client;
 #endif
 
