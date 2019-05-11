@@ -33,7 +33,7 @@
 #define HM_ACCESS_ACTIVE    1 
 
 //IP Adress of Homematic 
-#define IP_ADR_HM 192, 168, 178, 11  
+#define IP_ADR_HM 192, 168, 178, 60  
 
 // Datapoint numbers for HM
 #define HM_DATAPOINT_RAIN24       14245  
