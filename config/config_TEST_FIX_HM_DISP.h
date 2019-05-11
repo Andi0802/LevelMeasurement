@@ -1,4 +1,4 @@
-// Konfiguration Andreas
+// Konfiguration Andreas Testsystem
 // Nutzer:  Andreas 
 // Eigenschaften: Testsystem mit Display, mit Homematic, 192.168.178.4, max. Logging
 //
