@@ -1,4 +1,7 @@
-// Konfiguration Testsystem mit Display mit Homematic, 192.168.178.4
+// Konfiguration 
+// Nutzer:  Andreas 
+// Eigenschaften: Testsystem mit Display, mit Homematic, 192.168.178.4, max. Logging
+//
 //--- Configuration switches ---------------------------------------------------------------------------------
 // --- Test system ------------------------------------------------------------------------
 // Test-System if USE_TEST_SYSTEM is defined
@@ -46,5 +49,9 @@
 //   0: No display
 //   1: ILI9341 with SPI touchscreen
 #define DISP_ACTIVE  1
+
+// --- Logging level ------------------------------------------------------------------------
+// Combine Bits for required logging level
+#define LOGLEVEL   LOGLVL_NORMAL + LOGLVL_SYSTEM + LOGLVLEEP + LOGLVL_CCU
 
 //------------------------------------------------------------------------------------------------------------

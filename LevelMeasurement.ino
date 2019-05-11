@@ -36,9 +36,6 @@ const String cfgInfo = PRG_CFG;
 #include <Ucglib.h>              // UCG Lib https://github.com/olikraus/ucglib V1.5.2 
 #include <XPT2046_Touchscreen.h> // https://github.com/PaulStoffregen/XPT2046_Touchscreen Commit 1a27318
 
-//Configuration
-#include "config.h"
-
 //Logging level Bitwise
 #define LOGLVL_NORMAL  1  //Bit 0: Normal logging
 #define LOGLVL_WEB     2  //Bit 1: Web server access
@@ -47,7 +44,9 @@ const String cfgInfo = PRG_CFG;
 #define LOGLVL_SYSTEM 16  //Bit 4: System logging (NTP etc)
 #define LOGLVL_TRAP   32  //Bit 5: Trap for ETH+SD CS signal setting
 #define LOGLVLEEP     64  //Bit 6: EEPROM Dump
-#define LOGLEVEL   LOGLVL_NORMAL + LOGLVL_SYSTEM + LOGLVLEEP + LOGLVL_CCU
+
+//Configuration
+#include "config.h"
 
 //Message types
 #define MSG_SEV_ERROR 31
@@ -166,7 +165,7 @@ const PROGMEM unsigned char SAMPLES_STSIGNAL[EEP_NUM_HIST] = SAMPLES_STSIGNAL_DA
 //Device name of HM Client
 //IP of CCU
 #if HM_ACCESS_ACTIVE==1
-  byte hm_ccu[] = { IP_ADR_HM };
+  byte hm_ ccu[] = { IP_ADR_HM };
   EthernetClient hm_client;
 #endif
 

@@ -1,4 +1,7 @@
-// Konfiguration Ralf mit Display ohne Homematic, DHCP
+// Konfiguration 
+// Nutzer: Ralf 
+// Eigenschaften: mit Display, ohne Homematic, DHCP, minimales Logging
+//
 //--- Configuration switches ---------------------------------------------------------------------------------
 // --- Test system ------------------------------------------------------------------------
 // Test-System if USE_TEST_SYSTEM is defined
@@ -46,5 +49,9 @@
 //   0: No display
 //   1: ILI9341 with SPI touchscreen
 #define DISP_ACTIVE  1
+
+// --- Logging level ------------------------------------------------------------------------
+// Combine Bits for required logging level
+#define LOGLEVEL   LOGLVL_NORMAL
 
 //------------------------------------------------------------------------------------------------------------
