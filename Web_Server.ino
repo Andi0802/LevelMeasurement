@@ -236,7 +236,7 @@ void MonitorWebServer(void)
             //Status Info
             client2.println(F("<H2>Status</h2>"));
             client2.println(F("<H3>Messwerte</h3>"));
-            client2.print(F("<table><tr><td>Messzeit (UTC)</td><td>"));
+            client2.print(F("<table><tr><td>Messzeit</td><td>"));
             client2.print(MeasTimeStr);
             client2.print(F("</td></tr>"));
             client2.print(F("<tr><td>Messung aktiv [%]</td><td>"));
@@ -304,7 +304,7 @@ void MonitorWebServer(void)
 
             //Filter diagnosis
             client2.println(F("<H3>Filterdiagnose</h3>"));
-            client2.print(F("<table><tr><td>Diagnosezeit (UTC)</td><td>"));
+            client2.print(F("<table><tr><td>Diagnosezeit </td><td>"));
             client2.print(String(DiagTimeStr));
             client2.print(F("</td></tr>"));            
             client2.print(F("<tr><td>Regenmenge 1h [mm]</td><td>"));
@@ -344,7 +344,7 @@ void MonitorWebServer(void)
 
             //Verbrauchsberechnung
             client2.println(F("<H3>Verbrauchsberechnung</h3>"));
-            client2.print(F("<table><tr><td>Berechungszeit (UTC)</td><td>"));
+            client2.print(F("<table><tr><td>Berechungszeit </td><td>"));
             client2.print(String(UsageTimeStr));
             client2.print(F("</td></tr>"));                        
             client2.print(F("<tr><td>Nachspeisung 24h [Liter] </td><td>"));
