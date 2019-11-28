@@ -44,6 +44,7 @@ const String cfgInfo = PRG_CFG;
 #define LOGLVL_SYSTEM 16  //Bit 4: System logging (NTP etc)
 #define LOGLVL_TRAP   32  //Bit 5: Trap for ETH+SD CS signal setting
 #define LOGLVLEEP     64  //Bit 6: EEPROM Dump
+#define LOGLVL_SQL   128  //Bit 7: SQL Server details
 
 //Configuration
 #include "config.h"
@@ -218,6 +219,12 @@ EthernetServer server(80);
 #if DISP_ACTIVE==1
   Ucglib_ILI9341_18x240x320_HWSPI ucg(/*cd=*/ DISP_CD_PIN, /*cs=*/ DISP__SS_PIN, /*reset=*/ DISP__RESET_PIN);
   XPT2046_Touchscreen ts(DISP_T_CS_PIN, DISP_TIRQ_PIN);
+#endif
+
+// Definitions for SQL server
+#if SQL_CLIENT>0
+  char ExternalServer[] = SQLSERVER;    
+  char SQLDataBaseName[] = DATABASE;
 #endif
 
 // --- Globals ---------------------------------------------------------------------------------------------------
@@ -822,6 +829,11 @@ void loop()
       
       //Log data 
       LogData();     
+
+      // Send data to SQL Client
+      #if SQL_CLIENT>0
+        SendDataSQL();
+      #endif
 
       //Write to display
       #if DISP_ACTIVE==1

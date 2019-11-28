@@ -50,8 +50,18 @@
 //   1: ILI9341 with SPI touchscreen
 #define DISP_ACTIVE  0
 
+// --- SQL Server settings ------------------------------------------------------------------
+//SQL Client active
+#define SQL_CLIENT 0
+
+//IP-Adress of Server and Name of Folder with Web-Form to access SQL Database
+#define SQLSERVER "192.168.178.6"
+
+//Page for operational DB
+#define DATABASE  "HomeData"
+
 // --- Logging level ------------------------------------------------------------------------
 // Combine Bits for required logging level
-#define LOGLEVEL   LOGLVL_NORMAL + LOGLVL_SYSTEM + LOGLVLEEP
+#define LOGLEVEL   LOGLVL_NORMAL + LOGLVL_SYSTEM + LOGLVL_EEP
 
 //------------------------------------------------------------------------------------------------------------

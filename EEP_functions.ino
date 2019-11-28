@@ -14,7 +14,7 @@ void ReadEEPData(void)
   for (i = 0; i < EEPSize; i++) {
     SettingsEEP.SettingStream[i] = EEPROM.read(i);    
   }
-  #if LOGLEVEL & LOGLVLEEP      
+  #if LOGLEVEL & LOGLVL_EEP      
     DumpEEPData();
   #endif
 
