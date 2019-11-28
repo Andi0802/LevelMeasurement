@@ -581,6 +581,9 @@ void loop()
           {
             //Measurement not plausible, set dummy value 0
             arr[pos] = 0;
+            #if LOGLEVEL & LOGLVL_NORMAL
+              WriteSystemLog(MSG_DEBUG,"Duration measured: " + String(dauer) + "us Send: " + String(tiReceivedPos) + " Received: " + String(tiReceived)+ " Entfernung: " + String(entfernung) + " mm");
+            #endif  
           }
           else
           {
@@ -670,6 +673,7 @@ void loop()
       else {
         #if LOGLEVEL & LOGLVL_NORMAL
           WriteSystemLog(MSG_MED_ERROR,"Only " + String(cntValidValues) + " valid measurement values detected (Threshold=40), no new volume calculated");
+          
         #endif
         rSignalHealth = 1;
       }
