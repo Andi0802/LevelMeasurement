@@ -1,4 +1,19 @@
 // Functions to handle SQL client
+
+/*
+  SQL-Server:
+  Data can be reviewed by
+  http://192.168.178.6/joomla/templates/HomeData/insertareg.php
+
+  PHP Files must be stored under web/joomla/templates/MyTemplates/
+  Matching PHP-Files:
+  connec.php:     Activates connection, called by add.php
+  add.php:        Adds data to data base
+  insertareg.php: Shows data and gives possibility to enter data
+
+  JOOMLA: Installation von PHPBridge 1.1.0
+  */
+  
 #if SQL_CLIENT>0
 void SendDataSQL(void) {
   // Sends data to SQL server

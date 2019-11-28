@@ -60,7 +60,6 @@
 //Page for operational DB
 #define DATABASE  "HomeData"
 
-
 // --- Logging level ------------------------------------------------------------------------
 // Combine Bits for required logging level
 #define LOGLEVEL   LOGLVL_NORMAL + LOGLVL_SYSTEM + LOGLVL_EEP
