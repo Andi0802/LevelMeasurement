@@ -52,6 +52,6 @@
 
 // --- Logging level ------------------------------------------------------------------------
 // Combine Bits for required logging level
-#define LOGLEVEL   LOGLVL_NORMAL + LOGLVL_SYSTEM + LOGLVLEEP + LOGLVL_CCU
+#define LOGLEVEL   LOGLVL_NORMAL + LOGLVL_SYSTEM + LOGLVLEEP
 
 //------------------------------------------------------------------------------------------------------------
