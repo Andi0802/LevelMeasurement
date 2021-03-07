@@ -69,7 +69,7 @@ void ReadEEPData(void)
    for (_id=0;_id<EEP_NUM_HIST;_id++) {
      SettingsEEP.settings.volRain1h[_id] = SAMPLES_VOLRAIN[_id];
      SettingsEEP.settings.prcActual[_id] = 10; //byte(SAMPLES_PRCVOL[_id]);
-     Serial.println(String(_id)+" ->"+ String(SettingsEEP.settings.prcActual[_id]));
+     //Serial.println(String(_id)+" ->"+ String(SettingsEEP.settings.prcActual[_id]));
      SettingsEEP.settings.stSignal[_id]  = SAMPLES_STSIGNAL[_id];
    }
    SettingsEEP.settings.iWrPtrHist = 0;

@@ -4,9 +4,12 @@
 //
 //--- Configuration switches ---------------------------------------------------------------------------------
 // --- Test system ------------------------------------------------------------------------
-// Test-System if USE_TEST_SYSTEM is defined
-// In Test system: IP Address is fixed, diferent MAC address, 60min Task reduced to 2min
-//#define USE_TEST_SYSTEM
+// Test-System if USE_TEST_SYSTEM is defined (0 = No test system used, productive system)
+// Bit  
+//   0: IP Address is fixed, diferent MAC address
+//   1: 60min Task reduced to 2min
+//   2: Simulated measurement results are used
+#define USE_TEST_SYSTEM 0
 
 // --- Network settings -------------------------------------------------------------------
 //DHCP cient active
@@ -55,13 +58,33 @@
 #define SQL_CLIENT 0
 
 //IP-Adress of Server and Name of Folder with Web-Form to access SQL Database
-#define SQLSERVER "192.168.178.6"
+#define SQL_SERVER 192,168,178,6
 
 //Page for operational DB
-#define DATABASE  "HomeData"
+#define SQL_DATABASE  "HomeData"
+
+// Table name 
+#define SQL_TABLE "ZISTERNE"
+
+//SQL Port
+#define SQL_PORT 3307
+
+//SQL User
+#define SQL_USR "zisterne"
+
+//SQL Passwort
+#define SQL_PWD "A1b2c3d4e5f6_"
 
 // --- Logging level ------------------------------------------------------------------------
 // Combine Bits for required logging level
+// LOGLVL_NORMAL   Bit 0: Normal logging
+// LOGLVL_WEB      Bit 1: Web server access
+// LOGLVL_ALL      Bit 2: Single measurement values
+// LOGLVL_CCU      Bit 3: CCU access
+// LOGLVL_SYSTEM   Bit 4: System logging (NTP etc)
+// LOGLVL_TRAP     Bit 5: Trap for ETH+SD CS signal setting
+// LOGLVL_EEP      Bit 6: EEPROM Dump
+// LOGLVL_SQL      Bit 7: SQL Server details
 #define LOGLEVEL   LOGLVL_NORMAL
 
 //------------------------------------------------------------------------------------------------------------

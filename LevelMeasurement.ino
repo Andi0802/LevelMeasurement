@@ -35,6 +35,8 @@ const String cfgInfo = PRG_CFG;
 #include <NetEEPROM_defs.h>      // EEPROM Layout
 #include <Ucglib.h>              // UCG Lib https://github.com/olikraus/ucglib V1.5.2 
 #include <XPT2046_Touchscreen.h> // https://github.com/PaulStoffregen/XPT2046_Touchscreen Commit 1a27318
+#include <MySQL_Connection.h>    // https://github.com/ChuckBell/MySQL_Connector_Arduino
+#include <MySQL_Cursor.h>
 
 //Logging level Bitwise
 #define LOGLVL_NORMAL  1  //Bit 0: Normal logging
@@ -43,7 +45,7 @@ const String cfgInfo = PRG_CFG;
 #define LOGLVL_CCU     8  //Bit 3: CCU access
 #define LOGLVL_SYSTEM 16  //Bit 4: System logging (NTP etc)
 #define LOGLVL_TRAP   32  //Bit 5: Trap for ETH+SD CS signal setting
-#define LOGLVLEEP     64  //Bit 6: EEPROM Dump
+#define LOGLVL_EEP    64  //Bit 6: EEPROM Dump
 #define LOGLVL_SQL   128  //Bit 7: SQL Server details
 
 //Configuration
@@ -172,7 +174,7 @@ const PROGMEM unsigned char SAMPLES_STSIGNAL[EEP_NUM_HIST] = SAMPLES_STSIGNAL_DA
 
 // Enter a MAC address for your controller below.
 // Newer Ethernet shields have a MAC address printed on a sticker on the shield
-#ifdef USE_TEST_SYSTEM
+#if (USE_TEST_SYSTEM & 1)>0
   //MAC for testing system
   byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xEA };
   
@@ -180,10 +182,7 @@ const PROGMEM unsigned char SAMPLES_STSIGNAL[EEP_NUM_HIST] = SAMPLES_STSIGNAL_DA
   IPAddress ip(IP_ADR_TEST);
   IPAddress dns(IP_DNS_TEST);
   IPAddress gateway(IP_GWY_TEST);
-  IPAddress subnet(IP_SUB_TEST);
-  
-  // Reduce 60min Task to 2min
-  #define MIN60 2
+  IPAddress subnet(IP_SUB_TEST);   
 #else
   //MAC for operational system
   byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xEB };
@@ -192,11 +191,16 @@ const PROGMEM unsigned char SAMPLES_STSIGNAL[EEP_NUM_HIST] = SAMPLES_STSIGNAL_DA
   IPAddress ip(IP_ADR_FIXED);
   IPAddress dns(IP_DNS_FIXED);
   IPAddress gateway(IP_GWY_FIXED);
-  IPAddress subnet(IP_SUB_FIXED);
-  
-  // Reduce 60min Task to 60min
-  #define MIN60 60
+  IPAddress subnet(IP_SUB_FIXED);  
 #endif
+
+#if (USE_TEST_SYSTEM & 2)>0
+  // Reduce 60min Task to 2min
+  #define MIN60 2
+#else   
+  // Set 60min Task to 60min
+  #define MIN60 60  
+#endif 
 
 // Initialize the Ethernet client library
 // with the IP address and port of the server
@@ -223,8 +227,12 @@ EthernetServer server(80);
 
 // Definitions for SQL server
 #if SQL_CLIENT>0
-  char ExternalServer[] = SQLSERVER;    
-  char SQLDataBaseName[] = DATABASE;
+  IPAddress sql_addr(SQL_SERVER);
+  char SQLDataBaseName[] = SQL_DATABASE;
+  
+  // MySQL Connector constructor
+  MySQL_Connection MySQLCon((Client *)&client);    
+  
 #endif
 
 // --- Globals ---------------------------------------------------------------------------------------------------
@@ -374,7 +382,7 @@ void setup() {
     SD_State = SD_OK;
     WriteSystemLog(MSG_INFO,F("Initializing SD Card ok"));
   }
- 
+
   // Try Ethernet connection
   EthConnect();
 
@@ -386,6 +394,17 @@ void setup() {
   setSyncInterval(3600);       //1 hour updates
   now();                       //Synchronizes clock
 
+  #if SQL_CLIENT>0
+    WriteSystemLog(MSG_INFO,"Connection SQL server... ");
+    if (MySQLCon.connect(sql_addr, SQL_PORT, SQL_USR, SQL_PWD)) {
+      delay(1000);
+      WriteSystemLog(MSG_INFO,"SQL server connected.");
+    }
+    else {
+      WriteSystemLog(MSG_WARNING,"Connection SQL server failed. ");
+    }
+  #endif
+  
   //Read settings from EEPROM
   ReadEEPData();
 
@@ -403,6 +422,8 @@ void setup() {
   attachInterrupt(digitalPinToInterrupt(US_ECHO_PIN), ReceivePulse, CHANGE);
   pinMode(BUTTON_PIN,INPUT_PULLUP);
 
+  
+  
   //Send Message New Start  
   WriteSystemLog(MSG_INFO,F("System startup"));
   
@@ -557,18 +578,38 @@ void loop()
 
   //--- Measurement pulse Task -------------------------------------------------------
   //Start measurement puls
-  if (PulseCntr>0) {  
+  if (PulseCntr>0) {      
     //Send pulse and measure delay time  
     PulseCntr--;
     if (pos<100) {    
+  	  // Simulation without US sensor attached
+  	  #if (USE_TEST_SYSTEM & 3)>0
+  		if (stPulse==PLS_SEND) {
+  		  //Wait for pulse only if a pulse has been send previously
+  		  //Send time
+  		  tiReceivedPos=micros();
+  		  stPulse = PLS_RECEIVED_POS;		
+  		}
+  		else if (stPulse==PLS_RECEIVED_POS) {		
+  		  //Receive time: 10ms + 0,3ms*random
+  		  tiReceived=tiReceivedPos+10000+random(300);
+  		  stPulse = PLS_RECEIVED_NEG;		
+  	    }
+  	  #endif
+	  
       //State maschine for return pulse handling 
       switch (stPulse) {
         case PLS_IDLE: 
+          #if LOGLEVEL & LOGLVL_NORMAL
+          if (pos==0) {
+            WriteSystemLog(MSG_DEBUG,"Sending first pulse. Waiting for reponse");        
+          }
+          #endif
           //Send a pulse only if previous pulse has beed received                
           digitalWrite(US_TRIGGER_PIN, HIGH);        
           delay(2);
           digitalWrite(US_TRIGGER_PIN, LOW);                  
-        stPulse = PLS_SEND;
+          stPulse = PLS_SEND;
         break;
         
         case PLS_RECEIVED_NEG:
@@ -629,7 +670,8 @@ void loop()
             stPulse = PLS_IDLE;
           }
           break;  
-      }      
+      }	  	 
+	  
       #if DISP_ACTIVE==1
         // Show progress bar
         DispMeasProg(pos);

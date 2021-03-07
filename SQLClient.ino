@@ -1,118 +1,39 @@
-// Functions to handle SQL client
+// Functions to handle SQL client 
 
-/*
-  SQL-Server:
-  Data can be reviewed by
-  http://192.168.178.6/joomla/templates/HomeData/insertareg.php
-
-  PHP Files must be stored under web/joomla/templates/MyTemplates/
-  Matching PHP-Files:
-  connec.php:     Activates connection, called by add.php
-  add.php:        Adds data to data base
-  insertareg.php: Shows data and gives possibility to enter data
-
-  JOOMLA: Installation von PHPBridge 1.1.0
-  */
-  
-#if SQL_CLIENT>0
-void SendDataSQL(void) {
-  // Sends data to SQL server
-  byte steller;
-  unsigned long  tiTimeout;
-  bool stTimeout=false;
-  String _reqString;
-
-  if (ETH_State > ETH_FAIL) {
-    // Get Date String in format for SQL Server: "YYYY-MM-DD_HH:MM:SS"
-    String DateTimeSQL = MeasTimeStr;
-    DateTimeSQL.replace(" ", "_");
-
-    // Connect to SQL server
-    int res = client.connect(ExternalServer, 80);
-    if (res >= 0) {
-      // If connection can be established
-      #if LOGLEVEL & LOGLVL_SQL
-        WriteSystemLog(MSG_MED_DEBUG,"Connected to SQL server "+ExternalServer);
-      #endif
-      
-      // Make a HTTP request to write data to SQL Server
-      _reqString = "GET /joomla/templates/";
-      _reqString = _reqString + SQLDataBaseName;
-      _reqString = _reqString + "/add.php?Zeit=";
-      client.print(_reqString);
-      client.print(DateTimeSQL);  // Format: "YYYY-MM-DD_HH:MM:SS"
-      client.print("&hWaterActual=");
-      client.print(String(hWaterActual));
-      client.print("&volActual=");
-      client.print(volActual);
-      client.print("&rSignalHealth=");
-      client.print(String(rSignalHealth));
-      client.print("&stError=");
-      client.print(stError);
-      client.print("&volStdDev=");
-      client.print(volStdDev);
-      client.print("&volRefillTot=");
-      client.print(String(SettingsEEP.settings.volRefillTot));
-      client.print("&volRain24h=");
-      client.print(String(volRain24h));
-      client.print("&volRefillDiag1h=");
-      client.print(String(volRefillDiag1h));
-      client.print("&volDiffDiag1h=");
-      client.print(String(volDiffDiag1h));
-      client.print("&volDiffCalc1h=");
-      client.print(String(volDiffCalc1h));
-      client.print("&volDiff1h=");
-      client.print(volDiff1h);
-      client.print("&stFiltChkErr=");
-      client.print(stFiltChkErr);
-      client.print("&volRainDiag1h=");
-      client.print(String(volRainDiag1h));
-      
-      client.println("Host: "+String(ExternalServer));
-      client.println("Connection: close");
-      client.println();
-    }
-    else {
-      // Negative values marking an error
-      // if you didn't get a connection to the server:
-      WriteSystemLog(MSG_MED_ERROR,"connection failed to SQL server "+String(ExternalServer));
-    }
-    
-    // if there are incoming bytes available
-    // from the server, read them and print them:
-    if (client.available()) {
-      char c = client.read();
-      //Trigger WDT
-      TriggerWDT();
-      #if LOGLEVEL & LOGLVL_SQL
-        Serial.print(c);
-      #endif
-    }
-    
-    // if the server's disconnected, stop the client:
-    tiTimeout = millis()+5000;
-    while (client.connected() && (stTimeout==false)) {
-      //Trigger WDT
-      TriggerWDT();
-      if (millis()>tiTimeout) {
-        //Timeout
-        stTimeout=true;
-        #if LOGLEVEL & LOGLVL_NORMAL
-          WriteSystemLog(MSG_MED_ERROR,"Timeout: SQL server connection not ended");
-        #endif
-      }
-    }
-    if (!client.connected()) {
-      #if LOGLEVEL & LOGLVL_SQL
-        WriteSystemLog(MSG_MED_DEBUG,"disconnecting from SQL server");
-      #endif  
-      client.stop();
-    }
-  }
-  else {
-     #if LOGLEVEL & LOGLVL_NORMAL
-       WriteSystemLog(MSG_MED_ERROR,"No connection to SQL server");
-     #endif
-  }
+// Verbindung zum SQL Server herstellen
+void ConnectSQL(void) {
+ 
 }
-#endif
+
+void SendDataSQL(void) {
+  // Sends data to SQL server 
+  row_values *row = NULL;
+  long head_count = 0;
+  MySQL_Cursor *MySQLCur = new MySQL_Cursor(&MySQLCon);
+  
+  // Query head
+  String query = "INSERT INTO HomeData.ZISTERNE (Zeit, Level, Quantity, `Signal health`,Error,StDev,`Refill Quantity`,\
+                  `Rain Quantity 24h`,`Refill quantity 1h`,`Measured quantity change 1h`,`Calculated quantity change 1h`,\
+                  `Quantity difference`,`filter diagnosis`,`Rain quantity 1h`) VALUES (";
+  char chquery[1024]= "";
+
+  // Get Date String in format for SQL Server: "YYYY-MM-DD HH:MM:SS"
+  String DateTimeSQL = MeasTimeStr;
+
+  // Build query
+  query = query + "'" + DateTimeSQL + "'," + String(hWaterActual) + "," + String(volActual)+","+String(rSignalHealth) + ","+\
+          String(stError)+"," + String(volStdDev)+"," + String(SettingsEEP.settings.volRefillTot) +","+String(volRain24h)+","+\
+          String(volRefillDiag1h)+","+String(volDiffDiag1h)+","+String(volDiffCalc1h)+","+String(volDiff1h)+","+String(stFiltChkErr)+\
+          ","+String(volRainDiag1h)+");";
+  #if LOGLEVEL & LOGLVL_SQL
+    WriteSystemLog(MSG_DEBUG,query);
+  #endif
+  
+  // Execute the query
+  query.toCharArray(chquery,query.length());
+  MySQLCur->execute(chquery);
+  // Note: since there are no results, we do not need to read any data
+  // Deleting the cursor also frees up memory used
+  delete MySQLCur;   
+}
+
