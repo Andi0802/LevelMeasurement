@@ -102,7 +102,7 @@ void EthConnect(void)
   ip = Ethernet.localIP();
   gateway = Ethernet.gatewayIP();
   subnet = Ethernet.subnetMask();  
-  NetEEPROM.writeNet(mac, ip, gateway, subnet);
+  //NetEEPROM.writeNet(mac, ip, gateway, subnet);
 
   // print your local IP config
   #if LOGLEVEL & LOGLVL_SYSTEM

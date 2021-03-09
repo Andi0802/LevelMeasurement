@@ -6,17 +6,22 @@ void ReadEEPData(void)
   int i;
   byte _id;
   byte chk;
- 
+
+  // EEPROM Test active in LOGLVL_EEP
+  #if LOGLEVEL & LOGLVL_EEP          
+    // Test EEPROM
+    TestEEP();
+    // Show dump
+    DumpEEPData();
+  #endif
+  
   //Read data stream
   #if LOGLEVEL & LOGLVL_SYSTEM
     WriteSystemLog(MSG_INFO,F("Reading settings from EEP"));
   #endif  
   for (i = 0; i < EEPSize; i++) {
     SettingsEEP.SettingStream[i] = EEPROM.read(i);    
-  }
-  #if LOGLEVEL & LOGLVL_EEP      
-    DumpEEPData();
-  #endif
+  }  
 
   // Check plausibility
   chk = checksum(&SettingsEEP.SettingStream[1], EEPSize - 1);
@@ -24,7 +29,7 @@ void ReadEEPData(void)
     #if LOGLEVEL & LOGLVL_SYSTEM
       WriteSystemLog(MSG_INFO,F("EEP checksum ok "));
       WriteSystemLog(MSG_DEBUG,"EEPSize " + String(EEPSize) + " Byte");
-    #endif  
+    #endif      
   }
   else {    
    //Initialise new: Automatically takes the init data    
@@ -68,8 +73,7 @@ void ReadEEPData(void)
    //History sample data
    for (_id=0;_id<EEP_NUM_HIST;_id++) {
      SettingsEEP.settings.volRain1h[_id] = SAMPLES_VOLRAIN[_id];
-     SettingsEEP.settings.prcActual[_id] = 10; //byte(SAMPLES_PRCVOL[_id]);
-     //Serial.println(String(_id)+" ->"+ String(SettingsEEP.settings.prcActual[_id]));
+     SettingsEEP.settings.prcActual[_id] = byte(SAMPLES_PRCVOL[_id]);    
      SettingsEEP.settings.stSignal[_id]  = SAMPLES_STSIGNAL[_id];
    }
    SettingsEEP.settings.iWrPtrHist = 0;
@@ -102,6 +106,7 @@ void DumpEEPData(void)
   File logFile;
   String LogStr;
   unsigned int i;
+  byte eep_byte;
   
   WriteSystemLog(MSG_DEBUG,"EEP Data Dump");
 
@@ -112,10 +117,11 @@ void DumpEEPData(void)
         LogStr.concat("\n");
         LogStr.concat(String(i/16,HEX)+" ");
       }
-      if (SettingsEEP.SettingStream[i]<16) {
+      eep_byte = EEPROM.read(i);
+      if (eep_byte<16) {
         LogStr.concat("0");
       }        
-      LogStr.concat(String(SettingsEEP.SettingStream[i],HEX));  
+      LogStr.concat(String(eep_byte,HEX));  
       LogStr.concat(" ");
     }
     
@@ -159,6 +165,51 @@ void WriteEEPCurrData(unsigned char prcActual, float volRain1h, bool stLevel, bo
 
   //Write into EEP
   WriteEEPData();
+}
+
+void TestEEP()
+// Test function for EEPROM: Use only in test configuration to avoid unnecessary write cycles
+{
+  int len,ofs,i,ctrError;
+  byte buf;
+  
+  // Determine length of EEPROM
+  len = EEPROM.length();
+  WriteSystemLog(MSG_DEBUG,"EEPROM Size "+String(len));
+
+  // Determine offet
+  ofs = EEPROM.GetOffset();
+  WriteSystemLog(MSG_DEBUG,"EEPROM Offset "+String(ofs));
+
+  // Test only on free space (not NetEEPROM reserved)
+  len=len-ofs;
+
+  // Read all data in buffer
+  WriteSystemLog(MSG_DEBUG,"Performing EEPROM test");
+  ctrError=0;
+  for (i=0;i<len;i++) {
+    // Store original data
+    buf = EEPROM.read(i);
+    
+    //Write test data
+    EEPROM.write(i,(len-i)%256);
+
+    // Read and check test data
+    if (EEPROM.read(i)!=(len-i)%256) {
+      ctrError++;
+    }
+    
+    // Write back original data
+    EEPROM.write(i,buf);
+  }
+
+  // Show result
+  if (ctrError>0) {
+    WriteSystemLog(MSG_DEBUG,"EEPROM Error count: "+String(ctrError));
+  }
+  else {
+    WriteSystemLog(MSG_DEBUG,"EEPROM Check ok");
+  }
 }
 
 unsigned char checksum (unsigned char *ptr, size_t sz) 

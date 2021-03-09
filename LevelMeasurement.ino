@@ -231,8 +231,7 @@ EthernetServer server(80);
   char SQLDataBaseName[] = SQL_DATABASE;
   
   // MySQL Connector constructor
-  MySQL_Connection MySQLCon((Client *)&client);    
-  
+  MySQL_Connection MySQLCon((Client *)&client);      
 #endif
 
 // --- Globals ---------------------------------------------------------------------------------------------------
@@ -382,7 +381,7 @@ void setup() {
     SD_State = SD_OK;
     WriteSystemLog(MSG_INFO,F("Initializing SD Card ok"));
   }
-
+ 
   // Try Ethernet connection
   EthConnect();
 
@@ -394,15 +393,9 @@ void setup() {
   setSyncInterval(3600);       //1 hour updates
   now();                       //Synchronizes clock
 
+  // Connect to SQL server
   #if SQL_CLIENT>0
-    WriteSystemLog(MSG_INFO,"Connection SQL server... ");
-    if (MySQLCon.connect(sql_addr, SQL_PORT, SQL_USR, SQL_PWD)) {
-      delay(1000);
-      WriteSystemLog(MSG_INFO,"SQL server connected.");
-    }
-    else {
-      WriteSystemLog(MSG_WARNING,"Connection SQL server failed. ");
-    }
+    ConnectSQL();
   #endif
   
   //Read settings from EEPROM
@@ -421,8 +414,6 @@ void setup() {
   pinMode(US_ECHO_PIN, INPUT);
   attachInterrupt(digitalPinToInterrupt(US_ECHO_PIN), ReceivePulse, CHANGE);
   pinMode(BUTTON_PIN,INPUT_PULLUP);
-
-  
   
   //Send Message New Start  
   WriteSystemLog(MSG_INFO,F("System startup"));
@@ -785,12 +776,10 @@ void loop()
       
       //Write Log File
       #if LOGLEVEL & LOGLVL_NORMAL
-        WriteSystemLog(MSG_DEBUG,"Pulse counter "+String(PulseCntr));
-        WriteSystemLog(MSG_DEBUG,"Array position "+String(pos));
         WriteSystemLog(MSG_INFO,"Measured distance " + String(hMean) +" mm");
-        WriteSystemLog(MSG_DEBUG,"Actual Level " + String(hWaterActual) + " mm");
-        WriteSystemLog(MSG_DEBUG,"Actual volume " + String(volActual) + " Liter, StdDev: " +String(volStdDev) + " Liter");
-        WriteSystemLog(MSG_DEBUG,"Error status " + String(stError));
+        WriteSystemLog(MSG_INFO,"Actual Level " + String(hWaterActual) + " mm");
+        WriteSystemLog(MSG_INFO,"Actual volume " + String(volActual) + " Liter, StdDev: " +String(volStdDev) + " Liter");
+        WriteSystemLog(MSG_INFO,"Error status " + String(stError));
       #endif          
       
       //Get rain volume for last 24h, only if difference between last two measurements is more than 50min
