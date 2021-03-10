@@ -37,6 +37,7 @@ const String cfgInfo = PRG_CFG;
 #include <XPT2046_Touchscreen.h> // https://github.com/PaulStoffregen/XPT2046_Touchscreen Commit 1a27318
 #include <MySQL_Connection.h>    // https://github.com/ChuckBell/MySQL_Connector_Arduino
 #include <MySQL_Cursor.h>
+#include <MQTT.h>                // https://github.com/256dpi/arduino-mqtt
 
 //Logging level Bitwise
 #define LOGLVL_NORMAL  1  //Bit 0: Normal logging
@@ -195,17 +196,17 @@ const PROGMEM unsigned char SAMPLES_STSIGNAL[EEP_NUM_HIST] = SAMPLES_STSIGNAL_DA
 #endif
 
 #if (USE_TEST_SYSTEM & 2)>0
-  // Reduce 60min Task to 2min
-  #define MIN60 2
+  // Reduce Main Task to 2min
+  #define T_MAINTASK 15
 #else   
-  // Set 60min Task to 60min
-  #define MIN60 60  
+  // Set Main Task in min
+  #define T_MAINTASK 15  
 #endif 
 
 // Initialize the Ethernet client library
 // with the IP address and port of the server
 // that you want to connect to (port 80 is default for HTTP):
-EthernetClient client;
+//EthernetClient client;
 
 //UDP Client for NTP
 EthernetUDP ntpUDP;
@@ -227,11 +228,18 @@ EthernetServer server(80);
 
 // Definitions for SQL server
 #if SQL_CLIENT>0
+  EthernetClient EthClientSQL;
   IPAddress sql_addr(SQL_SERVER);
   char SQLDataBaseName[] = SQL_DATABASE;
   
   // MySQL Connector constructor
-  MySQL_Connection MySQLCon((Client *)&client);      
+  MySQL_Connection MySQLCon((Client *)&EthClientSQL);      
+#endif
+
+// Definitions for MQTT client
+#if MQTT_CLIENT>0
+  EthernetClient EthClientMQTT;
+  MQTTClient MQTT;
 #endif
 
 // --- Globals ---------------------------------------------------------------------------------------------------
@@ -397,6 +405,12 @@ void setup() {
   #if SQL_CLIENT>0
     ConnectSQL();
   #endif
+
+  // Activate MQTT Client
+  #if MQTT_CLIENT>0
+    MQTT_Init();
+    MQTT_Connect();
+  #endif
   
   //Read settings from EEPROM
   ReadEEPData();
@@ -496,7 +510,7 @@ void loop()
     }  
     
     //60min Task 
-    if (cnt60min < MIN60*600) {
+    if (cnt60min < T_MAINTASK*600) {
       cnt60min++;
     }
     else {
@@ -783,7 +797,7 @@ void loop()
       #endif          
       
       //Get rain volume for last 24h, only if difference between last two measurements is more than 50min
-      if (tiDiffMeasTime>max((MIN60-10),1)*60) {
+      if (tiDiffMeasTime>max((T_MAINTASK-10),1)*60) {
         volRain24h_old = volRain24h;
         #if HM_ACCESS_ACTIVE==1
           volRain24h = hm_get_datapoint(HM_DATAPOINT_RAIN24);
@@ -864,6 +878,11 @@ void loop()
       // Send data to SQL Client
       #if SQL_CLIENT>0
         SendDataSQL();
+      #endif
+
+      // Publish MQTT messages
+      #if MQTT_CLIENT>0
+        MQTT_Publish();
       #endif
 
       //Write to display
@@ -952,6 +971,11 @@ void loop()
       // Reset timer in min
       tiDispLED = 2; 
     }
+  #endif
+
+  #if MQTT_CLIENT>0
+    // Handle incomming MQTT messages
+    MQTT.loop();
   #endif
 
   //Update time

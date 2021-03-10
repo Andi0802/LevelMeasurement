@@ -239,6 +239,9 @@ void MonitorWebServer(void)
             client2.print(F("<table><tr><td>Messzeit</td><td>"));
             client2.print(MeasTimeStr);
             client2.print(F("</td></tr>"));
+            client2.print(F("<tr><td>Messperiode [min]</td><td>"));
+            client2.print(T_MAINTASK);
+            client2.print(F("</td></tr>"));
             client2.print(F("<tr><td>Messung aktiv [%]</td><td>"));
             if (stMeasAct) {
               client2.print(String(pos));  
@@ -274,7 +277,7 @@ void MonitorWebServer(void)
               client2.print(F("Kein Fehler erkannt"));
             }
             client2.print(F("</td></tr>"));  
-            client2.print(F("<tr><td>Regenmenge 1h [Liter]</td><td>"));
+            client2.print(F("<tr><td>Regenmenge letzte Periode [Liter]</td><td>"));
             client2.print(String(volRain1h));
             client2.print(F("</td></tr>"));  
             client2.print(F("<tr><td>Regenmenge 24h [Liter]</td><td>"));
@@ -307,16 +310,16 @@ void MonitorWebServer(void)
             client2.print(F("<table><tr><td>Diagnosezeit </td><td>"));
             client2.print(String(DiagTimeStr));
             client2.print(F("</td></tr>"));            
-            client2.print(F("<tr><td>Regenmenge 1h [mm]</td><td>"));
+            client2.print(F("<tr><td>Regenmenge letzte Periode [mm]</td><td>"));
             client2.print(String(volRainDiag1h));
             client2.print(F("</td></tr>"));              
-            client2.print(F("<tr><td>Nachspeisung 1h [Liter] </td><td>"));
+            client2.print(F("<tr><td>Nachspeisung letzte Periode [Liter] </td><td>"));
             client2.print(String(volRefillDiag1h));
             client2.print(F("</td></tr>"));          
             client2.print(F("<tr><td>Verbrauch 1h [Liter]</td><td>"));
             client2.print(String(VOL_USAGE_MAX_1H));
             client2.print(F("</td></tr>"));                
-            client2.print(F("<tr><td>Fuellstandsaenderung 1h [Liter] </td><td>"));
+            client2.print(F("<tr><td>Fuellstandsaenderung letzte Periode [Liter] </td><td>"));
             client2.print(String(volDiffDiag1h));            
             client2.print(F("</td></tr>"));            
             client2.print(F("<tr><td>Berechnete Fuellstandsaenderung 1h [Liter]</td><td>"));

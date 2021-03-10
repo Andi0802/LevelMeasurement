@@ -103,9 +103,9 @@ void LogDataHeader(void)
     logFile.print(F("StdDev [Liter];"));
     logFile.print(F("Refill Quantity [Liter];"));  
     logFile.print(F("Rain quantity 24h [Liter];"));  
-    logFile.print(F("Refill quantity 1h [Liter];"));  
-    logFile.print(F("Measured quantity change 1h [Liter];")); 
-    logFile.print(F("Calculated quantity change 1h [Liter];"));   
+    logFile.print(F("Refill quantity last period [Liter];"));  
+    logFile.print(F("Measured quantity change last period [Liter];")); 
+    logFile.print(F("Calculated quantity change last period [Liter];"));   
     logFile.print(F("Quantity difference [%];"));   
     logFile.print(F("Filter diagnosis [-];"));   
     logFile.print(F("Usage in last 24h [Liter];"));   
