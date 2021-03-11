@@ -75,6 +75,13 @@
 //SQL Passwort
 #define SQL_PWD "A1b2c3d4e5f6_"
 
+// --- MQTT Server settings -----------------------------------------------------------------
+// MQTT Client active
+#define MQTT_CLIENT 1
+
+// MQTT Server
+#define MQTT_SERVER "192.168.178.6"
+
 // --- Logging level ------------------------------------------------------------------------
 // Combine Bits for required logging level
 // LOGLVL_NORMAL   Bit 0: Normal logging

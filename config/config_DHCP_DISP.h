@@ -58,7 +58,7 @@
 #define SQL_CLIENT 0
 
 //IP-Adress of Server and Name of Folder with Web-Form to access SQL Database
-#define SQL_SERVER 192,168,178,6
+#define SQL_SERVER 192,168,0,1
 
 //Page for operational DB
 #define SQL_DATABASE  "HomeData"
@@ -73,7 +73,14 @@
 #define SQL_USR "zisterne"
 
 //SQL Passwort
-#define SQL_PWD "A1b2c3d4e5f6_"
+#define SQL_PWD " "
+
+// --- MQTT Server settings -----------------------------------------------------------------
+// MQTT Client active
+#define MQTT_CLIENT 0
+
+// MQTT Server
+#define MQTT_SERVER "192.168.178.6"
 
 // --- Logging level ------------------------------------------------------------------------
 // Combine Bits for required logging level

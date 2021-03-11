@@ -111,7 +111,7 @@ void DumpEEPData(void)
   WriteSystemLog(MSG_DEBUG,"EEP Data Dump");
 
   //Log data to SD Card
-  LogStr = "  0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F";    
+  LogStr = F("  0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F");    
     for (i = 0; i < EEPSize; i++) {
       if (i%16==0) {
         LogStr.concat("\n");
@@ -185,7 +185,7 @@ void TestEEP()
   len=len-ofs;
 
   // Read all data in buffer
-  WriteSystemLog(MSG_DEBUG,"Performing EEPROM test");
+  WriteSystemLog(MSG_DEBUG,F("Performing EEPROM test"));
   ctrError=0;
   for (i=0;i<len;i++) {
     // Store original data

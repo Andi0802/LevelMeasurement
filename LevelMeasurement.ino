@@ -230,7 +230,6 @@ EthernetServer server(80);
 #if SQL_CLIENT>0
   EthernetClient EthClientSQL;
   IPAddress sql_addr(SQL_SERVER);
-  char SQLDataBaseName[] = SQL_DATABASE;
   
   // MySQL Connector constructor
   MySQL_Connection MySQLCon((Client *)&EthClientSQL);      

@@ -21,7 +21,7 @@
     }
     
     // Subscribe
-    MQTT.subscribe("/Zisterne/Parameter/RefillLevel");
+    MQTT.subscribe(F("Zisterne/Parameter/RefillLevel"));
   }
   
   void MQTT_MsgRec(String &topic, String &payload)
@@ -30,8 +30,8 @@
     WriteSystemLog(MSG_INFO,"MQTT incoming: " + topic + " - " + payload);
 
     // Check topic
-    if (topic=="/Zisterne/Parameter/RefillLevel") {
-      SettingsEEP.settings.hRefill = payload.toInt();
+    if (topic==F("Zisterne/Parameter/RefillLevel")) {
+      SettingsEEP.settings.hRefill = min(max(payload.toInt(),0),60);
       WriteEEPData();
     }
   }
@@ -45,14 +45,14 @@
     }
   
     // Publish
-    MQTT.publish("Zisterne/Alive", MeasTimeStr);
-    MQTT.publish("Zisterne/MeasTime", MeasTimeStr);
-    MQTT.publish("Zisterne/Level", String(hWaterActual));
-    MQTT.publish("Zisterne/Volume", String(volActual));
-    MQTT.publish("Zisterne/SignalHealth", String(rSignalHealth));
-    MQTT.publish("Zisterne/Error", String(stError));
-    MQTT.publish("Zisterne/RefillTot", String(SettingsEEP.settings.volRefillTot));
-    MQTT.publish("Zisterne/RainTot", String(volRain24h));
-    MQTT.publish("Zisterne/DiffPer", String(volDiff1h));      
+    MQTT.publish(F("Zisterne/Alive"), MeasTimeStr);
+    MQTT.publish(F("Zisterne/MeasTime"), MeasTimeStr);
+    MQTT.publish(F("Zisterne/Level"), String(hWaterActual));
+    MQTT.publish(F("Zisterne/Volume"), String(volActual));
+    MQTT.publish(F("Zisterne/SignalHealth"), String(rSignalHealth));
+    MQTT.publish(F("Zisterne/Error"), String(stError));
+    MQTT.publish(F("Zisterne/RefillTot"), String(SettingsEEP.settings.volRefillTot));
+    MQTT.publish(F("Zisterne/RainTot"), String(volRain24h));
+    MQTT.publish(F("Zisterne/DiffPer"), String(volDiff1h));      
   }
 #endif    
