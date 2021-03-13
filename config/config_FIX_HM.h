@@ -55,7 +55,7 @@
 
 // --- SQL Server settings ------------------------------------------------------------------
 //SQL Client active
-#define SQL_CLIENT 0
+#define SQL_CLIENT 1
 
 //IP-Adress of Server and Name of Folder with Web-Form to access SQL Database
 #define SQL_SERVER 192,168,178,6
