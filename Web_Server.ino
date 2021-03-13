@@ -199,7 +199,7 @@ void MonitorWebServer(void)
             stOption |= getOption(inString, "hSensorPosSet", 205, 300, &SettingsEEP.settings.hSensorPos) << 5;
             stOption |= getOption(inString, "hOverflowSet", 180, 220, &SettingsEEP.settings.hOverflow) << 6;
             stOption |= getOption(inString, "hRefillSet", 0, 60, &SettingsEEP.settings.hRefill) << 7;
-            stOption |= getOption(inString, "volRefillSet", 20, 1000, &SettingsEEP.settings.volRefill) << 8;
+            stOption |= getOption(inString, "volRefillSet", 20, 1000, &SettingsEEP.settings.volRefillMax) << 8;
             stOption |= getOption(inString, "dvolRefillSet", 2, 20, &SettingsEEP.settings.dvolRefill) << 9;          
             stOption |= getOption(inString, "prcVolDvtThres", 0, 500, &SettingsEEP.settings.prcVolDvtThres) << 10;          
             stOption |= getOption(inString, "aRoof", 0, 500, &SettingsEEP.settings.aRoof) << 11;          
@@ -278,10 +278,10 @@ void MonitorWebServer(void)
             }
             client2.print(F("</td></tr>"));  
             client2.print(F("<tr><td>Regenmenge letzte Periode [Liter]</td><td>"));
-            client2.print(String(volRain1h));
+            client2.print(String(volRain1Per));
             client2.print(F("</td></tr>"));  
             client2.print(F("<tr><td>Regenmenge laufend [Liter]</td><td>"));
-            client2.print(String(volRain24h));            
+            client2.print(String(volRainTot));            
             client2.print(F("</td></tr></table>"));  
             client2.println(F("<H3>Nachspeisung</h3>"));
             client2.print(F("<table><tr><td>Nachspeisung aktiv</td><td>"));
@@ -316,13 +316,13 @@ void MonitorWebServer(void)
             client2.print(F("<tr><td>Nachspeisung letzte Periode [Liter] </td><td>"));
             client2.print(String(volRefillDiag1h));
             client2.print(F("</td></tr>"));          
-            client2.print(F("<tr><td>Verbrauch 1h [Liter]</td><td>"));
+            client2.print(F("<tr><td>Verbrauch pro Periode [Liter]</td><td>"));
             client2.print(String(VOL_USAGE_MAX_1H));
             client2.print(F("</td></tr>"));                
             client2.print(F("<tr><td>Fuellstandsaenderung letzte Periode [Liter] </td><td>"));
             client2.print(String(volDiffDiag1h));            
             client2.print(F("</td></tr>"));            
-            client2.print(F("<tr><td>Berechnete Fuellstandsaenderung 1h [Liter]</td><td>"));
+            client2.print(F("<tr><td>Berechnete Fuellstandsaenderung pro Periode [Liter]</td><td>"));
             client2.print(String(volDiffCalc1h));
             client2.print(F("</td></tr>"));              
             client2.print(F("<tr><td>Abweichung [%]</td><td>"));
@@ -392,7 +392,7 @@ void MonitorWebServer(void)
 //                client2.print(F("</td><td>"));                        
 //                client2.print(String(SettingsEEP.settings.prcActual[idxRd]));   
 //                client2.print(F("</td><td>"));   
-//                client2.print(String(SettingsEEP.settings.volRain1h[idxRd]));                       
+//                client2.print(String(SettingsEEP.settings.volRain1Per[idxRd]));                       
 //                client2.print(F("</td><td>"));                   
 //                client2.print(String(((SettingsEEP.settings.stSignal[idxRd]) >> 2)*CONV_REFILL));    
 //                client2.print(F("</td><td>"));                   
@@ -463,14 +463,14 @@ void MonitorWebServer(void)
             client2.println(F("</td><td> <input type='text' name='prcVolDvtThres'></td></tr>"));                
             
             client2.print(F("<tr><td>Maximales Nachspeisevolumen [l]: </td><td>"));
-            client2.print(SettingsEEP.settings.volRefill);            
+            client2.print(SettingsEEP.settings.volRefillMax);            
             client2.println(F("</td><td> <input type='text' name='volRefillSet'></td></tr>"));
 
             client2.print(F("<tr><td>Nachspeisung Volumenstrom [l/min]: </td><td>"));
             client2.print(SettingsEEP.settings.dvolRefill);            
             client2.println(F("</td><td> <input type='text' name='dvolRefillSet'></td></tr>"));                
 
-            client2.print(F("<tr><td>Minimal erforderliche Regenmenge in 1h fuer Filterdiagnose [mm]: </td><td>"));
+            client2.print(F("<tr><td>Minimal erforderliche Regenmenge pro Periode fuer Filterdiagnose [mm]: </td><td>"));
             client2.print(SettingsEEP.settings.volRainMin);            
             client2.println(F("</td><td> <input type='text' name='volRainMin'></td></tr>"));                
             

@@ -47,7 +47,7 @@ void ReadEEPData(void)
    SettingsEEP.settings.hSensorPos = 240;           //Height of sensor above base area [cm]
    SettingsEEP.settings.hOverflow = 200;            //Height of overflow device [cm]
    SettingsEEP.settings.hRefill = 20;               //Height for refilling start [cm]
-   SettingsEEP.settings.volRefill = 20 ;            //Volume to refill [l]
+   SettingsEEP.settings.volRefillMax = 400;         //Maximum volume to refill [l]
    SettingsEEP.settings.dvolRefill = 20;            //Mass flow of refiller [l/sec]  
    SettingsEEP.settings.volRefillTot=0;             //Refilling volume total [l]
    SettingsEEP.settings.aRoof=100;                  //Area of roof [m^2]
@@ -72,7 +72,7 @@ void ReadEEPData(void)
 
    //History sample data
    for (_id=0;_id<EEP_NUM_HIST;_id++) {
-     SettingsEEP.settings.volRain1h[_id] = SAMPLES_VOLRAIN[_id];
+     SettingsEEP.settings.volRain1Per[_id] = SAMPLES_VOLRAIN[_id];
      SettingsEEP.settings.prcActual[_id] = byte(SAMPLES_PRCVOL[_id]);    
      SettingsEEP.settings.stSignal[_id]  = SAMPLES_STSIGNAL[_id];
    }
@@ -140,7 +140,7 @@ void DumpEEPData(void)
   Serial.println(LogStr);
 }
 
-void WriteEEPCurrData(unsigned char prcActual, float volRain1h, bool stLevel, bool stRain, unsigned int volRefill1h)
+void WriteEEPCurrData(unsigned char prcActual, float volRain1Per, bool stLevel, bool stRain, unsigned int volRefill1h)
 //Writes current values into history buffer
 { 
   byte stSignal=0;
@@ -155,7 +155,7 @@ void WriteEEPCurrData(unsigned char prcActual, float volRain1h, bool stLevel, bo
   stSignal = stSignal | (round(volRefill1h/CONV_REFILL)<<2);
 
   //Write data into EEP
-  SettingsEEP.settings.volRain1h[SettingsEEP.settings.iWrPtrHist] = float2uint8(volRain1h,CONV_RAIN);
+  SettingsEEP.settings.volRain1Per[SettingsEEP.settings.iWrPtrHist] = float2uint8(volRain1Per,CONV_RAIN);
   SettingsEEP.settings.prcActual[SettingsEEP.settings.iWrPtrHist] = prcActual;
   SettingsEEP.settings.stSignal[SettingsEEP.settings.iWrPtrHist]  = stSignal;
    

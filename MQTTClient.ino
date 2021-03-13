@@ -66,7 +66,7 @@
     MQTT.publish(F("Zisterne/SignalHealth"), String(rSignalHealth));
     MQTT.publish(F("Zisterne/Error"), String(stError));
     MQTT.publish(F("Zisterne/RefillTot"), String(SettingsEEP.settings.volRefillTot));
-    MQTT.publish(F("Zisterne/RainTot"), String(volRain24h));
+    MQTT.publish(F("Zisterne/RainTot"), String(volRainTot));
     MQTT.publish(F("Zisterne/DiffPer"), String(volDiff1h));      
   }
 #endif    

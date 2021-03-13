@@ -29,7 +29,7 @@ void LogData(void)
     logFile.print(F(";"));
     logFile.print(volStdDev);        logFile.print(F(";"));
     logFile.print(SettingsEEP.settings.volRefillTot);   logFile.print(F(";"));
-    logFile.print(volRain24h);        logFile.print(F(";"));
+    logFile.print(volRainTot);        logFile.print(F(";"));
 
     //Check if Diagnosis log is required
     if (stFilterCheck==FILT_DIAG) {      

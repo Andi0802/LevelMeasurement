@@ -291,8 +291,8 @@ unsigned char stMeasAct=1;         //Request for measurement, start measurement 
 unsigned char stFilterCheck=FILT_OFF; //Filter diagnosis
 unsigned char stFiltChkErr;        //Result filter check
 float volRainDiag1h;               //Rain in 1h for Diagnosis
-float volRain24h_old=-1;           //Rain in 24h, 1 h ago (-1: invalid)
-float volRain1h;                   //Rain in last 1h for Diagnosis
+float volRain24h_old=-1;           //Total rain, 1 period ago (-1: invalid)
+float volRain1Per;                   //Rain in last 1h for Diagnosis
 bool stRain1h;                     //Status of 1h rain measurements
 unsigned long volRefillFilt24h;    //Stored value of Refilling volume 24h past
 unsigned long volRefillFilt1h;     //Stored value of Refilling volume 1h past
@@ -304,7 +304,7 @@ unsigned int  volRefill1h;         //Refilled volume in 1h
 unsigned int  volRefillDiag1h;     //Refilled volume in 1h for Diagnosis
 unsigned int  volOld;              //Old volume for tendency 
 int volDiff1h;                     //Volume change in 1h (tendency)
-float volRain24h=-1;               //Rain in last 24h (-1: invalid)
+float volRainTot=-1;               //Total rain (-1: invalid)
 int volDiff24h;                    //Difference volume measurement in 24h calculated each hour
 int volDiff24h1d;                  //Difference volume measurement in 24h calculated once a day
 int volDiffDiag1h;                 //Difference volume measurement in 1h for Diagnosis
@@ -337,7 +337,7 @@ struct settings_t {
   int hSensorPos;             //Height of sensor above base area [cm]
   int hOverflow;              //Height of overflow device [cm]
   int hRefill;                //Height for refilling start [cm]
-  int volRefill;              //Maximum volume to refill [l]
+  int volRefillMax;           //Maximum volume to refill [l]
   int dvolRefill;             //Mass flow of refiller [l/sec]  
   unsigned long volRefillTot;  //Refilling volume total [l]
   unsigned long tiRefillReset; //Timestamp of last reset volRefillTot
@@ -348,7 +348,7 @@ struct settings_t {
   int volRainMin;              //Minimum Rain Volume in 24h to activate filter diagnosis
   int volUsage24h[NUM_USAGE_AVRG]; //Last values of usage calculation
   unsigned char iDay;          //Last index of entry in volUsage24h
-  unsigned char volRain1h[EEP_NUM_HIST]; //1h Rain quantity history points 1 = 0.3 Liter > 255 = 85l
+  unsigned char volRain1Per[EEP_NUM_HIST]; //1h Rain quantity history points 1 = 0.3 Liter > 255 = 85l
   byte prcActual[EEP_NUM_HIST]; //Volume history points
   unsigned char stSignal[EEP_NUM_HIST];  //Status of signal
   unsigned char iWrPtrHist;              //History write pointer
@@ -560,7 +560,7 @@ void loop()
       volRefillReq = int(max(20,long(SettingsEEP.settings.hRefill)*long(SettingsEEP.settings.aBaseArea)/1000-volActual));
 
       // Limit to maximum of volRefill
-      volRefillReq = min(int(SettingsEEP.settings.volRefill), volRefillReq);      
+      volRefillReq = min(int(SettingsEEP.settings.volRefillMax), volRefillReq);      
 
       // Refill function
       stRefill = Refill(volRefillReq);
@@ -813,39 +813,39 @@ void loop()
         WriteSystemLog(MSG_INFO,"Error status " + String(stError));
       #endif          
       
-      //Get rain volume for last 24h, only if difference between last two measurements is more than 50min
-      if (tiDiffMeasTime>max((T_MAINTASK-10),1)*60) {
-        volRain24h_old = volRain24h;
+      //Get total rain volume only if difference between last two measurements is more than one meas. period
+      if (tiDiffMeasTime>max((T_MAINTASK-2),1)*60) {
+        volRain24h_old = volRainTot;
         #if HM_ACCESS_ACTIVE==1
-          volRain24h = hm_get_datapoint(HM_DATAPOINT_RAIN24);
+          volRainTot = hm_get_datapoint(HM_DATAPOINT_RAIN24);
           //Offen: Updatezeit lesen, Datenpunktnummer ermitteln
           //falls Wert nicht aktuell: Fehler: keine Aktuelle Regenmenge     
         #else
           //No Homematic access: deactivate
-          volRain24h = -1; 
+          volRainTot = -1; 
         #endif
   
         //Calculate rain within last 1h
         if (volRain24h_old>-1) {
-          volRain1h = max(volRain24h-volRain24h_old,0);
+          volRain1Per = max(volRainTot-volRain24h_old,0);
           stRain1h=true;
         }
         else {
           //after new start: Initialize with 0 until old value is available
-          volRain1h = 0;
+          volRain1Per = 0;
           stRain1h=false;
         }
   
         #if LOGLEVEL & LOGLVL_NORMAL
-          WriteSystemLog(MSG_INFO,"Rain in last 24h from weather station [mm]: "+String(volRain24h));
-          WriteSystemLog(MSG_INFO,"Rain in last  1h from weather station [mm]: "+String(volRain1h));
+          WriteSystemLog(MSG_INFO,"Total rain from weather station [mm]: "+String(volRainTot));
+          WriteSystemLog(MSG_INFO,"Rain in last period from weather station [mm]: "+String(volRain1Per));
         #endif
 
         //Calculate 1h refilling volume
         volRefill1h = SettingsEEP.settings.volRefillTot - volRefillFilt1h;
     
         //Check filter if rain within last hour is above threshold and volume is below 90% of maximum volume
-        if ((volRain1h>SettingsEEP.settings.volRainMin) && (volActual<0.9*volMax) && (volActualFilt1h>0)) {
+        if ((volRain1Per>SettingsEEP.settings.volRainMin) && (volActual<0.9*volMax) && (volActualFilt1h>0)) {
           //Filter check
           CheckFilter();
         }
@@ -862,7 +862,7 @@ void loop()
         }
 
         //Write data to EEP History
-        WriteEEPCurrData(prcActual, volRain1h, (rSignalHealth>SIGNAL_HEALTH_MIN), stRain1h, volRefill1h);              
+        WriteEEPCurrData(prcActual, volRain1Per, (rSignalHealth>SIGNAL_HEALTH_MIN), stRain1h, volRefill1h);              
       }
 
       //Calcluate usage per day if hour=0 and rain within last 24h is zero
@@ -870,7 +870,7 @@ void loop()
       idx24h = (SettingsEEP.settings.iWrPtrHist-1-24+EEP_NUM_HIST)%EEP_NUM_HIST;      
       volDiff24h =  volActual - (volMax* (long) SettingsEEP.settings.prcActual[idx24h])/100;      
       if (hour()==0) {
-        if ((volRain24h<MAX_VOL_NORAIN) && (volActualFilt24h>0)) {
+        if ((abs(volRainTot-volRain24h_old)<MAX_VOL_NORAIN) && (volActualFilt24h>0)) {
            //Usage calulation: Take over 24h Difference to store it
            volDiff24h1d = volDiff24h;
            CalculateDailyUsage();
@@ -1075,7 +1075,7 @@ void CheckFilter() {
     DiagTimeStr = getDateTimeStr(); 
 
     //Store 1h rain value for diagnosis
-    volRainDiag1h = volRain1h;
+    volRainDiag1h = volRain1Per;
     
     //Capture 1h refilling volume
     volRefillDiag1h = volRefill1h;
@@ -1084,7 +1084,7 @@ void CheckFilter() {
     volDiffDiag1h =  volActual - volActualFilt1h;
         
     //Filter efficiency as function of rain volume in last hour
-    _prcFiltEff = Curve(SettingsEEP.settings.prcFiltEff_x,SettingsEEP.settings.prcFiltEff_y,5,volRain1h);
+    _prcFiltEff = Curve(SettingsEEP.settings.prcFiltEff_x,SettingsEEP.settings.prcFiltEff_y,5,volRain1Per);
     
     //Theoretical volume change within 1h
     volDiffCalc1h = volRainDiag1h*SettingsEEP.settings.aRoof*_prcFiltEff/100 + volRefillDiag1h - VOL_USAGE_MAX_1H;

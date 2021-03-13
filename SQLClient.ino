@@ -27,7 +27,7 @@ void SendDataSQL(void) {
   
   // Build query
   query = "INSERT INTO "+String(SQL_DATABASE)+"."+String(SQL_TABLE)+query + "'" + MeasTimeStr + "'," + String(hWaterActual) + "," + String(volActual)+","+String(rSignalHealth) + ","+\
-          String(stError)+"," + String(volStdDev)+"," + String(SettingsEEP.settings.volRefillTot) +","+ReplaceNAN(volRain24h,"0")+","+\
+          String(stError)+"," + String(volStdDev)+"," + String(SettingsEEP.settings.volRefillTot) +","+ReplaceNAN(volRainTot,"0")+","+\
           String(volRefillDiag1h)+","+String(volDiffDiag1h)+","+String(volDiffCalc1h)+","+String(volDiff1h)+","+String(stFiltChkErr)+\
           ","+String(volRainDiag1h)+");";
   #if LOGLEVEL & LOGLVL_SQL
