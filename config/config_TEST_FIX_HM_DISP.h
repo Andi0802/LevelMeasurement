@@ -5,11 +5,11 @@
 //--- Configuration switches ---------------------------------------------------------------------------------
 // --- Test system ------------------------------------------------------------------------
 // Test-System if USE_TEST_SYSTEM is defined (0 = No test system used, productive system)
-// Bit  
-//   0: IP Address is fixed, diferent MAC address
-//   1: 60min Task reduced to 2min
-//   2: Simulated measurement results are used
-#define USE_TEST_SYSTEM 7
+// Mask           Bit  
+// TEST_MACIP     0   Use different MAC and IP address
+// TEST_TASKTIME  1   Reduce Task time to 2min
+// TEST_USDATA    2   Use simulated esponse time
+#define USE_TEST_SYSTEM TEST_MACIP + TEST_TASKTIME + TEST_USDATA
 
 // --- Network settings -------------------------------------------------------------------
 //DHCP cient active

@@ -20,8 +20,13 @@
       delay(1000);
     }
     
-    // Subscribe
-    MQTT.subscribe(F("Zisterne/Parameter/RefillLevel"));
+    // Subscribe   
+    MQTT.subscribe(F("Zisterne/Parameter/RefillLevel"));  
+    #if (USE_TEST_SYSTEM & TEST_USDATA)
+      //Subscribe simulated runtimes and noise for test system
+      MQTT.subscribe(F("Zisterne/Simulation/testtime"));
+      MQTT.subscribe(F("Zisterne/Simulation/testnoise"));      
+    #endif
   }
   
   void MQTT_MsgRec(String &topic, String &payload)
@@ -34,6 +39,15 @@
       SettingsEEP.settings.hRefill = min(max(payload.toInt(),0),60);
       WriteEEPData();
     }
+    #if (USE_TEST_SYSTEM & TEST_USDATA)
+      //Receive simulated runtimes and noise for test system
+      if (topic==F("Zisterne/Simulation/testtime")) {
+        test_time = min(max(payload.toInt(),0),50000);        
+      }
+      if (topic==F("Zisterne/Simulation/testnoise")) {
+        test_noise = min(max(payload.toInt(),0),5000);        
+      }      
+    #endif
   }
   
   void MQTT_Publish(void)

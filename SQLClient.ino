@@ -1,8 +1,5 @@
 // Functions to handle SQL client 
 
-// TODO:
-// - Check NANs in query
-
 void ConnectSQL(void) {
   // Connects to SQL server
   WriteSystemLog(MSG_INFO,"Connection SQL server... ");

@@ -199,7 +199,7 @@ void MonitorWebServer(void)
             stOption |= getOption(inString, "hSensorPosSet", 205, 300, &SettingsEEP.settings.hSensorPos) << 5;
             stOption |= getOption(inString, "hOverflowSet", 180, 220, &SettingsEEP.settings.hOverflow) << 6;
             stOption |= getOption(inString, "hRefillSet", 0, 60, &SettingsEEP.settings.hRefill) << 7;
-            stOption |= getOption(inString, "volRefillSet", 10, 50, &SettingsEEP.settings.volRefill) << 8;
+            stOption |= getOption(inString, "volRefillSet", 20, 1000, &SettingsEEP.settings.volRefill) << 8;
             stOption |= getOption(inString, "dvolRefillSet", 2, 20, &SettingsEEP.settings.dvolRefill) << 9;          
             stOption |= getOption(inString, "prcVolDvtThres", 0, 500, &SettingsEEP.settings.prcVolDvtThres) << 10;          
             stOption |= getOption(inString, "aRoof", 0, 500, &SettingsEEP.settings.aRoof) << 11;          
@@ -280,7 +280,7 @@ void MonitorWebServer(void)
             client2.print(F("<tr><td>Regenmenge letzte Periode [Liter]</td><td>"));
             client2.print(String(volRain1h));
             client2.print(F("</td></tr>"));  
-            client2.print(F("<tr><td>Regenmenge 24h [Liter]</td><td>"));
+            client2.print(F("<tr><td>Regenmenge laufend [Liter]</td><td>"));
             client2.print(String(volRain24h));            
             client2.print(F("</td></tr></table>"));  
             client2.println(F("<H3>Nachspeisung</h3>"));
@@ -462,7 +462,7 @@ void MonitorWebServer(void)
             client2.print(SettingsEEP.settings.prcVolDvtThres);            
             client2.println(F("</td><td> <input type='text' name='prcVolDvtThres'></td></tr>"));                
             
-            client2.print(F("<tr><td>Nachspeisevolumen [l]: </td><td>"));
+            client2.print(F("<tr><td>Maximales Nachspeisevolumen [l]: </td><td>"));
             client2.print(SettingsEEP.settings.volRefill);            
             client2.println(F("</td><td> <input type='text' name='volRefillSet'></td></tr>"));
 

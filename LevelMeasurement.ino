@@ -49,6 +49,11 @@ const String cfgInfo = PRG_CFG;
 #define LOGLVL_EEP    64  //Bit 6: EEPROM Dump
 #define LOGLVL_SQL   128  //Bit 7: SQL Server details
 
+//Test levels
+#define TEST_MACIP     1  //Bit 0: Use different MAC and IP address
+#define TEST_TASKTIME  2  //Bit 1: Reduce Task time to 2min
+#define TEST_USDATA    4  //Bit 2: Use simulated esponse time
+
 //Configuration
 #include "config.h"
 
@@ -197,7 +202,7 @@ const PROGMEM unsigned char SAMPLES_STSIGNAL[EEP_NUM_HIST] = SAMPLES_STSIGNAL_DA
 
 #if (USE_TEST_SYSTEM & 2)>0
   // Reduce Main Task to 2min
-  #define T_MAINTASK 15
+  #define T_MAINTASK 2
 #else   
   // Set Main Task in min
   #define T_MAINTASK 15  
@@ -316,6 +321,11 @@ unsigned char cntTestFilt=0;       //Testing for filter diagnosis
 byte PulseCntr;                    //Counter for US pulses
 int idxCur;                        //Index for Curve
 
+#if USE_TEST_SYSTEM & TEST_USDATA
+  int test_time=3000;              //signal runtime for test 
+  int test_noise=300;              //noise of signal runtime
+#endif
+
 //Typedefs
 // Settings in EEPROM
 struct settings_t {
@@ -327,7 +337,7 @@ struct settings_t {
   int hSensorPos;             //Height of sensor above base area [cm]
   int hOverflow;              //Height of overflow device [cm]
   int hRefill;                //Height for refilling start [cm]
-  int volRefill;              //Volume to refill [l]
+  int volRefill;              //Maximum volume to refill [l]
   int dvolRefill;             //Mass flow of refiller [l/sec]  
   unsigned long volRefillTot;  //Refilling volume total [l]
   unsigned long tiRefillReset; //Timestamp of last reset volRefillTot
@@ -494,6 +504,7 @@ void loop()
   String strLog;  
   double _hStdDev;   
   int idx24h;
+  int volRefillReq;
 
   //--- 100ms Task -------------------------------------------------------------------
   if (Time_100ms > 0) {
@@ -545,7 +556,14 @@ void loop()
       
     //Check if Refilling is needed
     if ((stRefillReq>0) || (stRefill>0) || (stButton>0)) {          
-      stRefill = Refill(int(SettingsEEP.settings.volRefill));
+      // Calculate required refill quantity and limit to minimum of 20l
+      volRefillReq = int(max(20,long(SettingsEEP.settings.hRefill)*long(SettingsEEP.settings.aBaseArea)/1000-volActual));
+
+      // Limit to maximum of volRefill
+      volRefillReq = min(int(SettingsEEP.settings.volRefill), volRefillReq);      
+
+      // Refill function
+      stRefill = Refill(volRefillReq);
   
       //If refilling is ready and was triggered by button, reset Button
       if ((stButton>0) && (stRefill==0)) {
@@ -587,18 +605,18 @@ void loop()
     PulseCntr--;
     if (pos<100) {    
   	  // Simulation without US sensor attached
-  	  #if (USE_TEST_SYSTEM & 3)>0
-  		if (stPulse==PLS_SEND) {
-  		  //Wait for pulse only if a pulse has been send previously
-  		  //Send time
-  		  tiReceivedPos=micros();
-  		  stPulse = PLS_RECEIVED_POS;		
-  		}
-  		else if (stPulse==PLS_RECEIVED_POS) {		
-  		  //Receive time: 10ms + 0,3ms*random
-  		  tiReceived=tiReceivedPos+10000+random(300);
-  		  stPulse = PLS_RECEIVED_NEG;		
-  	    }
+  	  #if (USE_TEST_SYSTEM & TEST_USDATA)>0
+    		if (stPulse==PLS_SEND) {
+    		  //Wait for pulse only if a pulse has been send previously
+    		  //Send time
+    		  tiReceivedPos=micros();
+    		  stPulse = PLS_RECEIVED_POS;		
+    		}
+    		else if (stPulse==PLS_RECEIVED_POS) {		
+    		  //Receive time: 10ms + 0,3ms*random
+    		  tiReceived=tiReceivedPos+test_time-int(test_noise>>1)+random(test_noise);
+    		  stPulse = PLS_RECEIVED_NEG;		
+    	    }
   	  #endif
 	  
       //State maschine for return pulse handling 
@@ -1107,20 +1125,23 @@ unsigned char Refill(int volRefillDes)
   if (volRefillDes>0) {   
     // Desired quantity > 0    
     //Remember start of refilling
-    _tiNow = timeClient.getEpochTime();
+    _tiNow = getLocTime();
     
-    //Get pin state of refiller
+    //Get pin state of refiller    
     _stRefiller = digitalRead(SOLONOID_PIN);
+    
     
     if (_stRefiller==0) {
       //Refilling not in progress: Start it
       digitalWrite(SOLONOID_PIN,HIGH);         
       digitalWrite(REFLED_PIN,HIGH);
+    
       //Calculate required duration
-      _tiRefillDes = (volRefillDes*60)/(long (SettingsEEP.settings.dvolRefill));
+      _tiRefillDes = (long(volRefillDes)*60)/(long (SettingsEEP.settings.dvolRefill));
       tiRefillerOn = _tiNow;
       tiRefillerOff = _tiNow + _tiRefillDes; 
-      #if LOGLEVEL & LOGLVL_NORMAL
+      #if LOGLEVEL & LOGLVL_NORMAL      
+        WriteSystemLog(MSG_INFO,"Refilling "+String(volRefillDes));      
         WriteSystemLog(MSG_INFO,"Refilling on. Duration "+String(_tiRefillDes) + " s");
         WriteSystemLog(MSG_INFO,"Off-Time: " + String(time2DateTimeStr(tiRefillerOff)));
       #endif 
@@ -1131,6 +1152,7 @@ unsigned char Refill(int volRefillDes)
         //Refilling off
         digitalWrite(SOLONOID_PIN, LOW);        
         digitalWrite(REFLED_PIN,LOW);
+      
         //Remember actually refilled volume
         _tiRefill = _tiNow - tiRefillerOn;
         _volRefill = (unsigned long) (_tiRefill*(long (SettingsEEP.settings.dvolRefill))/60);
