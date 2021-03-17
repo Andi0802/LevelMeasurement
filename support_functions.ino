@@ -195,9 +195,20 @@ void resetFunc (void)
 }
 
 void TriggerWDT(void)
-// Trigger watchdog timer
+// Trigger watchdog timer with Watchdog reset
 {  
   wdt_reset();
+}
+
+void delayWdt(unsigned long time)
+// Waits time ms with Wdt retrigger
+{
+  unsigned long cnt;
+  for(cnt=0;cnt<time;cnt++) {
+    // Trigger Watchdog
+    TriggerWDT(); 
+    delay(1);
+  }
 }
 
 //--- Sort and statistic functions -----------------------------------------------------------------------------

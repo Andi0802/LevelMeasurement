@@ -410,11 +410,6 @@ void setup() {
   setSyncInterval(3600);       //1 hour updates
   now();                       //Synchronizes clock
 
-  // Connect to SQL server
-  #if SQL_CLIENT>0
-    ConnectSQL();
-  #endif
-
   // Activate MQTT Client
   #if MQTT_CLIENT>0
     MQTT_Init();

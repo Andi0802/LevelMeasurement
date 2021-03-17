@@ -14,19 +14,31 @@
   void MQTT_Connect(void)
   // Connect to MQTT server
   {  
-    WriteSystemLog(MSG_INFO,F("Connecting MQTT server."));
-    while (!MQTT.connect("Zisterne", "public", "public")) {
-      Serial.print(".");
-      delay(1000);
-    }
+    int cntTout=5;
     
-    // Subscribe   
-    MQTT.subscribe(F("Zisterne/Parameter/RefillLevel"));  
-    #if (USE_TEST_SYSTEM & TEST_USDATA)
-      //Subscribe simulated runtimes and noise for test system
-      MQTT.subscribe(F("Zisterne/Simulation/testtime"));
-      MQTT.subscribe(F("Zisterne/Simulation/testnoise"));      
-    #endif
+    WriteSystemLog(MSG_INFO,F("Connecting MQTT server."));
+    while ((!MQTT.connect("Zisterne", "public", "public")) && (cntTout--)) {
+      Serial.print(".");
+      delay(1000);            
+      // Trigger Watchdog
+      TriggerWDT(); 
+    }    
+
+    if(cntTout>0) {
+      // Subscribe   
+      WriteSystemLog(MSG_INFO,F("MQTT: Subscribe topic Zisterne/Parameter/RefillLevel"));
+      MQTT.subscribe(F("Zisterne/Parameter/RefillLevel"));  
+      #if (USE_TEST_SYSTEM & TEST_USDATA)
+        //Subscribe simulated runtimes and noise for test system
+        WriteSystemLog(MSG_INFO,F("MQTT: Subscribe topic Zisterne/Simulation/testtime+testnoise"));
+        MQTT.subscribe(F("Zisterne/Simulation/testtime"));
+        MQTT.subscribe(F("Zisterne/Simulation/testnoise"));      
+      #endif
+    }
+    else {
+      // Timeout occured
+      WriteSystemLog(MSG_INFO,F("MQTT: Timeout while connecting."));
+    }
   }
   
   void MQTT_MsgRec(String &topic, String &payload)
@@ -62,11 +74,13 @@
     MQTT.publish(F("Zisterne/Alive"), MeasTimeStr);
     MQTT.publish(F("Zisterne/MeasTime"), MeasTimeStr);
     MQTT.publish(F("Zisterne/Level"), String(hWaterActual));
+    MQTT.publish(F("Zisterne/PercLevel"), String(prcActual));
     MQTT.publish(F("Zisterne/Volume"), String(volActual));
     MQTT.publish(F("Zisterne/SignalHealth"), String(rSignalHealth));
     MQTT.publish(F("Zisterne/Error"), String(stError));
     MQTT.publish(F("Zisterne/RefillTot"), String(SettingsEEP.settings.volRefillTot));
     MQTT.publish(F("Zisterne/RainTot"), String(volRainTot));
     MQTT.publish(F("Zisterne/DiffPer"), String(volDiff1h));      
+    WriteSystemLog(MSG_INFO,F("MQTT: Topics published"));
   }
 #endif    

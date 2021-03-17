@@ -4,6 +4,8 @@ import subprocess
 import shutil
 import re
 import serial.tools.list_ports
+import serial.tools.miniterm
+import serial
 	  
 print("--- Available configurations -------------------------------")
 dirname = './config'
@@ -63,3 +65,16 @@ else:
     print("\nCompile and upload")
     result = subprocess.run("C:/Program Files (x86)/Arduino/arduino.exe LevelMeasurement.ino --upload --port "+portFound,stdout=subprocess.PIPE,universal_newlines=True)
     print(result.stdout)	
+	
+    #Start Terminal
+    ser = serial.Serial(portFound, 115200, timeout=1)	
+    while(True):
+        line = ser.readline()
+        #line=line.replace("b'","")
+        #line=line.rstrip("\r\n'")
+        try:
+            line=line.decode()
+        except:
+            line=line
+        if (len(line)>0):
+            print(line)

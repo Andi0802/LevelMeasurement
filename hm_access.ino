@@ -27,8 +27,7 @@
       hm_client.flush();
 
       //Receive answer
-      while (hm_client.connected()) {
-          TriggerWDT();            
+      while (hm_client.connected()) {          
           if (hm_client.available()) {
             char c = hm_client.read();            
     
@@ -40,6 +39,7 @@
             }
          }
       }
+      TriggerWDT();            
       hm_client.stop();      
       #if LOGLEVEL & LOGLVL_CCU
         WriteSystemLog(MSG_DEBUG,_cmd);
@@ -74,8 +74,7 @@
       hm_client.flush();
 
       //Receive answer
-      while (hm_client.connected()) {
-          TriggerWDT();            
+      while (hm_client.connected()) {          
           if (hm_client.available()) {
             char c = hm_client.read();            
     
@@ -87,6 +86,7 @@
             }
          }
       }
+      TriggerWDT();            
       
       hm_client.stop();
       #if LOGVEVEL & LOGLVL_CCU
@@ -126,8 +126,7 @@
   
       unsigned long _timeStart=micros();
       unsigned char _trace=0;
-      while (hm_client.connected()) {
-          TriggerWDT();  
+      while (hm_client.connected()) {          
           _trace=1;
           if (hm_client.available()) {
             char c = hm_client.read();
@@ -141,6 +140,7 @@
             }
          }
       }
+      TriggerWDT();  
       hm_client.stop();
       unsigned long _timeStop=micros();
       
