@@ -1,6 +1,6 @@
 // Konfiguration Andreas
 // Nutzer:  Andreas 
-// Eigenschaften: ohne Display, mit Homematic, 192.168.178.5, Logging mit CCU
+// Eigenschaften: ohne Display, mit Homematic 192.168.178.11, 192.168.178.5, Logging mit CCU
 //
 //--- Configuration switches ---------------------------------------------------------------------------------
 // --- Test system ------------------------------------------------------------------------
@@ -36,7 +36,7 @@
 #define HM_ACCESS_ACTIVE    1 
 
 //IP Adress of Homematic 
-#define IP_ADR_HM 192, 168, 178, 60  
+#define IP_ADR_HM 192, 168, 178, 11  
 
 // Datapoint numbers for HM
 #define HM_DATAPOINT_RAIN24       14245  

@@ -1,4 +1,4 @@
-## Compiler menu for Arduino
+3## Compiler menu for Arduino
 import os
 import subprocess
 import shutil
@@ -53,9 +53,9 @@ file.close()
 #Searching for Arduino Ports
 print("Searching for Arduino COM ports\n")
 serList = serial.tools.list_ports.comports()
-for port, desc, hwid in sorted(serList):
+for device, desc, hwid in sorted(serList):
     if re.search("Arduino",desc):
-        print("{}: {} [{}]".format(port, desc, hwid))
+        print("{}: {} [{}]".format(device, desc, hwid))
         portFound = port
 		
 #Compile and upload
