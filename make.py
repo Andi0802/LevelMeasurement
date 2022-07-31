@@ -56,7 +56,7 @@ serList = serial.tools.list_ports.comports()
 for device, desc, hwid in sorted(serList):
     if re.search("Arduino",desc):
         print("{}: {} [{}]".format(device, desc, hwid))
-        portFound = port
+        portFound = device
 		
 #Compile and upload
 if not portFound:
