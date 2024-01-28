@@ -33,7 +33,7 @@ print('\n')
 
 #Create header with git-version
 print("Finding git version\n")
-GITPATH = "C:/Users/Andreas/AppData/Local/Atlassian/SourceTree/git_local/mingw32/bin"
+GITPATH = "C:/Users/Andreas.ZERU/AppData/Local/Atlassian/SourceTree/git_local/mingw32/bin"
 Version = subprocess.run(GITPATH+"/git describe --tags",stdout=subprocess.PIPE,universal_newlines=True)
 VersInfo = subprocess.run(GITPATH+"/git log --pretty=full -n 1",stdout=subprocess.PIPE,universal_newlines=True)
 Version = Version.stdout.strip()
