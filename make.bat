@@ -1,2 +1,2 @@
-C:\ProgramData\Anaconda3\python make.py
+C:\ProgramData\anaconda3_2023\python make.py
 pause

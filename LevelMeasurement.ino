@@ -579,13 +579,15 @@ void loop()
       cntLED=0;
     } 
     else {
-      //Increment counter, conting 0-20 -> Period 2sec
+      //Increment counter, counting 0-20 -> Period 2sec
       cntLED++;
-    }    
-    if (5*cntLED>=prcActual) {
-      //LED off
-      SetSystemLED(false);
-    }
+
+      // Switch off, if level reached
+      if (5*cntLED>=prcActual) {
+        //LED off
+        SetSystemLED(false);
+      }
+    }        
        
     // Trigger Watchdog    
     TriggerWDT();  
@@ -755,8 +757,8 @@ void loop()
         volDiff1h = volActual-volOld;
       }
                   
-      //Relative Level in %
-      prcActual = ((long) volActual*100)/volMax;      
+      //Relative Level in %, limit to 100%
+      prcActual = min(((long) volActual*100)/volMax,100);      
       
       //Diagnostic debounce counter
       if (rSignalHealth<SIGNAL_HEALTH_MIN) {
@@ -1253,4 +1255,3 @@ void SetSystemLED(bool state)
     digitalWrite(MEASLED_PIN,_colorPinState);
   }
 }
-
